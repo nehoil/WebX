@@ -1,243 +1,162 @@
-[{
-	"_id": "5e28393890dd7201a06d4e44",
-	"name": "New Wap!",
-	"previewImg": "http://res.cloudinary.com/webify/image/upload/v1580021948/coffe_yi0yzf.png",
-	"createdBy": {
-		"_id": "5e26e0b718a0891d4c995527",
-		"username": "eni"
-	},
-	"cmps": [
-		{
-			"id": "wc01",
-			"type": "web-section",
-			"style": {
-				"backgroundColor": "#fff",
-				"height": "600px",
-				"padding": "10px"
+[
+	{
+		"_id": "5e28393890dd7201a06d4e44",
+		"name": "New Site!",
+		"previewImg": "",
+		"createdBy": {
+			"_id": "5e26e0b718a0891d4c995527",
+			"username": "eni",
+			"userPicture": ""
+		},
+		"cmps": [
+			{
+				"id": "wc01",
+				"type": "web-txt",
+				"info": {
+					"content": "This is a sample text"
+				},
+				"style": {
+					"fontFamily": "unset",
+					"fontSize": "2rem",
+					"fontWeight": "unset",
+					"lineHeight": "unset",
+					"letterSpacing": "unset",
+					"textAlign": "unset",
+					"margin": "unset",
+					"padding": "unset",
+					"textTransform": "unset",
+					"textShadow": "unset",
+					"color": "unset"
+				}
 			},
-			"subCmps": [
-				{
-					"type": "web-div",
-					"style": {},
-					"elements": [
+			{
+				"id": "wc02",
+				"type": "wap-container",
+				"info": {
+					"dir": "column",
+					"cmps": [
+						{},
+						{}
+					]
+				},
+				"style": {
+					"padding": "10px"
+				}
+			},
+			{
+				"id": "wc03",
+				"type": "web-button",
+				"info": {
+					"content": "This is a sample text",
+					"linkTo": ""
+				},
+				"style": {
+					"fontFamily": "unset",
+					"fontSize": "unset",
+					"fontWeight": "unset",
+					"letterSpacing": "unset",
+					"margin": "unset",
+					"padding": "unset",
+					"textTransform": "unset",
+					"color": "unset",
+					"backgroundColor": "unset",
+					"borderShadow": "unset",
+					"border": "unset",
+					"borderRadius": "unset",
+					"width": "unset",
+					"height": "unset"
+				}
+			},
+			{
+				"id": "wc04",
+				"type": "web-map",
+				"info": {
+					"title": "",
+					"lat": 46332,
+					"lng": 63464,
+					"zoom": 2,
+					"address": "Paris"
+				},
+				"style": {
+					"width": "100%",
+					"height": "100%"
+				}
+			},
+			{
+				"id": "wc05",
+				"type": "web-img",
+				"info": {
+					"content": "https://serverless.css-tricks.com/img/food.svg"
+				},
+				"style": {
+					"width": "100%",
+					"height": "100%",
+					"objectFit": "cover",
+					"transform": "rotate(90deg)",
+					"zIndex": "1",
+					"borderRadius": "unset",
+					"border": "unset"
+				}
+			},
+			{
+				"id": "wc06",
+				"type": "web-video",
+				"info": {
+					"content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
+					"title": "watch this video!"
+				},
+				"style": {
+					"width": "30rem",
+					"height": "15rem"
+				}
+			},
+			{
+				"id": "wc07",
+				"type": "web-form",
+				"info": {
+					"content": [
 						{
-							"type": "web-txt",
-							"content": "This is a sample text",
-							"style": {
-								"fontFamily": "unset",
-								"fontSize": "2rem",
-								"fontWeight": "unset",
-								"lineHeight": "unset",
-								"letterSpacing": "unset",
-								"textAlign": "unset",
-								"margin": "unset",
-								"padding": "unset",
-								"textTransform": "unset",
-								"textShadow": "unset",
-								"color": "unset"
-							}
+							"placeHolder": "Title",
+							"type": "text"
 						},
 						{
+							"placeHolder": "Email",
+							"type": "email"
+						},
+						{
+							"placeHolder": "Subject",
+							"type": "text"
+						}
+					],
+					"cmps": [
+						{
 							"type": "web-button",
-							"content": "This is a sample text",
-							"linkTo": "",
-							"style": {
-								"fontFamily": "unset",
-								"fontSize": "unset",
-								"fontWeight": "unset",
-								"letterSpacing": "unset",
-								"margin": "unset",
-								"padding": "unset",
-								"textTransform": "unset",
-								"color": "unset",
-								"backgroundColor": "unset",
-								"borderShadow": "unset",
-								"border": "unset",
-								"borderRadius": "unset",
-								"width": "unset",
-								"height": "unset"
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "wc02",
-			"type": "web-section",
-			"style": {
-				"backgroundColor": "#fff",
-				"height": "300px",
-				"padding": "10px"
-			},
-			"subCmps": [
-				{
-					"type": "web-div",
-					"style": {
-						"padding": "10px",
-						"backgroundColor": "none",
-						"margin": "auto",
-						"display": "flex",
-						"justifyContent": "center"
-					},
-					"elements": [
-						{
-							"content": "",
-							"type": "web-map",
 							"info": {
-								"lat": 46332,
-								"lng": 63464,
-								"zoom": 2,
-								"address": "Paris"
+								"title": "",
+								"linkTo": ""
 							},
-							"style": {
-								"width": "100%",
-								"height": "100%"
-							}
+							"style": {}
 						}
 					]
 				}
-			]
-		},
-		{
-			"id": "wc03",
-			"type": "web-section",
-			"style": {
-				"backgroundColor": "#fff",
-				"height": "400px",
-				"padding": "10px"
 			},
-			"subCmps": [
-				{
-					"type": "web-div",
-					"style": {
-						"display": "flex"
-					},
-					"elements": [
-						{
-							"content": "https://serverless.css-tricks.com/img/food.svg",
-							"type": "web-img",
-							"style": {
-								"width": "100%",
-								"height": "100%",
-								"objectFit": "cover",
-								"transform": "rotate(90deg)",
-								"zIndex": "1",
-								"borderRadius": "unset",
-								"border": "unset"
-							}
-						}
-					]
+			{
+				"id": "wc08",
+				"type": "web-list",
+				"info": {
+					"content": "This is a ul/ol list",
+					"li-txt": {
+						"1": "I am li - 1",
+						"2": "I am li - 2",
+						"3": "I am li - 3"
+					}
+				},
+				"style": {
+					"width": "20rem",
+					"height": "10rem",
+					"list-style-type": "square"
 				}
-			]
-		},
-		{
-			"id": "wc04",
-			"type": "web-section",
-			"style": {
-				"backgroundColor": "#fff",
-				"height": "300px",
-				"padding": "10px"
-			},
-			"subCmps": [
-				{
-					"type": "web-div",
-					"style": {},
-					"elements": [
-						{
-							"content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-							"type": "web-video",
-							"style": {
-								"width": "30rem",
-								"height": "15rem"
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "wc05",
-			"type": "web-section",
-			"style": {
-				"backgroundColor": "#fff",
-				"height": "300px",
-				"padding": "10px"
-			},
-			"subCmps": [
-				{
-					"type": "web-div",
-					"style": {},
-					"elements": [
-						{
-							"content": [
-								{
-									"placeHolder": "Title",
-									"type": "text"
-								},
-								{
-									"placeHolder": "Email",
-									"type": "email"
-								},
-								{
-									"placeHolder": "Subject",
-									"type": "text"
-								}
-							],
-							"type": "web-form",
-							"style": {
-								"width": "30rem",
-								"height": "15rem"
-							},
-							"childrens": [
-								{
-									"content": "Send",
-									"linkTo": "",
-									"type": "web-button",
-									"style": {}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "wc06",
-			"type": "web-section",
-			"style": {
-				"backgroundColor": "#fff",
-				"height": "500px",
-				"padding": "10px"
-			},
-			"subCmps": [
-				{
-					"type": "web-div",
-					"style": {},
-					"elements": [
-						{
-							"content": "This is a ul/ol list",
-							"type": "web-list",
-							"style": {
-								"width": "20rem",
-								"height": "10rem",
-								"list-style-type": "square"
-							},
-							"childrens": [
-								{
-									"content": "I am li - 1"
-								},
-								{
-									"content": "I am li - 2"
-								},
-								{
-									"content": "I am li - 3"
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
-}]
+			}
+		]
+	}
+]
