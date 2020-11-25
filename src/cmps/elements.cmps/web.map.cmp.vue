@@ -1,7 +1,7 @@
 <template>
-  <section contenteditable class="web-map" :stlye="cmpStyle">
+  <section contenteditable class="web-map" :stlye="cmp.style">
      <GmapMap
-  :center="{lat:info.lat, lng:info.lng}"
+  :center="{lat:cmp.info.lat, lng:cmp.info.lng}"
   :zoom="7"
   map-type-id="terrain"
   style="width: 500px; height: 300px"
@@ -23,8 +23,7 @@
 
 export default {
   props: {
-    info: Object,
-    cmpStyle: Object,
+    cmp: Object,
   },
   data() {
     return {

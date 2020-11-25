@@ -1,6 +1,6 @@
 <template>
-  <section contenteditable class="web-video" :stlye="cmpStyle">
-      <iframe :src="info.content" class="responsive-iframe" frameBorder="0"></iframe>
+  <section contenteditable class="web-video" :stlye="cmp.style">
+      <iframe :src="cmp.info.content" class="responsive-iframe" frameBorder="0"></iframe>
       </section>
 </template>
 
@@ -8,8 +8,7 @@
 
 export default {
   props: {
-    info: Object,
-    cmpStyle: Object,
+    cmp: Object,
   },
   name: 'web-video',
   components: {},

@@ -1,7 +1,7 @@
 <template>
-  <section contenteditable class="web-button" :stlye="cmpStyle" v-if="info">
-    <a :href="info.linkTo"></a>
-     <section class="button">{{info.content}}</section>
+  <section contenteditable class="web-button" :stlye="cmp.style" v-if="cmp">
+    <a :href="cmp.info.linkTo"></a>
+     <section class="button">{{cmp.info.content}}</section>
   </section>
 </template>
 
@@ -9,8 +9,7 @@
 
 export default {
   props: {
-    info: Object,
-    cmpStyle: Object,
+    cmp: Object,
   },
   name: 'web-button',
   components: {},
