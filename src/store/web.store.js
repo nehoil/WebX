@@ -1,4 +1,4 @@
-import utilService from '@/services/util-service.js'
+import {utilService} from '../services/util-service.js'
 
 var localDraftSite = {
     _id: null,
@@ -13,7 +13,7 @@ var localDraftSite = {
 };
 if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
 
-import templateService from '@/services/template.service.js'
+import {templateService} from '@/services/template.service.js'
 
 export const webStore = {
     state: {
@@ -32,8 +32,8 @@ export const webStore = {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
             console.log('store get cmp', cmp);
-
-            state.siteToEdit.cmps.push(cmp[0])
+            state.siteToEdit.cmps.push(cmp)
+            utilService.storeToStorage('draft_db', state.siteToEdit)
         },
         setCmpsToShow(state, { cmpType }) {
             const cmps = templateService.getCmpsByType(cmpType)
