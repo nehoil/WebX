@@ -31,7 +31,7 @@ export default {
       // eventBus.$emit('open-edit', this.cmp.type);
     },
   },
-  name: 'web-txt',
+  name: "web-txt",
   components: {},
 };
 </script>

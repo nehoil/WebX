@@ -7,6 +7,7 @@
       :key="idx"
     >
   </component>
+    <pre v-if="waps"></pre>
   </div>
 </template>
 

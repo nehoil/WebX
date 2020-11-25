@@ -1,5 +1,5 @@
 <template>
-  <section contenteditable class="web-map" :stlye="cmp.style">
+  <section contenteditable class="web-map" :style="cmp.style">
      <GmapMap
   :center="{lat:cmp.info.lat, lng:cmp.info.lng}"
   :zoom="7"
@@ -20,20 +20,18 @@
 </template>
 
 <script>
-
 export default {
   props: {
     cmp: Object,
   },
   data() {
     return {
-        markers: [],
-    }
+      markers: [],
+    };
   },
-  name: 'web-map',
+  name: "web-map",
   components: {},
 };
 </script>
 <style scoped>
-
 </style>

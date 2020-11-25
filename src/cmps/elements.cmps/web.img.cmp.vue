@@ -1,19 +1,17 @@
 <template>
-  <section class="web-img" :stlye="cmp.style">
+  <section class="web-img" :style="cmp.style">
      <img :src="cmp.info.content" alt="">
   </section>
 </template>
 
 <script>
-
 export default {
   props: {
     cmp: Object,
   },
-  name: 'web-img',
+  name: "web-img",
   components: {},
 };
 </script>
 <style scoped>
-
 </style>

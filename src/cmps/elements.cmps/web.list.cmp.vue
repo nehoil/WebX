@@ -1,6 +1,5 @@
 <template>
-  <section contenteditable class="web-list" :stlye="cmp.style">
-    {{cmp.info}}
+  <section contenteditable class="web-list" :style="cmp.style">
             <span>{{cmp.info.content}}</span>
     <ul>
       <li v-for="(children, idx) in cmp.info.cmps" :key="idx" :element="children">
@@ -15,14 +14,12 @@ export default {
   props: {
     cmp: Object,
   },
-  name: 'web-list',
+  name: "web-list",
   components: {},
   data() {
-    return {
-    }
+    return {};
   },
 };
 </script>
 <style scoped>
-
 </style>

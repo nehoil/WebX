@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import webButton from '@/cmps/elements.cmps/web.button.cmp';
+import webButton from "@/cmps/elements.cmps/web.button.cmp";
 
 export default {
   props: {
     cmp: Object,
   },
-  name: 'web-form',
+  name: "web-form",
   components: {
-    webButton
+    webButton,
   },
   data() {
     return {
@@ -27,12 +27,11 @@ export default {
         txt: null,
         fullName: null,
         email: null,
-        subject: null
-      }
-    }
+        subject: null,
+      },
+    };
   },
 };
 </script>
 <style scoped>
-
 </style>
