@@ -27,8 +27,8 @@ export const webStore = {
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-            cmp.id = utilService.makeId
-            state.state.cmps.push(cmp[0])
+            cmp.id = utilService.makeId()
+            state.cmps.push(cmp)
         },
         removeCmp(state, { id }) {
             const idx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
