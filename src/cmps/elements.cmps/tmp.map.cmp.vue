@@ -1,5 +1,5 @@
 <template>
-  <section class="el-txt" :stlye="element.style">
+  <section class="tmp-map" :stlye="element.style">
      <GmapMap
   :center="{lat:element.info.lat, lng:element.info.lng}"
   :zoom="7"
@@ -20,10 +20,6 @@
 </template>
 
 <script>
-  //// import {GmapMarker} from 'vue2-google-maps/src/components/marker'
-  //// Vue.component('GmapMarker', GmapMarker)
-  //// then disable the following:
-  // installComponents: true,
 
 export default {
   props: {
@@ -34,7 +30,7 @@ export default {
         markers: [],
     }
   },
-  name: 'web-map',
+  name: 'tmp-map',
   components: {},
 };
 </script>

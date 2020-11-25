@@ -1,21 +1,21 @@
 <template>
-  <span class="web-div">
+  <span class="tmp-div">
     <component v-for="(element, idx) in elements" :is="element.type" :key="idx" :element="element"></component>
   </span>
 </template>
 
 <script>
-import webTxt from '../cmps/web-txt.cmp';
-import webMap from '../cmps/web-map.cmp';
+import tmpTxt from '@/cmps/elements.cmps/tmp.txt.cmp';
+import tmpMap from '@/cmps/elements.cmps/tmp.map.cmp';
 
 export default {
-  name: 'web-div',
+  name: 'tmp-div',
   props: {
     elements: Array
   },
   components: {
-    webTxt,
-    webMap
+    tmpTxt,
+    tmpMap
   },
 };
 </script>

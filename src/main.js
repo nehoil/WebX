@@ -2,7 +2,7 @@ import Vue from "vue";
 import app from "./app.vue";
 import "./registerServiceWorker";
 import router from "./router";
-import store from "./store";
+import store from "./store/store.js";
 import * as VueGoogleMaps from 'vue2-google-maps'
  
 Vue.use(VueGoogleMaps, {
