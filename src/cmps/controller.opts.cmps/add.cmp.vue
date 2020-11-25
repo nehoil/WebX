@@ -5,3 +5,19 @@
 // for example: ['header', 'footer', 'button'] => emit => store => options of header => renders headers for prev
 // or adds directly small elements into workspace (such as txt)
 </script>
+
+<template>
+  <div class="workspace">
+    <p>I'm a workspace</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "workspace",
+  components: {},
+  data() {
+    return {};
+  },
+};
+</script>
