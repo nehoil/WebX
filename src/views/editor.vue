@@ -26,7 +26,7 @@ export default {
     };
   },
   created() {
-    this.siteToEdit = this.$store.getters.web;
+    this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     eventBus.$on('addCmp', (id) => {
       this.$store.commit({ type: 'addCmp', id });
     });
@@ -34,7 +34,8 @@ export default {
       this.$store.commit({ type: 'setCmpsToShow', cmpType });
     });
     eventBus.$on('update-site', () => {
-      // this.$store.commit(type: {});
+      console.log('updating site');
+      this.$store.commit({ type: 'updateSite', site: siteToEdit });
     });
   },
 };
