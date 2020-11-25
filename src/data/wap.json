@@ -9,7 +9,7 @@
 	"cmps": [
 		{
 			"id": "wc01",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#fff",
 				"height": "600px",
@@ -17,15 +17,15 @@
 			},
 			"subCmps": [
 				{
-					"type": "tmp-div",
+					"type": "web-div",
 					"style": {},
 					"elements": [
 						{
-							"type": "tmp-txt",
+							"type": "web-txt",
 							"content": "This is a sample text",
 							"style": {
 								"fontFamily": "unset",
-								"fontSize": "unset",
+								"fontSize": "2rem",
 								"fontWeight": "unset",
 								"lineHeight": "unset",
 								"letterSpacing": "unset",
@@ -38,7 +38,7 @@
 							}
 						},
 						{
-							"type": "tmp-button",
+							"type": "web-button",
 							"content": "This is a sample text",
 							"linkTo": "",
 							"style": {
@@ -64,7 +64,7 @@
 		},
 		{
 			"id": "wc02",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#fff",
 				"height": "300px",
@@ -72,12 +72,18 @@
 			},
 			"subCmps": [
 				{
-					"type": "tmp-div",
-					"style": {},
+					"type": "web-div",
+					"style": {
+						"padding": "10px",
+						"backgroundColor": "none",
+						"margin": "auto",
+						"display": "flex",
+						"justifyContent": "center"
+					},
 					"elements": [
 						{
 							"content": "",
-							"type": "tmp-map",
+							"type": "web-map",
 							"info": {
 								"lat": 46332,
 								"lng": 63464,
@@ -95,7 +101,7 @@
 		},
 		{
 			"id": "wc03",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#fff",
 				"height": "400px",
@@ -103,14 +109,14 @@
 			},
 			"subCmps": [
 				{
-					"type": "tmp-div",
+					"type": "web-div",
 					"style": {
 						"display": "flex"
 					},
 					"elements": [
 						{
 							"content": "https://serverless.css-tricks.com/img/food.svg",
-							"type": "tmp-img",
+							"type": "web-img",
 							"style": {
 								"width": "100%",
 								"height": "100%",
@@ -127,7 +133,7 @@
 		},
 		{
 			"id": "wc04",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#fff",
 				"height": "300px",
@@ -135,12 +141,12 @@
 			},
 			"subCmps": [
 				{
-					"type": "tmp-div",
+					"type": "web-div",
 					"style": {},
 					"elements": [
 						{
 							"content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-							"type": "tmp-video",
+							"type": "web-video",
 							"style": {
 								"width": "30rem",
 								"height": "15rem"
@@ -152,7 +158,7 @@
 		},
 		{
 			"id": "wc05",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#fff",
 				"height": "300px",
@@ -160,7 +166,7 @@
 			},
 			"subCmps": [
 				{
-					"type": "tmp-div",
+					"type": "web-div",
 					"style": {},
 					"elements": [
 						{
@@ -178,7 +184,7 @@
 									"type": "text"
 								}
 							],
-							"type": "tmp-form",
+							"type": "web-form",
 							"style": {
 								"width": "30rem",
 								"height": "15rem"
@@ -187,7 +193,7 @@
 								{
 									"content": "Send",
 									"linkTo": "",
-									"type": "tmp-button",
+									"type": "web-button",
 									"style": {}
 								}
 							]
@@ -198,7 +204,7 @@
 		},
 		{
 			"id": "wc06",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#fff",
 				"height": "500px",
@@ -206,12 +212,12 @@
 			},
 			"subCmps": [
 				{
-					"type": "tmp-div",
+					"type": "web-div",
 					"style": {},
 					"elements": [
 						{
 							"content": "This is a ul/ol list",
-							"type": "tmp-list",
+							"type": "web-list",
 							"style": {
 								"width": "20rem",
 								"height": "10rem",

@@ -1,7 +1,7 @@
 <template>
-  <section class="tmp-button" :stlye="element.style">
+  <section class="web-button" :stlye="element.style">
     <a :href="element.linkTo"></a>
-     <section class="button">element.content</section>
+     <section class="button">{{element.content}}</section>
   </section>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   props: {
     element: Object
   },
-  name: 'tmp-button',
+  name: 'web-button',
   components: {},
   methods: {
     // moveTo(){

@@ -1,5 +1,5 @@
 <template>
-  <section class="tmp-list" :stlye="element.style">
+  <section class="web-list" :stlye="element.style">
             <span>{{element.content}}</span>
     <ul>
       <li v-for="(children, idx) in element.childrens" :key="idx" :element="children">
@@ -14,7 +14,7 @@ export default {
   props: {
     element: Object
   },
-  name: 'tmp-list',
+  name: 'web-list',
   components: {},
   data() {
     return {

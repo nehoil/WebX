@@ -1,25 +1,25 @@
 <template>
-  <section class="tmp-form" :stlye="element.style">
-    <pre>{{element.content}}</pre>
+  <section class="web-form" :stlye="element.style">
      <form>
-       <input :type="element.content.type" v-model="mail[element.content.type]" placeholder="element[content.placeHolder]">
-       <input :type="element.content.type" v-model="mail[element.content.type]" placeholder="element[content.placeHolder]">
-      <input :type="element.content.type" v-model="mail[element.content.type]" placeholder="element[content.placeHolder]">
+       <input :type="text" v-model="mail.txt" placeholder="You Email">
+       <input :type="text" v-model="mail.txt" placeholder="You name">
+       <input :type="text" v-model="mail.txt" placeholder="Your subject">
+       <input :type="text" v-model="mail.txt" placeholder="Your message">
       <component v-for="(children, idx) in element.childrens" :is="children.type" :key="idx" :element="children"></component>
      </form>
   </section>
 </template>
 
 <script>
-import tmpButton from '@/cmps/elements.cmps/tmp.button.cmp';
+import webButton from '@/cmps/elements.cmps/web.button.cmp';
 
 export default {
   props: {
     element: Object
   },
-  name: 'tmp-form',
+  name: 'web-form',
   components: {
-    tmpButton
+    webButton
   },
   data() {
     return {

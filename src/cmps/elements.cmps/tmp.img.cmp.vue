@@ -1,5 +1,5 @@
 <template>
-  <section class="tmp-img" :stlye="element.style">
+  <section class="web-img" :stlye="element.style">
      <img src="element.content" alt="">
   </section>
 </template>
@@ -10,7 +10,7 @@ export default {
   props: {
     element: Object
   },
-  name: 'tmp-img',
+  name: 'web-img',
   components: {},
 };
 </script>

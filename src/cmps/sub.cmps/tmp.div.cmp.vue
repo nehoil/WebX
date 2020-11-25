@@ -1,31 +1,32 @@
 <template>
-  <span class="tmp-div">
+  <div class="web-div" :style="cmpStyle">
     <component v-for="(element, idx) in elements" :is="element.type" :key="idx" :element="element"></component>
-  </span>
+  </div>
 </template>
 
 <script>
-import tmpTxt from '@/cmps/elements.cmps/tmp.txt.cmp';
-import tmpMap from '@/cmps/elements.cmps/tmp.map.cmp';
-import tmpVideo from '@/cmps/elements.cmps/tmp.video.cmp';
-import tmpImg from '@/cmps/elements.cmps/tmp.img.cmp';
-import tmpForm from '@/cmps/elements.cmps/tmp.form.cmp';
-import tmpButton from '@/cmps/elements.cmps/tmp.button.cmp';
-import tmpList from '@/cmps/elements.cmps/tmp.list.cmp';
+import webTxt from '@/cmps/elements.cmps/web.txt.cmp';
+import webMap from '@/cmps/elements.cmps/web.map.cmp';
+import webVideo from '@/cmps/elements.cmps/web.video.cmp';
+import webImg from '@/cmps/elements.cmps/web.img.cmp';
+import webForm from '@/cmps/elements.cmps/web.form.cmp';
+import webButton from '@/cmps/elements.cmps/web.button.cmp';
+import webList from '@/cmps/elements.cmps/web.list.cmp';
 
 export default {
-  name: 'tmp-div',
+  name: 'web-div',
   props: {
-    elements: Array
+    elements: Array,
+    cmpStyle: Object
   },
   components: {
-    tmpTxt,
-    tmpMap,
-    tmpImg,
-    tmpForm,
-    tmpButton,
-    tmpList,
-    tmpVideo
+    webTxt,
+    webMap,
+    webImg,
+    webForm,
+    webButton,
+    webList,
+    webVideo
   },
 };
 </script>

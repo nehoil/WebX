@@ -1,19 +1,25 @@
 <template>
-  <span class="tmp-section">
-    <component v-for="(subCmp, idx) in subCmps" :is="subCmp.type" :key="idx" :elements="subCmp.elements"></component>
-  </span>
+  <section class="web-section">
+    <component
+      v-for="(subCmp, idx) in subCmps"
+      :is="subCmp.type"
+      :key="idx"
+      :elements="subCmp.elements"
+      :cmpStyle="subCmp.style"
+    ></component>
+  </section>
 </template>
 
 <script>
-import tmpDiv from '@/cmps/sub.cmps/tmp.div.cmp';
+import webDiv from '@/cmps/sub.cmps/web.div.cmp';
 
 export default {
-  name: 'tmp-section',
+  name: 'web-section',
   props: {
-    subCmps: Array
+    subCmps: Array,
   },
   components: {
-    tmpDiv
+    webDiv,
   },
 };
 </script>

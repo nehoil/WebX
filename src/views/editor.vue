@@ -10,11 +10,11 @@
 
 <script>
 import json from '@/data/wap.json';
-import tmpSection from '@/cmps/tmp.section.cmp';
+import webSection from '@/cmps/web.section.cmp';
 export default {
   name: 'Home',
   components: {
-    tmpSection,
+    webSection,
   },
   data() {
     return {

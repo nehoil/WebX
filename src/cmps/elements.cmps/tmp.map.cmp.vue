@@ -1,5 +1,5 @@
 <template>
-  <section class="tmp-map" :stlye="element.style">
+  <section class="web-map" :stlye="element.style">
      <GmapMap
   :center="{lat:element.info.lat, lng:element.info.lng}"
   :zoom="7"
@@ -30,7 +30,7 @@ export default {
         markers: [],
     }
   },
-  name: 'tmp-map',
+  name: 'web-map',
   components: {},
 };
 </script>

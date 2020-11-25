@@ -1,5 +1,5 @@
 <template>
-  <section class="tmp-video" :stlye="element.style">
+  <section class="web-video" :stlye="element.style">
       <iframe :src="element.content" class="responsive-iframe" frameBorder="0"></iframe>
       </section>
 </template>
@@ -10,7 +10,7 @@ export default {
   props: {
     element: Object
   },
-  name: 'tmp-video',
+  name: 'web-video',
   components: {},
 };
 </script>
