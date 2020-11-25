@@ -3,7 +3,7 @@
     <component
       v-for="(cmp, idx) in waps[0].cmps"
       :is="cmp.type"
-      :info="cmp.info"
+      :cmp="cmp"
       :key="idx"
     >
   </component>
