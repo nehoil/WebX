@@ -1,6 +1,6 @@
 <template>
   <section class="tmp-img" :stlye="element.style">
-     <img src="element.src" alt="" srcset="">
+     <img src="element.content" alt="">
   </section>
 </template>
 

@@ -1,6 +1,7 @@
 <template>
-  <section class="web-img" :stlye="element.style">
-     <div class="button">element.content</div>
+  <section class="tmp-button" :stlye="element.style">
+    <a :href="element.linkTo"></a>
+     <section class="button">element.content</section>
   </section>
 </template>
 
@@ -10,8 +11,13 @@ export default {
   props: {
     element: Object
   },
-  name: 'web-button',
+  name: 'tmp-button',
   components: {},
+  methods: {
+    // moveTo(){
+    //   this.element.linkTo
+    // }
+  },
 };
 </script>
 <style scoped>

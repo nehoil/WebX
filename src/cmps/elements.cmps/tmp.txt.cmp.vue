@@ -1,5 +1,5 @@
 <template>
-  <span class="web-txt" contenteditable :style="element.style">
+  <span class="tmp-txt" contenteditable :style="element.style">
      <pre> {{element.content}}</pre>
       <!-- <pre>      {{element}}
  </pre> -->
@@ -13,7 +13,7 @@ export default {
   props: {
     element: Object
   },
-  name: 'web-txt',
+  name: 'tmp-txt',
   components: {},
 };
 </script>
