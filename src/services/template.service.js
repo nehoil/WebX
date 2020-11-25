@@ -208,9 +208,9 @@ function getCmpsByType(type) {
 }
 
 function getTemplateById(id) {
-    return gTemplates.filter(template => template.id === id)
+    return gTemplates.find(template => template.id === id)
 }
 
 function getCmpById(id) {
-    return gCmps.filter(cmp => cmp.id === id)
+    return gCmps.find(cmp => cmp.id === id)
 }
