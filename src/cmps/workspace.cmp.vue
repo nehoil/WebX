@@ -7,7 +7,7 @@
       :key="idx"
     >
   </component>
-    <pre v-if="waps"></pre>
+    <!-- <pre v-if="waps"></pre> -->
   </div>
 </template>
 
@@ -29,6 +29,7 @@ export default {
     emitItemToEdit() {
       console.log("im emiting");
     },
+    
   }
 };
 </script>

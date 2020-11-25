@@ -14,7 +14,6 @@ var localDraftSite = {
 if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
 
 import templateService from '@/services/template.service.js'
-import { util } from 'prettier';
 
 export const webStore = {
     state: {
@@ -22,17 +21,19 @@ export const webStore = {
         cmpsToShow: null
     },
     getters: {
-        cmps(state){
+        cmps(state) {
             return state.cmpsToShow
         },
-        web(state){
+        web(state) {
             return state.siteToEdit
         }
     },
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-            state.siteToEdit.cmps.push(cmp)
+            console.log('store get cmp', cmp);
+
+            state.siteToEdit.cmps.push(cmp[0])
         },
         setCmpsToShow(state, { cmpType }) {
             const cmps = templateService.getCmpsByType(cmpType)

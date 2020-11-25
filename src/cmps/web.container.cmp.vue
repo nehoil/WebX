@@ -9,6 +9,7 @@
       @click.native="setEditItem(cmp)"
       :cmp="cmp"
     ></component>
+    <button @click="removeCmp(cmp.id)">X</button>
   </section>
 </template>
 
@@ -38,6 +39,9 @@ export default {
   methods: {
     setEditItem(cmp) {
       eventBus.$emit("setItem", cmp);
+    },
+    removeCmp(cmpId) {
+      console.log(cmpId);
     },
   },
 };

@@ -7,14 +7,24 @@
 </script>
 
 <template>
+<section>
   <div class="controller-add">
     <p>I'm add</p>
-    <button @click="addCmp('header')">Header</button>
-    <button @click="addCmp('txt')">Txt</button>
-    <button @click="addCmp('img')">Img</button>
-    <button @click="addCmp('section')">Section</button>
-    <button @click="addCmp('footer')">Footer</button>
+    <button @click="setCmpsToShow('web-container')">Txt</button>
+    <button @click="setCmpsToShow('web-container')">Map</button>
+    <button @click="setCmpsToShow('header')">Header</button>
+    <button @click="setCmpsToShow('img')">Img</button>
+    <button @click="setCmpsToShow('section')">Section</button>
+    <button @click="setCmpsToShow('footer')">Footer</button>
   </div>
+
+<section class="cmpsExamples" v-if="cmps">
+  <div  v-for="cmp in cmps" :key="cmp.id">
+   <p @click="addCmp(cmp.id)">{{cmp.id}}</p>
+
+  </div>
+  </section>
+  </section>
 </template>
 
 <script>
@@ -29,27 +39,17 @@ export default {
     };
   },
   methods: {
-    addCmp(type) {
-      switch (type) {
-        case "header":
-          eventBus.$emit('addCmp', type)
-          break;
-        case "txt":
-          eventBus.$emit('addCmp', type)         
-           break;
-        case "img":
-          eventBus.$emit('addCmp', type)         
-           break;
-        case "section":
-          eventBus.$emit('addCmp', type)         
-           break;
-        case "footer":
-          eventBus.$emit('addCmp', type)        
-            break;
-        default:
-        // code block
-      }
+    setCmpsToShow(type) {
+          eventBus.$emit('setCmpsToShow', type)
     },
+    addCmp(cmpId){
+        eventBus.$emit('addCmp', cmpId)
+    }
+  },
+  computed: {
+    cmps(){
+     return this.$store.getters.cmps
+    }
   },
 };
 </script>
