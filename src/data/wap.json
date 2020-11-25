@@ -159,8 +159,8 @@
 								"content": "http://serverless.css-tricks.com/img/food.svg"
 							},
 							"style": {
-								"width": "100%",
-								"height": "100%",
+								"width": "100px",
+								"height": "100px",
 								"objectFit": "cover",
 								"transform": "rotate(90deg)",
 								"zIndex": "1",
@@ -240,8 +240,8 @@
 								"content": "https://serverless.css-tricks.com/img/food.svg"
 							},
 							"style": {
-								"width": "100%",
-								"height": "100%",
+								"width": "100px",
+								"height": "100px",
 								"objectFit": "cover",
 								"transform": "rotate(90deg)",
 								"zIndex": "1",

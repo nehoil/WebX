@@ -4,6 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store/store.js";
 import * as VueGoogleMaps from 'vue2-google-maps'
+import Element from 'element-ui'
  
 Vue.use(VueGoogleMaps, {
   load: {
@@ -11,6 +12,7 @@ Vue.use(VueGoogleMaps, {
     libraries: 'places',
     },
 })
+Vue.use(Element)
 
 Vue.config.productionTip = false;
 

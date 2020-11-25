@@ -1,18 +1,17 @@
 <template>
-  <section contenteditable class="web-button" :stlye="cmpStyle" v-if="info">
+  <section contenteditable class="web-button" :style="cmpStyle" v-if="info">
     <a :href="info.linkTo"></a>
-     <section class="button">{{info.content}}</section>
+    <section class="button">{{ info.content }}</section>
   </section>
 </template>
 
 <script>
-
 export default {
   props: {
     info: Object,
     cmpStyle: Object,
   },
-  name: 'web-button',
+  name: "web-button",
   components: {},
   methods: {
     // moveTo(){
@@ -22,5 +21,4 @@ export default {
 };
 </script>
 <style scoped>
-
 </style>

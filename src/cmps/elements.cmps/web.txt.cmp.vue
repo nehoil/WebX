@@ -1,16 +1,16 @@
 <template>
-  <span class="web-txt" contenteditable="isEdit" :style="cmpStyle" @blur="onEdit">
-  {{ info.content }}
+  <span class="web-txt" :style="cmpStyle" @blur="onEdit">
+    {{ info.content }}
   </span>
 </template>
 
 <script>
-import {eventBus} from '@/services/eventbus.service.js'
+import { eventBus } from "@/services/eventbus.service.js";
 export default {
   data() {
     return {
-      isEdit: true
-    }
+      isEdit: false,
+    };
   },
   props: {
     info: Object,
@@ -18,11 +18,11 @@ export default {
   },
   methods: {
     onEdit(ev) {
-      this.info.content = ev.target.innerText
-      eventBus.$emit('update-site')
+      this.info.content = ev.target.innerText;
+      eventBus.$emit("update-site");
     },
   },
-  name: 'web-txt',
+  name: "web-txt",
   components: {},
 };
 </script>

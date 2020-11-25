@@ -6,7 +6,7 @@
       :info="cmp.info"
       :key="idx"
     >
-  </component>
+    </component>
     <pre v-if="waps"></pre>
   </div>
 </template>
@@ -23,11 +23,6 @@ export default {
     return {
       waps: json,
     };
-  },
-  methods: {
-    emitItemToEdit() {
-      console.log("im emiting");
-    },
   },
 };
 </script>
