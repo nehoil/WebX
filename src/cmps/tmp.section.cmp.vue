@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import webDiv from '@/cmps/sub.cmps/tmp.div.cmp';
+import tmpDiv from '@/cmps/sub.cmps/tmp.div.cmp';
 
 export default {
   name: 'tmp-section',
@@ -13,7 +13,7 @@ export default {
     subCmps: Array
   },
   components: {
-    webDiv
+    tmpDiv
   },
 };
 </script>
