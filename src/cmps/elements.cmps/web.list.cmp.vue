@@ -1,9 +1,9 @@
 <template>
-  <section contenteditable class="web-list" :style="cmpStyle">
-    <span>{{ info.content }}</span>
+  <section contenteditable class="web-list" :style="cmp.style">
+            <span>{{cmp.info.content}}</span>
     <ul>
-      <li v-for="(children, idx) in info.cmps" :key="idx" :element="children">
-        <span>{{ children.content }}</span>
+      <li v-for="(children, idx) in cmp.info.cmps" :key="idx" :element="children">
+        <span>{{children.content}}</span>
       </li>
     </ul>
   </section>
@@ -12,8 +12,7 @@
 <script>
 export default {
   props: {
-    info: Object,
-    cmpStyle: Object,
+    cmp: Object,
   },
   name: "web-list",
   components: {},

@@ -1,14 +1,13 @@
 <template>
-  <section class="web-img" :style="cmpStyle">
-    <img :src="info.content" alt="" />
+  <section class="web-img" :style="cmp.style">
+     <img :src="cmp.info.content" alt="">
   </section>
 </template>
 
 <script>
 export default {
   props: {
-    info: Object,
-    cmpStyle: Object,
+    cmp: Object,
   },
   name: "web-img",
   components: {},

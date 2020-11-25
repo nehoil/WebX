@@ -18,34 +18,38 @@
 </template>
 
 <script>
+import { eventBus } from "@/services/eventbus.service.js";
+
 export default {
   name: "controller-add",
   components: {},
   data() {
-    return {};
+    return {
+      cmpsToShow: null
+    };
   },
   methods: {
-    addCmp(type){
-      switch(type) {
-  case 'header':
-    // code block
-    break;
-  case 'txt':
-    // code block
-    break;
-  case 'img':
-    // code block
-    break;
-  case 'section':
-    // code block
-    break;
-  case 'footer':
-   // code block
-    break;
-  default:
-    // code block
-}
-    }
+    addCmp(type) {
+      switch (type) {
+        case "header":
+          eventBus.$emit('addCmp', type)
+          break;
+        case "txt":
+          eventBus.$emit('addCmp', type)         
+           break;
+        case "img":
+          eventBus.$emit('addCmp', type)         
+           break;
+        case "section":
+          eventBus.$emit('addCmp', type)         
+           break;
+        case "footer":
+          eventBus.$emit('addCmp', type)        
+            break;
+        default:
+        // code block
+      }
+    },
   },
 };
 </script>

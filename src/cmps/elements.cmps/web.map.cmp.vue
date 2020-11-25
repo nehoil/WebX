@@ -1,28 +1,28 @@
 <template>
-  <section contenteditable class="web-map" :style="cmpStyle">
-    <GmapMap
-      :center="{ lat: info.lat, lng: info.lng }"
-      :zoom="7"
-      map-type-id="terrain"
-      style="width: 500px; height: 300px"
-    >
-      <GmapMarker
-        :key="index"
-        v-for="(m, index) in markers"
-        :position="m.position"
-        :clickable="true"
-        :draggable="true"
-        @click="center = m.position"
-      />
-    </GmapMap>
+  <section contenteditable class="web-map" :style="cmp.style">
+     <GmapMap
+  :center="{lat:cmp.info.lat, lng:cmp.info.lng}"
+  :zoom="7"
+  map-type-id="terrain"
+  style="width: 500px; height: 300px"
+>
+  <GmapMarker
+    :key="index"
+    v-for="(m, index) in markers"
+    :position="m.position"
+    :clickable="true"
+    :draggable="true"
+    @click="center=m.position"
+  />
+</GmapMap>
+
   </section>
 </template>
 
 <script>
 export default {
   props: {
-    info: Object,
-    cmpStyle: Object,
+    cmp: Object,
   },
   data() {
     return {

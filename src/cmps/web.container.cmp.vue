@@ -1,12 +1,13 @@
 <template>
-  <section v-if="info.cmps" class="web-container">
+  <section v-if="cmp.info.cmps" class="web-container">
     <component
-      v-for="(cmp, idx) in info.cmps"
+      v-for="(cmp, idx) in cmp.info.cmps"
       :is="cmp.type"
       :key="idx"
       :info="cmp.info"
       :cmpStyle="cmp.style"
       @click.native="setEditItem(cmp)"
+      :cmp="cmp"
     ></component>
   </section>
 </template>
@@ -23,7 +24,7 @@ import webList from "@/cmps/elements.cmps/web.list.cmp";
 export default {
   name: "web-container",
   props: {
-    info: Object,
+    cmp: Object,
   },
   components: {
     webTxt,

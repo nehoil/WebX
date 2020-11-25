@@ -1,7 +1,14 @@
+export const webStore = {
+    state: {},
+    getters: {
 
-export const webStore ={
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
+    },
+    mutations: {
+        addCmp(state, { type }) {
+            console.log('im at the web store', type);
+
+        }
+    },
+    actions: {},
+    modules: {}
 };

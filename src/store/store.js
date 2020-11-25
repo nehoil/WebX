@@ -5,11 +5,11 @@ Vue.use(Vuex);
 import { webStore } from './web.store.js';
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  getters: {},
-  modules: {
-    webStore
-  }
+    state: {},
+    mutations: {},
+    actions: {},
+    getters: {},
+    modules: {
+        webStore,
+    }
 });
