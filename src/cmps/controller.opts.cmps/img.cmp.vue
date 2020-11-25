@@ -12,7 +12,14 @@
 
 <template>
   <div class="edit-img">
-    <p>I'm img editor!!!</p>
+    <button>Radius</button>
+    <button>border</button>
+    <button>boxShadow</button>
+    <button>width</button>
+    <button>height</button>
+    <button>margin</button>
+    <button>padding</button>
+    <button>change img</button>
   </div>
 </template>
 

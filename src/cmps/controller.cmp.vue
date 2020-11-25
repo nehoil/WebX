@@ -7,14 +7,13 @@
         Edit
       </button>
     </nav>
-    <component :is="addOrEdit"></component>
+    <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     <footer>undo | save | publish</footer>
   </section>
 </template>
 <script>
 import add from "@/cmps/controller.opts.cmps/add.cmp";
 import edit from "@/cmps/controller.opts.cmps/edit.cmp";
-// :itemToEdit="itemToEdit"
 export default {
   name: "controller",
   components: {
@@ -22,11 +21,12 @@ export default {
     edit,
   },
   props: {
-    // itemToEdit: String,
+    itemToEdit: String,
   },
   data() {
     return {
       addOrEdit: null,
+      cmpToEdit: null,
     };
   },
   created() {
