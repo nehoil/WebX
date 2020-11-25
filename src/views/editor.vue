@@ -1,35 +1,22 @@
 <template>
-  <div class="home">
-    <component v-for="(cmp, idx) in waps[0].cmps" :is="cmp.type" :subCmps="cmp.subCmps" :key="idx"></component>
- <pre v-if="waps">
-   <!-- {{waps[0].cmps[1].subCmps[0]}} -->
-   <!-- {{waps[0].cmps[0].subCmps[0].type}} -->
- </pre>
+  <div class="editor">
+    <work-space />
+    <!-- <controller/> -->
   </div>
 </template>
 
 <script>
 import json from '@/data/wap.json';
-import webSection from '@/cmps/web.section.cmp';
+import workSpace from '@/cmps/workspace.cmp';
+// import controller from '@/cmps/controller.cmp';
 export default {
-  name: 'Home',
+  name: 'editor',
   components: {
-    webSection,
+    workSpace,
   },
   data() {
     return {
       waps: json,
-      // cmps: [
-      //   {
-      //     type: 'web-section',
-      //     subCmps: [{
-      //       type: 'web-div',
-      //       elements: [{
-      //         type: 'web-txt'
-      //       }]
-      //     }],
-      //   },
-      // ],
     };
   },
 };

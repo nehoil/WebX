@@ -1,7 +1,23 @@
+<template>
+  <div class="home">
+    <component v-for="(cmp, idx) in waps[0].cmps" :is="cmp.type" :info="cmp.info" :key="idx"></component>
+ <pre v-if="waps">
+ </pre>
+  </div>
+</template>
 
 <script>
-// here the deep copy of the template will be shown, ready to edit
-// template will arrive as a prop
-// after choosing from the list
-// this component will be rendered in the editor.vue page - next to the controller
+import json from '@/data/wap2.json';
+import webContainer from '@/cmps/web.container.cmp';
+export default {
+  name: 'work-space',
+  components: {
+    webContainer
+  },
+  data() {
+    return {
+      waps: json,
+    };
+  },
+};
 </script>
