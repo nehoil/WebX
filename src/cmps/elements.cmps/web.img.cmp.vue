@@ -1,6 +1,6 @@
 <template>
-  <section class="web-img" :stlye="element.style">
-     <img src="element.content" alt="">
+  <section class="web-img" :stlye="cmpStyle">
+     <img :src="info.content" alt="">
   </section>
 </template>
 
@@ -8,7 +8,8 @@
 
 export default {
   props: {
-    element: Object
+    info: Object,
+    cmpStyle: Object,
   },
   name: 'web-img',
   components: {},

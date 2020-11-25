@@ -1,5 +1,5 @@
 <template>
-  <section class="web-map" :stlye="cmpStyle">
+  <section contenteditable class="web-map" :stlye="cmpStyle">
      <GmapMap
   :center="{lat:info.lat, lng:info.lng}"
   :zoom="7"

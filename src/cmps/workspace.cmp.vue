@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import json from '@/data/wap2.json';
+import json from '@/data/wap.json';
 import webContainer from '@/cmps/web.container.cmp';
 export default {
   name: 'work-space',
