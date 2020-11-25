@@ -1,5 +1,9 @@
 <template>
-  <div class="home">
+  
+  <div class="editor-page">
+    <section class="editor-controller">
+      <button></button>
+    </section>
     <component v-for="(cmp, idx) in waps[0].cmps" :is="cmp.type" :subCmps="cmp.subCmps" :key="idx"></component>
  <!-- <pre v-if="waps">
    {{waps[0].cmps[0].subCmps[0].type}}
