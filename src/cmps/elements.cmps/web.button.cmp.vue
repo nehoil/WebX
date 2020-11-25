@@ -1,7 +1,7 @@
 <template>
-  <section contenteditable class="web-button" :stlye="element.style">
-    <a :href="element.linkTo"></a>
-     <section class="button">{{element.content}}</section>
+  <section contenteditable class="web-button" :stlye="cmpStyle" v-if="info">
+    <a :href="info.linkTo"></a>
+     <section class="button">{{info.content}}</section>
   </section>
 </template>
 
