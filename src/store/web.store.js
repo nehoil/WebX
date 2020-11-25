@@ -1,4 +1,5 @@
 import { templateService } from '@/services/template.service.js'
+import { utilService } from '@/services/util-service.js'
 
 export const webStore = {
     state: {
@@ -26,9 +27,12 @@ export const webStore = {
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-            console.log('store get cmp', cmp);
-
-            state.siteToEdit.cmps.push(cmp[0])
+            cmp.id = utilService.makeId
+            state.state.cmps.push(cmp[0])
+        },
+        removeCmp(state, { id }) {
+            const idx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
+            state.siteToEdit.cmps.splice(idx, 1)
         },
         setCmpsToShow(state, { cmpType }) {
             const cmps = templateService.getCmpsByType(cmpType)

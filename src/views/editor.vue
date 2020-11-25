@@ -30,6 +30,9 @@ export default {
     eventBus.$on('addCmp', (id) => {
       this.$store.commit({ type: 'addCmp', id });
     });
+    eventBus.$on('removeCmp', (id) => {
+      this.$store.commit({ type: 'removeCmp', id });
+    });
     eventBus.$on('setCmpsToShow', (cmpType) => {
       this.$store.commit({ type: 'setCmpsToShow', cmpType });
     });
