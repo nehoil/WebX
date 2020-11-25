@@ -25,10 +25,17 @@ export default {
       itemToEdit: 'webImg',
     };
   },
+  computed: {
+    cmps() {
+      return this.$store.getters.cmps;
+    },
+  },
   created() {
-    this.siteToEdit = this.$store.getters.web;
+    this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     eventBus.$on('addCmp', (id) => {
       this.$store.commit({ type: 'addCmp', id });
+      this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web))
+      this.$forceUpdate();
     });
     eventBus.$on('removeCmp', (id) => {
       this.$store.commit({ type: 'removeCmp', id });
@@ -37,7 +44,7 @@ export default {
       this.$store.commit({ type: 'setCmpsToShow', cmpType });
     });
     eventBus.$on('update-site', () => {
-      // this.$store.commit(type: {});
+      this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
     });
   },
 };

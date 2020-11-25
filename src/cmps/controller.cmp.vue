@@ -30,7 +30,15 @@ export default {
     };
   },
   created() {
-    // console.log(itemToEdit);
   },
 };
 </script>
+<style scoped>
+.controller {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 1rem;
+  padding: 20px;
+}
+</style>

@@ -24,7 +24,7 @@ export default {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
       eventBus.$emit('update-site');
-      eventBus.$emit('openEditor');
+      // eventBus.$emit('openEditor');
     },
     openEdit() {
       // eventBus.$emit('edit-cmp', this.info);

@@ -1,5 +1,5 @@
 <template>
-  <section class="web-form" :stlye="cmp.style">
+  <section class="web-form" :style="cmp.style">
      <form v-if="mail">
        <input type="email" v-model="mail.email" placeholder="Your Email">
        <input type="text" v-model="mail.fullName" placeholder="Your full name">
