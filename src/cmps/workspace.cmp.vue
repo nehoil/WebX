@@ -1,6 +1,5 @@
 <template>
   <div class="workspace">
-    <container @click="emitItemToEdit">
     <component
       v-for="(cmp, idx) in waps[0].cmps"
       :is="cmp.type"
