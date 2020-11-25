@@ -1,4 +1,4 @@
-import templateService from '@/services/template.service.js'
+import { templateService } from '@/services/template.service.js'
 
 export const webStore = {
     state: {
@@ -16,17 +16,19 @@ export const webStore = {
         cmpsToShow: null
     },
     getters: {
-        cmps(state){
+        cmps(state) {
             return state.cmpsToShow
         },
-        web(state){
+        web(state) {
             return state.siteToEdit
         }
     },
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-            state.siteToEdit.cmps.push(cmp)
+            console.log('store get cmp', cmp);
+
+            state.siteToEdit.cmps.push(cmp[0])
         },
         setCmpsToShow(state, { cmpType }) {
             const cmps = templateService.getCmpsByType(cmpType)
