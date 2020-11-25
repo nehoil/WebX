@@ -7,14 +7,14 @@
 </script>
 
 <template>
-  <div class="workspace">
-    <p>I'm a workspace</p>
+  <div class="controller-add">
+    <p>I'm add</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "workspace",
+  name: "controller-add",
   components: {},
   data() {
     return {};
