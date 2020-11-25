@@ -1,11 +1,13 @@
 <template>
-  <div class="home">
+  <div class="workspace">
+    <container @click="emitItemToEdit">
     <component
       v-for="(cmp, idx) in waps[0].cmps"
       :is="cmp.type"
       :info="cmp.info"
       :key="idx"
-    ></component>
+    >
+  </component>
     <pre v-if="waps"></pre>
   </div>
 </template>
@@ -22,6 +24,11 @@ export default {
     return {
       waps: json,
     };
+  },
+  methods: {
+    emitItemToEdit() {
+      console.log("im emiting");
+    },
   },
 };
 </script>
