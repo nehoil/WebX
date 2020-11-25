@@ -1,14 +1,39 @@
+import templateService from '@/services/template.service.js'
+
 export const webStore = {
-    state: {},
-    getters: {
-
+    state: {
+        siteToEdit: {
+            _id: null,
+            name: null,
+            previewImg: null,
+            createdBy: {
+                _id: null,
+                username: null,
+                userPicture: null
+            },
+            cmps: []
+        },
+        cmpsToShow: null
     },
-    mutations: {
-        addCmp(state, { type }) {
-            console.log('im at the web store', type);
-
+    getters: {
+        cmps(state){
+            return state.cmpsToShow
+        },
+        web(state){
+            return state.siteToEdit
         }
     },
-    actions: {},
-    modules: {}
+    mutations: {
+        addCmp(state, { id }) {
+            const cmp = templateService.getCmpById(id)
+            state.siteToEdit.cmps.push(cmp)
+        },
+        setCmpsToShow(state, { cmpType }) {
+            const cmps = templateService.getCmpsByType(cmpType)
+            state.cmpsToShow = cmps
+        }
+    },
+    actions: {
+
+    }
 };

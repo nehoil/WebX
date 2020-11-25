@@ -1,5 +1,6 @@
 <template>
   <section contenteditable class="web-list" :stlye="cmp.style">
+    {{cmp.info}}
             <span>{{cmp.info.content}}</span>
     <ul>
       <li v-for="(children, idx) in cmp.info.cmps" :key="idx" :element="children">

@@ -1,34 +1,37 @@
-import io from 'socket.io-client';
-const BASE_URL = process.env.NODE_ENV === 'production'
-? '/'
-: '//localhost:3030' 
-var socket;
+const gTemplates = []
+const gCmps = []
 
-export const socketService = {
-    setup,
-    terminate,
-    on,
-    off,
-    emit    
+export const templateService = {
+    getEmptyTemplate,
+    getCmpsByType,
+    getTemplateById,
+    getCmpById
 }
 
-function setup() {
-    socket = io(BASE_URL);
+function getEmptyTemplate() {
+    return {
+        _id: null,
+        name: null,
+        previewImg: null,
+        createdBy: {
+            _id: null,
+            username: null,
+            userPicture: null
+        },
+        cmps: []
+    }
 }
 
-function terminate() {
-    socket = null;
+
+function getCmpsByType(type) {
+    return gCmps.filter(cmps => cmps.type === type)
 }
 
-function on(eventName, cb) {
-    socket.on(eventName, cb)
+function getTemplateById(id) {
+    return gTemplates.filter(template => template.id === id)
 }
 
-function off(eventName, cb) {
-    socket.off(eventName, cb)
-}
-
-function emit(eventName, data) {
-    socket.emit(eventName, data)
+function getCmpById(id) {
+    return gCmps.filter(cmp => cmp.id === id)
 }
 
