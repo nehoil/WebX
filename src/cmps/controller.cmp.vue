@@ -1,17 +1,3 @@
-
-<script>
-// header:
-// add || edit
-// calls specific opts as dynamic component - nav=>edit
-// calls add part - nav=> add
-
-// main:
-// renders dynamically
-
-// footer:
-// undo button, save button, download/publish button
-</script>
-
 <template>
   <section class="controller">
     <nav>
@@ -28,18 +14,23 @@
 <script>
 import add from "@/cmps/controller.opts.cmps/add.cmp";
 import edit from "@/cmps/controller.opts.cmps/edit.cmp";
-
+// :itemToEdit="itemToEdit"
 export default {
   name: "controller",
   components: {
     add,
     edit,
   },
+  props: {
+    // itemToEdit: String,
+  },
   data() {
     return {
-      itemToEdit: null,
       addOrEdit: null,
     };
+  },
+  created() {
+    // console.log(itemToEdit);
   },
 };
 </script>
