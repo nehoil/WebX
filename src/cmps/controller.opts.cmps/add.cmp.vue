@@ -9,6 +9,11 @@
 <template>
   <div class="controller-add">
     <p>I'm add</p>
+    <button @click="addCmp('header')">Header</button>
+    <button @click="addCmp('txt')">Txt</button>
+    <button @click="addCmp('img')">Img</button>
+    <button @click="addCmp('section')">Section</button>
+    <button @click="addCmp('footer')">Footer</button>
   </div>
 </template>
 
@@ -18,6 +23,29 @@ export default {
   components: {},
   data() {
     return {};
+  },
+  methods: {
+    addCmp(type){
+      switch(type) {
+  case 'header':
+    // code block
+    break;
+  case 'txt':
+    // code block
+    break;
+  case 'img':
+    // code block
+    break;
+  case 'section':
+    // code block
+    break;
+  case 'footer':
+   // code block
+    break;
+  default:
+    // code block
+}
+    }
   },
 };
 </script>

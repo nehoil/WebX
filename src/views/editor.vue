@@ -1,7 +1,7 @@
 <template>
   <div class="editor">
-    <work-space />
     <controller :itemToEdit="itemToEdit" />
+    <work-space />
   </div>
 </template>
 
