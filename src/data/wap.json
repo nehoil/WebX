@@ -9,33 +9,33 @@
 			"userPicture": ""
 		},
 		"cmps": [
-			{
-				"id": "wc01",
-				"type": "web-txt",
-				"info": {
-					"content": "This is a sample text"
-				},
-				"style": {
-					"fontFamily": "unset",
-					"fontSize": "2rem",
-					"fontWeight": "unset",
-					"lineHeight": "unset",
-					"letterSpacing": "unset",
-					"textAlign": "unset",
-					"margin": "unset",
-					"padding": "unset",
-					"textTransform": "unset",
-					"textShadow": "unset",
-					"color": "unset"
-				}
-			},
+
 			{
 				"id": "wc02",
 				"type": "wap-container",
 				"info": {
 					"dir": "column",
 					"cmps": [
-						{},
+						{
+							"id": "wc01",
+							"type": "web-txt",
+							"info": {
+								"content": "This is a sample text"
+							},
+							"style": {
+								"fontFamily": "unset",
+								"fontSize": "2rem",
+								"fontWeight": "unset",
+								"lineHeight": "unset",
+								"letterSpacing": "unset",
+								"textAlign": "unset",
+								"margin": "unset",
+								"padding": "unset",
+								"textTransform": "unset",
+								"textShadow": "unset",
+								"color": "unset"
+							}
+						},
 						{}
 					]
 				},
@@ -44,42 +44,106 @@
 				}
 			},
 			{
-				"id": "wc03",
-				"type": "web-button",
+				"id": "wc02",
+				"type": "wap-container",
 				"info": {
-					"content": "This is a sample text",
-					"linkTo": ""
+					"dir": "column",
+					"cmps": [
+						{
+							"id": "wc01",
+							"type": "web-txt",
+							"info": {
+								"content": "This is a sample text"
+							},
+							"style": {
+								"fontFamily": "unset",
+								"fontSize": "2rem",
+								"fontWeight": "unset",
+								"lineHeight": "unset",
+								"letterSpacing": "unset",
+								"textAlign": "unset",
+								"margin": "unset",
+								"padding": "unset",
+								"textTransform": "unset",
+								"textShadow": "unset",
+								"color": "unset"
+							}
+						},
+						{
+							"id": "wc03",
+							"type": "web-button",
+							"info": {
+								"content": "This is a sample text",
+								"linkTo": ""
+							},
+							"style": {
+								"fontFamily": "unset",
+								"fontSize": "unset",
+								"fontWeight": "unset",
+								"letterSpacing": "unset",
+								"margin": "unset",
+								"padding": "unset",
+								"textTransform": "unset",
+								"color": "unset",
+								"backgroundColor": "unset",
+								"borderShadow": "unset",
+								"border": "unset",
+								"borderRadius": "unset",
+								"width": "unset",
+								"height": "unset"
+							}
+						}
+					]
 				},
 				"style": {
-					"fontFamily": "unset",
-					"fontSize": "unset",
-					"fontWeight": "unset",
-					"letterSpacing": "unset",
-					"margin": "unset",
-					"padding": "unset",
-					"textTransform": "unset",
-					"color": "unset",
-					"backgroundColor": "unset",
-					"borderShadow": "unset",
-					"border": "unset",
-					"borderRadius": "unset",
-					"width": "unset",
-					"height": "unset"
+					"padding": "10px"
 				}
 			},
 			{
-				"id": "wc04",
-				"type": "web-map",
+				"id": "wc02",
+				"type": "wap-container",
 				"info": {
-					"title": "",
-					"lat": 46332,
-					"lng": 63464,
-					"zoom": 2,
-					"address": "Paris"
+					"dir": "column",
+					"cmps": [
+						{
+							"id": "wc01",
+							"type": "web-txt",
+							"info": {
+								"content": "This is a sample text"
+							},
+							"style": {
+								"fontFamily": "unset",
+								"fontSize": "2rem",
+								"fontWeight": "unset",
+								"lineHeight": "unset",
+								"letterSpacing": "unset",
+								"textAlign": "unset",
+								"margin": "unset",
+								"padding": "unset",
+								"textTransform": "unset",
+								"textShadow": "unset",
+								"color": "unset"
+							}
+						},
+						{
+							"id": "wc04",
+							"type": "web-map",
+							"info": {
+								"title": "",
+								"lat": 46332,
+								"lng": 63464,
+								"zoom": 2,
+								"address": "Paris"
+							},
+							"style": {
+								"width": "100%",
+								"height": "100%"
+							}
+						}
+					]
 				},
 				"style": {
-					"width": "100%",
-					"height": "100%"
+					"padding": "10px"
 				}
 			},
 			{

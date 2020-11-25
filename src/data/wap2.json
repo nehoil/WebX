@@ -1,0 +1,39 @@
+[{
+	"_id": "5e28393890dd7201a06d4e44",
+	"name": "New Wap!",
+	"previewImg": "http://res.cloudinary.com/webify/image/upload/v1580021948/coffe_yi0yzf.png",
+	"createdBy": {
+		"_id": "5e26e0b718a0891d4c995527",
+		"username": "eni"
+	},
+	"cmps": [
+		{
+			"id": "wc02",
+			"type": "web-container",
+			"info": {
+				"dir": "column",
+				"cmps": [
+					{
+						"id": "wc01",
+						"type": "web-map",
+						"info": {
+							"name": "Paris",
+							"lat": 12.909,
+							"lng": 23.9,
+							"zoom": 2
+						},
+						"style": {
+							"backgroundColor": "#f53b76",
+							"height": "300px",
+							"padding": "10px"
+						}
+					},
+					{}
+				]
+			},
+			"style": {
+				"padding": "10px"
+			}
+		}
+	]
+}]
