@@ -1,38 +1,24 @@
 <template>
-  
-  <div class="editor-page">
-    <section class="editor-controller">
-      <button></button>
-    </section>
-    <component v-for="(cmp, idx) in waps[0].cmps" :is="cmp.type" :subCmps="cmp.subCmps" :key="idx"></component>
- <!-- <pre v-if="waps">
-   {{waps[0].cmps[0].subCmps[0].type}}
- </pre> -->
+  <div class="editor">
+    <work-space />
+    <controller :itemToEdit="itemToEdit" />
   </div>
 </template>
 
 <script>
-import json from '../services/wap.json';
-import tmpSection from '@/cmps/tmp.section.cmp';
+import json from "@/data/wap.json";
+import workSpace from "@/cmps/workspace.cmp";
+import controller from "@/cmps/controller.cmp";
 export default {
-  name: 'Home',
+  name: "editor",
   components: {
-    tmpSection,
+    workSpace,
+    controller,
   },
   data() {
     return {
       waps: json,
-      // cmps: [
-      //   {
-      //     type: 'web-section',
-      //     subCmps: [{
-      //       type: 'web-div',
-      //       elements: [{
-      //         type: 'web-txt'
-      //       }]
-      //     }],
-      //   },
-      // ],
+      itemToEdit: "webImg",
     };
   },
 };

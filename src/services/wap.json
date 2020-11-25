@@ -9,17 +9,17 @@
 	"cmps": [
 		{
 			"id": "wc01",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#f53b76",
 				"height": "300px",
 				"padding": "10px"
 			},
 			"subCmps":[{
-				"type": "tmp-div",
+				"type": "web-div",
 				"style": {},
 				"elements": [{
-					"type": "tmp-txt",
+					"type": "web-txt",
 					"content": "This is a sample text",
 					"style": {
 						"fontFamily": "unset",
@@ -39,17 +39,17 @@
 		},
 		{
 			"id": "wc01",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#f53b76",
 				"height": "300px",
 				"padding": "10px"
 			},
 			"subCmps":[{
-				"type": "tmp-div",
+				"type": "web-div",
 				"style": {},
 				"elements": [{
-					"type": "tmp-txt",
+					"type": "web-txt",
 					"content": "This is a sample text",
 					"style": {
 						"fontFamily": "unset",
@@ -69,21 +69,21 @@
 		},
 		{
 			"id": "wc01",
-			"type": "tmp-section",
+			"type": "web-section",
 			"style": {
 				"backgroundColor": "#f53b76",
 				"height": "300px",
 				"padding": "10px"
 			},
 			"subCmps":[{
-				"type": "tmp-div",
+				"type": "web-div",
 				"style": {
 					"display": "flex",
 					"backgroundColor": "blue"
 				},
 				"elements": [{
 					"content": "The map goes here:",
-					"type": "tmp-map",
+					"type": "web-map",
 					"info": {
 						"lat": 48.8587741,
 						"lng": 2.2069771,

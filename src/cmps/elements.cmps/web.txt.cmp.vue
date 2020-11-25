@@ -1,6 +1,6 @@
 <template>
-  <span class="web-txt" contenteditable :style="element.style">
-     <pre> {{element.content}}</pre>
+  <span class="web-txt" contenteditable :style="cmpStyle">
+     <pre> {{info.content}}</pre>
       <!-- <pre>      {{element}}
  </pre> -->
      <!-- <pre> {{element.style}}</pre> -->
@@ -11,7 +11,8 @@
 
 export default {
   props: {
-    element: Object
+    info: Object,
+    cmpStyle: Object,
   },
   name: 'web-txt',
   components: {},
