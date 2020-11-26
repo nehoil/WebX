@@ -8,15 +8,12 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import "./styles/styles.scss";
 Vue.use(ElementUI);
-
-
 Vue.use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyCkBmq94RUL-VNdku46pXE3nt-_Z01Damo',
         libraries: 'places',
     },
 })
-
 
 Vue.config.productionTip = false;
 

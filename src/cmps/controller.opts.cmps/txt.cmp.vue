@@ -6,10 +6,16 @@
      </div>
     <button>font</button>
     <button>align</button>
-    <button @click="toggleBold">Bold</button>
-    <button @click="toggleItalic">Italic</button>
-    <button @click="toggleUnderline">Underline</button>
-    <button>textShadow</button>
+    <button @click="toggleBold">B</button>
+    <button @click="toggleItalic">I</button>
+    <button @click="toggleUnderline">U</button>
+    <p>Text Shadow</p>
+         <el-select v-model="textShadow" @change="setTextShadow" placeholder="Select">
+    <el-option value="None">None</el-option>
+    <el-option value="Light">Light</el-option>
+    <el-option value="Medium">Medium</el-option>
+    <el-option value="Strong">Strong</el-option>
+  </el-select>
   <div>
   <p>Color</p>
     <el-color-picker @active-change="setColor" v-model="cmp.style.color"></el-color-picker>
@@ -41,7 +47,8 @@ export default {
     return {
       fontSize: null,
       lineHeight: null,
-      letterSpacing: null
+      letterSpacing: null,
+      textShadow: null,
     };
   },
   created() {
@@ -56,6 +63,24 @@ export default {
       this.cmp.style.backgroundColor = bgcColor
             eventBus.$emit('update-site');
     },
+       setTextShadow(strength) {
+ switch (strength) {
+        case 'None':
+           this.cmp.style.textShadow = 'unset'
+            break;
+        case 'Light':
+           this.cmp.style.textShadow = '1px 1px 2px #d1c9ca'
+            break;
+        case 'Medium':
+           this.cmp.style.textShadow = '3px 2px 3px #b7b0b1'
+            break;
+        case 'Strong':
+            this.cmp.style.textShadow = '5px 5px 3px #b7b0b1'
+            break;
+ }
+      eventBus.$emit('update-site');
+      return this.cmp.style.textShadow
+   },
     setFontSize(size) {
        this.fontSize = size
       this.cmp.style.fontSize = (size/16)+"rem"

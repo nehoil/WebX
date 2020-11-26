@@ -54,11 +54,9 @@ export default {
   },
   methods: {
     setEditItem(cmp) {
-      console.log('setting item to edit on editor, cmp type:', cmp.type);
-      this.cmp = cmp
-      this.$nextTick(()=>{
+      this.cmp = cmp;
       this.itemToEdit = cmp.type;
-      })
+      
     },
     setMargin(size) {
       this.margin = size;
@@ -70,6 +68,6 @@ export default {
       this.cmp.style.padding = size / 16 + 'rem';
       this.padding = null;
     },
-  },
-};
+  }
+}
 </script>
