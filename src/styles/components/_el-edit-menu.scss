@@ -1,0 +1,17 @@
+.el-edit-menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    & ul {
+        margin: 0;
+        background-color: #fff;
+        display: flex;
+        & i {
+            padding: 6px;
+            cursor: pointer;
+        }
+    }
+}
