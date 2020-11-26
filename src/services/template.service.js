@@ -3,7 +3,7 @@ const gCmps = [{
         type: "web-container",
         name: "header",
         id: "head001",
-        class: "",
+        class: "web-header-1",
         info: {
             dir: "column",
             cmps: [{
@@ -105,7 +105,7 @@ const gCmps = [{
         type: "web-container",
         name: "text",
         id: "txt001",
-        class: "",
+        class: "web-txt-1",
         info: {
             dir: "column",
             cmps: [{
@@ -139,7 +139,7 @@ const gCmps = [{
         type: "web-container",
         name: "text",
         id: "txt002",
-        class: "",
+        class: "web-txt-2",
         info: {
             dir: "column",
             cmps: [{
@@ -172,7 +172,7 @@ const gCmps = [{
         type: "web-container",
         name: "text",
         id: "txt003",
-        class: "",
+        class: "web-txt-3",
         info: {
             dir: "column",
             cmps: [{
@@ -229,7 +229,7 @@ const gCmps = [{
         type: "web-container",
         name: "text",
         id: "txt004",
-        class: "",
+        class: "web-txt-3",
         info: {
             dir: "column",
             cmps: [{
@@ -309,7 +309,7 @@ const gCmps = [{
         type: "web-container",
         name: "video",
         id: "vid001",
-        class: "",
+        class: "web-video-1",
         info: {
             dir: "column",
             cmps: [{
@@ -354,7 +354,7 @@ const gCmps = [{
         type: "web-container",
         name: "video",
         id: "vid002",
-        class: "",
+        class: "web-video-1",
         info: {
             dir: "column",
             cmps: [{
@@ -423,7 +423,7 @@ const gCmps = [{
         type: "web-container",
         name: "image",
         id: "img001",
-        class: "",
+        class: "web-img-1",
         info: {
             dir: "column",
             cmps: [{
@@ -455,6 +455,7 @@ const gCmps = [{
         id: "map001",
         type: "web-container",
         name: "map",
+        class: "web-map-1",
         info: {
             dir: "column",
             cmps: [{
@@ -505,7 +506,7 @@ const gCmps = [{
         type: "web-container",
         name: "form",
         id: "form001",
-        class: "",
+        class: "web-form-1",
         info: {
             dir: "column",
             cmps: [{
