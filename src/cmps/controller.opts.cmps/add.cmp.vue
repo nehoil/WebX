@@ -7,7 +7,6 @@
 </script>
 
 <template>
-<<<<<<< HEAD
 <section>
   <div class="controller-add">
     <p>I'm add</p>
@@ -21,19 +20,6 @@
     <button @click="setCmpsToShow('form')">Form</button>
     <button @click="setCmpsToShow('card')">Card</button>
   </div>
-=======
-  <section>
-    <div class="controller-add flex space wrap center">
-      <button @click="setCmpsToShow('text')">Txt</button>
-      <button @click="setCmpsToShow('map')">Map</button>
-      <button @click="setCmpsToShow('header')">Header</button>
-      <button @click="setCmpsToShow('image')">Img</button>
-      <button @click="setCmpsToShow('section')">Section</button>
-      <button @click="setCmpsToShow('footer')">Footer</button>
-      <button @click="setCmpsToShow('video')">Video</button>
-      <button @click="setCmpsToShow('form')">form</button>
-    </div>
->>>>>>> ff29132af5c0f21f1a142a1b179e44a5717d31ee
 
     <section class="cmpsExamples" v-if="cmps">
       <div v-for="cmp in cmps" :key="cmp.id">
