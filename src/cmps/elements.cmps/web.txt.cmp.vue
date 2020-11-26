@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
+import { eventBus } from "@/services/eventbus.service.js";
 export default {
   data() {
     return {
@@ -24,7 +24,7 @@ export default {
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit('update-site');
+      eventBus.$emit("update-site");
       // eventBus.$emit('openEditor');
     },
     openEdit() {
@@ -32,14 +32,14 @@ export default {
       // eventBus.$emit('open-edit', this.cmp.type);
     },
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
         // console.log('setting item!, txt', this.cmp);
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },
-  name: 'web-txt',
+  name: "web-txt",
   components: {},
 };
 </script>

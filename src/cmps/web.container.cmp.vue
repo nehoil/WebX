@@ -1,5 +1,5 @@
 <template>
-  <section v-if="cmp.info.cmps" class="web-container">
+  <section v-if="cmp.info.cmps" @click.self="setEditItem" class="web-container">
     <component
       v-for="(cmp, idx) in cmp.info.cmps"
       :is="cmp.type"
@@ -21,6 +21,7 @@ import webImg from "@/cmps/elements.cmps/web.img.cmp";
 import webForm from "@/cmps/elements.cmps/web.form.cmp";
 import webButton from "@/cmps/elements.cmps/web.button.cmp";
 import webList from "@/cmps/elements.cmps/web.list.cmp";
+// import webCard from "@/cmps/elements.cmps/web.card.cmp";
 export default {
   name: "web-container",
   props: {
@@ -36,8 +37,14 @@ export default {
     webVideo,
   },
   methods: {
+    setEditItem() {
+      eventBus.$emit("openEditor", this.cmp);
+      this.$nextTick(() => {
+        eventBus.$emit("setItem", this.cmp);
+      });
+    },
     removeCmp(cmpId) {
-      eventBus.$emit("removeCmp", cmpId)
+      eventBus.$emit("removeCmp", cmpId);
     },
   },
 };

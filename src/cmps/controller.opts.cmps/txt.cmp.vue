@@ -9,20 +9,13 @@
         @input="setFontSize"
       ></el-slider>
     </div>
-    <button>font</button>
-    <el-select v-model="fonts" placeholder="Select Font">
-      <el-option
-        v-for="font in fonts"
-        :key="font.value"
-        :label="font.label"
-        :value="font.value"
-      >
-      </el-option>
-    </el-select>
-    <button>align</button>
-    <button @click="toggleBold">B</button>
-    <button @click="toggleItalic">I</button>
-    <button @click="toggleUnderline">U</button>
+    <select-font :cmp="cmp"></select-font>
+    <div>
+      <button>align</button>
+      <button @click="toggleBold">B</button>
+      <button @click="toggleItalic">I</button>
+      <button @click="toggleUnderline">U</button>
+    </div>
     <p>Text Shadow</p>
     <el-select
       v-model="textShadow"
@@ -70,41 +63,23 @@
 </template>
 
 <script>
+import selectFont from "./select-font.cmp";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-txt",
   props: {
     cmp: [Object, Array],
   },
-  components: {},
+  components: {
+    selectFont,
+  },
   data() {
     return {
       fontSize: null,
       lineHeight: null,
       letterSpacing: null,
       textShadow: null,
-      fonts: [
-        {
-          value: "abril",
-          label: "Abril",
-        },
-        {
-          value: "almondNougat",
-          label: "Almond Nougat",
-        },
-        {
-          value: "assistantBold",
-          label: "Assistant (Bold)",
-        },
-        {
-          value: "assistantLight",
-          label: "Assistant (Light)",
-        },
-        {
-          value: "caviarDreams",
-          label: "Caviar Dreams",
-        },
-      ],
+      value: "",
     };
   },
   created() {

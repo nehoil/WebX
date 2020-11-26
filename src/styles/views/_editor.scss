@@ -7,6 +7,7 @@ div.editor {
 		padding: 30px;
 		width: 75%;
 		height: 100%;
+		background-color: rgb(226, 226, 226);
 	}
 	.controller {
 		background-color: rgba(241, 241, 241, 0.5);
@@ -30,13 +31,7 @@ div.editor {
 			padding-left: 10px;
 			padding-right: 10px;
 		}
-		// i {
-		// 	margin-right: 5px;
-		// }
-		// button {
-		// 	margin-right: 5px;
-		// }
-		.el-slider {
+		.el-slider, .el-input {
 			width: 70%;
 			margin: 0 auto;
 		}
