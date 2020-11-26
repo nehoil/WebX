@@ -76,8 +76,13 @@ export default {
     };
   },
   created() {
-    this.fontSize = this.cmp.style.fontSize.match(/\d+/g).flat()
-    console.log(this.fontSize);
+    var newFontSize;
+    if ((this.cmp.style.fontSize.match(/\d+/g).flat()).length === 2){
+      newFontSize = this.cmp.style.fontSize.match(/\d+/g).flat().join('.')
+    } else {
+      newFontSize = this.cmp.style.fontSize.match(/\d+/g).flat().join()
+    }
+    this.fontSize = +newFontSize * 16
   },
   methods:{
     setColor(color) {

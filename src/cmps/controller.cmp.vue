@@ -1,14 +1,11 @@
 <template>
-  <section class="controller">
-    <nav>
-      <button @click="addOrEdit = 'add'">Add</button>|<button
-        @click="addOrEdit = 'edit'"
-      >
-        Edit
-      </button>
+  <section class="controller flex space col">
+    <nav class="flex space">
+      <a @click="addOrEdit = 'add'">Add</a>
+      <a @click="addOrEdit = 'edit'">Edit</a>
     </nav>
     <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
-    <footer>undo | save | publish</footer>
+    <footer class="flex space"><a>undo</a> | <a>save</a> | <a>publish</a></footer>
   </section>
 </template>
 <script>
