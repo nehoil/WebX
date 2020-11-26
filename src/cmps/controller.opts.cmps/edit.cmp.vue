@@ -3,14 +3,14 @@
     <p>I'm edit</p>
     <component :is="itemToEdit" :cmp="cmp"></component>
     <div v-if="itemToEdit">
- <p>padding</p>
-  <el-slider :min="1" :max="100" v-model="padding" @input="setPadding"></el-slider>
-   <p>margin</p>
-    <el-slider :min="1" :max="100" v-model="margin" @input="setMargin"></el-slider>
    </div>
   </div>
 </template>
 <script>
+//  <p>padding</p>
+//   <el-slider :min="1" :max="100" v-model="padding" @input="setPadding"></el-slider>
+//    <p>margin</p>
+//     <el-slider :min="1" :max="100" v-model="margin" @input="setMargin"></el-slider>
 import { eventBus } from "../../services/eventbus.service.js";
 import webButton from "./button.cmp";
 import webContainer from "./container.cmp";
@@ -44,7 +44,6 @@ export default {
   },
   methods: {
     setEditItem(cmp) {
-      console.log(cmp);
       this.cmp = cmp
       this.itemToEdit = cmp.type;
     },

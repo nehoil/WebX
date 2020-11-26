@@ -1,7 +1,6 @@
 <template>
   <section contenteditable class="web-button" :style="cmp.style" v-if="cmp">
-    <a :href="cmp.info.linkTo"></a>
-     <section class="button">{{cmp.info.content}}</section>
+    <a :href="cmp.info.linkTo">{{cmp.info.content}}</a>
   </section>
 </template>
 
