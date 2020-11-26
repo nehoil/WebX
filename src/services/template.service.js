@@ -56,7 +56,7 @@ const gCmps = [{
                     id: "gallery001",
                     type: "web-img",
                     info: {
-                        src: "#"
+                        src: "https://i.guim.co.uk/img/media/684c9d087dab923db1ce4057903f03293b07deac/205_132_1915_1150/master/1915.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=14a95b5026c1567b823629ba35c40aa0"
                     },
                     style: {
                         fontFamily: "unset",
@@ -100,9 +100,7 @@ const gCmps = [{
                 },
             ]
         },
-
     },
-
     {
         type: "web-container",
         name: "text",
@@ -168,7 +166,6 @@ const gCmps = [{
                 },
             }, ]
         },
-
 
     },
     {
@@ -313,33 +310,6 @@ const gCmps = [{
     },
     {
         type: "web-container",
-        name: "contact",
-        id: "contact001",
-        class: "",
-        info: {
-            dir: "column",
-            title: "This is a sample title",
-            buttonTxt: "Submit"
-        },
-        style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-            letterSpacing: "unset",
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
-            color: "unset",
-            backgroundColor: "unset",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
-        },
-    },
-    {
-        type: "web-container",
         name: "video",
         id: "vid001",
         class: "",
@@ -349,7 +319,7 @@ const gCmps = [{
                     id: "vid001",
                     type: "web-txt",
                     info: {
-                        content: "This is a P text"
+                        content: "This is a video title"
                     },
                     style: {
                         fontFamily: "unset",
@@ -369,15 +339,15 @@ const gCmps = [{
                     },
                 },
                 {
-                    "id": "wc06",
-                    "type": "web-video",
-                    "info": {
-                        "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-                        "title": "watch this video!"
+                    id: "wc06",
+                    type: "web-video",
+                    info: {
+                        content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                        title: "watch this video!"
                     },
-                    "style": {
-                        "width": "30rem",
-                        "height": "15rem"
+                    style: {
+                        width: "30rem",
+                        height: "15rem"
                     }
                 }
             ]
@@ -385,6 +355,207 @@ const gCmps = [{
 
 
     },
+    {
+        type: "web-container",
+        name: "video",
+        id: "vid002",
+        class: "",
+        info: {
+            dir: "column",
+            cmps: [{
+                    id: "vid001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a video title"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "wc06",
+                    type: "web-video",
+                    info: {
+                        content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                        title: "watch this video!"
+                    },
+                    style: {
+                        width: "30rem",
+                        height: "15rem"
+                    }
+                },
+                {
+                    type: "web-container",
+                    name: "text",
+                    id: "txt002",
+                    class: "",
+                    info: {
+                        dir: "column",
+                        cmps: [{
+                            id: "txt001",
+                            type: "web-txt",
+                            info: {
+                                content: "This is a video p"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "unset",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        }, ]
+                    },
+
+                },
+            ]
+        },
+
+
+    },
+    {
+        type: "web-container",
+        name: "contact",
+        id: "contact001",
+        class: "",
+        info: {
+            cmps: [{
+                id: "btn001",
+                type: "web-btn",
+                info: {
+                    content: "This is a button txt"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "unset",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    height: "unset",
+                },
+            }, ]
+        },
+    },
+    {
+        type: "web-container",
+        name: "contact",
+        id: "contact002",
+        class: "",
+        info: {
+            cmps: [{
+                id: "btn001",
+                type: "web-btn",
+                info: {
+                    content: "This is a button txt"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "unset",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    height: "unset",
+                },
+            }, ]
+        },
+    },
+    {
+        type: "web-container",
+        name: "contact002",
+        id: "btn001",
+        class: "",
+        info: {
+            cmps: [{
+                    id: "btn001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a button  text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "wc06-map",
+                    type: "web-container",
+                    info: {
+                        dir: "column",
+                        cmps: [{
+                                id: "txt001",
+                                type: "web-txt",
+                                info: {
+                                    content: "This is a map"
+                                },
+                            },
+                            {
+                                id: "map001",
+                                type: "web-map",
+                                info: {
+                                    title: "",
+                                    lat: 46332,
+                                    lng: 63464,
+                                    zoom: 2,
+                                    address: "Paris"
+                                },
+                            }
+                        ]
+                    },
+                }
+            ]
+        },
+    }
+
 ]
 
 // {
@@ -607,6 +778,8 @@ function getEmptyTemplate() {
 
 
 function getCmpsByName(name) {
+    console.log(name);
+
     return gCmps.filter(cmps => cmps.name === name)
 }
 
