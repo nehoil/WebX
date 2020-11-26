@@ -16,7 +16,13 @@
     <button>width</button>
     <button>height</button>
     <button>img bgc</button>
-    <button>bgcColor</button>
+    <div>
+      <p>Background Color</p>
+      <el-color-picker
+        @active-change="setBgcColor"
+        v-model="cmp.style.backgroundColor"
+      ></el-color-picker>
+    </div>
     <div>
       <p>padding</p>
       <el-slider
@@ -25,18 +31,12 @@
         v-model="padding"
         @input="setPadding"
       ></el-slider>
-      <p>margin</p>
-      <el-slider
-        :min="1"
-        :max="100"
-        v-model="margin"
-        @input="setMargin"
-      ></el-slider>
     </div>
   </div>
 </template>
 
 <script>
+import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-container",
   props: {
@@ -44,20 +44,21 @@ export default {
   },
   components: {},
   data() {
-    return {};
+    return {
+      padding: null,
+    };
   },
-  created() {
-    console.log(this.cmp);
-  },
+  created() {},
   methods: {
-    setMargin(size) {
-      this.margin = size;
-      this.cmp.style.margin = size / 16 + "rem";
-      this.margin = null;
+    setBgcColor(bgcColor) {
+      this.cmp.style.backgroundColor = bgcColor;
+      eventBus.$emit("update-site");
     },
     setPadding(size) {
+      console.log(this.cmp);
       this.padding = size;
       this.cmp.style.padding = size / 16 + "rem";
+      eventBus.$emit("update-site");
       this.padding = null;
     },
   },
