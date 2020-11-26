@@ -48,11 +48,8 @@ export default {
     webButton,
     webList,
     webVideo,
-<<<<<<< HEAD
-    editMenu
-=======
+    editMenu,
     webCard
->>>>>>> 57dca5e52d4c92ff7e30f91ea41587773a203784
   },
   methods: {
     setEditItem() {
