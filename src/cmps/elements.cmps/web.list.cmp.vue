@@ -1,5 +1,5 @@
 <template>
-  <section contenteditable class="web-list" :style="cmp.style">
+  <section contenteditable class="web-list" :style="cmp.style" @click="setEditItem">
             <span>{{cmp.info.content}}</span>
     <ul>
       <li v-for="(children, idx) in cmp.info.cmps" :key="idx" :element="children">
@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import { eventBus } from '@/services/eventbus.service.js';
+
 export default {
   props: {
     cmp: Object,
@@ -19,7 +21,19 @@ export default {
   data() {
     return {};
   },
-};
+    methods: {
+    onEdit(ev) {
+      this.cmp.info.content = ev.target.innerText;
+      eventBus.$emit('update-site');
+    },
+    setEditItem() {
+      eventBus.$emit('openEditor', this.cmp);
+      this.$nextTick(() => {
+        eventBus.$emit('setItem', this.cmp);
+      });
+    },
+}
+}
 </script>
 <style scoped>
 </style>
