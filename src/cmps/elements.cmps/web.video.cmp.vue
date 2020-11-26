@@ -1,5 +1,10 @@
 <template>
-  <section contenteditable class="web-video" :style="cmp.style" @click="setEditItem">
+  <section
+    contenteditable
+    class="web-video"
+    :style="cmp.style"
+    @click="setEditItem"
+  >
     <iframe
       :src="cmp.info.content"
       class="responsive-iframe"
@@ -9,7 +14,7 @@
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
+import { eventBus } from '@/services/eventbus.service.js';
 
 export default {
   props: {
@@ -20,7 +25,9 @@ export default {
   methods: {
     setEditItem() {
       eventBus.$emit('openEditor', this.cmp);
-      eventBus.$emit('setItem', this.cmp);
+      this.$nextTick(() => {
+        eventBus.$emit('setItem', this.cmp);
+      });
     },
   },
 };
