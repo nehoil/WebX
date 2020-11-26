@@ -38,7 +38,6 @@ export default {
   },
   methods: {
     removeCmp(cmpId) {
-      console.log(cmpId);
       eventBus.$emit("removeCmp", cmpId)
     },
   },
