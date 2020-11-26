@@ -56,7 +56,7 @@ export default {
     setEditItem(cmp) {
       this.cmp = cmp;
       this.itemToEdit = cmp.type;
-      }
+      
     },
     setMargin(size) {
       this.margin = size;
@@ -68,6 +68,6 @@ export default {
       this.cmp.style.padding = size / 16 + 'rem';
       this.padding = null;
     },
-  },
-};
+  }
+}
 </script>

@@ -77,7 +77,7 @@ const gCmps = [{
                 },
                 {
                     id: "button001",
-                    type: "web-txt",
+                    type: "web-button",
                     info: {
                         content: "This is button text"
                     },
