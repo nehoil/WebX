@@ -1,19 +1,23 @@
 <template>
-      <a contenteditable
+  <a
+    contenteditable
     class="web-button"
     :style="cmp.style"
     v-if="cmp"
-    @click="setEditItem" :href="cmp.info.linkTo">{{cmp.info.content}}</a>
+    @click.stop="setEditItem"
+    :href="cmp.info.linkTo"
+    >{{ cmp.info.content }}</a
+  >
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
+import { eventBus } from "@/services/eventbus.service.js";
 
-export default { 
+export default {
   props: {
     cmp: Object,
   },
-  name: 'web-button',
+  name: "web-button",
   data() {
     return {
       isEdit: true,
@@ -22,12 +26,12 @@ export default {
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit('update-site');
+      eventBus.$emit("update-site");
     },
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },

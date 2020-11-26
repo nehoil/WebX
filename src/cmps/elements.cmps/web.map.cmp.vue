@@ -3,11 +3,11 @@
     contenteditable
     class="web-map"
     :style="cmp.style"
-    @click="setEditItem"
+    @click.stop="setEditItem"
   >
     <GmapMap
       :center="{ lat: cmp.info.lat, lng: cmp.info.lng }"
-      :zoom=cmp.info.zoom
+      :zoom="cmp.info.zoom"
       map-type-id="terrain"
       style="width: 500px; height: 300px"
     >
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
+import { eventBus } from "@/services/eventbus.service.js";
 export default {
   props: {
     cmp: Object,
@@ -34,13 +34,13 @@ export default {
       markers: [],
     };
   },
-  name: 'web-map',
+  name: "web-map",
   components: {},
   methods: {
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },

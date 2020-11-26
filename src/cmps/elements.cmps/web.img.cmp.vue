@@ -2,7 +2,7 @@
   <img
     class="web-img"
     :style="cmp.style"
-    @click="setEditItem"
+    @click.stop="setEditItem"
     :src="cmp.info.src"
     alt=""
   />
