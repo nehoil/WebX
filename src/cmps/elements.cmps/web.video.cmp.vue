@@ -3,7 +3,7 @@
     contenteditable
     class="web-video"
     :style="cmp.style"
-    @click="setEditItem"
+    @click.stop="setEditItem"
   >
     <iframe
       :src="cmp.info.content"
@@ -14,19 +14,19 @@
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
+import { eventBus } from "@/services/eventbus.service.js";
 
 export default {
   props: {
     cmp: Object,
   },
-  name: 'web-video',
+  name: "web-video",
   components: {},
   methods: {
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },

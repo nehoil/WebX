@@ -4,7 +4,7 @@
     contenteditable="isEdit"
     :style="cmp.style"
     @blur="onEdit"
-    @click="setEditItem"
+    @click.stop="setEditItem"
   >
     {{ cmp.info.content }}
   </span>

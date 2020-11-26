@@ -11,9 +11,11 @@
 </script>
 <template>
   <div class="edit-container" v-if="cmp">
-    <button>borderRadius</button>
-    <button>border</button>
-    <button>width</button>
+    <div>
+      <el-checkbox v-model="border" @change="toggleBorder"
+        >Set Border</el-checkbox
+      >
+    </div>
     <button>height</button>
     <button>img bgc</button>
     <div>
@@ -24,7 +26,7 @@
       ></el-color-picker>
     </div>
     <div>
-      <p>padding</p>
+      <p>Add Spacing</p>
       <el-slider
         :min="1"
         :max="100"
@@ -46,10 +48,17 @@ export default {
   data() {
     return {
       padding: null,
+      border: null,
     };
   },
   created() {},
   methods: {
+    toggleBorder() {
+      if (this.cmp.style.border === "unset")
+        this.cmp.style.border = "1px solid gray";
+      else this.cmp.style.border = "unset";
+      eventBus.$emit("update-site");
+    },
     setBgcColor(bgcColor) {
       this.cmp.style.backgroundColor = bgcColor;
       eventBus.$emit("update-site");

@@ -1,8 +1,3 @@
-
-<script>
-// allows control in:
-// * changing youtube link(we can add youtube api)
-</script>
 <template>
   <div class="edit-video">
     {{ cmp.info.content }}
@@ -16,6 +11,8 @@
 </template>
 
 <script>
+import { eventBus } from "@/services/eventbus.service.js";
+
 export default {
   name: 'edit-video',
   components: {},
