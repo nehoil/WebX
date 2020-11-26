@@ -1,6 +1,6 @@
 <template>
-  <section class="web-img" :style="cmp.style" @click="setEditItem">
-    <img :src="cmp.info.src" alt="" />
+  <section>
+    <img  class="web-img" :style="cmp.style" @click="setEditItem" :src="cmp.info.src" alt="" />
   </section>
 </template>
 

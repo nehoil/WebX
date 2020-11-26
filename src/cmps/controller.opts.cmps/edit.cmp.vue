@@ -56,6 +56,7 @@ export default {
     setEditItem(cmp) {
       this.cmp = cmp;
       this.itemToEdit = cmp.type;
+      
     },
     setMargin(size) {
       this.margin = size;
