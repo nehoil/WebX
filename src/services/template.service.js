@@ -6,100 +6,101 @@ const gCmps = [{
         class: "",
         info: {
             dir: "column",
+            cmps: [{
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a sample H1 text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "txt002",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a P text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "gallery001",
+                    type: "web-img",
+                    info: {
+                        src: "#"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is button text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+            ]
         },
-        cmps: [{
-                id: "txt001",
-                type: "web-txt",
-                info: {
-                    content: "This is a sample H1 text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: "txt002",
-                type: "web-txt",
-                info: {
-                    content: "This is a P text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: "gallery001",
-                type: "web-img",
-                info: {
-                    src: "#"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: "button001",
-                type: "web-txt",
-                info: {
-                    content: "This is button text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-        ]
+
     },
 
     {
@@ -109,30 +110,31 @@ const gCmps = [{
         class: "",
         info: {
             dir: "column",
+            cmps: [{
+                id: "txt001",
+                type: "web-txt",
+                info: {
+                    content: "This is a sample H1 text"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "unset",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    height: "unset",
+                },
+            }, ]
         },
-        cmps: [{
-            id: "txt001",
-            type: "web-txt",
-            info: {
-                content: "This is a sample H1 text"
-            },
-            style: {
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-                letterSpacing: "unset",
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
-                color: "unset",
-                backgroundColor: "unset",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
-            },
-        }, ]
+
 
     },
     {
@@ -142,30 +144,31 @@ const gCmps = [{
         class: "",
         info: {
             dir: "column",
+            cmps: [{
+                id: "txt001",
+                type: "web-txt",
+                info: {
+                    content: "This is a P text"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "unset",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    height: "unset",
+                },
+            }, ]
         },
-        cmps: [{
-            id: "txt001",
-            type: "web-txt",
-            info: {
-                content: "This is a P text"
-            },
-            style: {
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-                letterSpacing: "unset",
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
-                color: "unset",
-                backgroundColor: "unset",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
-            },
-        }, ]
+
 
     },
     {
@@ -175,55 +178,56 @@ const gCmps = [{
         class: "",
         info: {
             dir: "column",
-        },
-        cmps: [{
-                id: "txt001",
-                type: "web-txt",
-                info: {
-                    content: "This is a sample H1 text"
+            cmps: [{
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a sample H1 text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
+                {
+                    id: "txt002",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a P text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-            },
-            {
-                id: "txt002",
-                type: "web-txt",
-                info: {
-                    content: "This is a P text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
 
-        ]
+            ]
+        },
+
 
     },
     {
@@ -233,78 +237,79 @@ const gCmps = [{
         class: "",
         info: {
             dir: "column",
-        },
-        cmps: [{
-                id: "txt001",
-                type: "web-txt",
-                info: {
-                    content: "This is a sample H1 text"
+            cmps: [{
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a sample H1 text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
+                {
+                    id: "txt002",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a P text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-            },
-            {
-                id: "txt002",
-                type: "web-txt",
-                info: {
-                    content: "This is a P text"
+                {
+                    id: "gallery001",
+                    type: "web-img",
+                    info: {
+                        src: "#"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: "gallery001",
-                type: "web-img",
-                info: {
-                    src: "#"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
 
-        ]
+            ]
+        },
+
     },
     {
         type: "web-container",
@@ -340,43 +345,44 @@ const gCmps = [{
         class: "",
         info: {
             dir: "column",
-        },
-        cmps: [{
-                id: "txt001",
-                type: "web-txt",
-                info: {
-                    content: "This is a P text"
+            cmps: [{
+                    id: "vid001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a P text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                "id": "wc06",
-                "type": "web-video",
-                "info": {
-                    "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-                    "title": "watch this video!"
-                },
-                "style": {
-                    "width": "30rem",
-                    "height": "15rem"
+                {
+                    "id": "wc06",
+                    "type": "web-video",
+                    "info": {
+                        "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                        "title": "watch this video!"
+                    },
+                    "style": {
+                        "width": "30rem",
+                        "height": "15rem"
+                    }
                 }
-            }
-        ]
+            ]
+        },
+
 
     },
 ]
