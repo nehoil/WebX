@@ -224,8 +224,6 @@ const gCmps = [{
 
             ]
         },
-
-
     },
     {
         type: "web-container",
@@ -306,7 +304,6 @@ const gCmps = [{
 
             ]
         },
-
     },
     {
         type: "web-container",
@@ -352,8 +349,6 @@ const gCmps = [{
                 }
             ]
         },
-
-
     },
     {
         type: "web-container",
@@ -398,55 +393,44 @@ const gCmps = [{
                     }
                 },
                 {
-                    type: "web-container",
-                    name: "text",
-                    id: "txt002",
-                    class: "",
+                    id: "txt001",
+                    type: "web-txt",
                     info: {
-                        dir: "column",
-                        cmps: [{
-                            id: "txt001",
-                            type: "web-txt",
-                            info: {
-                                content: "This is a video p"
-                            },
-                            style: {
-                                fontFamily: "unset",
-                                fontSize: "unset",
-                                fontWeight: "unset",
-                                letterSpacing: "unset",
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
-                            },
-                        }, ]
+                        content: "This is a video p"
                     },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                }
 
-                },
             ]
         },
-
-
     },
     {
         type: "web-container",
-        name: "img",
+        name: "image",
         id: "img001",
         class: "",
         info: {
             dir: "column",
             cmps: [{
-                id: "txt001",
-                type: "web-txt",
+                id: "img001",
+                type: "web-img",
                 info: {
-                    content: "This is a sample H1 text"
+                    src: "https://outofschool.club/wp-content/uploads/2015/02/insert-image-here.jpg"
                 },
                 style: {
                     fontFamily: "unset",
@@ -466,9 +450,136 @@ const gCmps = [{
                 },
             }, ]
         },
-
-
     },
+    {
+        id: "map001",
+        type: "web-container",
+        name: "map",
+        info: {
+            dir: "column",
+            cmps: [{
+                    id: "wc01",
+                    type: "web-txt",
+                    info: {
+                        content: "This is a sample text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "wc04",
+                    type: "web-map",
+                    info: {
+                        title: "",
+                        lat: 41.902782,
+                        lng: 12.496365,
+                        zoom: 10,
+                        address: "Rome"
+                    },
+                    style: {
+                        width: "100%",
+                        height: "100%"
+                    }
+                }
+            ]
+        },
+        style: {
+            padding: "10px"
+        }
+    },
+    {
+        type: "web-container",
+        name: "form",
+        id: "form001",
+        class: "",
+        info: {
+            dir: "column",
+            cmps: [{
+                    id: "img001",
+                    type: "web-img",
+                    info: {
+                        src: "https://lh3.googleusercontent.com/proxy/sxRTNOhVdjk7yx1zdIjS3CEJd1iP50Gu_0L_3rqq7UwstBfgC1oN9Q_naWKGKMycvI7ReGSkjCXOEeS4H5xp4gtGaxvBAIpyPb45EI1PTsSE7jXC0A"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "form001",
+                    type: "web-form",
+                    info: {
+                        content: "This is form title text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "Submit"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                }
+            ]
+        },
+    }
 
 ]
 
