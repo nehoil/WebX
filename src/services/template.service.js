@@ -11,6 +11,22 @@ const gCmps = [
                 type: "web-txt",
                 info: {
                     content: "This is a sample text"
+                },
+                "style": {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "unset",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    height: "unset"
                 }
             }, ]
         },

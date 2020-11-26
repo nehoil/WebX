@@ -44,6 +44,7 @@ export default {
   },
   methods: {
     setEditItem(cmp) {
+      console.log(cmp);
       this.cmp = cmp
       this.itemToEdit = cmp.type;
     },
