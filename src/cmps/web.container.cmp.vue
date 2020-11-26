@@ -8,7 +8,7 @@
       :cmpStyle="cmp.style"
       :cmp="cmp"
     ></component>
-    <button @click="removeCmp(cmp.id)">X</button>
+    <button @click="removeCmp(cmp.id)" class="remove-cmp-btn">X</button>
   </section>
 </template>
 
