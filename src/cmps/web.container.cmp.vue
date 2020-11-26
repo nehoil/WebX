@@ -7,7 +7,6 @@
       :info="cmp.info"
       :cmpStyle="cmp.style"
       :cmp="cmp"
-      :class="cmp.class"
     ></component>
     <button @click="removeCmp(cmp.id)">X</button>
   </section>

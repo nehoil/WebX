@@ -1,6 +1,6 @@
 <template>
   <div class="workspace">
-    <component v-for="(cmp, idx) in cmps" :is="cmp.type" :cmp="cmp" :key="idx">
+    <component v-for="(cmp, idx) in cmps" :is="cmp.type" :cmp="cmp" :class="cmp.class" :key="idx">
     </component>
     <!-- <pre v-if="waps"></pre> -->
   </div>
