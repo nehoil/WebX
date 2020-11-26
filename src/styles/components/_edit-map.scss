@@ -1,0 +1,16 @@
+.edit-map {
+
+    &.el-input {
+        position: relative;
+    }
+}
+.suggested-locs {
+    width: 180px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.466);
+    cursor: pointer;
+}
