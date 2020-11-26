@@ -1,5 +1,5 @@
 <template>
-  <div class="editor">
+  <div class="editor flex">
     <controller :itemToEdit="itemToEdit" />
     <work-space :cmps="siteToEdit.cmps" />
   </div>
