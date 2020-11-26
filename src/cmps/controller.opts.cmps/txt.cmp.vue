@@ -5,6 +5,14 @@
      <el-slider :min="14" :max="100" v-model="fontSize" @input="setFontSize"></el-slider>
      </div>
     <button>font</button>
+      <el-select v-model="fonts" placeholder="Select Font">
+    <el-option
+      v-for="font in fonts"
+      :key="font.value"
+      :label="font.label"
+      :value="font.value">
+    </el-option>
+  </el-select>
     <button>align</button>
     <button @click="toggleBold">B</button>
     <button @click="toggleItalic">I</button>
@@ -49,6 +57,22 @@ export default {
       lineHeight: null,
       letterSpacing: null,
       textShadow: null,
+      fonts: [{
+          value: 'abril',
+          label: 'Abril'
+        }, {
+          value: 'almondNougat',
+          label: 'Almond Nougat'
+        }, {
+          value: 'assistantBold',
+          label: 'Assistant (Bold)'
+        }, {
+          value: 'assistantLight',
+          label: 'Assistant (Light)'
+        }, {
+          value: 'caviarDreams',
+          label: 'Caviar Dreams'
+        }],
     };
   },
   created() {
