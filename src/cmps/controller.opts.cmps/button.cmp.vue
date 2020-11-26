@@ -6,6 +6,7 @@
       placeholder="Your link here"
       v-model="cmp.linkTo"
     ></el-input>
+    <select-font :cmp="cmp"></select-font>
     <el-checkbox v-model="isBorder" @change="toggleBorder"
       >Set Border</el-checkbox
     >
@@ -70,13 +71,16 @@
 </template>
 
 <script>
+import selectFont from "./select-font.cmp";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-btn",
   props: {
     cmp: [Object, Array],
   },
-  components: {},
+  components: {
+    selectFont,
+  },
   data() {
     return {
       fontSize: null,
