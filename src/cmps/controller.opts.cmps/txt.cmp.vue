@@ -9,21 +9,7 @@
         @input="setFontSize"
       ></el-slider>
     </div>
-    <p>Font Family</p>
-    <el-select
-      v-model="value"
-      @change="setFontFamily"
-      placeholder="Select Font"
-    >
-      <el-option
-        v-for="font in fonts"
-        :key="font.value"
-        :label="font.label"
-        :value="font.value"
-        :style="{ fontFamily: font.value }"
-      >
-      </el-option>
-    </el-select>
+    <select-font :cmp="cmp"></select-font>
     <div>
       <button>align</button>
       <button @click="toggleBold">B</button>
@@ -77,77 +63,22 @@
 </template>
 
 <script>
+import selectFont from "./select-font.cmp";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-txt",
   props: {
     cmp: [Object, Array],
   },
-  components: {},
+  components: {
+    selectFont,
+  },
   data() {
     return {
       fontSize: null,
       lineHeight: null,
       letterSpacing: null,
       textShadow: null,
-      fonts: [
-        {
-          value: "abril",
-          label: "Abril",
-        },
-        {
-          value: "almondNougat",
-          label: "Almond Nougat",
-        },
-        {
-          value: "assistantBold",
-          label: "Assistant (Bold)",
-        },
-        {
-          value: "assistantLight",
-          label: "Assistant (Light)",
-        },
-        {
-          value: "caviarDreams",
-          label: "Caviar Dreams",
-        },
-        {
-          value: "champagneLimousines",
-          label: "Champagne Limousines",
-        },
-        {
-          value: "crimsonText",
-          label: "Crimson Text",
-        },
-        {
-          value: "fredericka",
-          label: "Fredericka The Great",
-        },
-        {
-          value: "raleway",
-          label: "Raleway",
-        },
-        {
-          value: "robotomonoLight",
-          label: "RobotoMono Light",
-        },
-        {
-          value: "robotomono",
-          label: "RobotoMono",
-        },
-        {
-          value: "rubik",
-          label: "Rubik",
-        },
-        {
-          value: "sacramento",
-          label: "Sacramento",
-        },
-        {
-          value: "sundayMorning",
-          label: "Sunday Morning",
-        },
-      ],
       value: "",
     };
   },
@@ -172,10 +103,6 @@ export default {
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
-    },
-    setFontFamily(font) {
-      this.cmp.style.fontFamily = font;
-      eventBus.$emit("update-site");
     },
     setColor(color) {
       this.cmp.style.color = color;
