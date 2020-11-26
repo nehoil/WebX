@@ -21,6 +21,7 @@ import webImg from "@/cmps/elements.cmps/web.img.cmp";
 import webForm from "@/cmps/elements.cmps/web.form.cmp";
 import webButton from "@/cmps/elements.cmps/web.button.cmp";
 import webList from "@/cmps/elements.cmps/web.list.cmp";
+// import webCard from "@/cmps/elements.cmps/web.card.cmp";
 export default {
   name: "web-container",
   props: {
