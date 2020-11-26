@@ -76,6 +76,8 @@ export default {
     };
   },
   created() {
+    this.fontSize = this.cmp.style.fontSize.match(/\d+/g).flat()
+    console.log(this.fontSize);
   },
   methods:{
     setColor(color) {
@@ -106,10 +108,8 @@ export default {
       return this.cmp.style.textShadow
    },
     setFontSize(size) {
-       this.fontSize = size
       this.cmp.style.fontSize = (size/16)+"rem"
-            eventBus.$emit('update-site');
-      this.fontSize = null
+      eventBus.$emit('update-site');
     },
         setSpacing(size) {
        this.letterSpacing = size
