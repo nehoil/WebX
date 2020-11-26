@@ -1,5 +1,5 @@
 <template>
-  <section class="web-form" :style="cmp.style" @click="setEditItem">
+  <section class="web-form" :style="cmp.style" @click.stop="setEditItem">
     <form v-if="mail">
       <input type="email" v-model="mail.email" placeholder="Your Email" />
       <input type="text" v-model="mail.fullName" placeholder="Your full name" />
@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import webButton from '@/cmps/elements.cmps/web.button.cmp';
+import webButton from "@/cmps/elements.cmps/web.button.cmp";
 import { eventBus } from "@/services/eventbus.service.js";
 
 export default {
   props: {
     cmp: Object,
   },
-  name: 'web-form',
+  name: "web-form",
   components: {
     webButton,
   },
@@ -40,12 +40,12 @@ export default {
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit('update-site');
+      eventBus.$emit("update-site");
     },
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },

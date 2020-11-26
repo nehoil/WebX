@@ -38,7 +38,7 @@ export default {
     return {
       borderRadius: null,
       isBorder: null,
-      width: 50,
+      width: null,
     };
   },
   created() {
@@ -46,7 +46,11 @@ export default {
       var borderRadiusNum = this.getNumFromString("borderRadius");
       this.borderRadius = +borderRadiusNum;
     }
-    if (this.cmp.style.width) {
+
+    if (!this.cmp.style.width || this.cmp.style.width === "unset") {
+      this.cmp.style.width === "100%";
+    } else if (this.cmp.style.width && this.cmp.style.width !== "unset") {
+      console.log(this.cmp.style.width);
       var widthNum = this.getNumFromString("width");
       this.width = +widthNum;
     }
