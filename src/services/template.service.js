@@ -228,7 +228,7 @@ const gCmps = [{
     },
     {
         type: "web-container",
-        name: "header",
+        name: "text",
         id: "txt004",
         class: "",
         info: {
@@ -335,48 +335,48 @@ const gCmps = [{
     },
     {
         type: "web-container",
-        name: "text",
+        name: "video",
         id: "vid001",
         class: "",
         info: {
             dir: "column",
         },
         cmps: [{
-            id: "txt001",
-            type: "web-txt",
-            info: {
-                content: "This is a P text"
+                id: "txt001",
+                type: "web-txt",
+                info: {
+                    content: "This is a P text"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "unset",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    height: "unset",
+                },
             },
-            style: {
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-                letterSpacing: "unset",
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
-                color: "unset",
-                backgroundColor: "unset",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
-            },
-        },
-        {
-            "id": "wc06",
-            "type": "web-video",
-            "info": {
-                "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-                "title": "watch this video!"
-            },
-            "style": {
-                "width": "30rem",
-                "height": "15rem"
+            {
+                "id": "wc06",
+                "type": "web-video",
+                "info": {
+                    "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                    "title": "watch this video!"
+                },
+                "style": {
+                    "width": "30rem",
+                    "height": "15rem"
+                }
             }
-        }
-    ]
+        ]
 
     },
 ]
@@ -580,7 +580,7 @@ const gCmps = [{
 
 export const templateService = {
     getEmptyTemplate,
-    getCmpsByType,
+    getCmpsByName,
     getTemplateById,
     getCmpById
 }
@@ -600,8 +600,8 @@ function getEmptyTemplate() {
 }
 
 
-function getCmpsByType(type) {
-    return gCmps.filter(cmps => cmps.type === type)
+function getCmpsByName(name) {
+    return gCmps.filter(cmps => cmps.name === name)
 }
 
 function getTemplateById(id) {
