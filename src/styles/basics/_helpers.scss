@@ -1,14 +1,42 @@
-
-.site-block {
-    margin-bottom: rem(20px);
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
+.flex {
+	display: flex;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.pointer {
+	cursor: pointer;
+}
 // Aspect ratios
 
-.ratio-16-9 { @include aspect-ratio(100, 56); }
+.ratio-16-9 {
+	@include aspect-ratio(100, 56);
+}
 
-.ratio-square { @include aspect-ratio(100, 100); }
+.ratio-square {
+	@include aspect-ratio(100, 100);
+}
 
-.ratio-card { @include aspect-ratio(100, 80); }
+.ratio-card {
+	@include aspect-ratio(100, 80);
+}
 
-.ratio-poster { @include aspect-ratio(100, 150); }
+.ratio-poster {
+	@include aspect-ratio(100, 150);
+}
