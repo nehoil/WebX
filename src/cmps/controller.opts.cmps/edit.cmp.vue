@@ -2,9 +2,6 @@
   <div class="controller-edit">
     <p>I'm edit</p>
     <component :is="itemToEdit" :cmp="cmp"></component>
-    <pre>Item To Edit:
-      {{itemToEdit}}
-    </pre>
     <div v-if="itemToEdit">
       <p>padding</p>
       <el-slider
