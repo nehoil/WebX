@@ -1,5 +1,5 @@
 <template>
-  <section >
+  <section :class="cmp.class">
     <component
       v-for="(cmp, idx) in cmp.info.cmps"
       :is="cmp.type"

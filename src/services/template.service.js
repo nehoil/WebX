@@ -637,12 +637,12 @@ const gCmps = [{
         type: "web-container",
         name: "card",
         id: "card001",
-        class: "web-card-1",
         info: {
             dir: "row",
             cmps: [{
-                type: "web-container",
+                type: "web-card",
                 name: "card",
+                class: "web-card-1",
                 info: {
                     dir: "row",
                     cmps: [{
