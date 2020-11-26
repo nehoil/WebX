@@ -455,7 +455,85 @@ const gCmps = [{
         type: "web-container",
         name: "image",
         id: "img002-gallery",
-        class: "web-img-gallery",
+        class: "web-img-gallery-1",
+        info: {
+            dir: "row",
+            cmps: [{
+                    id: "img001",
+                    type: "web-img",
+                    info: {
+                        src: "https://www.clermontparks.org/wp-content/uploads/sites/39/2020/03/DSC_1543-1170x640.jpg"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "img002",
+                    type: "web-img",
+                    info: {
+                        src: "https://europeansting.files.wordpress.com/2019/11/nature.jpeg"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                }, {
+                    id: "img003",
+                    type: "web-img",
+                    info: {
+                        src: "https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/MorganSwamp_credit-David-Ike.jpg?crop=0,0,5304,3315&wid=1640&hei=1025&scl=3.234146341463415"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                }
+            ]
+        },
+    },
+    {
+        type: "web-container",
+        name: "section",
+        id: "sec001-cards trio",
+        class: "web-img-gallery-1",
         info: {
             dir: "row",
             cmps: [{
