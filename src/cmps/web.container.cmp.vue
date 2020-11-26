@@ -37,9 +37,6 @@ export default {
     webVideo,
   },
   methods: {
-    setEditItem(cmp) {
-      eventBus.$emit("setItem", cmp);
-    },
     removeCmp(cmpId) {
       console.log(cmpId);
       eventBus.$emit("removeCmp", cmpId)

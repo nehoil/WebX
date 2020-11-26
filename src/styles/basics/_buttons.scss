@@ -1,0 +1,10 @@
+button {
+	border: 1px solid grey;
+	background-color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	outline: none;
+	&:hover {
+		background-color: rgba(122, 235, 255, 0.13);
+	}
+}

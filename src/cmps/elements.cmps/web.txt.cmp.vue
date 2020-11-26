@@ -34,6 +34,7 @@ export default {
     setEditItem() {
       eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
+        // console.log('setting item!, txt', this.cmp);
         eventBus.$emit('setItem', this.cmp);
       });
     },
