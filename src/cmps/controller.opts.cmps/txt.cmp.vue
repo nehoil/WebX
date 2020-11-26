@@ -30,7 +30,7 @@
 </template>
 
 <script>
-
+import {eventBus} from '../../services/eventbus.service.js'
 export default {
   name: "edit-txt",
   props:{
@@ -49,38 +49,45 @@ export default {
   methods:{
     setColor(color) {
       this.cmp.style.color = color
+      eventBus.$emit('update-site');
     },
     setBgcColor(bgcColor) {
       console.log(bgcColor);
       this.cmp.style.backgroundColor = bgcColor
+            eventBus.$emit('update-site');
     },
     setFontSize(size) {
        this.fontSize = size
       this.cmp.style.fontSize = (size/16)+"rem"
+            eventBus.$emit('update-site');
       this.fontSize = null
     },
         setSpacing(size) {
        this.letterSpacing = size
       this.cmp.style.letterSpacing = (size/16)+"rem"
+            eventBus.$emit('update-site');
       this.letterSpacing = null
     },
         setLineHeight(size) {
        this.lineHeight = size
       this.cmp.style.lineHeight = (size/16)+"rem"
+            eventBus.$emit('update-site');
       this.lineHeight = null
     },
     toggleBold(){
       if (this.cmp.style.fontWeight === "unset" || !this.cmp.style.fontWeight) this.cmp.style.fontWeight = "bold"
 else this.cmp.style.fontWeight = 'unset'
+      eventBus.$emit('update-site');
     },
         toggleItalic(){
      if (!this.cmp.style.fontStyle || this.cmp.style.fontStyle === "unset" ) this.cmp.style.fontStyle = "italic"
 else this.cmp.style.fontStyle = 'unset'
+      eventBus.$emit('update-site');
           },
         toggleUnderline(){
     if (!this.cmp.style.textDecoration  || this.cmp.style.textDecoration === "unset" ) this.cmp.style.textDecoration = "underline"
 else this.cmp.style.textDecoration = 'unset'
-    console.log(this.cmp.style);
+         eventBus.$emit('update-site');
     }
 
   }
