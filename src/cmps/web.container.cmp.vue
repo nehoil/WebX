@@ -16,6 +16,7 @@
     >
     </component>
     <edit-menu v-if="showEditMenu" :cmp="cmp"/>
+    >
   </section>
 </template>
 
