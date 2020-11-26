@@ -7,9 +7,6 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import "./styles/styles.scss";
-
-
-import "./styles/styles.scss";
 Vue.use(ElementUI);
 
 
