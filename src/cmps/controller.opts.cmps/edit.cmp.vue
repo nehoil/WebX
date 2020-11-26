@@ -54,12 +54,15 @@ export default {
   },
   methods: {
     setEditItem(cmp) {
+<<<<<<< HEAD
       // console.log('setting item to edit on editor, cmp type:', cmp.type);
       this.cmp = cmp
       this.$nextTick(()=>{
+=======
+      this.cmp = cmp;
+>>>>>>> db672dea498aace0cd10a333bcec32eda5ebba44
       this.itemToEdit = cmp.type;
-      })
-      console.log('this.itemToEdit', this.itemToEdit);
+      }
     },
     setMargin(size) {
       this.margin = size;

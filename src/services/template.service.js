@@ -443,7 +443,7 @@ const gCmps = [{
         info: {
             cmps: [{
                 id: "btn001",
-                type: "web-btn",
+                type: "web-button",
                 info: {
                     content: "This is a button txt"
                 },
@@ -474,7 +474,7 @@ const gCmps = [{
         info: {
             cmps: [{
                 id: "btn001",
-                type: "web-btn",
+                type: "web-button",
                 info: {
                     content: "This is a button txt"
                 },
