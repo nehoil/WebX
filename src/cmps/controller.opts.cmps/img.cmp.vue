@@ -21,7 +21,12 @@
     </div>
     <div>
       <p>Change Size</p>
-      <el-slider v-model="width" @input="setWidth"></el-slider>
+      <el-slider
+        :min="1"
+        :max="100"
+        v-model="width"
+        @input="setWidth"
+      ></el-slider>
     </div>
   </div>
 </template>
@@ -42,17 +47,23 @@ export default {
     };
   },
   created() {
-    if (this.cmp.style.borderRadius) {
-      var borderRadiusNum = this.getNumFromString("borderRadius");
-      this.borderRadius = +borderRadiusNum;
-    }
-
+    var widthNum;
+    var borderRadiusNum;
     if (!this.cmp.style.width || this.cmp.style.width === "unset") {
       this.cmp.style.width === "100%";
+      this.width = 100;
     } else if (this.cmp.style.width && this.cmp.style.width !== "unset") {
-      console.log(this.cmp.style.width);
-      var widthNum = this.getNumFromString("width");
+      widthNum = this.getNumFromString("width");
       this.width = +widthNum;
+    }
+    if (!this.cmp.style.borderRadius) {
+      this.cmp.style.borderRadius = "unset";
+    } else if (
+      this.cmp.style.borderRadius &&
+      this.cmp.style.borderRadius !== "unset"
+    ) {
+      borderRadiusNum = this.getNumFromString("borderRadius");
+      this.borderRadius = +borderRadiusNum;
     }
   },
   methods: {

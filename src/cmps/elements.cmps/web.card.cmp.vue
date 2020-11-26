@@ -1,24 +1,32 @@
 <template>
-  <section>
-    <img
-      class="web-img"
-      :style="cmp.style"
-      @click.stop="setEditItem"
-      :src="cmp.info.src"
-      alt=""
-    />
+  <section :class="cmp.class">
+    <component
+      v-for="(cmp, idx) in cmp.info.cmps"
+      :is="cmp.type"
+      :key="idx"
+      :info="cmp.info"
+      :cmpStyle="cmp.style"
+      :cmp="cmp"
+    ></component>
   </section>
 </template>
 
 <script>
 import { eventBus } from "@/services/eventbus.service.js";
+import webImg from "@/cmps/elements.cmps/web.img.cmp";
+import webTxt from "@/cmps/elements.cmps/web.txt.cmp";
+import webButton from "@/cmps/elements.cmps/web.button.cmp";
 
 export default {
   props: {
     cmp: Object,
   },
   name: "web-card",
-  components: {},
+  components: {
+    webImg,
+    webTxt,
+    webButton,
+  },
   methods: {
     onEdit(ev) {
       this.cmp.info.src = ev.target.innerText;

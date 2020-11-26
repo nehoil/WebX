@@ -1,6 +1,5 @@
 .web-sec-cards-1 {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 335px;
+    justify-content: space-around;
+    align-items: center;
 }

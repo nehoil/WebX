@@ -41,21 +41,20 @@ export default {
   },
   data() {
     return {
-      fontSize: null,
       lineHeight: null,
-      letterSpacing: null,
-      textShadow: null,
       borderRadius: null,
       border: null,
     };
   },
   created() {
-    if (this.cmp.style.lineHeight) {
-      var lineHeightNum = this.getNumFromString("lineHeight");
-      this.lineHeight = +lineHeightNum * 16;
-    }
-    if (this.cmp.style.borderRadius) {
-      var borderRadiusNum = this.getNumFromString("borderRadius");
+    var borderRadiusNum;
+    if (!this.cmp.style.borderRadius) {
+      this.cmp.style.borderRadius = "unset";
+    } else if (
+      this.cmp.style.borderRadius &&
+      this.cmp.style.borderRadius !== "unset"
+    ) {
+      borderRadiusNum = this.getNumFromString("borderRadius");
       this.borderRadius = +borderRadiusNum;
     }
   },

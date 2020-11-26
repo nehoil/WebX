@@ -40,7 +40,9 @@ export default {
     };
   },
   created() {
-    if (this.cmp.style.lineHeight) {
+    if (!this.cmp.style.lineHeight) {
+      this.cmp.style.lineHeight = "unset";
+    } else {
       var lineHeightNum = this.getNumFromString("lineHeight");
       this.lineHeight = +lineHeightNum * 16;
     }

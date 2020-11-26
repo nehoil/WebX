@@ -20,16 +20,16 @@
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
 import editMenu from '@/cmps/web.edit.menu.cmp';
-import webMap from '@/cmps/elements.cmps/web.map.cmp';
-import webTxt from '@/cmps/elements.cmps/web.txt.cmp';
-import webVideo from '@/cmps/elements.cmps/web.video.cmp';
-import webImg from '@/cmps/elements.cmps/web.img.cmp';
-import webForm from '@/cmps/elements.cmps/web.form.cmp';
-import webButton from '@/cmps/elements.cmps/web.button.cmp';
-import webList from '@/cmps/elements.cmps/web.list.cmp';
-// import webCard from "@/cmps/elements.cmps/web.card.cmp";
+import { eventBus } from "../services/eventbus.service.js";
+import webMap from "@/cmps/elements.cmps/web.map.cmp";
+import webTxt from "@/cmps/elements.cmps/web.txt.cmp";
+import webVideo from "@/cmps/elements.cmps/web.video.cmp";
+import webImg from "@/cmps/elements.cmps/web.img.cmp";
+import webForm from "@/cmps/elements.cmps/web.form.cmp";
+import webButton from "@/cmps/elements.cmps/web.button.cmp";
+import webList from "@/cmps/elements.cmps/web.list.cmp";
+import webCard from "@/cmps/elements.cmps/web.card.cmp";
 export default {
   name: 'web-container',
   props: {
@@ -48,7 +48,11 @@ export default {
     webButton,
     webList,
     webVideo,
+<<<<<<< HEAD
     editMenu
+=======
+    webCard
+>>>>>>> 57dca5e52d4c92ff7e30f91ea41587773a203784
   },
   methods: {
     setEditItem() {

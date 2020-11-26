@@ -27,11 +27,18 @@ div.editor {
 				background-color: #fff;
 			}
 		}
+		.controller-add {
+			button {
+				width: 5rem;
+				height: 3rem;
+				margin: 0.5rem;
+			}
+		}
 		footer {
 			padding-left: 10px;
 			padding-right: 10px;
 		}
-		.el-slider, .el-input {
+		.el-slider, .el-input, .el-autocomplete {
 			width: 70%;
 			margin: 0 auto;
 		}
