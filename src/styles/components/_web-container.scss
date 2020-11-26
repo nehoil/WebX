@@ -1,3 +1,5 @@
 .web-container {
-    background-color: red;
+    &:hover {
+        border: 1px solid rgba(128, 128, 128, 0.637)
+    }
 }
