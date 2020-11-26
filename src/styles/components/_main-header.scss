@@ -12,6 +12,11 @@
 // }
 
 .main-header {
+    padding: 20px;
+    & nav {
+        display: flex;
+        justify-content: space-between;
+    }
     & img {
         width: 100px;
     }

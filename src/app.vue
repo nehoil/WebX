@@ -5,15 +5,17 @@
 <template>
   <div id="app" class="container">
     <div class="main-header">
-    <div id="nav">
+    <nav>
+            <div class="logo">
+        <img src="./assets/logo.png" alt="" srcset="">
+      </div>
+      <div class="menu">
       <router-link to="/">Home</router-link> |
       <router-link to="/">Templates</router-link> |
       <router-link to="/">Profile</router-link> |
       <router-link to="/about">Editor</router-link>
-      <div class="logo">
-        <img src="./assets/logo.png" alt="" srcset="">
       </div>
-    </div>
+    </nav>
     </div>
     <router-view />
   </div>
