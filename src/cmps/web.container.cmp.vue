@@ -7,7 +7,6 @@
       :info="cmp.info"
       :cmpStyle="cmp.style"
       :cmp="cmp"
-      :class="cmp.class"
     ></component>
     <button @click="removeCmp(cmp.id)">X</button>
   </section>
@@ -38,7 +37,6 @@ export default {
   },
   methods: {
     removeCmp(cmpId) {
-      console.log(cmpId);
       eventBus.$emit("removeCmp", cmpId)
     },
   },

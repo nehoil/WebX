@@ -1,6 +1,5 @@
 <template>
   <div class="editor flex">
-
     <!-- {{siteToEdit.cmps}} -->
     <controller :itemToEdit="itemToEdit" />
     <work-space :cmps="siteToEdit.cmps" />
@@ -36,10 +35,10 @@ export default {
     eventBus.$on("addCmp", (id) => {
       this.$store.commit({ type: "addCmp", id });
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
-      this.$forceUpdate();
     });
     eventBus.$on("removeCmp", (id) => {
       this.$store.commit({ type: "removeCmp", id });
+      this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });
     eventBus.$on("setCmpsToShow", (cmpType) => {
       this.$store.commit({ type: "setCmpsToShow", cmpType });
