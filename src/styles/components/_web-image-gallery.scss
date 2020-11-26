@@ -1,6 +1,6 @@
 .web-container.web-img-gallery-1:not(lastchild) {
     &:hover {
-        border: 1px solid rgba(128, 128, 128, 0.637)
+        outline: 1px solid rgba(128, 128, 128, 0.637)
     }
     & img {
         max-width: 300px;

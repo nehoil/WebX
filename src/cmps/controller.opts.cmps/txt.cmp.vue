@@ -9,20 +9,27 @@
         @input="setFontSize"
       ></el-slider>
     </div>
-    <button>font</button>
-    <el-select v-model="fonts" placeholder="Select Font">
+    <p>Font Family</p>
+    <el-select
+      v-model="value"
+      @change="setFontFamily"
+      placeholder="Select Font"
+    >
       <el-option
         v-for="font in fonts"
         :key="font.value"
         :label="font.label"
         :value="font.value"
+        :style="{ fontFamily: font.value }"
       >
       </el-option>
     </el-select>
-    <button>align</button>
-    <button @click="toggleBold">B</button>
-    <button @click="toggleItalic">I</button>
-    <button @click="toggleUnderline">U</button>
+    <div>
+      <button>align</button>
+      <button @click="toggleBold">B</button>
+      <button @click="toggleItalic">I</button>
+      <button @click="toggleUnderline">U</button>
+    </div>
     <p>Text Shadow</p>
     <el-select
       v-model="textShadow"
@@ -104,7 +111,44 @@ export default {
           value: "caviarDreams",
           label: "Caviar Dreams",
         },
+        {
+          value: "champagneLimousines",
+          label: "Champagne Limousines",
+        },
+        {
+          value: "crimsonText",
+          label: "Crimson Text",
+        },
+        {
+          value: "fredericka",
+          label: "Fredericka The Great",
+        },
+        {
+          value: "raleway",
+          label: "Raleway",
+        },
+        {
+          value: "robotomonoLight",
+          label: "RobotoMono Light",
+        },
+        {
+          value: "robotomono",
+          label: "RobotoMono",
+        },
+        {
+          value: "rubik",
+          label: "Rubik",
+        },
+        {
+          value: "sacramento",
+          label: "Sacramento",
+        },
+        {
+          value: "sundayMorning",
+          label: "Sunday Morning",
+        },
       ],
+      value: "",
     };
   },
   created() {
@@ -128,6 +172,10 @@ export default {
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
+    },
+    setFontFamily(font) {
+      this.cmp.style.fontFamily = font;
+      eventBus.$emit("update-site");
     },
     setColor(color) {
       this.cmp.style.color = color;
