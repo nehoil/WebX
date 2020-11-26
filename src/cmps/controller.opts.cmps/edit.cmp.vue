@@ -3,7 +3,7 @@
     <p v-if="!itemToEdit">Please pick an element to edit</p>
     <component :is="itemToEdit" :cmp="cmp"></component>
     <div v-if="itemToEdit">
-      <p>padding</p>
+      <!-- <p>padding</p>
       <el-slider
         :min="1"
         :max="100"
@@ -16,22 +16,22 @@
         :max="100"
         v-model="margin"
         @input="setMargin"
-      ></el-slider>
+      ></el-slider> -->
     </div>
   </div>
 </template>
 <script>
-import { eventBus } from '../../services/eventbus.service.js';
-import webButton from './button.cmp';
-import webContainer from './container.cmp';
-import webImg from './img.cmp';
-import webMap from './map.cmp';
-import webTxt from './txt.cmp';
-import webVideo from './video.cmp';
-import webBody from './web.cmp';
+import { eventBus } from "../../services/eventbus.service.js";
+import webButton from "./button.cmp";
+import webContainer from "./container.cmp";
+import webImg from "./img.cmp";
+import webMap from "./map.cmp";
+import webTxt from "./txt.cmp";
+import webVideo from "./video.cmp";
+import webBody from "./web.cmp";
 
 export default {
-  name: 'controller-edit',
+  name: "controller-edit",
   components: {
     webButton,
     webContainer,
@@ -50,23 +50,23 @@ export default {
     };
   },
   created() {
-    eventBus.$on('setItem', this.setEditItem);
+    eventBus.$on("setItem", this.setEditItem);
   },
   methods: {
     setEditItem(cmp) {
       this.cmp = cmp;
       this.itemToEdit = cmp.type;
     },
-    setMargin(size) {
-      this.margin = size;
-      this.cmp.style.margin = size / 16 + 'rem';
-      this.margin = null;
-    },
-    setPadding(size) {
-      this.padding = size;
-      this.cmp.style.padding = size / 16 + 'rem';
-      this.padding = null;
-    },
-  }
-}
+    // setMargin(size) {
+    //   this.margin = size;
+    //   this.cmp.style.margin = size / 16 + 'rem';
+    //   this.margin = null;
+    // },
+    // setPadding(size) {
+    //   this.padding = size;
+    //   this.cmp.style.padding = size / 16 + 'rem';
+    //   this.padding = null;
+    // },
+  },
+};
 </script>
