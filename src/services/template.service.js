@@ -553,7 +553,7 @@ const gCmps = [{
                     id: "img001",
                     type: "web-img",
                     info: {
-                        src: "https://www.clermontparks.org/wp-content/uploads/sites/39/2020/03/DSC_1543-1170x640.jpg"
+                        src: "https://i.pinimg.com/originals/87/a4/25/87a425fa2ddb2bb8060c624535127dea.png"
                     },
                     style: {
                         fontFamily: "unset",
@@ -576,7 +576,7 @@ const gCmps = [{
                     id: "img002",
                     type: "web-img",
                     info: {
-                        src: "https://europeansting.files.wordpress.com/2019/11/nature.jpeg"
+                        src: "https://i.pinimg.com/originals/98/c0/1d/98c01d9d9fac8a464dce0a17dd01de7a.jpg"
                     },
                     style: {
                         fontFamily: "unset",
@@ -598,7 +598,7 @@ const gCmps = [{
                     id: "img003",
                     type: "web-img",
                     info: {
-                        src: "https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/MorganSwamp_credit-David-Ike.jpg?crop=0,0,5304,3315&wid=1640&hei=1025&scl=3.234146341463415"
+                        src: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/589e9246770419.5863797a2637b.jpg"
                     },
                     style: {
                         fontFamily: "unset",
@@ -636,20 +636,134 @@ const gCmps = [{
     {
         type: "web-container",
         name: "card",
-        id: "card001",
+        id: "card001-column",
         info: {
             dir: "row",
             cmps: [{
                 type: "web-card",
                 name: "card",
-                class: "web-card-1",
+                class: "web-card-1-col",
                 info: {
                     dir: "row",
                     cmps: [{
                             id: "img001",
                             type: "web-img",
                             info: {
-                                src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxjAS5XOyce7tPZQU6VspYHHPSAEan-iV3g&usqp=CAU"
+                                src: "https://semantic-ui.com/images/avatar2/large/kristy.png"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "unset",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        },
+                        {
+                            id: "txt001",
+                            type: "web-txt",
+                            info: {
+                                content: "This is card txt"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "unset",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        },
+                        {
+                            id: "button001",
+                            type: "web-button",
+                            info: {
+                                content: "This is button text"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "unset",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        }
+                    ]
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    padding: "15px",
+                    backgroundColor: "unset",
+                    borderRadius: "unset",
+                    width: "100%",
+                    minHeight: "unset",
+                    height: "unset",
+                    backgroundImage: "unset"
+                },
+
+            }]
+        },
+        style: {
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            padding: "15px",
+            backgroundColor: "unset",
+            borderRadius: "unset",
+            width: "100%",
+            minHeight: "unset",
+            height: "unset",
+            backgroundImage: "unset"
+        }
+    },
+
+    {
+        type: "web-container",
+        name: "card",
+        id: "card002-row",
+        info: {
+            dir: "row",
+            cmps: [{
+                type: "web-card",
+                name: "card",
+                class: "web-card-2-row",
+                info: {
+                    dir: "row",
+                    cmps: [{
+                            id: "img001",
+                            type: "web-img",
+                            info: {
+                                src: "https://semantic-ui.com/images/avatar2/large/kristy.png"
                             },
                             style: {
                                 fontFamily: "unset",
@@ -754,214 +868,283 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                    id: "img001",
-                    type: "web-img",
+                    type: "web-card",
+                    name: "card",
+                    class: "web-card-1",
                     info: {
-                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxjAS5XOyce7tPZQU6VspYHHPSAEan-iV3g&usqp=CAU"
+                        dir: "row",
+                        cmps: [{
+                                id: "img001",
+                                type: "web-img",
+                                info: {
+                                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxjAS5XOyce7tPZQU6VspYHHPSAEan-iV3g&usqp=CAU"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "txt001",
+                                type: "web-txt",
+                                info: {
+                                    content: "This is card txt"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "This is button text"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            }
+                        ]
                     },
                     style: {
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
                         letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
+                        padding: "15px",
                         backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
                         borderRadius: "unset",
-                        width: "unset",
+                        width: "100%",
+                        minHeight: "unset",
                         height: "unset",
+                        backgroundImage: "unset"
                     },
                 },
                 {
-                    id: "txt001",
-                    type: "web-txt",
+                    type: "web-card",
+                    name: "card",
+                    class: "web-card-1",
                     info: {
-                        content: "This is card txt"
+                        dir: "row",
+                        cmps: [{
+                                id: "img001",
+                                type: "web-img",
+                                info: {
+                                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDGL-6ZdKn31umHjbxRA6twySHbALSURWNA&usqp=CAU"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "txt001",
+                                type: "web-txt",
+                                info: {
+                                    content: "This is card txt"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "This is button text"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            }
+                        ]
                     },
                     style: {
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
                         letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
+                        padding: "15px",
                         backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
                         borderRadius: "unset",
-                        width: "unset",
+                        width: "100%",
+                        minHeight: "unset",
                         height: "unset",
+                        backgroundImage: "unset"
                     },
+
                 },
                 {
-                    id: "button001",
-                    type: "web-button",
+                    type: "web-card",
+                    name: "card",
+                    class: "web-card-1",
                     info: {
-                        content: "This is button text"
+                        dir: "row",
+                        cmps: [{
+                                id: "img001",
+                                type: "web-img",
+                                info: {
+                                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9UI1y4Shr253ibETjPCOWNBWWpKgQsVKaw&usqp=CAU"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "txt001",
+                                type: "web-txt",
+                                info: {
+                                    content: "This is card txt"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "This is button text"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            }
+                        ]
                     },
                     style: {
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
                         letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
+                        padding: "15px",
                         backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
                         borderRadius: "unset",
-                        width: "unset",
+                        width: "100%",
+                        minHeight: "unset",
                         height: "unset",
+                        backgroundImage: "unset"
                     },
-                },
-                {
-                    id: "img002",
-                    type: "web-img",
-                    info: {
-                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDGL-6ZdKn31umHjbxRA6twySHbALSURWNA&usqp=CAU"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: "txt001",
-                    type: "web-txt",
-                    info: {
-                        content: "This is card txt"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: "button001",
-                    type: "web-button",
-                    info: {
-                        content: "This is button text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: "img003",
-                    type: "web-img",
-                    info: {
-                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9UI1y4Shr253ibETjPCOWNBWWpKgQsVKaw&usqp=CAU"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: "txt001",
-                    type: "web-txt",
-                    info: {
-                        content: "This is card txt"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: "button001",
-                    type: "web-button",
-                    info: {
-                        content: "This is button text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
+
                 }
             ]
         },
+
         style: {
             fontFamily: "unset",
             fontSize: "unset",
