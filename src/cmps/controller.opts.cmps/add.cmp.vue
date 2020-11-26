@@ -11,12 +11,13 @@
   <div class="controller-add">
     <p>I'm add</p>
     <button @click="setCmpsToShow('text')">Txt</button>
-    <button @click="setCmpsToShow('contact')">Map</button>
+    <button @click="setCmpsToShow('map')">Map</button>
     <button @click="setCmpsToShow('header')">Header</button>
-    <button @click="setCmpsToShow('gallery')">Img</button>
+    <button @click="setCmpsToShow('image')">Img</button>
     <button @click="setCmpsToShow('section')">Section</button>
     <button @click="setCmpsToShow('footer')">Footer</button>
     <button @click="setCmpsToShow('video')">Video</button>
+    <button @click="setCmpsToShow('form')">form</button>
   </div>
 
 <section class="cmpsExamples" v-if="cmps">

@@ -7,7 +7,7 @@
   >
     <GmapMap
       :center="{ lat: cmp.info.lat, lng: cmp.info.lng }"
-      :zoom="7"
+      :zoom=cmp.info.zoom
       map-type-id="terrain"
       style="width: 500px; height: 300px"
     >
