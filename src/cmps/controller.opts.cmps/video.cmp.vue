@@ -35,6 +35,10 @@ export default {
         idx === -1
           ? embbedVal.substring(0, embbedVal.length)
           : embbedVal.substring(0, idx);
+          this.onEdit()
+    },
+    onEdit() {
+      eventBus.$emit('update-site');
     },
   },
 };

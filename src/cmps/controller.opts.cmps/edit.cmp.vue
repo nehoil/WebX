@@ -56,10 +56,7 @@ export default {
     setEditItem(cmp) {
       this.cmp = cmp;
       this.itemToEdit = cmp.type;
-<<<<<<< HEAD
       
-=======
->>>>>>> d88a7b9bda971af38301c72541ba95495819c65e
     },
     setMargin(size) {
       this.margin = size;
