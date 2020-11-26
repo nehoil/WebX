@@ -6,8 +6,8 @@
       :key="idx"
       :info="cmp.info"
       :cmpStyle="cmp.style"
-      @click.native="setEditItem(cmp)"
       :cmp="cmp"
+      :class="cmp.class"
     ></component>
     <button @click="removeCmp(cmp.id)">X</button>
   </section>

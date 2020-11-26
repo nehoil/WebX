@@ -31,9 +31,11 @@ export default {
       // eventBus.$emit('edit-cmp', this.info);
       // eventBus.$emit('open-edit', this.cmp.type);
     },
-    setEditItem(cmp) {
-      eventBus.$emit('openEditor', cmp);
-      eventBus.$emit('setItem', cmp);
+    setEditItem() {
+      eventBus.$emit('openEditor', this.cmp);
+      this.$nextTick(() => {
+        eventBus.$emit('setItem', this.cmp);
+      });
     },
   },
   name: 'web-txt',

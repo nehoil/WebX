@@ -18,9 +18,9 @@ export default {
   name: 'web-video',
   components: {},
   methods: {
-    setEditItem(cmp) {
-      eventBus.$emit('openEditor', cmp);
-      eventBus.$emit('setItem', cmp);
+    setEditItem() {
+      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit('setItem', this.cmp);
     },
   },
 };
