@@ -6,7 +6,9 @@
       @input="searchLocation"
       placeholder="Your address here"
     ></el-input>
-
+    <div v-if="suggestedLocs" class="suggested-locs">
+      {{suggestedLocs.address}}
+    </div>
     <button>zoom</button>
     <button>name</button>
   </div>
@@ -21,14 +23,16 @@ export default {
   components: {},
   data() {
     return {
-      input: ''
+      input: '',
+      suggestedLocs: null
     };
   },
   methods: {
     async searchLocation(){
-      const res = await mapService.getAddress('tel aviv')
+      const term = this.input
+      const res = await mapService.getAddress(term)
       try {
-        console.log('res from geocode api', res);
+        this.suggestedLocs = res
       } catch {
         console.log('error');
       }
