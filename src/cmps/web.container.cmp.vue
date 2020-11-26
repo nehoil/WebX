@@ -1,5 +1,11 @@
 <template>
-  <section v-if="cmp.info.cmps" @click.self="setEditItem" class="web-container">
+  <section
+    v-if="cmp.info.cmps"
+    @click.self="setEditItem"
+    @mouseover="showEditMenu = true"
+    @mouseleave="showEditMenu = false"
+    class="web-container"
+  >
     <component
       v-for="(cmp, idx) in cmp.info.cmps"
       :is="cmp.type"
@@ -7,12 +13,14 @@
       :info="cmp.info"
       :cmpStyle="cmp.style"
       :cmp="cmp"
-    ></component>
-    <button @click="removeCmp(cmp.id)" class="remove-cmp-btn">X</button>
+    >
+    </component>
+    <edit-menu v-if="showEditMenu" :cmp="cmp"/>
   </section>
 </template>
 
 <script>
+import editMenu from '@/cmps/web.edit.menu.cmp';
 import { eventBus } from "../services/eventbus.service.js";
 import webMap from "@/cmps/elements.cmps/web.map.cmp";
 import webTxt from "@/cmps/elements.cmps/web.txt.cmp";
@@ -23,9 +31,14 @@ import webButton from "@/cmps/elements.cmps/web.button.cmp";
 import webList from "@/cmps/elements.cmps/web.list.cmp";
 import webCard from "@/cmps/elements.cmps/web.card.cmp";
 export default {
-  name: "web-container",
+  name: 'web-container',
   props: {
     cmp: Object,
+  },
+  data() {
+    return {
+      showEditMenu: false,
+    };
   },
   components: {
     webTxt,
@@ -35,17 +48,15 @@ export default {
     webButton,
     webList,
     webVideo,
+    editMenu,
     webCard
   },
   methods: {
     setEditItem() {
-      eventBus.$emit("openEditor", this.cmp);
+      eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit("setItem", this.cmp);
+        eventBus.$emit('setItem', this.cmp);
       });
-    },
-    removeCmp(cmpId) {
-      eventBus.$emit("removeCmp", cmpId);
     },
   },
 };
