@@ -437,15 +437,16 @@ const gCmps = [{
     },
     {
         type: "web-container",
-        name: "contact",
-        id: "contact001",
+        name: "img",
+        id: "img001",
         class: "",
         info: {
+            dir: "column",
             cmps: [{
-                id: "btn001",
-                type: "web-button",
+                id: "txt001",
+                type: "web-txt",
                 info: {
-                    content: "This is a button txt"
+                    content: "This is a sample H1 text"
                 },
                 style: {
                     fontFamily: "unset",
@@ -465,293 +466,11 @@ const gCmps = [{
                 },
             }, ]
         },
+
+
     },
-    {
-        type: "web-container",
-        name: "contact",
-        id: "contact002",
-        class: "",
-        info: {
-            cmps: [{
-                id: "btn001",
-                type: "web-button",
-                info: {
-                    content: "This is a button txt"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            }, ]
-        },
-    },
-    {
-        type: "web-container",
-        name: "contact002",
-        id: "btn001",
-        class: "",
-        info: {
-            cmps: [{
-                    id: "btn001",
-                    type: "web-txt",
-                    info: {
-                        content: "This is a button  text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: "wc06-map",
-                    type: "web-container",
-                    info: {
-                        dir: "column",
-                        cmps: [{
-                                id: "txt001",
-                                type: "web-txt",
-                                info: {
-                                    content: "This is a map"
-                                },
-                            },
-                            {
-                                id: "map001",
-                                type: "web-map",
-                                info: {
-                                    title: "",
-                                    lat: 46332,
-                                    lng: 63464,
-                                    zoom: 2,
-                                    address: "Paris"
-                                },
-                            }
-                        ]
-                    },
-                }
-            ]
-        },
-    }
 
 ]
-
-// {
-//     type: "web-container",
-//     name: "header",
-//     id: "head001",
-//     info: {
-//         dir: "column",
-//         cmps: [{
-//             id: "wc07",
-//             type: "web-txt",
-//             info: {
-//                 content: "This is a sample text"
-//             },
-//             "style": {
-//                 fontFamily: "unset",
-//                 fontSize: "unset",
-//                 fontWeight: "unset",
-//                 letterSpacing: "unset",
-//                 margin: "unset",
-//                 padding: "unset",
-//                 textTransform: "unset",
-//                 color: "unset",
-//                 backgroundColor: "unset",
-//                 borderShadow: "unset",
-//                 border: "unset",
-//                 borderRadius: "unset",
-//                 width: "unset",
-//                 height: "unset"
-//             }
-//         }, ]
-//     },
-
-// },
-// {
-//     id: "wc05-txt",
-//     type: "web-container",
-//     info: {
-//         dir: "column",
-//         cmps: [{
-//                 id: "wc08",
-//                 type: "web-txt",
-//                 info: {
-//                     content: "This is a different sample text@#$"
-//                 },
-
-//             },
-//             {
-//                 id: "wc03",
-//                 type: "web-button",
-//                 info: {
-//                     content: "Click here",
-//                     linkTo: "/home"
-//                 },
-
-//             }
-//         ]
-//     },
-
-// },
-// {
-//     id: "wc06-map",
-//     type: "web-container",
-//     info: {
-//         dir: "column",
-//         cmps: [{
-//                 id: "wc09",
-//                 type: "web-txt",
-//                 info: {
-//                     content: "This is a map"
-//                 },
-
-//             },
-//             {
-//                 id: "wc04",
-//                 type: "web-map",
-//                 info: {
-//                     title: "",
-//                     lat: 46332,
-//                     lng: 63464,
-//                     zoom: 2,
-//                     address: "Paris"
-//                 },
-
-//             }
-//         ]
-//     },
-
-// },
-// {
-//     "id": "wc02",
-//     "type": "web-container",
-//     "info": {
-//         "dir": "column",
-//         "cmps": [
-//             {
-//                 "id": "wc05",
-//                 "type": "web-img",
-//                 "info": {
-//                     "content": "http://serverless.css-tricks.com/img/food.svg"
-//                 },
-
-//             },
-//             {
-//                 "id": "wc06",
-//                 "type": "web-video",
-//                 "info": {
-//                     "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-//                     "title": "watch this video!"
-//                 },
-
-//             }
-//         ]
-//     },
-
-// },
-// {
-//     "id": "wc02",
-//     "type": "web-container",
-//     "info": {
-//         "dir": "column",
-//         "cmps": [
-//             {
-//                 "id": "wc08",
-//                 "type": "web-list",
-//                 "info": {
-//                     "content": "This is a ul/ol list",
-//                     "li-txt": {
-//                         "1": "I am li - 1",
-//                         "2": "I am li - 2",
-//                         "3": "I am li - 3"
-//                     }
-//                 },
-
-//             },
-//             {
-//                 "id": "wc06",
-//                 "type": "web-video",
-//                 "info": {
-//                     "content": "https://www.youtube.com/embed/L6X0PqIWfzQ",
-//                     "title": "watch this video!"
-//                 },
-
-//             }
-//         ]
-//     },
-
-// },
-// {
-//     "id": "wc02",
-//     "type": "web-container",
-//     "info": {
-//         "dir": "column",
-//         "cmps": [
-//             {
-//                 "id": "wc05",
-//                 "type": "web-img",
-//                 "info": {
-//                     "content": "https://serverless.css-tricks.com/img/food.svg"
-//                 },
-
-//             },
-//             {
-//                 "id": "wc07",
-//                 "type": "web-form",
-//                 "info": {
-//                     "content": [
-//                         {
-//                             "placeHolder": "Title",
-//                             "type": "text"
-//                         },
-//                         {
-//                             "placeHolder": "Email",
-//                             "type": "email"
-//                         },
-//                         {
-//                             "placeHolder": "Subject",
-//                             "type": "text"
-//                         }
-//                     ],
-//                     "cmps": [
-//                         {
-//                             "type": "web-button",
-//                             "info": {
-//                                 "title": "",
-//                                 "linkTo": ""
-//                             },
-
-//                         }
-//                     ]
-//                 }
-//             }
-//         ]
-//     },
-
-// }
 
 
 
@@ -778,8 +497,6 @@ function getEmptyTemplate() {
 
 
 function getCmpsByName(name) {
-    console.log(name);
-
     return gCmps.filter(cmps => cmps.name === name)
 }
 
