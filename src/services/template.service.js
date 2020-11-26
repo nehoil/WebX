@@ -430,7 +430,7 @@ const gCmps = [{
                 id: "img001",
                 type: "web-img",
                 info: {
-                    src: "https://outofschool.club/wp-content/uploads/2015/02/insert-image-here.jpg"
+                    src: "https://ctl.s6img.com/society6/img/D3yo6R-JbO58p8AQsYcVIlLNrrU/w_700/prints/~artwork/s6-0008/a/1718997_2253462/~~/kyoto-japan-prints.jpg"
                 },
                 style: {
                     fontFamily: "unset",
@@ -531,16 +531,141 @@ const gCmps = [{
     },
     {
         type: "web-container",
-        name: "section",
+        name: "card",
         id: "sec001-cards trio",
-        class: "web-img-gallery-1",
+        class: "web-sec-cards-1",
         info: {
             dir: "row",
             cmps: [{
                     id: "img001",
                     type: "web-img",
                     info: {
-                        src: "https://www.clermontparks.org/wp-content/uploads/sites/39/2020/03/DSC_1543-1170x640.jpg"
+                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxjAS5XOyce7tPZQU6VspYHHPSAEan-iV3g&usqp=CAU"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is card txt"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "This is button text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                }
+            ]
+        },
+    },
+    {
+        type: "web-container",
+        name: "section",
+        id: "sec001-cards trio",
+        class: "web-sec-cards-1",
+        info: {
+            dir: "row",
+            cmps: [{
+                    id: "img001",
+                    type: "web-img",
+                    info: {
+                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxjAS5XOyce7tPZQU6VspYHHPSAEan-iV3g&usqp=CAU"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is card txt"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "This is button text"
                     },
                     style: {
                         fontFamily: "unset",
@@ -563,7 +688,7 @@ const gCmps = [{
                     id: "img002",
                     type: "web-img",
                     info: {
-                        src: "https://europeansting.files.wordpress.com/2019/11/nature.jpeg"
+                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDGL-6ZdKn31umHjbxRA6twySHbALSURWNA&usqp=CAU"
                     },
                     style: {
                         fontFamily: "unset",
@@ -581,11 +706,104 @@ const gCmps = [{
                         width: "unset",
                         height: "unset",
                     },
-                }, {
+                },
+                {
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is card txt"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "This is button text"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
                     id: "img003",
                     type: "web-img",
                     info: {
-                        src: "https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/MorganSwamp_credit-David-Ike.jpg?crop=0,0,5304,3315&wid=1640&hei=1025&scl=3.234146341463415"
+                        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9UI1y4Shr253ibETjPCOWNBWWpKgQsVKaw&usqp=CAU"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "This is card txt"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "This is button text"
                     },
                     style: {
                         fontFamily: "unset",
