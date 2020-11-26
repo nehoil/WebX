@@ -12,10 +12,12 @@
   </section>
 </template>
 <script>
-import add from "@/cmps/controller.opts.cmps/add.cmp";
-import edit from "@/cmps/controller.opts.cmps/edit.cmp";
+import add from '@/cmps/controller.opts.cmps/add.cmp';
+import edit from '@/cmps/controller.opts.cmps/edit.cmp';
+import { eventBus } from "@/services/eventbus.service.js";
+
 export default {
-  name: "controller",
+  name: 'controller',
   components: {
     add,
     edit,
@@ -30,6 +32,8 @@ export default {
     };
   },
   created() {
+    eventBus.$on('openEditor', ()=>{
+      this.addOrEdit = 'edit'});
   },
 };
 </script>
