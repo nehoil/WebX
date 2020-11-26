@@ -1,22 +1,14 @@
-
-<script>
-// allows control in:
-// * border radius
-// * border
-// * bgcColor
-// * boxShadow
-// * width, height
-// * margin, padding
-// * adding content (img)
-</script>
 <template>
   <div class="edit-container" v-if="cmp">
     <div>
-      <el-checkbox v-model="border" @change="toggleBorder"
-        >Set Border</el-checkbox
-      >
+      Set Length
+      <el-slider
+        :min="1"
+        :max="1400"
+        v-model="minHeight"
+        @input="setMinHeight"
+      ></el-slider>
     </div>
-    <button>height</button>
     <button>img bgc</button>
     <div>
       <p>Background Color</p>
@@ -48,23 +40,36 @@ export default {
   data() {
     return {
       padding: null,
-      border: null,
+      minHeight: null,
     };
   },
-  created() {},
+  created() {
+    if (!this.cmp.style.minHeight) {
+      this.cmp.style.minHeight = "unset";
+    } else if (this.cmp.style.minHeight !== "unset") {
+      var minHeightNum = this.getNumFromString("minHeight");
+      this.minHeight = +minHeightNum * 16;
+    }
+  },
   methods: {
-    toggleBorder() {
-      if (this.cmp.style.border === "unset")
-        this.cmp.style.border = "1px solid gray";
-      else this.cmp.style.border = "unset";
+    getNumFromString(styleProperty) {
+      if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
+        return this.cmp.style[styleProperty].match(/\d+/g).flat().join(".");
+      } else {
+        return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
+      }
+    },
+    setMinHeight(size) {
+      this.minHeight = size;
+      this.cmp.style.minHeight = size / 16 + "rem";
       eventBus.$emit("update-site");
+      this.minHeight = null;
     },
     setBgcColor(bgcColor) {
       this.cmp.style.backgroundColor = bgcColor;
       eventBus.$emit("update-site");
     },
     setPadding(size) {
-      console.log(this.cmp);
       this.padding = size;
       this.cmp.style.padding = size / 16 + "rem";
       eventBus.$emit("update-site");

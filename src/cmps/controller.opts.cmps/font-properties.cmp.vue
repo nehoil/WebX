@@ -26,7 +26,6 @@
       <el-option value="Medium">Medium</el-option>
       <el-option value="Strong">Strong</el-option>
     </el-select>
-    <select-color :cmp="cmp"></select-color>
     <div>
       <p>Letter Spacing</p>
       <el-slider
@@ -55,11 +54,15 @@ export default {
     };
   },
   created() {
-    if (this.cmp.style.fontSize) {
+    if (!this.cmp.style.fontSize) {
+      this.cmp.style.fontSize = "unset";
+    } else if (this.cmp.style.fontSize !== "unset") {
       var fontSizeNum = this.getNumFromString("fontSize");
       this.fontSize = +fontSizeNum * 16;
     }
-    if (this.cmp.style.letterSpacing) {
+    if (!this.cmp.style.letterSpacing) {
+      this.cmp.style.letterSpacing = "unset";
+    } else if (this.cmp.style.letterSpacing !== "unset") {
       var letterSpacingNum = this.getNumFromString("letterSpacing");
       this.letterSpacing = +letterSpacingNum * 16;
     }
@@ -111,7 +114,6 @@ export default {
         this.cmp.style.fontStyle = "italic";
       else this.cmp.style.fontStyle = "unset";
       eventBus.$emit("update-site");
-      console.log(this.cmp.style);
     },
     toggleUnderline() {
       if (
@@ -121,7 +123,6 @@ export default {
         this.cmp.style.textDecoration = "underline";
       else this.cmp.style.textDecoration = "unset";
       eventBus.$emit("update-site");
-      console.log(this.cmp.style);
     },
   },
 };
