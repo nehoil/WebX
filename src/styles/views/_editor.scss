@@ -1,17 +1,22 @@
 div.editor {
 	border: 1px solid $clr5;
-	max-height: 85vh;
+	height: 85vh;
 	margin-bottom: 2rem;
 	.workspace {
 		overflow-y: auto;
 		padding: 30px;
 		width: 75%;
+		height: 100%;
 	}
 	.controller {
 		overflow-y: auto;
 		width: 25%;
 		border-right: 1px solid $clr5;
 		padding: 30px;
+		height: 100%;
+		i {
+			margin-right: 5px;
+		}
 		.el-slider {
 			width: 70%;
 			margin: 0 auto;

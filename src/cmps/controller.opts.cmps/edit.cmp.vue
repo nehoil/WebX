@@ -2,7 +2,7 @@
   <div class="controller-edit">
     <p>I'm edit</p>
     <component :is="itemToEdit" :cmp="cmp"></component>
-    <div v-if="itemToEdit">
+    <!-- <div v-if="itemToEdit">
       <p>padding</p>
       <el-slider
         :min="1"
@@ -17,7 +17,7 @@
         v-model="margin"
         @input="setMargin"
       ></el-slider>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -54,8 +54,12 @@ export default {
   },
   methods: {
     setEditItem(cmp) {
+<<<<<<< HEAD
       console.log(cmp);
       this.cmp = cmp;
+=======
+      this.cmp = cmp
+>>>>>>> 641c23aa2783b0a41dd58554a1a0b2e47b95549f
       this.itemToEdit = cmp.type;
     },
     setMargin(size) {

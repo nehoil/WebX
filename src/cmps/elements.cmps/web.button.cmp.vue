@@ -6,8 +6,7 @@
     v-if="cmp"
     @click="setEditItem"
   >
-    <a :href="cmp.info.linkTo"></a>
-    <section class="button">{{ cmp.info.content }}</section>
+      <a :href="cmp.info.linkTo">{{cmp.info.content}}</a>
   </section>
 </template>
 
