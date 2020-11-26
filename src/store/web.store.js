@@ -31,7 +31,9 @@ export const webStore = {
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-                // cmp.id = utilService.makeId()
+            console.log(cmp);
+
+            // cmp.id = utilService.makeId()
             state.siteToEdit.cmps.push(cmp)
             utilService.storeToStorage('draft_db', state.siteToEdit)
         },
