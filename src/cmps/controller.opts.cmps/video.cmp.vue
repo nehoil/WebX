@@ -5,7 +5,9 @@
 </script>
 <template>
   <div class="edit-video">
-    <button>change link</button>
+         <p><i class="el-icon-edit"></i>Insert URL</p>
+    <el-input @input="changeLinkTo" placeholder="Your link here" v-model="cmp.linkTo"></el-input>
+    
   </div>
 </template>
 
@@ -15,6 +17,11 @@ export default {
   components: {},
   data() {
     return {};
+  },
+  methods: {
+    changeLinkTo(){
+      console.log('change click');
+    }
   },
 };
 </script>
