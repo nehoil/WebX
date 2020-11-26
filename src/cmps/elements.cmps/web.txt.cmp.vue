@@ -4,6 +4,7 @@
     contenteditable="isEdit"
     :style="cmp.style"
     @blur="onEdit"
+    @click="setEditItem"
   >
     {{ cmp.info.content }}
   </span>
@@ -30,8 +31,12 @@ export default {
       // eventBus.$emit('edit-cmp', this.info);
       // eventBus.$emit('open-edit', this.cmp.type);
     },
+    setEditItem(cmp) {
+      eventBus.$emit('openEditor', cmp);
+      eventBus.$emit('setItem', cmp);
+    },
   },
-  name: "web-txt",
+  name: 'web-txt',
   components: {},
 };
 </script>

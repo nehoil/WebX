@@ -83,11 +83,13 @@ else this.cmp.style.fontWeight = 'unset'
      if (!this.cmp.style.fontStyle || this.cmp.style.fontStyle === "unset" ) this.cmp.style.fontStyle = "italic"
 else this.cmp.style.fontStyle = 'unset'
       eventBus.$emit('update-site');
+      console.log(this.cmp.style);
           },
         toggleUnderline(){
     if (!this.cmp.style.textDecoration  || this.cmp.style.textDecoration === "unset" ) this.cmp.style.textDecoration = "underline"
 else this.cmp.style.textDecoration = 'unset'
          eventBus.$emit('update-site');
+           console.log(this.cmp.style);
     }
 
   }

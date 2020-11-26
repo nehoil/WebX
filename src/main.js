@@ -9,6 +9,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import "./styles/styles.scss";
 
 
+import "./styles/styles.scss";
 Vue.use(ElementUI);
 
 
