@@ -43,7 +43,8 @@ export const webStore = {
                 // state.siteToEdit.cmps.push(cmp)
         },
         setCmpsToShow(state, { cmpType }) {
-            const cmps = templateService.getCmpsByType(cmpType)
+            console.log(cmpType);
+            const cmps = templateService.getCmpsByName(cmpType)
             state.cmpsToShow = cmps
         },
         updateSite(state, { site }) {

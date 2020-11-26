@@ -1,6 +1,6 @@
 <template>
   <section class="web-img" :style="cmp.style" @click="setEditItem">
-    <img :src="cmp.info.content" alt="" />
+    <img :src="cmp.info.src" alt="" />
   </section>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   components: {},
   methods: {
     onEdit(ev) {
-      this.cmp.info.content = ev.target.innerText;
+      this.cmp.info.src = ev.target.innerText;
       eventBus.$emit('update-site');
     },
     setEditItem() {
