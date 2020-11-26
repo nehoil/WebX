@@ -31,19 +31,18 @@ export const webStore = {
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-                // cmp.id = utilService.makeId()
-            state.siteToEdit.cmps.push(cmp)
+            const cmpCopy = JSON.parse(JSON.stringify(cmp))
+            cmpCopy.id = utilService.makeId(9)
+            state.siteToEdit.cmps.push(cmpCopy)
             utilService.storeToStorage('draft_db', state.siteToEdit)
         },
         removeCmp(state, { id }) {
             const idx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
-            console.log('store get idx', idx);
+            if (idx < 0) return
             state.siteToEdit.cmps.splice(idx, 1)
             utilService.storeToStorage('draft_db', state.siteToEdit)
-                // state.siteToEdit.cmps.push(cmp)
         },
         setCmpsToShow(state, { cmpType }) {
-            console.log(cmpType);
             const cmps = templateService.getCmpsByName(cmpType)
             state.cmpsToShow = cmps
         },

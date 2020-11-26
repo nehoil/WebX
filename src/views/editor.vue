@@ -37,7 +37,6 @@ export default {
       this.$store.commit({ type: "addCmp", id });
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
       this.$forceUpdate();
-      console.log(this.siteToEdit.cmps);
     });
     eventBus.$on("removeCmp", (id) => {
       this.$store.commit({ type: "removeCmp", id });
