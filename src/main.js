@@ -6,15 +6,17 @@ import store from "./store/store.js";
 import * as VueGoogleMaps from 'vue2-google-maps'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import "./styles/styles.scss";
+
 
 import "./styles/styles.scss";
 Vue.use(ElementUI);
 
 
 Vue.use(VueGoogleMaps, {
-  load: {
-    key: 'AIzaSyCkBmq94RUL-VNdku46pXE3nt-_Z01Damo',
-    libraries: 'places',
+    load: {
+        key: 'AIzaSyCkBmq94RUL-VNdku46pXE3nt-_Z01Damo',
+        libraries: 'places',
     },
 })
 
@@ -22,7 +24,7 @@ Vue.use(VueGoogleMaps, {
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  store,
-  render: h => h(app)
+    router,
+    store,
+    render: h => h(app)
 }).$mount("#app");

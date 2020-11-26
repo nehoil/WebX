@@ -1,4 +1,4 @@
-import {utilService} from '../services/util-service.js'
+import { utilService } from '../services/util-service.js'
 
 var localDraftSite = {
     _id: null,
@@ -13,7 +13,7 @@ var localDraftSite = {
 };
 if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
 
-import {templateService} from '@/services/template.service.js'
+import { templateService } from '@/services/template.service.js'
 
 export const webStore = {
     state: {
@@ -31,9 +31,16 @@ export const webStore = {
     mutations: {
         addCmp(state, { id }) {
             const cmp = templateService.getCmpById(id)
-            console.log('store get cmp', cmp);
+                // cmp.id = utilService.makeId()
             state.siteToEdit.cmps.push(cmp)
             utilService.storeToStorage('draft_db', state.siteToEdit)
+        },
+        removeCmp(state, { id }) {
+            const idx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
+            console.log('store get idx', idx);
+            state.siteToEdit.cmps.splice(idx, 1)
+            utilService.storeToStorage('draft_db', state.siteToEdit)
+                // state.siteToEdit.cmps.push(cmp)
         },
         setCmpsToShow(state, { cmpType }) {
             const cmps = templateService.getCmpsByType(cmpType)
