@@ -6,7 +6,9 @@
     v-if="cmp"
     @click.stop="setEditItem"
     :href="cmp.info.linkTo"
-    >{{ cmp.info.content }}</a
+    >{{ cmp.info.content }}
+    <img v-if="cmp.info.imgUrl" :src="cmp.info.imgUrl" alt="" >
+    </a
   >
 </template>
 

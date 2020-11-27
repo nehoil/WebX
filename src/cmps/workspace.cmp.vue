@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 import webContainer from "@/cmps/web.container.cmp";
 import { eventBus } from "@/services/eventbus.service.js";
 
