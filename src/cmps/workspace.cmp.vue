@@ -1,7 +1,7 @@
 <template>
   <div class="workspace">
     <draggable
-      class="dragArea list-workspace"
+      :class="{dragArea:isDragging}"
       :list="cmps"
       group="workspace-cmps"
       @change="updateSite"
@@ -34,7 +34,9 @@ export default {
     draggable,
   },
   data() {
-    return {};
+    return {
+      isDragging:false,
+    };
   },
   methods: {
     emitItemToEdit() {
@@ -42,11 +44,18 @@ export default {
     },
     updateSite(){
        eventBus.$emit("update-site");
-    }
+    },
+ 
   },
   created() {
     eventBus.$on("addCmp", () => {
       this.$forceUpdate();
+    });
+    eventBus.$on("dragStart", () => {
+      this.isDragging=true
+    });
+    eventBus.$on("dragStop", () => {
+      this.isDragging=false
     });
   },
 };
