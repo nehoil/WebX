@@ -1,5 +1,10 @@
 <template>
   <div class="edit-img">
+    <label class="upload-image">
+      <!-- <img :src="cmp.info.src" /> -->
+      <i class="el-icon-upload2"></i>Change By Upload
+      <input type="file" @change="uploadImg" />
+    </label>
     <p><i class="el-icon-edit"></i>Change By URL</p>
     <el-input
       @input="changeLinkTo"
@@ -7,7 +12,7 @@
       placeholder="Your link here"
       v-model="cmp.info.src"
     ></el-input>
-    <el-checkbox v-model="isBorder" @change="toggleBorder"
+    <el-checkbox v-model="isBorder" @change="toggleBorder" class="change-image"
       >Set Border</el-checkbox
     >
     <div>
@@ -32,6 +37,7 @@
 </template>
 
 <script>
+import { uploadImg } from "../../services/img.upload.service.js";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-img",
@@ -73,6 +79,12 @@ export default {
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
+    },
+    async uploadImg(ev) {
+      let res = uploadImg(ev);
+      let img = await res;
+      this.cmp.info.src = img.url;
+      eventBus.$emit("update-site");
     },
     changeLinkTo(link) {
       this.cmp.info.src = link;

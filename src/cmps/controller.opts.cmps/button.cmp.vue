@@ -6,6 +6,7 @@
       placeholder="Your link here"
       v-model="cmp.linkTo"
     ></el-input>
+    <select-color :cmp="cmp"></select-color>
     <select-font :cmp="cmp"></select-font>
     <font-properties :cmp="cmp"></font-properties>
     <el-checkbox v-model="border" @change="toggleBorder"
@@ -20,7 +21,6 @@
         @input="setBorderRadius"
       ></el-slider>
     </div>
-    <select-color :cmp="cmp"></select-color>
   </div>
 </template>
 
