@@ -1344,7 +1344,7 @@ const gCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://e7.pngegg.com/pngimages/694/565/png-clipart-cartoon-fox-cartoon-fox.png"
+                                    src: "https://i.ibb.co/dGH6SFR/1d0371d6920f281c4d08fc751957a177-removebg-preview.png"
                                 },
                                 style: {
                                     fontFamily: "unset",
