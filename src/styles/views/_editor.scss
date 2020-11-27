@@ -1,4 +1,18 @@
 div.editor {
+	 input[type="file"] {
+	   display: none;
+			}
+	.change-image{
+				display: block;
+			}
+			& i:first-of-type{
+				margin-right: 10px;
+			}
+			.upload-image{
+				border: 1px solid rgba(190, 190, 190, 0.575);
+				background-color: rgba(255, 255, 255, 0.589);
+				padding: 10px 15px;
+			}
 	border: 1px solid $clr5;
 	height: 85vh;
 	margin-bottom: 2rem;
