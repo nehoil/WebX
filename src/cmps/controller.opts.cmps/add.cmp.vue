@@ -16,6 +16,7 @@
     <button @click="setCmpsToShow('image')">Img</button>
     <button @click="setCmpsToShow('section')">Section</button>
     <button @click="setCmpsToShow('footer')">Footer</button>
+    <button @click="setCmpsToShow('navbar')">Navbar</button>
     <button @click="setCmpsToShow('video')">Video</button>
     <button @click="setCmpsToShow('form')">Form</button>
     <button @click="setCmpsToShow('card')">Card</button>

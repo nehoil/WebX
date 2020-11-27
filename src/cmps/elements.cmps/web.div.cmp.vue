@@ -16,6 +16,10 @@ import { eventBus } from "@/services/eventbus.service.js";
 import webImg from "@/cmps/elements.cmps/web.img.cmp";
 import webTxt from "@/cmps/elements.cmps/web.txt.cmp";
 import webButton from "@/cmps/elements.cmps/web.button.cmp";
+import webMap from "@/cmps/elements.cmps/web.map.cmp";
+import webVideo from "@/cmps/elements.cmps/web.video.cmp";
+import webList from "@/cmps/elements.cmps/web.list.cmp";
+
 
 export default {
   props: {
@@ -26,6 +30,10 @@ export default {
     webImg,
     webTxt,
     webButton,
+    webMap,
+    webVideo,
+    webList
+
   },
   methods: {
     onEdit(ev) {
