@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      showEditMenu: true,
+      showEditMenu: false,
     };
   },
   name: 'web-img',

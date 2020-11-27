@@ -1647,6 +1647,55 @@ const gCmps = [{
                         width: "unset",
                         height: "unset",
                     },
+                }
+                ]
+            },
+            style: {
+                fontFamily: "unset",
+                fontSize: "unset",
+                fontWeight: "unset",
+                letterSpacing: "unset",
+                margin: "unset",
+                padding: "unset",
+                textTransform: "unset",
+                color: "unset",
+                backgroundColor: "unset",
+                borderShadow: "unset",
+                border: "unset",
+                borderRadius: "unset",
+                width: "unset",
+                height: "unset",
+            },
+        },
+        {
+            type: "web-container",
+            name: "footer",
+            id: "footer001",
+            class: "footer-1",
+            info: {
+                dir: "row",
+                cmps: [{
+                    id: "utilService.makeId(10)",
+                    type: "web-txt",
+                    info: {
+                        content: "All right reserved to WebX©"
+                    },
+                    style: {
+                        fontFamily: "assistantLight",
+                        fontSize: "1.0625rem",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
 
                 ]
@@ -1668,7 +1717,24 @@ const gCmps = [{
 
         ]
 
-    }
+    },
+    style: {
+        fontFamily: "unset",
+        fontSize: "unset",
+        fontWeight: "unset",
+        letterSpacing: "unset",
+        margin: "unset",
+        padding: "unset",
+        textTransform: "unset",
+        color: "unset",
+        backgroundColor: "unset",
+        borderShadow: "unset",
+        border: "unset",
+        borderRadius: "unset",
+        width: "unset",
+        height: "unset",
+    },
+}
 }
 ]
 

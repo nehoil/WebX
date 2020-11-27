@@ -26,10 +26,10 @@
       <draggable
         class="dragArea list-group"
         :group="{ name: 'workspace-cmps', pull: 'clone', put: false }"
-        @change="log"
         :list="cmps"
         :sort="false"
-        @end="log"
+        @start="startDrag"
+        @end="stopDrag"
       >
       <div v-for="cmp in cmps" :key="cmp.id">
         <p @click="addCmp(cmp.id)" class="list-group-item">{{ cmp.id }}</p>
@@ -60,8 +60,11 @@ export default {
     addCmp(cmpId) {
       eventBus.$emit("addCmp", cmpId);
     },
-    log(ev){
-      console.log(ev);
+    startDrag(ev){
+      eventBus.$emit("dragStart");
+    },
+    stopDrag(){
+      eventBus.$emit("dragStop");
       
     }
   },
