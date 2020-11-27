@@ -44,9 +44,6 @@ export const webStore = {
             if (mainIdx < 0) {
                 state.siteToEdit.cmps.forEach((cmp, idx) => {
                     var foundIdx = cmp.info.cmps.findIndex(cmp => {
-                        // console.log('id', id);
-                        console.log('cmp', cmp);
-                        // console.log('is true', cmp.id === id);
                         return cmp.id === id
                     })
                     if(foundIdx > 0){

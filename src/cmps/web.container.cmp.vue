@@ -61,7 +61,6 @@ export default {
     },
   },
   created() {
-    console.log('this web container', this.cmp)
   },
 };
 </script>

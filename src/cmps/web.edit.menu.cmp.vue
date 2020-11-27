@@ -24,9 +24,9 @@ export default {
   },
   methods: {
     removeCmp(cmpId) {
-      const id = cmpId
+      const _rootId = this.cmp._rootId
+      eventBus.$emit('removeCmp', {cmpId, _rootId});
       // this.$store.commit('removeCmp', {id: cmpId});
-      eventBus.$emit('removeCmp', id, this.cmp._rootId);
     },
     onEdit() {
       eventBus.$emit('update-site');
