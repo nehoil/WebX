@@ -5,6 +5,7 @@
     @mouseover="showEditMenu = true"
     @mouseleave="showEditMenu = false"
     class="web-container"
+    :style="this.cmp.style"
   >
     <component
       v-for="(currCmp, idx) in cmp.info.cmps"
@@ -16,12 +17,12 @@
       :_rootId="cmp.id"
     >
     </component>
-    <edit-menu v-if="showEditMenu" :cmp="cmp"/>
+    <edit-menu v-if="showEditMenu" :cmp="cmp" />
   </section>
 </template>
 
 <script>
-import editMenu from '@/cmps/web.edit.menu.cmp';
+import editMenu from "@/cmps/web.edit.menu.cmp";
 import { eventBus } from "../services/eventbus.service.js";
 import webMap from "@/cmps/elements.cmps/web.map.cmp";
 import webTxt from "@/cmps/elements.cmps/web.txt.cmp";
@@ -32,7 +33,7 @@ import webButton from "@/cmps/elements.cmps/web.button.cmp";
 import webList from "@/cmps/elements.cmps/web.list.cmp";
 import webDiv from "@/cmps/elements.cmps/web.div.cmp";
 export default {
-  name: 'web-container',
+  name: "web-container",
   props: {
     cmp: Object,
   },
@@ -50,18 +51,17 @@ export default {
     webList,
     webVideo,
     editMenu,
-    webDiv
+    webDiv,
   },
   methods: {
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      console.log(this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },
-  created() {
-    console.log('this web container', this.cmp)
-  },
+  created() {},
 };
 </script>

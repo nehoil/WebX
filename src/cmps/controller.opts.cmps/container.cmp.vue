@@ -11,11 +11,7 @@
     </div>
     <button>img bgc</button>
     <div>
-      <p>Background Color</p>
-      <el-color-picker
-        @active-change="setBgcColor"
-        v-model="cmp.style.backgroundColor"
-      ></el-color-picker>
+      <select-color :cmp="cmp"></select-color>
     </div>
     <div>
       <p>Add Spacing</p>
@@ -30,13 +26,16 @@
 </template>
 
 <script>
+import selectColor from "./select-color.cmp";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-container",
   props: {
     cmp: [Object, Array],
   },
-  components: {},
+  components: {
+    selectColor,
+  },
   data() {
     return {
       padding: null,
@@ -44,9 +43,13 @@ export default {
     };
   },
   created() {
+    if (!this.cmp.style) this.cmp.style = {};
     if (!this.cmp.style.minHeight) {
       this.cmp.style.minHeight = "unset";
-    } else if (this.cmp.style.minHeight !== "unset") {
+    } else if (
+      this.cmp.style.minHeight &&
+      this.cmp.style.minHeight !== "unset"
+    ) {
       var minHeightNum = this.getNumFromString("minHeight");
       this.minHeight = +minHeightNum * 16;
     }
@@ -70,6 +73,7 @@ export default {
       eventBus.$emit("update-site");
     },
     setPadding(size) {
+      if (!this.cmp.style.padding) this.cmp.style.padding = "unset";
       this.padding = size;
       this.cmp.style.padding = size / 16 + "rem";
       eventBus.$emit("update-site");

@@ -1,0 +1,12 @@
+.web-form {
+    width: 50% !important;
+    margin: 0 auto !important;
+    .el-input {
+        padding: 0;
+        margin-bottom: 3px;
+        width: 100%;
+    }
+            .el-textarea__inner{
+        height: 10rem !important;
+    }
+}

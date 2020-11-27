@@ -20,6 +20,7 @@
             @click="textOrBgc = 'backgroundColor'"
           ></i>
           <i
+            v-show="cmp.type !== 'web-container'"
             class="pointer color-element color-text"
             @click="textOrBgc = 'color'"
             >A</i
@@ -83,14 +84,11 @@ export default {
       return colors.slice(from, to);
     },
     setColor(color, styleProperty = this.textOrBgc) {
+      if (!this.cmp.style[styleProperty])
+        this.cmp.style[styleProperty] = "unset";
       this.cmp.style[styleProperty] = color;
       eventBus.$emit("update-site");
     },
-    // setBgcColor(bgcColor) {
-    //   console.log(bgcColor);
-    //   this.cmp.style.backgroundColor = bgcColor;
-    //   eventBus.$emit("update-site");
-    // },
     changePage(diff) {
       if (this.page >= this.colors.length && diff === 1) this.page = 0;
       if (this.page === 1 && diff === -1) this.page = this.colors.length + 1;

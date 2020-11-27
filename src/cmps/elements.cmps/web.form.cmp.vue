@@ -1,10 +1,14 @@
 <template>
   <section class="web-form" :style="cmp.style" @click.stop="setEditItem">
     <form v-if="mail">
-      <input type="email" v-model="mail.email" placeholder="Your Email" />
-      <input type="text" v-model="mail.fullName" placeholder="Your full name" />
-      <input type="text" v-model="mail.subject" placeholder="Your subject" />
-      <textarea type="text" v-model="mail.txt" placeholder="Your message" />
+      <el-input type="email" v-model="mail.email" placeholder="Your Email" />
+      <el-input
+        type="text"
+        v-model="mail.fullName"
+        placeholder="Your full name"
+      />
+      <el-input type="text" v-model="mail.subject" placeholder="Your subject" />
+      <el-input type="textarea" v-model="mail.txt" placeholder="Your message" />
       <component
         v-for="(children, idx) in cmp.info.cmps"
         :is="children.type"

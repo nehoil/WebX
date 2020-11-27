@@ -56,6 +56,8 @@ export default {
     setEditItem(cmp) {
       this.cmp = cmp;
       this.itemToEdit = cmp.type;
+      console.log(this.itemToEdit, "itemtoedit");
+      console.log(this.cmp, "cmp");
     },
     // setMargin(size) {
     //   this.margin = size;
