@@ -1,8 +1,8 @@
 <template>
   <div class="edit-txt" v-if="cmp">
+    <select-color :cmp="cmp"></select-color>
     <select-font :cmp="cmp"></select-font>
     <font-properties :cmp="cmp"></font-properties>
-    <select-color :cmp="cmp"></select-color>
     <div>
       <p>Line Height</p>
       <el-slider
