@@ -1,22 +1,27 @@
 <template>
   <div class="workspace">
-    <component
-      v-for="(cmp, idx) in cmps"
-      :style="cmp.style"
-      :is="cmp.type"
-      :cmp="cmp"
-      :class="cmp.class"
-      :key="idx"
+    <draggable
+      class="dragArea list-workspace"
+      :list="cmps"
+      group="workspace-cmps"
     >
-    </component>
-    <!-- <pre v-if="waps"></pre> -->
+      <component
+        v-for="(cmp, idx) in cmps"
+        :style="cmp.style"
+        :is="cmp.type"
+        :cmp="cmp"
+        :class="cmp.class"
+        :key="idx"
+      >
+      </component>
+    </draggable>
   </div>
 </template>
 
 <script>
-
 import webContainer from "@/cmps/web.container.cmp";
 import { eventBus } from "@/services/eventbus.service.js";
+import draggable from "vuedraggable";
 
 export default {
   props: {
@@ -25,6 +30,7 @@ export default {
   name: "work-space",
   components: {
     webContainer,
+    draggable,
   },
   data() {
     return {};
