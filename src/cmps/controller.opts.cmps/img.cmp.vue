@@ -5,7 +5,7 @@
       @input="changeLinkTo"
       @keyup.enter="changeLinkTo"
       placeholder="Your link here"
-      v-model="cmp.linkTo"
+      v-model="cmp.info.src"
     ></el-input>
     <el-checkbox v-model="isBorder" @change="toggleBorder"
       >Set Border</el-checkbox
@@ -75,7 +75,7 @@ export default {
       }
     },
     changeLinkTo(link) {
-      this.cmp.linkTo = link;
+      this.cmp.info.src = link;
       eventBus.$emit("update-site");
     },
     toggleBorder() {
