@@ -79,7 +79,8 @@ const gCmps = [{
                     id: "button001",
                     type: "web-button",
                     info: {
-                        content: "This is button text"
+                        content: "This is button text",
+                        linkTo: "#"
                     },
                     style: {
                         fontFamily: "unset",
@@ -640,7 +641,7 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                type: "web-card",
+                type: "web-div",
                 name: "card",
                 class: "web-card-1-col",
                 info: {
@@ -695,7 +696,9 @@ const gCmps = [{
                             id: "button001",
                             type: "web-button",
                             info: {
-                                content: "This is button text"
+                                content: "This is button text",
+                                linkTo: "#"
+
                             },
                             style: {
                                 fontFamily: "unset",
@@ -754,7 +757,7 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                type: "web-card",
+                type: "web-div",
                 name: "card",
                 class: "web-card-2-row",
                 info: {
@@ -809,7 +812,9 @@ const gCmps = [{
                             id: "button001",
                             type: "web-button",
                             info: {
-                                content: "This is button text"
+                                content: "This is button text",
+                                linkTo: "#"
+
                             },
                             style: {
                                 fontFamily: "unset",
@@ -868,7 +873,7 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                    type: "web-card",
+                    type: "web-div",
                     name: "card",
                     class: "web-card-1",
                     info: {
@@ -959,7 +964,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    type: "web-card",
+                    type: "web-div",
                     name: "card",
                     class: "web-card-1",
                     info: {
@@ -1051,7 +1056,7 @@ const gCmps = [{
 
                 },
                 {
-                    type: "web-card",
+                    type: "web-div",
                     name: "card",
                     class: "web-card-1",
                     info: {
@@ -1277,7 +1282,9 @@ const gCmps = [{
                     id: "button001",
                     type: "web-button",
                     info: {
-                        content: "Submit"
+                        content: "Submit",
+                        linkTo: "#"
+
                     },
                     style: {
                         fontFamily: "unset",
@@ -1311,9 +1318,348 @@ const gCmps = [{
             height: "unset",
             backgroundImage: "unset"
         }
-    }
+    },
 
+    {
+        type: "web-container",
+        name: "navbar",
+        id: "nav001",
+        class: "navbar-1",
+        info: {
+            dir: "row",
+            cmps: [{
+                    type: "web-div",
+                    name: "logo-container",
+                    class: "web-div-logo-container",
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                                id: "logo001",
+                                type: "web-img",
+                                info: {
+                                    src: "https://e7.pngegg.com/pngimages/694/565/png-clipart-cartoon-fox-cartoon-fox.png"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "txt001",
+                                type: "web-txt",
+                                info: {
+                                    content: "Logo"
+                                },
+                                style: {
+                                    fontFamily: "fredericka",
+                                    fontSize: "3.375rem",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                        ]
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        padding: "15px",
+                        backgroundColor: "unset",
+                        borderRadius: "unset",
+                        width: "100%",
+                        minHeight: "unset",
+                        height: "unset",
+                        backgroundImage: "unset"
+                    }
+                },
+
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "Nav1",
+                        linkTo: "#"
+
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "Nav2",
+                        linkTo: "#"
+
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "Nav3",
+                        linkTo: "#"
+
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    id: "button001",
+                    type: "web-button",
+                    info: {
+                        content: "Nav4",
+                        linkTo: "#"
+
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                }
+            ]
+
+        }
+    },
+    {
+        type: "web-container",
+        name: "footer",
+        id: "footer001",
+        class: "footer-1",
+        info: {
+            dir: "row",
+            cmps: [{
+                    id: "txt001",
+                    type: "web-txt",
+                    info: {
+                        content: "All right reserved to WebX©"
+                    },
+                    style: {
+                        fontFamily: "assistantLight",
+                        fontSize: "1.0625rem",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
+                },
+                {
+                    type: "web-div",
+                    name: "social-btns-container",
+                    class: "web-div-social-btns-container",
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "social-1",
+                                    linkTo: "#"
+
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "social-2",
+                                    linkTo: "#"
+
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "social-3",
+                                    linkTo: "#"
+
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: "button001",
+                                type: "web-button",
+                                info: {
+                                    content: "social-4",
+                                    linkTo: "#"
+
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+
+                        ]
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        padding: "15px",
+                        backgroundColor: "unset",
+                        borderRadius: "unset",
+                        width: "100%",
+                        minHeight: "unset",
+                        height: "unset",
+                        backgroundImage: "unset"
+                    }
+                },
+
+            ]
+
+        }
+    }
 ]
+
 
 
 
