@@ -7,35 +7,47 @@
 </script>
 
 <template>
-<section>
-  <div class="controller-add">
-    <p>I'm add</p>
-    <button @click="setCmpsToShow('text')">Txt</button>
-    <button @click="setCmpsToShow('map')">Map</button>
-    <button @click="setCmpsToShow('header')">Header</button>
-    <button @click="setCmpsToShow('image')">Img</button>
-    <button @click="setCmpsToShow('section')">Section</button>
-    <button @click="setCmpsToShow('footer')">Footer</button>
-    <button @click="setCmpsToShow('navbar')">Navbar</button>
-    <button @click="setCmpsToShow('video')">Video</button>
-    <button @click="setCmpsToShow('form')">Form</button>
-    <button @click="setCmpsToShow('card')">Card</button>
-  </div>
+  <section>
+    <div class="controller-add">
+      <p>I'm add</p>
+        <button @click="setCmpsToShow('text')">Txt</button>
+        <button @click="setCmpsToShow('map')">Map</button>
+        <button @click="setCmpsToShow('header')">Header</button>
+        <button @click="setCmpsToShow('image')">Img</button>
+        <button @click="setCmpsToShow('section')">Section</button>
+        <button @click="setCmpsToShow('footer')">Footer</button>
+        <button @click="setCmpsToShow('navbar')">Navbar</button>
+        <button @click="setCmpsToShow('video')">Video</button>
+        <button @click="setCmpsToShow('form')">Form</button>
+        <button @click="setCmpsToShow('card')">Card</button>
+    </div>
 
     <section class="cmpsExamples" v-if="cmps">
+      <draggable
+        class="dragArea list-group"
+        :group="{ name: 'workspace-cmps', pull: 'clone', put: false }"
+        @change="log"
+        :list="cmps"
+        :sort="false"
+        @end="log"
+      >
       <div v-for="cmp in cmps" :key="cmp.id">
-        <p @click="addCmp(cmp.id)">{{ cmp.id }}</p>
+        <p @click="addCmp(cmp.id)" class="list-group-item">{{ cmp.id }}</p>
       </div>
+      </draggable>
     </section>
   </section>
 </template>
 
 <script>
 import { eventBus } from "@/services/eventbus.service.js";
+import draggable from "vuedraggable";
 
 export default {
   name: "controller-add",
-  components: {},
+  components: {
+    draggable,
+  },
   data() {
     return {
       cmpsToShow: null,
@@ -48,6 +60,10 @@ export default {
     addCmp(cmpId) {
       eventBus.$emit("addCmp", cmpId);
     },
+    log(ev){
+      console.log(ev);
+      
+    }
   },
   computed: {
     cmps() {
