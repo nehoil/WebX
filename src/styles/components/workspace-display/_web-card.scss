@@ -6,6 +6,8 @@
 }
 
 .web-card-1-col {
+    max-width: fit-content;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

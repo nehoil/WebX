@@ -1,3 +1,5 @@
+import { utilService } from '@/services/util-service.js'
+
 const gTemplates = []
 const gCmps = [{
         type: "web-container",
@@ -7,7 +9,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "txt001",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a sample H1 text"
@@ -30,7 +32,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "txt002",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a P text"
@@ -76,7 +78,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "button001",
+                    id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "This is button text",
@@ -123,7 +125,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                id: "txt001",
+                id: utilService.makeId(10),
                 type: "web-txt",
                 info: {
                     content: "This is a sample H1 text"
@@ -170,7 +172,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                id: "txt001",
+                id: utilService.makeId(10),
                 type: "web-txt",
                 info: {
                     content: "This is a P text"
@@ -216,7 +218,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "txt001",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a sample H1 text"
@@ -239,7 +241,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "txt002",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a P text"
@@ -286,7 +288,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "txt001",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a sample H1 text"
@@ -309,7 +311,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "txt002",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a P text"
@@ -332,7 +334,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "gallery001",
+                    id: utilService.makeId(10),
                     type: "web-img",
                     info: {
                         src: "#"
@@ -402,7 +404,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "wc06",
+                    id: utilService.makeId(10),
                     type: "web-video",
                     info: {
                         content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
@@ -437,7 +439,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "vid001",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a video title"
@@ -460,7 +462,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "wc06",
+                    id: utilService.makeId(10),
                     type: "web-video",
                     info: {
                         content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
@@ -472,7 +474,7 @@ const gCmps = [{
                     }
                 },
                 {
-                    id: "txt001",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a video p"
@@ -519,7 +521,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                id: "img001",
+                id: utilService.makeId(10),
                 type: "web-img",
                 info: {
                     src: "https://ctl.s6img.com/society6/img/D3yo6R-JbO58p8AQsYcVIlLNrrU/w_700/prints/~artwork/s6-0008/a/1718997_2253462/~~/kyoto-japan-prints.jpg"
@@ -551,7 +553,7 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                    id: "img001",
+                    id: utilService.makeId(10),
                     type: "web-img",
                     info: {
                         src: "https://i.pinimg.com/originals/87/a4/25/87a425fa2ddb2bb8060c624535127dea.png"
@@ -574,7 +576,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "img002",
+                    id: utilService.makeId(10),
                     type: "web-img",
                     info: {
                         src: "https://i.pinimg.com/originals/98/c0/1d/98c01d9d9fac8a464dce0a17dd01de7a.jpg"
@@ -596,7 +598,7 @@ const gCmps = [{
                         height: "unset",
                     },
                 }, {
-                    id: "img003",
+                    id: utilService.makeId(10),
                     type: "web-img",
                     info: {
                         src: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/589e9246770419.5863797a2637b.jpg"
@@ -644,10 +646,11 @@ const gCmps = [{
                 type: "web-div",
                 name: "card",
                 class: "web-card-1-col",
+                id: utilService.makeId(10),
                 info: {
                     dir: "row",
                     cmps: [{
-                            id: "img001",
+                            id: utilService.makeId(10),
                             type: "web-img",
                             info: {
                                 src: "https://semantic-ui.com/images/avatar2/large/kristy.png"
@@ -670,7 +673,7 @@ const gCmps = [{
                             },
                         },
                         {
-                            id: "txt001",
+                            id: utilService.makeId(10),
                             type: "web-txt",
                             info: {
                                 content: "This is card txt"
@@ -693,7 +696,7 @@ const gCmps = [{
                             },
                         },
                         {
-                            id: "button001",
+                            id: utilService.makeId(10),
                             type: "web-button",
                             info: {
                                 content: "This is button text",
@@ -759,11 +762,12 @@ const gCmps = [{
             cmps: [{
                 type: "web-div",
                 name: "card",
+                id: utilService.makeId(10),
                 class: "web-card-2-row",
                 info: {
                     dir: "row",
                     cmps: [{
-                            id: "img001",
+                            id: utilService.makeId(10),
                             type: "web-img",
                             info: {
                                 src: "https://semantic-ui.com/images/avatar2/large/kristy.png"
@@ -786,7 +790,7 @@ const gCmps = [{
                             },
                         },
                         {
-                            id: "txt001",
+                            id: utilService.makeId(10),
                             type: "web-txt",
                             info: {
                                 content: "This is card txt"
@@ -809,7 +813,7 @@ const gCmps = [{
                             },
                         },
                         {
-                            id: "button001",
+                            id: utilService.makeId(10),
                             type: "web-button",
                             info: {
                                 content: "This is button text",
@@ -875,11 +879,12 @@ const gCmps = [{
             cmps: [{
                     type: "web-div",
                     name: "card",
+                    id: utilService.makeId(10),
                     class: "web-card-1",
                     info: {
                         dir: "row",
                         cmps: [{
-                                id: "img001",
+                                id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
                                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxjAS5XOyce7tPZQU6VspYHHPSAEan-iV3g&usqp=CAU"
@@ -902,7 +907,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "txt001",
+                                id: utilService.makeId(10),
                                 type: "web-txt",
                                 info: {
                                     content: "This is card txt"
@@ -925,7 +930,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "button001",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "This is button text"
@@ -970,7 +975,7 @@ const gCmps = [{
                     info: {
                         dir: "row",
                         cmps: [{
-                                id: "img001",
+                                id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
                                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDGL-6ZdKn31umHjbxRA6twySHbALSURWNA&usqp=CAU"
@@ -993,7 +998,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "txt001",
+                                id: utilService.makeId(10),
                                 type: "web-txt",
                                 info: {
                                     content: "This is card txt"
@@ -1016,7 +1021,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "button001",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "This is button text"
@@ -1058,11 +1063,12 @@ const gCmps = [{
                 {
                     type: "web-div",
                     name: "card",
+                    id: utilService.makeId(10),
                     class: "web-card-1",
                     info: {
                         dir: "row",
                         cmps: [{
-                                id: "img001",
+                                id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
                                     src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9UI1y4Shr253ibETjPCOWNBWWpKgQsVKaw&usqp=CAU"
@@ -1085,7 +1091,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "txt001",
+                                id: utilService.makeId(10),
                                 type: "web-txt",
                                 info: {
                                     content: "This is card txt"
@@ -1108,7 +1114,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "button001",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "This is button text"
@@ -1172,7 +1178,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "wc01",
+                    id: utilService.makeId(10),
                     type: "web-txt",
                     info: {
                         content: "This is a sample text"
@@ -1195,7 +1201,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "wc04",
+                    id: utilService.makeId(10),
                     type: "web-map",
                     info: {
                         title: "",
@@ -1233,7 +1239,7 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "img001",
+                    id: utilService.makeId(10),
                     type: "web-img",
                     info: {
                         src: "https://lh3.googleusercontent.com/proxy/sxRTNOhVdjk7yx1zdIjS3CEJd1iP50Gu_0L_3rqq7UwstBfgC1oN9Q_naWKGKMycvI7ReGSkjCXOEeS4H5xp4gtGaxvBAIpyPb45EI1PTsSE7jXC0A"
@@ -1256,7 +1262,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "form001",
+                    id: utilService.makeId(10),
                     type: "web-form",
                     info: {
                         content: "This is form title text"
@@ -1279,7 +1285,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "button001",
+                    id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "Submit",
@@ -1330,11 +1336,12 @@ const gCmps = [{
             cmps: [{
                     type: "web-div",
                     name: "logo-container",
+                    id: utilService.makeId(10),
                     class: "web-div-logo-container",
                     info: {
                         dir: "row",
                         cmps: [{
-                                id: "logo001",
+                                id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
                                     src: "https://e7.pngegg.com/pngimages/694/565/png-clipart-cartoon-fox-cartoon-fox.png"
@@ -1357,7 +1364,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "txt001",
+                                id: utilService.makeId(10),
                                 type: "web-txt",
                                 info: {
                                     content: "Logo"
@@ -1397,7 +1404,7 @@ const gCmps = [{
                 },
 
                 {
-                    id: "button001",
+                    id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "Nav1",
@@ -1422,7 +1429,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "button001",
+                    id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "Nav2",
@@ -1447,7 +1454,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "button001",
+                    id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "Nav3",
@@ -1472,7 +1479,7 @@ const gCmps = [{
                     },
                 },
                 {
-                    id: "button001",
+                    id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "Nav4",
@@ -1508,7 +1515,7 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                    id: "txt001",
+                    id: "utilService.makeId(10)",
                     type: "web-txt",
                     info: {
                         content: "All right reserved to WebX©"
@@ -1533,11 +1540,12 @@ const gCmps = [{
                 {
                     type: "web-div",
                     name: "social-btns-container",
+                    id: utilService.makeId(10),
                     class: "social-btns-container",
                     info: {
                         dir: "row",
                         cmps: [{
-                                id: "social-button001",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "",
@@ -1563,7 +1571,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "social-button002",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "",
@@ -1589,7 +1597,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "social-button003",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "",
@@ -1615,7 +1623,7 @@ const gCmps = [{
                                 },
                             },
                             {
-                                id: "social-button004",
+                                id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
                                     content: "",

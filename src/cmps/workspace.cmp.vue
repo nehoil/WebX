@@ -4,6 +4,7 @@
       class="dragArea list-workspace"
       :list="cmps"
       group="workspace-cmps"
+      @change="updateSite"
     >
       <component
         v-for="(cmp, idx) in cmps"
@@ -39,6 +40,9 @@ export default {
     emitItemToEdit() {
       console.log("im emiting");
     },
+    updateSite(){
+       eventBus.$emit("update-site");
+    }
   },
   created() {
     eventBus.$on("addCmp", () => {
