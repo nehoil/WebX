@@ -7,12 +7,13 @@
     class="web-container"
   >
     <component
-      v-for="(cmp, idx) in cmp.info.cmps"
-      :is="cmp.type"
+      v-for="(currCmp, idx) in cmp.info.cmps"
+      :is="currCmp.type"
       :key="idx"
-      :info="cmp.info"
-      :cmpStyle="cmp.style"
-      :cmp="cmp"
+      :info="currCmp.info"
+      :cmpStyle="currCmp.style"
+      :cmp="currCmp"
+      :_rootId="cmp.id"
     >
     </component>
     <edit-menu v-if="showEditMenu" :cmp="cmp"/>
@@ -58,6 +59,9 @@ export default {
         eventBus.$emit('setItem', this.cmp);
       });
     },
+  },
+  created() {
+    console.log('this web container', this.cmp)
   },
 };
 </script>

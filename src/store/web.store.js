@@ -40,27 +40,27 @@ export const webStore = {
             utilService.storeToStorage('draft_db', state.siteToEdit)
         },
         removeCmp(state, { id }) {
-            // console.log(id);
             var mainIdx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
-            // console.log(mainIdx);
             if (mainIdx < 0) {
-                state.siteToEdit.cmps.forEach((cmp,idx) => {
+                state.siteToEdit.cmps.forEach((cmp, idx) => {
                     var foundIdx = cmp.info.cmps.findIndex(cmp => {
-                        console.log('curr id', id);
-                        cmp.id === id
-
+                        // console.log('id', id);
+                        console.log('cmp', cmp);
+                        // console.log('is true', cmp.id === id);
+                        return cmp.id === id
                     })
-                    if(idx > 0){
-                        console.log('state.siteToEdit.cmps[idx]', state.siteToEdit.cmps[idx]);
-                        state.siteToEdit.cmps[idx].splice(foundIdx, 1)
+                    if(foundIdx > 0){
+                        console.log('found!');
+                        state.siteToEdit.cmps[idx].info.cmps.splice(foundIdx, 1)
                         return
                     } else {
                         console.log('im here');
                     }
                 })
+            } else {
+                state.siteToEdit.cmps.splice(mainIdx, 1)
+                utilService.storeToStorage('draft_db', state.siteToEdit)
             }
-            state.siteToEdit.cmps.splice(mainIdx, 1)
-            utilService.storeToStorage('draft_db', state.siteToEdit)
         },
         // removeCmp(state, { idx, route }) {
         //     route.splice(idx, 1)
