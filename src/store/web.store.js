@@ -32,13 +32,6 @@ export const webStore = {
         }
     },
     mutations: {
-        addCmp(state, { id }) {
-            const cmp = templateService.getCmpById(id)
-            const cmpCopy = JSON.parse(JSON.stringify(cmp))
-            cmpCopy.id = utilService.makeId(9)
-            state.siteToEdit.cmps.push(cmpCopy)
-            utilService.storeToStorage('draft_db', state.siteToEdit)
-        },
         removeCmp(state, { id }) {
             var mainIdx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
             if (mainIdx < 0) {
@@ -72,7 +65,7 @@ export const webStore = {
         //     utilService.storeToStorage('draft_db', state.siteToEdit)
         // },
         setCmpsToShow(state, { cmpType }) {
-            const cmps = templateService.getCmpsByName(cmpType)
+            const cmps = templateService.getCmpsByType(cmpType)
             state.cmpsToShow = cmps
         },
         updateSite(state, { site }) {

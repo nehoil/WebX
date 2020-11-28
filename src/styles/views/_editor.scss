@@ -24,6 +24,7 @@ div.editor {
         }
     }
     .controller {
+    
         @include scrollBar(.5rem, lighten($clr3, 35%));
         background-color: rgba(241, 241, 241, 0.5);
         overflow-y: auto;
@@ -33,6 +34,7 @@ div.editor {
         height: 100%;
         display: flex;
         nav {
+            margin-bottom: 4rem;
             font-size: 1.5rem;
             a {
                 padding-right: 20px;
@@ -40,8 +42,15 @@ div.editor {
                 width: 100%;
                 height: 100%;
             }
-            a:hover {
-                background-color: #fff;
+            & a:first-of-type {
+                border-bottom-right-radius: 15px;
+            }
+            & a:last-of-type {
+                border-bottom-left-radius: 15px;
+            }
+            .active-tab {
+                background-color: $clr2;
+                color: $clr4;
             }
         }
         .controller-add {
@@ -63,10 +72,5 @@ div.editor {
             align-content: flex-end !important;
             margin-bottom: 5px;
         }
-        // .el-select .el-input {
-        //     width: 100% !important;
-        //     margin-bottom: 5px;
-        //     margin-top: 5px;
-        // }
     }
 }

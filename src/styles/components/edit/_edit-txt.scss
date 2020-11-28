@@ -1,17 +1,21 @@
 .edit-txt{
+    font-size: 1.1rem;
             .el-slider,
         .el-input {
             width: 40%;
             margin: 0;
             display: flex;
             align-content: flex-end !important;
-            margin-bottom: 5px;
         }
         .el-select .el-input {
             width: 100% !important;
             margin-bottom: 5px;
-            margin-top: 5px;
+            margin-top: 1rem !important;
         }
+    }
+    .icon-set {
+        width: 20px;
+        height: 10px;
     }
 // }
 // }
