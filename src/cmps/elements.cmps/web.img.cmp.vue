@@ -7,9 +7,9 @@
       :src="cmp.info.src"
       alt=""
       @mouseover="showEditMenu = true"
-      @mouseleave="showEditMenu = true"
+      @mouseleave="showEditMenu = false"
     />
-    <edit-menu v-if="showEditMenu" :cmp="cmp" />
+    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="small" />
   </span>
 </template>
 
@@ -29,7 +29,7 @@ export default {
   },
   name: 'web-img',
   components: {
-    editMenu,
+    editMenu
   },
   methods: {
     onEdit(ev) {
@@ -42,6 +42,9 @@ export default {
         eventBus.$emit('setItem', this.cmp);
       });
     },
+    showMenu(){
+      this.$emit('showMenu')
+    }
   },
   created() {
     this.cmp._rootId = this._rootId;

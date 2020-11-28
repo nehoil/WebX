@@ -17,7 +17,7 @@
       :_rootId="cmp.id"
     >
     </component>
-    <edit-menu v-if="showEditMenu" :cmp="cmp" />
+    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="container" />
   </section>
 </template>
 

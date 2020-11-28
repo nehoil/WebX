@@ -1,10 +1,11 @@
 <template>
   <div class="workspace">
     <draggable
-      :class="{dragArea:isDragging}"
+      :class="{ dragArea: isDragging }"
       :list="cmps"
       group="workspace-cmps"
       @change="updateSite"
+      @add="updateCmpId"
     >
       <component
         v-for="(cmp, idx) in cmps"
@@ -23,6 +24,8 @@
 import webContainer from "@/cmps/web.container.cmp";
 import { eventBus } from "@/services/eventbus.service.js";
 import draggable from "vuedraggable";
+import { utilService } from "../services/util-service.js";
+// import { templateService } from "@/services/template.service.js";
 
 export default {
   props: {
@@ -35,27 +38,31 @@ export default {
   },
   data() {
     return {
-      isDragging:false,
+      isDragging: false,
     };
   },
   methods: {
     emitItemToEdit() {
       console.log("im emiting");
     },
-    updateSite(){
-       eventBus.$emit("update-site");
+    updateSite() {
+      eventBus.$emit("update-site");
     },
- 
+    updateCmpId(ev) {
+      const cmpCopy = JSON.parse(JSON.stringify(this.cmps[ev.newIndex]));
+      cmpCopy.id = utilService.makeId(9);
+      this.cmps.splice(ev.newIndex, 1, cmpCopy);
+    },
   },
   created() {
     eventBus.$on("addCmp", () => {
       this.$forceUpdate();
     });
     eventBus.$on("dragStart", () => {
-      this.isDragging=true
+      this.isDragging = true;
     });
     eventBus.$on("dragStop", () => {
-      this.isDragging=false
+      this.isDragging = false;
     });
   },
 };
