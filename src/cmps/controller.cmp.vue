@@ -2,8 +2,8 @@
   <section class="controller flex space col">
     <div>
       <nav class="flex space">
-        <a @click="addOrEdit = 'add'">Add</a>
-        <a @click="addOrEdit = 'edit'">Edit</a>
+        <a @click="addOrEdit = 'add'" :class="getIsAdd('add')">Add</a>
+        <a @click="addOrEdit = 'edit'" :class="getIsAdd('edit')">Edit</a>
       </nav>
       <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     </div>
@@ -31,6 +31,13 @@ export default {
       addOrEdit: null,
       cmpToEdit: null,
     };
+  },
+  methods: {
+    getIsAdd(type) {
+      return {
+        "active-tab": this.addOrEdit === type,
+      };
+    },
   },
   created() {
     eventBus.$on("openEditor", () => {

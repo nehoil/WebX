@@ -44,8 +44,15 @@ div.editor {
                 width: 100%;
                 height: 100%;
             }
-            a:hover {
-                background-color: #fff;
+            & a:first-of-type {
+                border-bottom-right-radius: 15px;
+            }
+            & a:last-of-type {
+                border-bottom-left-radius: 15px;
+            }
+            .active-tab {
+                background-color: $clr2;
+                color: $clr4;
             }
         }
         .controller-add {
