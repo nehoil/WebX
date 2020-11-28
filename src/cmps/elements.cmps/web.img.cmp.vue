@@ -7,7 +7,7 @@
       :src="cmp.info.src"
       alt=""
       @mouseover="showEditMenu = true"
-      @mouseleave="showEditMenu = true"
+      @mouseleave="showEditMenu = false"
     />
     <edit-menu v-if="showEditMenu" :cmp="cmp" />
   </span>
@@ -29,7 +29,7 @@ export default {
   },
   name: 'web-img',
   components: {
-    editMenu,
+    editMenu
   },
   methods: {
     onEdit(ev) {

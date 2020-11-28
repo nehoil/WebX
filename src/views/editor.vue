@@ -1,6 +1,5 @@
 <template>
   <div class="editor flex">
-    <!-- {{siteToEdit.cmps}} -->
     <controller :itemToEdit="itemToEdit" />
     <work-space :cmps="siteToEdit.cmps" />
   </div>
@@ -27,22 +26,23 @@ export default {
   },
   methods: {
     removeCmp(root, cmpId, deep = 0) {
-        let currRootCmps = root.info.cmps;
+      var currRootCmps = root.info ? root.info.cmps : root
         currRootCmps.forEach((cmp, idx) => {
           if (cmp.id === cmpId) {
             currRootCmps.splice(idx, 1);
             this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
-            
             return;
           }
           if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
         });
       },
     searchCmp(cmps, cmpId, _rootId) {
-      // console.log('cmps', cmps);
-      // console.log('cmpId', cmpId);
-      // console.log('_rootId', _rootId);
-      let rootFather = cmps.find((webContainer) => webContainer.id === _rootId);
+      var rootFather;
+      if (_rootId){
+        rootFather = cmps.find((webContainer) => webContainer.id === _rootId);
+      } else {
+        rootFather = cmps
+      }
       this.removeCmp(rootFather, cmpId);
   },
   },
@@ -60,9 +60,6 @@ export default {
     eventBus.$on('removeCmp', (cmpIds) => {
       const { cmpId, _rootId } = cmpIds;
       const cmps = this.$store.getters.webCmps;
-      // console.log('this',this);
-      // console.log(cmpIds);
-      // var test = cmpIds
       this.searchCmp(cmps, cmpId, _rootId);
       // this.$store.commit({ type: "removeCmp", id });
       // this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
