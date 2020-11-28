@@ -1,18 +1,21 @@
 <template>
   <div class="edit-btn">
-    <p><i class="el-icon-edit"></i>Insert URL</p>
-    <el-input
-      @input="changeLinkTo"
-      placeholder="Your link here"
-      v-model="cmp.linkTo"
-    ></el-input>
+    <div class="plr10">
+      <el-input
+        @input="changeLinkTo"
+        placeholder="Attach Link And Press Enter"
+        v-model="cmp.linkTo"
+        suffix-icon="el-icon-edit"
+      ></el-input>
+    </div>
+    <el-checkbox v-model="border" @change="toggleBorder"
+      >Change Border</el-checkbox
+    >
     <select-color :cmp="cmp"></select-color>
     <select-font :cmp="cmp"></select-font>
     <font-properties :cmp="cmp"></font-properties>
-    <el-checkbox v-model="border" @change="toggleBorder"
-      >Set Border</el-checkbox
-    >
-    <div>
+
+    <div class="flex center space plr10">
       <p>Radius</p>
       <el-slider
         :min="1"

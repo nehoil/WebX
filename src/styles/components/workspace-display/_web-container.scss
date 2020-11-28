@@ -4,4 +4,8 @@
     }
     display: block;
     position: relative;
-}
+    padding: 1rem !important;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }

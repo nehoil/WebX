@@ -146,7 +146,7 @@ const gCmps = [{
                     width: "unset",
                     height: "unset",
                 },
-            }, ]
+            }]
         },
         style: {
             fontFamily: "unset",
@@ -161,8 +161,6 @@ const gCmps = [{
             height: "unset",
             backgroundImage: "unset"
         }
-
-
     },
     {
         type: "web-container",
@@ -193,7 +191,7 @@ const gCmps = [{
                     width: "unset",
                     height: "unset",
                 },
-            }, ]
+            }]
         },
         style: {
             fontFamily: "unset",
@@ -208,7 +206,6 @@ const gCmps = [{
             height: "unset",
             backgroundImage: "unset"
         }
-
     },
     {
         type: "web-container",
@@ -542,8 +539,21 @@ const gCmps = [{
                     width: "unset",
                     height: "unset",
                 },
-            }, ]
+            }]
         },
+        style: {
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            padding: "unset",
+            backgroundColor: "unset",
+            borderRadius: "unset",
+            width: "100%",
+            minHeight: "unset",
+            height: "unset",
+            backgroundImage: "unset"
+        }
     },
     {
         type: "web-container",
@@ -752,7 +762,6 @@ const gCmps = [{
             backgroundImage: "unset"
         }
     },
-
     {
         type: "web-container",
         name: "card",
@@ -894,7 +903,7 @@ const gCmps = [{
                                     fontSize: "unset",
                                     fontWeight: "unset",
                                     letterSpacing: "unset",
-                                    margin: "unset",
+                                    margin: "0 0 1rem 0",
                                     padding: "unset",
                                     textTransform: "unset",
                                     color: "unset",
@@ -933,7 +942,7 @@ const gCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
-                                    content: "This is button text"
+                                    content: "Contact me"
                                 },
                                 style: {
                                     fontFamily: "unset",
@@ -942,12 +951,12 @@ const gCmps = [{
                                     letterSpacing: "unset",
                                     margin: "unset",
                                     padding: "unset",
-                                    textTransform: "unset",
+                                    textTransform: "uppercase",
                                     color: "unset",
-                                    backgroundColor: "unset",
+                                    backgroundColor: "#fff",
                                     borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+                                    border: "1px solid gainsboro",
+                                    borderRadius: "5px",
                                     width: "unset",
                                     height: "unset",
                                 },
@@ -985,7 +994,7 @@ const gCmps = [{
                                     fontSize: "unset",
                                     fontWeight: "unset",
                                     letterSpacing: "unset",
-                                    margin: "unset",
+                                    margin: "0 0 1rem 0",
                                     padding: "unset",
                                     textTransform: "unset",
                                     color: "unset",
@@ -1024,7 +1033,7 @@ const gCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
-                                    content: "This is button text"
+                                    content: "Let's Speak"
                                 },
                                 style: {
                                     fontFamily: "unset",
@@ -1033,12 +1042,12 @@ const gCmps = [{
                                     letterSpacing: "unset",
                                     margin: "unset",
                                     padding: "unset",
-                                    textTransform: "unset",
+                                    textTransform: "uppercase",
                                     color: "unset",
-                                    backgroundColor: "unset",
+                                    backgroundColor: "#fff",
                                     borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+                                    border: "1px solid gainsboro",
+                                    borderRadius: "5px",
                                     width: "unset",
                                     height: "unset",
                                 },
@@ -1078,7 +1087,7 @@ const gCmps = [{
                                     fontSize: "unset",
                                     fontWeight: "unset",
                                     letterSpacing: "unset",
-                                    margin: "unset",
+                                    margin: "0 0 1rem 0",
                                     padding: "unset",
                                     textTransform: "unset",
                                     color: "unset",
@@ -1117,7 +1126,7 @@ const gCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
-                                    content: "This is button text"
+                                    content: "Read More"
                                 },
                                 style: {
                                     fontFamily: "unset",
@@ -1126,12 +1135,12 @@ const gCmps = [{
                                     letterSpacing: "unset",
                                     margin: "unset",
                                     padding: "unset",
-                                    textTransform: "unset",
+                                    textTransform: "uppercase",
                                     color: "unset",
-                                    backgroundColor: "unset",
+                                    backgroundColor: "#fff",
                                     borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+                                    border: "1px solid gainsboro",
+                                    borderRadius: "5px",
                                     width: "unset",
                                     height: "unset",
                                 },
@@ -1155,7 +1164,6 @@ const gCmps = [{
                 }
             ]
         },
-
         style: {
             fontFamily: "unset",
             fontSize: "unset",
@@ -1211,8 +1219,10 @@ const gCmps = [{
                         address: "Rome"
                     },
                     style: {
-                        width: "100%",
-                        height: "100%"
+                        width: "unset",
+                        height: "100%",
+                        display: "block",
+                        margin: "0 auto"
                     }
                 }
             ]
@@ -1300,10 +1310,10 @@ const gCmps = [{
                         margin: "15px 0 0 0",
                         padding: "3px 8px",
                         textTransform: "unset",
-                        color: "unset",
+                        color: "gray",
                         backgroundColor: "unset",
                         borderShadow: "unset",
-                        border: "1px solid gray",
+                        border: "1px solid gainsboro",
                         borderRadius: "unset",
                         width: "unset",
                         height: "unset",
@@ -1325,7 +1335,6 @@ const gCmps = [{
             backgroundImage: "unset"
         }
     },
-
     {
         type: "web-container",
         name: "navbar",
@@ -1382,10 +1391,9 @@ const gCmps = [{
                                     borderShadow: "unset",
                                     border: "unset",
                                     borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
-                                },
-                            },
+                                    lineHeight: "auto"
+                                }
+                            }
                         ]
                     },
                     style: {
@@ -1402,14 +1410,12 @@ const gCmps = [{
                         backgroundImage: "unset"
                     }
                 },
-
                 {
                     id: utilService.makeId(10),
                     type: "web-button",
                     info: {
                         content: "Nav1",
                         linkTo: "#"
-
                     },
                     style: {
                         fontFamily: "unset",
@@ -1504,7 +1510,19 @@ const gCmps = [{
                     },
                 }
             ]
-
+        },
+        style: {
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            padding: "unset",
+            backgroundColor: "unset",
+            borderRadius: "unset",
+            width: "unset%",
+            minHeight: "unset",
+            height: "unset",
+            backgroundImage: "unset"
         }
     },
     {
@@ -1713,10 +1731,8 @@ const gCmps = [{
                         height: "unset",
                         backgroundImage: "unset"
                     }
-                },
-
+                }
             ]
-
         },
         style: {
             fontFamily: "unset",
@@ -1733,10 +1749,10 @@ const gCmps = [{
             borderRadius: "unset",
             width: "unset",
             height: "unset",
-        },
+        }
     }
-
 ]
+
 
 
 

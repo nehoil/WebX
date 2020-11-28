@@ -3,6 +3,13 @@
     &.el-input {
         position: relative;
     }
+        .el-input {
+        width: unset !important;
+        margin: 0 auto !important;
+    }
+    .el-input__inner {
+        width: unset;
+    }
 }
 .suggested-locs {
     width: 180px;

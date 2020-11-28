@@ -1,21 +1,27 @@
 <template>
   <div class="edit-img">
-    <label class="upload-image">
-      <!-- <img :src="cmp.info.src" /> -->
-      <i class="el-icon-upload2"></i>Change By Upload
-      <input type="file" @change="uploadImg" />
+    <label class="pointer">
+      <div class="upload-image">
+        <!-- <img :src="cmp.info.src" /> -->
+        <i class="el-icon-upload2"></i>Change By Upload
+        <input type="file" @change="uploadImg" />
+      </div>
     </label>
-    <p><i class="el-icon-edit"></i>Change By URL</p>
+    <p class="change-url" @click="isToShowLink = !isToShowLink">
+      <i class="el-icon-edit"></i>Change By URL
+    </p>
     <el-input
+      class="link-input"
+      v-if="isToShowLink"
       @input="changeLinkTo"
       @keyup.enter="changeLinkTo"
       placeholder="Your link here"
       v-model="cmp.info.src"
     ></el-input>
     <el-checkbox v-model="isBorder" @change="toggleBorder" class="change-image"
-      >Set Border</el-checkbox
+      >Change Border</el-checkbox
     >
-    <div>
+    <div class="flex center space plr10">
       <p>Radius</p>
       <el-slider
         :min="1"
@@ -24,7 +30,7 @@
         @input="setBorderRadius"
       ></el-slider>
     </div>
-    <div>
+    <div class="flex center space plr10">
       <p>Change Size</p>
       <el-slider
         :min="1"
@@ -50,6 +56,7 @@ export default {
       borderRadius: null,
       isBorder: null,
       width: null,
+      isToShowLink: false,
     };
   },
   created() {
@@ -97,8 +104,10 @@ export default {
       eventBus.$emit("update-site");
     },
     setBorderRadius(percent) {
+      this.borderRadius = percent;
       this.cmp.style.borderRadius = percent + "%";
       eventBus.$emit("update-site");
+      this.borderRadius = null;
     },
     setWidth(percent) {
       this.cmp.style.width = percent + "%";

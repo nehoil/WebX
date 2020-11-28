@@ -1,21 +1,23 @@
 
 <template>
   <div class="select-font">
-    <p>Font Family</p>
-    <el-select
-      v-model="value"
-      @change="setFontFamily"
-      placeholder="Select Font"
-    >
-      <el-option
-        v-for="font in fonts"
-        :key="font.value"
-        :label="font.label"
-        :value="font.value"
-        :style="{ fontFamily: font.value }"
+    <div class="flex center space plr10">
+      <span>Font Family</span>
+      <el-select
+        v-model="value"
+        @change="setFontFamily"
+        placeholder="Select Font"
       >
-      </el-option>
-    </el-select>
+        <el-option
+          v-for="font in fonts"
+          :key="font.value"
+          :label="font.label"
+          :value="font.value"
+          :style="{ fontFamily: font.value }"
+        >
+        </el-option>
+      </el-select>
+    </div>
   </div>
 </template>
 

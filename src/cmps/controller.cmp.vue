@@ -1,20 +1,24 @@
 <template>
   <section class="controller flex space col">
-    <nav class="flex space">
-      <a @click="addOrEdit = 'add'">Add</a>
-      <a @click="addOrEdit = 'edit'">Edit</a>
-    </nav>
-    <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
-    <footer class="flex space"><a>undo</a> | <a>save</a> | <a>publish</a></footer>
+    <div>
+      <nav class="flex space">
+        <a @click="addOrEdit = 'add'">Add</a>
+        <a @click="addOrEdit = 'edit'">Edit</a>
+      </nav>
+      <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
+    </div>
+    <footer class="flex space">
+      <a>undo</a> | <a>save</a> | <a>publish</a>
+    </footer>
   </section>
 </template>
 <script>
-import add from '@/cmps/controller.opts.cmps/add.cmp';
-import edit from '@/cmps/controller.opts.cmps/edit.cmp';
+import add from "@/cmps/controller.opts.cmps/add.cmp";
+import edit from "@/cmps/controller.opts.cmps/edit.cmp";
 import { eventBus } from "@/services/eventbus.service.js";
 
 export default {
-  name: 'controller',
+  name: "controller",
   components: {
     add,
     edit,
@@ -29,11 +33,11 @@ export default {
     };
   },
   created() {
-    eventBus.$on('openEditor', ()=>{
-      this.addOrEdit = 'edit'});
+    eventBus.$on("openEditor", () => {
+      this.addOrEdit = "edit";
+    });
   },
 };
 </script>
 <style scoped>
-
 </style>
