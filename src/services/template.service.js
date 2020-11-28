@@ -180,7 +180,7 @@ const gCmps = [{
                     fontSize: "0.875rem",
                     fontWeight: "unset",
                     letterSpacing: "unset",
-                    margin: "unset",
+                    margin: "0 auto",
                     padding: "unset",
                     textTransform: "unset",
                     color: "unset",
@@ -225,7 +225,7 @@ const gCmps = [{
                         fontSize: "1.5625rem",
                         fontWeight: "unset",
                         letterSpacing: "unset",
-                        margin: "unset",
+                        margin: "0 auto",
                         padding: "unset",
                         textTransform: "unset",
                         color: "unset",
@@ -1892,7 +1892,7 @@ const gCmps = [{
 
 export const templateService = {
     getEmptyTemplate,
-    getCmpsByName,
+    getCmpsByType,
     getTemplateById,
     getCmpById
 }
@@ -1912,7 +1912,7 @@ function getEmptyTemplate() {
 }
 
 
-function getCmpsByName(name) {
+function getCmpsByType(name) {
     return gCmps.filter(cmps => cmps.name === name)
 }
 
