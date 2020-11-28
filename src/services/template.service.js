@@ -1391,7 +1391,7 @@ const gCmps = [{
                         borderShadow: "unset",
                         border: "unset",
                         borderRadius: "unset",
-                        lineHeight: "auto"
+                        // lineHeight: "auto"
                     }
                 }
                 ]
