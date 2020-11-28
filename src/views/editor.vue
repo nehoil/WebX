@@ -32,11 +32,12 @@ export default {
       var currRootCmps = root.info ? root.info.cmps : root
         currRootCmps.forEach((cmp, idx) => {
           if (cmp.id === cmpId) {
+            console.log('deleted!');
             currRootCmps.splice(idx, 1);
             this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
             return;
           }
-          if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
+          if (cmp.info.cmps) this.removeDeepCmp(cmp, cmpId, ++deep);
         });
       },
     searchCmp(cmps, cmpId, _rootId) {      
@@ -46,7 +47,7 @@ export default {
       } else {
         rootFather = cmps
       }
-      this.removeCmp(rootFather, cmpId);
+      this.removeDeepCmp(rootFather, cmpId);
   },
   },
   computed: {
