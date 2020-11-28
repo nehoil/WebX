@@ -128,11 +128,11 @@ const gCmps = [{
                 id: utilService.makeId(10),
                 type: "web-txt",
                 info: {
-                    content: "This is a sample H1 text"
+                    content: "I'm a title, click on me to edit"
                 },
                 style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
+                    fontFamily: "assistantLight",
+                    fontSize: "3.125rem",
                     fontWeight: "unset",
                     letterSpacing: "unset",
                     margin: "unset",
@@ -173,11 +173,11 @@ const gCmps = [{
                 id: utilService.makeId(10),
                 type: "web-txt",
                 info: {
-                    content: "This is a P text"
+                    content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word. Often, a word in one language will be translated into several words in another language, and vice versa."
                 },
                 style: {
                     fontFamily: "unset",
-                    fontSize: "unset",
+                    fontSize: "0.875rem",
                     fontWeight: "unset",
                     letterSpacing: "unset",
                     margin: "unset",
@@ -188,7 +188,7 @@ const gCmps = [{
                     borderShadow: "unset",
                     border: "unset",
                     borderRadius: "unset",
-                    width: "unset",
+                    width: "80ch",
                     height: "unset",
                 },
             }]
