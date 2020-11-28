@@ -36,8 +36,6 @@ export const webStore = {
             const cmp = templateService.getCmpById(id)
             const cmpCopy = JSON.parse(JSON.stringify(cmp))
             cmpCopy.id = utilService.makeId(9)
-            console.log(state.siteToEdit.cmps);
-
             state.siteToEdit.cmps.push(cmpCopy)
             utilService.storeToStorage('draft_db', state.siteToEdit)
         },

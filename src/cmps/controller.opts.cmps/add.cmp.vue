@@ -42,6 +42,7 @@
 import { eventBus } from "@/services/eventbus.service.js";
 import draggable from "vuedraggable";
 
+
 export default {
   name: "controller-add",
   components: {
