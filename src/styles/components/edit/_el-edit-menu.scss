@@ -1,13 +1,13 @@
 .el-edit-menu {
+    pointer-events: none;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
     z-index: 10;
     top: 0;
-    width: 100%;
-justify-content: center;
-    // transform: translateY(-100%);
+    justify-content: center;
     & ul {
+        pointer-events: all;
         margin: 0;
         background-color: $clr2;
         border-bottom-left-radius: 10px;
