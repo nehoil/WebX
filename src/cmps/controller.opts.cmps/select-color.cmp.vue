@@ -16,9 +16,15 @@
           class="pointer palette"
         >
           <i
+            class="el-icon-refresh-right bgc pointer color-element"
+            @click="setColor('unset')"
+          ></i>
+          <i
             class="el-icon-picture-outline bgc pointer color-element"
             @click="textOrBgc = 'backgroundColor'"
           ></i>
+          <!-- :class="isTextOrBgc(  )" -->
+
           <i
             v-show="cmp.type !== 'web-container'"
             class="pointer color-element color-text"

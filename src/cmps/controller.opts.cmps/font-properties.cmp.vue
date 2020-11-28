@@ -1,7 +1,9 @@
 <template>
   <div class="font-properties">
     <div class="flex center plr10">
-      <button>align</button>
+      <button @click="setAlign('left')">align left</button>
+      <button @click="setAlign('center')">align center</button>
+      <button @click="setAlign('right')">align right</button>
       <button @click="toggleBold">B</button>
       <button @click="toggleItalic">I</button>
       <button @click="toggleUnderline">U</button>
@@ -52,6 +54,7 @@ export default {
       fontSize: null,
       letterSpacing: null,
       textShadow: null,
+      textAlign: null,
       value: "",
     };
   },
@@ -77,6 +80,11 @@ export default {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
     },
+    setAlign(align) {
+      if (!this.cmp.style.textAlign) this.cmp.style.textAlign = align;
+      this.cmp.style.textAlign = align;
+      eventBus.$emit("update-site");
+    },
     setTextShadow(strength) {
       switch (strength) {
         case "None":
@@ -93,6 +101,7 @@ export default {
           break;
       }
       eventBus.$emit("update-site");
+      this.textShadow = null;
       return this.cmp.style.textShadow;
     },
     setFontSize(size) {
@@ -112,15 +121,15 @@ export default {
       eventBus.$emit("update-site");
     },
     toggleItalic() {
-      if (!this.cmp.style.fontStyle || this.cmp.style.fontStyle === "unset")
+      if (this.cmp.style.fontStyle === "unset" || !this.cmp.style.fontStyle)
         this.cmp.style.fontStyle = "italic";
       else this.cmp.style.fontStyle = "unset";
       eventBus.$emit("update-site");
     },
     toggleUnderline() {
       if (
-        !this.cmp.style.textDecoration ||
-        this.cmp.style.textDecoration === "unset"
+        this.cmp.style.textDecoration === "unset" ||
+        !this.cmp.style.textDecoration
       )
         this.cmp.style.textDecoration = "underline";
       else this.cmp.style.textDecoration = "unset";
