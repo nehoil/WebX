@@ -1,26 +1,19 @@
 <template>
   <div class="font-properties">
-    <div class="flex center plr10">
-      <button @click="setAlign('left')">align left</button>
-      <button @click="setAlign('center')">align center</button>
-      <button @click="setAlign('right')">align right</button>
-      <button @click="toggleBold">B</button>
-      <button @click="toggleItalic">I</button>
-      <button @click="toggleUnderline">U</button>
+    <div>
+      <button @click="setAlign('left')" class="button-reset">
+        <div class="icon-set" v-html="alignLeft"></div>
+      </button>
+      <button @click="setAlign('center')" class="button-reset">
+        <div class="icon-set" v-html="alignCenter"></div>
+      </button>
+      <button class="button-reset" @click="setAlign('right')">
+        <div class="icon-set" v-html="alignRight"></div>
+      </button>
     </div>
-    <div class="flex center space plr10">
-      <span>Text Shadow</span>
-      <el-select
-        v-model="textShadow"
-        @change="setTextShadow"
-        placeholder="Select"
-      >
-        <el-option value="None">None</el-option>
-        <el-option value="Light">Light</el-option>
-        <el-option value="Medium">Medium</el-option>
-        <el-option value="Strong">Strong</el-option>
-      </el-select>
-    </div>
+    <button @click="toggleBold" class="button-reset">B</button>
+    <button @click="toggleItalic" class="button-reset">I</button>
+    <button @click="toggleUnderline" class="button-reset">U</button>
     <div class="flex center space plr10">
       <span>Font Size</span>
       <el-slider
@@ -39,10 +32,24 @@
         @input="setSpacing"
       ></el-slider>
     </div>
+    <div class="flex center space plr10">
+      <span>Text Shadow</span>
+      <el-select
+        v-model="textShadow"
+        @change="setTextShadow"
+        placeholder="Select"
+      >
+        <el-option value="None">None</el-option>
+        <el-option value="Light">Light</el-option>
+        <el-option value="Medium">Medium</el-option>
+        <el-option value="Strong">Strong</el-option>
+      </el-select>
+    </div>
   </div>
 </template>
 
 <script>
+import { iconService } from "../../services/icon-service.js";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-txt",
@@ -55,6 +62,9 @@ export default {
       letterSpacing: null,
       textShadow: null,
       textAlign: null,
+      alignRight: iconService.alignRight(),
+      alignLeft: iconService.alignLeft(),
+      alignCenter: iconService.alignCenter(),
       value: "",
     };
   },
@@ -80,6 +90,7 @@ export default {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
     },
+
     setAlign(align) {
       if (!this.cmp.style.textAlign) this.cmp.style.textAlign = align;
       this.cmp.style.textAlign = align;
