@@ -5,6 +5,7 @@
     @mouseover="showEditMenu = true"
     @mouseleave="showEditMenu = false"
     class="web-container"
+    :class="cmp.info.dir"
     :style="this.cmp.style"
   >
     <component

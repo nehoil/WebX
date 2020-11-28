@@ -5,7 +5,16 @@
     display: block;
     position: relative;
     padding: 1rem !important;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

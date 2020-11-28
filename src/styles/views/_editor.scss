@@ -8,7 +8,6 @@ div.editor {
     & i:first-of-type {
         margin-right: 10px;
     }
-  
     border: 1px solid $clr5;
     height: 91.54vh;
     margin-bottom: 2rem;
@@ -21,10 +20,7 @@ div.editor {
         background-color: rgb(226, 226, 226);
         .dragArea {
             min-height: 100%;
-            border: 4px dotted lightgray;
-            .active {
-                outline: 4px dotted rgb(255, 130, 245);
-            }
+            border: 5px dotted rgb(240, 240, 240);
         }
     }
     .controller {
