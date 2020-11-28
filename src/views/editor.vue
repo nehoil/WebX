@@ -25,25 +25,26 @@ export default {
     };
   },
   methods: {
-    removeCmp(root, cmpId, deep = 0) {
+    removeDeepCmp(root, cmpId, deep = 0) {
       var currRootCmps = root.info ? root.info.cmps : root
         currRootCmps.forEach((cmp, idx) => {
           if (cmp.id === cmpId) {
+            console.log('deleted!');
             currRootCmps.splice(idx, 1);
             this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
             return;
           }
-          if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
+          if (cmp.info.cmps) this.removeDeepCmp(cmp, cmpId, ++deep);
         });
       },
-    searchCmp(cmps, cmpId, _rootId) {
+    removeCmp(cmps, cmpId, _rootId) {
       var rootFather;
       if (_rootId){
         rootFather = cmps.find((webContainer) => webContainer.id === _rootId);
       } else {
         rootFather = cmps
       }
-      this.removeCmp(rootFather, cmpId);
+      this.removeDeepCmp(rootFather, cmpId);
   },
   },
   computed: {
@@ -60,7 +61,7 @@ export default {
     eventBus.$on('removeCmp', (cmpIds) => {
       const { cmpId, _rootId } = cmpIds;
       const cmps = this.$store.getters.webCmps;
-      this.searchCmp(cmps, cmpId, _rootId);
+      this.removeCmp(cmps, cmpId, _rootId);
       // this.$store.commit({ type: "removeCmp", id });
       // this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });

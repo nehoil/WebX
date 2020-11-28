@@ -24,9 +24,6 @@ export default {
   },
   methods: {
     removeCmp(cmpId) {
-      console.log('cmpId',cmpId);
-      console.log('this.cmp',this.cmp);
-      
       const _rootId = this.cmp._rootId
       eventBus.$emit('removeCmp', {cmpId, _rootId});
       // this.$store.commit('removeCmp', {id: cmpId});
