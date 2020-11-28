@@ -37,7 +37,7 @@ export default {
             this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
             return;
           }
-          if (cmp.info.cmps) this.removeDeepCmp(cmp, cmpId, ++deep);
+          if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
         });
       },
     searchCmp(cmps, cmpId, _rootId) {      
@@ -47,7 +47,7 @@ export default {
       } else {
         rootFather = cmps
       }
-      this.removeDeepCmp(rootFather, cmpId);
+      this.removeCmp(rootFather, cmpId);
   },
   },
   computed: {
