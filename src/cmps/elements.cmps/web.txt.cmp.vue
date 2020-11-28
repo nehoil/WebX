@@ -1,4 +1,9 @@
 <template>
+  <span
+    class="cmp-span"
+    @mouseover="showEditMenu = true"
+    @mouseleave="showEditMenu = false"
+  >
   <p
     class="web-txt"
     contenteditable="isEdit"
@@ -8,39 +13,45 @@
   >
     {{ cmp.info.content }}
   </p>
+    <edit-menu v-if="showEditMenu" :cmp="cmp"/>
+  </span>
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
+import { eventBus } from '@/services/eventbus.service.js';
+import editMenu from '@/cmps/web.edit.menu.cmp';
+
 export default {
   data() {
     return {
       isEdit: true,
+      showEditMenu: false
     };
   },
   props: {
     cmp: Object,
+    _rootId: String,
   },
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit("update-site");
-      // eventBus.$emit('openEditor');
+      eventBus.$emit('update-site');
     },
-    openEdit() {
-      // eventBus.$emit('edit-cmp', this.info);
-      // eventBus.$emit('open-edit', this.cmp.type);
-    },
+
     setEditItem() {
-      eventBus.$emit("openEditor", this.cmp);
+      eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
-        // console.log('setting item!, txt', this.cmp);
-        eventBus.$emit("setItem", this.cmp);
+        eventBus.$emit('setItem', this.cmp);
       });
     },
   },
-  name: "web-txt",
-  components: {},
+  name: 'web-txt',
+  components: {
+    editMenu,
+  },
+  created() {
+    this.cmp._rootId = this._rootId;
+  },
 };
 </script>
 <style scoped>
