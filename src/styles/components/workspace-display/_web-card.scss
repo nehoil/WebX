@@ -24,3 +24,19 @@
         max-width: 400px;
     }
 }
+
+.web-card-3-container {
+    background-image: src('');
+    // justify-content: space-between;
+    // width: 100%;
+}
+
+.web-card-3-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & img {
+        max-width: 400px;
+    }
+}

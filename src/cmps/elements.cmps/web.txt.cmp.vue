@@ -2,7 +2,7 @@
   <span
     class="cmp-span"
     @mouseover="showEditMenu = true"
-    @mouseleave="showEditMenu = false"
+    @mouseleave="showEditMenu = true"
   >
   <p
     class="web-txt"
@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       isEdit: true,
-      showEditMenu: false
+      showEditMenu: true
     };
   },
   props: {
