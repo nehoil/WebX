@@ -36,6 +36,8 @@ export const webStore = {
             const cmp = templateService.getCmpById(id)
             const cmpCopy = JSON.parse(JSON.stringify(cmp))
             cmpCopy.id = utilService.makeId(9)
+            console.log(state.siteToEdit.cmps);
+
             state.siteToEdit.cmps.push(cmpCopy)
             utilService.storeToStorage('draft_db', state.siteToEdit)
         },
@@ -46,7 +48,7 @@ export const webStore = {
                     var foundIdx = cmp.info.cmps.findIndex(cmp => {
                         return cmp.id === id
                     })
-                    if(foundIdx > 0){
+                    if (foundIdx > 0) {
                         console.log('found!');
                         state.siteToEdit.cmps[idx].info.cmps.splice(foundIdx, 1)
                         return
@@ -81,25 +83,25 @@ export const webStore = {
         }
     },
     actions: {
-    //     removeDeepCmp(context, { id, route=context.getters.webCmps, numOfRuns=0 }) {
-    //         console.log('numOfRuns', numOfRuns);
-    //         var idx = route.findIndex(cmp => cmp.id === id)
-    //         if (idx < 0){
-    //             route.forEach(cmp => {
-    //                 // route = route[0].info.cmps
-    //                 idx = cmp.info.cmps.findIndex(cmp => cmp.id === id)
-    //                 if (idx < 0 || cmp.info.cmps.info.cmp){
-                    
-    //                 }
-    //                 if (numOfRuns > 0)  route = route[numOfRuns*'.info.cmps']
-    //                 console.log('route after change:', route);
-    //                 context.dispatch('removeDeepCmp', {id, route, numOfRuns})
-    //                 numOfRuns++
-    //             })
-    //         } else {
-    //             console.log('found the cmp, in', route);
-    //             context.commit({type: 'removeCmp', id})
-    //         }
-    //     },
+        //     removeDeepCmp(context, { id, route=context.getters.webCmps, numOfRuns=0 }) {
+        //         console.log('numOfRuns', numOfRuns);
+        //         var idx = route.findIndex(cmp => cmp.id === id)
+        //         if (idx < 0){
+        //             route.forEach(cmp => {
+        //                 // route = route[0].info.cmps
+        //                 idx = cmp.info.cmps.findIndex(cmp => cmp.id === id)
+        //                 if (idx < 0 || cmp.info.cmps.info.cmp){
+
+        //                 }
+        //                 if (numOfRuns > 0)  route = route[numOfRuns*'.info.cmps']
+        //                 console.log('route after change:', route);
+        //                 context.dispatch('removeDeepCmp', {id, route, numOfRuns})
+        //                 numOfRuns++
+        //             })
+        //         } else {
+        //             console.log('found the cmp, in', route);
+        //             context.commit({type: 'removeCmp', id})
+        //         }
+        //     },
     }
 };

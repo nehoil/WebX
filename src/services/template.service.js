@@ -1393,7 +1393,8 @@ const gCmps = [{
                         borderRadius: "unset",
                         lineHeight: "auto"
                     }
-                }]
+                }
+                ]
             },
             style: {
                 fontFamily: "unset",
@@ -1730,7 +1731,8 @@ const gCmps = [{
                 height: "unset",
                 backgroundImage: "unset"
             }
-        }]
+        }
+        ]
     },
     style: {
         fontFamily: "unset",
@@ -1748,7 +1750,8 @@ const gCmps = [{
         width: "unset",
         height: "unset",
     }
-}]
+}
+]
 
 
 
