@@ -52,6 +52,7 @@ export default {
       const cmpCopy = JSON.parse(JSON.stringify(this.cmps[ev.newIndex]));
       cmpCopy.id = utilService.makeId(9);
       this.cmps.splice(ev.newIndex, 1, cmpCopy);
+      eventBus.$emit("update-site");
     },
   },
   created() {
