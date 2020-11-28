@@ -25,14 +25,10 @@ export default {
     };
   },
   methods: {
-<<<<<<< HEAD
-    removeDeepCmp(root, cmpId, deep = 0) {
-=======
     updateCmpId(){
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     },
     removeCmp(root, cmpId, deep = 0) {      
->>>>>>> 64fcf87a555da9f5e5aca050e3db5b50e69eb43e
       var currRootCmps = root.info ? root.info.cmps : root
         currRootCmps.forEach((cmp, idx) => {
           if (cmp.id === cmpId) {
@@ -44,11 +40,7 @@ export default {
           if (cmp.info.cmps) this.removeDeepCmp(cmp, cmpId, ++deep);
         });
       },
-<<<<<<< HEAD
-    removeCmp(cmps, cmpId, _rootId) {
-=======
     searchCmp(cmps, cmpId, _rootId) {      
->>>>>>> 64fcf87a555da9f5e5aca050e3db5b50e69eb43e
       var rootFather;
       if (_rootId){
         rootFather = cmps.find((webContainer) => webContainer.id === _rootId);
