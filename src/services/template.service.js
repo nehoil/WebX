@@ -279,99 +279,6 @@ const gCmps = [{
     },
     {
         type: "web-container",
-        name: "text",
-        id: "txt004",
-        class: "web-txt-3",
-        info: {
-            dir: "column",
-            cmps: [{
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a sample H1 text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a P text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-img",
-                    info: {
-                        src: "#"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-
-            ]
-        },
-        style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-            letterSpacing: "unset",
-            padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
-        }
-    },
-    {
-        type: "web-container",
         name: "video",
         id: "vid001",
         class: "web-video-1",
@@ -1704,18 +1611,18 @@ const gCmps = [{
             width: "unset",
             height: "unset",
         }
-    }    
+    }
 ]
 
 
 
 // import {roeeTemplates} from '../services/roee.js'
 // import {haleliTemplates} from '../services/haleli.js'
-import {nehoTemplates} from '../services/neho.js'
+import { nehoTemplates } from '../services/neho.js'
 
 gCmps.push(nehoTemplates)
-// gCmps.push(haleliTemplates)
-// console.log(gCmps);
+    // gCmps.push(haleliTemplates)
+    // console.log(gCmps);
 
 export const templateService = {
     getEmptyTemplate,

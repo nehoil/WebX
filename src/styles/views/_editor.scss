@@ -24,7 +24,6 @@ div.editor {
         }
     }
     .controller {
-    
         @include scrollBar(.5rem, lighten($clr3, 35%));
         background-color: rgba(241, 241, 241, 0.5);
         overflow-y: auto;
@@ -58,6 +57,12 @@ div.editor {
                 width: 5rem;
                 height: 3rem;
                 margin: 0.5rem;
+            }
+            .add-options-btn {
+                width: 10rem;
+                height: 1.5rem;
+                margin: 1rem;
+                border: 1px solid rgb(52, 54, 56);
             }
         }
         footer {
