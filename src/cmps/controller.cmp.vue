@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      addOrEdit: null,
+      addOrEdit: "add",
       cmpToEdit: null,
     };
   },
