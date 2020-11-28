@@ -5,7 +5,7 @@
 
     </div> -->
     <div v-if="colors">
-      <div class="colors-pagination flex center">
+      <div class="colors-pagination flex center space">
         <i
           @click="changePage(-1)"
           class="el-icon-arrow-left page-link pointer"

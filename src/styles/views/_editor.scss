@@ -24,6 +24,7 @@ div.editor {
         }
     }
     .controller {
+    
         @include scrollBar(.5rem, lighten($clr3, 35%));
         background-color: rgba(241, 241, 241, 0.5);
         overflow-y: auto;
@@ -33,6 +34,7 @@ div.editor {
         height: 100%;
         display: flex;
         nav {
+            margin-bottom: 4rem;
             font-size: 1.5rem;
             a {
                 padding-right: 20px;
@@ -70,10 +72,5 @@ div.editor {
             align-content: flex-end !important;
             margin-bottom: 5px;
         }
-        // .el-select .el-input {
-        //     width: 100% !important;
-        //     margin-bottom: 5px;
-        //     margin-top: 5px;
-        // }
     }
 }
