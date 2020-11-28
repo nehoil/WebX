@@ -1,5 +1,5 @@
 <template>
-  <span
+  <p
     class="web-txt"
     contenteditable="isEdit"
     :style="cmp.style"
@@ -7,7 +7,7 @@
     @click.stop="setEditItem"
   >
     {{ cmp.info.content }}
-  </span>
+  </p>
 </template>
 
 <script>

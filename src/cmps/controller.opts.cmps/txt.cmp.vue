@@ -3,8 +3,8 @@
     <select-color :cmp="cmp"></select-color>
     <select-font :cmp="cmp"></select-font>
     <font-properties :cmp="cmp"></font-properties>
-    <div>
-      <p>Line Height</p>
+    <div class="flex center space plr10">
+      <span>Line Height</span>
       <el-slider
         :min="1"
         :max="100"

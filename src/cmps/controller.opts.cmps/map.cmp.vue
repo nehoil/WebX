@@ -1,7 +1,6 @@
 <template>
   <div class="edit-map">
     <p><i class="el-icon-add-location"></i>Add your address</p>
-
     <div
       v-if="showSuggested && suggestedLocs"
       @click="setLoc"

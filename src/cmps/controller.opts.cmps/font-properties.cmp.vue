@@ -1,7 +1,26 @@
 <template>
   <div class="font-properties">
-    <div>
-      <p>Font Size</p>
+    <div class="flex center plr10">
+      <button>align</button>
+      <button @click="toggleBold">B</button>
+      <button @click="toggleItalic">I</button>
+      <button @click="toggleUnderline">U</button>
+    </div>
+    <div class="flex center space plr10">
+      <span>Text Shadow</span>
+      <el-select
+        v-model="textShadow"
+        @change="setTextShadow"
+        placeholder="Select"
+      >
+        <el-option value="None">None</el-option>
+        <el-option value="Light">Light</el-option>
+        <el-option value="Medium">Medium</el-option>
+        <el-option value="Strong">Strong</el-option>
+      </el-select>
+    </div>
+    <div class="flex center space plr10">
+      <span>Font Size</span>
       <el-slider
         :min="14"
         :max="100"
@@ -9,25 +28,8 @@
         @input="setFontSize"
       ></el-slider>
     </div>
-    <div>
-      <button>align</button>
-      <button @click="toggleBold">B</button>
-      <button @click="toggleItalic">I</button>
-      <button @click="toggleUnderline">U</button>
-    </div>
-    <p>Text Shadow</p>
-    <el-select
-      v-model="textShadow"
-      @change="setTextShadow"
-      placeholder="Select"
-    >
-      <el-option value="None">None</el-option>
-      <el-option value="Light">Light</el-option>
-      <el-option value="Medium">Medium</el-option>
-      <el-option value="Strong">Strong</el-option>
-    </el-select>
-    <div>
-      <p>Letter Spacing</p>
+    <div class="flex center space plr10">
+      <span>Letter Spacing</span>
       <el-slider
         :min="1"
         :max="100"

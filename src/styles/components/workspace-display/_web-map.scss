@@ -7,7 +7,13 @@
 .web-map {
     display: flex;
     display:inline-block;
+    div {
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
     // justify-content: center;
     // align-items: center;
+    width: 30rem !important;
     position: relative;
 }

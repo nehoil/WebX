@@ -9,17 +9,16 @@
 <template>
   <section>
     <div class="controller-add">
-      <p>I'm add</p>
-        <button @click="setCmpsToShow('text')">Txt</button>
-        <button @click="setCmpsToShow('map')">Map</button>
-        <button @click="setCmpsToShow('header')">Header</button>
-        <button @click="setCmpsToShow('image')">Img</button>
-        <button @click="setCmpsToShow('section')">Section</button>
-        <button @click="setCmpsToShow('footer')">Footer</button>
-        <button @click="setCmpsToShow('navbar')">Navbar</button>
-        <button @click="setCmpsToShow('video')">Video</button>
-        <button @click="setCmpsToShow('form')">Form</button>
-        <button @click="setCmpsToShow('card')">Card</button>
+      <button @click="setCmpsToShow('text')">Txt</button>
+      <button @click="setCmpsToShow('map')">Map</button>
+      <button @click="setCmpsToShow('header')">Header</button>
+      <button @click="setCmpsToShow('image')">Img</button>
+      <button @click="setCmpsToShow('section')">Section</button>
+      <button @click="setCmpsToShow('footer')">Footer</button>
+      <button @click="setCmpsToShow('navbar')">Navbar</button>
+      <button @click="setCmpsToShow('video')">Video</button>
+      <button @click="setCmpsToShow('form')">Form</button>
+      <button @click="setCmpsToShow('card')">Card</button>
     </div>
 
     <section class="cmpsExamples" v-if="cmps">
@@ -31,9 +30,9 @@
         @start="startDrag"
         @end="stopDrag"
       >
-      <div v-for="cmp in cmps" :key="cmp.id">
-        <p @click="addCmp(cmp.id)" class="list-group-item">{{ cmp.id }}</p>
-      </div>
+        <div v-for="cmp in cmps" :key="cmp.id">
+          <p @click="addCmp(cmp.id)" class="list-group-item">{{ cmp.id }}</p>
+        </div>
       </draggable>
     </section>
   </section>
@@ -60,13 +59,12 @@ export default {
     addCmp(cmpId) {
       eventBus.$emit("addCmp", cmpId);
     },
-    startDrag(ev){
+    startDrag(ev) {
       eventBus.$emit("dragStart");
     },
-    stopDrag(){
+    stopDrag() {
       eventBus.$emit("dragStop");
-      
-    }
+    },
   },
   computed: {
     cmps() {

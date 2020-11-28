@@ -1,6 +1,8 @@
 <template>
   <div class="edit-container" v-if="cmp">
-    <div>
+    <select-color :cmp="cmp"></select-color>
+
+    <div class="flex center space plr10">
       Set Length
       <el-slider
         :min="1"
@@ -9,11 +11,8 @@
         @input="setMinHeight"
       ></el-slider>
     </div>
-    <button>img bgc</button>
-    <div>
-      <select-color :cmp="cmp"></select-color>
-    </div>
-    <div>
+    <div class="flex center space plr10"></div>
+    <div class="flex center space plr10">
       <p>Add Spacing</p>
       <el-slider
         :min="1"
@@ -22,11 +21,19 @@
         @input="setPadding"
       ></el-slider>
     </div>
+    <label class="pointer">
+      <div class="upload-image">
+        <!-- <img :src="cmp.info.src" /> -->
+        <i class="el-icon-upload2"></i>Upload Image Background
+        <input type="file" @change="uploadImg" />
+      </div>
+    </label>
   </div>
 </template>
 
 <script>
 import selectColor from "./select-color.cmp";
+import { uploadImg } from "../../services/img.upload.service.js";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
   name: "edit-container",
@@ -61,6 +68,15 @@ export default {
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
+    },
+    async uploadImg(ev) {
+      if (!this.cmp.style.backgroundImage) {
+        this.cmp.style.backgroundImage = "unset";
+      }
+      let res = uploadImg(ev);
+      let img = await res;
+      this.cmp.style.backgroundImage = `url(${img.url})`;
+      eventBus.$emit("update-site");
     },
     setMinHeight(size) {
       this.minHeight = size;
