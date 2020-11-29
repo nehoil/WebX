@@ -60,6 +60,10 @@ export default {
     };
   },
   created() {
+    this.borderRadius = this.cmp.style.borderRadius
+      ? parseInt(this.cmp.style.borderRadius)
+      : 0;
+    console.log(this.borderRadius);
     var widthNum;
     var borderRadiusNum;
     if (!this.cmp.style.width || this.cmp.style.width === "unset") {
@@ -104,7 +108,6 @@ export default {
       eventBus.$emit("update-site");
     },
     setBorderRadius(percent) {
-      this.borderRadius = percent;
       this.cmp.style.borderRadius = percent + "%";
       eventBus.$emit("update-site");
       this.borderRadius = null;
