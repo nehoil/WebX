@@ -6,9 +6,21 @@
     display: flex;
     padding: 20px;
   }
-
+  
   & img {
     width: 200px !important;
+  }
+  & button {
+    color: aliceblue;
+    background-color: #2a80b9;
+    font-size: 16px;
+    text-transform: uppercase;
+    min-height: 10px;
+    line-height: 1.5;
+    height: auto;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 8px 20px;
   }
 }
 
