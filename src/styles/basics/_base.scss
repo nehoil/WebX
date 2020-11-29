@@ -50,3 +50,23 @@ ul {
 	padding: 0;
 }
 
+.el-slider__bar {
+	background-color: rgb(250, 127, 114);
+}
+
+.el-slider__button {
+	border-color: rgb(250, 127, 114);
+}
+
+.el-slider__runway {
+		background-color: rgba(250, 128, 114, 0.349);
+}
+
+.el-input__inner {
+	height: 33px;
+}
+
+.el-collapse-item__header:hover, .el-collapse-item__header, .el-collapse-item__header:active, .el-collapse-item__header:focus{
+	color: unset;
+}
+

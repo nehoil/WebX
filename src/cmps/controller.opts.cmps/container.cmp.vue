@@ -1,38 +1,45 @@
 <template>
   <div class="edit-container" v-if="cmp">
     <select-color :cmp="cmp"></select-color>
-
-    <div class="flex center space plr10">
-      Set Length
-      <el-slider
-        :min="1"
-        :max="1400"
-        v-model="minHeight"
-        @input="setMinHeight"
-      ></el-slider>
-    </div>
-    <div class="flex center space plr10"></div>
-    <div class="flex center space plr10">
-      <p>Add Spacing</p>
-      <el-slider
-        :min="1"
-        :max="100"
-        v-model="padding"
-        @input="setPadding"
-      ></el-slider>
-    </div>
-    <label class="pointer">
-      <div class="upload-image">
-        <!-- <img :src="cmp.info.src" /> -->
-        <i class="el-icon-upload2"></i>Upload Image Background
-        <input type="file" @change="uploadImg" />
-      </div>
-      <div v-if="getIsImage">
-        <el-checkbox v-model="image" @change="removeImage"
-          >Remove Background Image</el-checkbox
-        >
-      </div>
-    </label>
+    <el-collapse accordion>
+      <el-collapse-item name="1">
+        <template slot="title">
+          <div class="flex center plr10 space mb1 pointer"></div>
+          <span>Section Styling</span>
+        </template>
+        <div class="flex center space plr10">
+          Set Length
+          <el-slider
+            :min="1"
+            :max="1400"
+            v-model="minHeight"
+            @input="setMinHeight"
+          ></el-slider>
+        </div>
+        <div class="flex center space plr10"></div>
+        <div class="flex center space plr10">
+          <p>Add Spacing</p>
+          <el-slider
+            :min="1"
+            :max="100"
+            v-model="padding"
+            @input="setPadding"
+          ></el-slider>
+        </div>
+        <label class="pointer">
+          <div class="upload-image">
+            <!-- <img :src="cmp.info.src" /> -->
+            <i class="el-icon-upload2"></i>Upload Image Background
+            <input type="file" @change="uploadImg" />
+          </div>
+          <div v-if="getIsImage">
+            <el-checkbox v-model="image" @change="removeImage"
+              >Remove Background Image</el-checkbox
+            >
+          </div>
+        </label>
+      </el-collapse-item>
+    </el-collapse>
   </div>
 </template>
 

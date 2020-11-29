@@ -1,28 +1,37 @@
 <template>
   <div class="edit-btn">
-    <div class="plr10">
-      <el-input
-        @input="changeLinkTo"
-        placeholder="Attach Link And Press Enter"
-        v-model="cmp.linkTo"
-        suffix-icon="el-icon-edit"
-      ></el-input>
-    </div>
-    <el-checkbox v-model="border" @change="toggleBorder"
-      >Change Border</el-checkbox
-    >
     <select-color :cmp="cmp"></select-color>
     <select-font :cmp="cmp"></select-font>
     <font-properties :cmp="cmp"></font-properties>
+    <el-collapse accordion>
+      <el-collapse-item name="1">
+        <template slot="title">
+          <div class="flex center plr10 space mb1 pointer"></div>
+          <span>Button Styling</span>
+        </template>
 
-    <div class="flex center space plr10">
-      <p>Radius</p>
-      <el-slider
-        :max="100"
-        v-model="borderRadius"
-        @input="setBorderRadius"
-      ></el-slider>
-    </div>
+        <div class="plr10">
+          <el-input
+            @input="changeLinkTo"
+            placeholder="Attach Link And Press Enter"
+            v-model="cmp.linkTo"
+            suffix-icon="el-icon-edit"
+          ></el-input>
+        </div>
+        <el-checkbox v-model="border" @change="toggleBorder"
+          >Change Border</el-checkbox
+        >
+
+        <div class="flex center space plr10">
+          <p>Radius</p>
+          <el-slider
+            :max="100"
+            v-model="borderRadius"
+            @input="setBorderRadius"
+          ></el-slider>
+        </div>
+      </el-collapse-item>
+    </el-collapse>
   </div>
 </template>
 
