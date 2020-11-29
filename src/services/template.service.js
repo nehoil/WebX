@@ -9,7 +9,7 @@ const gTemplates = [{
     },
     {
         _id: utilService.makeId(10),
-        name: "Urban Garden",
+        name: "Vita",
         previewImg: "https://i.ibb.co/NZmxQXC/screencapture-localhost-8081-editor-2020-11-29-14-30-13.png",
         createdBy: {
             _id: null,

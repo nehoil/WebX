@@ -1,10 +1,13 @@
 export const iconService = {
-     alignRight,
-     alignLeft,
-     alignCenter
+	alignRight,
+	alignLeft,
+	alignCenter,
+	colorBackgrounnd,
+	colorText
+
 }
 function alignRight() {
-     return `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	return `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns: xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml: space="preserve">
           <g>
                <g>
@@ -28,7 +31,7 @@ function alignRight() {
 }
 
 function alignLeft() {
-     return `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	return `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
 	<g>
@@ -53,7 +56,7 @@ function alignLeft() {
 }
 
 function alignCenter() {
-     return `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	return `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
 	<g>
@@ -76,4 +79,19 @@ function alignCenter() {
 </svg>
 
 `
+}
+
+function colorBackgrounnd() {
+	return `<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="22" id="Icons" viewBox="0 0 74 74" ><path d="M60.375,25.313H7.25A5.256,5.256,0,0,1,2,20.063V8.375a5.256,5.256,0,0,1,5.25-5.25H60.375a5.256,5.256,0,0,1,5.25,5.25V20.063A5.256,5.256,0,0,1,60.375,25.313ZM7.25,5.125A3.254,3.254,0,0,0,4,8.375V20.063a3.254,3.254,0,0,0,3.25,3.25H60.375a3.254,3.254,0,0,0,3.25-3.25V8.375a3.254,3.254,0,0,0-3.25-3.25Z"/>
+<path d="M34.813,40.25h-2V37.063a5.256,5.256,0,0,1,5.25-5.25h29.75A2.19,2.19,0,0,0,70,29.625V17.406a2.19,2.19,0,0,0-2.187-2.187H64.625v-2h3.188A4.192,4.192,0,0,1,72,17.406V29.625a4.192,4.192,0,0,1-4.187,4.188H38.063a3.254,3.254,0,0,0-3.25,3.25Z"/>
+<path d="M38.063,71h-8.5a3.129,3.129,0,0,1-3.125-3.125v-25.5a3.129,3.129,0,0,1,3.125-3.125h8.5a3.129,3.129,0,0,1,3.125,3.125v25.5A3.129,3.129,0,0,1,38.063,71Zm-8.5-29.75a1.127,1.127,0,0,0-1.125,1.125v25.5A1.127,1.127,0,0,0,29.563,69h8.5a1.127,1.127,0,0,0,1.125-1.125v-25.5a1.127,1.127,0,0,0-1.125-1.125Z"/></svg>
+`
+}
+
+function colorText() {
+	return `<svg id="Icons" height="22" viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
+	<path d="m60.54 72a3.23 3.23 0 0 1 -2.205-.87l-41.174-38.056 9.395-9.395 38.06 41.176a3.229 3.229 0 0 1 -.085 4.5l-1.7 1.7a3.231 3.231 0 0 1 -2.291.945zm-40.495-38.982 39.649 36.649a1.237 1.237 0 0 0 1.724-.031l1.7-1.7a1.236 1.236 0 0 0 .032-1.722l-36.65-39.65z"/>
+	<path d="m18.2 34.445a1 1 0 0 1 -.581-.186l-5.119-3.659a25.9 25.9 0 0 1 -8.26-9.478c-1.1-2.24-2.362-5.578-2.08-8.761a21.447 21.447 0 0 1 3.229-9.9 1 1 0 0 1 1.8.823 7.608 7.608 0 0 0 .681 5.5c1.011 1.627 2.858 2.694 5.49 3.173a27.031 27.031 0 0 1 6.37 1.934 13.683 13.683 0 0 1 7.366 8.738l.657 1.9a1 1 0 0 1 -.238 1.034l-8.6 8.6a1 1 0 0 1 -.715.282zm-13.012-27a21.869 21.869 0 0 0 -1.04 5.089 15.343 15.343 0 0 0 1.882 7.7 23.885 23.885 0 0 0 7.624 8.735l4.446 3.17 7.561-7.561-.468-1.354a11.725 11.725 0 0 0 -6.293-7.524 25.064 25.064 0 0 0 -5.9-1.784c-3.222-.586-5.524-1.967-6.843-4.1a7.918 7.918 0 0 1 -.966-2.368z"/>
+	</svg>`
 }

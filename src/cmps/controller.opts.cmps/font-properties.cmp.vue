@@ -1,50 +1,68 @@
 <template>
   <div class="font-properties">
-    <div>
-      <button @click="setAlign('left')" class="button-reset">
-        <div class="icon-set" v-html="alignLeft"></div>
-      </button>
-      <button @click="setAlign('center')" class="button-reset">
-        <div class="icon-set" v-html="alignCenter"></div>
-      </button>
-      <button class="button-reset" @click="setAlign('right')">
-        <div class="icon-set" v-html="alignRight"></div>
-      </button>
-    </div>
-    <button @click="toggleBold" class="button-reset">B</button>
-    <button @click="toggleItalic" class="button-reset">I</button>
-    <button @click="toggleUnderline" class="button-reset">U</button>
-    <div class="flex center space plr10">
-      <span>Font Size</span>
-      <el-slider
-        :min="14"
-        :max="100"
-        v-model="fontSize"
-        @input="setFontSize"
-      ></el-slider>
-    </div>
-    <div class="flex center space plr10">
-      <span>Letter Spacing</span>
-      <el-slider
-        :min="1"
-        :max="100"
-        v-model="letterSpacing"
-        @input="setSpacing"
-      ></el-slider>
-    </div>
-    <div class="flex center space plr10">
-      <span>Text Shadow</span>
-      <el-select
-        v-model="textShadow"
-        @change="setTextShadow"
-        placeholder="Select"
-      >
-        <el-option value="None">None</el-option>
-        <el-option value="Light">Light</el-option>
-        <el-option value="Medium">Medium</el-option>
-        <el-option value="Strong">Strong</el-option>
-      </el-select>
-    </div>
+    <el-collapse accordion>
+      <el-collapse-item name="1">
+        <template slot="title">
+          <div class="flex center plr10 space mb1 pointer"></div>
+          <span>Text Styling</span>
+        </template>
+
+        <div class="flex space center plr10 mb1">
+          <span>Text Align</span>
+          <div>
+            <button @click="setAlign('left')" class="button-reset">
+              <div class="icon-set" v-html="alignLeft"></div>
+            </button>
+            <button @click="setAlign('center')" class="button-reset">
+              <div class="icon-set" v-html="alignCenter"></div>
+            </button>
+            <button class="button-reset" @click="setAlign('right')">
+              <div class="icon-set" v-html="alignRight"></div>
+            </button>
+          </div>
+        </div>
+        <div class="flex center plr10 space mb1">
+          <span>Text Style</span>
+          <span class="text-controls">
+            <button @click="toggleBold" class="button-reset">B</button>
+            <button @click="toggleItalic" class="button-reset">I</button>
+            <button @click="toggleUnderline" class="button-reset">U</button>
+          </span>
+        </div>
+
+        <div class="flex center space plr10">
+          <span>Shadow</span>
+          <el-select
+            v-model="textShadow"
+            @change="setTextShadow"
+            placeholder="Select"
+          >
+            <el-option value="None">None</el-option>
+            <el-option value="Light">Light</el-option>
+            <el-option value="Medium">Medium</el-option>
+            <el-option value="Strong">Strong</el-option>
+          </el-select>
+        </div>
+        <div class="flex center space plr10">
+          <span>Font Size</span>
+          <el-slider
+            :min="14"
+            :max="100"
+            v-model="fontSize"
+            @input="setFontSize"
+          ></el-slider>
+        </div>
+        <div class="flex center space plr10">
+          <span>Letter Spacing</span>
+          <el-slider
+            :min="1"
+            :max="100"
+            v-model="letterSpacing"
+            @input="setSpacing"
+          ></el-slider>
+        </div>
+      </el-collapse-item>
+    </el-collapse>
   </div>
 </template>
 
