@@ -14,20 +14,22 @@
               :key="colors.idx"
               class="pointer palette"
             >
-              <i
-                @click="changePage(-1)"
-                class="el-icon-arrow-left page-link pointer"
-              ></i>
-              <li
-                v-for="color in colors"
-                @click="setColor(color, 'backgroundColor')"
-                :key="color.idx"
-                :style="{ backgroundColor: color }"
-              ></li>
-              <i
-                @click="changePage(1)"
-                class="el-icon-arrow-right page-link pointer"
-              ></i>
+              <span class="flex center space">
+                <i
+                  @click="changePage(-1)"
+                  class="el-icon-arrow-left page-link pointer"
+                ></i>
+                <li
+                  v-for="color in colors"
+                  @click="setColor(color, 'backgroundColor')"
+                  :key="color.idx"
+                  :style="{ backgroundColor: color }"
+                ></li>
+                <i
+                  @click="changePage(1)"
+                  class="el-icon-arrow-right page-link pointer"
+                ></i>
+              </span>
               <div>
                 <span class="change-color-method"
                   >Not a palette fan? Click here >
