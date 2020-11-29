@@ -18,8 +18,7 @@
     <div class="flex center space plr10">
       <p>Radius</p>
       <el-slider
-        :min="1"
-        :max="50"
+        :max="100"
         v-model="borderRadius"
         @input="setBorderRadius"
       ></el-slider>
@@ -50,15 +49,14 @@ export default {
     };
   },
   created() {
-    var borderRadiusNum;
     if (!this.cmp.style.borderRadius) {
-      this.cmp.style.borderRadius = "unset";
+      this.cmp.style.borderRadius = "0px";
+      this.borderRadius = 0;
     } else if (
       this.cmp.style.borderRadius &&
       this.cmp.style.borderRadius !== "unset"
     ) {
-      borderRadiusNum = this.getNumFromString("borderRadius");
-      this.borderRadius = +borderRadiusNum;
+      this.borderRadius = +this.getNumFromString("borderRadius");
     }
   },
   methods: {
@@ -80,8 +78,30 @@ export default {
       eventBus.$emit("update-site");
     },
     setBorderRadius(size) {
-      this.cmp.style.borderRadius = size / 16 + "rem";
+      console.log(this.borderRadius, "function");
+      console.log(this.cmp.style.borderRadius, "function");
+      this.cmp.style.borderRadius = size + "px";
       eventBus.$emit("update-site");
+    },
+  },
+  watch: {
+    cmp: {
+      deep: true,
+      handler(newVal, oldVal) {
+        if (newVal.id !== oldVal.id) {
+          console.log(this.borderRadius, "watch");
+          console.log(this.cmp.style.borderRadius, "watch");
+          if (!this.cmp.style.borderRadius) {
+            this.borderRadius = null;
+            this.cmp.style.borderRadius = "0px";
+          } else if (
+            this.cmp.style.borderRadius &&
+            this.cmp.style.borderRadius !== "unset"
+          ) {
+            this.borderRadius = +this.getNumFromString("borderRadius");
+          }
+        }
+      },
     },
   },
 };
