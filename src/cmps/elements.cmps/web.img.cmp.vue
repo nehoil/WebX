@@ -9,7 +9,13 @@
       @mouseover="showEditMenu = true"
       @mouseleave="showEditMenu = false"
     />
-    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="small" />
+    <edit-menu
+      v-if="showEditMenu"
+      :cmp="cmp"
+      @hideMenu="showEditMenu = false"
+      @showMenu="showEditMenu = true"
+      parent="small"
+    />
   </span>
 </template>
 
