@@ -37,9 +37,6 @@ export default {
       const _rootId = this.cmp._rootId;
       eventBus.$emit('removeCmp', { cmpId, _rootId });
     },
-    onEdit() {
-      eventBus.$emit('update-site');
-    },
     setEditItem() {
       eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {

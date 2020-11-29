@@ -35,7 +35,6 @@ const gTemplates = [{
                                 fontFamily: "robotomono",
                                 fontSize: "1.5rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "unset",
@@ -65,7 +64,7 @@ const gTemplates = [{
                                             fontFamily: "unset",
                                             fontSize: "unset",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -90,7 +89,7 @@ const gTemplates = [{
                                             fontFamily: "unset",
                                             fontSize: "unset",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -115,7 +114,7 @@ const gTemplates = [{
                                             fontFamily: "unset",
                                             fontSize: "unset",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -134,7 +133,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "1rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "unset",
@@ -152,7 +151,6 @@ const gTemplates = [{
                     fontFamily: "unset",
                     fontSize: "1rem",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
                     margin: "unset",
                     height: "4rem",
                     padding: "unset",
@@ -233,7 +231,7 @@ const gTemplates = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     padding: "15px",
                     backgroundColor: "unset",
                     borderRadius: "unset",
@@ -288,7 +286,7 @@ const gTemplates = [{
                                             fontFamily: "champagneLimousines",
                                             fontSize: "2rem",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -311,7 +309,7 @@ const gTemplates = [{
                                             fontFamily: "champagneLimousines",
                                             fontSize: "1rem",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -362,7 +360,7 @@ const gTemplates = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "unset",
                     padding: "unset",
                     textTransform: "unset",
@@ -401,7 +399,7 @@ const gTemplates = [{
                                             fontFamily: "champagneLimousines",
                                             fontSize: "2rem",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -425,7 +423,7 @@ const gTemplates = [{
                                             fontFamily: "champagneLimousines",
                                             fontSize: "1.4rem",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -465,7 +463,7 @@ const gTemplates = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "unset",
                     padding: "unset",
                     textTransform: "unset",
@@ -504,7 +502,7 @@ const gTemplates = [{
                                             fontFamily: "champagneLimousines",
                                             fontSize: "2rem",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -528,7 +526,7 @@ const gTemplates = [{
                                             fontFamily: "champagneLimousines",
                                             fontSize: "1.4rem",
                                             fontWeight: "unset",
-                                            letterSpacing: "unset",
+
                                             margin: "unset",
                                             padding: "unset",
                                             textTransform: "unset",
@@ -569,7 +567,7 @@ const gTemplates = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "unset",
                     padding: "unset",
                     textTransform: "unset",
@@ -608,7 +606,7 @@ const gTemplates = [{
                                         fontFamily: "champagneLimousines",
                                         fontSize: "1.4rem",
                                         fontWeight: "bold",
-                                        letterSpacing: "unset",
+
                                         margin: "unset",
                                         padding: "unset",
                                         textTransform: "unset",
@@ -673,7 +671,7 @@ const gTemplates = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "unset",
                     padding: "unset",
                     textTransform: "unset",
@@ -704,7 +702,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "1rem",
                                 fontWeight: "bold",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -715,10 +713,212 @@ const gTemplates = [{
                                 borderShadow: "unset",
                                 border: "unset",
                                 borderRadius: "unset",
-                                lineHeight: "auto"
-                            }
+                                width: "unset",
+                                height: "unset",
+                            },
                         },
                         {
+                            type: "web-div",
+                            name: "header-1",
+                            class: "header-1-div",
+                            id: utilService.makeId(10),
+                            info: {
+                                dir: "column",
+                                cmps: [
+
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        class: "header-1-h1",
+                                        info: {
+                                            content: "This is a sample H1 text"
+                                        },
+                                        style: {
+                                            fontFamily: "unset",
+                                            fontSize: "4.1875rem",
+                                            fontWeight: "unset",
+                                            letterSpacing: "unset",
+                                            margin: "0 50px",
+                                            padding: "unset",
+                                            textTransform: "unset",
+                                            color: "#fff",
+                                            backgroundColor: "unset",
+                                            borderShadow: "unset",
+                                            border: "unset",
+                                            borderRadius: "unset",
+                                            width: "unset",
+                                            height: "unset",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        info: {
+                                            content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word."
+                                        },
+                                        style: {
+                                            fontFamily: "unset",
+                                            fontSize: "unset",
+                                            fontWeight: "unset",
+                                            letterSpacing: "unset",
+                                            margin: "0 50px",
+                                            padding: "unset",
+                                            textTransform: "unset",
+                                            color: "#fff",
+                                            backgroundColor: "unset",
+                                            borderShadow: "unset",
+                                            border: "unset",
+                                            borderRadius: "unset",
+                                            maxWidth: "80ch",
+                                            height: "unset",
+                                            textAlign: "left"
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-button",
+                                        class: "header-1-btn",
+                                        info: {
+                                            content: "Get Started",
+                                            linkTo: "#"
+                                        },
+                                        style: {
+                                            fontFamily: "unset",
+                                            fontSize: "1.5em",
+                                            fontWeight: "100",
+                                            letterSpacing: "unset",
+                                            margin: "50px",
+                                            padding: "20px",
+                                            textTransform: "unset",
+                                            color: "#333",
+                                            backgroundColor: "#fff",
+                                            borderShadow: "unset",
+                                            border: "unset",
+                                            borderRadius: "2em",
+                                            width: "unset",
+                                            height: "unset",
+                                        },
+                                    }
+
+                                ]
+                            }
+                        },
+
+
+                    ]
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    padding: "15px",
+                    backgroundColor: "unset",
+                    borderRadius: "unset",
+                    width: "100%",
+                    minHeight: "unset",
+                    height: "unset",
+                    backgroundImage: "url(http://res.cloudinary.com/dksmeovlj/image/upload/v1606663473/black-white-layers-paper-top-view_fhwzpg.jpg)"
+                }
+            },
+            {
+                type: "web-container",
+                name: "text",
+                id: "txt001",
+                class: "web-txt-1",
+                info: {
+                    dir: "column",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "I'm a title, click on me to edit"
+                        },
+                        style: {
+                            fontFamily: "assistantLight",
+                            fontSize: "3.125rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "unset",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    }]
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    padding: "15px",
+                    backgroundColor: "unset",
+                    borderRadius: "unset",
+                    width: "100%",
+                    minHeight: "unset",
+                    height: "unset",
+                    backgroundImage: "unset"
+                }
+            },
+            {
+                type: "web-container",
+                name: "text",
+                id: "txt002",
+                class: "web-txt-2",
+                info: {
+                    dir: "column",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word. Often, a word in one language will be translated into several words in another language, and vice versa."
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "0.875rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "0 auto",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "unset",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "80ch",
+                            height: "unset",
+                        },
+                    }]
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    padding: "15px",
+                    backgroundColor: "unset",
+                    borderRadius: "unset",
+                    width: "100%",
+                    minHeight: "unset",
+                    height: "unset",
+                    backgroundImage: "unset"
+                }
+            },
+            {
+                type: "web-container",
+                name: "text",
+                id: "txt003",
+                class: "web-txt-3",
+                info: {
+                    dir: "column",
+                    cmps: [{
                             id: utilService.makeId(10),
                             type: "web-txt",
                             info: {
@@ -728,7 +928,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -751,7 +951,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -775,7 +975,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "1rem",
                                 fontWeight: "bold",
-                                letterSpacing: "unset",
+
                                 marginTop: "1rem",
                                 margin: "0 auto",
                                 textAlign: "center",
@@ -799,7 +999,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -823,7 +1023,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -846,7 +1046,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -870,7 +1070,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "1rem",
                                 fontWeight: "bold",
-                                letterSpacing: "unset",
+
                                 marginTop: "1rem",
                                 margin: "0 auto",
                                 textAlign: "center",
@@ -894,7 +1094,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -918,7 +1118,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -941,7 +1141,7 @@ const gTemplates = [{
                                 fontFamily: "unset",
                                 fontSize: "0.9rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "0 auto",
                                 textAlign: "center",
                                 padding: "unset",
@@ -971,13 +1171,13 @@ const gCmps = [{
                     id: "gallery001",
                     type: "web-img",
                     info: {
-                        src: ""
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606660460/black-white-layers-paper-top-view_cxblrg.jpg"
                     },
                     style: {
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1010,7 +1210,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "4.1875rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1033,7 +1233,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1056,10 +1256,10 @@ const gCmps = [{
                                     linkTo: "#"
                                 },
                                 style: {
-                                    fontFamily: "unset",
+                                    fontFamily: "assistantLight",
                                     fontSize: "1.5em",
                                     fontWeight: "100",
-                                    letterSpacing: "unset",
+
                                     margin: "50px",
                                     padding: "20px",
                                     textTransform: "unset",
@@ -1084,14 +1284,14 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
             width: "100%",
             minHeight: "unset",
             height: "unset",
-            backgroundImage: "url(http://res.cloudinary.com/dksmeovlj/image/upload/v1606663473/black-white-layers-paper-top-view_fhwzpg.jpg)"
+            backgroundImage: "unset"
         }
     },
     {
@@ -1111,7 +1311,7 @@ const gCmps = [{
                     fontFamily: "assistantLight",
                     fontSize: "3.125rem",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "unset",
                     padding: "unset",
                     textTransform: "unset",
@@ -1129,7 +1329,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1156,7 +1356,7 @@ const gCmps = [{
                     fontFamily: "unset",
                     fontSize: "0.875rem",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "0 auto",
                     padding: "unset",
                     textTransform: "unset",
@@ -1174,7 +1374,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1201,7 +1401,6 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1.5625rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
                         margin: "0 auto",
                         padding: "unset",
                         textTransform: "unset",
@@ -1224,7 +1423,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1244,7 +1443,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1271,7 +1470,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1302,7 +1501,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1329,7 +1528,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1364,7 +1563,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1384,7 +1583,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1411,7 +1610,7 @@ const gCmps = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "unset",
                     padding: "unset",
                     textTransform: "unset",
@@ -1429,7 +1628,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "unset",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1456,7 +1655,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1479,7 +1678,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1501,7 +1700,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1520,7 +1719,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1554,7 +1753,7 @@ const gCmps = [{
                                 fontFamily: "unset",
                                 fontSize: "unset",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "unset",
@@ -1578,7 +1777,7 @@ const gCmps = [{
                                 fontFamily: "unset",
                                 fontSize: "3.125rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "unset",
@@ -1601,7 +1800,7 @@ const gCmps = [{
                                 fontFamily: "unset",
                                 fontSize: "1rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "unset",
@@ -1624,7 +1823,7 @@ const gCmps = [{
                                 fontFamily: "unset",
                                 fontSize: "1.2rem",
                                 fontWeight: "unset",
-                                letterSpacing: "unset",
+
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "uppercase",
@@ -1643,7 +1842,7 @@ const gCmps = [{
                     fontFamily: "unset",
                     fontSize: "unset",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     padding: "15px",
                     backgroundColor: "unset",
                     borderRadius: "unset",
@@ -1659,7 +1858,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -1748,7 +1947,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "0 0 1rem 0",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1771,7 +1970,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.3125rem",
                                     fontWeight: "bold",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1794,7 +1993,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "uppercase",
@@ -1813,7 +2012,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         padding: "15px",
                         backgroundColor: "unset",
                         borderRadius: "unset",
@@ -1841,7 +2040,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "0 0 1rem 0",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1864,7 +2063,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.3125rem",
                                     fontWeight: "bold",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1887,7 +2086,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "uppercase",
@@ -1906,7 +2105,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         padding: "15px",
                         backgroundColor: "unset",
                         borderRadius: "unset",
@@ -1934,7 +2133,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "0 0 1rem 0",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1957,7 +2156,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.3125rem",
                                     fontWeight: "bold",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1980,7 +2179,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "uppercase",
@@ -1999,7 +2198,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         padding: "15px",
                         backgroundColor: "unset",
                         borderRadius: "unset",
@@ -2016,7 +2215,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -2043,7 +2242,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2079,7 +2278,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -2106,7 +2305,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2129,7 +2328,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2154,7 +2353,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "15px 0 0 0",
                         padding: "3px 8px",
                         textTransform: "unset",
@@ -2173,7 +2372,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -2207,7 +2406,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2230,7 +2429,7 @@ const gCmps = [{
                                     fontFamily: "assistantLight",
                                     fontSize: "3.375rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2248,7 +2447,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         padding: "15px",
                         backgroundColor: "unset",
                         borderRadius: "unset",
@@ -2269,7 +2468,7 @@ const gCmps = [{
                         fontFamily: "assistantLight",
                         fontSize: "unset",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2294,7 +2493,7 @@ const gCmps = [{
                         fontFamily: "assistantLight",
                         fontSize: "unset",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2319,7 +2518,7 @@ const gCmps = [{
                         fontFamily: "assistantLight",
                         fontSize: "unset",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2344,7 +2543,7 @@ const gCmps = [{
                         fontFamily: "assistantLight",
                         fontSize: "unset",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2363,7 +2562,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "unset",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -2390,7 +2589,7 @@ const gCmps = [{
                         fontFamily: "assistantLight",
                         fontSize: "1.0625rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2423,7 +2622,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2449,7 +2648,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2475,7 +2674,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2501,7 +2700,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2520,7 +2719,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2540,7 +2739,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -2619,7 +2818,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1.5rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2649,7 +2848,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2674,7 +2873,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2699,7 +2898,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2718,7 +2917,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -2736,7 +2935,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "1rem",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -2773,7 +2972,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2796,7 +2995,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2819,7 +3018,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2842,7 +3041,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2865,7 +3064,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2907,7 +3106,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -2964,7 +3163,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -2988,7 +3187,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.4rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3011,7 +3210,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.1rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3034,7 +3233,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -3073,7 +3272,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3159,7 +3358,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -3215,7 +3414,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3239,7 +3438,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.4rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3262,7 +3461,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.1rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3285,7 +3484,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "1.1rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "10px",
                                     textTransform: "unset",
@@ -3308,7 +3507,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -3340,7 +3539,7 @@ const gCmps = [{
                     fontFamily: "unset",
                     fontSize: "1.1rem",
                     fontWeight: "unset",
-                    letterSpacing: "unset",
+
                     margin: "0 auto",
                     textAlign: "center",
                     padding: "unset",
@@ -3374,7 +3573,7 @@ const gCmps = [{
                         fontFamily: "robotomono",
                         fontSize: "1.5rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -3404,7 +3603,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3429,7 +3628,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3454,7 +3653,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3473,7 +3672,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -3491,7 +3690,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "1rem",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             height: "4rem",
             padding: "unset",
@@ -3572,7 +3771,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
@@ -3627,7 +3826,7 @@ const gCmps = [{
                                     fontFamily: "champagneLimousines",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3650,7 +3849,7 @@ const gCmps = [{
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3701,7 +3900,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -3740,7 +3939,7 @@ const gCmps = [{
                                     fontFamily: "champagneLimousines",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3764,7 +3963,7 @@ const gCmps = [{
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1.4rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3804,7 +4003,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -3843,7 +4042,7 @@ const gCmps = [{
                                     fontFamily: "champagneLimousines",
                                     fontSize: "2rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3867,7 +4066,7 @@ const gCmps = [{
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1.4rem",
                                     fontWeight: "unset",
-                                    letterSpacing: "unset",
+
                                     margin: "unset",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -3908,7 +4107,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -3947,7 +4146,7 @@ const gCmps = [{
                                 fontFamily: "champagneLimousines",
                                 fontSize: "1.4rem",
                                 fontWeight: "bold",
-                                letterSpacing: "unset",
+
                                 margin: "unset",
                                 padding: "unset",
                                 textTransform: "unset",
@@ -4012,7 +4211,7 @@ const gCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
-            letterSpacing: "unset",
+
             margin: "unset",
             padding: "unset",
             textTransform: "unset",
@@ -4043,7 +4242,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1rem",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
+
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4067,7 +4266,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4090,7 +4289,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4114,7 +4313,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1rem",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
+
                         marginTop: "1rem",
                         margin: "0 auto",
                         textAlign: "center",
@@ -4138,7 +4337,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4162,7 +4361,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4185,7 +4384,7 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
+
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4209,7 +4408,6 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "1rem",
                         fontWeight: "bold",
-                        letterSpacing: "unset",
                         marginTop: "1rem",
                         margin: "0 auto",
                         textAlign: "center",
@@ -4233,11 +4431,9 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
-
                         textTransform: "unset",
                         color: "unset",
                         backgroundColor: "#fff",
@@ -4257,7 +4453,6 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",
@@ -4280,7 +4475,6 @@ const gCmps = [{
                         fontFamily: "unset",
                         fontSize: "0.9rem",
                         fontWeight: "unset",
-                        letterSpacing: "unset",
                         margin: "0 auto",
                         textAlign: "center",
                         padding: "unset",

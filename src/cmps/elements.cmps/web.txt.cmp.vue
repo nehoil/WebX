@@ -4,17 +4,17 @@
     @mouseover="showEditMenu = true"
     @mouseleave="showEditMenu = false"
   >
-  <p
-    class="web-txt"
-    :class="cmp.class"
-    contenteditable="isEdit"
-    :style="cmp.style"
-    @blur="onEdit"
-    @click.stop="setEditItem"
-  >
-    {{ cmp.info.content }}
-  </p>
-    <edit-menu v-if="showEditMenu" :cmp="cmp"/>
+    <p
+      class="web-txt"
+      :class="cmp.class"
+      contenteditable="isEdit"
+      :style="cmp.style"
+      @blur="onEdit"
+      @click.stop="setEditItem"
+    >
+      {{ cmp.info.content }}
+    </p>
+    <edit-menu v-if="showEditMenu" :cmp="cmp" />
   </span>
 </template>
 
@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       isEdit: true,
-      showEditMenu: false
+      showEditMenu: false,
     };
   },
   props: {
@@ -52,6 +52,10 @@ export default {
   },
   created() {
     this.cmp._rootId = this._rootId;
+    if (!this.cmp.style.textShadow) {
+      this.cmp.style.textShadow = 'unset';
+      console.log('this cmp after change', this.cmp.style);
+    }
   },
 };
 </script>
