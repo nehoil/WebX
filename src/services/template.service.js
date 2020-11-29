@@ -971,7 +971,7 @@ const gCmps = [{
                     id: "gallery001",
                     type: "web-img",
                     info: {
-                        src: ""
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606660460/black-white-layers-paper-top-view_cxblrg.jpg"
                     },
                     style: {
                         fontFamily: "unset",
@@ -1014,7 +1014,7 @@ const gCmps = [{
                                     margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
-                                    color: "unset",
+                                    color: "#fff",
                                     backgroundColor: "unset",
                                     borderShadow: "unset",
                                     border: "unset",
@@ -1037,7 +1037,7 @@ const gCmps = [{
                                     margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
-                                    color: "unset",
+                                    color: "#fff",
                                     backgroundColor: "unset",
                                     borderShadow: "unset",
                                     border: "unset",
@@ -1405,7 +1405,7 @@ const gCmps = [{
                 id: utilService.makeId(10),
                 type: "web-img",
                 info: {
-                    src: "https://ctl.s6img.com/society6/img/D3yo6R-JbO58p8AQsYcVIlLNrrU/w_700/prints/~artwork/s6-0008/a/1718997_2253462/~~/kyoto-japan-prints.jpg"
+                    src: "https://images.unsplash.com/photo-1606149408604-b0add195ddfa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
                 },
                 style: {
                     fontFamily: "unset",
@@ -1420,7 +1420,7 @@ const gCmps = [{
                     borderShadow: "unset",
                     border: "unset",
                     borderRadius: "unset",
-                    width: "unset",
+                    width: "100%",
                     height: "unset",
                 },
             }]
