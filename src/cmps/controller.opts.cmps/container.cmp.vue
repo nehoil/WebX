@@ -27,6 +27,11 @@
         <i class="el-icon-upload2"></i>Upload Image Background
         <input type="file" @change="uploadImg" />
       </div>
+      <div v-if="getIsImage">
+        <el-checkbox v-model="image" @change="removeImage"
+          >Remove Background Image</el-checkbox
+        >
+      </div>
     </label>
   </div>
 </template>
@@ -47,6 +52,7 @@ export default {
     return {
       padding: null,
       minHeight: null,
+      image: null,
     };
   },
   created() {
@@ -78,6 +84,10 @@ export default {
       this.cmp.style.backgroundImage = `url(${img.url})`;
       eventBus.$emit("update-site");
     },
+    removeImage() {
+      this.cmp.style.backgroundImage = "unset";
+    },
+
     setMinHeight(size) {
       this.minHeight = size;
       this.cmp.style.minHeight = size / 16 + "rem";
@@ -94,6 +104,16 @@ export default {
       this.cmp.style.padding = size / 16 + "rem";
       eventBus.$emit("update-site");
       this.padding = null;
+    },
+  },
+  computed: {
+    getIsImage() {
+      if (
+        this.cmp.style.backgroundImage === "unset" ||
+        !this.cmp.style.backgroundImage
+      )
+        return false;
+      else return true;
     },
   },
 };

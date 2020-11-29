@@ -1,0 +1,22 @@
+.template-preview-container {
+  flex-direction: column;
+  display: flex;
+  // flex-direction:;
+  & .template-previews-list {
+    display: flex;
+    padding: 20px;
+  }
+
+  & img {
+    width: 200px !important;
+  }
+}
+
+.template-preview {
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.05);
+  margin: 0px 5px 0px 5px;
+  padding: 45px 20px 35px 20px;
+  cursor: pointer;
+}

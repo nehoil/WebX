@@ -54,17 +54,19 @@ export default {
   },
   methods: {
     setEditItem(cmp) {
-      this.cmp = cmp;
-      this.itemToEdit = cmp.type;
+      if (cmp.type !== "web-form") {
+        this.cmp = cmp;
+        this.itemToEdit = cmp.type;
+      } else this.itemToEdit = null;
     },
     // setMargin(size) {
     //   this.margin = size;
-    //   this.cmp.style.margin = size / 16 + 'rem';
+    //   this.cmp.style.margin = size / 16 + "rem";
     //   this.margin = null;
     // },
     // setPadding(size) {
     //   this.padding = size;
-    //   this.cmp.style.padding = size / 16 + 'rem';
+    //   this.cmp.style.padding = size / 16 + "rem";
     //   this.padding = null;
     // },
   },

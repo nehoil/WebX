@@ -1,13 +1,30 @@
 .web-img-gallery-1 {
-    &:hover {
-        outline: 1px solid rgba(128, 128, 128, 0.637)
-    }
-    & img {
-        max-width: 300px;
-        max-height: 350px;
-        margin: 10px;
-    }
+  &:hover {
+    outline: 1px solid rgba(128, 128, 128, 0.637);
+  }
+  & img {
+    max-width: 300px;
+    max-height: 350px;
+    margin: 10px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-gallery-6-container {
+  background-color: rgba(255, 0, 150, 0.3);
+//   background-image: linear-gradient(140deg, #8b24fc 0%, #2c0efe 100%);
+  padding: 100px 0 !important;
+  & .img-gallery-6-div {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    & img {
+      max-width: 250px;
+      margin: 10px;
+    }
+  }
+  // justify-content: space-between;
 }

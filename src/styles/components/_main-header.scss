@@ -10,69 +10,68 @@
 //     }
 // }
 .main-header {
-    padding: 20px;
-    & nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    & img {
-        width: 100px;
-    }
+  padding: 20px;
+  & nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  & img {
+    width: 100px;
+  }
 }
 
-
-.header-2-container {
-    background-image: url('https://i.ibb.co/PDH4Sxs/Screenshot-2.png');
-    background-size: cover!important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & img {
-        width: 300px!important;
-    }
-    // background-color: transparent;
-    // background-image: linear-gradient(348deg, rgba(66, 141, 240, 0.4), #3388e9 37%, #5191f8);
-    color: aliceblue;
+.web-container {
+&.header-2-container {
+  background: url('https://svgshare.com/i/Rta.svg') rgba(255, 0, 150, 0.3);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 300px !important;
+  }
+  color: aliceblue;
+  margin-bottom: 80px!important;
+}
 }
 .header-2-div {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    & p {
-        padding: 20px!important;
-    }
-    & a {
-        margin: 20px;
-        font-size: 16px!important;
-        font-weight: bold!important;
-        text-transform: uppercase!important;
-        text-decoration: none!important;
-        letter-spacing: 0.7px!important;
-        color: rgb(97, 95, 95);
-        background-color: #fcc400!important;
-        border-radius: 50px 50px 50px 50px!important;
-        padding: 17px 34px 17px 34px!important;
-    }
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  & p {
+    padding: 20px !important;
+  }
+  & a {
+    margin: 20px;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    letter-spacing: 0.7px !important;
+    color: rgb(97, 95, 95);
+    background-color: #fcc400 !important;
+    border-radius: 50px 50px 50px 50px !important;
+    padding: 17px 34px 17px 34px !important;
+  }
 }
 
 .header-2-title {
-    width: 20ch!important;
-    text-align: start;
-    font-size: 58px!important;
-    font-weight: bold!important;
-    line-height: 1.1em!important;
-    padding: 0!important;
-    margin: 0!important;
+  width: 20ch !important;
+  text-align: start;
+  font-size: 58px !important;
+  font-weight: bold !important;
+  line-height: 1.1em !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .header-2-pa {
-    width: 40ch!important;
-    text-align: start;
-    font-size: 23px!important;
-    line-height: 1.1em!important;
-    padding: 0!important;
-    margin: 0!important;
+  width: 40ch !important;
+  text-align: start;
+  font-size: 23px !important;
+  line-height: 1.1em !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-
