@@ -7,53 +7,93 @@ const gCmps = [{
         id: "head001",
         class: "web-header-1",
         info: {
-            dir: "column",
-            cmps: [{
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a sample H1 text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
+            dir: "row",
+            cmps: [
+
                 {
+                    type: "web-div",
+                    name: "header-1",
+                    class: "header-1-web-div",
                     id: utilService.makeId(10),
-                    type: "web-txt",
                     info: {
-                        content: "This is a P text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
+                        dir: "column",
+                        cmps: [{
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                info: {
+                                    content: "This is a sample H1 text"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "4.1875rem",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                info: {
+                                    content: "This is a P text"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-button",
+                                info: {
+                                    content: "This is button text",
+                                    linkTo: "#"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "unset",
+                                    fontWeight: "unset",
+                                    letterSpacing: "unset",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            }
+
+                        ]
+                    }
                 },
+
+
+
                 {
                     id: "gallery001",
                     type: "web-img",
@@ -77,30 +117,7 @@ const gCmps = [{
                         height: "unset",
                     },
                 },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-button",
-                    info: {
-                        content: "This is button text",
-                        linkTo: "#"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
+
             ]
         },
         style: {
@@ -242,99 +259,6 @@ const gCmps = [{
                     type: "web-txt",
                     info: {
                         content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph."
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-
-            ]
-        },
-        style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-            letterSpacing: "unset",
-            padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
-        }
-    },
-    {
-        type: "web-container",
-        name: "text",
-        id: "txt004",
-        class: "web-txt-3",
-        info: {
-            dir: "column",
-            cmps: [{
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a sample H1 text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a P text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        letterSpacing: "unset",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-img",
-                    info: {
-                        src: "#"
                     },
                     style: {
                         fontFamily: "unset",
@@ -1414,13 +1338,13 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-button",
                     info: {
-                        content: "Nav1",
+                        content: "Home",
                         linkTo: "#"
                     },
                     style: {
-                        fontFamily: "unset",
+                        fontFamily: "assistantLight",
                         fontSize: "unset",
-                        fontWeight: "unset",
+                        fontWeight: "bold",
                         letterSpacing: "unset",
                         margin: "unset",
                         padding: "unset",
@@ -1438,14 +1362,14 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-button",
                     info: {
-                        content: "Nav2",
+                        content: "Services",
                         linkTo: "#"
 
                     },
                     style: {
-                        fontFamily: "unset",
+                        fontFamily: "assistantLight",
                         fontSize: "unset",
-                        fontWeight: "unset",
+                        fontWeight: "bold",
                         letterSpacing: "unset",
                         margin: "unset",
                         padding: "unset",
@@ -1463,14 +1387,14 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-button",
                     info: {
-                        content: "Nav3",
+                        content: "Gallery",
                         linkTo: "#"
 
                     },
                     style: {
-                        fontFamily: "unset",
+                        fontFamily: "assistantLight",
                         fontSize: "unset",
-                        fontWeight: "unset",
+                        fontWeight: "bold",
                         letterSpacing: "unset",
                         margin: "unset",
                         padding: "unset",
@@ -1488,14 +1412,14 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-button",
                     info: {
-                        content: "Nav4",
+                        content: "About us  ",
                         linkTo: "#"
 
                     },
                     style: {
-                        fontFamily: "unset",
+                        fontFamily: "assistantLight",
                         fontSize: "unset",
-                        fontWeight: "unset",
+                        fontWeight: "bold",
                         letterSpacing: "unset",
                         margin: "unset",
                         padding: "unset",
@@ -1704,18 +1628,71 @@ const gCmps = [{
             width: "unset",
             height: "unset",
         }
-    }    
+    },
+    {
+        type: "web-container",
+        name: "card",
+        id: "saas-card",
+        class: "web-card-3-container",
+        info: {
+            dir: "row",
+            cmps: [{
+                    id: utilService.makeId(10),
+                    type: "web-img",
+                    info: {
+                        src: "https://i.ibb.co/dmScMv8/g24.png"
+                    },
+                    style: {},
+                },
+                {
+                    type: "web-div",
+                    name: "card",
+                    id: utilService.makeId(10),
+                    class: "web-card-3-div",
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                class: "web-card-3-title",
+                                info: {
+                                    content: "Your Payment Process, Simplified."
+                                },
+                                style: {},
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                class: "web-card-3-pa",
+                                info: {
+                                    content: "You can finally customize everything on your website, easily and directly. Elementor is the editor for designers who want to fine-tune every last detail."
+                                },
+                                style: {},
+                            },
+                        ]
+                    },
+                    style: {},
+
+                }
+            ]
+        },
+        style: {}
+    }
+
 ]
 
 
 
 // import {roeeTemplates} from '../services/roee.js'
 // import {haleliTemplates} from '../services/haleli.js'
-import {nehoTemplates} from '../services/neho.js'
+import { nehoTemplates } from '../services/neho.js'
 
 gCmps.push(...nehoTemplates)
 // gCmps.push(haleliTemplates)
 // console.log(gCmps);
+// gCmps.push(nehoTemplates)
+    // gCmps.push(haleliTemplates)
+    // console.log(gCmps);
 
 export const templateService = {
     getEmptyTemplate,

@@ -24,7 +24,6 @@ div.editor {
         }
     }
     .controller {
-    
         @include scrollBar(.5rem, lighten($clr3, 35%));
         background-color: rgba(241, 241, 241, 0.5);
         overflow-y: auto;
@@ -59,6 +58,15 @@ div.editor {
                 height: 3rem;
                 margin: 0.5rem;
             }
+        }
+        .add-menu-seperator {
+            width: 90%;
+            border: 1px solid rgb(233, 233, 233);
+        }
+        .add-options-btn {
+            margin-top: 20px;
+            padding: 10px;
+            cursor: grab;
         }
         footer {
             padding-left: 10px;
