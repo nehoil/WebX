@@ -971,7 +971,7 @@ const gCmps = [{
                     id: "gallery001",
                     type: "web-img",
                     info: {
-                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606660460/black-white-layers-paper-top-view_cxblrg.jpg"
+                        src: ""
                     },
                     style: {
                         fontFamily: "unset",
@@ -1056,7 +1056,7 @@ const gCmps = [{
                                     linkTo: "#"
                                 },
                                 style: {
-                                    fontFamily: "assistantLight",
+                                    fontFamily: "unset",
                                     fontSize: "1.5em",
                                     fontWeight: "100",
                                     letterSpacing: "unset",
@@ -1091,7 +1091,7 @@ const gCmps = [{
             width: "100%",
             minHeight: "unset",
             height: "unset",
-            backgroundImage: "unset"
+            backgroundImage: "url(http://res.cloudinary.com/dksmeovlj/image/upload/v1606663473/black-white-layers-paper-top-view_fhwzpg.jpg)"
         }
     },
     {

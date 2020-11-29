@@ -7,9 +7,9 @@
         flex-direction: column;
         justify-content: start;
         align-items: baseline;
+        min-height: 26.0625rem;
         .web-button {
             align-self: flex-end;
-            box-shadow: 1px 2px 7px #cecece;
             cursor: pointer;
         }
     }
@@ -38,7 +38,6 @@
 }
 
 .web-card-1-col {
-    background-color: lightcoral;
     img {
         width: 100%;
     }
