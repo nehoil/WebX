@@ -22,6 +22,7 @@
     </div>
 
     <section class="cmpsExamples" v-if="cmps">
+      <hr class="add-menu-seperator">
       <draggable
         class="dragArea list-group"
         :group="{ name: 'workspace-cmps', pull: 'clone', put: false }"
@@ -31,7 +32,7 @@
         @end="stopDrag"
       >
         <div v-for="cmp in cmps" :key="cmp.id">
-          <div class="list-group-item add-options-btn">{{ cmp.id }}</div>
+          <button class="list-group-item add-options-btn">{{ cmp.id }}</button>
         </div>
       </draggable>
     </section>
