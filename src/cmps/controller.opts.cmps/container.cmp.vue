@@ -71,7 +71,7 @@ export default {
     },
     async uploadImg(ev) {
       if (!this.cmp.style.backgroundImage) {
-        this.cmp.style.backgroundImage = "unset";
+        this.cmp.style.backgroundImage = "";
       }
       let res = uploadImg(ev);
       let img = await res;

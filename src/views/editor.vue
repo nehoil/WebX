@@ -1,6 +1,6 @@
 <template>
   <div class="editor flex">
-    <controller :itemToEdit="itemToEdit" />
+    <controller :itemToEdit="itemToEdit" v-if="showEditor" @focus.native="test"/>
     <work-space :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId"/>
   </div>
 </template>
@@ -22,9 +22,13 @@ export default {
       siteToEdit: null,
       waps: json,
       itemToEdit: 'webImg',
+      showEditor: true
     };
   },
   methods: {
+    test(){
+      console.log('here');
+    },
     updateCmpId(){
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     },
@@ -37,7 +41,7 @@ export default {
             this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
             return;
           }
-          if (cmp.info.cmps) this.removeDeepCmp(cmp, cmpId, ++deep);
+          if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
         });
       },
     searchCmp(cmps, cmpId, _rootId) {      
@@ -47,7 +51,7 @@ export default {
       } else {
         rootFather = cmps
       }
-      this.removeDeepCmp(rootFather, cmpId);
+      this.removeCmp(rootFather, cmpId);
   },
   },
   computed: {

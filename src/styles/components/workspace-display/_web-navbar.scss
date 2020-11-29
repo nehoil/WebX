@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 .navbar-1 {
     display: flex;
     justify-content: space-between;
@@ -11,4 +14,26 @@
         display: flex;
         align-items: center;
     }
+}
+
+
+.navbar-2-container {
+    font-family: 'Lato', sans-serif;
+    background-color: #641bfd;
+    // color: rgb(34, 34, 34);
+    // background-image: linear-gradient(188deg, rgba(66, 141, 172, -27.6), #3388e9 -15%, #5191f8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-2-menu-link {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 0;
+    margin: 0 15px;
+    transition: all 0.1s linear;
+    line-height: 20px;
+
 }

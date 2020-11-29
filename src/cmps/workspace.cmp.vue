@@ -50,6 +50,8 @@ export default {
     },
     addCmp(ev){
       eventBus.$emit("addCmp", ev.clone.innerText);
+      console.log(ev.clone.innerText);
+      
     }
     // updateCmpId(ev) {
     //   const cmpCopy = JSON.parse(JSON.stringify(this.cmps[ev.newIndex]));

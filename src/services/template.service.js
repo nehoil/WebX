@@ -8,100 +8,117 @@ const gCmps = [
         id: "head001",
         class: "web-header-1",
         info: {
-            dir: "column",
-            cmps: [{
-                id: utilService.makeId(10),
-                type: "web-txt",
-                info: {
-                    content: "This is a sample H1 text"
+            dir: "row",
+            cmps: [
+
+                {
+                    type: "web-div",
+                    name: "header-1",
+                    class: "header-1-web-div",
+                    id: utilService.makeId(10),
+                    info: {
+                        dir: "column",
+                        cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "This is a sample H1 text"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "4.1875rem",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "This is a P text"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "unset",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-button",
+                            info: {
+                                content: "This is button text",
+                                linkTo: "#"
+                            },
+                            style: {
+                                fontFamily: "unset",
+                                fontSize: "unset",
+                                fontWeight: "unset",
+                                letterSpacing: "unset",
+                                margin: "unset",
+                                padding: "unset",
+                                textTransform: "unset",
+                                color: "unset",
+                                backgroundColor: "unset",
+                                borderShadow: "unset",
+                                border: "unset",
+                                borderRadius: "unset",
+                                width: "unset",
+                                height: "unset",
+                            },
+                        }
+
+                        ]
+                    }
                 },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
+
+
+
+                {
+                    id: "gallery001",
+                    type: "web-img",
+                    info: {
+                        src: "https://i.guim.co.uk/img/media/684c9d087dab923db1ce4057903f03293b07deac/205_132_1915_1150/master/1915.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=14a95b5026c1567b823629ba35c40aa0"
+                    },
+                    style: {
+                        fontFamily: "unset",
+                        fontSize: "unset",
+                        fontWeight: "unset",
+                        letterSpacing: "unset",
+                        margin: "unset",
+                        padding: "unset",
+                        textTransform: "unset",
+                        color: "unset",
+                        backgroundColor: "unset",
+                        borderShadow: "unset",
+                        border: "unset",
+                        borderRadius: "unset",
+                        width: "unset",
+                        height: "unset",
+                    },
                 },
-            },
-            {
-                id: utilService.makeId(10),
-                type: "web-txt",
-                info: {
-                    content: "This is a P text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: "gallery001",
-                type: "web-img",
-                info: {
-                    src: "https://i.guim.co.uk/img/media/684c9d087dab923db1ce4057903f03293b07deac/205_132_1915_1150/master/1915.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=14a95b5026c1567b823629ba35c40aa0"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: utilService.makeId(10),
-                type: "web-button",
-                info: {
-                    content: "This is button text",
-                    linkTo: "#"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
+
             ]
         },
         style: {
@@ -243,99 +260,6 @@ const gCmps = [
                 type: "web-txt",
                 info: {
                     content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph."
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-
-            ]
-        },
-        style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-            letterSpacing: "unset",
-            padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
-        }
-    },
-    {
-        type: "web-container",
-        name: "text",
-        id: "txt004",
-        class: "web-txt-3",
-        info: {
-            dir: "column",
-            cmps: [{
-                id: utilService.makeId(10),
-                type: "web-txt",
-                info: {
-                    content: "This is a sample H1 text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: utilService.makeId(10),
-                type: "web-txt",
-                info: {
-                    content: "This is a P text"
-                },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
-                },
-            },
-            {
-                id: utilService.makeId(10),
-                type: "web-img",
-                info: {
-                    src: "#"
                 },
                 style: {
                     fontFamily: "unset",
@@ -1397,31 +1321,17 @@ const gCmps = [
                     }
                     ]
                 },
-                style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-                    letterSpacing: "unset",
-                    padding: "15px",
-                    backgroundColor: "unset",
-                    borderRadius: "unset",
-                    width: "100%",
-                    minHeight: "unset",
-                    height: "unset",
-                    backgroundImage: "unset"
-                }
-            },
-            {
+                {
                 id: utilService.makeId(10),
                 type: "web-button",
                 info: {
-                    content: "Nav1",
+                    content: "Home",
                     linkTo: "#"
                 },
                 style: {
-                    fontFamily: "unset",
+                    fontFamily: "assistantLight",
                     fontSize: "unset",
-                    fontWeight: "unset",
+                    fontWeight: "bold",
                     letterSpacing: "unset",
                     margin: "unset",
                     padding: "unset",
@@ -1439,14 +1349,14 @@ const gCmps = [
                 id: utilService.makeId(10),
                 type: "web-button",
                 info: {
-                    content: "Nav2",
+                    content: "Services",
                     linkTo: "#"
 
                 },
                 style: {
-                    fontFamily: "unset",
+                    fontFamily: "assistantLight",
                     fontSize: "unset",
-                    fontWeight: "unset",
+                    fontWeight: "bold",
                     letterSpacing: "unset",
                     margin: "unset",
                     padding: "unset",
@@ -1464,14 +1374,14 @@ const gCmps = [
                 id: utilService.makeId(10),
                 type: "web-button",
                 info: {
-                    content: "Nav3",
+                    content: "Gallery",
                     linkTo: "#"
 
                 },
                 style: {
-                    fontFamily: "unset",
+                    fontFamily: "assistantLight",
                     fontSize: "unset",
-                    fontWeight: "unset",
+                    fontWeight: "bold",
                     letterSpacing: "unset",
                     margin: "unset",
                     padding: "unset",
@@ -1489,14 +1399,14 @@ const gCmps = [
                 id: utilService.makeId(10),
                 type: "web-button",
                 info: {
-                    content: "Nav4",
+                    content: "About us  ",
                     linkTo: "#"
 
                 },
                 style: {
-                    fontFamily: "unset",
+                    fontFamily: "assistantLight",
                     fontSize: "unset",
-                    fontWeight: "unset",
+                    fontWeight: "bold",
                     letterSpacing: "unset",
                     margin: "unset",
                     padding: "unset",
@@ -1706,12 +1616,823 @@ const gCmps = [
             height: "unset",
         }
     },
+    {
+        type: "web-container",
+        name: "card",
+        id: "saas-card",
+        class: "web-card-3-container",
+        info: {
+            dir: "row",
+            cmps: [{
+                id: utilService.makeId(10),
+                type: "web-img",
+                info: {
+                    src: "https://i.ibb.co/dmScMv8/g24.png"
+                },
+                style: {},
+            },
+            {
+                type: "web-div",
+                name: "card",
+                id: utilService.makeId(10),
+                class: "web-card-3-div",
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        class: "web-card-3-title",
+                        info: {
+                            content: "Your Payment Process, Simplified."
+                        },
+                        style: {},
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        class: "web-card-3-pa",
+                        info: {
+                            content: "You can finally customize everything on your website, easily and directly. Elementor is the editor for designers who want to fine-tune every last detail."
+                        },
+                        style: {},
+                    },
+                    ]
+                },
+                style: {},
 
-}]
+            }
+            ]
+        },
+        style: {}
+    },
+    {
+        type: "web-container",
+        name: "navbar",
+        id: "nav002",
+        class: "navbar-1",
+        info: {
+            dir: "row",
+            cmps: [{
+                id: utilService.makeId(10),
+                type: "web-txt",
+                info: {
+                    content: "CHÂTEAU DU BRUNCH"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "1.5rem",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "#e3baba",
+                    backgroundColor: "#161d2e",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    lineHeight: "auto"
+                }
+            },
+            {
+                type: "web-div",
+                name: "card-tem-01",
+                class: "",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-button",
+                        info: {
+                            content: "ABOUT",
+                            linkTo: "#"
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "unset",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "unset",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-button",
+                        info: {
+                            content: "RESERVE TABLE",
+                            linkTo: "#"
+
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "unset",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "unset",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-button",
+                        info: {
+                            content: "CONTACT US",
+                            linkTo: "#"
+
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "unset",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "unset",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        }
+                    }
+                    ]
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "1rem",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "#fff",
+                    backgroundColor: "#161d2e",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    lineHeight: "auto"
+                }
+            }
+            ]
+        },
+        style: {
+            fontFamily: "unset",
+            fontSize: "1rem",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            margin: "unset",
+            padding: "unset",
+            textTransform: "unset",
+            color: "#fff",
+            backgroundColor: "#161d2e",
+            border: "unset",
+            borderRadius: "unset",
+            lineHeight: "auto"
+        }
+    },
+    // first section
+    {
+        type: "web-container",
+        name: "header",
+        id: "header002",
+        class: "first-section-cdb",
+        info: {
+            dir: "row",
+            cmps: [{
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-text",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            display: "inline-block",
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    }
+                    ]
+                },
+            },
+            {
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-image",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-img",
+                        info: {
+                            src: "https://images.unsplash.com/photo-1550411294-56f7d0c7fbe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                        },
+                        style: {
+                            borderRadius: "unset"
+                        }
+                    }]
+                },
+            }
+            ]
+        },
+        style: {
+            display: "flex",
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            margin: "unset",
+            padding: "unset",
+            textTransform: "unset",
+            color: "#fff",
+            backgroundColor: "#161d2e",
+            borderShadow: "unset",
+            border: "unset",
+            borderRadius: "unset",
+            width: "unset",
+            height: "unset",
+        },
+    },
+
+    // second section
+    {
+        type: "web-container",
+        name: "section",
+        id: "section002",
+        class: "second-section-cdb",
+        info: {
+            dir: "row",
+            cmps: [{
+                type: "web-div",
+                name: "card-tem-03",
+                class: "card-image",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-img",
+                        info: {
+                            src: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=1253&q=80"
+                        },
+                        style: {}
+                    }]
+                },
+            },
+            {
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-text",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU DU BRUNCH",
+                        },
+                        style: {
+                            display: "inline-block",
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#e3baba",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "SINCE 1992",
+                        },
+                        style: {
+                            display: "inline-block",
+                            fontFamily: "unset",
+                            fontSize: "1.4rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "We do not serve dinner. We do not serve lunch. Chateau du brunch is all around the most important meal of the day, at any time of the day. Our offer for you is simple: With us, every day is Sunday. So if you are the kind of person who knows how he wants to live his life to the best: Come free, leave freeier, enjoy life, eat brunch.",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "1.1rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    ]
+                },
+            }
+            ]
+        },
+        style: {
+            display: "flex",
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            margin: "unset",
+            padding: "unset",
+            textTransform: "unset",
+            color: "#fff",
+            backgroundColor: "#161d2e",
+            borderShadow: "unset",
+            border: "unset",
+            borderRadius: "unset",
+            width: "unset",
+            height: "unset",
+        },
+    },
+    // third section
+    {
+        type: "web-container",
+        name: "section",
+        id: "section003",
+        class: "third-section-cdb",
+        info: {
+            dir: "row",
+            cmps: [{
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-text",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "MAIN CONCEPT",
+                        },
+                        style: {
+                            display: "inline-block",
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "THIS IS HOW IT GOES",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "1.5rem",
+                            fontWeight: "unset",
+                            letterSpacing: "3px",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#e3baba",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "You sit behind the bar, watch us making food porn just for you tummy. your food will be served by our muffin-dressed waitresses, yep, no joke. Cause Château du brunch stands with happiness, And happiness is muffins. and us.",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "1.1rem",
+                            fontWeight: "unset",
+                            letterSpacing: "1px",
+                            margin: "unset",
+                            padding: "5px",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    }
+                    ]
+                },
+            },
+            {
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-image",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-img",
+                        info: {
+                            src: "https://images.unsplash.com/photo-1516213335993-159eca2981af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                        },
+                        style: {}
+                    }]
+                },
+            }
+            ]
+        },
+        style: {
+            display: "flex",
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            margin: "unset",
+            padding: "unset",
+            textTransform: "unset",
+            color: "#fff",
+            backgroundColor: "#161d2e",
+            borderShadow: "unset",
+            border: "unset",
+            borderRadius: "unset",
+            width: "unset",
+            height: "unset",
+        },
+    },
+    // forth section
+    {
+        type: "web-container",
+        name: "section",
+        id: "section004",
+        class: "fourth-section-cdb",
+        info: {
+            dir: "row",
+            cmps: [{
+                type: "web-div",
+                name: "card-tem-03",
+                class: "card-image",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-img",
+                        info: {
+                            src: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1287&q=80"
+                        },
+                        style: {}
+                    }]
+                },
+            },
+            {
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-text",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "WE ARE OPEN",
+                        },
+                        style: {
+                            display: "inline-block",
+                            fontFamily: "unset",
+                            fontSize: "2rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#e3baba",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "always. 24/7",
+                        },
+                        style: {
+                            display: "inline-block",
+                            fontFamily: "unset",
+                            fontSize: "1.4rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "HAHASHMAL 6, TLV",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "1.1rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "unset",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "Please, do not forget to rate us on Tripadvisor and our Facebook page. See you soon!",
+                        },
+                        style: {
+                            fontFamily: "unset",
+                            fontSize: "1.1rem",
+                            fontWeight: "unset",
+                            letterSpacing: "unset",
+                            margin: "unset",
+                            padding: "10px",
+                            textTransform: "unset",
+                            color: "#fff",
+                            backgroundColor: "unset",
+                            borderShadow: "unset",
+                            border: "unset",
+                            borderRadius: "unset",
+                            width: "unset",
+                            height: "unset",
+                        },
+                    },
+                    ]
+                },
+            }
+            ]
+        },
+        style: {
+            display: "flex",
+            fontFamily: "unset",
+            fontSize: "unset",
+            fontWeight: "unset",
+            letterSpacing: "unset",
+            margin: "unset",
+            padding: "unset",
+            textTransform: "unset",
+            color: "#fff",
+            backgroundColor: "#161d2e",
+            borderShadow: "unset",
+            border: "unset",
+            borderRadius: "unset",
+            width: "unset",
+            height: "unset",
+        },
+    },
+
+    // footer
+    {
+        type: "web-container",
+        name: "footer",
+        id: "footer002",
+        class: "footer-cdb",
+        info: {
+            dir: "row",
+            cmps: [{
+                id: utilService.makeId(10),
+                type: "web-txt",
+                info: {
+                    content: "ALL RIGHTS RESERVED TO CHÂTEAU DU BRUNCH (C) MAY YOUR LIFE BE FILLED WITH BRUNCHES"
+                },
+                style: {
+                    fontFamily: "unset",
+                    fontSize: "1.1rem",
+                    fontWeight: "unset",
+                    letterSpacing: "unset",
+                    margin: "0 auto",
+                    textAlign: "center",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "#e3baba",
+                    backgroundColor: "#161d2e",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    lineHeight: "auto"
+                }
+            }]
+        },
+    }
+
+]
 
 
 
+// import {roeeTemplates} from '../services/roee.js'
+// import {haleliTemplates} from '../services/haleli.js'
+import { nehoTemplates } from '../services/neho.js'
 
+gCmps.push(...nehoTemplates)
+// gCmps.push(haleliTemplates)
+// console.log(gCmps);
+// gCmps.push(nehoTemplates)
+// gCmps.push(haleliTemplates)
+// console.log(gCmps);
 
 export const templateService = {
     getEmptyTemplate,
