@@ -73,9 +73,6 @@ div.editor {
             padding: 10px;
             cursor: grab;
         }
-        .grabbing {
-            cursor: grabbing;
-        }
         footer {
             padding-left: 10px;
             padding-right: 10px;
@@ -92,17 +89,17 @@ div.editor {
 }
 
 .controller-add {
-.el-collapse-item__wrap{
-border-bottom: none !important;
+    .el-collapse-item__wrap {
+        border-bottom: none !important;
+    }
+    .add-list li {
+        display: block;
+        text-align: start;
+        padding: 4px;
+        padding-left: 2rem;
+        font-size: 1rem;
+        // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+    }
 }
 
-.add-list li{
-    display: block;
-    text-align: start;
-    padding: 4px;
-    padding-left: 2rem;
-    font-size: 1rem;
-    // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
-}
-}
 $--color-primary: #30475e !default;

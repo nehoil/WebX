@@ -15,7 +15,11 @@
           <span>Whole Components</span>
         </template>
         <div class="controller-add">
-          <ul class="pointer add-list" v-for="cmp in cmpsAccordion" :key="cmp">
+          <ul
+            class="pointer add-list"
+            v-for="cmp in cmpsAccordion"
+            :key="cmp.value"
+          >
             <div @click="setCmpsToShow(cmp.value)">
               <!-- <el-collapse accordion> -->
               <el-collapse-item name="numForCmpsAccordion++">
@@ -61,7 +65,9 @@
         >
           <div v-for="cmp in cmps" :key="cmp.id">
             <ul>
-              <li class="list-group-item add-options-btn">{{ cmp.id }}</li>
+              <li class="list-group-item add-options-btn">
+                {{ cmp.id }}
+              </li>
             </ul>
           </div>
         </draggable>
@@ -97,6 +103,7 @@ export default {
       ],
       numForCmpsAccordion: 2,
       number: 1,
+      isGrabbing: false,
     };
   },
   methods: {
@@ -109,6 +116,15 @@ export default {
     stopDrag() {
       eventBus.$emit("dragStop");
     },
+    // grab(ev){
+    //   this.isGrabbing = true
+    //   console.log(ev,this.isGrabbing);
+
+    // },
+    // release(ev) {
+    //   this.isGrabbing = false;
+    //   console.log("re", ev,this.isGrabbing);
+    // },
   },
   computed: {
     cmps() {
