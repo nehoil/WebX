@@ -1,0 +1,28 @@
+.web-header-1 {
+    & img {
+        max-width: 400px;
+    }
+    .header-1-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: baseline;
+        .web-button {
+            align-self: flex-end;
+            box-shadow: 2px 4px 7px #acacac;
+            cursor: pointer;
+        }
+    }
+    .header-1-h1 {
+        margin: 0 50px;
+        text-align: left;
+    }
+}
+
+.web-sec-cards-1 {
+    img {
+        max-height: 400px;
+        // max-width: 200px;
+        object-fit: cover;
+    }
+}
