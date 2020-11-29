@@ -1,7 +1,7 @@
 <template>
   <div class="controller-edit">
     <p v-if="!itemToEdit">Please pick an element to edit</p>
-    <component :is="itemToEdit" :cmp="cmp"></component>
+    <component v-if="itemToEdit" :is="itemToEdit" :cmp="cmp"></component>
     <div v-if="itemToEdit">
       <!-- <p>padding</p>
       <el-slider

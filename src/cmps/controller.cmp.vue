@@ -1,7 +1,7 @@
 <template>
   <section class="controller flex space col">
     <div>
-      <nav class="flex space">
+      <nav class="flex pointer space">
         <a @click="addOrEdit = 'add'" :class="getIsAdd('add')">Add</a>
         <a @click="addOrEdit = 'edit'" :class="getIsAdd('edit')">Edit</a>
       </nav>

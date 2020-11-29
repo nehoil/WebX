@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
-import editMenu from '@/cmps/web.edit.menu.cmp';
+import { eventBus } from "@/services/eventbus.service.js";
+import editMenu from "@/cmps/web.edit.menu.cmp";
 
 export default {
   props: {
@@ -33,23 +33,23 @@ export default {
       showEditMenu: false,
     };
   },
-  name: 'web-img',
+  name: "web-img",
   components: {
     editMenu,
   },
   methods: {
     onEdit(ev) {
       this.cmp.info.src = ev.target.innerText;
-      eventBus.$emit('update-site');
+      eventBus.$emit("update-site");
     },
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
     showMenu() {
-      this.$emit('showMenu');
+      this.$emit("showMenu");
     },
   },
   created() {
