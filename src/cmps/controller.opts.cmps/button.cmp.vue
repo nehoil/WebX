@@ -98,8 +98,6 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id) {
-          console.log(this.borderRadius, "watch");
-          console.log(this.cmp.style.borderRadius, "watch");
           if (!this.cmp.style.borderRadius) {
             this.borderRadius = null;
             this.cmp.style.borderRadius = "0px";

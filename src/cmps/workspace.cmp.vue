@@ -62,9 +62,6 @@ export default {
     // },
   },
   created() {
-    // eventBus.$on("addCmp", () => {
-    //   this.$forceUpdate();
-    // });
     eventBus.$on("dragStart", () => {
       this.isDragging = true;
     });
