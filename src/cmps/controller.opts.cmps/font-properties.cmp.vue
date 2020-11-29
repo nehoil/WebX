@@ -1,6 +1,13 @@
 <template>
   <div class="font-properties">
+        <el-collapse accordion>
+      <el-collapse-item name="1">
+        <template slot="title">
+          <div class="flex center plr10 space mb1 pointer"></div>
+          <span>Text Styling</span>
+        </template>
     <div>
+
       <button @click="setAlign('left')" class="button-reset">
         <div class="icon-set" v-html="alignLeft"></div>
       </button>
@@ -45,6 +52,8 @@
         <el-option value="Strong">Strong</el-option>
       </el-select>
     </div>
+          </el-collapse-item>
+    </el-collapse>
   </div>
 </template>
 

@@ -1,56 +1,89 @@
 <template>
   <div class="select-color">
-    <!-- <div>
-      <p>Color</p>
-
-    </div> -->
     <div v-if="colors">
-      <div class="colors-pagination flex center space">
-        <i
-          @click="changePage(-1)"
-          class="el-icon-arrow-left page-link pointer"
-        ></i>
-        <ul
-          v-for="colors in displayedColors"
-          :key="colors.idx"
-          class="pointer palette"
-        >
-          <i
-            class="el-icon-refresh-right bgc pointer color-element"
-            @click="setColor('unset')"
-          ></i>
-          <i
-            class="el-icon-picture-outline bgc pointer color-element"
-            :class="getIsText('backgroundColor')"
-            @click="textOrBgc = 'backgroundColor'"
-          ></i>
+      <el-collapse accordion>
+        <el-collapse-item name="1">
+          <template slot="title">
+            <div class="flex center plr10 space mb1 pointer"></div>
+            <span>Background Color</span>
+          </template>
+          <div class="colors-pagination flex col center space">
+            <!-- <span>NEW! color palettes</span> -->
+            <ul
+              v-for="colors in displayedColors"
+              :key="colors.idx"
+              class="pointer palette"
+            >
+              <i
+                @click="changePage(-1)"
+                class="el-icon-arrow-left page-link pointer"
+              ></i>
+              <li
+                v-for="color in colors"
+                @click="setColor(color, 'backgroundColor')"
+                :key="color.idx"
+                :style="{ backgroundColor: color }"
+              ></li>
+              <i
+                @click="changePage(1)"
+                class="el-icon-arrow-right page-link pointer"
+              ></i>
+              <div>
+                <span class="change-color-method"
+                  >Not a palette fan? Click here >
+                  <el-color-picker
+                    @active-change="setColor"
+                    v-model="cmp.style.color"
+                  ></el-color-picker
+                ></span>
+              </div>
+            </ul>
+          </div>
+        </el-collapse-item>
 
-          <i
-            v-show="cmp.type !== 'web-container'"
-            class="pointer color-element color-text"
-            :class="getIsText('color')"
-            @click="textOrBgc = 'color'"
-            >A</i
-          >
-          <li
-            v-for="color in colors"
-            @click="setColor(color)"
-            :key="color.idx"
-            :style="{ backgroundColor: color }"
-          ></li>
-          <span class="change-color-method"
-            >Not a palette fan?
-            <el-color-picker
-              @active-change="setColor"
-              v-model="cmp.style.color"
-            ></el-color-picker
-          ></span>
-        </ul>
-        <i
-          @click="changePage(1)"
-          class="el-icon-arrow-right page-link pointer"
-        ></i>
-      </div>
+        <el-collapse-item name="2" v-if="cmp.type !== 'web-container'">
+          <template slot="title">
+            <div
+              class="flex center plr10 space mb1 pointer"
+              v-show="cmp.type !== 'web-container'"
+            ></div>
+            Text Color
+          </template>
+          <div class="colors-pagination flex col center space">
+            <ul
+              v-for="colors in displayedColors"
+              :key="colors.idx"
+              class="pointer palette"
+            >
+              <span class="flex center space">
+                <i
+                  @click="changePage(-1)"
+                  class="el-icon-arrow-left page-link pointer"
+                ></i>
+                <li
+                  v-for="color in colors"
+                  @click="setColor(color, 'color')"
+                  :key="color.idx"
+                  :style="{ backgroundColor: color }"
+                ></li>
+                <i
+                  @click="changePage(1)"
+                  class="el-icon-arrow-right page-link pointer"
+                ></i>
+              </span>
+              <div>
+                <span class="change-color-method"
+                  >Not a palette fan? Click here >
+                  <el-color-picker
+                    @active-change="setColor"
+                    v-model="cmp.style.color"
+                  ></el-color-picker
+                ></span>
+              </div>
+            </ul>
+          </div>
+        </el-collapse-item>
+      </el-collapse>
     </div>
   </div>
 </template>
@@ -69,7 +102,6 @@ export default {
       page: 1,
       perPage: 1,
       pages: [],
-      textOrBgc: "backgroundColor",
     };
   },
   created() {
@@ -90,7 +122,7 @@ export default {
       let to = page * perPage;
       return colors.slice(from, to);
     },
-    setColor(color, styleProperty = this.textOrBgc) {
+    setColor(color, styleProperty) {
       if (!this.cmp.style[styleProperty])
         this.cmp.style[styleProperty] = "unset";
       this.cmp.style[styleProperty] = color;
@@ -100,11 +132,6 @@ export default {
       if (this.page >= this.colors.length && diff === 1) this.page = 0;
       if (this.page === 1 && diff === -1) this.page = this.colors.length + 1;
       this.page += diff;
-    },
-    getIsText(type) {
-      return {
-        "active-text": this.textOrBgc === type,
-      };
     },
   },
   computed: {

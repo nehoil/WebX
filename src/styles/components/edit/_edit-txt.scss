@@ -1,5 +1,8 @@
 .edit-txt{
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
+    .text-controls>*{ 
+    font-size: 1.3rem;
+}
             .el-slider,
         .el-input {
             width: 40%;
@@ -10,12 +13,13 @@
         .el-select .el-input {
             width: 100% !important;
             margin-bottom: 5px;
-            margin-top: 1rem !important;
+            // margin-top: 1rem !important;
         }
     }
     .icon-set {
-        width: 20px;
-        height: 10px;
+        width: 17px;
+        height: 9px;
     }
+
 // }
 // }

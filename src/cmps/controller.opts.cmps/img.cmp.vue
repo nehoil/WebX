@@ -1,44 +1,61 @@
 <template>
   <div class="edit-img">
-    <label class="pointer">
-      <div class="upload-image">
-        <!-- <img :src="cmp.info.src" /> -->
-        <i class="el-icon-upload2"></i>Change By Upload
-        <input type="file" @change="uploadImg" />
-      </div>
-    </label>
-    <p class="change-url" @click="isToShowLink = !isToShowLink">
-      <i class="el-icon-edit"></i>Change By URL
-    </p>
-    <el-input
-      class="link-input"
-      v-if="isToShowLink"
-      @input="changeLinkTo"
-      @keyup.enter="changeLinkTo"
-      placeholder="Your link here"
-      v-model="cmp.info.src"
-    ></el-input>
-    <el-checkbox v-model="isBorder" @change="toggleBorder" class="change-image"
-      >Change Border</el-checkbox
-    >
-    <div class="flex center space plr10">
-      <p>Radius</p>
-      <el-slider
-        :min="1"
-        :max="50"
-        v-model="borderRadius"
-        @input="setBorderRadius"
-      ></el-slider>
-    </div>
-    <div class="flex center space plr10">
-      <p>Change Size</p>
-      <el-slider
-        :min="1"
-        :max="100"
-        v-model="width"
-        @input="setWidth"
-      ></el-slider>
-    </div>
+    <el-collapse accordion>
+      <el-collapse-item name="1">
+        <template slot="title">
+          <div class="flex center plr10 space mb1 pointer"></div>
+          <span>Change Image</span>
+        </template>
+        <label class="pointer">
+          <div class="upload-image">
+            <!-- <img :src="cmp.info.src" /> -->
+            <i class="el-icon-upload2"></i>Change By Upload
+            <input type="file" @change="uploadImg" />
+          </div>
+        </label>
+        <p class="change-url" @click="isToShowLink = !isToShowLink">
+          <i class="el-icon-edit"></i>Change By URL
+        </p>
+        <el-input
+          class="link-input"
+          v-if="isToShowLink"
+          @input="changeLinkTo"
+          @keyup.enter="changeLinkTo"
+          placeholder="Your link here"
+          v-model="cmp.info.src"
+        ></el-input>
+      </el-collapse-item>
+      <el-collapse-item name="2">
+        <template slot="title">
+          <div class="flex center plr10 space mb1 pointer"></div>
+          <span>Image Styling</span>
+        </template>
+        <el-checkbox
+          v-model="isBorder"
+          @change="toggleBorder"
+          class="change-image"
+          >Change Border</el-checkbox
+        >
+        <div class="flex center space plr10">
+          <p>Radius</p>
+          <el-slider
+            :min="1"
+            :max="50"
+            v-model="borderRadius"
+            @input="setBorderRadius"
+          ></el-slider>
+        </div>
+        <div class="flex center space plr10">
+          <p>Change Size</p>
+          <el-slider
+            :min="1"
+            :max="100"
+            v-model="width"
+            @input="setWidth"
+          ></el-slider>
+        </div>
+      </el-collapse-item>
+    </el-collapse>
   </div>
 </template>
 
