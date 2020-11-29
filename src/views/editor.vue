@@ -1,6 +1,6 @@
 <template>
   <div class="editor flex">
-    <controller :itemToEdit="itemToEdit" />
+    <controller :itemToEdit="itemToEdit" v-if="showEditor" @focus.native="test"/>
     <work-space :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId"/>
   </div>
 </template>
@@ -22,9 +22,13 @@ export default {
       siteToEdit: null,
       waps: json,
       itemToEdit: 'webImg',
+      showEditor: true
     };
   },
   methods: {
+    test(){
+      console.log('here');
+    },
     updateCmpId(){
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     },

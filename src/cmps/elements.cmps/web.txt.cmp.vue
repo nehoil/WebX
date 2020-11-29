@@ -6,6 +6,7 @@
   >
   <p
     class="web-txt"
+    :class="cmp.class"
     contenteditable="isEdit"
     :style="cmp.style"
     @blur="onEdit"

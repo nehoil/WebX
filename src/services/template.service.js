@@ -1713,7 +1713,7 @@ const gCmps = [{
 // import {haleliTemplates} from '../services/haleli.js'
 import {nehoTemplates} from '../services/neho.js'
 
-gCmps.push(nehoTemplates)
+gCmps.push(...nehoTemplates)
 // gCmps.push(haleliTemplates)
 // console.log(gCmps);
 
