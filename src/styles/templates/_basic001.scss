@@ -9,7 +9,7 @@
         align-items: baseline;
         .web-button {
             align-self: flex-end;
-            box-shadow: 2px 4px 7px #acacac;
+            box-shadow: 1px 2px 7px #cecece;
             cursor: pointer;
         }
     }
@@ -20,9 +20,28 @@
 }
 
 .web-sec-cards-1 {
+    width: 100px;
+    .web-card-1 {
+        max-width: 400px;
+        height: 100%;
+        margin: 10px;
+        img {
+            max-height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+        span {
+            margin-top: 20px !important;
+            cursor: pointer;
+        }
+    }
+}
+
+.web-card-1-col {
     img {
-        height: 400px;
-        // max-width: 200px;
-        object-fit: cover;
+        width: 100%;
+    }
+    a {
+        cursor: pointer;
     }
 }
