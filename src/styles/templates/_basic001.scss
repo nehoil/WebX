@@ -38,10 +38,30 @@
 }
 
 .web-card-1-col {
+    background-color: lightcoral;
     img {
         width: 100%;
     }
     a {
         cursor: pointer;
+    }
+}
+
+.web-card-1-row {
+    .web-card-1-title .web-card-1-pa {
+        margin: 0 40px !important;
+    }
+    .web-card-1-pa {
+        max-width: 62ch;
+    }
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+    img {
+        min-width: 500px;
+    }
+    .web-card-1-div {
+        object-fit: cover;
+        margin-left: 20px;
     }
 }
