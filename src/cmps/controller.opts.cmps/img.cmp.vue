@@ -53,22 +53,23 @@ export default {
   components: {},
   data() {
     return {
+      isWidthEditOn: false,
       borderRadius: null,
       isBorder: null,
       width: null,
       isToShowLink: false,
+      input: 0,
     };
   },
   created() {
     this.borderRadius = this.cmp.style.borderRadius
       ? parseInt(this.cmp.style.borderRadius)
       : 0;
-    console.log(this.borderRadius);
     var widthNum;
     var borderRadiusNum;
     if (!this.cmp.style.width || this.cmp.style.width === "unset") {
-      this.cmp.style.width === "100%";
-      this.width = 100;
+      // this.cmp.style.width === "auto";
+      this.width = 0;
     } else if (this.cmp.style.width && this.cmp.style.width !== "unset") {
       widthNum = this.getNumFromString("width");
       this.width = +widthNum;
@@ -82,6 +83,16 @@ export default {
       borderRadiusNum = this.getNumFromString("borderRadius");
       this.borderRadius = +borderRadiusNum;
     }
+  },
+    watch: {
+    cmp: {
+      deep: true,
+      handler(newVal, oldVal) {
+        if (newVal.id !== oldVal.id && (this.cmp)) {
+        this.width = +this.getNumFromString('width')
+        }
+      },
+    },
   },
   methods: {
     getNumFromString(styleProperty) {
@@ -113,6 +124,8 @@ export default {
       this.borderRadius = null;
     },
     setWidth(percent) {
+      this.input++
+      if (this.input <= 1) return
       this.cmp.style.width = percent + "%";
       eventBus.$emit("update-site");
       this.width = percent;
