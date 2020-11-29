@@ -1,4 +1,5 @@
 .web-container {
+    max-width: 1400px;
     &:hover {
         outline: 1px solid rgba(128, 128, 128, 0.637)
     }
@@ -17,5 +18,4 @@
 .column {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
 }
