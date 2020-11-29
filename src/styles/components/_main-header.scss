@@ -20,7 +20,8 @@
   }
 }
 
-.header-2-container {
+.web-container {
+&.header-2-container {
   background: url('https://svgshare.com/i/Rta.svg') rgba(255, 0, 150, 0.3);
   background-size: cover;
   display: flex;
@@ -30,8 +31,8 @@
     width: 300px !important;
   }
   color: aliceblue;
-  padding-bottom: 100px!important;
-  margin-bottom: 100px!important;
+  margin-bottom: 80px!important;
+}
 }
 .header-2-div {
   margin-left: 50px;

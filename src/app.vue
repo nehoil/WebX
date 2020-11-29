@@ -7,13 +7,13 @@
     <div class="main-header">
     <nav>
             <div class="logo">
-        <img src="./assets/logo.png" alt="" srcset="">
+       <router-link to="/"> <img src="./assets/logo.png" alt="" srcset=""></router-link>
       </div>
       <div class="menu">
       <router-link to="/">Home</router-link> |
-      <router-link to="/">Templates</router-link> |
+      <router-link to="/templates">Templates</router-link> |
       <router-link to="/">Profile</router-link> |
-      <router-link to="/about">Editor</router-link>
+      <router-link to="/editor">Editor</router-link>
       </div>
     </nav>
     </div>

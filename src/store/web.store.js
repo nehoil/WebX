@@ -18,7 +18,8 @@ import { templateService } from '@/services/template.service.js'
 export const webStore = {
     state: {
         siteToEdit: localDraftSite,
-        cmpsToShow: null
+        cmpsToShow: null,
+        templates: templateService.getTemplates()
     },
     getters: {
         cmps(state) {
@@ -29,6 +30,9 @@ export const webStore = {
         },
         web(state) {
             return state.siteToEdit
+        },
+        templates(state){
+            return state.templates
         }
     },
     mutations: {
@@ -71,9 +75,16 @@ export const webStore = {
         updateSite(state, { site }) {
             state.siteToEdit = site
             utilService.storeToStorage('draft_db', site)
+        },
+        setSite(state, {site}){ 
+            state.siteToEdit = site
         }
     },
     actions: {
+        changeTempalte({commit}, {template}){
+            const site = template
+            commit({type:'updateSite', site})
+        }
         //     removeDeepCmp(context, { id, route=context.getters.webCmps, numOfRuns=0 }) {
         //         console.log('numOfRuns', numOfRuns);
         //         var idx = route.findIndex(cmp => cmp.id === id)
