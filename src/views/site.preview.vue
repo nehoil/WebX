@@ -1,16 +1,18 @@
 <template>
   <div class="site-preview">
-    <div class="preview-bar" v-if="isPreview">
-      <div class="logo">
-        <router-link to="/">
-          <img src="../assets/logo.png" alt="" srcset=""
-        /></router-link>
+    <fixed-header :threshold="100">
+      <div class="preview-bar" v-if="isPreview">
+        <div class="logo">
+          <router-link to="/">
+            <img src="../assets/logo.png" alt="" srcset=""
+          /></router-link>
+        </div>
+        <div class="preview-header-content">
+          Create your own amazing website
+          <a class="preview-bar-btn" @click="editSite"> Try Me Out </a>
+        </div>
       </div>
-      <div class="preview-header-content">
-        Create your own amazing website
-        <a class="preview-bar-btn" @click="editSite"> Try Me Out </a>
-      </div>
-    </div>
+    </fixed-header>
     <work-space :cmps="siteToEdit.cmps" />
   </div>
 </template>
@@ -18,11 +20,12 @@
 <script>
 import workSpace from "@/cmps/workspace.cmp";
 import { eventBus } from "@/services/eventbus.service.js";
-
+import FixedHeader from "vue-fixed-header";
 export default {
   name: "site-preview",
   components: {
     workSpace,
+    FixedHeader,
   },
   data() {
     return {
@@ -52,3 +55,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+.preview-bar.vue-fixed-header--isFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+</style>
