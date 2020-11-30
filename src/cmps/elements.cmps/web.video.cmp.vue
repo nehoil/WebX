@@ -8,6 +8,7 @@
     @mouseleave="showEditMenu = false"
   >
     <iframe
+    width="640" height="385"
       :src="cmp.info.content"
       class="responsive-iframe"
       frameBorder="0"

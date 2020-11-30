@@ -1,11 +1,20 @@
 .web-map {
     display: flex;
-    display:inline-block;
+    // display: inline-block;
     div {
-        display: inline-block;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+        // display: inline-block;
+        // margin-bottom: 1rem;
+        // margin-top: 1rem;
     }
-    width: 30rem !important;
+    // width: 30rem !important;
     position: relative;
+}
+
+.web-map-1 {
+    // &web-map>* {
+    //     width: 100% !important;
+    // }
+    .vue-map-container {
+        width: 80vw !important;
+    }
 }

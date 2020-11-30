@@ -67,3 +67,24 @@
         margin-left: 20px;
     }
 }
+
+.vid-txt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.web-video-2 {
+    .web-video {
+        padding-bottom: 29%;
+    }
+    & .responsive-iframe {
+        height: 385px;
+    }
+    height: 600px;
+    .video-2-p {
+        max-width: 80ch;
+    }
+}
