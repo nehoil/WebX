@@ -5,7 +5,7 @@
     @mouseleave="showEditMenu = false"
   >
     <a
-      contenteditable
+      :contenteditable="isEdit"
       class="web-button"
       :style="cmp.style"
       v-if="cmp"

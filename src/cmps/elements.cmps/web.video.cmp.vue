@@ -1,6 +1,5 @@
 <template>
   <section
-    contenteditable
     class="web-video"
     :style="cmp.style"
     @click.stop="setEditItem"
