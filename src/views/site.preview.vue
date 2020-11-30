@@ -13,13 +13,14 @@
         </div>
       </div>
     </fixed-header>
-    <work-space :cmps="siteToEdit.cmps" />
+    <work-space :cmps="previweSite.cmps" v-if="previweSite" />
   </div>
 </template>
 
 <script>
 import workSpace from '@/cmps/workspace.cmp';
 import { eventBus } from '@/services/eventbus.service.js';
+import { templateService } from '@/services/template.service.js';
 import FixedHeader from 'vue-fixed-header';
 export default {
   name: 'site-preview',
@@ -30,15 +31,29 @@ export default {
   data() {
     return {
       isPreview: false,
+      previweSite: null
     };
   },
   methods: {
     editSite() {
       this.$router.push('/editor');
     },
+    async loadSite(id){
+        const site = await templateService.getTemplateByIdAsync(id)
+        try {
+          console.log('site', site);
+          this.previweSite = site;
+        }catch {
+          console.log('cannot find site');
+        }
+    }
   },
   computed: {},
   created() {
+    const id = this.$route.params.id;
+    if (id) {
+      this.loadSite(id)
+    }
     this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     eventBus.$on('setCmpsToShow', (cmpType) => {
       this.$store.commit({ type: 'setCmpsToShow', cmpType });

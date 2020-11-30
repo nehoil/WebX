@@ -1,5 +1,6 @@
 <template>
   <section class="template-preview-container">
+
     <div class="template-preview-header">
       Our Templates. Select a template or create a site from scratch.
       <button>Create New Site</button>
@@ -10,11 +11,17 @@
         v-for="(template, idx) in templates"
         :key="idx"
         @click="chooseTemplate(template)"
+        @mouseenter.capture="isShowBtns = true"
+        @mouseleave="isShowBtns = false"
       >
         <div class="template-img">
           <img :src="template.previewImg" alt="" srcset="" />
         </div>
         <div class="template-name">{{ template.name }}</div>
+        <div class="template-preview-btns" v-if="isShowBtns">
+          <router-link :to="'/' + template._id"> Preview </router-link>
+          <router-link to="/editor"> Edit </router-link>
+        </div>
       </div>
     </div>
   </section>
@@ -29,6 +36,7 @@ export default {
   },
   data() {
     return {
+      isShowBtns: false,
     };
   },
   name: 'template-preview',
@@ -36,7 +44,7 @@ export default {
   methods: {
     chooseTemplate(template) {
       this.$store.dispatch({ type: 'changeTempalte', template });
-      this.$router.push('/editor');
+      // this.$router.push('/editor');
     },
   },
 };

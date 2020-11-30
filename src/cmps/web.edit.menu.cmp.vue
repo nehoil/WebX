@@ -1,5 +1,5 @@
 <template>
-  <div :class="editMenuClass">
+  <div :class="editMenuClass" v-if="showMenu">
     <ul>
       <li :class="removeBtnClass" @mouseenter="emitShow" @click="removeCmp(cmp.id)">
         <i v-if="parent === 'container'" class="el-icon-delete"></i>
@@ -30,6 +30,9 @@ export default {
     return {};
   },
   computed: {
+    showMenu(){
+      return this.$store.getters.isEditOn
+    },
     removeBtnClass() {
       if (this.parent === 'small') return 'small-remove-btn'
       return ''
