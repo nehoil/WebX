@@ -122,3 +122,24 @@ div.editor {
         // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
     }
 }
+
+.put-icon {
+    position: relative;
+    .drag-image{
+        z-index: 100;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .7;
+        position: absolute;
+        width: 140px;
+        left: 50%;
+        bottom: -100%;
+        transition: 1s ease;
+        opacity: 0;
+    }
+
+    &:active .drag-image {
+       opacity: 60%;
+       transition: .3;
+    }
+}
