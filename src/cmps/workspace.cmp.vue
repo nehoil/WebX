@@ -2,6 +2,7 @@
   <div class="workspace">
     <draggable
       :class="{ dragArea: isDragging , dragIcon:!cmps.length}"
+      class="draggable-container"
       :list="cmps"
       group="workspace-cmps"
       @change="updateSite"

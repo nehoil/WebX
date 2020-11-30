@@ -1433,41 +1433,17 @@ const gCmps = [{
         info: {
             dir: "column",
             cmps: [{
-                    id: "vid001",
-                    type: "web-txt",
-                    info: {
-                        content: "This is a video title"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
+                id: utilService.makeId(10),
+                type: "web-video",
+                info: {
+                    content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                    title: "watch this video!"
                 },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-video",
-                    info: {
-                        content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
-                        title: "watch this video!"
-                    },
-                    style: {
-                        width: "30rem",
-                        height: "15rem"
-                    }
+                style: {
+                    // width: "30rem",
+                    // height: "15rem"
                 }
-            ]
+            }]
         },
         style: {
             fontFamily: "unset",
@@ -1487,33 +1463,10 @@ const gCmps = [{
         type: "web-container",
         name: "video",
         id: "vid002",
-        class: "web-video-1",
+        class: "web-video-2",
         info: {
-            dir: "column",
+            dir: "row",
             cmps: [{
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a video title"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
                     id: utilService.makeId(10),
                     type: "web-video",
                     info: {
@@ -1521,34 +1474,70 @@ const gCmps = [{
                         title: "watch this video!"
                     },
                     style: {
-                        width: "30rem",
-                        height: "15rem"
+                        // width: "30rem",
+                        // height: "15rem"
                     }
                 },
+
                 {
+                    type: "web-div",
+                    name: "video-002",
+                    class: "vid-txt-container",
                     id: utilService.makeId(10),
-                    type: "web-txt",
                     info: {
-                        content: "This is a video p"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
+                        dir: "column",
+                        cmps: [{
+                                id: utilService.makeId(10),
+                                type: "web-txt",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                }
+                                info: {
+                                    content: "This is a video title"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "3.2rem",
+                                    fontWeight: "unset",
+                                    textAlign: "left",
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                class: "video-2-p",
+                                info: {
+                                    content: "Video technology was first developed for mechanical television systems, which were quickly replaced by cathode ray tube (CRT) television systems, but several new technologies for video display devices have since been invented. Video was originally exclusively a live technology. Charles Ginsburg led an Ampex research team developing one of the first practical video tape recorder (VTR)"
+                                },
+                                style: {
+                                    fontFamily: "unset",
+                                    fontSize: "1.1em",
+                                    fontWeight: "unset",
+                                    textAlign: "left",
 
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "70ch",
+                                    height: "unset",
+                                },
+                            }
+                        ]
+                    }
+                },
             ]
         },
         style: {
@@ -2203,48 +2192,24 @@ const gCmps = [{
         name: "map",
         class: "web-map-1",
         info: {
-            dir: "column",
+            dir: "row",
             cmps: [{
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "This is a sample text"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
+                id: utilService.makeId(10),
+                type: "web-map",
+                info: {
+                    title: "",
+                    lat: 40.706005,
+                    lng: -74.008827,
+                    zoom: 10,
+                    address: "Rome"
                 },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-map",
-                    info: {
-                        title: "",
-                        lat: 41.902782,
-                        lng: 12.496365,
-                        zoom: 10,
-                        address: "Rome"
-                    },
-                    style: {
-                        width: "unset",
-                        height: "100%",
-                        display: "block",
-                        margin: "0 auto"
-                    }
+                style: {
+                    width: "unset",
+                    height: "100%",
+                    display: "block",
+                    margin: "0 auto"
                 }
-            ]
+            }]
         },
         style: {
             fontFamily: "unset",

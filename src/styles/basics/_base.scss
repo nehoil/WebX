@@ -78,3 +78,6 @@ ul {
 .el-collapse-item__content{
 	font-size: 1rem;
 }
+.el-collapse-item__header.focusing:focus:not(:hover){color:unset !important}
+.el-collapse-item__header:focus:not(:hover){color:unset !important}
+$--color-primary: #30475e !default;
