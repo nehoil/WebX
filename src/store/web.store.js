@@ -9,6 +9,7 @@ var localDraftSite = {
         username: null,
         userPicture: null
     },
+    isEdit: true,
     cmps: []
 };
 if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
@@ -19,11 +20,18 @@ export const webStore = {
     state: {
         siteToEdit: localDraftSite,
         cmpsToShow: null,
+        isShowHeader: true,
         templates: templateService.getTemplates()
     },
     getters: {
         cmps(state) {
             return state.cmpsToShow
+        },
+        isShowHeader(state) {
+            return state.isShowHeader
+        },
+        isEditOn(state) {
+            return state.isEdit
         },
         webCmps(state) {
             return state.siteToEdit.cmps
@@ -78,6 +86,13 @@ export const webStore = {
         },
         setSite(state, { site }) {
             state.siteToEdit = site
+        },
+        setEditMode(state, {isEditOn}){ 
+            state.isEdit = isEditOn
+            state.isShowMenu = isEditOn
+        },
+        setShowMenu(state, {isShowMenu}){ 
+            state.isShowMenu = isShowMenu
         }
     },
     actions: {

@@ -1,6 +1,5 @@
 <template>
   <section
-    contenteditable
     class="web-video"
     :style="cmp.style"
     @click.stop="setEditItem"
@@ -8,12 +7,13 @@
     @mouseleave="showEditMenu = false"
   >
     <iframe
+    width="640" height="385"
       :src="cmp.info.content"
       class="responsive-iframe"
       frameBorder="0"
     ></iframe>
 
-    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="small" />
+    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="video" />
   </section>
 </template>
 

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import editor from "../views/editor.vue";
 import templateList from "../views/template.list.vue";
 import user from '../views/user.vue'
+import sitePreview from "../views/site.preview.vue";
 
 Vue.use(VueRouter);
 
@@ -26,6 +27,11 @@ const routes = [
     path: "/user",
     name: "user",
     component: user
+  },
+  {
+    path: "/:id",
+    name: "site",
+    component: sitePreview
   },
 ];
 
