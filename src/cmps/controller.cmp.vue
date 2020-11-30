@@ -35,7 +35,7 @@ export default {
   methods: {
     getIsAdd(type) {
       return {
-        "active-tab": this.addOrEdit === type,
+        "active-tab": this.addOrEdit !== type,
       };
     },
   },

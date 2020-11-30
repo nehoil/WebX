@@ -9,7 +9,9 @@
         <label class="pointer">
           <div class="upload-image">
             <!-- <img :src="cmp.info.src" /> -->
-            <i class="el-icon-upload2"></i>Change By Upload
+            <i class="el-icon-loading" v-if="isLoading"></i>
+            <i class="el-icon-upload2" v-if="!isLoading"></i
+            ><span>Change By Upload</span>
             <input type="file" @change="uploadImg" />
           </div>
         </label>
@@ -76,6 +78,7 @@ export default {
       width: null,
       isToShowLink: false,
       input: 0,
+      isLoading: false,
     };
   },
   created() {
@@ -101,12 +104,12 @@ export default {
       this.borderRadius = +borderRadiusNum;
     }
   },
-    watch: {
+  watch: {
     cmp: {
       deep: true,
       handler(newVal, oldVal) {
-        if (newVal.id !== oldVal.id && (this.cmp)) {
-        this.width = +this.getNumFromString('width')
+        if (newVal.id !== oldVal.id && this.cmp) {
+          this.width = +this.getNumFromString("width");
         }
       },
     },
@@ -120,10 +123,12 @@ export default {
       }
     },
     async uploadImg(ev) {
+      this.isLoading = true;
       let res = uploadImg(ev);
       let img = await res;
       this.cmp.info.src = img.url;
       eventBus.$emit("update-site");
+      this.isLoading = false;
     },
     changeLinkTo(link) {
       this.cmp.info.src = link;
@@ -141,8 +146,8 @@ export default {
       this.borderRadius = null;
     },
     setWidth(percent) {
-      this.input++
-      if (this.input <= 1) return
+      this.input++;
+      if (this.input <= 1) return;
       this.cmp.style.width = percent + "%";
       eventBus.$emit("update-site");
       this.width = percent;

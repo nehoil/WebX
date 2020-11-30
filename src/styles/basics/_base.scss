@@ -68,5 +68,13 @@ ul {
 
 .el-collapse-item__header:hover, .el-collapse-item__header, .el-collapse-item__header:active, .el-collapse-item__header:focus{
 	color: unset;
+	font-size: 1rem;
 }
 
+.is-active{
+	color: inherit;
+}
+
+.el-collapse-item__content{
+	font-size: 1rem;
+}

@@ -39,7 +39,7 @@
           ></el-slider>
         </div>
         <div class="flex center space plr10">
-          <span>Text Shadow</span>
+          <span>Shadow</span>
           <el-select
             v-model="textShadow"
             @change="setTextShadow"
@@ -57,10 +57,10 @@
 </template>
 
 <script>
-import { iconService } from '../../services/icon-service.js';
-import { eventBus } from '../../services/eventbus.service.js';
+import { iconService } from "../../services/icon-service.js";
+import { eventBus } from "../../services/eventbus.service.js";
 export default {
-  name: 'edit-txt',
+  name: "edit-txt",
   props: {
     cmp: [Object, Array],
   },
@@ -75,7 +75,7 @@ export default {
       alignRight: iconService.alignRight(),
       alignLeft: iconService.alignLeft(),
       alignCenter: iconService.alignCenter(),
-      value: '',
+      value: "",
     };
   },
   watch: {
@@ -92,22 +92,22 @@ export default {
   },
   created() {
     if (!this.cmp.style.fontSize) {
-      this.cmp.style.fontSize = 'unset';
-    } else if (this.cmp.style.fontSize !== 'unset') {
-      var fontSizeNum = this.getNumFromString('fontSize');
+      this.cmp.style.fontSize = "unset";
+    } else if (this.cmp.style.fontSize !== "unset") {
+      var fontSizeNum = this.getNumFromString("fontSize");
       this.fontSize = +fontSizeNum * 16;
     }
     if (!this.cmp.style.letterSpacing) {
-      this.cmp.style.letterSpacing = 'unset';
-    } else if (this.cmp.style.letterSpacing !== 'unset') {
-      var letterSpacingNum = this.getNumFromString('letterSpacing');
+      this.cmp.style.letterSpacing = "unset";
+    } else if (this.cmp.style.letterSpacing !== "unset") {
+      var letterSpacingNum = this.getNumFromString("letterSpacing");
       this.letterSpacing = +letterSpacingNum * 16;
     }
   },
   methods: {
     getNumFromString(styleProperty) {
       if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
-        return this.cmp.style[styleProperty].match(/\d+/g).flat().join('.');
+        return this.cmp.style[styleProperty].match(/\d+/g).flat().join(".");
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
@@ -116,21 +116,21 @@ export default {
     setAlign(align) {
       if (!this.cmp.style.textAlign) this.cmp.style.textAlign = align;
       this.cmp.style.textAlign = align;
-      eventBus.$emit('update-site');
+      eventBus.$emit("update-site");
     },
     setTextShadow(strength) {
       switch (strength) {
-        case 'None':
-          this.cmp.style.textShadow = 'unset';
+        case "None":
+          this.cmp.style.textShadow = "unset";
           break;
         case 'Light':
           this.cmp.style.textShadow = '1px 1px 2px #d1c9ca';
           break;
-        case 'Medium':
-          this.cmp.style.textShadow = '3px 2px 3px #b7b0b1';
+        case "Medium":
+          this.cmp.style.textShadow = "3px 2px 3px #b7b0b1";
           break;
-        case 'Strong':
-          this.cmp.style.textShadow = '5px 5px 3px #b7b0b1';
+        case "Strong":
+          this.cmp.style.textShadow = "5px 5px 3px #b7b0b1";
           break;
       }
       eventBus.$emit('update-site');
@@ -154,10 +154,10 @@ export default {
       // this.letterSpacing = null;
     },
     toggleBold() {
-      if (this.cmp.style.fontWeight === 'unset' || !this.cmp.style.fontWeight)
-        this.cmp.style.fontWeight = 'bold';
-      else this.cmp.style.fontWeight = 'unset';
-      eventBus.$emit('update-site');
+      if (this.cmp.style.fontWeight === "unset" || !this.cmp.style.fontWeight)
+        this.cmp.style.fontWeight = "bold";
+      else this.cmp.style.fontWeight = "unset";
+      eventBus.$emit("update-site");
     },
     toggleItalic() {
       if (this.cmp.style.fontStyle === 'unset' || !this.cmp.style.fontStyle)
@@ -168,7 +168,7 @@ export default {
     },
     toggleUnderline() {
       if (
-        this.cmp.style.textDecoration === 'unset' ||
+        this.cmp.style.textDecoration === "unset" ||
         !this.cmp.style.textDecoration
       )
         this.cmp.style.textDecoration = 'underline';
