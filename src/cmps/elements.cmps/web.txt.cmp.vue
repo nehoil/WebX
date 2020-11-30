@@ -52,10 +52,12 @@ export default {
   },
   created() {
     this.cmp._rootId = this._rootId;
-    if (!this.cmp.style.textShadow) {
+    if (!this.cmp.style.textShadow){
       this.cmp.style.textShadow = 'unset';
-      console.log('this cmp after change', this.cmp.style);
-    }
+    } 
+    eventBus.$on('changeTxt', ()=>{
+      this.$forceUpdate()
+    })
   },
 };
 </script>
