@@ -4,7 +4,7 @@
     @mouseover="showEditMenu = true"
     @mouseleave="showEditMenu = false"
   >
-    <p
+    <span
       class="web-txt"
       :class="cmp.class"
       contenteditable="isEdit"
@@ -13,14 +13,14 @@
       @click.stop="setEditItem"
     >
       {{ cmp.info.content }}
-    </p>
+    </span>
     <edit-menu v-if="showEditMenu" :cmp="cmp" />
   </span>
 </template>
 
 <script>
-import { eventBus } from '@/services/eventbus.service.js';
-import editMenu from '@/cmps/web.edit.menu.cmp';
+import { eventBus } from "@/services/eventbus.service.js";
+import editMenu from "@/cmps/web.edit.menu.cmp";
 
 export default {
   data() {
@@ -36,28 +36,29 @@ export default {
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit('update-site');
+      eventBus.$emit("update-site");
     },
 
     setEditItem() {
-      eventBus.$emit('openEditor', this.cmp);
+      eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit('setItem', this.cmp);
+        eventBus.$emit("setItem", this.cmp);
       });
     },
   },
-  name: 'web-txt',
+  name: "web-txt",
   components: {
     editMenu,
   },
   created() {
+    // console.log('this.$store.getters.isEditOn', this.$store.getters.isEditOn);
     this.cmp._rootId = this._rootId;
-    if (!this.cmp.style.textShadow){
-      this.cmp.style.textShadow = 'unset';
-    } 
-    eventBus.$on('changeTxt', ()=>{
-      this.$forceUpdate()
-    })
+    if (!this.cmp.style.textShadow) {
+      this.cmp.style.textShadow = "unset";
+    }
+    eventBus.$on("changeTxt", () => {
+      this.$forceUpdate();
+    });
   },
 };
 </script>
