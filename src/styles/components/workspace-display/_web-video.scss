@@ -1,3 +1,18 @@
 .web-video {
     position: relative;
 }
+
+.vid-popper {
+    border-top: none;
+    box-shadow: none;
+    border-radius: unset;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(-2%);
+    &.el-popper[x-placement^=bottom] {
+        margin-top: 0;
+    }
+    .popper__arrow {
+        display: none;
+    }
+}

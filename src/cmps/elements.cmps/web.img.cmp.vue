@@ -63,7 +63,9 @@ export default {
   },
   created() {
     this.cmp._rootId = this._rootId;
-    console.log(!this.mouseOnMenu && !this.mouseOnEl);
+    eventBus.$on('change-img', () => {
+      this.$forceUpdate();
+    });
   },
 };
 </script>
