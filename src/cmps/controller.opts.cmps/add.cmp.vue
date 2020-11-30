@@ -35,26 +35,10 @@
                 </div>
               </el-collapse-item>
             </div>
-            <!-- </el-collapse> -->
-            <!-- <li @click="setCmpsToShow('header')">Headers</li>
-            <li @click="setCmpsToShow('text')">Text</li>
-            <li @click="setCmpsToShow('section')">Sections</li>
-            <li @click="setCmpsToShow('card')">Cards</li>
-            <li @click="setCmpsToShow('map')">Map</li>
-            <li @click="setCmpsToShow('image')">Image</li>
-            <li @click="setCmpsToShow('video')">Video</li>
-            <li @click="setCmpsToShow('form')">Forms</li>
-            <li @click="setCmpsToShow('footer')">Footers</li> -->
           </ul>
         </div>
       </el-collapse-item>
-      <!-- <el-collapse-item name="2" v-if="cmps">
-        <template slot="title">
-          <div class="flex center plr10 space mb1 pointer"></div>
-          <span></span>
-        </template> -->
       <section class="cmpsExamples" v-if="cmps">
-        <!-- <hr class="add-menu-seperator" /> -->
         <draggable
           class="dragArea list-group"
           :group="{ name: 'workspace-cmps', pull: 'clone', put: false }"
@@ -64,9 +48,10 @@
           @end="stopDrag"
         >
           <div v-for="cmp in cmps" :key="cmp.id">
-            <ul>
+            <ul class="put-icon">
               <li class="list-group-item add-options-btn">
                 {{ cmp.id }}
+                <img class="drag-image" src="../../assets/drag.png" alt="" />
               </li>
             </ul>
           </div>
@@ -104,6 +89,7 @@ export default {
       numForCmpsAccordion: 2,
       number: 1,
       isGrabbing: false,
+      isHover: false,
     };
   },
   methods: {
