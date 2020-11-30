@@ -1,9 +1,8 @@
 <template>
   <section class="template-preview-container">
-
     <div class="template-preview-header">
       Our Templates. Select a template or create a site from scratch.
-      <button>Create New Site</button>
+      <button class="create-button">Create New Site</button>
     </div>
     <div class="template-previews-list">
       <div
@@ -39,11 +38,11 @@ export default {
       isShowBtns: false,
     };
   },
-  name: 'template-preview',
+  name: "template-preview",
   components: {},
   methods: {
     chooseTemplate(template) {
-      this.$store.dispatch({ type: 'changeTempalte', template });
+      this.$store.dispatch({ type: "changeTempalte", template });
       // this.$router.push('/editor');
     },
   },

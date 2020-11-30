@@ -1,7 +1,3 @@
-// import { utilService } from '../services/util-service.js'
-
-// if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
-
 import { templateService } from '@/services/template.service.js'
 import userService from '@/services/user.service.js'
 
