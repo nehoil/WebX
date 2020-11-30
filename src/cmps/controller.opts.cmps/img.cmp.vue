@@ -121,7 +121,6 @@ export default {
     var widthNum;
     var borderRadiusNum;
     if (!this.cmp.style.width || this.cmp.style.width === "unset") {
-      // this.cmp.style.width === "auto";
       this.width = 0;
     } else if (this.cmp.style.width && this.cmp.style.width !== "unset") {
       widthNum = this.getNumFromString("width");

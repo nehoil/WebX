@@ -1,5 +1,6 @@
 .web-container {
     max-width: 1400px;
+    min-width: 100%;
     &:hover {
         outline: 1px solid rgba(128, 128, 128, 0.637)
     }
