@@ -52,7 +52,7 @@
     },
     methods: {
       submitLogin() {
-        console.log(this.form.name, this.form.Password);
+        console.log(this.login.name, this.login.Password);
         this.$emit('showLogin')
       },
     toggleSignUp(){
