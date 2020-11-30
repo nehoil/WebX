@@ -1,7 +1,8 @@
 import { utilService } from '@/services/util-service.js'
 
+
 const gTemplates = [{
-        "_id": null,
+        "_id": "sy64wews",
         "name": "Musicily",
         "previewImg": "https://i.ibb.co/qx1z2CC/screencapture-localhost-8081-2020-11-29-13-55-25.png",
         "createdBy": { "_id": null, "username": null, "userPicture": null },
@@ -4710,7 +4711,8 @@ export const templateService = {
     getCmpsByType,
     getTemplateById,
     getCmpById,
-    getTemplates
+    getTemplates,
+    getTemplateByIdAsync
 }
 
 function getTemplates() {
@@ -4738,6 +4740,10 @@ function getCmpsByType(name) {
 
 function getTemplateById(id) {
     return gTemplates.find(template => template.id === id)
+}
+async function getTemplateByIdAsync(id) {
+    console.log('id', id);
+    return gTemplates.find(template => template._id === id)
 }
 
 function getCmpById(id) {

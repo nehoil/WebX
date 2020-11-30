@@ -7,7 +7,7 @@
     <span
       class="web-txt"
       :class="cmp.class"
-      contenteditable="isEdit"
+      :contenteditable="isEdit"
       :style="cmp.style"
       @blur="onEdit"
       @click.stop="setEditItem"
@@ -25,7 +25,7 @@ import editMenu from "@/cmps/web.edit.menu.cmp";
 export default {
   data() {
     return {
-      isEdit: true,
+      // isEdit: true,
       showEditMenu: false,
     };
   },
@@ -38,7 +38,6 @@ export default {
       this.cmp.info.content = ev.target.innerText;
       eventBus.$emit("update-site");
     },
-
     setEditItem() {
       eventBus.$emit("openEditor", this.cmp);
       this.$nextTick(() => {
@@ -46,12 +45,16 @@ export default {
       });
     },
   },
-  name: "web-txt",
+  computed: {
+    isEdit(){
+      return this.$store.getters.isEditOn;
+    }
+  },
+  name: 'web-txt',
   components: {
     editMenu,
   },
   created() {
-    // console.log('this.$store.getters.isEditOn', this.$store.getters.isEditOn);
     this.cmp._rootId = this._rootId;
     if (!this.cmp.style.textShadow) {
       this.cmp.style.textShadow = "unset";

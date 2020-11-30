@@ -1,9 +1,6 @@
 .web-container {
     max-width: 1400px;
     min-width: 100%;
-    &:hover {
-        outline: 1px solid rgba(128, 128, 128, 0.637)
-    }
     display: block;
     position: relative;
     padding: 1rem !important;
@@ -19,4 +16,13 @@
 .column {
     display: flex;
     flex-direction: column;
+}
+
+// If on edit 
+
+
+.on-edit{
+    &:hover {
+        outline: 1px solid rgba(128, 128, 128, 0.637)
+    }
 }
