@@ -22,6 +22,7 @@
         >
           Link Image <i class="el-icon-edit"></i>
         </p>
+
         <el-input
           class="link-input"
           v-if="isToShowLink"
@@ -37,14 +38,23 @@
           Search Image
           <i class="el-icon-search"></i>
         </p>
-        <el-input
-          class="link-input"
+        <el-autocomplete
+          v-model="term"
           v-if="isToShowSearch"
+          :fetch-suggestions="querySearch"
+          placeholder="Search Here"
+          :trigger-on-focus="false"
+          @change="searchImages"
+          @select="handleSelect"
+        ></el-autocomplete>
+        <!-- <el-input
+          class="link-input"
+         
           placeholder="What are you looking for?"
           @keyup.enter="searchImages"
-          @change="searchImages"
+        
           v-model="term"
-        ></el-input>
+        ></el-input> -->
         <div v-if="unsplashImages" class="usp-gallery center">
           <div
             v-for="(image, idx) in unsplashImages"
@@ -163,12 +173,18 @@ export default {
       eventBus.$emit("update-site");
       this.isLoading = false;
     },
+    querySearch(queryString, cb) {
+      cb([{ value: "Search For " + queryString }]);
+    },
     async searchImages() {
       console.log("arrived");
       if (!this.term) return;
       const res = await unsplashService.getImages(this.term);
       console.log(res);
       this.unsplashImages = res;
+    },
+    handleSelect() {
+      this.searchImages();
     },
     changeLinkTo(link) {
       this.cmp.info.src = link;

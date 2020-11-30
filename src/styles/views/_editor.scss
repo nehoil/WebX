@@ -101,7 +101,7 @@ div.editor {
             width: 40%;
             display: flex;
             align-content: flex-end !important;
-            margin-bottom: 5px;
+            // margin-bottom: 5px;
         }
         .el-input {
             width: 90%;
@@ -123,5 +123,3 @@ div.editor {
         // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
     }
 }
-
-$--color-primary: #30475e !default;
