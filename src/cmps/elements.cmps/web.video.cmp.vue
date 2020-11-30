@@ -13,7 +13,7 @@
       frameBorder="0"
     ></iframe>
 
-    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="small" />
+    <edit-menu v-if="showEditMenu" :cmp="cmp" parent="video" />
   </section>
 </template>
 

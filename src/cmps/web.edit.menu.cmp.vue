@@ -8,7 +8,7 @@
       <li v-if="parent === 'container'">
         <i class="el-icon-document-copy"></i>
       </li>
-      <li v-if="parent === 'container'" @click="setEditItem">
+      <li v-if="parent === 'container' || parent === 'video'" @click="setEditItem">
         <i class="el-icon-edit"></i>
       </li>
       <li v-if="parent === 'container'"><i class="el-icon-arrow-left"></i></li>
