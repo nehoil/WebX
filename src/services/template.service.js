@@ -2192,7 +2192,7 @@ const gCmps = [{
         name: "map",
         class: "web-map-1",
         info: {
-            dir: "column",
+            dir: "row",
             cmps: [{
                 id: utilService.makeId(10),
                 type: "web-map",

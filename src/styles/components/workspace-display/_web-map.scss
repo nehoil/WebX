@@ -11,10 +11,11 @@
 }
 
 .web-map-1 {
-    // &web-map>* {
-    //     width: 100% !important;
-    // }
+    & .web-map>* {
+        width: 100vw !important;
+    }
     .vue-map-container {
-        width: 80vw !important;
+        display: flex;
+        max-width: 1400px !important;
     }
 }

@@ -81,10 +81,10 @@
         padding-bottom: 29%;
     }
     & .responsive-iframe {
-        height: 385px;
+        max-height: 385px;
     }
-    height: 600px;
+    max-height: 600px;
     .video-2-p {
-        max-width: 80ch;
+        max-width: 65ch;
     }
 }

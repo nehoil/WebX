@@ -16,10 +16,10 @@ div.editor {
         overflow-y: auto;
         padding: 5px;
         width: 85%;
-        max-width: 1400px;
         &>* {
             margin: 0 auto;
-            width: 100%;
+            width: inherit;
+            max-width: 1400px;
         }
         .draggable-container {
             // max-width: 1400px;
@@ -32,6 +32,7 @@ div.editor {
         background-color: rgb(255, 255, 255);
         .dragArea {
             height: 100%;
+            width: 100%;
             border: 5px dashed rgb(240, 240, 240);
             margin: 0 auto;
         }
@@ -103,9 +104,9 @@ div.editor {
             margin-bottom: 5px;
         }
         .el-input {
-            width: 90%;}
-            margin: 0 auto;
-
+            width: 90%;
+        }
+        margin: 0 auto;
     }
 }
 
