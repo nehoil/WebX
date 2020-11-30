@@ -12,8 +12,14 @@
         <div class="menu">
           <router-link to="/">Home</router-link> |
           <router-link to="/templates">Templates</router-link> |
-          <router-link to="/user">Profile</router-link> |
-          <router-link to="/editor">Editor</router-link>
+          <router-link to="/editor">Editor</router-link> |
+          <router-link to="/" v-if="!user">Login</router-link> |
+          <span v-if="!user">
+            <router-link to="/">Loutout</router-link> |
+            <router-link to="/user"
+              >Profile <i class="el-icon-user"></i
+            ></router-link>
+          </span>
         </div>
       </nav>
     </div>
@@ -33,6 +39,9 @@ export default {
   },
   methods: {},
   computed: {
+    user() {
+      return this.$store.getters.loggedinUser;
+    },
     // isShowHeader(){
     //   if (this.$store.getters.isShowHeader) return true
     //   return false
