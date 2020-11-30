@@ -1,8 +1,16 @@
 <template>
   <div class="site-preview">
-    <!-- <div class="preview-bar" v-if="isPreview"> -->
-    <!-- 
-    </div> -->
+    <div class="preview-bar" v-if="isPreview">
+      <div class="logo">
+        <router-link to="/">
+          <img src="../assets/logo.png" alt="" srcset=""
+        /></router-link>
+      </div>
+      <div class="preview-header-content">
+        Create your own amazing website
+        <a class="preview-bar-btn" @click="editSite"> Try Me Out </a>
+      </div>
+    </div>
     <work-space :cmps="siteToEdit.cmps" />
   </div>
 </template>
@@ -19,9 +27,14 @@ export default {
   data() {
     return {
       itemToEdit: "webImg",
+      isPreview: true,
     };
   },
-  methods: {},
+  methods: {
+    editSite() {
+      this.$router.push("/editor");
+    },
+  },
   computed: {},
   created() {
     this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
@@ -33,8 +46,9 @@ export default {
     eventBus.$emit("change-edit-mode");
   },
   destroyed() {
-    // this.$store.commit({ type: 'setEditMode', isEditOn: true });
-    // this.$store.commit({ type: 'setShowMenu', isShowMenu: true });
+    this.$store.commit({ type: "setEditMode", isEditOn: true });
+    this.$store.commit({ type: "setShowMenu", isShowMenu: true });
+    eventBus.$emit("change-edit-mode");
   },
 };
 </script>
