@@ -7,6 +7,9 @@
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
+    &>*:hover {
+        outline: 1px solid rgba(189, 190, 255, 0.89);
+    }
 }
 
 .row {
@@ -19,9 +22,7 @@
 }
 
 // If on edit 
-
-
-.on-edit{
+.on-edit {
     &:hover {
         outline: 1px solid rgba(128, 128, 128, 0.637)
     }
