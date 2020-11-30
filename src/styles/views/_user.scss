@@ -1,0 +1,30 @@
+
+.user-profile{
+    max-width: 1500px;
+    height: 92.3vh;
+    // margin: 0 auto;
+    .user-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(233, 233, 233);
+        height: 100%;
+        width: 20%;
+        padding: 1rem;
+        .nav-create{
+            border-top: 1px solid $clr2;
+        };
+    }
+    .main-section{
+        height: 100%;
+        text-align: left;
+        width: 70%;
+        padding-left: 2rem;
+        h1, h2{
+            padding-left: 2rem;
+        }
+        .main-section-title{
+            background-color: rgb(233, 233, 233);
+        }
+    }
+}

@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import editor from "../views/editor.vue";
 import templateList from "../views/template.list.vue";
+import user from '../views/user.vue'
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,11 @@ const routes = [
     path: "/templates",
     name: "templates",
     component: templateList
+  },
+  {
+    path: "/user",
+    name: "user",
+    component: user
   },
 ];
 

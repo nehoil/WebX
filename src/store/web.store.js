@@ -31,9 +31,9 @@ export const webStore = {
         web(state) {
             return state.siteToEdit
         },
-        templates(state){
+        templates(state) {
             return state.templates
-        }
+        },
     },
     mutations: {
         removeCmp(state, { id }) {
@@ -76,14 +76,14 @@ export const webStore = {
             state.siteToEdit = site
             utilService.storeToStorage('draft_db', site)
         },
-        setSite(state, {site}){ 
+        setSite(state, { site }) {
             state.siteToEdit = site
         }
     },
     actions: {
-        changeTempalte({commit}, {template}){
+        changeTempalte({ commit }, { template }) {
             const site = template
-            commit({type:'updateSite', site})
+            commit({ type: 'updateSite', site })
         }
         //     removeDeepCmp(context, { id, route=context.getters.webCmps, numOfRuns=0 }) {
         //         console.log('numOfRuns', numOfRuns);
