@@ -1,10 +1,18 @@
 <template>
-<div class="site-preview">
-    <!-- <div class="preview-bar" v-if="isPreview"> -->
-<!-- 
-    </div> -->
+  <div class="site-preview">
+    <div class="preview-bar" v-if="isPreview">
+      <div class="logo">
+        <router-link to="/">
+          <img src="../assets/logo.png" alt="" srcset=""
+        /></router-link>
+      </div>
+      <div class="preview-header-content">
+        Create your own amazing website
+        <a class="preview-bar-btn" @click="editSite"> Try Me Out </a>
+      </div>
+    </div>
     <work-space :cmps="siteToEdit.cmps" />
-</div>
+  </div>
 </template>
 
 <script>
@@ -14,17 +22,20 @@ import { eventBus } from '@/services/eventbus.service.js';
 export default {
   name: 'site-preview',
   components: {
-    workSpace,
+    workSpace
   },
   data() {
     return {
       itemToEdit: 'webImg',
+      isPreview: true,
     };
   },
   methods: {
+    editSite() {
+      this.$router.push('/editor');
+    },
   },
-  computed: {
-  },
+  computed: {},
   created() {
     this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     eventBus.$on('setCmpsToShow', (cmpType) => {
@@ -32,7 +43,7 @@ export default {
     });
     this.$store.commit({ type: 'setEditMode', isEditOn: false });
     this.$store.commit({ type: 'setShowMenu', isShowMenu: false });
-    eventBus.$emit('change-edit-mode')
+    eventBus.$emit('change-edit-mode');
   },
   destroyed() {
     // this.$store.commit({ type: 'setEditMode', isEditOn: true });

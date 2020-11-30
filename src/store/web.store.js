@@ -64,18 +64,6 @@ export const webStore = {
                 utilService.storeToStorage('draft_db', state.siteToEdit)
             }
         },
-        // removeCmp(state, { idx, route }) {
-        //     route.splice(idx, 1)
-        //     utilService.storeToStorage('draft_db', state.siteToEdit)
-        // },
-        // removeCmp(state, { id }) {
-        //     const idx = state.siteToEdit.cmps.findIndex(cmp => cmp.id === id)
-        //     if (idx < 0) {
-        //         return
-        //     }
-        //     state.siteToEdit.cmps.splice(idx, 1)
-        //     utilService.storeToStorage('draft_db', state.siteToEdit)
-        // },
         setCmpsToShow(state, { cmpType }) {
             const cmps = templateService.getCmpsByType(cmpType)
             state.cmpsToShow = cmps
@@ -100,25 +88,5 @@ export const webStore = {
             const site = template
             commit({ type: 'updateSite', site })
         }
-        //     removeDeepCmp(context, { id, route=context.getters.webCmps, numOfRuns=0 }) {
-        //         console.log('numOfRuns', numOfRuns);
-        //         var idx = route.findIndex(cmp => cmp.id === id)
-        //         if (idx < 0){
-        //             route.forEach(cmp => {
-        //                 // route = route[0].info.cmps
-        //                 idx = cmp.info.cmps.findIndex(cmp => cmp.id === id)
-        //                 if (idx < 0 || cmp.info.cmps.info.cmp){
-
-        //                 }
-        //                 if (numOfRuns > 0)  route = route[numOfRuns*'.info.cmps']
-        //                 console.log('route after change:', route);
-        //                 context.dispatch('removeDeepCmp', {id, route, numOfRuns})
-        //                 numOfRuns++
-        //             })
-        //         } else {
-        //             console.log('found the cmp, in', route);
-        //             context.commit({type: 'removeCmp', id})
-        //         }
-        //     },
     }
 };
