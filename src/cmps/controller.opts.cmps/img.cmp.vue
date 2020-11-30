@@ -8,7 +8,6 @@
         </template>
         <label class="pointer">
           <div class="upload-image">
-            <!-- <img :src="cmp.info.src" /> -->
             <i class="el-icon-loading" v-if="isLoading"></i>
             <i class="el-icon-upload2" v-if="!isLoading"></i
             ><span>Change By Upload</span>
@@ -88,7 +87,6 @@ export default {
     var widthNum;
     var borderRadiusNum;
     if (!this.cmp.style.width || this.cmp.style.width === "unset") {
-      // this.cmp.style.width === "auto";
       this.width = 0;
     } else if (this.cmp.style.width && this.cmp.style.width !== "unset") {
       widthNum = this.getNumFromString("width");

@@ -1,7 +1,10 @@
 <template>
-  <div class="el-edit-menu" @mouseover="emitShow" @mouseleave="emitHide">
+  <div :class="editMenuClass">
     <ul>
-      <li @click="removeCmp(cmp.id)"><i class="el-icon-delete"></i></li>
+      <li :class="removeBtnClass" @mouseenter="emitShow" @click="removeCmp(cmp.id)">
+        <i v-if="parent === 'container'" class="el-icon-delete"></i>
+        <i v-else class="el-icon-close"></i>
+      </li>
       <li v-if="parent === 'container'">
         <i class="el-icon-document-copy"></i>
       </li>
@@ -25,6 +28,16 @@ export default {
   name: 'edit-menu',
   data() {
     return {};
+  },
+  computed: {
+    removeBtnClass() {
+      if (this.parent === 'small') return 'small-remove-btn'
+      return ''
+    },
+    editMenuClass() {
+      if (this.parent === 'container') return 'el-edit-menu'
+      return 'el-edit-menu-small'
+    },
   },
   methods: {
     emitShow() {

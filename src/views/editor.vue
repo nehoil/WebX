@@ -36,7 +36,6 @@ export default {
       var currRootCmps = root.info ? root.info.cmps : root
         currRootCmps.forEach((cmp, idx) => {
           if (cmp.id === cmpId) {
-            console.log('deleted!');
             currRootCmps.splice(idx, 1);
             this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
             return;
