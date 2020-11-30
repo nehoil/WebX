@@ -46,8 +46,9 @@ export default {
     eventBus.$emit('change-edit-mode');
   },
   destroyed() {
-    // this.$store.commit({ type: 'setEditMode', isEditOn: true });
-    // this.$store.commit({ type: 'setShowMenu', isShowMenu: true });
+    this.$store.commit({ type: 'setEditMode', isEditOn: true });
+    this.$store.commit({ type: 'setShowMenu', isShowMenu: true });
+    eventBus.$emit('change-edit-mode');
   },
 };
 </script>
