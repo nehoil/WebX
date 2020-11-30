@@ -1,7 +1,7 @@
 <template>
   <div class="workspace">
     <draggable
-      :class="{ dragArea: isDragging }"
+      :class="{ dragArea: isDragging , dragIcon:!cmps.length}"
       :list="cmps"
       group="workspace-cmps"
       @change="updateSite"
@@ -62,9 +62,6 @@ export default {
     // },
   },
   created() {
-    // eventBus.$on("addCmp", () => {
-    //   this.$forceUpdate();
-    // });
     eventBus.$on("dragStart", () => {
       this.isDragging = true;
     });

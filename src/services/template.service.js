@@ -1168,38 +1168,13 @@ const gCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                    id: "gallery001",
-                    type: "web-img",
-                    info: {
-                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606660460/black-white-layers-paper-top-view_cxblrg.jpg"
-                    },
-                    style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
-                    },
-                },
-                {
                     type: "web-div",
                     name: "header-1",
                     class: "header-1-div",
                     id: utilService.makeId(10),
                     info: {
                         dir: "column",
-                        cmps: [
-
-                            {
+                        cmps: [{
                                 id: utilService.makeId(10),
                                 type: "web-txt",
                                 class: "header-1-h1",
@@ -1210,7 +1185,6 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "4.1875rem",
                                     fontWeight: "unset",
-
                                     margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1233,7 +1207,6 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-
                                     margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
@@ -1259,7 +1232,6 @@ const gCmps = [{
                                     fontFamily: "assistantLight",
                                     fontSize: "1.5em",
                                     fontWeight: "100",
-
                                     margin: "50px",
                                     padding: "20px",
                                     textTransform: "unset",
@@ -1288,7 +1260,7 @@ const gCmps = [{
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
-            width: "100%",
+            width: "unset",
             minHeight: "unset",
             height: "unset",
             backgroundImage: "unset"
@@ -1762,9 +1734,10 @@ const gCmps = [{
                                 borderShadow: "unset",
                                 border: "unset",
                                 borderRadius: "unset",
-                                // width: "unset",
+                                width: "fit-content",
                                 objectFit: "cover",
                                 height: "unset",
+
                             },
                         },
                         {
@@ -1862,7 +1835,6 @@ const gCmps = [{
             padding: "15px",
             backgroundColor: "unset",
             borderRadius: "unset",
-            width: "100%",
             minHeight: "unset",
             height: "unset",
             backgroundImage: "unset"

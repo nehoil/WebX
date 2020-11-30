@@ -3,9 +3,12 @@
         max-width: 400px;
     }
     .header-1-div {
+        background-image: url(http://res.cloudinary.com/dksmeovlj/image/upload/v1606688743/black-white-layers-paper-top-view_yzxa6e.jpg);
+        background-size: cover;
+        width: 100% !important;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-around;
         align-items: baseline;
         min-height: 26.0625rem;
         .web-button {
@@ -38,6 +41,7 @@
 }
 
 .web-card-1-col {
+    width: 100%;
     img {
         width: 100%;
     }

@@ -18,17 +18,28 @@ div.editor {
         width: 85%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        // align-items: center;
         height: 100%;
         background-color: rgb(255, 255, 255);
         .dragArea {
             min-height: 100%;
             min-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            // align-items: center;
             border: 5px dotted rgb(240, 240, 240);
+        }
+        .dragIcon {
+            background-image: url('./../assets/drag-icon.png');
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
     .controller {
-        @include scrollBar(.5rem, lighten($clr3, 35%));
+        @include scrollBar(.5rem,
+        lighten($clr3, 35%));
         // background-color: rgba(241, 241, 241, 0.5);
         overflow-y: scroll;
         overflow-x: hidden;
@@ -74,9 +85,6 @@ div.editor {
             padding: 10px;
             cursor: grab;
         }
-        .grabbing {
-            cursor: grabbing;
-        }
         footer {
             padding-left: 10px;
             padding-right: 10px;
@@ -93,17 +101,17 @@ div.editor {
 }
 
 .controller-add {
-.el-collapse-item__wrap{
-border-bottom: none !important;
+    .el-collapse-item__wrap {
+        border-bottom: none !important;
+    }
+    .add-list li {
+        display: block;
+        text-align: start;
+        padding: 4px;
+        padding-left: 2rem;
+        font-size: 1rem;
+        // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+    }
 }
 
-.add-list li{
-    display: block;
-    text-align: start;
-    padding: 4px;
-    padding-left: 2rem;
-    font-size: 1rem;
-    // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
-}
-}
 $--color-primary: #30475e !default;
