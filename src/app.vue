@@ -12,7 +12,7 @@
         <div class="menu">
           <router-link to="/">Home</router-link> |
           <router-link to="/templates">Templates</router-link> |
-          <router-link to="/">Profile</router-link> |
+          <router-link to="/user">Profile</router-link> |
           <router-link to="/editor">Editor</router-link>
         </div>
       </nav>
