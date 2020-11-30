@@ -1,8 +1,8 @@
 <template>
 <div class="site-preview">
-    <div class="preview-bar" v-if="isPreview">
-
-    </div>
+    <!-- <div class="preview-bar" v-if="isPreview"> -->
+<!-- 
+    </div> -->
     <work-space :cmps="siteToEdit.cmps" />
 </div>
 </template>
