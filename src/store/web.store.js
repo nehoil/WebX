@@ -9,7 +9,6 @@ var localDraftSite = {
         username: null,
         userPicture: null
     },
-    isEdit: true,
     cmps: []
 };
 if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
@@ -18,6 +17,7 @@ import { templateService } from '@/services/template.service.js'
 
 export const webStore = {
     state: {
+        isEdit: true,
         siteToEdit: localDraftSite,
         cmpsToShow: null,
         isShowHeader: true,
@@ -56,7 +56,7 @@ export const webStore = {
                         state.siteToEdit.cmps[idx].info.cmps.splice(foundIdx, 1)
                         return
                     } else {
-                        console.log('im here');
+                        console.log('cannot remove cmp');
                     }
                 })
             } else {
@@ -76,8 +76,8 @@ export const webStore = {
             state.siteToEdit = site
         },
         setEditMode(state, {isEditOn}){ 
+            console.log('isEditOn', isEditOn);
             state.isEdit = isEditOn
-            state.isShowMenu = isEditOn
         },
         setShowMenu(state, {isShowMenu}){ 
             state.isShowMenu = isShowMenu

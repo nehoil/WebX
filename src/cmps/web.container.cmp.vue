@@ -1,12 +1,11 @@
 <template>
- 
   <section
     v-if="cmp.info.cmps"
     @click.self="setEditItem"
     @mouseover="showEditMenu = true"
     @mouseleave="showEditMenu = false"
     class="web-container"
-    :class="cmp.info.dir"
+    :class="cmp.info.dir + ' ' + onEdit"
     :style="this.cmp.style"
   >
     <component
@@ -21,23 +20,22 @@
     </component>
     <edit-menu v-if="showEditMenu" :cmp="cmp" parent="container" />
   </section>
-
 </template>
 
 <script>
-import editMenu from "@/cmps/web.edit.menu.cmp";
-import { eventBus } from "../services/eventbus.service.js";
-import webMap from "@/cmps/elements.cmps/web.map.cmp";
-import webTxt from "@/cmps/elements.cmps/web.txt.cmp";
-import webVideo from "@/cmps/elements.cmps/web.video.cmp";
-import webImg from "@/cmps/elements.cmps/web.img.cmp";
-import webForm from "@/cmps/elements.cmps/web.form.cmp";
-import webButton from "@/cmps/elements.cmps/web.button.cmp";
-import webList from "@/cmps/elements.cmps/web.list.cmp";
-import webDiv from "@/cmps/elements.cmps/web.div.cmp";
+import editMenu from '@/cmps/web.edit.menu.cmp';
+import { eventBus } from '../services/eventbus.service.js';
+import webMap from '@/cmps/elements.cmps/web.map.cmp';
+import webTxt from '@/cmps/elements.cmps/web.txt.cmp';
+import webVideo from '@/cmps/elements.cmps/web.video.cmp';
+import webImg from '@/cmps/elements.cmps/web.img.cmp';
+import webForm from '@/cmps/elements.cmps/web.form.cmp';
+import webButton from '@/cmps/elements.cmps/web.button.cmp';
+import webList from '@/cmps/elements.cmps/web.list.cmp';
+import webDiv from '@/cmps/elements.cmps/web.div.cmp';
 
 export default {
-  name: "web-container",
+  name: 'web-container',
   props: {
     cmp: Object,
   },
@@ -60,13 +58,18 @@ export default {
   methods: {
     setEditItem() {
       console.log(this.cmp);
-      eventBus.$emit("openEditor", this.cmp);
+      eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit("setItem", this.cmp);
+        eventBus.$emit('setItem', this.cmp);
       });
     },
-     updateSite() {
-      eventBus.$emit("update-site");
+    updateSite() {
+      eventBus.$emit('update-site');
+    },
+  },
+  computed: {
+    onEdit() {
+      return this.$store.getters.isEditOn ? 'on-edit' : '';
     },
   },
   created() {},
