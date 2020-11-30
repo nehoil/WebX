@@ -27,17 +27,43 @@
           ></el-slider>
         </div>
         <label class="pointer">
-          <div class="upload-image">
-            <!-- <img :src="cmp.info.src" /> -->
-            <i class="el-icon-upload2"></i>Upload Image Background
+          <div class="upload-image flex space center">
+            <!-- <img :src="cmp.info.src" /> -->Upload Background
+            <i class="el-icon-upload2"></i>
             <input type="file" @change="uploadImg" />
           </div>
-          <div v-if="getIsImage">
-            <el-checkbox v-model="image" @change="removeImage"
-              >Remove Background Image</el-checkbox
-            >
-          </div>
         </label>
+        <div>
+          <p
+            class="pointer upload-image flex space center"
+            @click="(isToShowSearch = !isToShowSearch), (unsplashImages = null)"
+          >
+            Search Image
+            <i class="el-icon-search"></i>
+          </p>
+          <el-input
+            v-if="isToShowSearch"
+            placeholder="What are you looking for?"
+            @keyup.enter="searchImages"
+            @change="searchImages"
+            v-model="term"
+          ></el-input>
+        </div>
+        <div v-if="unsplashImages" class="usp-gallery center">
+          <div
+            v-for="(image, idx) in unsplashImages"
+            :key="idx"
+            class="usp-image pointer"
+            @click="setImage(image.urls.full)"
+          >
+            <img :src="image.urls.thumb" />
+          </div>
+        </div>
+        <div v-if="getIsImage">
+          <el-checkbox v-model="image" @change="removeImage"
+            >Remove Background Image</el-checkbox
+          >
+        </div>
       </el-collapse-item>
     </el-collapse>
   </div>
@@ -45,6 +71,7 @@
 
 <script>
 import selectColor from "./select-color.cmp";
+import { unsplashService } from "../../services/unsplash.service.js";
 import { uploadImg } from "../../services/img.upload.service.js";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
@@ -60,6 +87,9 @@ export default {
       padding: null,
       minHeight: null,
       image: null,
+      term: null,
+      isToShowSearch: false,
+      unsplashImages: null,
     };
   },
   created() {
@@ -93,8 +123,18 @@ export default {
     },
     removeImage() {
       this.cmp.style.backgroundImage = "unset";
+      eventBus.$emit("update-site");
     },
-
+    async searchImages() {
+      if (!this.term) return;
+      const res = await unsplashService.getImages(this.term);
+      this.unsplashImages = res;
+    },
+    setImage(imageUrl) {
+      console.log(imageUrl);
+      this.cmp.style.backgroundImage = `url(${imageUrl})`;
+      eventBus.$emit("update-site");
+    },
     setMinHeight(size) {
       this.minHeight = size;
       this.cmp.style.minHeight = size / 16 + "rem";

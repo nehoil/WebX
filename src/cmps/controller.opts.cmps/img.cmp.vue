@@ -7,16 +7,20 @@
           <span>Change Image</span>
         </template>
         <label class="pointer">
-          <div class="upload-image">
+          <div class="upload-image flex space center">
             <!-- <img :src="cmp.info.src" /> -->
+            <span>Upload Image</span>
+            <i class="el-icon-upload2" v-if="!isLoading"></i>
             <i class="el-icon-loading" v-if="isLoading"></i>
-            <i class="el-icon-upload2" v-if="!isLoading"></i
-            ><span>Change By Upload</span>
             <input type="file" @change="uploadImg" />
           </div>
         </label>
-        <p class="change-url" @click="isToShowLink = !isToShowLink">
-          <i class="el-icon-edit"></i>Change By URL
+
+        <p
+          class="upload-image pointer flex space center"
+          @click="isToShowLink = !isToShowLink"
+        >
+          Link Image <i class="el-icon-edit"></i>
         </p>
         <el-input
           class="link-input"
@@ -26,6 +30,31 @@
           placeholder="Your link here"
           v-model="cmp.info.src"
         ></el-input>
+        <p
+          class="pointer upload-image flex space center"
+          @click="(isToShowSearch = !isToShowSearch), (unsplashImages = null)"
+        >
+          Search Image
+          <i class="el-icon-search"></i>
+        </p>
+        <el-input
+          class="link-input"
+          v-if="isToShowSearch"
+          placeholder="What are you looking for?"
+          @keyup.enter="searchImages"
+          @change="searchImages"
+          v-model="term"
+        ></el-input>
+        <div v-if="unsplashImages" class="usp-gallery center">
+          <div
+            v-for="(image, idx) in unsplashImages"
+            :key="idx"
+            class="usp-image pointer"
+            @click="setImage(image.urls.full)"
+          >
+            <img :src="image.urls.thumb" />
+          </div>
+        </div>
       </el-collapse-item>
       <el-collapse-item name="2">
         <template slot="title">
@@ -62,6 +91,7 @@
 </template>
 
 <script>
+import { unsplashService } from "../../services/unsplash.service.js";
 import { uploadImg } from "../../services/img.upload.service.js";
 import { eventBus } from "../../services/eventbus.service.js";
 export default {
@@ -79,6 +109,9 @@ export default {
       isToShowLink: false,
       input: 0,
       isLoading: false,
+      term: null,
+      isToShowSearch: false,
+      unsplashImages: null,
     };
   },
   created() {
@@ -130,6 +163,13 @@ export default {
       eventBus.$emit("update-site");
       this.isLoading = false;
     },
+    async searchImages() {
+      console.log("arrived");
+      if (!this.term) return;
+      const res = await unsplashService.getImages(this.term);
+      console.log(res);
+      this.unsplashImages = res;
+    },
     changeLinkTo(link) {
       this.cmp.info.src = link;
       eventBus.$emit("update-site");
@@ -144,6 +184,10 @@ export default {
       this.cmp.style.borderRadius = percent + "%";
       eventBus.$emit("update-site");
       this.borderRadius = null;
+    },
+    setImage(imageUrl) {
+      this.cmp.info.src = imageUrl;
+      eventBus.$emit("update-site");
     },
     setWidth(percent) {
       this.input++;
