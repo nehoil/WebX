@@ -45,6 +45,7 @@
           placeholder="Search Here"
           :trigger-on-focus="false"
           @change="searchImages"
+          popper-class="search-popper"
           @select="handleSelect"
         ></el-autocomplete>
         <!-- <el-input

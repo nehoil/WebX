@@ -1,25 +1,8 @@
-<script>
-import loginCmp from "@/cmps/login.cmp";
-export default {
-  data() {
-    return {
-      isShowLogin: false,
-    };
-  },
-  components: {
-    loginCmp,
-  },
-  methods: {
-    showLogin() {
-      this.isShowLogin = !this.isShowLogin;
-    },
-  },
-};
-</script>
+
 
 <template>
   <div id="app" class="container">
-    <div class="main-header">
+    <div class="main-header" v-if="isShowHeader">
       <nav>
         <div class="logo">
           <router-link to="/">
@@ -31,7 +14,13 @@ export default {
           <router-link to="/templates">Templates</router-link> |
           <router-link to="/">Profile</router-link> |
           <router-link to="/editor">Editor</router-link> |
-          <span @click="showLogin" class="login-btn">Log In</span>
+          <span @click="showLogin" class="login-btn"  v-if="!user">Log In</span>
+          <span v-if="!user"> |
+            <router-link to="/">Loutout</router-link> |
+            <router-link to="/user"
+              >Profile <i class="el-icon-user"></i
+            ></router-link>
+          </span>
         </div>
       </nav>
     </div>
@@ -40,6 +29,46 @@ export default {
     <router-view />
   </div>
 </template>
+
+<script>
+import { eventBus } from "@/services/eventbus.service.js";
+import loginCmp from "@/cmps/login.cmp";
+
+export default {
+  name: "app",
+  components: {
+    loginCmp
+  },
+  data() {
+    return {
+      isShowHeader: true,
+            isShowLogin: false,
+
+    };
+  },
+  methods: {
+     showLogin() {
+      this.isShowLogin = !this.isShowLogin;
+    },
+  },
+  computed: {
+    user() {
+      return this.$store.getters.loggedinUser;
+    },
+    // isShowHeader(){
+    //   if (this.$store.getters.isShowHeader) return true
+    //   return false
+    // }
+  },
+  created() {
+    eventBus.$on("change-edit-mode", () => {
+      this.isShowHeader = !this.isShowHeader;
+      console.log("here");
+      this.$forceUpdate();
+    });
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

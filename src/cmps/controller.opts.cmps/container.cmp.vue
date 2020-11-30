@@ -41,13 +41,23 @@
             Search Image
             <i class="el-icon-search"></i>
           </p>
-          <el-input
+          <!-- <el-input
             v-if="isToShowSearch"
             placeholder="What are you looking for?"
             @keyup.enter="searchImages"
             @change="searchImages"
             v-model="term"
-          ></el-input>
+          ></el-input> -->
+          <el-autocomplete
+            v-model="term"
+            v-if="isToShowSearch"
+            :fetch-suggestions="querySearch"
+            placeholder="Search Here"
+            :trigger-on-focus="false"
+            @change="searchImages"
+            popper-class="search-popper"
+            @select="handleSelect"
+          ></el-autocomplete>
         </div>
         <div v-if="unsplashImages" class="usp-gallery center">
           <div
@@ -151,6 +161,12 @@ export default {
       this.cmp.style.padding = size / 16 + "rem";
       eventBus.$emit("update-site");
       this.padding = null;
+    },
+    querySearch(queryString, cb) {
+      cb([{ value: "Search For " + queryString }]);
+    },
+    handleSelect() {
+      this.searchImages();
     },
   },
   computed: {

@@ -10,10 +10,10 @@ div.editor {
     }
     border: 1px solid $clr5;
     height: 91.54vh;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
     .workspace {
         @include scrollBar(.5rem, lighten($clr3, 14%));
-        overflow-y: auto;
+        overflow-y: scroll;
         padding: 5px;
         width: 85%;
         &>* {

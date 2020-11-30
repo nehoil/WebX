@@ -8,7 +8,7 @@
     ></el-input>
     <p><i class="el-icon-search"></i>Search Video</p>
     <el-autocomplete
-      popper-class="vid-popper"
+      popper-class="search-popper"
       v-model="searchTerm"
       :fetch-suggestions="querySearch"
       placeholder="Enter your address"

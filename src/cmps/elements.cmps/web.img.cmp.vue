@@ -1,16 +1,15 @@
 <template>
-  <span class="cmp-span">
+  <span class="cmp-span" @mouseleave="showEditMenu = false">
     <img
       class="web-img"
       :style="cmp.style"
       @click.stop="setEditItem"
       :src="cmp.info.src"
       alt=""
-      @mouseover="mouseOnMenu = true"
-      @mouseleave="mouseOnMenu = false"
+      @mouseover="showEditMenu = true"
     />
     <edit-menu
-      v-if="isShowMenu"
+      v-if="showEditMenu"
       :cmp="cmp"
       @showMenu="mouseOnEl = true"
       @hideMenu="mouseOnEl = false"
@@ -32,7 +31,7 @@ export default {
     return {
       mouseOnEl: false,
       mouseOnMenu: false,
-      // showEditMenu: false
+      showEditMenu: false,
     };
   },
   name: 'web-img',
