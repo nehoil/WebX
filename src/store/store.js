@@ -3,6 +3,7 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 import { webStore } from './web.store.js';
+import { userStore } from './user.store.js';
 
 export default new Vuex.Store({
     state: {},
@@ -11,5 +12,6 @@ export default new Vuex.Store({
     getters: {},
     modules: {
         webStore,
+        userStore
     }
 });

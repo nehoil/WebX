@@ -14,9 +14,9 @@
           <router-link to="/templates">Templates</router-link> |
           <router-link to="/">Profile</router-link> |
           <router-link to="/editor">Editor</router-link> |
-          <span @click="showLogin" class="login-btn"  v-if="!user">Log In</span>
-          <span v-if="!user"> |
-            <router-link to="/">Loutout</router-link> |
+          <span @click="showLogin" class="login-btn" v-if="!user">Log In</span>
+          <span v-if="!user">
+            | <router-link to="/">Loutout</router-link> |
             <router-link to="/user"
               >Profile <i class="el-icon-user"></i
             ></router-link>
@@ -25,7 +25,7 @@
       </nav>
     </div>
     <div class="modal-bg" v-if="isShowLogin"></div>
-    <loginCmp v-if="isShowLogin" @showLogin="showLogin"/>
+    <loginCmp v-if="isShowLogin" @showLogin="showLogin" />
     <router-view />
   </div>
 </template>
@@ -37,17 +37,16 @@ import loginCmp from "@/cmps/login.cmp";
 export default {
   name: "app",
   components: {
-    loginCmp
+    loginCmp,
   },
   data() {
     return {
       isShowHeader: true,
-            isShowLogin: false,
-
+      isShowLogin: false,
     };
   },
   methods: {
-     showLogin() {
+    showLogin() {
       this.isShowLogin = !this.isShowLogin;
     },
   },
