@@ -51,6 +51,7 @@ export default {
     editMenu,
   },
   created() {
+    // console.log('this.$store.getters.isEditOn', this.$store.getters.isEditOn);
     this.cmp._rootId = this._rootId;
     if (!this.cmp.style.textShadow){
       this.cmp.style.textShadow = 'unset';

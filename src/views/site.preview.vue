@@ -18,40 +18,39 @@
 </template>
 
 <script>
-import workSpace from "@/cmps/workspace.cmp";
-import { eventBus } from "@/services/eventbus.service.js";
-import FixedHeader from "vue-fixed-header";
+import workSpace from '@/cmps/workspace.cmp';
+import { eventBus } from '@/services/eventbus.service.js';
+import FixedHeader from 'vue-fixed-header';
 export default {
-  name: "site-preview",
+  name: 'site-preview',
   components: {
     workSpace,
     FixedHeader,
   },
   data() {
     return {
-      itemToEdit: "webImg",
-      isPreview: true,
+      isPreview: false,
     };
   },
   methods: {
     editSite() {
-      this.$router.push("/editor");
+      this.$router.push('/editor');
     },
   },
   computed: {},
   created() {
     this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
-    eventBus.$on("setCmpsToShow", (cmpType) => {
-      this.$store.commit({ type: "setCmpsToShow", cmpType });
+    eventBus.$on('setCmpsToShow', (cmpType) => {
+      this.$store.commit({ type: 'setCmpsToShow', cmpType });
     });
-    this.$store.commit({ type: "setEditMode", isEditOn: false });
-    this.$store.commit({ type: "setShowMenu", isShowMenu: false });
-    eventBus.$emit("change-edit-mode");
+    this.$store.commit({ type: 'setEditMode', isEditOn: false });
+    this.$store.commit({ type: 'setShowMenu', isShowMenu: false });
+    eventBus.$emit('change-edit-mode');
   },
   destroyed() {
-    this.$store.commit({ type: "setEditMode", isEditOn: true });
-    this.$store.commit({ type: "setShowMenu", isShowMenu: true });
-    eventBus.$emit("change-edit-mode");
+    this.$store.commit({ type: 'setEditMode', isEditOn: true });
+    this.$store.commit({ type: 'setShowMenu', isShowMenu: true });
+    eventBus.$emit('change-edit-mode');
   },
 };
 </script>

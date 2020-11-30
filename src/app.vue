@@ -2,7 +2,6 @@
 
 <template>
   <div id="app" class="container">
-    <fixed-header :threshold="100">
       <div class="main-header" v-if="isShowHeader">
         <nav>
           <div class="logo">
@@ -29,7 +28,6 @@
       </div>
       <div class="modal-bg" v-if="isShowLogin"></div>
       <loginCmp v-if="isShowLogin" @showLogin="showLogin" />
-    </fixed-header>
     <router-view />
   </div>
 </template>
@@ -66,7 +64,6 @@ export default {
   created() {
     eventBus.$on("change-edit-mode", () => {
       this.isShowHeader = !this.isShowHeader;
-      console.log("here");
       this.$forceUpdate();
     });
   },
