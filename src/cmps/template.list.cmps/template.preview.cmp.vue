@@ -28,7 +28,8 @@ export default {
     templates: Array,
   },
   data() {
-    return {};
+    return {
+    };
   },
   name: 'template-preview',
   components: {},
