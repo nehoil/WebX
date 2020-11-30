@@ -1,4 +1,5 @@
 <template>
+ 
   <section
     v-if="cmp.info.cmps"
     @click.self="setEditItem"
@@ -20,6 +21,7 @@
     </component>
     <edit-menu v-if="showEditMenu" :cmp="cmp" parent="container" />
   </section>
+
 </template>
 
 <script>
@@ -33,6 +35,7 @@ import webForm from "@/cmps/elements.cmps/web.form.cmp";
 import webButton from "@/cmps/elements.cmps/web.button.cmp";
 import webList from "@/cmps/elements.cmps/web.list.cmp";
 import webDiv from "@/cmps/elements.cmps/web.div.cmp";
+
 export default {
   name: "web-container",
   props: {
@@ -61,6 +64,9 @@ export default {
       this.$nextTick(() => {
         eventBus.$emit("setItem", this.cmp);
       });
+    },
+     updateSite() {
+      eventBus.$emit("update-site");
     },
   },
   created() {},
