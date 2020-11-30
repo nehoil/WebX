@@ -25,7 +25,7 @@ import editMenu from '@/cmps/web.edit.menu.cmp';
 export default {
   props: {
     cmp: Object,
-    _rootId: String,
+    _rootId: String
   },
   data() {
     return {

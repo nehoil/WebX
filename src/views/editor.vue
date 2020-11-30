@@ -1,18 +1,23 @@
 <template>
   <div class="editor flex">
-    <controller :itemToEdit="itemToEdit" v-if="showEditor" @focus.native="test"/>
-    <work-space :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId"/>
+    <controller
+      :itemToEdit="itemToEdit"
+      :siteLength="siteToEdit.cmps.length"
+      v-if="showEditor"
+      @focus.native="test"
+    />
+    <work-space :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId" />
   </div>
 </template>
 
 <script>
-import json from '@/data/wap.json';
-import workSpace from '@/cmps/workspace.cmp';
-import controller from '@/cmps/controller.cmp';
-import { eventBus } from '@/services/eventbus.service.js';
+import json from "@/data/wap.json";
+import workSpace from "@/cmps/workspace.cmp";
+import controller from "@/cmps/controller.cmp";
+import { eventBus } from "@/services/eventbus.service.js";
 
 export default {
-  name: 'editor',
+  name: "editor",
   components: {
     workSpace,
     controller,
@@ -21,38 +26,37 @@ export default {
     return {
       siteToEdit: null,
       waps: json,
-      itemToEdit: 'webImg',
-      showEditor: true
+      itemToEdit: "webImg",
+      showEditor: true,
     };
   },
   methods: {
-    test(){
-      console.log('here');
+    test() {
+      console.log("here");
     },
-    updateCmpId(){
+    updateCmpId() {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     },
-    removeCmp(root, cmpId, deep = 0) {      
-      var currRootCmps = root.info ? root.info.cmps : root
-        currRootCmps.forEach((cmp, idx) => {
-          if (cmp.id === cmpId) {
-            console.log('deleted!');
-            currRootCmps.splice(idx, 1);
-            this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
-            return;
-          }
-          if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
-        });
-      },
-    searchCmp(cmps, cmpId, _rootId) {      
+    removeCmp(root, cmpId, deep = 0) {
+      var currRootCmps = root.info ? root.info.cmps : root;
+      currRootCmps.forEach((cmp, idx) => {
+        if (cmp.id === cmpId) {
+          currRootCmps.splice(idx, 1);
+          this.$store.commit({ type: "updateSite", site: this.siteToEdit });
+          return;
+        }
+        if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
+      });
+    },
+    searchCmp(cmps, cmpId, _rootId) {
       var rootFather;
-      if (_rootId){
+      if (_rootId) {
         rootFather = cmps.find((webContainer) => webContainer.id === _rootId);
       } else {
-        rootFather = cmps
+        rootFather = cmps;
       }
       this.removeCmp(rootFather, cmpId);
-  },
+    },
   },
   computed: {
     cmps() {
@@ -61,22 +65,22 @@ export default {
   },
   created() {
     this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
-    eventBus.$on('addCmp', () => {
+    eventBus.$on("addCmp", () => {
       // this.$store.commit({ type: 'addCmp', id });
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });
-    eventBus.$on('removeCmp', (cmpIds) => {
+    eventBus.$on("removeCmp", (cmpIds) => {
       const { cmpId, _rootId } = cmpIds;
       const cmps = this.siteToEdit.cmps;
       this.searchCmp(cmps, cmpId, _rootId);
       // this.$store.commit({ type: "removeCmp", id });
       // this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });
-    eventBus.$on('setCmpsToShow', (cmpType) => {
-      this.$store.commit({ type: 'setCmpsToShow', cmpType });
+    eventBus.$on("setCmpsToShow", (cmpType) => {
+      this.$store.commit({ type: "setCmpsToShow", cmpType });
     });
-    eventBus.$on('update-site', () => {
-      this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
+    eventBus.$on("update-site", () => {
+      this.$store.commit({ type: "updateSite", site: this.siteToEdit });
     });
   },
 };

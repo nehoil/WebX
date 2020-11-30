@@ -25,6 +25,7 @@ export default {
   },
   props: {
     itemToEdit: String,
+    siteLength: Number,
   },
   data() {
     return {
@@ -40,9 +41,18 @@ export default {
     },
   },
   created() {
+    console.log(this.siteLength);
     eventBus.$on("openEditor", () => {
       this.addOrEdit = "edit";
     });
+  },
+  watch: {
+    siteLength: {
+      deep: true,
+      handler() {
+        if (this.siteLength === 0) this.addOrEdit = "add";
+      },
+    },
   },
 };
 </script>

@@ -6,22 +6,22 @@
       @click.stop="setEditItem"
       :src="cmp.info.src"
       alt=""
-      @mouseover="showEditMenu = true"
-      @mouseleave="showEditMenu = false"
+      @mouseover="mouseOnMenu = true"
+      @mouseleave="mouseOnMenu = false"
     />
     <edit-menu
-      v-if="showEditMenu"
+      v-if="isShowMenu"
       :cmp="cmp"
-      @hideMenu="showEditMenu = false"
-      @showMenu="showEditMenu = true"
+      @showMenu="mouseOnEl = true"
+      @hideMenu="mouseOnEl = false"
       parent="small"
     />
   </span>
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
-import editMenu from "@/cmps/web.edit.menu.cmp";
+import { eventBus } from '@/services/eventbus.service.js';
+import editMenu from '@/cmps/web.edit.menu.cmp';
 
 export default {
   props: {
@@ -30,30 +30,40 @@ export default {
   },
   data() {
     return {
-      showEditMenu: false,
+      mouseOnEl: false,
+      mouseOnMenu: false,
+      // showEditMenu: false
     };
   },
-  name: "web-img",
+  name: 'web-img',
   components: {
     editMenu,
+  },
+  computed: {
+    isShowMenu() {
+      if (!this.mouseOnMenu && !this.mouseOnEl) return false;
+      if (this.mouseOnMenu || this.mouseOnEl) return true;
+      return false;
+    },
   },
   methods: {
     onEdit(ev) {
       this.cmp.info.src = ev.target.innerText;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     setEditItem() {
-      eventBus.$emit("openEditor", this.cmp);
+      eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit("setItem", this.cmp);
+        eventBus.$emit('setItem', this.cmp);
       });
     },
     showMenu() {
-      this.$emit("showMenu");
+      this.$emit('showMenu');
     },
   },
   created() {
     this.cmp._rootId = this._rootId;
+    console.log(!this.mouseOnMenu && !this.mouseOnEl);
   },
 };
 </script>

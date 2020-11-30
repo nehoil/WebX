@@ -55,7 +55,7 @@ div.editor {
         display: flex;
         nav {
             margin-bottom: 4rem;
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             a {
                 padding-right: 20px;
                 padding-left: 20px;
@@ -69,6 +69,7 @@ div.editor {
                 border-bottom-left-radius: 15px;
             }
             .active-tab {
+                // border-top-right-radius: 10pxs;
                 // border-top-right-radius: 15px;
                 background-color: $clr2;
                 color: $clr4;
@@ -97,11 +98,14 @@ div.editor {
         .el-slider,
         .el-input {
             width: 40%;
-            margin: 0;
             display: flex;
             align-content: flex-end !important;
             margin-bottom: 5px;
         }
+        .el-input {
+            width: 90%;}
+            margin: 0 auto;
+
     }
 }
 
