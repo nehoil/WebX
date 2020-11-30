@@ -142,6 +142,7 @@ export default {
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id && this.cmp) {
           this.width = +this.getNumFromString("width");
+          this.borderRadius = +this.getNumFromString("borderRadius");
         }
       },
     },
@@ -182,6 +183,8 @@ export default {
     setBorderRadius(percent) {
       this.cmp.style.borderRadius = percent + "%";
       eventBus.$emit("update-site");
+      eventBus.$emit("change-img");
+
       this.borderRadius = null;
     },
     setImage(imageUrl) {
@@ -192,7 +195,7 @@ export default {
       this.input++;
       if (this.input <= 1) return;
       this.cmp.style.width = percent + "%";
-      eventBus.$emit("update-site");
+      eventBus.$emit("change-img");
       this.width = percent;
     },
   },

@@ -8,6 +8,7 @@
     ></el-input>
     <p><i class="el-icon-search"></i>Search Video</p>
     <el-autocomplete
+      popper-class="vid-popper"
       v-model="searchTerm"
       :fetch-suggestions="querySearch"
       placeholder="Enter your address"
@@ -18,8 +19,6 @@
       <div class="search-vid-preview" v-for="(vid, idx) in vids" :key="idx">
         <img
           :src="vid.thumbnail.url"
-          alt=""
-          srcset=""
           @click="changeLinkTo(vid.videoId)"
         />
       </div>
@@ -63,11 +62,6 @@ export default {
       cb([{ value: 'Search For ' + queryString }]);
     },
     handleSelect() {
-      // this.showSuggested = false;
-      // const { lat, lng } = this.suggestedLocs;
-      // this.cmp.info.lat = lat;
-      // this.cmp.info.lng = lng;
-      // this.onEdit();
       this.onSearch()
     },
     async onSearch() {
@@ -81,6 +75,8 @@ export default {
     },
     onEdit() {
       eventBus.$emit('update-site');
+    },
+    created() {
     },
   },
 };
