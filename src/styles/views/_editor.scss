@@ -8,7 +8,7 @@ div.editor {
     & i:first-of-type {
         margin-right: 10px;
     }
-    border: 1px solid $clr5;
+    border: 1px solid $clr4;
     height: 91.54vh;
     // margin-bottom: 2rem;
     .workspace {
@@ -16,9 +16,9 @@ div.editor {
         overflow-y: scroll;
         padding: 5px;
         width: 85%;
-        &>* {
+        & .draggable-container {
             margin: 0 auto;
-            width: inherit;
+            width: -webkit-fill-available;
             max-width: 1400px;
         }
         .draggable-container {
@@ -29,7 +29,7 @@ div.editor {
         justify-content: flex-start;
         align-items: center;
         height: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: white;
         .dragArea {
             height: 100%;
             outline: 5px dashed rgb(240, 240, 240);
@@ -50,12 +50,13 @@ div.editor {
         overflow-x: hidden;
         width: 15%;
         font-size: 0.97rem;
-        border-right: 1px solid $clr5;
+        border-right: 1px solid $clr4;
         height: 100%;
         display: flex;
         nav {
             margin-bottom: 4rem;
             font-size: 1.1rem;
+            text-align: center;
             a {
                 padding-right: 20px;
                 padding-left: 20px;
@@ -125,7 +126,7 @@ div.editor {
 
 .put-icon {
     position: relative;
-    .drag-image{
+    .drag-image {
         z-index: 100;
         pointer-events: none;
         opacity: 0;
@@ -137,9 +138,8 @@ div.editor {
         transition: 1s ease;
         opacity: 0;
     }
-
     &:active .drag-image {
-       opacity: 60%;
-       transition: .3;
+        opacity: 60%;
+        transition: .3;
     }
 }

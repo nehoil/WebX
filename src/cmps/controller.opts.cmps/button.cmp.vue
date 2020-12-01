@@ -10,7 +10,7 @@
           <span>Button Styling</span>
         </template>
 
-        <div class="plr10">
+        <div class="plr10 mb1">
           <el-input
             @input="changeLinkTo"
             placeholder="Attach Link And Press Enter"
@@ -18,8 +18,10 @@
             suffix-icon="el-icon-edit"
           ></el-input>
         </div>
-        <el-checkbox v-model="border" @change="toggleBorder"
-          >Change Border</el-checkbox
+        <span class="plr10">
+          <el-checkbox v-model="border" @change="toggleBorder"
+            >Change Border</el-checkbox
+          ></span
         >
 
         <div class="flex center space plr10">
@@ -36,12 +38,12 @@
 </template>
 
 <script>
-import selectFont from "./select-font.cmp";
-import selectColor from "./select-color.cmp";
-import fontProperties from "./font-properties.cmp";
-import { eventBus } from "../../services/eventbus.service.js";
+import selectFont from './select-font.cmp';
+import selectColor from './select-color.cmp';
+import fontProperties from './font-properties.cmp';
+import { eventBus } from '../../services/eventbus.service.js';
 export default {
-  name: "edit-btn",
+  name: 'edit-btn',
   props: {
     cmp: [Object, Array],
   },
@@ -59,38 +61,38 @@ export default {
   },
   created() {
     if (!this.cmp.style.borderRadius) {
-      this.cmp.style.borderRadius = "0px";
+      this.cmp.style.borderRadius = '0px';
       this.borderRadius = 0;
     } else if (
       this.cmp.style.borderRadius &&
-      this.cmp.style.borderRadius !== "unset"
+      this.cmp.style.borderRadius !== 'unset'
     ) {
-      this.borderRadius = +this.getNumFromString("borderRadius");
+      this.borderRadius = +this.getNumFromString('borderRadius');
     }
   },
   methods: {
     getNumFromString(styleProperty) {
       if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
-        return this.cmp.style[styleProperty].match(/\d+/g).flat().join(".");
+        return this.cmp.style[styleProperty].match(/\d+/g).flat().join('.');
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
     },
     changeLinkTo(link) {
       this.cmp.linkTo = link;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     toggleBorder() {
-      if (this.cmp.style.border === "unset")
-        this.cmp.style.border = "1px solid gray";
-      else this.cmp.style.border = "unset";
-      eventBus.$emit("update-site");
+      if (this.cmp.style.border === 'unset')
+        this.cmp.style.border = '1px solid gray';
+      else this.cmp.style.border = 'unset';
+      eventBus.$emit('update-site');
     },
     setBorderRadius(size) {
-      console.log(this.borderRadius, "function");
-      console.log(this.cmp.style.borderRadius, "function");
-      this.cmp.style.borderRadius = size + "px";
-      eventBus.$emit("update-site");
+      console.log(this.borderRadius, 'function');
+      console.log(this.cmp.style.borderRadius, 'function');
+      this.cmp.style.borderRadius = size + 'px';
+      eventBus.$emit('update-site');
     },
   },
   watch: {
@@ -100,12 +102,12 @@ export default {
         if (newVal.id !== oldVal.id) {
           if (!this.cmp.style.borderRadius) {
             this.borderRadius = null;
-            this.cmp.style.borderRadius = "0px";
+            this.cmp.style.borderRadius = '0px';
           } else if (
             this.cmp.style.borderRadius &&
-            this.cmp.style.borderRadius !== "unset"
+            this.cmp.style.borderRadius !== 'unset'
           ) {
-            this.borderRadius = +this.getNumFromString("borderRadius");
+            this.borderRadius = +this.getNumFromString('borderRadius');
           }
         }
       },
