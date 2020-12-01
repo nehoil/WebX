@@ -6395,7 +6395,6 @@ const gCmps = [{
 // import {roeeTemplates} from '../services/roee.js'
 // import {haleliTemplates} from '../services/haleli.js'
 import { nehoTemplates } from '../services/neho.js'
-import HttpService from './HttpService.js'
 
 
 gCmps.push(...nehoTemplates)
@@ -6412,7 +6411,6 @@ export const templateService = {
     getCmpById,
     getTemplates,
     getTemplateByIdAsync,
-    addTemplate
 }
 
 function getTemplates() {
@@ -6448,9 +6446,4 @@ async function getTemplateByIdAsync(id) {
 
 function getCmpById(id) {
     return gCmps.find(cmp => cmp.id === id)
-}
-
-function addTemplate(template) {
-    console.log(template);
-    return HttpService.post(`template`, template)
 }

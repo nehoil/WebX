@@ -8,10 +8,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .3s ease;
-    &>*:hover {
-        // padding: 3px;
-        outline: 1px solid $clr2;
-    }
 }
 
 .row {
