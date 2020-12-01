@@ -40,7 +40,7 @@
           <img :src="template.previewImg" alt="" srcset="" />
         </div>
         <div class="template-preview-btns" v-if="isShowBtns">
-          <router-link class="choose" to="/editor"
+          <router-link class="choose" :to="'editor/' + template._id"
             ><i class="el-icon-right"></i> Choose
           </router-link>
           <router-link class="preview" :to="'/' + template._id"
