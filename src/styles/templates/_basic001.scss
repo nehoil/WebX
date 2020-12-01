@@ -16,8 +16,9 @@
         }
     }
     .web-header-1-p {
-        width: 70ch !important;
-        color: aqua;
+        margin: 0 50px;
+        text-align: left;
+        display: block;
     }
     .header-1-h1 {
         margin: 0 50px;
@@ -110,7 +111,7 @@
     img {
         margin-top: 8px !important;
         vertical-align: middle;
-        width: 100%;
+        width: 100% !important;
     }
 }
 

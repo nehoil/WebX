@@ -1,5 +1,5 @@
 <template>
-  <section :class="cmp.class">
+  <section :class="cmp.class + ' ' +onEditMode">
     <component
       v-for="(cmp, idx) in cmp.info.cmps"
       :is="cmp.type"
@@ -25,7 +25,7 @@ export default {
   props: {
     cmp: Object,
   },
-  name: "web-card",
+  name: "web-div",
   components: {
     webImg,
     webTxt,
@@ -34,6 +34,11 @@ export default {
     webVideo,
     webList
 
+  },
+  data(){
+    return {
+          isEditMode:true
+    }
   },
   methods: {
     onEdit(ev) {
@@ -47,6 +52,11 @@ export default {
       });
     },
   },
+  computed:{
+       onEditMode() {
+      return this.$store.getters.isEditOn ? 'on-edit' : '';
+    },
+    }
 };
 </script>
 <style scoped>

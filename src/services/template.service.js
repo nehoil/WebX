@@ -2928,7 +2928,7 @@ const gCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    margin: "unset",
+                                    margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
                                     color: "#fff",
@@ -4059,7 +4059,7 @@ const gCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://i.ibb.co/dGH6SFR/1d0371d6920f281c4d08fc751957a177-removebg-preview.png"
+                                    // src: "https://i.ibb.co/dGH6SFR/1d0371d6920f281c4d08fc751957a177-removebg-preview.png"
                                 },
                                 style: {
                                     fontFamily: "unset",
