@@ -2195,7 +2195,7 @@ const gCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    // src: "https://i.ibb.co/dGH6SFR/1d0371d6920f281c4d08fc751957a177-removebg-preview.png"
+                                    src: "https://i.ibb.co/dGH6SFR/1d0371d6920f281c4d08fc751957a177-removebg-preview.png"
                                 },
                                 style: {
                                     fontFamily: "unset",
