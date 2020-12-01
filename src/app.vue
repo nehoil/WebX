@@ -16,7 +16,7 @@
           <router-link to="/editor">Editor</router-link> |
           <span @click="showLogin" class="login-btn" v-if="!user">Log In</span>
           <span v-if="!user">
-            | <router-link to="/">Loutout</router-link> |
+            | <router-link to="/">Logout</router-link> |
             <router-link to="/user">
               Profile <i class="el-icon-user"></i
             ></router-link>

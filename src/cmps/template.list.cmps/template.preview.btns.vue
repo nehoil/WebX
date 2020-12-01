@@ -20,7 +20,7 @@
         <div class="template-name">{{ template.name }}</div>
         <div class="template-preview-btns" v-if="isShowBtns">
           <router-link :to="'/' + template._id"> Preview </router-link>
-          <router-link to="/editor"> Edit </router-link>
+          <router-link :to="'/editor/' + template._id"> Edit </router-link>
         </div>
       </div>
     </div>
