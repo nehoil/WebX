@@ -75,11 +75,11 @@ export const webStore = {
         setSite(state, { site }) {
             state.siteToEdit = site
         },
-        setEditMode(state, {isEditOn}){ 
+        setEditMode(state, { isEditOn }) {
             console.log('isEditOn', isEditOn);
             state.isEdit = isEditOn
         },
-        setShowMenu(state, {isShowMenu}){ 
+        setShowMenu(state, { isShowMenu }) {
             state.isShowMenu = isShowMenu
         }
     },
@@ -87,6 +87,11 @@ export const webStore = {
         changeTempalte({ commit }, { template }) {
             const site = template
             commit({ type: 'updateSite', site })
+        },
+        async addTemplate({ context }, { templateToAdd }) {
+            const template = await templateService.addTemplate(templateToAdd)
+            context.commit({ type: 'addTemplate', template })
+            return template;
         }
     }
 };

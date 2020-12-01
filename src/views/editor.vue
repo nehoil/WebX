@@ -5,6 +5,7 @@
       :siteLength="siteToEdit.cmps.length"
       v-if="showEditor"
       @focus.native="test"
+      @addTemplate="addTemplate"
     />
     <work-space :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId" />
   </div>
@@ -57,6 +58,13 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
+    addTemplate(){
+       const templateToAdd = JSON.parse(JSON.stringify(this.siteToEdit));       
+      this.$store.dispatch({
+        type: "addTemplate",
+        templateToAdd,
+      });
+    }
   },
   computed: {
     cmps() {

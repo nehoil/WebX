@@ -8,7 +8,7 @@
       <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     </div>
     <footer class="flex space">
-      <a>undo</a> | <a>save</a> | <a>publish</a>
+      <a>undo</a> | <a @click="addTemplate">save</a> | <a>publish</a>
     </footer>
   </section>
 </template>
@@ -39,6 +39,9 @@ export default {
         "active-tab": this.addOrEdit !== type,
       };
     },
+    addTemplate(){
+      this.$emit('addTemplate')
+    }
   },
   created() {
     console.log(this.siteLength);

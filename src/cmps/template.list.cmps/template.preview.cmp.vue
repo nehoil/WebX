@@ -16,7 +16,7 @@
         <div class="template-img">
           <img :src="template.previewImg" alt="" srcset="" />
         </div>
-        <div class="template-name">{{ template.name }}</div>
+        <div class="template-name">{{ template.name }}</div>  
         <div class="template-preview-btns" v-if="isShowBtns">
           <router-link :to="'/' + template._id"> Preview </router-link>
           <router-link to="/editor"> Edit </router-link>
@@ -38,11 +38,11 @@ export default {
       isShowBtns: false,
     };
   },
-  name: "template-preview",
+  name: 'template-preview',
   components: {},
   methods: {
     chooseTemplate(template) {
-      this.$store.dispatch({ type: "changeTempalte", template });
+      this.$store.dispatch({ type: 'changeTempalte', template });
       // this.$router.push('/editor');
     },
   },
