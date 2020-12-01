@@ -1,21 +1,12 @@
 .web-map {
     display: flex;
-    // display: inline-block;
-    div {
-        // display: inline-block;
-        // margin-bottom: 1rem;
-        // margin-top: 1rem;
-    }
-    // width: 30rem !important;
     position: relative;
+    width: 100% !important;
 }
 
 .web-map-1 {
-    & .web-map>* {
-        width: 100vw !important;
-    }
     .vue-map-container {
         display: flex;
-        max-width: 1400px !important;
+        width: 100% !important;
     }
 }

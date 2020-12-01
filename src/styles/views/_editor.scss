@@ -16,9 +16,9 @@ div.editor {
         overflow-y: scroll;
         padding: 5px;
         width: 85%;
-        &>* {
+        & .draggable-container {
             margin: 0 auto;
-            width: inherit;
+            width: -webkit-fill-available;
             max-width: 1400px;
         }
         .draggable-container {
@@ -125,7 +125,7 @@ div.editor {
 
 .put-icon {
     position: relative;
-    .drag-image{
+    .drag-image {
         z-index: 100;
         pointer-events: none;
         opacity: 0;
@@ -137,9 +137,8 @@ div.editor {
         transition: 1s ease;
         opacity: 0;
     }
-
     &:active .drag-image {
-       opacity: 60%;
-       transition: .3;
+        opacity: 60%;
+        transition: .3;
     }
 }
