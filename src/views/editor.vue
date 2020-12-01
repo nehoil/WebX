@@ -1,7 +1,8 @@
 <template>
   <div class="editor flex">
     <div class="loading-editor" v-if="loading">Loading...</div>
-    <controller v-if="siteToEdit"
+    <controller
+      v-if="siteToEdit"
       :itemToEdit="itemToEdit"
       :siteLength="siteToEdit.cmps.length"
       @focus.native="test"
@@ -9,7 +10,11 @@
       @publishTemplate="publishTemplate"
       @showTemplateUrl="showTemplateUrl"
     />
-    <work-space v-if="siteToEdit" :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId" />
+    <work-space
+      v-if="siteToEdit"
+      :cmps="siteToEdit.cmps"
+      @updateCmpId="updateCmpId"
+    />
   </div>
 </template>
 
@@ -75,8 +80,13 @@ export default {
     },
     async loadSite(id) {
       this.loading = true;
-      const site = await this.$store.dispatch({ type: 'loadSite', id });
+      var site;
+      if (id.includes('sys')) {
+        // site = templateService.getTemplateById(id);
+      }
+      site = await this.$store.dispatch({ type: 'loadSite', id });
       try {
+        // console.log('load site from editor', site);
         this.siteToEdit = JSON.parse(JSON.stringify(site));
         this.loading = false;
       } catch {

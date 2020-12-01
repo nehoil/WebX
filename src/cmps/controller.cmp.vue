@@ -48,9 +48,8 @@ export default {
     
   },
   created() {
-    console.log(this.siteLength);
-    eventBus.$on('openEditor', () => {
-      this.addOrEdit = 'edit';
+    eventBus.$on("openEditor", () => {
+      this.addOrEdit = "edit";
     });
   },
   watch: {
