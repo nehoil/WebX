@@ -63,11 +63,11 @@
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
-import draggable from "vuedraggable";
+import { eventBus } from '@/services/eventbus.service.js';
+import draggable from 'vuedraggable';
 
 export default {
-  name: "controller-add",
+  name: 'controller-add',
   components: {
     draggable,
   },
@@ -75,16 +75,16 @@ export default {
     return {
       cmpsToShow: null,
       cmpsAccordion: [
-        { title: "Headers", value: "header" },
-        { title: "Navbars", value: "navbar" },
-        { title: "Text", value: "text" },
-        { title: "Sections", value: "section" },
-        { title: "Cards", value: "card" },
-        { title: "Map", value: "map" },
-        { title: "Image", value: "image" },
-        { title: "Video", value: "video" },
-        { title: "Form", value: "form" },
-        { title: "Footers", value: "footer" },
+        { title: 'Headers', value: 'header' },
+        { title: 'Navbars', value: 'navbar' },
+        { title: 'Text', value: 'text' },
+        { title: 'Sections', value: 'section' },
+        { title: 'Cards', value: 'card' },
+        { title: 'Map', value: 'map' },
+        { title: 'Image', value: 'image' },
+        { title: 'Video', value: 'video' },
+        { title: 'Form', value: 'form' },
+        { title: 'Footers', value: 'footer' },
       ],
       numForCmpsAccordion: 2,
       number: 1,
@@ -94,13 +94,13 @@ export default {
   },
   methods: {
     setCmpsToShow(name) {
-      eventBus.$emit("setCmpsToShow", name);
+      eventBus.$emit('setCmpsToShow', name);
     },
     startDrag(ev) {
-      eventBus.$emit("dragStart");
+      eventBus.$emit('dragStart');
     },
     stopDrag() {
-      eventBus.$emit("dragStop");
+      eventBus.$emit('dragStop');
     },
     // grab(ev){
     //   this.isGrabbing = true

@@ -8,7 +8,7 @@ div.editor {
     & i:first-of-type {
         margin-right: 10px;
     }
-    border: 1px solid $clr5;
+    border: 1px solid $clr4;
     height: 91.54vh;
     // margin-bottom: 2rem;
     .workspace {
@@ -29,7 +29,7 @@ div.editor {
         justify-content: flex-start;
         align-items: center;
         height: 100%;
-        background-color: rgb(255, 255, 255);
+        background-color: white;
         .dragArea {
             height: 100%;
             outline: 5px dashed rgb(240, 240, 240);
@@ -50,12 +50,13 @@ div.editor {
         overflow-x: hidden;
         width: 15%;
         font-size: 0.97rem;
-        border-right: 1px solid $clr5;
+        border-right: 1px solid $clr4;
         height: 100%;
         display: flex;
         nav {
             margin-bottom: 4rem;
             font-size: 1.1rem;
+            text-align: center;
             a {
                 padding-right: 20px;
                 padding-left: 20px;

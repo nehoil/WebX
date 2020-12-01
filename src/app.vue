@@ -31,11 +31,11 @@
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
-import loginCmp from "@/cmps/login.cmp";
+import { eventBus } from '@/services/eventbus.service.js';
+import loginCmp from '@/cmps/login.cmp';
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
     loginCmp,
   },
@@ -54,13 +54,9 @@ export default {
     user() {
       return this.$store.getters.loggedinUser;
     },
-    // isShowHeader(){
-    //   if (this.$store.getters.isShowHeader) return true
-    //   return false
-    // }
   },
   created() {
-    eventBus.$on("change-edit-mode", () => {
+    eventBus.$on('change-edit-mode', () => {
       this.isShowHeader = !this.isShowHeader;
       this.$forceUpdate();
     });

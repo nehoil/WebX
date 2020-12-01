@@ -7,8 +7,9 @@
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .3s ease;
     &>*:hover {
-        outline: 1px solid rgba(189, 190, 255, 0.89);
+        outline: 1px solid $clr2;
     }
 }
 
@@ -23,7 +24,8 @@
 
 // If on edit 
 .on-edit {
+    transition: all .3s ease;
     &:hover {
-        outline: 1px solid rgba(128, 128, 128, 0.637)
+        outline: 1px solid $clr2;
     }
 }

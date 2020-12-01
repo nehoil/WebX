@@ -1,10 +1,11 @@
 // COLOR PALETTE
 
 $clr1: rgba(230, 230, 230, 0.103); //color for hover in editor - to be used
-$clr3: #ffb5b5;
-$clr2: rgb(48, 71, 94);;
-$clr4: #e9e9e9;
-$clr5: rgb(233, 233, 233);
+$clr2: rgb(48, 71, 94); // main color - dark blue  
+$clr3: rgb(250, 127, 114); // color of sliders, second main color
+$clr4: #e9e9e9; // third color 
+$clr5: rgba(204, 204, 204, 0.822);
+// $clr6: rgb(233, 233, 233); // color for bold in the web, like nav in the user profile 
 // LAYOUT BREAKPOINTS
 
 $break-narrow: 500px;
