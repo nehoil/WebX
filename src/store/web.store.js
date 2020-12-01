@@ -95,12 +95,14 @@ export const webStore = {
             return template;
         },
         async loadSite({ context }, { id }) {
+            // console.log('called load site from store with id:', id);
             const site = await templateService.getTemplateByIdAsync(id);
             try {
-              context.commit({ type: 'setSite', site })
+                console.log('site', site);
+                context.commit({ type: 'setSite', site })
             } catch {
-              console.log('cannot find site');
-            }            
+                console.log('cannot find site from store');
+            }
             return site;
         }
     }
