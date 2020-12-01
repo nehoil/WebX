@@ -22,6 +22,7 @@
 import workSpace from '@/cmps/workspace.cmp';
 import controller from '@/cmps/controller.cmp';
 import { eventBus } from '@/services/eventbus.service.js';
+import { templateService } from '@/services/template.service.js';
 
 export default {
   name: 'editor',
@@ -63,39 +64,58 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
-    saveTemplate() {
+    async saveTemplate() {
       const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      this.$store.dispatch({
+      const { _id, username, userPicture } = this.$store.getters.user
+      const createdBy = {
+        _id,
+        username,
+        userPicture
+      };
+      templateToSave.createdBy = createdBy;
+      const savedTemplte = await this.$store.dispatch({
         type: 'saveTemplate',
         templateToSave,
-      })      
+      });
+      try {
+        this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
+      } catch (err) {
+        console.log('cannot save template. err on editor', err);
+      }
     },
     publishTemplate() {
       const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      this.$store.dispatch({
-        type: 'publishTemplate',
-        templateToSave,
-      }).then((template)=>{
-        console.log('url to heroku sub domain\\'+template._id)})
+      this.$store
+        .dispatch({
+          type: 'publishTemplate',
+          templateToSave,
+        })
+        .then((template) => {
+          console.log('url to heroku sub domain\\' + template._id);
+        });
     },
     async loadSite(id) {
       this.loading = true;
       var site;
       if (id.includes('sys')) {
-        // site = templateService.getTemplateById(id);
+        site = templateService.getTemplateById(id);
+        const siteCopy = JSON.parse(JSON.stringify(site));
+        delete siteCopy._id;
+        this.siteToEdit = siteCopy;
+        this.loading = false;
+        return;
       }
       site = await this.$store.dispatch({ type: 'loadSite', id });
       try {
-        // console.log('load site from editor', site);
         this.siteToEdit = JSON.parse(JSON.stringify(site));
         this.loading = false;
       } catch {
         console.log('cannot find site');
       }
     },
-    showTemplateUrl(template){
-      this.templateUrl = `\\heroku.subdomain.com\\${template.id}`
-    }
+    showTemplateUrl(template) {
+      this.templateUrl = `\\heroku.subdomain.com\\${template.id}`;
+    },
   },
   computed: {
     cmps() {

@@ -2,8 +2,9 @@
   <section class="template-preview-container">
     <div class="template-preview-header">
       Our Templates. Select a template or create a site from scratch.
-      <button class="create-button">Create New Site</button>
+      <button class="create-button" @click="goToEditor">Create New Site</button>
     </div>
+
     <div class="template-previews-list">
       <div
         class="template-preview"
@@ -70,7 +71,9 @@ export default {
   methods: {
     chooseTemplate(template) {
       this.$store.dispatch({ type: 'changeTempalte', template });
-      // this.$router.push('/editor');
+    },
+    goToEditor() {
+      this.$router.push('/editor');
     },
   },
 };

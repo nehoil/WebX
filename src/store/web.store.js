@@ -75,7 +75,7 @@ export const webStore = {
             utilService.storeToStorage('draft_db', site)
         },
         setSite(state, { site }) {
-            console.log('site', site);
+            console.log('got site from server', site);
             state.siteToEdit = site
         },
         setEditMode(state, { isEditOn }) {
@@ -84,7 +84,7 @@ export const webStore = {
         },
         setShowMenu(state, { isShowMenu }) {
             state.isShowMenu = isShowMenu
-        }
+        },
     },
     actions: {
         changeTempalte({ commit }, { template }) {
@@ -92,20 +92,30 @@ export const webStore = {
             commit({ type: 'updateSite', site })
         },
         async saveTemplate({ commit }, { templateToSave }) {
-            const template = await webService.saveTemplate(templateToSave)
-            commit({ type: 'addTemplate', template })
+            const template = await webService.saveWeb(templateToSave)
+            try {
+                console.log('success!, site saved, site:', template);
+                commit({ type: 'setSite', site: template })
+                return template
+            } catch {
+                console.log('cannot save template');
+            }
         },
         async publishTemplate({ commit }, { templateToSave }) {
-            const template = await webService.saveTemplate(templateToSave)
-            commit({ type: 'addTemplate', template })
-            this.templateUrl = `heroku.subdomain.com/${template.id}`
-            return template;
+            const template = await webService.saveWeb(templateToSave)
+            try {
+                commit({ type: 'addTemplate', template })
+                this.templateUrl = `heroku.subdomain.com/${template.id}`
+                return template;
+            } catch {
+                console.log('cannot publish template');
+            }
         },
         async loadSite({ context }, { id }) {
             // console.log('called load site from store with id:', id);
-            const site = await templateService.getTemplateByIdAsync(id);
+            const site = await webService.getById(id);
             try {
-                console.log('site', site);
+                // console.log('site', site);
                 context.commit({ type: 'setSite', site })
             } catch {
                 console.log('cannot find site from store');

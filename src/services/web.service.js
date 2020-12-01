@@ -1,17 +1,31 @@
 import HttpService from './HttpService.js'
-import { utilService } from '@/services/util-service.js'
+// import { utilService } from '@/services/util-service.js'
 
 
 export const webService = {
-    saveTemplate
+    saveWeb,
+    removeWeb,
+    getById,
+    getByUserId
 }
 
 
-function saveTemplate(template) {
-    if (template._id) {
-        return HttpService.put(`template/${template._id}`, template)
+function saveWeb(web) {
+    if (web._id) {
+        return HttpService.put(`web/${web._id}`, web)
     } else {
-        template._id = utilService.makeId(11)
-        return HttpService.post(`template`, template)
+        return HttpService.post('web', web)
     }
+}
+
+function removeWeb(webId) {
+        return HttpService.delete(`web/${webId}`)
+}
+
+function getById(webId) {
+        return HttpService.get(`web/${webId}`)
+}
+
+function getByUserId(userId) {
+        return HttpService.get(`web/?q=&_id=${userId}`)
 }

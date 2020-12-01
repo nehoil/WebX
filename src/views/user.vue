@@ -11,11 +11,11 @@
       >
     </div>
     <div class="main-section">
-      <h1>Welcome back, {{ user }}</h1>
+      <h1>Welcome back, {{ user.username }}</h1>
       <h2 class="main-section-title">Your Websites:</h2>
       <div class="flex space center">
         <span v-for="website in websites" :key="website._id">
-          <img :src="website.previewImage" alt="" />
+          <img :src="website.previewImg" alt="" />
         </span>
       </div>
     </div>
@@ -25,18 +25,23 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      // websites: null
+    };
   },
   methods: {},
   computed: {
     user() {
-      return this.$store.getters.loggedinUser;
+      return this.$store.getters.user;
     },
     websites() {
-      return this.$store.getters.templatesOfUser;
+      return this.$store.getters.userWebs;
     },
   },
-  created() {},
+  created() {
+    this.$store.dispatch('loadUserWebs')
+    console.log(this.$store.getters.userWebs);
+  },
 };
 </script>
 

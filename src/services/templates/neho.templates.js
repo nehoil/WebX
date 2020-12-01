@@ -1,6 +1,6 @@
 export const nehoTemplates = [
     {
-        _id: 'sy64wews',
+        _id: 'sys64wews',
         name: 'Musicily',
         previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1606817501/screencapture-localhost-8081-2020-11-29-13-55-25_2_jk530x.jpg',
         createdBy: {

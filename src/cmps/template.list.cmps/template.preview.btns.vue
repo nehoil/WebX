@@ -3,7 +3,10 @@
 
     <div class="template-preview-header">
       Our Templates. Select a template or create a site from scratch.
-      <button>Create New Site</button>
+      <button @click="goToEditor">
+        Create New Site
+
+      </button>
     </div>
     <div class="template-previews-list">
       <div
@@ -38,6 +41,11 @@ export default {
     return {
       isShowBtns: false,
     };
+  },
+  methods: {
+    goToEditor(){
+     this.$router.push('/editor')
+    }
   },
   name: 'template-preview',
   components: {},
