@@ -15,7 +15,10 @@
       <el-form-item>
         <el-button type="primary" @click="submitLogin">Login</el-button>
         <el-button @click="cancel">Cancel</el-button>
-        <p>Not a member yet? <a @click="toggleSignUp" class="signup-a">Sign up!</a></p>
+        <p>
+          Not a member yet?
+          <a @click="toggleSignUp" class="signup-a">Sign up!</a>
+        </p>
       </el-form-item>
     </el-form>
 
@@ -50,19 +53,19 @@ export default {
     async submitLogin() {
       const cred = this.loginCred;
       if (!cred.username || !cred.password)
-        return (this.msg = "Please enter user/password");
-      await this.$store.dispatch({ type: "login", userCred: cred });
+        return (this.msg = 'Please enter user/password');
+      await this.$store.dispatch({ type: 'login', userCred: cred });
       this.loginCred = {};
-      this.$emit("showLogin");
+      this.$emit('showLogin');
     },
     async submitSignup() {
       const cred = this.signupCred;
       if (!cred.email || !cred.password || !cred.username)
-        return (this.msg = "Please fill up the form");
-      await this.$store.dispatch({ type: "signup", userCred: cred });
+        return (this.msg = 'Please fill up the form');
+      await this.$store.dispatch({ type: 'signup', userCred: cred });
     },
     cancel() {
-      this.$emit("showLogin");
+      this.$emit('showLogin');
     },
     toggleSignUp() {
       this.isSignUp = !this.isSignUp;

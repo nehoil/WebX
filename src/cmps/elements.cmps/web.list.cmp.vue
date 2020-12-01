@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
+import { eventBus } from '@/services/eventbus.service.js';
 
 export default {
   props: {
     cmp: Object,
   },
-  name: "web-list",
+  name: 'web-list',
   components: {},
   data() {
     return {};
@@ -33,12 +33,12 @@ export default {
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     setEditItem() {
-      eventBus.$emit("openEditor", this.cmp);
+      eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit("setItem", this.cmp);
+        eventBus.$emit('setItem', this.cmp);
       });
     },
   },

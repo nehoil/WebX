@@ -8,6 +8,7 @@
     }
     .search-vid-preview {
         cursor: pointer;
+        transition: all .3s ease;
         &:hover {
             img {
                 filter: brightness(1.1);

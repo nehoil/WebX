@@ -31,11 +31,11 @@
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
-import loginCmp from "@/cmps/login.cmp";
+import { eventBus } from '@/services/eventbus.service.js';
+import loginCmp from '@/cmps/login.cmp';
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
     loginCmp,
   },
@@ -60,7 +60,7 @@ export default {
     // }
   },
   created() {
-    eventBus.$on("change-edit-mode", () => {
+    eventBus.$on('change-edit-mode', () => {
       this.isShowHeader = !this.isShowHeader;
       this.$forceUpdate();
     });
@@ -73,7 +73,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  // text-align: center;
   color: #2c3e50;
 }
 </style>

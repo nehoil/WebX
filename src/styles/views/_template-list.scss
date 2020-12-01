@@ -57,18 +57,19 @@
     border-radius: 21px;
     text-align: center;
     color: #fff;
-    background: #116dff;
+    background: $clr3;
     white-space: nowrap;
     text-decoration: none;
     margin-left: 1rem;
     margin: 5px;
     &:hover {
-      background: #116cffd0;
+      background: lighten($clr3, 5%);
     }
   }
 }
 
-    .create-button{            
+    .create-button{       
+      letter-spacing: 1px;     
     border: none;
     display: inline-block;
     padding: 0 rem(27px);
@@ -77,11 +78,14 @@
     border-radius: 21px;
     text-align: center;
     color: #fff;
-    background-color: #1971ff !important;
+    background-color: $clr3;
     white-space: nowrap;
     text-decoration: none;
     margin-left: 1rem;
     margin: 5px;
+    &:hover {
+      background: lighten($clr3, 5%);
+    }
 
           }
     
