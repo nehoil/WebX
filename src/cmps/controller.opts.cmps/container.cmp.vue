@@ -50,6 +50,7 @@
           ></el-input> -->
           <el-autocomplete
             v-model="term"
+            class="plr10"
             v-if="isToShowSearch"
             :fetch-suggestions="querySearch"
             placeholder="Search Here"
@@ -69,7 +70,7 @@
             <img :src="image.urls.thumb" />
           </div>
         </div>
-        <div v-if="getIsImage">
+        <div v-if="getIsImage" class="plr10">
           <el-checkbox v-model="image" @change="removeImage"
             >Remove Background Image</el-checkbox
           >
@@ -80,12 +81,12 @@
 </template>
 
 <script>
-import selectColor from "./select-color.cmp";
-import { unsplashService } from "../../services/unsplash.service.js";
-import { uploadImg } from "../../services/img.upload.service.js";
-import { eventBus } from "../../services/eventbus.service.js";
+import selectColor from './select-color.cmp';
+import { unsplashService } from '../../services/unsplash.service.js';
+import { uploadImg } from '../../services/img.upload.service.js';
+import { eventBus } from '../../services/eventbus.service.js';
 export default {
-  name: "edit-container",
+  name: 'edit-container',
   props: {
     cmp: [Object, Array],
   },
@@ -105,35 +106,35 @@ export default {
   created() {
     if (!this.cmp.style) this.cmp.style = {};
     if (!this.cmp.style.minHeight) {
-      this.cmp.style.minHeight = "unset";
+      this.cmp.style.minHeight = 'unset';
     } else if (
       this.cmp.style.minHeight &&
-      this.cmp.style.minHeight !== "unset"
+      this.cmp.style.minHeight !== 'unset'
     ) {
-      var minHeightNum = this.getNumFromString("minHeight");
+      var minHeightNum = this.getNumFromString('minHeight');
       this.minHeight = +minHeightNum * 16;
     }
   },
   methods: {
     getNumFromString(styleProperty) {
       if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
-        return this.cmp.style[styleProperty].match(/\d+/g).flat().join(".");
+        return this.cmp.style[styleProperty].match(/\d+/g).flat().join('.');
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
     },
     async uploadImg(ev) {
       if (!this.cmp.style.backgroundImage) {
-        this.cmp.style.backgroundImage = "";
+        this.cmp.style.backgroundImage = '';
       }
       let res = uploadImg(ev);
       let img = await res;
       this.cmp.style.backgroundImage = `url(${img.url})`;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     removeImage() {
-      this.cmp.style.backgroundImage = "unset";
-      eventBus.$emit("update-site");
+      this.cmp.style.backgroundImage = 'unset';
+      eventBus.$emit('update-site');
     },
     async searchImages() {
       if (!this.term) return;
@@ -143,27 +144,27 @@ export default {
     setImage(imageUrl) {
       console.log(imageUrl);
       this.cmp.style.backgroundImage = `url(${imageUrl})`;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     setMinHeight(size) {
       this.minHeight = size;
-      this.cmp.style.minHeight = size / 16 + "rem";
-      eventBus.$emit("update-site");
+      this.cmp.style.minHeight = size / 16 + 'rem';
+      eventBus.$emit('update-site');
       this.minHeight = null;
     },
     setBgcColor(bgcColor) {
       this.cmp.style.backgroundColor = bgcColor;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     setPadding(size) {
-      if (!this.cmp.style.padding) this.cmp.style.padding = "unset";
+      if (!this.cmp.style.padding) this.cmp.style.padding = 'unset';
       this.padding = size;
-      this.cmp.style.padding = size / 16 + "rem";
-      eventBus.$emit("update-site");
+      this.cmp.style.padding = size / 16 + 'rem';
+      eventBus.$emit('update-site');
       this.padding = null;
     },
     querySearch(queryString, cb) {
-      cb([{ value: "Search For " + queryString }]);
+      cb([{ value: 'Search For ' + queryString }]);
     },
     handleSelect() {
       this.searchImages();
@@ -172,7 +173,7 @@ export default {
   computed: {
     getIsImage() {
       if (
-        this.cmp.style.backgroundImage === "unset" ||
+        this.cmp.style.backgroundImage === 'unset' ||
         !this.cmp.style.backgroundImage
       )
         return false;

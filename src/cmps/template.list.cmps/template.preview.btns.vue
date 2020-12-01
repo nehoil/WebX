@@ -1,7 +1,6 @@
 <template>
   <section class="template-preview-container">
-
-    <div class="template-preview-header">
+    <!-- <div class="template-preview-header">
       Our Templates. Select a template or create a site from scratch.
       <button @click="goToEditor">
         Create New Site
@@ -19,14 +18,14 @@
       >
         <div class="template-img">
           <img :src="template.previewImg" alt="" srcset="" />
-        </div>
-        <div class="template-name">{{ template.name }}</div>
-        <div class="template-preview-btns" v-if="isShowBtns">
-          <router-link :to="'/' + template._id"> Preview </router-link>
-          <router-link :to="'/editor/' + template._id"> Edit </router-link>
-        </div>
-      </div>
+        </div> -->
+    <div class="template-name">{{ template.name }}</div>
+    <div class="template-preview-btns" v-if="isToShow">
+      <router-link :to="'/' + template._id"> Preview </router-link>
+      <router-link :to="'/editor/' + template._id"> Edit </router-link>
+      <!-- </div> -->
     </div>
+    <!-- </div>  -->
   </section>
 </template>
 
@@ -35,12 +34,14 @@
 
 export default {
   props: {
-    templates: Array,
+    template: Object,
+    isToShow: Boolean,
   },
   data() {
-    return {
-      isShowBtns: false,
-    };
+    return {};
+  },
+  created() {
+    console.log(this.template);
   },
   methods: {
     goToEditor(){
@@ -50,10 +51,10 @@ export default {
   name: 'template-preview',
   components: {},
   methods: {
-    chooseTemplate(template) {
-      this.$store.dispatch({ type: 'changeTempalte', template });
-      // this.$router.push('/editor');
-    },
+    // chooseTemplate(template) {
+    // this.$store.dispatch({ type: 'changeTempalte', template });
+    // this.$router.push('/editor');
+    // },
   },
 };
 </script>

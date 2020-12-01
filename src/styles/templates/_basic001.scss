@@ -1,3 +1,30 @@
+.web-txt-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-txt-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.web-txt-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.web-img-1>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .web-header-1 {
     & img {
         max-width: 400px;
@@ -28,7 +55,6 @@
 
 .web-sec-cards-1 {
     .web-card-1 {
-        max-width: 400px;
         height: 100%;
         margin: 10px;
         img {
@@ -47,6 +73,7 @@
     width: 100%;
     img {
         width: 100%;
+        max-height: 300px;
     }
     a {
         cursor: pointer;
@@ -111,7 +138,6 @@
     img {
         margin-top: 8px !important;
         vertical-align: middle;
-        width: 100% !important;
     }
 }
 
