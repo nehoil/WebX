@@ -38,14 +38,33 @@ export default {
     editSite() {
       this.$router.push('/editor');
     },
-    async loadSite(id){
-        const site = await templateService.getTemplateByIdAsync(id)
-        try {
-          this.previweSite = site;
-        }catch {
-          console.log('cannot find site for preview');
-        }
-    }
+    // async loadSite(id){
+    //     const site = await templateService.getTemplateByIdAsync(id)
+    //     try {
+    //       this.previweSite = site;
+    //     }catch {
+    //       console.log('cannot find site for preview');
+    //     }
+    // }
+      async loadSite(id) {
+      this.loading = true;
+      var site;
+      if (id.includes('sys')) {
+        site = templateService.getTemplateById(id);
+        const siteCopy = JSON.parse(JSON.stringify(site));
+        delete siteCopy._id;
+        this.previweSite = siteCopy;
+        this.loading = false;
+        return;
+      }
+      site = await this.$store.dispatch({ type: 'loadSite', id });
+      try {
+        this.previweSite = JSON.parse(JSON.stringify(site));
+        this.loading = false;
+      } catch {
+        console.log('cannot find site');
+      }
+    },
   },
   computed: {},
   created() {

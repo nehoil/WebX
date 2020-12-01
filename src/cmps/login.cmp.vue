@@ -6,8 +6,8 @@
       label-width="120px"
       v-if="!isSignUp"
     >
-      <el-form-item label="Name">
-        <el-input v-model="loginCred.username"></el-input>
+      <el-form-item label="Email">
+        <el-input v-model="loginCred.email"></el-input>
       </el-form-item>
       <el-form-item label="Password">
         <el-input v-model="loginCred.password" show-password></el-input>
@@ -52,11 +52,15 @@ export default {
   methods: {
     async submitLogin() {
       const cred = this.loginCred;
-      if (!cred.username || !cred.password)
-        return (this.msg = 'Please enter user/password');
-      await this.$store.dispatch({ type: 'login', userCred: cred });
-      this.loginCred = {};
-      this.$emit('showLogin');
+      if (!cred.email || !cred.password) return (this.msg = 'Please enter user/password');
+      try {
+        await this.$store.dispatch({ type: 'login', userCred: cred });
+        this.loginCred = {};
+        this.$emit('showLogin');
+        console.log('login successfully!');
+      } catch(err) {
+        console.log('login failed, err:', err);
+      }
     },
     async submitSignup() {
       const cred = this.signupCred;

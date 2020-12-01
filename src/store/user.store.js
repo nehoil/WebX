@@ -1,32 +1,59 @@
-import { templateService } from '@/services/template.service.js'
-import userService from '@/services/user.service.js'
-
+// import { templateService } from '@/services/template.service.js'
+import {userService} from '@/services/user.service.js'
+import {webService} from '@/services/web.service.js'
+var localLoggedinUser = null;
+if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user)
 
 export const userStore = {
     state: {
-        loggedinUser: null,
-        templates: templateService.getTemplates()
+        loggedinUser: localLoggedinUser,
+        userWebs: null
     },
     getters: {
-        templatesOfUser(state) {
-            return state.templates.filter(site => site.createdBy.username === this.loggedinUser)
+        userWebs(state) {
+            return  state.userWebs
+        },
+        user(state) {
+            return state.loggedinUser
         }
     },
     mutations: {
         setUser(state, { user }) {
             state.loggedinUser = user;
         },
+        setUserWebs(state, { userWebs }) {
+            state.userWebs = userWebs;
+        },
     },
     actions: {
         async login(context, { userCred }) {
             const user = await userService.login(userCred);
-            context.commit({ type: 'setUser', user })
-            return user;
+            try {
+                context.commit({ type: 'setUser', user })
+                return user;
+            } catch (err) {
+                console.log('cannot login, err:', err);
+            }
+        },
+        async loadUserWebs(context) {
+            console.log('context', context);
+            const userWebs = await webService.getByUserId(context.getters.user._id);
+            try {
+                context.commit({ type: 'setUserWebs', userWebs })
+                return userWebs;
+            } catch (err) {
+                console.log('cannot login, err:', err);
+            }
         },
         async signup(context, { userCred }) {
             const user = await userService.signup(userCred)
-            context.commit({ type: 'setUser', user })
-            return user;
+            try {
+                context.commit({ type: 'setUser', user })
+                return user;
+
+            } catch (err) {
+                console.log('cannot signup, err:', err);
+            }
 
         },
     }
