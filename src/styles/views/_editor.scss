@@ -12,7 +12,7 @@ div.editor {
     height: 91.54vh;
     // margin-bottom: 2rem;
     .workspace {
-        @include scrollBar(.5rem, lighten($clr3, 14%));
+        @include scrollBar(.5rem, lighten($clr3, 35%));
         overflow-y: scroll;
         padding: 5px;
         width: 85%;
@@ -43,8 +43,7 @@ div.editor {
         }
     }
     .controller {
-        @include scrollBar(.5rem,
-        lighten($clr3, 35%));
+        @include scrollBar(.5rem, lighten($clr3, 35%));
         // background-color: rgba(241, 241, 241, 0.5);
         overflow-y: scroll;
         overflow-x: hidden;

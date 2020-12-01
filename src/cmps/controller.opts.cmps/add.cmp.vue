@@ -8,55 +8,64 @@
 
 <template>
   <section class="controller-add">
-    <el-collapse accordion v-model="number">
-      <el-collapse-item name="1">
+    <el-collapse accordion>
+      <!-- <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
           <span>Whole Components</span>
-        </template>
-        <div class="controller-add">
-          <ul
-            class="pointer add-list"
-            v-for="cmp in cmpsAccordion"
-            :key="cmp.value"
-          >
-            <div @click="setCmpsToShow(cmp.value)">
-              <!-- <el-collapse accordion> -->
-              <el-collapse-item name="numForCmpsAccordion++">
-                <template slot="title">
-                  <li>{{ cmp.title }}</li>
-                </template>
-                <div v-for="cmp in cmps" :key="cmp.id">
-                  <ul>
-                    <li class="list-group-item add-options-btn">
-                      {{ cmp.id }}
-                    </li>
-                  </ul>
-                </div>
-              </el-collapse-item>
-            </div>
-          </ul>
-        </div>
-      </el-collapse-item>
-      <section class="cmpsExamples" v-if="cmps">
-        <draggable
-          class="dragArea list-group"
-          :group="{ name: 'workspace-cmps', pull: 'clone', put: false }"
-          :list="cmps"
-          :sort="false"
-          @start="startDrag"
-          @end="stopDrag"
+        </template> -->
+      <div class="controller-add">
+        <ul
+          class="pointer add-list"
+          v-for="cmp in cmpsAccordion"
+          :key="cmp.value"
         >
-          <div v-for="cmp in cmps" :key="cmp.id">
-            <ul class="put-icon">
-              <li class="list-group-item add-options-btn">
-                {{ cmp.id }}
-                <img class="drag-image" src="../../assets/drag.png" alt="" />
-              </li>
-            </ul>
+          <div @click="setCmpsToShow(cmp.value)">
+            <!-- <el-collapse accordion> -->
+            <el-collapse-item :name="cmp.value">
+              <template slot="title">
+                <li>{{ cmp.title }}</li>
+              </template>
+              <!-- <div v-for="cmp in cmps" :key="cmp.id"> -->
+              <section class="cmpsExamples" v-if="cmps">
+                <draggable
+                  class="dragArea list-group"
+                  :group="{
+                    name: 'workspace-cmps',
+                    pull: 'clone',
+                    put: false,
+                  }"
+                  :list="cmps"
+                  :sort="false"
+                  @start="startDrag"
+                  @end="stopDrag"
+                >
+                  <div v-for="cmp in cmps" :key="cmp.id">
+                    <ul class="put-icon">
+                      <li class="list-group-item add-options-btn">
+                        {{ cmp.id }}
+                        <img
+                          class="drag-image"
+                          src="../../assets/drag.png"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </draggable>
+              </section>
+              <!-- <ul>
+                  <li class="list-group-item add-options-btn">
+                    {{ cmp.id }}
+                  </li>
+                </ul> -->
+              <!-- </div> -->
+            </el-collapse-item>
           </div>
-        </draggable>
-      </section>
+        </ul>
+      </div>
+      <!-- </el-collapse-item> -->
+
       <!-- </el-collapse-item> -->
     </el-collapse>
   </section>
