@@ -44,7 +44,6 @@ export default {
     }
   },
   created() {
-    console.log(this.siteLength);
     eventBus.$on("openEditor", () => {
       this.addOrEdit = "edit";
     });

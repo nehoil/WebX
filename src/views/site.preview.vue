@@ -43,7 +43,7 @@ export default {
         try {
           this.previweSite = site;
         }catch {
-          console.log('cannot find site');
+          console.log('cannot find site for preview');
         }
     }
   },

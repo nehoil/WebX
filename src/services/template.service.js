@@ -1141,7 +1141,7 @@ const gTemplates = [
         ]
     },
     {
-        _id: utilService.makeId(10),
+        _id: "574575474543",
         name: "Vita",
         previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606817513/screencapture-localhost-8081-2020-11-29-13-55-25_1_zjvftz.jpg",
         createdBy: {
@@ -2114,7 +2114,7 @@ const gTemplates = [
         ]
     },
     {
-        _id: utilService.makeId(10),
+        _id: "576845956786r5",
         name: "Chateau du brunch",
         previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606817524/screencapture-localhost-8081-2020-11-29-13-55-25_bauane.jpg",
         createdBy: {
@@ -6441,7 +6441,6 @@ function getTemplateById(id) {
     return gTemplates.find(template => template.id === id)
 }
 async function getTemplateByIdAsync(id) {
-    console.log('id', id);
     return gTemplates.find(template => template._id === id)
 }
 
