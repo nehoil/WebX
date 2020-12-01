@@ -36,6 +36,7 @@
             white-space: nowrap;
             text-decoration: none;
             margin-left: 1rem;
+            transition: all .3s ease;
             &:hover {
                 background: lighten($clr3, 5%);
 

@@ -19,6 +19,11 @@ const routes = [
     component: editor
   },
   {
+    path: "/editor/:id",
+    name: "editor",
+    component: editor
+  },
+  {
     path: "/templates",
     name: "templates",
     component: templateList

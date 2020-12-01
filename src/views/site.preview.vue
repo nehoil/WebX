@@ -41,7 +41,6 @@ export default {
     async loadSite(id){
         const site = await templateService.getTemplateByIdAsync(id)
         try {
-          console.log('site', site);
           this.previweSite = site;
         }catch {
           console.log('cannot find site');
