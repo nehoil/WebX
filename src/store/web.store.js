@@ -73,6 +73,7 @@ export const webStore = {
             utilService.storeToStorage('draft_db', site)
         },
         setSite(state, { site }) {
+            console.log('site', site);
             state.siteToEdit = site
         },
         setEditMode(state, { isEditOn }) {
@@ -92,6 +93,15 @@ export const webStore = {
             const template = await templateService.addTemplate(templateToAdd)
             context.commit({ type: 'addTemplate', template })
             return template;
+        },
+        async loadSite({ context }, { id }) {
+            const site = await templateService.getTemplateByIdAsync(id);
+            try {
+              context.commit({ type: 'setSite', site })
+            } catch {
+              console.log('cannot find site');
+            }            
+            return site;
         }
     }
 };

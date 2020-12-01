@@ -369,17 +369,20 @@ const gTemplates = [{
                                             content: 'Bulkit comes with a lot of professional UI png mockups designed by Css Ninja. They are part of the thme so you can reuse them in your own prototyping.'
                                         },
                                         style: {
-                                            fontFamily: 'unset',
-                                            fontSize: 'unset',
-                                            fontWeight: 'unset',
-                                            letterSpacing: 'unset',
-                                            padding: '15px',
-                                            backgroundColor: 'unset',
-                                            borderRadius: 'unset',
-                                            minHeight: 'unset',
-                                            height: 'unset',
-                                            backgroundImage: 'unset',
-                                            textShadow: 'unset'
+                                            display: "inline-block",
+                                            fontFamily: "unset",
+                                            fontSize: "1.4rem",
+                                            fontWeight: "unset",
+                                            margin: "unset",
+                                            padding: "unset",
+                                            textTransform: "unset",
+                                            color: "unset",
+                                            backgroundColor: "unset",
+                                            borderShadow: "unset",
+                                            border: "unset",
+                                            borderRadius: "unset",
+                                            width: "40ch",
+                                            height: "unset",
                                         },
                                         _rootId: '__vue_devtool_undefined__'
                                     }
@@ -447,7 +450,6 @@ const gTemplates = [{
                                             borderShadow: 'unset',
                                             border: 'unset',
                                             borderRadius: 'unset',
-                                            width: 'unset',
                                             height: 'unset'
                                         },
                                         _rootId: '__vue_devtool_undefined__'
@@ -467,7 +469,7 @@ const gTemplates = [{
                                             padding: '15px',
                                             backgroundColor: 'unset',
                                             borderRadius: 'unset',
-                                            width: '100%',
+                                            width: "20ch",
                                             minHeight: 'unset',
                                             height: 'unset',
                                             backgroundImage: 'unset',
@@ -485,6 +487,7 @@ const gTemplates = [{
                                         style: {
                                             fontFamily: 'unset',
                                             fontSize: 'unset',
+                                            width: "20ch",
                                             fontWeight: 'unset',
                                             letterSpacing: 'unset',
                                             padding: '15px',
@@ -6642,8 +6645,10 @@ function getTemplateById(id) {
     return gTemplates.find(template => template.id === id)
 }
 async function getTemplateByIdAsync(id) {
-    console.log('id', id);
-    return gTemplates.find(template => template._id === id)
+    const template = gTemplates.find(template => template._id === id)
+    console.log(template);
+    return template
+    
 }
 
 function getCmpById(id) {

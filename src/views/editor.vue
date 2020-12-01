@@ -1,24 +1,23 @@
 <template>
   <div class="editor flex">
-    <controller
+    <div class="loading-editor" v-if="loading">Loading...</div>
+    <controller v-if="siteToEdit"
       :itemToEdit="itemToEdit"
       :siteLength="siteToEdit.cmps.length"
-      v-if="showEditor"
       @focus.native="test"
       @addTemplate="addTemplate"
     />
-    <work-space :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId" />
+    <work-space v-if="siteToEdit" :cmps="siteToEdit.cmps" @updateCmpId="updateCmpId" />
   </div>
 </template>
 
 <script>
-import json from "@/data/wap.json";
-import workSpace from "@/cmps/workspace.cmp";
-import controller from "@/cmps/controller.cmp";
-import { eventBus } from "@/services/eventbus.service.js";
+import workSpace from '@/cmps/workspace.cmp';
+import controller from '@/cmps/controller.cmp';
+import { eventBus } from '@/services/eventbus.service.js';
 
 export default {
-  name: "editor",
+  name: 'editor',
   components: {
     workSpace,
     controller,
@@ -26,14 +25,13 @@ export default {
   data() {
     return {
       siteToEdit: null,
-      waps: json,
-      itemToEdit: "webImg",
-      showEditor: true,
+      itemToEdit: 'webImg',
+      loading: false,
     };
   },
   methods: {
     test() {
-      console.log("here");
+      console.log('here');
     },
     updateCmpId() {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
@@ -43,7 +41,7 @@ export default {
       currRootCmps.forEach((cmp, idx) => {
         if (cmp.id === cmpId) {
           currRootCmps.splice(idx, 1);
-          this.$store.commit({ type: "updateSite", site: this.siteToEdit });
+          this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
           return;
         }
         if (cmp.info.cmps) this.removeCmp(cmp, cmpId, ++deep);
@@ -58,13 +56,23 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
-    addTemplate(){
-       const templateToAdd = JSON.parse(JSON.stringify(this.siteToEdit));       
+    addTemplate() {
+      const templateToAdd = JSON.parse(JSON.stringify(this.siteToEdit));
       this.$store.dispatch({
-        type: "addTemplate",
+        type: 'addTemplate',
         templateToAdd,
       });
-    }
+    },
+    async loadSite(id) {
+      this.loading = true;
+      const site = await this.$store.dispatch({ type: 'loadSite', id });
+      try {
+        this.siteToEdit = JSON.parse(JSON.stringify(site));
+        this.loading = false;
+      } catch {
+        console.log('cannot find site');
+      }
+    },
   },
   computed: {
     cmps() {
@@ -72,23 +80,25 @@ export default {
     },
   },
   created() {
-    this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
-    eventBus.$on("addCmp", () => {
-      // this.$store.commit({ type: 'addCmp', id });
+    const id = this.$route.params.id;
+    if (id) {
+      this.loadSite(id);
+    } else {
+      this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
+    }
+    eventBus.$on('addCmp', () => {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });
-    eventBus.$on("removeCmp", (cmpIds) => {
+    eventBus.$on('removeCmp', (cmpIds) => {
       const { cmpId, _rootId } = cmpIds;
       const cmps = this.siteToEdit.cmps;
       this.searchCmp(cmps, cmpId, _rootId);
-      // this.$store.commit({ type: "removeCmp", id });
-      // this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });
-    eventBus.$on("setCmpsToShow", (cmpType) => {
-      this.$store.commit({ type: "setCmpsToShow", cmpType });
+    eventBus.$on('setCmpsToShow', (cmpType) => {
+      this.$store.commit({ type: 'setCmpsToShow', cmpType });
     });
-    eventBus.$on("update-site", () => {
-      this.$store.commit({ type: "updateSite", site: this.siteToEdit });
+    eventBus.$on('update-site', () => {
+      this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
     });
   },
 };
