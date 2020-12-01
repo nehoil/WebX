@@ -38,12 +38,16 @@
         <!-- </div> -->
         <div class="template-img">
           <img :src="template.previewImg" alt="" srcset="" />
+          <!-- <template-preview-btns
+            :isToShow="isShowBtns"
+            :template="template"
+          ></template-preview-btns> -->
         </div>
-        <div class="template-preview-btns" v-if="isShowBtns">
-          <router-link class="choose" :to="'editor/' + template._id"
+        <div class="template-preview-btns">
+          <router-link class="choose pointer" :to="'editor/' + template._id"
             ><i class="el-icon-right"></i> Choose
           </router-link>
-          <router-link class="preview" :to="'/' + template._id"
+          <router-link class="preview pointer" :to="'/' + template._id"
             ><i class="el-icon-view"></i>
             Preview
           </router-link>
@@ -54,6 +58,8 @@
 </template>
 
 <script>
+// import templatePreviewBtns from './template.preview.btns';
+// import TemplatePreviewBtns from './template.preview.btns.vue';
 // import { eventBus } from "@/services/eventbus.service.js";
 
 export default {
@@ -66,7 +72,10 @@ export default {
     };
   },
   name: 'template-preview',
-  components: {},
+  components: {
+    // templatePreviewBtns,
+    // TemplatePreviewBtns,
+  },
   methods: {
     chooseTemplate(template) {
       this.$store.dispatch({ type: 'changeTempalte', template });

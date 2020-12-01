@@ -43,7 +43,15 @@
                   <div v-for="cmp in cmps" :key="cmp.id">
                     <ul class="put-icon">
                       <li class="list-group-item add-options-btn">
-                        {{ cmp.id }}
+                        <span v-if="!cmp.previewImg">
+                          {{ cmp.id }}
+                        </span>
+                        <span v-else
+                          ><img
+                            class="add-prev-img"
+                            :src="cmp.previewImg"
+                            alt=""
+                        /></span>
                         <img
                           class="drag-image"
                           src="../../assets/drag.png"
