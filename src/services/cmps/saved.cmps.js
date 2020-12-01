@@ -48,7 +48,7 @@ export const savedCmps = [{
                                     fontFamily: "unset",
                                     fontSize: "unset",
                                     fontWeight: "unset",
-                                    margin: "unset",
+                                    margin: "0 50px",
                                     padding: "unset",
                                     textTransform: "unset",
                                     color: "#fff",
