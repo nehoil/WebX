@@ -1,5 +1,5 @@
 <template>
-  <div class="edit-map">
+  <div class="edit-map plr10 flex center space col">
     <p><i class="el-icon-add-location"></i>Add your address</p>
     <div
       v-if="showSuggested && suggestedLocs"
@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import { mapService } from "@/services/map.service.js";
-import { eventBus } from "@/services/eventbus.service.js";
+import { mapService } from '@/services/map.service.js';
+import { eventBus } from '@/services/eventbus.service.js';
 
 export default {
-  name: "edit-map",
+  name: 'edit-map',
   props: {
     cmp: [Object, Array],
   },
@@ -34,7 +34,7 @@ export default {
       suggestedLocs: null,
       showSuggested: false,
       searchRes: [],
-      state: "",
+      state: '',
     };
   },
   methods: {
@@ -44,7 +44,7 @@ export default {
         this.suggestedLocs = res;
         cb([{ value: res.address }]);
       } catch {
-        console.log("error");
+        console.log('error');
       }
     },
     handleSelect() {
@@ -55,7 +55,7 @@ export default {
       this.onEdit();
     },
     onEdit() {
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
   },
   computed: {

@@ -44,6 +44,7 @@
           :fetch-suggestions="querySearch"
           placeholder="Search Here"
           :trigger-on-focus="false"
+          class="link-input plr10"
           @change="searchImages"
           popper-class="search-popper"
           @select="handleSelect"
@@ -102,11 +103,11 @@
 </template>
 
 <script>
-import { unsplashService } from "../../services/unsplash.service.js";
-import { uploadImg } from "../../services/img.upload.service.js";
-import { eventBus } from "../../services/eventbus.service.js";
+import { unsplashService } from '../../services/unsplash.service.js';
+import { uploadImg } from '../../services/img.upload.service.js';
+import { eventBus } from '../../services/eventbus.service.js';
 export default {
-  name: "edit-img",
+  name: 'edit-img',
   props: {
     cmp: [Object, Array],
   },
@@ -131,19 +132,19 @@ export default {
       : 0;
     var widthNum;
     var borderRadiusNum;
-    if (!this.cmp.style.width || this.cmp.style.width === "unset") {
+    if (!this.cmp.style.width || this.cmp.style.width === 'unset') {
       this.width = 0;
-    } else if (this.cmp.style.width && this.cmp.style.width !== "unset") {
-      widthNum = this.getNumFromString("width");
+    } else if (this.cmp.style.width && this.cmp.style.width !== 'unset') {
+      widthNum = this.getNumFromString('width');
       this.width = +widthNum;
     }
     if (!this.cmp.style.borderRadius) {
-      this.cmp.style.borderRadius = "unset";
+      this.cmp.style.borderRadius = 'unset';
     } else if (
       this.cmp.style.borderRadius &&
-      this.cmp.style.borderRadius !== "unset"
+      this.cmp.style.borderRadius !== 'unset'
     ) {
-      borderRadiusNum = this.getNumFromString("borderRadius");
+      borderRadiusNum = this.getNumFromString('borderRadius');
       this.borderRadius = +borderRadiusNum;
     }
   },
@@ -152,8 +153,8 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id && this.cmp) {
-          this.width = +this.getNumFromString("width");
-          this.borderRadius = +this.getNumFromString("borderRadius");
+          this.width = +this.getNumFromString('width');
+          this.borderRadius = +this.getNumFromString('borderRadius');
         }
       },
     },
@@ -161,7 +162,7 @@ export default {
   methods: {
     getNumFromString(styleProperty) {
       if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
-        return this.cmp.style[styleProperty].match(/\d+/g).flat().join(".");
+        return this.cmp.style[styleProperty].match(/\d+/g).flat().join('.');
       } else {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join();
       }
@@ -171,14 +172,14 @@ export default {
       let res = uploadImg(ev);
       let img = await res;
       this.cmp.info.src = img.url;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
       this.isLoading = false;
     },
     querySearch(queryString, cb) {
-      cb([{ value: "Search For " + queryString }]);
+      cb([{ value: 'Search For ' + queryString }]);
     },
     async searchImages() {
-      console.log("arrived");
+      console.log('arrived');
       if (!this.term) return;
       const res = await unsplashService.getImages(this.term);
       console.log(res);
@@ -189,30 +190,30 @@ export default {
     },
     changeLinkTo(link) {
       this.cmp.info.src = link;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     toggleBorder() {
-      if (this.cmp.style.border === "unset")
-        this.cmp.style.border = "1px solid gray";
-      else this.cmp.style.border = "unset";
-      eventBus.$emit("update-site");
+      if (this.cmp.style.border === 'unset')
+        this.cmp.style.border = '1px solid gray';
+      else this.cmp.style.border = 'unset';
+      eventBus.$emit('update-site');
     },
     setBorderRadius(percent) {
-      this.cmp.style.borderRadius = percent + "%";
-      eventBus.$emit("update-site");
-      eventBus.$emit("change-img");
+      this.cmp.style.borderRadius = percent + '%';
+      eventBus.$emit('update-site');
+      eventBus.$emit('change-img');
 
       this.borderRadius = null;
     },
     setImage(imageUrl) {
       this.cmp.info.src = imageUrl;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     setWidth(percent) {
       this.input++;
       if (this.input <= 1) return;
-      this.cmp.style.width = percent + "%";
-      eventBus.$emit("change-img");
+      this.cmp.style.width = percent + '%';
+      eventBus.$emit('change-img');
       this.width = percent;
     },
   },
