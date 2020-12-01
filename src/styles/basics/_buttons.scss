@@ -4,7 +4,6 @@ button {
     border-radius: 3px;
     cursor: pointer;
     outline: none;
-<<<<<<< HEAD
     &:hover {
         background-color: rgba(122, 235, 255, 0.13);
     }
@@ -12,10 +11,8 @@ button {
 
 a {
     cursor: pointer;
-=======
     transition: all .3s ease;
     // &:hover {
         // background-color: rgba(122, 235, 255, 0.13);
     // }
->>>>>>> e8028cfed9aa3279468d91f4693d5394c490a455
 }
