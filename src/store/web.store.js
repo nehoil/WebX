@@ -14,6 +14,7 @@ var localDraftSite = {
 if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
 
 import { templateService } from '@/services/template.service.js'
+import { webService } from '@/services/web.service.js'
 
 export const webStore = {
     state: {
@@ -21,7 +22,8 @@ export const webStore = {
         siteToEdit: localDraftSite,
         cmpsToShow: null,
         isShowHeader: true,
-        templates: templateService.getTemplates()
+        templates: templateService.getTemplates(),
+        templateUrl: null,
     },
     getters: {
         cmps(state) {
@@ -89,9 +91,14 @@ export const webStore = {
             const site = template
             commit({ type: 'updateSite', site })
         },
-        async addTemplate({ context }, { templateToAdd }) {
-            const template = await templateService.addTemplate(templateToAdd)
-            context.commit({ type: 'addTemplate', template })
+        async saveTemplate({ commit }, { templateToSave }) {
+            const template = await webService.saveTemplate(templateToSave)
+            commit({ type: 'addTemplate', template })
+        },
+        async publishTemplate({ commit }, { templateToSave }) {
+            const template = await webService.saveTemplate(templateToSave)
+            commit({ type: 'addTemplate', template })
+            this.templateUrl = `heroku.subdomain.com/${template.id}`
             return template;
         },
         async loadSite({ context }, { id }) {
@@ -104,6 +111,7 @@ export const webStore = {
                 console.log('cannot find site from store');
             }
             return site;
-        }
+        },
+
     }
 };

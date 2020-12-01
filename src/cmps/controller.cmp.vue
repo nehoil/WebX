@@ -8,17 +8,17 @@
       <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     </div>
     <footer class="flex space">
-      <a>undo</a> | <a @click="addTemplate">save</a> | <a>publish</a>
+      <a>undo</a> | <a @click="saveTemplate">save</a> | <a @click="publishTemplate">publish</a>
     </footer>
   </section>
 </template>
 <script>
-import add from "@/cmps/controller.opts.cmps/add.cmp";
-import edit from "@/cmps/controller.opts.cmps/edit.cmp";
-import { eventBus } from "@/services/eventbus.service.js";
+import add from '@/cmps/controller.opts.cmps/add.cmp';
+import edit from '@/cmps/controller.opts.cmps/edit.cmp';
+import { eventBus } from '@/services/eventbus.service.js';
 
 export default {
-  name: "controller",
+  name: 'controller',
   components: {
     add,
     edit,
@@ -29,19 +29,23 @@ export default {
   },
   data() {
     return {
-      addOrEdit: "add",
+      addOrEdit: 'add',
       cmpToEdit: null,
     };
   },
   methods: {
     getIsAdd(type) {
       return {
-        "active-tab": this.addOrEdit !== type,
+        'active-tab': this.addOrEdit !== type,
       };
     },
-    addTemplate(){
-      this.$emit('addTemplate')
+    saveTemplate() {
+      this.$emit('saveTemplate')
+    },
+    publishTemplate() {
+      this.$emit('publishTemplate')
     }
+    
   },
   created() {
     eventBus.$on("openEditor", () => {
@@ -52,7 +56,7 @@ export default {
     siteLength: {
       deep: true,
       handler() {
-        if (this.siteLength === 0) this.addOrEdit = "add";
+        if (this.siteLength === 0) this.addOrEdit = 'add';
       },
     },
   },

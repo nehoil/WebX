@@ -6,7 +6,9 @@
       :itemToEdit="itemToEdit"
       :siteLength="siteToEdit.cmps.length"
       @focus.native="test"
-      @addTemplate="addTemplate"
+      @saveTemplate="saveTemplate"
+      @publishTemplate="publishTemplate"
+      @showTemplateUrl="showTemplateUrl"
     />
     <work-space
       v-if="siteToEdit"
@@ -61,12 +63,20 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
-    addTemplate() {
-      const templateToAdd = JSON.parse(JSON.stringify(this.siteToEdit));
+    saveTemplate() {
+      const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
       this.$store.dispatch({
-        type: 'addTemplate',
-        templateToAdd,
-      });
+        type: 'saveTemplate',
+        templateToSave,
+      })      
+    },
+    publishTemplate() {
+      const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
+      this.$store.dispatch({
+        type: 'publishTemplate',
+        templateToSave,
+      }).then((template)=>{
+        console.log('url to heroku sub domain\\'+template._id)})
     },
     async loadSite(id) {
       this.loading = true;
@@ -83,6 +93,9 @@ export default {
         console.log('cannot find site');
       }
     },
+    showTemplateUrl(template){
+      this.templateUrl = `\\heroku.subdomain.com\\${template.id}`
+    }
   },
   computed: {
     cmps() {
