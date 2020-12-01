@@ -64,7 +64,9 @@ export default {
       this.removeCmp(rootFather, cmpId);
     },
     saveTemplate() {
+      
       const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
+      console.log('tempp',templateToSave);
       this.$store.dispatch({
         type: 'saveTemplate',
         templateToSave,
