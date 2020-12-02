@@ -14,9 +14,9 @@
           <router-link to="/templates">Templates</router-link> |
           <router-link to="/user">Profile</router-link> |
           <router-link to="/editor">Editor</router-link> |
-          <span @click="showLogin" class="login-btn" v-if="!user">Log In</span>
-          <span v-if="!user">
-            | <router-link to="/">Logout</router-link> |
+          <a @click="showLogin" v-if="!user">Log In</a>
+          <span v-if="user">
+            | <a @click="doLogout">Logout</a> |
             <router-link to="/user">
               Profile <i class="el-icon-user"></i
             ></router-link>
@@ -49,6 +49,10 @@ export default {
     showLogin() {
       this.isShowLogin = !this.isShowLogin;
     },
+    doLogout() {
+      this.$store.dispatch({ type: 'logout' });
+      this.$router.push('/');
+    },
   },
   computed: {
     user() {
@@ -59,6 +63,7 @@ export default {
     eventBus.$on('change-edit-mode', () => {
       this.isShowHeader = !this.isShowHeader;
       this.$forceUpdate();
+      console.log(this.$store.getters.loggedinUser);
     });
   },
 };
