@@ -10,7 +10,7 @@
         <div class="flex center space plr10">
           Set Length
           <el-slider
-            :min="1"
+            :min="0"
             :max="1400"
             v-model="minHeight"
             @input="setMinHeight"
@@ -20,7 +20,7 @@
         <div class="flex center space plr10">
           <p>Add Spacing</p>
           <el-slider
-            :min="1"
+            :min="0"
             :max="100"
             v-model="padding"
             @input="setPadding"
@@ -28,7 +28,7 @@
         </div>
         <label class="pointer">
           <div class="upload-image flex space center">
-            <!-- <img :src="cmp.info.src" /> -->Upload Background
+            Upload Background
             <i class="el-icon-upload2"></i>
             <input type="file" @change="uploadImg" />
           </div>
@@ -41,13 +41,6 @@
             Search Image
             <i class="el-icon-search"></i>
           </p>
-          <!-- <el-input
-            v-if="isToShowSearch"
-            placeholder="What are you looking for?"
-            @keyup.enter="searchImages"
-            @change="searchImages"
-            v-model="term"
-          ></el-input> -->
           <el-autocomplete
             v-model="term"
             class="plr10"
@@ -95,8 +88,8 @@ export default {
   },
   data() {
     return {
-      padding: null,
-      minHeight: null,
+      padding: 0,
+      minHeight: 0,
       image: null,
       term: null,
       isToShowSearch: false,
@@ -105,15 +98,31 @@ export default {
   },
   created() {
     if (!this.cmp.style) this.cmp.style = {};
-    if (!this.cmp.style.minHeight) {
-      this.cmp.style.minHeight = 'unset';
-    } else if (
-      this.cmp.style.minHeight &&
-      this.cmp.style.minHeight !== 'unset'
-    ) {
+    if (this.cmp.style.minHeight) {
       var minHeightNum = this.getNumFromString('minHeight');
       this.minHeight = +minHeightNum * 16;
     }
+    if (this.cmp.style.padding) {
+      var paddingNum = this.getNumFromString('padding');
+      this.padding = +paddingNum * 16;
+    }
+  },
+  watch: {
+    cmp: {
+      deep: true,
+      handler(newVal, oldVal) {
+        if (newVal.id !== oldVal.id) {
+          if (this.cmp.style.minHeight){
+            var minHeightNum = this.getNumFromString('minHeight');
+          this.minHeight = +minHeightNum * 16;
+          }
+          if (this.cmp.style.padding){
+            var paddingNum = this.getNumFromString('padding');
+          this.padding = +paddingNum * 16;
+          }
+        }
+      },
+    },
   },
   methods: {
     getNumFromString(styleProperty) {
@@ -149,19 +158,23 @@ export default {
     setMinHeight(size) {
       this.minHeight = size;
       this.cmp.style.minHeight = size / 16 + 'rem';
+      eventBus.$emit('change-web-txt');
       eventBus.$emit('update-site');
-      this.minHeight = null;
+      eventBus.$emit('change-web-container');
+      // this.minHeight = null;
     },
     setBgcColor(bgcColor) {
       this.cmp.style.backgroundColor = bgcColor;
       eventBus.$emit('update-site');
+      eventBus.$emit('change-web-container');
     },
     setPadding(size) {
-      if (!this.cmp.style.padding) this.cmp.style.padding = 'unset';
+      // if (!this.cmp.style.padding) this.cmp.style.padding = 'unset';
       this.padding = size;
       this.cmp.style.padding = size / 16 + 'rem';
       eventBus.$emit('update-site');
-      this.padding = null;
+      eventBus.$emit('change-web-container');
+      // this.padding = null;
     },
     querySearch(queryString, cb) {
       cb([{ value: 'Search For ' + queryString }]);

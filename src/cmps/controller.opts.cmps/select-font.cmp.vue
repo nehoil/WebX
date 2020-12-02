@@ -101,11 +101,24 @@ export default {
       value: '',
     };
   },
-  created() {},
+  created() {
+   this.value = this.cmp.style.fontFamily ?  this.cmp.style.fontFamily : '';
+  },
   methods: {
     setFontFamily(font) {
       this.cmp.style.fontFamily = font;
       eventBus.$emit('update-site');
+      eventBus.$emit('change-'+this.cmp.type);
+    },
+  },
+  watch: {
+    cmp: {
+      deep: true,
+      handler(newVal, oldVal) {
+        if (newVal.id !== oldVal.id) {
+         this.value = this.cmp.style.fontFamily ?  this.cmp.style.fontFamily : '';
+        }
+      },
     },
   },
 };

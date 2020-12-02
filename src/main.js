@@ -7,7 +7,10 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import "./styles/styles.scss";
+import VueClipboard from 'vue-clipboard2'
 
+
+Vue.use(VueClipboard)
 Vue.use(ElementUI);
 Vue.use(VueGoogleMaps, {
     load: {

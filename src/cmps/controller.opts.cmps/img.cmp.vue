@@ -114,10 +114,9 @@ export default {
   components: {},
   data() {
     return {
-      isWidthEditOn: false,
-      borderRadius: null,
+      borderRadius: 0,
       isBorder: null,
-      width: null,
+      width: 100,
       isToShowLink: false,
       input: 0,
       isLoading: false,
@@ -127,26 +126,16 @@ export default {
     };
   },
   created() {
-    this.borderRadius = this.cmp.style.borderRadius
-      ? parseInt(this.cmp.style.borderRadius)
-      : 0;
-    var widthNum;
-    var borderRadiusNum;
-    if (!this.cmp.style.width || this.cmp.style.width === 'unset') {
-      this.width = 0;
-    } else if (this.cmp.style.width && this.cmp.style.width !== 'unset') {
-      widthNum = this.getNumFromString('width');
+    this.borderRadius = this.cmp.style.borderRadius ? parseInt(this.cmp.style.borderRadius) : 0;
+    // var borderRadiusNum;
+    if (this.cmp.style.width) {
+     var widthNum = this.getNumFromString('width');
       this.width = +widthNum;
     }
-    if (!this.cmp.style.borderRadius) {
-      this.cmp.style.borderRadius = 'unset';
-    } else if (
-      this.cmp.style.borderRadius &&
-      this.cmp.style.borderRadius !== 'unset'
-    ) {
-      borderRadiusNum = this.getNumFromString('borderRadius');
-      this.borderRadius = +borderRadiusNum;
-    }
+    // if (this.cmp.style.borderRadius) {
+    //   borderRadiusNum = this.getNumFromString('borderRadius');
+    //   this.borderRadius = +borderRadiusNum;
+    // }
   },
   watch: {
     cmp: {
