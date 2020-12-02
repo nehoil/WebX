@@ -25,6 +25,9 @@ export const userStore = {
         setUserWebs(state, { userWebs }) {
             state.userWebs = userWebs;
         },
+        removeWeb(state, { webId }) {
+            state.userWebs = state.userWebs.filter(web => web._id !== webId)
+        },
     },
     actions: {
         async login(context, { userCred }) {
@@ -61,5 +64,10 @@ export const userStore = {
             await userService.logout()
             context.commit({ type: 'setUser', user: null })
         },
+        async removeWeb(context, webId) {
+            await webService.removeWeb(webId)
+            context.commit({ type: 'removeWeb', webId })
+
+        }
     }
 };
