@@ -1,8 +1,9 @@
 // import { templateService } from '@/services/template.service.js'
-import {userService} from '@/services/user.service.js'
-import {webService} from '@/services/web.service.js'
+import userService from '@/services/user.service.js'
+import { webService } from '@/services/web.service.js'
 var localLoggedinUser = null;
 if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user)
+
 
 export const userStore = {
     state: {
@@ -11,7 +12,7 @@ export const userStore = {
     },
     getters: {
         userWebs(state) {
-            return  state.userWebs
+            return state.userWebs
         },
         user(state) {
             return state.loggedinUser
@@ -55,6 +56,10 @@ export const userStore = {
                 console.log('cannot signup, err:', err);
             }
 
+        },
+        async logout(context) {
+            await userService.logout()
+            context.commit({ type: 'setUser', user: null })
         },
     }
 };

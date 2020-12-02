@@ -2,7 +2,8 @@ import HttpService from './HttpService.js'
 
 export default {
     login,
-    signup
+    signup,
+    logout
 
 }
 
@@ -11,19 +12,23 @@ async function login(userCred) {
     const user = await HttpService.post('auth/login', userCred)
     try {
         return _handleLogin(user)
-    } catch(err){
+    } catch (err) {
         console.log('error when login, err:', err);
     }
 
 }
 async function signup(userCred) {
-    console.log('end of the road before server');
     const user = await HttpService.post('auth/signup', userCred)
     try {
         return _handleLogin(user)
     } catch (err) {
         console.log('had issue loggin, err:', err);
     }
+}
+
+async function logout() {
+    await HttpService.post('auth/logout');
+    sessionStorage.clear();
 }
 
 function _handleLogin(user) {
