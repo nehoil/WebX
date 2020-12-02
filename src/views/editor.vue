@@ -1,17 +1,20 @@
 <template>
   <div class="editor flex">
     <div class="loading-editor" v-if="loading">Loading...</div>
-        <div class="modal-bg" v-if="webUrl"></div>
+    <div class="modal-bg" v-if="webUrl"></div>
 
     <div class="web-url-modal" v-if="webUrl">
-      <el-input  v-model="webUrl"></el-input>
+      <el-input v-model="webUrl"></el-input>
       <div class="web-url-modal-btns">
-      <el-button @click="closeModal" >Close</el-button>
-      <el-button type="button"  v-clipboard:copy="webUrl"
-      v-clipboard:success="onCopy"
-      v-clipboard:error="onError">Copy to clipboard</el-button>
-</div>
- 
+        <el-button @click="closeModal">Close</el-button>
+        <el-button
+          type="button"
+          v-clipboard:copy="webUrl"
+          v-clipboard:success="onCopy"
+          v-clipboard:error="onError"
+          >Copy to clipboard</el-button
+        >
+      </div>
     </div>
     <controller
       v-if="siteToEdit"
@@ -46,7 +49,7 @@ export default {
       siteToEdit: null,
       itemToEdit: 'webImg',
       loading: false,
-      webUrl:null
+      webUrl: null,
     };
   },
   methods: {
@@ -76,13 +79,14 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
-    async saveTemplate() {
-      const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      const { _id, username, userPicture } = this.$store.getters.user
+    async saveTemplate(name) {
+      var templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
+      templateToSave.name = name;
+      const { _id, username, userPicture } = this.$store.getters.user;
       const createdBy = {
         _id,
         username,
-        userPicture
+        userPicture,
       };
       templateToSave.createdBy = createdBy;
       const savedTemplte = await this.$store.dispatch({
@@ -96,14 +100,15 @@ export default {
       }
     },
     async publishTemplate() {
-      this.loading=true
-     const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      const { _id, username, userPicture } = this.$store.getters.user
-      const createdBy = {
-        _id,
-        username,
-        userPicture
-      };
+      this.loading = true;
+      const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
+        const { _id, username, userPicture } = this.$store.getters.user;
+        const createdBy = {
+          _id,
+          username,
+          userPicture,
+        }
+      
       templateToSave.createdBy = createdBy;
       const savedTemplte = await this.$store.dispatch({
         type: 'saveTemplate',
@@ -111,12 +116,11 @@ export default {
       });
       try {
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
-        this.webUrl = `localhost:8080/${savedTemplte._id}`
-         this.loading=false
+        this.webUrl = `localhost:8080/${savedTemplte._id}`;
+        this.loading = false;
       } catch (err) {
         console.log('cannot Publish template. err on editor', err);
       }
-    
     },
     async loadSite(id) {
       this.loading = true;
@@ -137,17 +141,16 @@ export default {
         console.log('cannot find site');
       }
     },
-    closeModal(){
-      this.webUrl = null
+    closeModal() {
+      this.webUrl = null;
     },
-     onCopy: function (e) {
-      alert('You just copied: ' + e.text)
-      this.closeModal()
+    onCopy: function (e) {
+      alert('You just copied: ' + e.text);
+      this.closeModal();
     },
     onError: function () {
-      alert('Failed to copy texts')
-    }
-    
+      alert('Failed to copy texts');
+    },
   },
   computed: {
     cmps() {

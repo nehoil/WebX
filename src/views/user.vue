@@ -1,5 +1,5 @@
 <template>
-  <section class="user-profile flex space center">
+  <section class="user-profile flex space center" >
     <div class="user-nav">
       <!-- <img src="" alt="" /> -->
       <h2>Your Websites</h2>
