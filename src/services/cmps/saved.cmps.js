@@ -1085,7 +1085,7 @@ export const savedCmps = [{
                         fontFamily: "unset",
                         fontSize: "unset",
                         fontWeight: "unset",
-
+                        textAlign: "center",
                         margin: "unset",
                         padding: "unset",
                         textTransform: "unset",
@@ -1152,6 +1152,7 @@ export const savedCmps = [{
             fontFamily: "unset",
             fontSize: "unset",
             fontWeight: "unset",
+            textAlign: "center",
 
             padding: "15px",
             backgroundColor: "unset",
