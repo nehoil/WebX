@@ -345,18 +345,20 @@ export const nehoTemplates = [
                                     content: 'Millions of songs, available anywhere.                                    '
                                 },
                                 style: {
-                                    fontFamily: 'unset',
-                                    fontSize: 'unset',
-                                    fontWeight: 'unset',
-                                    letterSpacing: 'unset',
-                                    padding: '15px',
-                                    backgroundColor: 'unset',
-                                    borderRadius: 'unset',
-                                    width: '100%',
-                                    minHeight: 'unset',
-                                    height: 'unset',
-                                    backgroundImage: 'unset',
-                                    textShadow: 'unset'
+                                    fontFamily: 'inherit',
+                                    fontSize: 'inherit',
+                                    fontWeight: 'inherit',
+                                    letterSpacing: 'inherit',
+                                    margin: 'inherit',
+                                    padding: 'inherit',
+                                    textTransform: 'inherit',
+                                    color: 'inherit',
+                                    backgroundColor: 'inherit',
+                                    borderShadow: 'inherit',
+                                    border: 'inherit',
+                                    borderRadius: 'inherit',
+                                    width: 'inherit',
+                                    height: 'inherit'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
