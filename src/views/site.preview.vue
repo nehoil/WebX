@@ -13,7 +13,7 @@
         </div>
       </div>
     </fixed-header>
-    <work-space :cmps="previweSite.cmps" v-if="previweSite" />
+    <work-space :cmps="previweSite.cmps" class="full" v-if="previweSite" />
   </div>
 </template>
 
@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       isPreview: false,
-      previweSite: null
+      previweSite: null,
     };
   },
   methods: {
@@ -46,7 +46,7 @@ export default {
     //       console.log('cannot find site for preview');
     //     }
     // }
-      async loadSite(id) {
+    async loadSite(id) {
       this.loading = true;
       var site;
       if (id.includes('sys')) {
@@ -70,7 +70,7 @@ export default {
   created() {
     const id = this.$route.params.id;
     if (id) {
-      this.loadSite(id)
+      this.loadSite(id);
     }
     this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     eventBus.$on('setCmpsToShow', (cmpType) => {

@@ -1,5 +1,6 @@
-//  .draggable-container
-  .site-preview .workspace{
+ .site-preview .workspace {
+//  .draggable-container{
+//   .site-preview .workspace{
     display: grid !important; 
     grid-template-columns: 
     minmax(1rem, 1fr)
@@ -7,14 +8,15 @@
     minmax(1rem, 1fr);
 
     >* {
-        grid-column: 2;
-    }
-
-    .draggable-container {
         grid-column: 1 / -1;
+        // grid-column: 2;
+    
     }
+}
     .web-container{
-padding: 2rem;
+padding-left: 2rem;
+padding-right: 2rem;
+padding-top: 1rem;
     }
 // .web-div {
     // display: ;
@@ -24,25 +26,25 @@ padding: 2rem;
     //     grid-template-rows: auto 1fr;
     // }
 
-}
+// }
 
 .full {
 grid-column: 1 / -1;
 }
 
-.draggable-container {
-    display: grid;
-    grid-template-columns: 
-    minmax(1rem, 1fr)
-    minmax(auto, 1400px)
-    minmax(1rem, 1fr);
-    >* {
-        grid-column: 2; 
-    }
-    // .web-container {
-    //     grid-column: 1 / -1;
-    // }
-}
+// .draggable-container {
+//     display: grid;
+//     grid-template-columns: 
+//     minmax(1rem, 1fr)
+//     minmax(auto, 1400px)
+//     minmax(1rem, 1fr);
+//     >* {
+//         grid-column: 2; 
+//     }
+//     // .web-container {
+//     //     grid-column: 1 / -1;
+//     // }
+// }
 // .card-grid {
 //     display: grid;
 //     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
