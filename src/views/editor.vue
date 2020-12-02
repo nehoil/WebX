@@ -1,9 +1,17 @@
 <template>
   <div class="editor flex">
     <div class="loading-editor" v-if="loading">Loading...</div>
-    <div class="web-url-modal" v-if="webUrl">Your website Url is :{{webUrl}} 
-    <button>Copy to clipboard</button>
-    <button>Close</button>
+        <div class="modal-bg" v-if="webUrl"></div>
+
+    <div class="web-url-modal" v-if="webUrl">
+      <el-input  v-model="webUrl"></el-input>
+      <div class="web-url-modal-btns">
+      <el-button @click="closeModal" >Close</el-button>
+      <el-button type="button"  v-clipboard:copy="webUrl"
+      v-clipboard:success="onCopy"
+      v-clipboard:error="onError">Copy to clipboard</el-button>
+</div>
+ 
     </div>
     <controller
       v-if="siteToEdit"
@@ -129,6 +137,16 @@ export default {
         console.log('cannot find site');
       }
     },
+    closeModal(){
+      this.webUrl = null
+    },
+     onCopy: function (e) {
+      alert('You just copied: ' + e.text)
+      this.closeModal()
+    },
+    onError: function () {
+      alert('Failed to copy texts')
+    }
     
   },
   computed: {
