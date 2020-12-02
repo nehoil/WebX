@@ -12,7 +12,7 @@
         <div class="menu">
           <router-link to="/">Home</router-link> |
           <router-link to="/templates">Templates</router-link> |
-          <router-link to="/">Profile</router-link> |
+          <router-link to="/user">Profile</router-link> |
           <router-link to="/editor">Editor</router-link> |
           <span @click="showLogin" class="login-btn" v-if="!user">Log In</span>
           <span v-if="!user">
@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     user() {
-      return this.$store.getters.loggedinUser;
+      return this.$store.getters.user;
     },
   },
   created() {
