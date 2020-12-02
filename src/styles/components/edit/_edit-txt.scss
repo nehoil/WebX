@@ -3,23 +3,42 @@
     .text-controls>*{ 
     font-size: 1.3rem;
 }
-            .el-slider,
+.el-slider{
+    width: 53% !important;
+
+}
+        
         .el-input {
-            width: 40%;
+            // width: 40%;
             margin: 0;
             display: flex;
             align-content: flex-end !important;
         }
-        .el-select .el-input {
-            width: 85% !important;
-            margin-bottom: 5px;
-            margin-left: 25px;
+        .el-select, .el-input {
+            width: 100%;
+            // margin-bottom: 5px;
+            margin-left: 20px;
             // margin-top: 1rem !important;
         }
     }
     .icon-set {
         width: 17px;
         height: 9px;
+    }
+
+    .btn-bold{
+        font-weight: bold;
+    }
+    .btn-italic{
+        font-style: italic;
+    }
+    .btn-underline{
+        text-decoration: underline;
+    }
+    .align-text-btns{
+        & button:first-child, button:nth-child(2){
+            margin-right: 1rem;
+        }
     }
 
 // }

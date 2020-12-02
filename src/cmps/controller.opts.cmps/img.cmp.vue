@@ -76,7 +76,7 @@
         <el-checkbox
           v-model="isBorder"
           @change="toggleBorder"
-          class="change-image"
+          class="change-image plr10"
           >Change Border</el-checkbox
         >
         <div class="flex center space plr10">
