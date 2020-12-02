@@ -4,12 +4,13 @@
     <el-collapse accordion>
       <el-collapse-item name="1">
         <template slot="title">
-          <div class="flex center plr10 space mb1 pointer"></div>
+          <div class="flex center plr10 space pointer"></div>
           <span>Font</span>
         </template>
         <div class="flex center space plr10">
           <span>Font</span>
           <el-select
+            class="plr10"
             v-model="value"
             @change="setFontFamily"
             placeholder="Select Font"
@@ -30,9 +31,9 @@
 </template>
 
 <script>
-import { eventBus } from "../../services/eventbus.service.js";
+import { eventBus } from '../../services/eventbus.service.js';
 export default {
-  name: "select-font",
+  name: 'select-font',
   props: {
     cmp: [Object, Array],
   },
@@ -41,70 +42,70 @@ export default {
     return {
       fonts: [
         {
-          value: "abril",
-          label: "Abril",
+          value: 'abril',
+          label: 'Abril',
         },
         {
-          value: "almondNougat",
-          label: "Almond Nougat",
+          value: 'almondNougat',
+          label: 'Almond Nougat',
         },
         {
-          value: "assistantBold",
-          label: "Assistant (Bold)",
+          value: 'assistantBold',
+          label: 'Assistant (Bold)',
         },
         {
-          value: "assistantLight",
-          label: "Assistant (Light)",
+          value: 'assistantLight',
+          label: 'Assistant (Light)',
         },
         {
-          value: "caviarDreams",
-          label: "Caviar Dreams",
+          value: 'caviarDreams',
+          label: 'Caviar Dreams',
         },
         {
-          value: "champagneLimousines",
-          label: "Champagne Limousines",
+          value: 'champagneLimousines',
+          label: 'Champagne Limousines',
         },
         {
-          value: "crimsonText",
-          label: "Crimson Text",
+          value: 'crimsonText',
+          label: 'Crimson Text',
         },
         {
-          value: "fredericka",
-          label: "Fredericka The Great",
+          value: 'fredericka',
+          label: 'Fredericka The Great',
         },
         {
-          value: "raleway",
-          label: "Raleway",
+          value: 'raleway',
+          label: 'Raleway',
         },
         {
-          value: "robotomonoLight",
-          label: "RobotoMono Light",
+          value: 'robotomonoLight',
+          label: 'RobotoMono Light',
         },
         {
-          value: "robotomono",
-          label: "RobotoMono",
+          value: 'robotomono',
+          label: 'RobotoMono',
         },
         {
-          value: "rubik",
-          label: "Rubik",
+          value: 'rubik',
+          label: 'Rubik',
         },
         {
-          value: "sacramento",
-          label: "Sacramento",
+          value: 'sacramento',
+          label: 'Sacramento',
         },
         {
-          value: "sundayMorning",
-          label: "Sunday Morning",
+          value: 'sundayMorning',
+          label: 'Sunday Morning',
         },
       ],
-      value: "",
+      value: '',
     };
   },
   created() {},
   methods: {
     setFontFamily(font) {
       this.cmp.style.fontFamily = font;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
   },
 };

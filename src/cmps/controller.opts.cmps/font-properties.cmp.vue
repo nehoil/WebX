@@ -8,7 +8,7 @@
         </template>
         <div class="flex center space plr10">
           <span>Align</span>
-          <span>
+          <span class="align-text-btns">
             <button @click="setAlign('left')" class="button-reset">
               <div class="icon-set" v-html="alignLeft"></div>
             </button>
@@ -22,9 +22,13 @@
         </div>
         <div class="flex center space plr10">
           <span>Decoration</span>
-          <button @click="toggleBold" class="button-reset">B</button>
-          <button @click="toggleItalic" class="button-reset">I</button>
-          <button @click="toggleUnderline" class="button-reset">U</button>
+          <button @click="toggleBold" class="button-reset btn-bold">B</button>
+          <button @click="toggleItalic" class="button-reset btn-italic">
+            I
+          </button>
+          <button @click="toggleUnderline" class="button-reset btn-underline">
+            U
+          </button>
         </div>
         <div class="flex center space plr10">
           <span>Font Size</span>
@@ -36,7 +40,7 @@
           ></el-slider>
         </div>
         <div class="flex center space plr10">
-          <span>Letter Spacing</span>
+          <span>Spacing</span>
           <el-slider
             :min="0"
             :max="100"
@@ -47,6 +51,7 @@
         <div class="flex center space plr10">
           <span>Shadow</span>
           <el-select
+            class="plr10"
             v-model="textShadow"
             @change="setTextShadow"
             placeholder="Select"
