@@ -175,6 +175,7 @@ div.editor {
 }
 .on-edit {
     // transition: all .3s ease;
+    transition: none;
     &:hover {
         outline: 2px dashed rgb(195, 195, 195);
         // padding: 1rem;

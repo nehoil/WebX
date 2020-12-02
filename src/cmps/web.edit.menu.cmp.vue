@@ -1,14 +1,21 @@
 <template>
   <div :class="editMenuClass" v-if="showMenu">
     <ul>
-      <li :class="removeBtnClass" @mouseenter="emitShow" @click="removeCmp(cmp.id)">
-        <i v-if="parent === 'container'" class="el-icon-delete"></i>
-        <i v-else class="el-icon-close"></i>
+      <li
+        :class="removeBtnClass"
+        @mouseenter="emitShow"
+        @click="removeCmp(cmp.id)"
+      >
+        <i class="el-icon-delete"></i>
+        <!-- <i v-else class="el-icon-close"></i> -->
       </li>
       <li v-if="parent === 'container'">
         <i class="el-icon-document-copy"></i>
       </li>
-      <li v-if="parent === 'container' || parent === 'video'" @click="setEditItem">
+      <li
+        v-if="parent === 'container' || parent === 'video'"
+        @click="setEditItem"
+      >
         <i class="el-icon-edit"></i>
       </li>
       <li v-if="parent === 'container'"><i class="el-icon-arrow-left"></i></li>
@@ -30,20 +37,21 @@ export default {
     return {};
   },
   computed: {
-    showMenu(){
-      return this.$store.getters.isEditOn
+    showMenu() {
+      return this.$store.getters.isEditOn;
     },
     removeBtnClass() {
-      if (this.parent === 'small') return 'small-remove-btn'
-      return ''
+      if (this.parent === 'small') return 'small-remove-btn';
+      return '';
     },
     editMenuClass() {
-      if (this.parent === 'container') return 'el-edit-menu'
-      return 'el-edit-menu-small'
+      if (this.parent === 'container') return 'el-edit-menu';
+      return 'el-edit-menu-small';
     },
   },
   methods: {
     emitShow() {
+      // event.stopPropagation();
       this.$emit('showMenu');
     },
     emitHide() {
