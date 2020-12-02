@@ -1,5 +1,4 @@
 div.editor {
-    
     input[type="file"] {
         display: none;
     }
@@ -23,7 +22,7 @@ div.editor {
             // max-width: 1400px;
         }
         // .draggable-container {
-            // max-width: 1400px;
+        // max-width: 1400px;
         // }
         display: flex;
         flex-direction: column;
@@ -45,13 +44,15 @@ div.editor {
         }
     }
     .controller {
-        @include scrollBar(.5rem, lighten($clr2, 5%));
+        @include scrollBar(.5rem,
+        lighten($clr2, 5%));
         // background-color: rgba(241, 241, 241, 0.5);
         overflow-y: scroll;
         overflow-x: hidden;
         background-color: $clr4;
         width: 15%;
-       .controller-add, .controller-edit {
+        .controller-add,
+        .controller-edit {
             padding: rem(20px);
             // text-align: center;
         }
@@ -115,7 +116,7 @@ div.editor {
             // margin-bottom: 5px;
         }
         .el-input {
-            width:100%;
+            width: 100%;
         }
         margin: 0 auto;
     }
@@ -149,8 +150,8 @@ div.editor {
         bottom: 0%;
         transition: 1s ease;
         opacity: 0;
-//         user-drag: none; 
-// user-select: none;
+        //         user-drag: none; 
+        // user-select: none;
     }
     &:active .drag-image {
         opacity: 60%;
@@ -158,7 +159,7 @@ div.editor {
     }
 }
 
-.add-prev-img{
+.add-prev-img {
     border-radius: 5px;
     margin: 0;
     // user-drag: none; 
@@ -168,11 +169,12 @@ div.editor {
 
 // img {user-drag: none; 
 //     user-select: none;}
-.web-container{
+.web-container {
     // border: 1px solid transparent;
     border-width: 1px;
     border-color: transparent;
 }
+
 .on-edit {
     // transition: all .3s ease;
     &:hover {

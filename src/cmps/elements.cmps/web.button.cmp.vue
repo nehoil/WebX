@@ -30,7 +30,7 @@ export default {
   name: 'web-button',
   data() {
     return {
-      isEdit: true,
+      // isEdit: true,
       showEditMenu: false,
     };
   },
@@ -47,6 +47,11 @@ export default {
       this.$nextTick(() => {
         eventBus.$emit('setItem', this.cmp);
       });
+    },
+  },
+  computed: {
+    isEdit() {
+      return this.$store.getters.isEditOn;
     },
   },
   created() {

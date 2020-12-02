@@ -66,7 +66,14 @@ export default {
       const cred = this.signupCred;
       if (!cred.email || !cred.password || !cred.username)
         return (this.msg = 'Please fill up the form');
-      await this.$store.dispatch({ type: 'signup', userCred: cred });
+        try {
+          await this.$store.dispatch({ type: 'signup', userCred: cred })
+          this.$emit('showLogin');
+        }
+        catch(err){
+          console.log(err);
+          
+        }
     },
     cancel() {
       this.$emit('showLogin');

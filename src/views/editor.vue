@@ -1,7 +1,10 @@
 <template>
   <div class="editor flex">
     <div class="loading-editor" v-if="loading">Loading...</div>
-    <div class="web-url-modal" v-if="webUrl">Your website Url is :{{webUrl}} </div>
+    <div class="web-url-modal" v-if="webUrl">Your website Url is :{{webUrl}} 
+    <button>Copy to clipboard</button>
+    <button>Close</button>
+    </div>
     <controller
       v-if="siteToEdit"
       :itemToEdit="itemToEdit"
