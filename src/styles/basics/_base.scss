@@ -66,10 +66,11 @@ ul {
 	height: 33px;
 }
 
-.el-collapse-item__header:hover, .el-collapse-item__header, .el-collapse-item__header:active, .el-collapse-item__header:focus{
+.el-collapse-item__header:hover, .el-collapse-item__header, .el-collapse-item__wrap, .el-collapse-item__content, .el-collapse-item__header:active, .el-collapse-item__header:focus{
 	color: unset;
 	font-size: 1rem;
 	transition: all .3s ease;
+	background-color:transparent ;
 }
 
 .el-autocomplete {
