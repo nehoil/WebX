@@ -4,7 +4,7 @@
       <!-- <img src="" alt="" /> -->
       <h2>Your Websites</h2>
       <ul v-for="website in websites" :key="website._id">
-        <li>{{ website.name }}</li>
+        <li>{{ website._id }}</li>
       </ul>
       <router-link to="/templates">
         <div class="nav-create pointer">+ Create new website</div></router-link
@@ -16,6 +16,11 @@
       <div class="flex space center">
         <span v-for="website in websites" :key="website._id">
           <img :src="website.previewImg" alt="" />
+          {{website._id}}
+          <button @click="removeWeb(website._id)">X</button>
+           <router-link class="choose pointer" :to="'editor/' + website._id"
+            > <button>Choose</button>
+          </router-link>
         </span>
       </div>
     </div>
@@ -29,7 +34,12 @@ export default {
       // websites: null
     };
   },
-  methods: {},
+  methods: {
+     removeWeb(webId){       
+       this.$store.dispatch('removeWeb',webId)
+    },
+    
+  },
   computed: {
     user() {
       return this.$store.getters.user;
@@ -37,6 +47,7 @@ export default {
     websites() {
       return this.$store.getters.userWebs;
     },
+   
   },
   created() {
     this.$store.dispatch('loadUserWebs')

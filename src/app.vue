@@ -12,7 +12,6 @@
         <div class="menu">
           <router-link to="/">Home</router-link> |
           <router-link to="/templates">Templates</router-link> |
-          <router-link to="/">Profile</router-link> |
           <router-link to="/editor">Editor</router-link> |
           <a @click="showLogin" v-if="!user">Log In</a>
           <span v-if="user">
@@ -51,7 +50,6 @@ export default {
     },
     doLogout() {
       this.$store.dispatch({ type: 'logout' });
-      this.$router.push('/');
     },
   },
   computed: {

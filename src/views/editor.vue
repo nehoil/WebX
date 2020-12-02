@@ -1,6 +1,7 @@
 <template>
   <div class="editor flex">
     <div class="loading-editor" v-if="loading">Loading...</div>
+    <div class="web-url-modal" v-if="webUrl">Your website Url is :{{webUrl}} </div>
     <controller
       v-if="siteToEdit"
       :itemToEdit="itemToEdit"
@@ -8,7 +9,6 @@
       @focus.native="test"
       @saveTemplate="saveTemplate"
       @publishTemplate="publishTemplate"
-      @showTemplateUrl="showTemplateUrl"
     />
     <work-space
       v-if="siteToEdit"
@@ -35,6 +35,7 @@ export default {
       siteToEdit: null,
       itemToEdit: 'webImg',
       loading: false,
+      webUrl:null
     };
   },
   methods: {
@@ -83,16 +84,28 @@ export default {
         console.log('cannot save template. err on editor', err);
       }
     },
-    publishTemplate() {
-      const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      this.$store
-        .dispatch({
-          type: 'publishTemplate',
-          templateToSave,
-        })
-        .then((template) => {
-          console.log('url to heroku sub domain\\' + template._id);
-        });
+    async publishTemplate() {
+      this.loading=true
+     const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
+      const { _id, username, userPicture } = this.$store.getters.user
+      const createdBy = {
+        _id,
+        username,
+        userPicture
+      };
+      templateToSave.createdBy = createdBy;
+      const savedTemplte = await this.$store.dispatch({
+        type: 'saveTemplate',
+        templateToSave,
+      });
+      try {
+        this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
+        this.webUrl = `localhost:8080/${savedTemplte._id}`
+         this.loading=false
+      } catch (err) {
+        console.log('cannot Publish template. err on editor', err);
+      }
+    
     },
     async loadSite(id) {
       this.loading = true;
@@ -113,9 +126,7 @@ export default {
         console.log('cannot find site');
       }
     },
-    showTemplateUrl(template) {
-      this.templateUrl = `\\heroku.subdomain.com\\${template.id}`;
-    },
+    
   },
   computed: {
     cmps() {

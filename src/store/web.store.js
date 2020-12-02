@@ -77,6 +77,7 @@ export const webStore = {
         setSite(state, { site }) {
             console.log('got site from server', site);
             state.siteToEdit = site
+
         },
         setEditMode(state, { isEditOn }) {
             console.log('isEditOn', isEditOn);

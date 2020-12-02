@@ -19,13 +19,14 @@ function saveWeb(web) {
 }
 
 function removeWeb(webId) {
-        return HttpService.delete(`web/${webId}`)
+    return HttpService.delete(`web/${webId}`)
 }
 
 function getById(webId) {
-        return HttpService.get(`web/${webId}`)
+    return HttpService.get(`web/${webId}`)
 }
 
 function getByUserId(userId) {
-        return HttpService.get(`web/?q=&_id=${userId}`)
+
+    return HttpService.get(`web/?q=&_id=${userId}`)
 }
