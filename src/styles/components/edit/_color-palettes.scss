@@ -5,6 +5,9 @@
         .change-color-method {
             font-size: 0.8rem;
             z-index: 1;
+            & :last-child{
+                margin-left: 0.4rem;
+            }
             div {
                 display: inline-block;
                 width: 1.5rem;

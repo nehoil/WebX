@@ -30,14 +30,12 @@
                   class="el-icon-arrow-right page-link pointer"
                 ></i>
               </span>
-              <div>
-                <span class="change-color-method"
-                  >Not a palette fan? Click here >
-                  <el-color-picker
-                    @active-change="setColor"
-                    v-model="cmp.style.color"
-                  ></el-color-picker
-                ></span>
+              <div class="change-color-method flex center">
+                <span>Not a palette fan? Click here </span>
+                <el-color-picker
+                  @active-change="setColor"
+                  v-model="cmp.style.color"
+                ></el-color-picker>
               </div>
             </ul>
           </div>
@@ -73,14 +71,12 @@
                   class="el-icon-arrow-right page-link pointer"
                 ></i>
               </span>
-              <div>
-                <span class="change-color-method"
-                  >Not a palette fan? Click here >
-                  <el-color-picker
-                    @active-change="setColor"
-                    v-model="cmp.style.color"
-                  ></el-color-picker
-                ></span>
+              <div class="change-color-method flex center">
+                <span>Not a palette fan? </span>
+                <el-color-picker
+                  @active-change="setColor"
+                  v-model="cmp.style.color"
+                ></el-color-picker>
               </div>
             </ul>
           </div>
@@ -128,7 +124,7 @@ export default {
     setColor(color, classProperty) {
       this.cmp.style[classProperty] = color;
       eventBus.$emit('update-site');
-      eventBus.$emit('change-'+this.cmp.type);
+      eventBus.$emit('change-' + this.cmp.type);
     },
     changePage(diff) {
       if (this.page >= this.colors.length && diff === 1) this.page = 0;
