@@ -9,16 +9,38 @@
 //         width: 180px;
 //     }
 // }
-.main-header {
-  padding: 20px;
-  & nav {
+.main-nav {
+  // padding: 20px;
+  // & nav {
     display: flex;
     justify-content: space-between;
-  }
-  & img {
-    width: 100px;
+    align-items: center;
+    height: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    h1 {
+      color: $clr2;
+      margin: 0;
+    }
+  // }
+  // & img {
+  //   width: 100px;
+  // }
+  .logo {
+    font-family: righteous;
   }
   border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+  .menu {
+    a:first-child, a:nth-child(2) {
+      margin-right: 2rem;
+    }
+    a:hover{
+      // transform: scale(20px);
+      // color: pink;
+      // color: $clr3;
+      // transform: scaleX(50%);
+    }
+  }
 }
 
 .web-container {

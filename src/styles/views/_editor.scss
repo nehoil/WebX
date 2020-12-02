@@ -1,4 +1,5 @@
 div.editor {
+    
     input[type="file"] {
         display: none;
     }
@@ -12,7 +13,7 @@ div.editor {
     height: 91.54vh;
     // margin-bottom: 2rem;
     .workspace {
-        @include scrollBar(.5rem, lighten($clr3, 35%));
+        @include scrollBar(.5rem, lighten($clr4, 35%));
         overflow-y: scroll;
         padding: 5px;
         width: 85%;
@@ -32,36 +33,43 @@ div.editor {
         background-color: white;
         .dragArea {
             height: 100%;
-            outline: 5px dashed rgb(240, 240, 240);
+            outline: 3px dashed rgb(156, 156, 156);
             // margin: 0 auto;
         }
         .dragIcon {
             background-image: url('./../assets/drag-icon.png');
             background-position: center;
             background-repeat: no-repeat;
+            opacity: 30%;
             width: 100%;
         }
     }
     .controller {
-        @include scrollBar(.5rem, lighten($clr3, 35%));
+        @include scrollBar(.5rem, lighten($clr2, 5%));
         // background-color: rgba(241, 241, 241, 0.5);
         overflow-y: scroll;
         overflow-x: hidden;
         background-color: $clr4;
         width: 15%;
-        font-size: 0.97rem;
+       .controller-add, .controller-edit {
+            padding: rem(20px);
+            // text-align: center;
+        }
+        // font-size: 1.2rem;
         border-right: 1px solid $clr4;
         height: 100%;
         display: flex;
         nav {
             margin-bottom: 4rem;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             text-align: center;
             a {
                 padding-right: 20px;
                 padding-left: 20px;
                 width: 100%;
                 height: 100%;
+                background-color: $clr3;
+                // background-color: rgb(177, 177, 177);
             }
             // & a:first-of-type {
             //     border-bottom-right-radius: 15px;
@@ -72,9 +80,12 @@ div.editor {
             .active-tab {
                 // border-top-right-radius: 10pxs;
                 // border-top-right-radius: 15px;
-                background-color: $clr2;
-                color: $clr4;
+                // background-color: $clr4;
+                background-color: $clr4;
+                // font-size: 1.5rem;
+                // color: white;
             }
+            letter-spacing: 2px;
         }
         .controller-add {
             button {
@@ -114,12 +125,13 @@ div.editor {
     .el-collapse-item__wrap {
         border-bottom: none !important;
     }
-    .add-list li {
+    .add-list {
         display: block;
         text-align: start;
-        padding: 4px;
-        padding-left: 2rem;
-        font-size: 1rem;
+        margin: 0;
+        // padding-left: 10px;
+        // padding-left: 2rem;
+        // font-size: 1rem;
         // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
     }
 }
@@ -127,16 +139,18 @@ div.editor {
 .put-icon {
     position: relative;
     .drag-image {
-        z-index: 100;
+        z-index: 105550;
         pointer-events: none;
         opacity: 0;
         transition: opacity .7;
         position: absolute;
         width: 140px;
-        left: 50%;
-        bottom: -100%;
+        left: -10%;
+        bottom: 0%;
         transition: 1s ease;
         opacity: 0;
+//         user-drag: none; 
+// user-select: none;
     }
     &:active .drag-image {
         opacity: 60%;
@@ -147,4 +161,22 @@ div.editor {
 .add-prev-img{
     border-radius: 5px;
     margin: 0;
+    // user-drag: none; 
+    // user-select: none;
+    filter: grayscale(0.5)
+}
+
+// img {user-drag: none; 
+//     user-select: none;}
+.web-container{
+    // border: 1px solid transparent;
+    border-width: 1px;
+    border-color: transparent;
+}
+.on-edit {
+    // transition: all .3s ease;
+    &:hover {
+        outline: 2px dashed rgb(195, 195, 195);
+        // padding: 1rem;
+    }
 }

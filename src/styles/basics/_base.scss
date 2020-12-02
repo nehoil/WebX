@@ -3,8 +3,8 @@
 }
 
 html {
-	font-family: Montserrat, sans-serif;
-	line-height: 1.8;
+	font-family: SourceSansPro, sans-serif;
+	// line-height: 1.8;
 	color: $clr2;
 
 }
@@ -51,24 +51,30 @@ ul {
 }
 
 .el-slider__bar {
-	background-color: rgb(250, 127, 114);
+	background-color: $clr3;
 }
 
 .el-slider__button {
-	border-color: rgb(250, 127, 114);
+	border-color: $clr3;
 }
 
 .el-slider__runway {
-		background-color: rgba(250, 128, 114, 0.349);
+		background-color: lighten($clr3, 15%);
 }
 
 .el-input__inner {
 	height: 33px;
 }
 
+
+.el-collapse-item__header {
+	font-size: 1rem;
+	text-align: left;
+}
+
 .el-collapse-item__header:hover, .el-collapse-item__header, .el-collapse-item__wrap, .el-collapse-item__content, .el-collapse-item__header:active, .el-collapse-item__header:focus{
 	color: unset;
-	font-size: 1rem;
+	// font-size: 1rem;
 	transition: all .3s ease;
 	background-color:transparent ;
 }
@@ -92,9 +98,13 @@ ul {
 	color: inherit;
 }
 
-.el-collapse-item__content{
-	font-size: 1rem;
-}
+// .el-collapse-item__content{
+	// font-size: 1rem;
+// }
 .el-collapse-item__header.focusing:focus:not(:hover){color:unset !important}
 .el-collapse-item__header:focus:not(:hover){color:unset !important}
 $--color-primary: #30475e !default;
+
+.el-collapse {
+	border: none;
+}
