@@ -43,7 +43,7 @@ export const haleliTemplates = [
                     {
                         type: "web-div",
                         name: "card-tem-01",
-                        class: " ",
+                        class: "web-div",
                         id: utilService.makeId(10),
                         info: {
                             dir: "row",
@@ -126,7 +126,6 @@ export const haleliTemplates = [
                             fontFamily: "unset",
                             fontSize: "1rem",
                             fontWeight: "unset",
-
                             margin: "unset",
                             padding: "unset",
                             textTransform: "unset",
@@ -234,6 +233,110 @@ export const haleliTemplates = [
                 },
 
 
+            },
+
+            //  section
+            {
+                type: "web-container",
+                name: "section",
+                id: "v-section001",
+                class: "section-v",
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        type: "web-div",
+                        name: "card-tem-02",
+                        class: "card-text",
+                        id: utilService.makeId(10),
+                        info: {
+                            dir: "row",
+                            cmps: [{
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                info: {
+                                    content: "A week full of values.",
+                                },
+                                style: {
+                                    display: "inline-block",
+                                    fontFamily: "champagneLimousines",
+                                    fontSize: "2rem",
+                                    fontWeight: "unset",
+
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "#unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                info: {
+                                    content: "Let’s re-pot Black Friday into VITAweek. From 26 November until 01 December we’re all about sharing, inspiring, learning and connecting. Get access to the full experience with your VITA Account.",
+                                },
+                                style: {
+                                    display: "inline-block",
+                                    fontFamily: "champagneLimousines",
+                                    fontSize: "1.4rem",
+                                    fontWeight: "unset",
+
+                                    margin: "unset",
+                                    padding: "unset",
+                                    textTransform: "unset",
+                                    color: "unset",
+                                    backgroundColor: "unset",
+                                    borderShadow: "unset",
+                                    border: "unset",
+                                    borderRadius: "unset",
+                                    width: "unset",
+                                    height: "unset",
+                                },
+                            }
+                            ]
+                        }
+                    },
+                    {
+                        type: "web-div",
+                        name: "card-tem-03",
+                        class: "card-image",
+                        id: utilService.makeId(10),
+                        info: {
+                            dir: "row",
+                            cmps: [{
+                                id: utilService.makeId(10),
+                                type: "web-img",
+                                info: {
+                                    src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606636853/3911917-pdf_1_gfkso7.png"
+                                },
+                                style: {}
+                            }]
+                        },
+                    },
+                    ]
+                },
+                style: {
+                    display: "flex",
+                    fontFamily: "unset",
+                    fontSize: "unset",
+                    fontWeight: "unset",
+
+                    margin: "unset",
+                    padding: "unset",
+                    textTransform: "unset",
+                    color: "unset",
+                    backgroundColor: "#fff",
+                    borderShadow: "unset",
+                    border: "unset",
+                    borderRadius: "unset",
+                    width: "unset",
+                    minHeight: "800px",
+                },
             },
             // map
             {
@@ -364,109 +467,6 @@ export const haleliTemplates = [
                     borderRadius: "unset",
                     width: "unset",
                     height: "unset",
-                },
-            },
-            //  section
-            {
-                type: "web-container",
-                name: "section",
-                id: "v-section001",
-                class: "section-v",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                        type: "web-div",
-                        name: "card-tem-02",
-                        class: "card-text",
-                        id: utilService.makeId(10),
-                        info: {
-                            dir: "row",
-                            cmps: [{
-                                id: utilService.makeId(10),
-                                type: "web-txt",
-                                info: {
-                                    content: "A week full of values.",
-                                },
-                                style: {
-                                    display: "inline-block",
-                                    fontFamily: "champagneLimousines",
-                                    fontSize: "2rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "#unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
-                                },
-                            },
-                            {
-                                id: utilService.makeId(10),
-                                type: "web-txt",
-                                info: {
-                                    content: "Let’s re-pot Black Friday into VITAweek. From 26 November until 01 December we’re all about sharing, inspiring, learning and connecting. Get access to the full experience with your VITA Account.",
-                                },
-                                style: {
-                                    display: "inline-block",
-                                    fontFamily: "champagneLimousines",
-                                    fontSize: "1.4rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
-                                },
-                            }
-                            ]
-                        }
-                    },
-                    {
-                        type: "web-div",
-                        name: "card-tem-03",
-                        class: "card-image",
-                        id: utilService.makeId(10),
-                        info: {
-                            dir: "row",
-                            cmps: [{
-                                id: utilService.makeId(10),
-                                type: "web-img",
-                                info: {
-                                    src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606636853/3911917-pdf_1_gfkso7.png"
-                                },
-                                style: {}
-                            }]
-                        },
-                    },
-                    ]
-                },
-                style: {
-                    display: "flex",
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    minHeight: "800px",
                 },
             },
             // 2nd section
