@@ -72,6 +72,10 @@ export default {
       return this.$store.getters.isEditOn ? 'on-edit' : '';
     },
   },
-  created() {},
+  created() {
+      eventBus.$on('change-web-container', () => {
+      this.$forceUpdate();
+    });
+  },
 };
 </script>

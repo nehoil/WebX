@@ -91,10 +91,10 @@
 </template>
 
 <script>
-import { colorService } from "../../services/color.service";
-import { eventBus } from "../../services/eventbus.service.js";
+import { colorService } from '../../services/color.service';
+import { eventBus } from '../../services/eventbus.service.js';
 export default {
-  name: "select-color",
+  name: 'select-color',
   props: {
     cmp: [Object, Array],
   },
@@ -107,6 +107,7 @@ export default {
     };
   },
   created() {
+    // if (!this.cmp.style.color) this.cmp.style.color = {}
     const colorPalette = colorService.getColors();
     this.colors = colorPalette;
   },
@@ -124,11 +125,10 @@ export default {
       let to = page * perPage;
       return colors.slice(from, to);
     },
-    setColor(color, styleProperty) {
-      if (!this.cmp.style[styleProperty])
-        this.cmp.style[styleProperty] = "unset";
-      this.cmp.style[styleProperty] = color;
-      eventBus.$emit("update-site");
+    setColor(color, classProperty) {
+      this.cmp.style[classProperty] = color;
+      eventBus.$emit('update-site');
+      eventBus.$emit('change-'+this.cmp.type);
     },
     changePage(diff) {
       if (this.page >= this.colors.length && diff === 1) this.page = 0;

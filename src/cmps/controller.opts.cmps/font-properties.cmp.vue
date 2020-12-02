@@ -77,10 +77,10 @@ export default {
   },
   data() {
     return {
-      fontSize: null,
-      letterSpacing: null,
-      textShadow: null,
-      textAlign: null,
+      fontSize: 0,
+      letterSpacing: 0,
+      textShadow: 0,
+      textAlign: 0,
       spacingInput: 0,
       fontSizeInput: 0,
       alignRight: iconService.alignRight(),
@@ -94,30 +94,19 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id) {
-          this.textShadow = this.cmp.style.textShadow;
-          if (
-            this.cmp.style.letterSpacing !== 'unset' &&
-            this.cmp.style.letterSpacing
-          )
-            this.letterSpacing = +this.getNumFromString('letterSpacing');
-          this.textAlign = this.cmp.style.textAlign;
+          if (this.cmp.fontSize) this.fontSize = +this.getNumFromString('fontSize');
+          if (this.cmp.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing');
+          if (this.cmp.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
+          if (this.cmp.textShadow) this.textShadow = +this.getNumFromString('textShadow');
         }
       },
     },
   },
   created() {
-    if (!this.cmp.style.fontSize) {
-      this.cmp.style.fontSize = 'unset';
-    } else if (this.cmp.style.fontSize !== 'unset') {
-      var fontSizeNum = this.getNumFromString('fontSize');
-      this.fontSize = +fontSizeNum * 16;
-    }
-    if (!this.cmp.style.letterSpacing) {
-      this.cmp.style.letterSpacing = 'unset';
-    } else if (this.cmp.style.letterSpacing !== 'unset') {
-      var letterSpacingNum = this.getNumFromString('letterSpacing');
-      this.letterSpacing = +letterSpacingNum * 16;
-    }
+    if (this.cmp.fontSize) this.fontSize = +this.getNumFromString('fontSize') * 16
+    if (this.cmp.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing') * 16
+    if (this.cmp.textAlign) this.textAlign = this.cmp.textAlign
+    if (this.cmp.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
   },
   methods: {
     getNumFromString(styleProperty) {
@@ -149,8 +138,7 @@ export default {
           break;
       }
       eventBus.$emit('update-site');
-      eventBus.$emit('changeTxt');
-      console.log('this.cmp.style.textShadow', this.cmp.style.textShadow);
+      eventBus.$emit('change-web-txt');
       return this.cmp.style.textShadow;
     },
     setFontSize(size) {
@@ -165,7 +153,7 @@ export default {
       this.letterSpacing = size;
       this.cmp.style.letterSpacing = size / 16 + 'rem';
       eventBus.$emit('update-site');
-      eventBus.$emit('changeTxt');
+      eventBus.$emit('change-web-txt');
       // this.letterSpacing = null;
     },
     toggleBold() {
@@ -179,7 +167,7 @@ export default {
         this.cmp.style.fontStyle = 'italic';
       else this.cmp.style.fontStyle = 'unset';
       eventBus.$emit('update-site');
-      eventBus.$emit('changeTxt');
+      eventBus.$emit('change-web-txt');
     },
     toggleUnderline() {
       if (
@@ -189,7 +177,7 @@ export default {
         this.cmp.style.textDecoration = 'underline';
       else this.cmp.style.textDecoration = 'unset';
       eventBus.$emit('update-site');
-      eventBus.$emit('changeTxt');
+      eventBus.$emit('change-web-txt');
     },
   },
 };
