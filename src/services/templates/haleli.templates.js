@@ -11,7 +11,6 @@ export const haleliTemplates = [
             userPicture: null
         },
         cmps: [
-
             {
                 type: "web-container",
                 name: "navbar",
