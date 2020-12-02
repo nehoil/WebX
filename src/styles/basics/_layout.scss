@@ -27,6 +27,7 @@ padding: 2rem;
 }
 
 .draggable-container {
+    display: grid;
     grid-template-columns: 
     minmax(1rem, 1fr)
     minmax(auto, 1400px)
