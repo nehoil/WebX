@@ -1,8 +1,8 @@
 <template>
   <div class="edit-btn">
-    <select-color :cmp="cmp"></select-color>
-    <select-font :cmp="cmp"></select-font>
     <font-properties :cmp="cmp"></font-properties>
+    <select-font :cmp="cmp"></select-font>
+
     <el-collapse accordion>
       <el-collapse-item name="1">
         <template slot="title">
@@ -34,6 +34,7 @@
         </div>
       </el-collapse-item>
     </el-collapse>
+    <select-color :cmp="cmp"></select-color>
   </div>
 </template>
 

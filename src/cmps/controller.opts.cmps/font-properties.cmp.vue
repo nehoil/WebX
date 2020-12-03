@@ -1,6 +1,6 @@
 <template>
   <div class="font-properties">
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -40,7 +40,7 @@
           ></el-slider>
         </div>
         <div class="flex center space plr10">
-          <span>Spacing AA</span>
+          <span>Spacing</span>
           <el-slider
             :min="0"
             :max="100"
@@ -77,16 +77,17 @@ export default {
   },
   data() {
     return {
-      fontSize: 0,
+      fontSize: 14,
       letterSpacing: 0,
       textShadow: 0,
-      textAlign: 0,
+      textAlign: 'none',
       spacingInput: 0,
       fontSizeInput: 0,
       alignRight: iconService.alignRight(),
       alignLeft: iconService.alignLeft(),
       alignCenter: iconService.alignCenter(),
       value: '',
+      activeName: '1',
     };
   },
   watch: {
@@ -94,22 +95,36 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id) {
-          if (this.cmp.fontSize) this.fontSize = +this.getNumFromString('fontSize');
-          if (this.cmp.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing');
-          if (this.cmp.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
-          if (this.cmp.textShadow) this.textShadow = +this.getNumFromString('textShadow');
+          this.fontSize = this.cmp.style.fontSize
+            ? +this.getNumFromString('fontSize')
+            : 14;
+          if (this.cmp.style.textShadow)
+            this.textShadow = +this.getNumFromString('textShadow');
+          if (this.cmp.style.letterSpacing)
+            this.letterSpacing = +this.getNumFromString('letterSpacing');
+          // if (this.cmp.style.fontSize) this.fontSize = +this.getNumFromString('fontSize')
+          // if (this.cmp.style.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
         }
       },
     },
   },
   created() {
-    if (this.cmp.fontSize) this.fontSize = +this.getNumFromString('fontSize') * 16
-    if (this.cmp.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing') * 16
-    if (this.cmp.textAlign) this.textAlign = this.cmp.textAlign
-    if (this.cmp.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
+    this.fontSize = this.cmp.style.fontSize
+      ? +this.getNumFromString('fontSize')
+      : 14;
+    if (this.cmp.style.letterSpacing)
+      this.letterSpacing = +this.getNumFromString('letterSpacing') * 16;
+    // if (this.cmp.style.fontSize) this.fontSize = +this.getNumFromString('fontSize')
+    // if (this.cmp.style.textAlign) this.textAlign = this.cmp.style.textAlign
+    // if (this.cmp.style.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing');
   },
   methods: {
     getNumFromString(styleProperty) {
+      console.log(
+        'this.cmp.style[styleProperty]',
+        this.cmp.style[styleProperty]
+      );
+      if (!this.cmp.style) this.cmp.style = {};
       if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join('.');
       } else {
@@ -143,7 +158,7 @@ export default {
     },
     setFontSize(size) {
       this.fontSizeInput++;
-      if (this.fontSizeInput <= 1) return;
+      if (this.spacingInput <= 1) return;
       this.cmp.style.fontSize = size / 16 + 'rem';
       eventBus.$emit('update-site');
     },
@@ -154,13 +169,13 @@ export default {
       this.cmp.style.letterSpacing = size / 16 + 'rem';
       eventBus.$emit('update-site');
       eventBus.$emit('change-web-txt');
-      // this.letterSpacing = null;
     },
     toggleBold() {
       if (this.cmp.style.fontWeight === 'unset' || !this.cmp.style.fontWeight)
         this.cmp.style.fontWeight = 'bold';
       else this.cmp.style.fontWeight = 'unset';
       eventBus.$emit('update-site');
+      eventBus.$emit('change-web-txt');
     },
     toggleItalic() {
       if (this.cmp.style.fontStyle === 'unset' || !this.cmp.style.fontStyle)

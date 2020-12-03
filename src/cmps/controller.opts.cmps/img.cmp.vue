@@ -1,6 +1,6 @@
 <template>
   <div class="edit-img">
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -82,7 +82,7 @@
         <div class="flex center space plr10">
           <p>Radius</p>
           <el-slider
-            :min="1"
+            :min="0"
             :max="50"
             v-model="borderRadius"
             @input="setBorderRadius"
@@ -91,7 +91,7 @@
         <div class="flex center space plr10">
           <p>Change Size</p>
           <el-slider
-            :min="1"
+            :min="0"
             :max="100"
             v-model="width"
             @input="setWidth"
@@ -123,24 +123,26 @@ export default {
       term: null,
       isToShowSearch: false,
       unsplashImages: null,
+      activeName: '1',
     };
   },
   created() {
-    if (this.cmp.style.borderRadius) {
-      this.borderRadius = +this.getNumFromString('borderRadius');
-    }
-    if (this.cmp.style.width) {
-     var widthNum = this.getNumFromString('width');
-      this.width = +widthNum;
-    }
+    this.borderRadius = this.cmp.style.borderRadius
+      ? parseInt(this.cmp.style.borderRadius)
+      : 0;
+    this.width = this.cmp.style.width ? +this.getNumFromString('width') : 100;
   },
   watch: {
     cmp: {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id && this.cmp) {
-        this.borderRadius = this.cmp.style.borderRadius ? parseInt(this.cmp.style.borderRadius) : 0;
-        this.width = this.cmp.style.width ? +this.getNumFromString('width') : 100;
+          this.borderRadius = this.cmp.style.borderRadius
+            ? parseInt(this.cmp.style.borderRadius)
+            : 0;
+          this.width = this.cmp.style.width
+            ? +this.getNumFromString('width')
+            : 100;
         }
       },
     },
