@@ -38,7 +38,6 @@ export const savedCmps = [{
                                 style: {
 
                                     color: "#fff",
-
                                     maxWidth: "80ch",
                                     textAlign: "left"
                                 },
