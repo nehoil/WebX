@@ -22,19 +22,10 @@ export const savedCmps = [{
                                     content: "This is a sample H1 text"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "4.1875rem",
-                                    fontWeight: "unset",
                                     margin: "0 50px",
-                                    padding: "unset",
-                                    textTransform: "unset",
                                     color: "#fff",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
+
                                 },
                             },
                             {
@@ -45,19 +36,10 @@ export const savedCmps = [{
                                     content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word."
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
+
                                     color: "#fff",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     maxWidth: "80ch",
-                                    height: "unset",
                                     textAlign: "left"
                                 },
                             },
@@ -75,14 +57,9 @@ export const savedCmps = [{
                                     fontWeight: "100",
                                     margin: "50px",
                                     padding: "20px",
-                                    textTransform: "unset",
                                     color: "#333",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
                                     borderRadius: "2em",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             }
 
@@ -94,17 +71,7 @@ export const savedCmps = [{
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -123,33 +90,13 @@ export const savedCmps = [{
                 style: {
                     fontFamily: "assistantLight",
                     fontSize: "3.125rem",
-                    fontWeight: "unset",
                     textAlign: "center",
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
                 },
             }]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -166,35 +113,16 @@ export const savedCmps = [{
                     content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word. Often, a word in one language will be translated into several words in another language, and vice versa."
                 },
                 style: {
-                    fontFamily: "unset",
                     fontSize: "0.875rem",
-                    fontWeight: "unset",
                     textAlign: "center",
                     margin: "0 auto",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     width: "80ch",
-                    height: "unset",
                 },
             }]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
 
@@ -212,19 +140,9 @@ export const savedCmps = [{
                         content: "I'm a title, click on me to edit"
                     },
                     style: {
-                        fontFamily: "unset",
                         fontSize: "1.5625rem",
-                        fontWeight: "unset",
                         margin: "0 auto",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
                         width: "fit-content",
-                        height: "unset",
                         textAlign: "center",
                     },
                 },
@@ -235,37 +153,15 @@ export const savedCmps = [{
                         content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph."
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
 
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -283,23 +179,13 @@ export const savedCmps = [{
                     title: "watch this video!"
                 },
                 style: {
-                    // width: "30rem",
-                    // height: "15rem"
+
                 }
             }]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -317,8 +203,7 @@ export const savedCmps = [{
                         title: "watch this video!"
                     },
                     style: {
-                        // width: "30rem",
-                        // height: "15rem"
+
                     }
                 },
 
@@ -337,20 +222,8 @@ export const savedCmps = [{
                                     content: "This is a video title"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "3.2rem",
-                                    fontWeight: "unset",
                                     textAlign: "left",
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -361,21 +234,9 @@ export const savedCmps = [{
                                     content: "Video technology was first developed for mechanical television systems, which were quickly replaced by cathode ray tube (CRT) television systems, but several new technologies for video display devices have since been invented. Video was originally exclusively a live technology. Charles Ginsburg led an Ampex research team developing one of the first practical video tape recorder (VTR)"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1.1em",
-                                    fontWeight: "unset",
                                     textAlign: "left",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     width: "70ch",
-                                    height: "unset",
                                 },
                             }
                         ]
@@ -384,17 +245,8 @@ export const savedCmps = [{
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -411,35 +263,12 @@ export const savedCmps = [{
                     src: "https://images.unsplash.com/photo-1606149408604-b0add195ddfa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
                 },
                 style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     width: "100%",
-                    height: "unset",
                 },
             }]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            padding: "unset",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -456,20 +285,7 @@ export const savedCmps = [{
                         src: "https://i.pinimg.com/originals/87/a4/25/87a425fa2ddb2bb8060c624535127dea.png"
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
                 {
@@ -479,20 +295,7 @@ export const savedCmps = [{
                         src: "https://i.pinimg.com/originals/98/c0/1d/98c01d9d9fac8a464dce0a17dd01de7a.jpg"
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 }, {
                     id: utilService.makeId(10),
@@ -501,36 +304,15 @@ export const savedCmps = [{
                         src: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/589e9246770419.5863797a2637b.jpg"
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 }
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
+
         }
     },
     {
@@ -554,22 +336,8 @@ export const savedCmps = [{
                                 src: "https://images.unsplash.com/photo-1584670618308-e88b87710b38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
                             },
                             style: {
-                                fontFamily: "unset",
-                                fontSize: "unset",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
                                 width: "fit-content",
                                 objectFit: "cover",
-                                height: "unset",
-
                             },
                         },
                         {
@@ -579,20 +347,7 @@ export const savedCmps = [{
                                 content: "Allow yourself to create without worries"
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "3.125rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -602,74 +357,21 @@ export const savedCmps = [{
                                 content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph."
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "1rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
-                        {
-                            id: utilService.makeId(10),
-                            type: "web-button",
-                            info: {
-                                content: "Get Started"
-                            },
-                            style: {
-                                fontFamily: "unset",
-                                fontSize: "1.2rem",
-                                fontWeight: "unset",
 
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "uppercase",
-                                color: "unset",
-                                backgroundColor: "#fff",
-                                borderShadow: "unset",
-                                border: "1px solid gainsboro",
-                                borderRadius: "20px",
-                                width: "unset",
-                                height: "unset",
-                            },
-                        }
                     ]
                 },
                 style: {
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
                     padding: "15px",
-                    backgroundColor: "unset",
-                    borderRadius: "unset",
                     width: "100%",
-                    minHeight: "unset",
-                    height: "unset",
-                    backgroundImage: "unset"
                 },
 
             }]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -748,20 +450,7 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1528297506728-9533d2ac3fa4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-
                                     margin: "0 0 1rem 0",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    // width: "unset",
-                                    // height: "unset",
                                 },
                             },
                             {
@@ -771,20 +460,8 @@ export const savedCmps = [{
                                     content: "Relaxing Zen design everywhere"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1.3125rem",
                                     fontWeight: "bold",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -794,36 +471,19 @@ export const savedCmps = [{
                                     content: "Read More"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
                                     textTransform: "uppercase",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
                                     border: "1px solid gainsboro",
                                     borderRadius: "20px",
-                                    width: "unset",
-                                    height: "unset",
+
                                 },
                             }
                         ]
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-
                         padding: "15px",
-                        backgroundColor: "unset",
-                        borderRadius: "unset",
                         width: "100%",
-                        minHeight: "unset",
-                        height: "unset",
-                        backgroundImage: "unset"
                     },
 
                 },
@@ -841,20 +501,7 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-
                                     margin: "0 0 1rem 0",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    // width: "unset",
-                                    // height: "unset",
                                 },
                             },
                             {
@@ -864,20 +511,8 @@ export const savedCmps = [{
                                     content: "Collaborative work complexes"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1.3125rem",
                                     fontWeight: "bold",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -887,36 +522,21 @@ export const savedCmps = [{
                                     content: "Read More"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
                                     textTransform: "uppercase",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
                                     border: "1px solid gainsboro",
                                     borderRadius: "20px",
-                                    width: "unset",
-                                    height: "unset",
+
                                 },
                             }
                         ]
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-
                         padding: "15px",
-                        backgroundColor: "unset",
-                        borderRadius: "unset",
+
                         width: "100%",
-                        minHeight: "unset",
-                        height: "unset",
-                        backgroundImage: "unset"
+
                     },
 
                 },
@@ -934,20 +554,9 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1355&q=80"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
                                     margin: "0 0 1rem 0",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    // width: "unset",
-                                    // height: "unset",
+
                                 },
                             },
                             {
@@ -957,20 +566,8 @@ export const savedCmps = [{
                                     content: "Track your progress from anywhere"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1.3125rem",
                                     fontWeight: "bold",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -980,53 +577,31 @@ export const savedCmps = [{
                                     content: "Read More"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
                                     textTransform: "uppercase",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
                                     border: "1px solid gainsboro",
                                     borderRadius: "20px",
-                                    width: "unset",
-                                    height: "unset",
+
                                 },
                             }
                         ]
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
                         padding: "15px",
-                        backgroundColor: "unset",
-                        borderRadius: "unset",
                         width: "100%",
-                        minHeight: "unset",
-                        height: "unset",
-                        backgroundImage: "unset"
+
                     },
 
                 }
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
 
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
+
         }
     },
     {
@@ -1047,7 +622,6 @@ export const savedCmps = [{
                     address: "Rome"
                 },
                 style: {
-                    width: "unset",
                     height: "100%",
                     display: "block",
                     margin: "0 auto"
@@ -1055,17 +629,10 @@ export const savedCmps = [{
             }]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
+
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
+
         }
     },
     {
@@ -1082,20 +649,7 @@ export const savedCmps = [{
                         src: "https://lh3.googleusercontent.com/proxy/sxRTNOhVdjk7yx1zdIjS3CEJd1iP50Gu_0L_3rqq7UwstBfgC1oN9Q_naWKGKMycvI7ReGSkjCXOEeS4H5xp4gtGaxvBAIpyPb45EI1PTsSE7jXC0A"
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
-                        textAlign: "center",
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
+
                     },
                 },
                 {
@@ -1105,20 +659,7 @@ export const savedCmps = [{
                         content: "This is form title text"
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
                 {
@@ -1130,37 +671,22 @@ export const savedCmps = [{
 
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
                         margin: "15px 0 0 0",
                         padding: "3px 8px",
-                        textTransform: "unset",
                         color: "gray",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
                         border: "1px solid gainsboro",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
+
                     },
                 }
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-            textAlign: "center",
 
+            textAlign: "center",
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
+
         }
     },
     {
@@ -1178,64 +704,23 @@ export const savedCmps = [{
                     info: {
                         dir: "row",
                         cmps: [{
-                                id: utilService.makeId(10),
-                                type: "web-img",
-                                info: {
-                                    src: "https://i.ibb.co/dGH6SFR/1d0371d6920f281c4d08fc751957a177-removebg-preview.png"
-                                },
-                                style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
-                                },
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Logo"
                             },
-                            {
-                                id: utilService.makeId(10),
-                                type: "web-txt",
-                                info: {
-                                    content: "Logo"
-                                },
-                                style: {
-                                    fontFamily: "assistantLight",
-                                    fontSize: "3.375rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    lineHeight: "auto"
-                                }
+                            style: {
+                                fontFamily: "assistantLight",
+                                fontSize: "3.375rem",
+                                lineHeight: "auto"
                             }
-                        ]
+                        }]
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
                         padding: "15px",
-                        backgroundColor: "unset",
-                        borderRadius: "unset",
                         width: "100%",
-                        minHeight: "unset",
-                        height: "unset",
-                        backgroundImage: "unset"
+
                     }
                 },
                 {
@@ -1247,19 +732,8 @@ export const savedCmps = [{
                     },
                     style: {
                         fontFamily: "assistantLight",
-                        fontSize: "unset",
                         fontWeight: "bold",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
                 {
@@ -1272,19 +746,9 @@ export const savedCmps = [{
                     },
                     style: {
                         fontFamily: "assistantLight",
-                        fontSize: "unset",
                         fontWeight: "bold",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
+
                     },
                 },
                 {
@@ -1297,19 +761,7 @@ export const savedCmps = [{
                     },
                     style: {
                         fontFamily: "assistantLight",
-                        fontSize: "unset",
                         fontWeight: "bold",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
                 {
@@ -1322,35 +774,13 @@ export const savedCmps = [{
                     },
                     style: {
                         fontFamily: "assistantLight",
-                        fontSize: "unset",
                         fontWeight: "bold",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 }
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
 
-            padding: "unset",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            width: "unset%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
         }
     },
     {
@@ -1369,18 +799,6 @@ export const savedCmps = [{
                     style: {
                         fontFamily: "assistantLight",
                         fontSize: "1.0625rem",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
                 {
@@ -1400,20 +818,7 @@ export const savedCmps = [{
 
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -1426,20 +831,7 @@ export const savedCmps = [{
 
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -1452,20 +844,7 @@ export const savedCmps = [{
 
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -1478,59 +857,20 @@ export const savedCmps = [{
 
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
 
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             }
                         ]
                     },
                     style: {
-                        fontFamily: "unset",
-                        fontSize: "unset",
-                        fontWeight: "unset",
 
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
-                        color: "unset",
-                        backgroundColor: "unset",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        width: "unset",
-                        height: "unset",
                     },
                 },
             ]
 
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
 
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
-            color: "unset",
-            backgroundColor: "unset",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
         }
     },
     {
@@ -1554,14 +894,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606411009963-3c3192b48461?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 }
                             },
                             {
@@ -1571,14 +905,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606599387405-163338054b4c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 }
                             },
                             {
@@ -1588,14 +916,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1562755810-92b8aa4c6328?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 },
                             }
                         ]
@@ -1615,14 +937,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606210015685-6b91f905bf68?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 }
                             },
                             {
@@ -1632,14 +948,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606272856570-8f7fae6f00c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=664&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 }
                             },
                             {
@@ -1649,14 +959,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606305037822-fa7095433267?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 },
                             }
                         ]
@@ -1676,14 +980,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606153363890-c096201e40a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 }
                             },
                             {
@@ -1693,14 +991,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606042808757-b925841c6fb3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 }
                             },
                             {
@@ -1710,14 +1002,8 @@ export const savedCmps = [{
                                     src: "https://images.unsplash.com/photo-1606029246036-7b352c188652?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
-                                    margin: "unset",
-                                    padding: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
+
                                     width: "100%",
-                                    height: "unset",
                                 },
                             }
                         ]
@@ -1729,17 +1015,10 @@ export const savedCmps = [{
             ]
         },
         style: {
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
 
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
             width: "100%",
-            minHeight: "unset",
-            height: "unset",
-            backgroundImage: "unset"
+
         }
     }
 ]
