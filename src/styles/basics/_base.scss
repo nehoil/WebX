@@ -11,6 +11,9 @@ html {
 body {
 	margin: 0;
 overflow-y: scroll;
+font-weight: 100;
+letter-spacing: 1px;
+font-family: raleway;
 }
 
 h1,
@@ -98,6 +101,6 @@ $--color-primary: #30475e !default;
 .el-collapse {
 	border: none;
 }
-// .el-select, .el-input, .el-input.is-active ,.el-input__inner, .el-input__inner:focus {
-// 	border-color: $clr2 !important;
-// }
+.el-select, .el-input, .el-input.is-active ,.el-input__inner, .el-input__inner:focus {
+	border-color: $clr2 !important;
+}
