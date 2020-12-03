@@ -92,8 +92,10 @@ export default {
   },
   watch: {
     cmp: {
+      
       deep: true,
       handler(newVal, oldVal) {
+      console.log('watch',newVal,oldVal);
         if (newVal.id !== oldVal.id) {
           this.fontSize = this.cmp.style.fontSize
             ? +this.getNumFromString('fontSize')
@@ -109,6 +111,8 @@ export default {
     },
   },
   created() {
+    console.log('created', this.cmp);
+    
     this.fontSize = this.cmp.style.fontSize
       ? +this.getNumFromString('fontSize')
       : 14;
