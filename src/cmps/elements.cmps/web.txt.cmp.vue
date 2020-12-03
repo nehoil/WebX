@@ -64,16 +64,16 @@ export default {
       this.$forceUpdate();
     });
   },
-  // mounted() {
-  //   this.changeColor++
-  //   if (this.changeColor <= 1){
-  //   console.log('here');
-  //   const elem = this.$refs.elTxt
-  //   this.cmp.style.color = window.getComputedStyle(elem,null).getPropertyValue('color')
-  //   eventBus.$emit('update-site');
-  //   this.$forceUpdate()
-  //   }
-  // },
+  mounted() {
+    this.changeColor++
+    if (this.changeColor <= 1){
+    console.log('here');
+    const elem = this.$refs.elTxt
+    this.cmp.style.color = window.getComputedStyle(elem,null).getPropertyValue('color')
+    eventBus.$emit('update-site');
+    this.$forceUpdate()
+    }
+  },
 };
 </script>
 <style scoped>
