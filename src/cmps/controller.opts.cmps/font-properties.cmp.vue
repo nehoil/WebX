@@ -77,7 +77,7 @@ export default {
   },
   data() {
     return {
-      fontSize: 14,
+      fontSize: 0.875,
       letterSpacing: 0,
       textShadow: 0,
       textAlign: 'none',
