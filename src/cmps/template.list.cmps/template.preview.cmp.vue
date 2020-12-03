@@ -11,7 +11,7 @@
           <span class="spec-name"> Create new website </span>
         </div>
         <div class="template-img">
-          <img class="dots" src="@/assets/blank.png" />
+          <img class="dots" src="@/assets/blank.png" @click="createNewWeb"/>
         </div>
       </span>
       <div
@@ -63,6 +63,9 @@ export default {
     goToEditor() {
       this.$router.push('/editor');
     },
+    createNewWeb(){
+      this.$emit('createNewWeb')
+    }
   },
 };
 </script>
