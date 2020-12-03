@@ -33,8 +33,8 @@
         <div class="flex center space plr10">
           <span>Font Size</span>
           <el-slider
-            :min="14"
-            :max="100"
+            :max="10"
+            step="0.1"
             v-model="fontSize"
             @input="setFontSize"
           ></el-slider>
@@ -95,35 +95,18 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id) {
-          this.fontSize = this.cmp.style.fontSize
-            ? +this.getNumFromString('fontSize')
-            : 14;
-          if (this.cmp.style.textShadow)
-            this.textShadow = +this.getNumFromString('textShadow');
-          if (this.cmp.style.letterSpacing)
-            this.letterSpacing = +this.getNumFromString('letterSpacing');
-          // if (this.cmp.style.fontSize) this.fontSize = +this.getNumFromString('fontSize')
-          // if (this.cmp.style.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
+          this.fontSize = this.cmp.style.fontSize ? +this.getNumFromString('fontSize') : 0.875;
+          this.letterSpacing = this.cmp.style.letterSpacing ? +this.getNumFromString('letterSpacing') : 0;
         }
       },
     },
   },
   created() {
-    this.fontSize = this.cmp.style.fontSize
-      ? +this.getNumFromString('fontSize')
-      : 14;
-    if (this.cmp.style.letterSpacing)
-      this.letterSpacing = +this.getNumFromString('letterSpacing') * 16;
-    // if (this.cmp.style.fontSize) this.fontSize = +this.getNumFromString('fontSize')
-    // if (this.cmp.style.textAlign) this.textAlign = this.cmp.style.textAlign
-    // if (this.cmp.style.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing');
+    this.fontSize = this.cmp.style.fontSize ? +this.getNumFromString('fontSize') : 0.875;
+    this.letterSpacing = this.cmp.style.letterSpacing ? +this.getNumFromString('letterSpacing') : 0;
   },
   methods: {
     getNumFromString(styleProperty) {
-      console.log(
-        'this.cmp.style[styleProperty]',
-        this.cmp.style[styleProperty]
-      );
       if (!this.cmp.style) this.cmp.style = {};
       if (this.cmp.style[styleProperty].match(/\d+/g).flat().length === 2) {
         return this.cmp.style[styleProperty].match(/\d+/g).flat().join('.');
@@ -157,14 +140,11 @@ export default {
       return this.cmp.style.textShadow;
     },
     setFontSize(size) {
-      this.fontSizeInput++;
-      if (this.spacingInput <= 1) return;
-      this.cmp.style.fontSize = size / 16 + 'rem';
+      this.cmp.style.fontSize = size + 'rem'
       eventBus.$emit('update-site');
+      eventBus.$emit('change-web-txt');
     },
     setSpacing(size) {
-      this.spacingInput++;
-      if (this.spacingInput <= 1) return;
       this.letterSpacing = size;
       this.cmp.style.letterSpacing = size / 16 + 'rem';
       eventBus.$emit('update-site');

@@ -43,7 +43,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     color: 'aliceblue',
-                                    fontSize: '15px',
+                                    fontSize: '0.9375rem',
                                     fontWeight: '400'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
@@ -57,7 +57,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     color: 'aliceblue',
-                                    fontSize: '15px',
+                                    fontSize: '0.9375rem',
                                     fontWeight: '400'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
@@ -71,7 +71,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     color: 'aliceblue',
-                                    fontSize: '15px',
+                                    fontSize: '0.9375rem',
                                     fontWeight: '400'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
@@ -85,7 +85,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     color: 'aliceblue',
-                                    fontSize: '15px',
+                                    fontSize: '0.9375rem',
                                     fontWeight: '400'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
@@ -99,7 +99,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     color: 'aliceblue',
-                                    fontSize: '15px',
+                                    fontSize: '0.9375rem',
                                     fontWeight: '400'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
@@ -149,7 +149,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     textAlign: 'start',
-                                    fontSize: '58px'
+                                    fontSize: '3.625rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -162,7 +162,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     textAlign: 'start',
-                                    fontSize: '23px'
+                                    fontSize: '1.4375rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -174,11 +174,11 @@ export const nehoTemplates = [
                                     content: 'START NOW'
                                 },
                                 style: {
-                                    fontSize: '16px',
+                                    fontSize: '1rem',
                                     letterSpacing: '0.7px',
                                     color: 'rgb(97, 95, 95)',
                                     backgroundColor: '#fcc400',
-                                    borderRadius: '50px 50px 50px 50px',
+                                    borderRadius: '50px',
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }
@@ -227,7 +227,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     textAlign: 'start',
-                                    fontSize: '58px'
+                                    fontSize: '3.625rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -236,11 +236,11 @@ export const nehoTemplates = [
                                 type: 'web-txt',
                                 'class': 'card-5-pa',
                                 info: {
-                                    content: 'Bulkit comes with a lot of professional UI png mockups designed by Css Ninja. They are part of the thme so you can reuse them in your own prototyping.'
+                                    content: 'Search for any track, artist or album and listen for free. Make and share playlists. Build your biggest, best ever music collection.'
                                 },
                                 style: {
                                     textAlign: 'start',
-                                    fontSize: '23px'
+                                    fontSize: '1.4375rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }
@@ -296,7 +296,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     textAlign: 'center',
-                                    fontSize: '23px'
+                                    fontSize: '1.4375rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -310,7 +310,7 @@ export const nehoTemplates = [
                                 style: {
                                     textAlign: 'center',
                                     color: 'center',
-                                    fontSize: '16px'
+                                    fontSize: '1rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }
@@ -345,7 +345,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     textAlign: 'center',
-                                    fontSize: '23px'
+                                    fontSize: '1.4375rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -359,7 +359,7 @@ export const nehoTemplates = [
                                 style: {
                                     textAlign: 'center',
                                     color: 'center',
-                                    fontSize: '16px'
+                                    fontSize: '1rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }
@@ -394,7 +394,7 @@ export const nehoTemplates = [
                                 },
                                 style: {
                                     textAlign: 'center',
-                                    fontSize: '23px'
+                                    fontSize: '1.4375rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -408,7 +408,7 @@ export const nehoTemplates = [
                                 style: {
                                     textAlign: 'center',
                                     color: 'center',
-                                    fontSize: '16px'
+                                    fontSize: '1rem'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }
