@@ -1,6 +1,6 @@
 <template>
   <div class="edit-img">
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -123,6 +123,7 @@ export default {
       term: null,
       isToShowSearch: false,
       unsplashImages: null,
+      activeName: '1',
     };
   },
   created() {
@@ -130,7 +131,7 @@ export default {
       this.borderRadius = +this.getNumFromString('borderRadius');
     }
     if (this.cmp.style.width) {
-     var widthNum = this.getNumFromString('width');
+      var widthNum = this.getNumFromString('width');
       this.width = +widthNum;
     }
   },
@@ -139,8 +140,12 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id && this.cmp) {
-        this.borderRadius = this.cmp.style.borderRadius ? parseInt(this.cmp.style.borderRadius) : 0;
-        this.width = this.cmp.style.width ? +this.getNumFromString('width') : 100;
+          this.borderRadius = this.cmp.style.borderRadius
+            ? parseInt(this.cmp.style.borderRadius)
+            : 0;
+          this.width = this.cmp.style.width
+            ? +this.getNumFromString('width')
+            : 100;
         }
       },
     },

@@ -1,6 +1,6 @@
 <template>
   <div class="font-properties">
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -87,6 +87,7 @@ export default {
       alignLeft: iconService.alignLeft(),
       alignCenter: iconService.alignCenter(),
       value: '',
+      activeName: '1',
     };
   },
   watch: {
@@ -94,19 +95,26 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id) {
-          if (this.cmp.fontSize) this.fontSize = +this.getNumFromString('fontSize');
-          if (this.cmp.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing');
-          if (this.cmp.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
-          if (this.cmp.textShadow) this.textShadow = +this.getNumFromString('textShadow');
+          if (this.cmp.fontSize)
+            this.fontSize = +this.getNumFromString('fontSize');
+          if (this.cmp.letterSpacing)
+            this.letterSpacing = +this.getNumFromString('letterSpacing');
+          if (this.cmp.textAlign)
+            this.letterSpacing = +this.getNumFromString('letterSpacing');
+          if (this.cmp.textShadow)
+            this.textShadow = +this.getNumFromString('textShadow');
         }
       },
     },
   },
   created() {
-    if (this.cmp.fontSize) this.fontSize = +this.getNumFromString('fontSize') * 16
-    if (this.cmp.letterSpacing) this.letterSpacing = +this.getNumFromString('letterSpacing') * 16
-    if (this.cmp.textAlign) this.textAlign = this.cmp.textAlign
-    if (this.cmp.textAlign) this.letterSpacing = +this.getNumFromString('letterSpacing');
+    if (this.cmp.fontSize)
+      this.fontSize = +this.getNumFromString('fontSize') * 16;
+    if (this.cmp.letterSpacing)
+      this.letterSpacing = +this.getNumFromString('letterSpacing') * 16;
+    if (this.cmp.textAlign) this.textAlign = this.cmp.textAlign;
+    if (this.cmp.textAlign)
+      this.letterSpacing = +this.getNumFromString('letterSpacing');
   },
   methods: {
     getNumFromString(styleProperty) {

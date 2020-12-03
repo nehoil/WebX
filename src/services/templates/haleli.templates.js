@@ -102,12 +102,12 @@ export const haleliTemplates = [
                         type: "web-txt",
                         class: 'v-title',
                         info: {
-                            content: "VITA; urban living"
+                            content: "VITA urban living"
                         },
                         style: {
                             textAlign: 'center',
-                            fontFamily: "robotomono",
-                            fontSize: "4rem",
+                            fontFamily: "romantika",
+                            fontSize: "6rem",
                             letterSpacing: "3px",
                             margin: "0 auto",
                             color: "rgb(84, 84, 84)",
