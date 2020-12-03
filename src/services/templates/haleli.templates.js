@@ -210,7 +210,7 @@ export const haleliTemplates = [
                 style: {
                     display: "flex",
                     backgroundColor: "#fff",
-                    minHeight: "800px",
+                    minHeight: "50rem",
                 },
             },
             // map
@@ -366,7 +366,7 @@ export const haleliTemplates = [
                 style: {
                     display: "flex",
                     backgroundColor: "#fff",
-                    minHeight: "800px",
+                    minHeight: "50rem",
                 },
             },
             // logos
@@ -447,7 +447,7 @@ export const haleliTemplates = [
                 style: {
                     display: "flex",
                     backgroundColor: "#fff",
-                    minHeight: "200px",
+                    minHeight: "12.5rem",
                 },
             },
             // footer
@@ -1327,7 +1327,7 @@ export const haleliTemplates = [
             style: {
                 display: "flex",
                 backgroundColor: "#fff",
-                minHeight: "800px",
+                minHeight: "50rem",
             },
         },
         // form

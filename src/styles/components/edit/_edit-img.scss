@@ -13,6 +13,7 @@
         margin-bottom: 10px;
     }
 }
+
       .upload-image {
           margin-top: 0 !important;
         //  margin: 0 auto;
@@ -46,4 +47,7 @@
             object-fit: cover;
 
         }
+    }
+    .el-input {
+        width: 100% !important;
     }
