@@ -5,6 +5,7 @@ export const savedCmps = [{
         name: "header",
         id: "head001",
         class: "web-header-1",
+        previewImg: 'https://i.ibb.co/09X6T9w/preview-header-basic001.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -692,6 +693,7 @@ export const savedCmps = [{
         name: "navbar",
         id: "nav001",
         class: "navbar-1",
+        previewImg: 'https://i.ibb.co/mzq5Y41/basic-nav.jpg',
         info: {
             dir: "row",
             cmps: [{

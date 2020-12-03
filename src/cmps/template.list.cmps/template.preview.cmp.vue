@@ -11,7 +11,7 @@
           <span class="spec-name"> Create new website </span>
         </div>
         <div class="template-img">
-          <img class="dots" src="@/assets/blank.png" @click="createNewWeb"/>
+          <img class="dots" src="@/assets/blank.png" @click="createNewWeb" />
         </div>
       </span>
       <div
@@ -36,10 +36,10 @@
             ><i class="el-icon-right"></i> Choose
           </router-link>
           <span @click="setPreviewOn">
-          <router-link class="preview pointer" :to="'/' + template._id"
-            ><i class="el-icon-view"></i>
-            Preview
-          </router-link>
+            <router-link class="preview pointer" :to="'/' + template._id"
+              ><i class="el-icon-view"></i>
+              Preview
+            </router-link>
           </span>
         </div>
       </div>
@@ -59,8 +59,8 @@ export default {
   },
   name: 'template-preview',
   methods: {
-    setPreviewOn(){
-      this.$store.commit({type:'setPreviewMode', isPreviewOn: true})
+    setPreviewOn() {
+      this.$store.commit({ type: 'setPreviewMode', isPreviewOn: true });
     },
     chooseTemplate(template) {
       this.$store.dispatch({ type: 'changeTempalte', template });
@@ -68,9 +68,10 @@ export default {
     goToEditor() {
       this.$router.push('/editor');
     },
-    createNewWeb(){
-      this.$emit('createNewWeb')
-    }
+    createNewWeb() {
+      localStorage.clear();
+      this.$emit('createNewWeb');
+    },
   },
 };
 </script>

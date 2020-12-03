@@ -11,7 +11,11 @@ var localDraftSite = {
     },
     cmps: []
 };
-if (utilService.loadFromStorage('draft_db')) localDraftSite = utilService.loadFromStorage('draft_db')
+if (utilService.loadFromStorage('draft_db')) {
+    console.log('load from storage');
+
+    localDraftSite = utilService.loadFromStorage('draft_db')
+}
 
 import { templateService } from '@/services/template.service.js'
 import { webService } from '@/services/web.service.js'
@@ -93,6 +97,9 @@ export const webStore = {
         setShowMenu(state, { isShowMenu }) {
             state.isShowMenu = isShowMenu
         },
+        setEmptySiteToEdit(state) {
+            state.siteToEdit = localDraftSite
+        }
     },
     actions: {
         changeTempalte({ commit }, { template }) {
