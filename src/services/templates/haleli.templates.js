@@ -4,7 +4,7 @@ export const haleliTemplates = [
     {
         _id: "sys574575474543",
         name: "Vita",
-        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606817513/screencapture-localhost-8081-2020-11-29-13-55-25_1_zjvftz.jpg",
+        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg",
         createdBy: {
             _id: null,
             username: null,
@@ -1113,5 +1113,459 @@ export const haleliTemplates = [
             },
         }
         ]
-    }
-]
+    },
+
+    {
+        _id: "sys574324256786r5",
+        name: "Medellin",
+        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607004232/screencapture-localhost-8081-2020-11-29-13-55-25_4_trcahh.jpg",
+        createdBy: {
+            _id: null,
+            username: null,
+            userPicture: null
+        },
+        cmps: [{
+            // header
+            type: "web-container",
+            name: "header",
+            id: "header006",
+            class: "test",
+            info: {
+                dir: "row",
+                cmps: [
+                    {
+                        type: "web-div",
+                        class: "md-nav",
+                        id: utilService.makeId(8),
+                        info: {
+                            cmps: [
+                                {
+                                    id: utilService.makeId(10),
+                                    type: "web-button",
+                                    class: "md-nav-title",
+                                    info: {
+                                        content: "Medellin"
+                                    },
+                                    style: {
+                                        fontSize: "1.8rem",
+                                        color: "#fff"
+                                    }
+                                },
+                                {
+                                    type: "web-div",
+                                    name: "card-tem-01",
+                                    class: "md-nav-btns",
+                                    id: utilService.makeId(10),
+                                    info: {
+                                        dir: "row",
+                                        cmps: [{
+                                            id: utilService.makeId(10),
+                                            type: "web-button",
+                                            info: {
+                                                content: "Portfolio",
+                                                linkTo: "#"
+                                            },
+                                            style: {
+                                                color: "#fff"
+                                            },
+                                        },
+                                        {
+                                            id: utilService.makeId(10),
+                                            type: "web-button",
+                                            info: {
+                                                content: "Elements",
+                                                linkTo: "#"
+
+                                            },
+                                            style: {
+                                            },
+                                        },
+                                        {
+                                            id: utilService.makeId(10),
+                                            type: "web-button",
+                                            info: {
+                                                content: "Get in touch",
+                                                linkTo: "#"
+
+                                            },
+                                            style: {
+                                            }
+                                        }
+                                        ]
+                                    },
+                                    style: {
+                                        fontSize: "1rem",
+                                        color: "#fff",
+                                    }
+                                }]
+                        },
+                    },
+                    {
+                        type: "web-div",
+                        name: "card-tem-02",
+                        class: "card-text",
+                        id: utilService.makeId(10),
+                        info: {
+                            dir: "row",
+                            cmps: [
+                                {
+                                    id: utilService.makeId(10),
+                                    type: "web-txt",
+                                    info: {
+                                        content: "Get Creative",
+                                    },
+                                    style: {
+                                        fontSize: "6rem",
+                                        color: "#fff",
+                                        fontFamily: 'assistantBold',
+                                        textAlign: 'center'
+                                    },
+                                },
+                                {
+                                    id: utilService.makeId(10),
+                                    type: "web-txt",
+                                    class: "mb1",
+                                    info: {
+                                        content: "Strategic thinking. compelling design.",
+                                    },
+                                    style: {
+                                        fontSize: "2rem",
+                                        color: "#fff",
+                                        fontFamily: 'assistantLight',
+                                        textAlign: 'center'
+                                    },
+                                },
+                                {
+                                    id: utilService.makeId(10),
+                                    type: "web-button",
+                                    info: {
+                                        content: "Get Started",
+                                    },
+                                    style: {
+                                        fontSize: "1.3rem",
+                                        color: "#fff",
+                                        fontFamily: 'assistantLight',
+                                        textAlign: 'center',
+                                        backgroundColor: "#26c4e5",
+                                        borderRadius: '48px',
+                                        padding: "0.5rem 2rem !important"
+                                    },
+                                }
+                            ]
+                        },
+                        style: {
+                            textAlign: 'center',
+                        }
+                    },
+                ]
+            },
+            style: {
+                display: "flex",
+                color: "#fff",
+                backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1606995796/New_Project_pdn1zl.png\")",
+                minHeight: "50rem"
+            },
+        },
+        // testimonials
+        {
+            type: "web-container",
+            name: "section",
+            id: "md-section001",
+            class: "section-md",
+            info: {
+                dir: "row",
+                cmps: [{
+                    type: "web-div",
+                    name: "card-tem-02",
+                    class: "card-text-md",
+                    id: utilService.makeId(10),
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            class: "txt-md",
+                            info: {
+                                content: "Loved by businesses, and individuals across the globe.",
+                            },
+                            style: {
+                                display: "inline-block",
+                                fontSize: "2.3rem",
+                                color: "#051441",
+                                textAlign: "left"
+                            },
+                        },
+                        ]
+                    }
+                },
+                {
+                    type: "web-div",
+                    name: "card-tem-03",
+                    class: "card-image-md",
+                    id: utilService.makeId(10),
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Medellin gave us the best platform to grow and show our creation and skills! thank you guys, you are the best in the field."
+                            },
+                            style: {
+                                fontSize: "1.5rem",
+                                textAlign: "center",
+                                color: "#fff"
+                            }
+                        }],
+                    },
+                    style: {
+                        backgroundImage: "url(\"https://res.cloudinary.com/dksmeovlj/image/upload/v1607001661/testimonial_bg_two_bwonsx.png\")",
+                    }
+                },
+                ]
+            },
+            style: {
+                display: "flex",
+                backgroundColor: "#fff",
+                minHeight: "800px",
+            },
+        },
+        // form
+        {
+            type: "web-container",
+            name: "form",
+            id: "form002",
+            class: "web-form-2",
+            info: {
+                dir: "column",
+                cmps: [
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "Don't be a stranger"
+                        },
+                        style: {
+                            fontSize: "3.1rem",
+                            textAlign: "center",
+                            fontFamily: "assistantLight",
+                            color: "rgb(150, 150, 150)",
+                            lineHeight: "auto"
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-form",
+                        info: {
+                        },
+                        style: {
+
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-button",
+                        info: {
+                            content: "Submit",
+                            linkTo: "#"
+
+                        },
+                        style: {
+                            color: "rgb(150, 150, 150)",
+                            border: "1px solid rgb(150, 150, 150)",
+                            borderRadius: "48px",
+                            backgroundColor: "#fff",
+                            padding: "0.5rem 2rem !important",
+                        },
+                    }
+                ]
+            },
+            style: {
+                backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1607000866/testimonial_bg_shap_etvxsx.png\")",
+                textAlign: "center",
+                padding: "15px",
+                width: "100%",
+                minHeight: "30rem"
+
+            }
+        },
+        // footer
+        {
+            type: "web-container",
+            name: "footer",
+            id: "footer-md",
+            class: "footer-md  ",
+            info: {
+                dir: "row",
+                cmps: [{
+                    type: "web-div",
+                    name: "",
+                    class: "div-v",
+                    id: utilService.makeId(10),
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Portfolio"
+                            },
+                            style: {
+                                fontSize: "1rem",
+                                fontWeight: "bold",
+                                textAlign: "center",
+                                color: "#fff",
+                                marginTop: "1rem",
+                                lineHeight: "auto"
+                            }
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Visual design"
+                            },
+                            style: {
+                                fontSize: "0.9rem",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                color: "#fff",
+                                lineHeight: "auto"
+                            }
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Creative"
+                            },
+                            style: {
+                                fontSize: "0.9rem",
+                                color: "#fff",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                lineHeight: "auto"
+                            }
+                        }
+                        ]
+                    },
+                },
+                {
+                    type: "web-div",
+                    name: "",
+                    class: "div-v",
+                    id: utilService.makeId(10),
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            class: "footer-v-02",
+                            info: {
+                                content: "Elements"
+                            },
+                            style: {
+                                fontSize: "1rem",
+                                fontWeight: "bold",
+                                marginTop: "1rem",
+                                margin: "0 auto",
+                                color: "#fff",
+                                textAlign: "center",
+                                lineHeight: "auto"
+                            }
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Developing"
+                            },
+                            style: {
+                                fontSize: "0.9rem",
+                                color: "#fff",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                lineHeight: "auto"
+                            }
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Maintenance"
+                            },
+                            style: {
+                                fontSize: "0.9rem",
+                                color: "#fff",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                lineHeight: "auto"
+                            }
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Upgrading"
+                            },
+                            style: {
+                                fontSize: "0.9rem",
+                                color: "#fff",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                lineHeight: "auto"
+                            }
+                        }
+                        ]
+                    }
+                },
+                {
+                    type: "web-div",
+                    name: "",
+                    class: "div-v",
+                    id: utilService.makeId(10),
+                    info: {
+                        dir: "row",
+                        cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            class: "footer-v-02",
+                            info: {
+                                content: "Find us in"
+                            },
+                            style: {
+                                fontSize: "1rem",
+                                fontWeight: "bold",
+                                marginTop: "1rem",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                color: "#fff",
+                                lineHeight: "auto"
+                            }
+                        },
+                        {
+                            id: utilService.makeId(10),
+                            type: "web-txt",
+                            info: {
+                                content: "Above Bar St, Southampton SO14 7DQ, UK"
+                            },
+                            style: {
+                                fontSize: "0.9rem",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                color: "#fff",
+                                lineHeight: "auto"
+                            }
+                        },
+                        ]
+                    },
+                }
+                ]
+            },
+            style: {
+                backgroundColor: "#07112d",
+                minHeight: "10rem"
+            }
+        },
+        ]
+    }]
