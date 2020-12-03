@@ -35,10 +35,12 @@
           <router-link class="choose pointer" :to="'editor/' + template._id"
             ><i class="el-icon-right"></i> Choose
           </router-link>
+          <span @click="setPreviewOn">
           <router-link class="preview pointer" :to="'/' + template._id"
             ><i class="el-icon-view"></i>
             Preview
           </router-link>
+          </span>
         </div>
       </div>
     </div>
@@ -57,6 +59,9 @@ export default {
   },
   name: 'template-preview',
   methods: {
+    setPreviewOn(){
+      this.$store.commit({type:'setPreviewMode', isPreviewOn: true})
+    },
     chooseTemplate(template) {
       this.$store.dispatch({ type: 'changeTempalte', template });
     },

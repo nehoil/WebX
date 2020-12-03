@@ -30,7 +30,6 @@ export default {
   },
   data() {
     return {
-      isPreview: false,
       previweSite: null,
     };
   },
@@ -38,14 +37,6 @@ export default {
     editSite() {
       this.$router.push('/editor');
     },
-    // async loadSite(id){
-    //     const site = await templateService.getTemplateByIdAsync(id)
-    //     try {
-    //       this.previweSite = site;
-    //     }catch {
-    //       console.log('cannot find site for preview');
-    //     }
-    // }
     async loadSite(id) {
       this.loading = true;
       var site;
@@ -66,7 +57,12 @@ export default {
       }
     },
   },
-  computed: {},
+  computed: {
+      isPreview(){
+        console.log('this.$store.getters.isPreview', this.$store.getters.isPreviewOn);
+        return this.$store.getters.isPreviewOn
+      },
+  },
   created() {
     const id = this.$route.params.id;
     if (id) {
@@ -81,6 +77,7 @@ export default {
     eventBus.$emit('change-edit-mode');
   },
   destroyed() {
+    this.$store.commit({type:'setPreviewMode', isPreviewOn: false})
     this.$store.commit({ type: 'setEditMode', isEditOn: true });
     this.$store.commit({ type: 'setShowMenu', isShowMenu: true });
     eventBus.$emit('change-edit-mode');

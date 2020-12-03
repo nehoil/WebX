@@ -19,6 +19,7 @@ import { webService } from '@/services/web.service.js'
 export const webStore = {
     state: {
         isEdit: true,
+        isPreview: false,
         siteToEdit: localDraftSite,
         cmpsToShow: null,
         isShowHeader: true,
@@ -34,6 +35,9 @@ export const webStore = {
         },
         isEditOn(state) {
             return state.isEdit
+        },
+        isPreviewOn(state) {
+            return state.isPreview
         },
         webCmps(state) {
             return state.siteToEdit.cmps
@@ -80,8 +84,11 @@ export const webStore = {
 
         },
         setEditMode(state, { isEditOn }) {
-            console.log('isEditOn', isEditOn);
             state.isEdit = isEditOn
+        },
+        setPreviewMode(state, { isPreviewOn }) {
+            console.log('isPreviewOn', isPreviewOn);
+            state.isPreview = isPreviewOn
         },
         setShowMenu(state, { isShowMenu }) {
             state.isShowMenu = isShowMenu
