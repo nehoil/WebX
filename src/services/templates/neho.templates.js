@@ -492,6 +492,7 @@ export const nehoTemplates = [
     ]
 },
 {
+    _id: 'sys67575s',
     name: 'White Sands Hotel',
     previewImg: 'https://i.ibb.co/tC16tr5/screencapture-localhost-8080-2020-12-03-17-34-47.png',
     createdBy: {
