@@ -67,7 +67,6 @@ function getCmpsByType(name) {
 }
 
 function getTemplateById(id) {
-    console.log('gtempaltes', gTemplates, id);
     return gTemplates.find(template => template._id === id)
 }
 async function getTemplateByIdAsync(id) {

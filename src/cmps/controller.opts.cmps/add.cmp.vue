@@ -39,6 +39,8 @@
                 :sort="false"
                 @start="startDrag"
                 @end="stopDrag"
+                ghost-class="ghost"
+
               >
                 <div v-for="cmp in cmps" :key="cmp.id">
                   <ul class="put-icon">
