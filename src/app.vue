@@ -16,9 +16,9 @@
         <router-link to="/templates">Templates</router-link>
         <!-- <router-link to="/user">Profile</router-link> | -->
         <router-link to="/editor">Editor</router-link>
-        <a @click="showLogin" v-if="!user">Log In</a>
+        <a @click="showLogin" v-if="!user">Login</a>
         <span v-if="user">
-          <a @click="doLogout">Log Out</a>
+          <a @click="doLogout">Logout</a>
           <router-link to="/user">
             Profile <i class="el-icon-user"></i
           ></router-link>

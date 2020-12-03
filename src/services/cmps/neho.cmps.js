@@ -36,7 +36,7 @@ export const nehoCmps = [
                         },
                         style: {
                             color: 'aliceblue',
-                            fontSize: '15px',
+                            fontSize: '0.9375rem',
                             fontWeight: '400'
                         },
                         _rootId: '__vue_devtool_undefined__'
@@ -50,7 +50,7 @@ export const nehoCmps = [
                         },
                         style: {
                             color: 'aliceblue',
-                            fontSize: '15px',
+                            fontSize: '0.9375rem',
                             fontWeight: '400'
                         },
                         _rootId: '__vue_devtool_undefined__'
@@ -64,7 +64,7 @@ export const nehoCmps = [
                         },
                         style: {
                             color: 'aliceblue',
-                            fontSize: '15px',
+                            fontSize: '0.9375rem',
                             fontWeight: '400'
                         },
                         _rootId: '__vue_devtool_undefined__'
@@ -78,7 +78,7 @@ export const nehoCmps = [
                         },
                         style: {
                             color: 'aliceblue',
-                            fontSize: '15px',
+                            fontSize: '0.9375rem',
                             fontWeight: '400'
                         },
                         _rootId: '__vue_devtool_undefined__'
@@ -92,7 +92,7 @@ export const nehoCmps = [
                         },
                         style: {
                             color: 'aliceblue',
-                            fontSize: '15px',
+                            fontSize: '0.9375rem',
                             fontWeight: '400'
                         },
                         _rootId: '__vue_devtool_undefined__'
@@ -143,7 +143,7 @@ export const nehoCmps = [
                         },
                         style: {
                             textAlign: 'start',
-                            fontSize: '58px'
+                            fontSize: '3.625rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     },
@@ -156,7 +156,7 @@ export const nehoCmps = [
                         },
                         style: {
                             textAlign: 'start',
-                            fontSize: '23px'
+                            fontSize: '1.4375rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     },
@@ -168,11 +168,11 @@ export const nehoCmps = [
                             content: 'START NOW'
                         },
                         style: {
-                            fontSize: '16px',
+                            fontSize: '1rem',
                             letterSpacing: '0.7px',
                             color: 'rgb(97, 95, 95)',
                             backgroundColor: '#fcc400',
-                            borderRadius: '50px 50px 50px 50px',
+                            borderRadius: '50px',
                         },
                         _rootId: '__vue_devtool_undefined__'
                     }
@@ -188,6 +188,91 @@ export const nehoCmps = [
             backgroundImage: `url('https://svgshare.com/i/Rta.svg')`
         }
     },
+    // 
+    // Working progress on new Header
+
+    // {
+    //     type: 'web-container',
+    //     name: 'header',
+    //     id: 'saas-header',
+    //     previewImg: 'https://i.ibb.co/v1dc6nF/screencapture-localhost-8080-editor-2020-11-30-20-39-28-1-15.jpg',
+    //     'class': 'header-2-container',
+    //     info: {
+    //         dir: 'row',
+    //         cmps: [{
+    //             id: 's4OCXoCpZm',
+    //             type: 'web-img',
+    //             info: {
+    //                 src: 'https://i.ibb.co/qBTKyLh/i-Phone-App-3.png'
+    //             },
+    //             style: {
+    //                 width: '75%'
+    //             },
+    //             _rootId: 'saas-header'
+    //         },
+    //         {
+    //             type: 'web-div',
+    //             name: 'card',
+    //             id: '1mZp4Udpnv',
+    //             'class': 'header-2-div',
+    //             info: {
+    //                 dir: 'row',
+    //                 cmps: [{
+    //                     id: 'HffeArf3Gf',
+    //                     type: 'web-txt',
+    //                     'class': 'header-2-title',
+    //                     info: {
+    //                         content: 'Discover Great Music Every Day'
+    //                     },
+    //                     style: {
+    //                         textAlign: 'start',
+    //                         color: '#010101',
+    //                         fontSize: '3.625rem'
+    //                     },
+    //                     _rootId: '__vue_devtool_undefined__'
+    //                 },
+    //                 {
+    //                     id: '8DOzi6I1Pj',
+    //                     type: 'web-txt',
+    //                     'class': 'header-2-pa',
+    //                     info: {
+    //                         content: 'High-quality, original content. Ad-free, start today with a 14-day free trial.  No credit card required.'
+    //                     },
+    //                     style: {
+    //                         textAlign: 'start',
+    //                         fontSize: '1.4375rem',
+    //                         color: '#010101',
+    //                     },
+    //                     _rootId: '__vue_devtool_undefined__'
+    //                 },
+    //                 {
+    //                     id: 'pUhUBHrIeW',
+    //                     type: 'web-button',
+    //                     'class': 'navbar-2-button',
+    //                     info: {
+    //                         content: 'START NOW'
+    //                     },
+    //                     style: {
+    //                         fontSize: '1rem',
+    //                         letterSpacing: '0.7px',
+    //                         color: 'rgb(97, 95, 95)',
+    //                         backgroundColor: '#fcc400',
+    //                         borderRadius: '50px',
+    //                     },
+    //                     _rootId: '__vue_devtool_undefined__'
+    //                 }
+    //                 ]
+    //             },
+    //             style: {
+    //             }
+    //         }
+    //         ]
+    //     },
+    //     style: {
+    //         backgroundImage: `url('https://i.ibb.co/3Ydhv9R/b-shape1.png')`,
+    //         padding: '400px',
+    //     }
+    // },
     {
         type: 'web-container',
         name: 'card',
@@ -222,7 +307,7 @@ export const nehoCmps = [
                         },
                         style: {
                             textAlign: 'start',
-                            fontSize: '58px'
+                            fontSize: '3.625rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     },
@@ -231,11 +316,11 @@ export const nehoCmps = [
                         type: 'web-txt',
                         'class': 'card-5-pa',
                         info: {
-                            content: 'Bulkit comes with a lot of professional UI png mockups designed by Css Ninja. They are part of the thme so you can reuse them in your own prototyping.'
+                            content: 'Search for any track, artist or album and listen for free. Make and share playlists. Build your biggest, best ever music collection.'
                         },
                         style: {
                             textAlign: 'start',
-                            fontSize: '23px'
+                            fontSize: '1.4375rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     }
@@ -292,7 +377,7 @@ export const nehoCmps = [
                         },
                         style: {
                             textAlign: 'center',
-                            fontSize: '23px'
+                            fontSize: '1.4375rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     },
@@ -306,7 +391,7 @@ export const nehoCmps = [
                         style: {
                             textAlign: 'center',
                             color: 'center',
-                            fontSize: '16px'
+                            fontSize: '1rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     }
@@ -341,7 +426,7 @@ export const nehoCmps = [
                         },
                         style: {
                             textAlign: 'center',
-                            fontSize: '23px'
+                            fontSize: '1.4375rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     },
@@ -355,7 +440,7 @@ export const nehoCmps = [
                         style: {
                             textAlign: 'center',
                             color: 'center',
-                            fontSize: '16px'
+                            fontSize: '1rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     }
@@ -390,7 +475,7 @@ export const nehoCmps = [
                         },
                         style: {
                             textAlign: 'center',
-                            fontSize: '23px'
+                            fontSize: '1.4375rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     },
@@ -404,7 +489,7 @@ export const nehoCmps = [
                         style: {
                             textAlign: 'center',
                             color: 'center',
-                            fontSize: '16px'
+                            fontSize: '1rem'
                         },
                         _rootId: '__vue_devtool_undefined__'
                     }

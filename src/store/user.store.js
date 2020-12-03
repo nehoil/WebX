@@ -20,7 +20,6 @@ export const userStore = {
             if (state.loggedinUser) {
                 return state.loggedinUser
             } else {
-                console.log('yey');
                 state.loggedinUser = {
                     _id: utilService.makeId(8),
                     username: 'guest',
