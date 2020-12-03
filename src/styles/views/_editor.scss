@@ -32,6 +32,8 @@ div.editor {
                 img {
                     opacity: 0;
                 }
+                content: "Put it here";
+                color:black;
                 background-color: $clr6;
                 max-height: 40px;
                 border: 2px dashed rgb(195, 195, 195);
