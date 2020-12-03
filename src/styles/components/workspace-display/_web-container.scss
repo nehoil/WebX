@@ -1,13 +1,7 @@
 .web-container {
-    // max-width: 1400px;
-    // min-width: 100%;
     display: block;
     position: relative;
-    // padding: 1rem !important;
-    // object-fit: cover;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // transition: all .3s ease;
+    overflow: hidden;
 }
 
 .row {
@@ -19,4 +13,3 @@
     flex-direction: column;
 }
 
-// If on edit 
