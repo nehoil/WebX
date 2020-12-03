@@ -7,6 +7,7 @@
       group="workspace-cmps"
       @change="updateSite"
       @add="addCmp"
+      ghost-class="ghost"
     >
       <component
         v-for="(cmp, idx) in cmps"

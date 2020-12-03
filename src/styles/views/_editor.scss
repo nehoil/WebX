@@ -19,6 +19,13 @@ div.editor {
         & .draggable-container {
             margin: 0 auto;
             width: -webkit-fill-available;
+            .ghost {
+                background-color: aqua;
+                height: rem(35px);
+                padding: 30px 0;
+                // visibility: hidden;
+                outline: 2px solid red;
+            }
             // max-width: 1400px;
         }
         // .draggable-container {
@@ -170,7 +177,7 @@ div.editor {
 // img {user-drag: none; 
 //     user-select: none;}
 .web-container {
-    // border: 1px solid transparent;
+    outline: 2px dashed transparent;
     border-width: 1px;
     border-color: transparent;
 }
