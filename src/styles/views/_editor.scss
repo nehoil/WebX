@@ -19,13 +19,6 @@ div.editor {
         & .draggable-container {
             margin: 0 auto;
             width: -webkit-fill-available;
-            .ghost {
-                background-color: aqua;
-                height: 50px;
-                padding: 30px 0;
-                // visibility: hidden;
-                outline: 2px solid red;
-            }
             // max-width: 1400px;
         }
         // .draggable-container {
@@ -40,7 +33,21 @@ div.editor {
         .dragArea {
             height: 100%;
             outline: 3px dashed rgb(156, 156, 156);
-            // margin: 0 auto;
+            .ghost {
+                img {
+                    opacity: 0;
+                }
+                background-color: $clr6;
+                max-height: 40px;
+                border: 2px dashed rgb(195, 195, 195);
+            }
+            .ghost:after {
+                content: "Background text";
+                position: absolute;
+                top: 0;
+                left: -50%;
+                z-index: -1;
+            }
         }
         .dragIcon {
             background-image: url('./../assets/drag-icon.png');
@@ -133,6 +140,16 @@ div.editor {
     .el-collapse-item__wrap {
         border-bottom: none !important;
     }
+    .dragArea {
+        .sortable-chosen {
+            // border: 3px solid red;
+            // width: 100%;
+            // height: 30px;
+            .ghost {
+                opacity: 0;
+            }
+        }
+    }
     .add-list {
         display: block;
         text-align: start;
@@ -163,6 +180,9 @@ div.editor {
     &:active .drag-image {
         opacity: 60%;
         transition: .3;
+    }
+    .costum-ghost {
+        display: none;
     }
 }
 

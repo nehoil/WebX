@@ -30,10 +30,16 @@
     }
 }
 
-.web-img-1>span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.web-img-1 {
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        object-fit: cover;
+        max-height: rem(500px);
+    }
 }
 
 .web-header-1 {
@@ -46,21 +52,23 @@
         width: 100% !important;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         min-height: 26.0625rem;
         .web-button {
-            align-self: flex-end;
+            // align-self: flex-end;
+            // margin-top: 50px;
             cursor: pointer;
         }
     }
     .web-header-1-p {
-        margin: 0 50px;
+        // margin: 0 50px 50px;
         text-align: left;
         display: block;
     }
-    .header-1-h1 {
-        margin: 0 50px;
+    span {
+        margin: 0 50px 50px;
         text-align: left;
+        display: block;
     }
 }
 
@@ -110,9 +118,15 @@
 .vid-txt-container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin-left: 20px;
-    width: 50%;
+    justify-content: center;
+    margin-left: 30px;
+    width: 100%;
+    & :first-child {
+        margin-bottom: rem(30px);
+    }
+    .web-txt {
+        max-width: 60ch;
+    }
 }
 
 .web-video-2 {
@@ -138,11 +152,10 @@
 .img-gallery-3-div {
     flex: 33%;
     max-width: 25%;
-    margin: 0 0.5rem;
     .cmp-span {
-        margin-top: 8px;
+        // margin-top: 8px;
         vertical-align: middle;
-        width: 100%;
+        width: 98%;
     }
     img {
         margin-top: 8px !important;
@@ -169,7 +182,7 @@
     grid-template-columns: repeat(3, minmax(20px, 1fr));
     grid-template-rows: repeat(3, minmax(20px, 1fr));
     height: rem(900px);
-    width: rem(900px);
+    width: 95%;
     padding: 10px !important;
     gap: 6px;
     margin: 0 auto;

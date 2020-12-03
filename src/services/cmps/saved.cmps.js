@@ -52,8 +52,7 @@ export const savedCmps = [{
                                     linkTo: "#"
                                 },
                                 style: {
-                                    fontFamily: "assistantLight",
-                                    fontSize: "1.5em",
+                                    fontSize: "1.2em",
                                     fontWeight: "100",
                                     margin: "50px",
                                     padding: "20px",
@@ -199,7 +198,7 @@ export const savedCmps = [{
                     id: utilService.makeId(10),
                     type: "web-video",
                     info: {
-                        content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                        content: "https://www.youtube.com/embed/CVa_IZVzUoc",
                         title: "watch this video!"
                     },
                     style: {
@@ -260,7 +259,7 @@ export const savedCmps = [{
                 id: utilService.makeId(10),
                 type: "web-img",
                 info: {
-                    src: "https://images.unsplash.com/photo-1606149408604-b0add195ddfa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                    src: "https://images.unsplash.com/photo-1606201518145-30fa691f4065?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1354&q=80"
                 },
                 style: {
                     width: "100%",
@@ -282,7 +281,7 @@ export const savedCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "https://i.pinimg.com/originals/87/a4/25/87a425fa2ddb2bb8060c624535127dea.png"
+                        src: "https://images.unsplash.com/photo-1606422135475-eaba95301e6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                     },
                     style: {
 
@@ -292,7 +291,7 @@ export const savedCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "https://i.pinimg.com/originals/98/c0/1d/98c01d9d9fac8a464dce0a17dd01de7a.jpg"
+                        src: "https://images.unsplash.com/photo-1606694582797-0324662ab736?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1326&q=80"
                     },
                     style: {
 
@@ -301,7 +300,7 @@ export const savedCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/589e9246770419.5863797a2637b.jpg"
+                        src: "https://images.unsplash.com/photo-1606383042401-a67a07641d50?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80"
                     },
                     style: {
 
@@ -719,7 +718,6 @@ export const savedCmps = [{
                     style: {
 
                         padding: "15px",
-                        width: "100%",
 
                     }
                 },
@@ -891,7 +889,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606411009963-3c3192b48461?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1603924147107-81e7a2b3051e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
                                 },
                                 style: {
 
@@ -902,7 +900,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606599387405-163338054b4c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1606942790567-5783bab8d944?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
 
@@ -913,7 +911,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1562755810-92b8aa4c6328?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1604676983704-2f2c09b12f93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                                 },
                                 style: {
 
@@ -934,7 +932,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606210015685-6b91f905bf68?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80"
+                                    src: "https://images.unsplash.com/photo-1601758176559-76c75ead317a?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                                 },
                                 style: {
 
@@ -945,7 +943,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606272856570-8f7fae6f00c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=664&q=80"
+                                    src: "https://images.unsplash.com/photo-1603558766284-2271e4005ec3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
                                 },
                                 style: {
 
@@ -956,7 +954,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606305037822-fa7095433267?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1603827598524-03bc7f6d66f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1290&q=80"
                                 },
                                 style: {
 
@@ -977,7 +975,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606153363890-c096201e40a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1606049503117-f219981aafac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1271&q=80"
                                 },
                                 style: {
 
@@ -988,7 +986,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606042808757-b925841c6fb3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1574708006722-49b864e787b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
                                 },
                                 style: {
 
@@ -999,7 +997,7 @@ export const savedCmps = [{
                                 id: utilService.makeId(10),
                                 type: "web-img",
                                 info: {
-                                    src: "https://images.unsplash.com/photo-1606029246036-7b352c188652?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80"
+                                    src: "https://images.unsplash.com/photo-1606942095201-bd139f63b2e3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=646&q=80"
                                 },
                                 style: {
 

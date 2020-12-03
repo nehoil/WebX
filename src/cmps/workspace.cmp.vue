@@ -1,7 +1,7 @@
 <template>
   <div class="workspace">
     <draggable
-      :class="{ dragArea: isDragging , dragIcon:!cmps.length}"
+      :class="{ dragArea: isDragging, dragIcon: !cmps.length }"
       class="draggable-container"
       :list="cmps"
       group="workspace-cmps"
@@ -23,9 +23,9 @@
 </template>
 
 <script>
-import webContainer from "@/cmps/web.container.cmp";
-import { eventBus } from "@/services/eventbus.service.js";
-import draggable from "vuedraggable";
+import webContainer from '@/cmps/web.container.cmp';
+import { eventBus } from '@/services/eventbus.service.js';
+import draggable from 'vuedraggable';
 // import { utilService } from "../services/util-service.js";
 // import { templateService } from "@/services/template.service.js";
 
@@ -33,7 +33,7 @@ export default {
   props: {
     cmps: Array,
   },
-  name: "work-space",
+  name: 'work-space',
   components: {
     webContainer,
     draggable,
@@ -45,14 +45,14 @@ export default {
   },
   methods: {
     emitItemToEdit() {
-      console.log("im emiting");
+      console.log('im emiting');
     },
     updateSite() {
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
-    addCmp(ev){
-      eventBus.$emit("addCmp", ev.clone.innerText);      
-    }
+    addCmp(ev) {
+      eventBus.$emit('addCmp', ev.clone.innerText);
+    },
     // updateCmpId(ev) {
     //   const cmpCopy = JSON.parse(JSON.stringify(this.cmps[ev.newIndex]));
     //   cmpCopy.id = utilService.makeId(9);
@@ -62,10 +62,10 @@ export default {
     // },
   },
   created() {
-    eventBus.$on("dragStart", () => {
+    eventBus.$on('dragStart', () => {
       this.isDragging = true;
     });
-    eventBus.$on("dragStop", () => {
+    eventBus.$on('dragStop', () => {
       this.isDragging = false;
     });
   },

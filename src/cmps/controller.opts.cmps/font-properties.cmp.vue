@@ -92,8 +92,10 @@ export default {
   },
   watch: {
     cmp: {
+      
       deep: true,
       handler(newVal, oldVal) {
+      console.log('watch',newVal,oldVal);
         if (newVal.id !== oldVal.id) {
           this.fontSize = this.cmp.style.fontSize ? +this.getNumFromString('fontSize') : 0.875;
           this.letterSpacing = this.cmp.style.letterSpacing ? +this.getNumFromString('letterSpacing') : 0;
