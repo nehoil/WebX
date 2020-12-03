@@ -50,7 +50,7 @@
                         ><img class="add-prev-img" :src="cmp.previewImg" alt=""
                       /></span>
                       <img
-                        class="drag-image"
+                      class="drag-image"
                         src="../../assets/drag002.png"
                         alt=""
                       />
@@ -104,6 +104,7 @@ export default {
       number: 1,
       isGrabbing: false,
       isHover: false,
+      dragging:false
     };
   },
   methods: {
@@ -111,10 +112,12 @@ export default {
       eventBus.$emit('setCmpsToShow', name);
     },
     startDrag(ev) {
+      this.dragging = true
       eventBus.$emit('dragStart');
     },
     stopDrag() {
       eventBus.$emit('dragStop');
+      this.dragging = false
     },
     // grab(ev){
     //   this.isGrabbing = true
