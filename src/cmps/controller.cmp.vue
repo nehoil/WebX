@@ -8,7 +8,8 @@
       <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     </div>
     <footer class="flex space">
-      <a>undo</a> | <a @click="save">save</a> | <a @click="publishTemplate">publish</a>
+      <a>undo</a> | <a @click="save">save</a> |
+      <a @click="publishTemplate">publish</a>
     </footer>
   </section>
 </template>
@@ -31,46 +32,45 @@ export default {
     return {
       addOrEdit: 'add',
       cmpToEdit: null,
-      templateName:null
+      templateName: null,
     };
   },
   methods: {
     getIsAdd(type) {
       return {
-        'active-tab': this.addOrEdit !== type,
+        'active-tab': this.addOrEdit === type,
       };
     },
     saveTemplate() {
-      this.$emit('saveTemplate',this.templateName)
+      this.$emit('saveTemplate', this.templateName);
     },
     publishTemplate() {
-      this.$emit('publishTemplate')
+      this.$emit('publishTemplate');
     },
-     save() {
-        this.$prompt('Please select a name for the website', {
-          confirmButtonText: 'OK',
-          cancelButtonText: 'Cancel',
-
-        }).then(({ value }) => {
+    save() {
+      this.$prompt('Please select a name for the website', {
+        confirmButtonText: 'OK',
+        cancelButtonText: 'Cancel',
+      })
+        .then(({ value }) => {
           this.$message({
             type: 'success',
-            message: 'Your Template Saved!' 
+            message: 'Your Template Saved!',
           });
-          this.templateName = value
-          this.saveTemplate()
-        }).catch(() => {
+          this.templateName = value;
+          this.saveTemplate();
+        })
+        .catch(() => {
           this.$message({
             type: 'info',
-            message: 'Input canceled'
-          });       
+            message: 'Input canceled',
+          });
         });
-      }
-    
-    
+    },
   },
   created() {
-    eventBus.$on("openEditor", () => {
-      this.addOrEdit = "edit";
+    eventBus.$on('openEditor', () => {
+      this.addOrEdit = 'edit';
     });
   },
   watch: {
