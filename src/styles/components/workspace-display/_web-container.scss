@@ -1,7 +1,6 @@
 .web-container {
     // max-width: 1400px;
     // min-width: 100%;
-    height: fit-content;
     display: block;
     position: relative;
     // padding: 1rem !important;
@@ -21,10 +20,3 @@
 }
 
 // If on edit 
-.on-edit {
-    transition: all .3s ease;
-    &:hover {
-        // padding: 1rem;
-        outline: 1px solid $clr2;
-    }
-}
