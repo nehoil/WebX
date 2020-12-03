@@ -1,0 +1,28 @@
+.headernav-ws {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 700px;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-ws  {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .header-ws-title {
+        width: 30ch;
+        display: flex;
+        justify-content: start;
+    }
+    .header-ws {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
