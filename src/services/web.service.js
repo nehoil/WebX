@@ -27,6 +27,6 @@ function getById(webId) {
 }
 
 function getByUserId(userId) {
-
+    console.log('user Id', userId);
     return HttpService.get(`web/?q=&_id=${userId}`)
 }

@@ -58,7 +58,6 @@ export const webStore = {
                         return cmp.id === id
                     })
                     if (foundIdx > 0) {
-                        console.log('found!');
                         state.siteToEdit.cmps[idx].info.cmps.splice(foundIdx, 1)
                         return
                     } else {
@@ -79,7 +78,6 @@ export const webStore = {
             utilService.storeToStorage('draft_db', site)
         },
         setSite(state, { site }) {
-            console.log('got site from server', site);
             state.siteToEdit = site
 
         },
@@ -87,7 +85,6 @@ export const webStore = {
             state.isEdit = isEditOn
         },
         setPreviewMode(state, { isPreviewOn }) {
-            console.log('isPreviewOn', isPreviewOn);
             state.isPreview = isPreviewOn
         },
         setShowMenu(state, { isShowMenu }) {
