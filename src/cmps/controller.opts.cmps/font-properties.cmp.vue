@@ -40,7 +40,7 @@
           ></el-slider>
         </div>
         <div class="flex center space plr10">
-          <span>Spacing</span>
+          <span>Spacing AA</span>
           <el-slider
             :min="0"
             :max="100"
