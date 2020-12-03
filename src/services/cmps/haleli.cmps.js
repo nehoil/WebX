@@ -20,16 +20,8 @@ export const haleliCmps = [
                 style: {
                     fontFamily: "robotomono",
                     fontSize: "1.5rem",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "#161d2e",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     lineHeight: "auto"
                 }
             },
@@ -48,19 +40,6 @@ export const haleliCmps = [
                             linkTo: "#"
                         },
                         style: {
-                            fontFamily: "unset",
-                            fontSize: "unset",
-                            fontWeight: "unset",
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -72,20 +51,6 @@ export const haleliCmps = [
 
                         },
                         style: {
-                            fontFamily: "unset",
-                            fontSize: "unset",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -97,56 +62,24 @@ export const haleliCmps = [
 
                         },
                         style: {
-                            fontFamily: "unset",
-                            fontSize: "unset",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         }
                     }
                     ]
                 },
                 style: {
-                    fontFamily: "unset",
                     fontSize: "1rem",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "#161d2e",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     lineHeight: "auto"
                 }
             }
             ]
         },
         style: {
-            fontFamily: "unset",
             fontSize: "1rem",
-            fontWeight: "unset",
-
-            margin: "unset",
             height: "4rem",
-            padding: "unset",
-            textTransform: "unset",
             color: "#161d2e",
             backgroundColor: "#fff",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
             lineHeight: "auto"
         }
     },
@@ -170,18 +103,9 @@ export const haleliCmps = [
                     textAlign: 'center',
                     fontFamily: "robotomono",
                     fontSize: "4rem",
-                    fontWeight: "unset",
                     letterSpacing: "3px",
                     margin: "0 auto",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "rgb(84, 84, 84)",
-                    backgroundColor: "unset",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
                 },
             },
             {
@@ -195,20 +119,13 @@ export const haleliCmps = [
                 },
                 style: {
                     fontFamily: "champagneLimousines",
-                    fontSize: "unset",
                     fontWeight: "bold",
                     letterSpacing: "0.375rem",
-                    margin: "unset",
                     padding: "5px 10px",
-                    textTransform: "unset",
                     color: "#fff",
                     backgroundColor: "rgb(94,204,191)",
-                    borderShadow: "unset",
                     border: "2px solid #fff",
                     outline: "3px solid rgb(94,204,191)",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
                 },
 
             }
@@ -216,14 +133,7 @@ export const haleliCmps = [
         },
         style: {
             paddingTop: '4rem',
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
             padding: "15px",
-            backgroundColor: "unset",
-            borderRadius: "unset",
-            height: "unset",
             backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
             backgroundSize: 'contain'
         },
@@ -274,18 +184,7 @@ export const haleliCmps = [
                         style: {
                             fontFamily: "champagneLimousines",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -297,18 +196,7 @@ export const haleliCmps = [
                         style: {
                             fontFamily: "champagneLimousines",
                             fontSize: "1rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -322,7 +210,6 @@ export const haleliCmps = [
                             address: "Amsterdam"
                         },
                         style: {
-                            width: "unset",
                             height: "100%",
                             display: "block",
                             margin: "0 auto"
@@ -332,34 +219,14 @@ export const haleliCmps = [
                 },
                 style: {
                     padding: "1rem",
-                    textTransform: "unset",
-                    color: "unset",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
                 },
             }
             ]
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
-            color: "unset",
             backgroundColor: "#fff",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
         },
     },
     //  section
@@ -388,18 +255,6 @@ export const haleliCmps = [
                             display: "inline-block",
                             fontFamily: "champagneLimousines",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "#unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -412,18 +267,6 @@ export const haleliCmps = [
                             display: "inline-block",
                             fontFamily: "champagneLimousines",
                             fontSize: "1.4rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     }
                     ]
@@ -450,19 +293,7 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
-            color: "unset",
             backgroundColor: "#fff",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
             minHeight: "800px",
         },
     },
@@ -492,18 +323,6 @@ export const haleliCmps = [
                             display: "inline-block",
                             fontFamily: "champagneLimousines",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "#unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -516,18 +335,6 @@ export const haleliCmps = [
                             display: "inline-block",
                             fontFamily: "champagneLimousines",
                             fontSize: "1.4rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     }
                     ]
@@ -555,19 +362,7 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
-            color: "unset",
             backgroundColor: "#fff",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
             minHeight: "800px",
         },
     },
@@ -598,17 +393,6 @@ export const haleliCmps = [
                             fontFamily: "champagneLimousines",
                             fontSize: "1.4rem",
                             fontWeight: "bold",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     }]
                 },
@@ -660,19 +444,7 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
-            color: "unset",
             backgroundColor: "#fff",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
             minHeight: "200px",
         },
     },
@@ -699,19 +471,11 @@ export const haleliCmps = [
                             content: "shop"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1rem",
                             fontWeight: "bold",
-                            // margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             marginTop: "1rem",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -722,19 +486,10 @@ export const haleliCmps = [
                             content: "all plants"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
-
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -745,19 +500,10 @@ export const haleliCmps = [
                             content: "books and accessories"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
-
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     }
@@ -779,20 +525,12 @@ export const haleliCmps = [
                             content: "my account"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1rem",
                             fontWeight: "bold",
-
                             marginTop: "1rem",
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -803,20 +541,10 @@ export const haleliCmps = [
                             content: "manage your account"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
-
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -827,19 +555,10 @@ export const haleliCmps = [
                             content: "order history"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
-
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -850,19 +569,10 @@ export const haleliCmps = [
                             content: "save items"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
-
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     }
@@ -884,19 +594,12 @@ export const haleliCmps = [
                             content: "customer service"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1rem",
                             fontWeight: "bold",
                             marginTop: "1rem",
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -907,18 +610,10 @@ export const haleliCmps = [
                             content: "FAQ"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -929,18 +624,10 @@ export const haleliCmps = [
                             content: "transport and delivery"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -951,18 +638,10 @@ export const haleliCmps = [
                             content: "return and recycle service"
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "0.9rem",
-                            fontWeight: "unset",
                             margin: "0 auto",
                             textAlign: "center",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -987,18 +666,9 @@ export const haleliCmps = [
                     content: "CHÂTEAU DU BRUNCH"
                 },
                 style: {
-                    fontFamily: "unset",
                     fontSize: "1.5rem",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "#e3baba",
                     backgroundColor: "#161d2e",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     lineHeight: "auto"
                 }
             },
@@ -1017,20 +687,6 @@ export const haleliCmps = [
                             linkTo: "#"
                         },
                         style: {
-                            fontFamily: "unset",
-                            fontSize: "unset",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1042,20 +698,6 @@ export const haleliCmps = [
 
                         },
                         style: {
-                            fontFamily: "unset",
-                            fontSize: "unset",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1067,54 +709,23 @@ export const haleliCmps = [
 
                         },
                         style: {
-                            fontFamily: "unset",
-                            fontSize: "unset",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
-                            color: "unset",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         }
                     }
                     ]
                 },
                 style: {
-                    fontFamily: "unset",
                     fontSize: "1rem",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "#fff",
                     backgroundColor: "#161d2e",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     lineHeight: "auto"
                 }
             }
             ]
         },
         style: {
-            fontFamily: "unset",
             fontSize: "1rem",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
             color: "#fff",
             backgroundColor: "#161d2e",
-            border: "unset",
-            borderRadius: "unset",
             lineHeight: "auto"
         }
     },
@@ -1142,20 +753,8 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1165,20 +764,8 @@ export const haleliCmps = [
                             content: "CHÂTEAU/DU/BRUNCH",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1188,20 +775,8 @@ export const haleliCmps = [
                             content: "CHÂTEAU/DU/BRUNCH",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1211,20 +786,8 @@ export const haleliCmps = [
                             content: "CHÂTEAU/DU/BRUNCH",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1234,20 +797,8 @@ export const haleliCmps = [
                             content: "CHÂTEAU/DU/BRUNCH",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     }
                     ]
@@ -1267,7 +818,6 @@ export const haleliCmps = [
                             src: "https://images.unsplash.com/photo-1550411294-56f7d0c7fbe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
                         },
                         style: {
-                            borderRadius: "unset"
                         }
                     }]
                 },
@@ -1276,20 +826,8 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
             color: "#fff",
             backgroundColor: "#161d2e",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
         },
     },
 
@@ -1334,20 +872,8 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#e3baba",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1358,20 +884,8 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontFamily: "unset",
                             fontSize: "1.4rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1381,20 +895,8 @@ export const haleliCmps = [
                             content: "We do not serve dinner. We do not serve lunch. Chateau du brunch is all around the most important meal of the day, at any time of the day. Our offer for you is simple: With us, every day is Sunday. So if you are the kind of person who knows how he wants to live his life to the best: Come free, leave freeier, enjoy life, eat brunch.",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1.1rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     ]
@@ -1404,20 +906,8 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
             color: "#fff",
             backgroundColor: "#161d2e",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
         },
     },
     // third section
@@ -1444,20 +934,8 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1467,20 +945,9 @@ export const haleliCmps = [
                             content: "THIS IS HOW IT GOES",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1.5rem",
-                            fontWeight: "unset",
                             letterSpacing: "3px",
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#e3baba",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1490,20 +957,10 @@ export const haleliCmps = [
                             content: "You sit behind the bar, watch us making food porn just for you tummy. your food will be served by our muffin-dressed waitresses, yep, no joke. Cause Château du brunch stands with happiness, And happiness is muffins. and us.",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1.1rem",
-                            fontWeight: "unset",
                             letterSpacing: "1px",
-                            margin: "unset",
                             padding: "5px",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     }
                     ]
@@ -1530,20 +987,8 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
             color: "#fff",
             backgroundColor: "#161d2e",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
         },
     },
     // forth section
@@ -1587,20 +1032,8 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontFamily: "unset",
                             fontSize: "2rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#e3baba",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1611,20 +1044,8 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontFamily: "unset",
                             fontSize: "1.4rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1634,20 +1055,8 @@ export const haleliCmps = [
                             content: "HAHASHMAL 6, TLV",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1.1rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -1657,20 +1066,9 @@ export const haleliCmps = [
                             content: "Please, do not forget to rate us on Tripadvisor and our Facebook page. See you soon!",
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1.1rem",
-                            fontWeight: "unset",
-
-                            margin: "unset",
                             padding: "10px",
-                            textTransform: "unset",
                             color: "#fff",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     ]
@@ -1680,20 +1078,8 @@ export const haleliCmps = [
         },
         style: {
             display: "flex",
-            fontFamily: "unset",
-            fontSize: "unset",
-            fontWeight: "unset",
-
-            margin: "unset",
-            padding: "unset",
-            textTransform: "unset",
             color: "#fff",
             backgroundColor: "#161d2e",
-            borderShadow: "unset",
-            border: "unset",
-            borderRadius: "unset",
-            width: "unset",
-            height: "unset",
         },
     },
 
@@ -1713,19 +1099,11 @@ export const haleliCmps = [
                     content: "ALL RIGHTS RESERVED TO CHÂTEAU DU BRUNCH (C) MAY YOUR LIFE BE FILLED WITH BRUNCHES"
                 },
                 style: {
-                    fontFamily: "unset",
                     fontSize: "1.1rem",
-                    fontWeight: "unset",
-
                     margin: "0 auto",
                     textAlign: "center",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "#e3baba",
                     backgroundColor: "#161d2e",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
                     lineHeight: "auto"
                 }
             }]

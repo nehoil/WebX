@@ -29,7 +29,7 @@ export const haleliTemplates = [
                             fontSize: "1.5rem",
                             color: "#161d2e",
                             backgroundColor: "#fff",
-                            lineHeight: "auto"
+
                         }
                     },
                     {
@@ -171,18 +171,6 @@ export const haleliTemplates = [
                                     display: "inline-block",
                                     fontFamily: "champagneLimousines",
                                     fontSize: "2rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "#unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -195,18 +183,6 @@ export const haleliTemplates = [
                                     display: "inline-block",
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1.4rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             }
                             ]
@@ -280,18 +256,7 @@ export const haleliTemplates = [
                                 style: {
                                     fontFamily: "champagneLimousines",
                                     fontSize: "2rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -303,18 +268,7 @@ export const haleliTemplates = [
                                 style: {
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -328,7 +282,6 @@ export const haleliTemplates = [
                                     address: "Amsterdam"
                                 },
                                 style: {
-                                    width: "unset",
                                     height: "100%",
                                     display: "block",
                                     margin: "0 auto"
@@ -338,14 +291,7 @@ export const haleliTemplates = [
                         },
                         style: {
                             padding: "1rem",
-                            textTransform: "unset",
-                            color: "unset",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     }
                     ]
@@ -380,18 +326,6 @@ export const haleliTemplates = [
                                     display: "inline-block",
                                     fontFamily: "champagneLimousines",
                                     fontSize: "2rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "#unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -404,18 +338,6 @@ export const haleliTemplates = [
                                     display: "inline-block",
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1.4rem",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             }
                             ]
@@ -473,17 +395,6 @@ export const haleliTemplates = [
                                     fontFamily: "champagneLimousines",
                                     fontSize: "1.4rem",
                                     fontWeight: "bold",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             }]
                         },
@@ -566,7 +477,6 @@ export const haleliTemplates = [
                                     textAlign: "center",
                                     marginTop: "1rem",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
                                 }
                             },
                             {
@@ -580,7 +490,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+                                    //   
                                 }
                             },
                             {
@@ -594,7 +504,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             }
                             ]
@@ -621,7 +531,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             {
@@ -635,7 +545,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             {
@@ -649,7 +559,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             {
@@ -663,7 +573,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             }
                             ]
@@ -690,7 +600,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             {
@@ -704,7 +614,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             {
@@ -718,7 +628,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             {
@@ -732,7 +642,7 @@ export const haleliTemplates = [
                                     margin: "0 auto",
                                     textAlign: "center",
                                     backgroundColor: "#fff",
-                                    lineHeight: "auto"
+
                                 }
                             },
                             ]
@@ -766,19 +676,10 @@ export const haleliTemplates = [
                         content: "CHÂTEAU DU BRUNCH"
                     },
                     style: {
-                        fontFamily: "unset",
                         fontSize: "1.5rem",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
                         color: "#e3baba",
                         backgroundColor: "#161d2e",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        lineHeight: "auto"
+
                     }
                 },
                 {
@@ -796,20 +697,6 @@ export const haleliTemplates = [
                                 linkTo: "#"
                             },
                             style: {
-                                fontFamily: "unset",
-                                fontSize: "unset",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -821,20 +708,6 @@ export const haleliTemplates = [
 
                             },
                             style: {
-                                fontFamily: "unset",
-                                fontSize: "unset",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -846,38 +719,15 @@ export const haleliTemplates = [
 
                             },
                             style: {
-                                fontFamily: "unset",
-                                fontSize: "unset",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "unset",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             }
                         }
                         ]
                     },
                     style: {
-                        fontFamily: "unset",
                         fontSize: "1rem",
-                        fontWeight: "unset",
-
-                        margin: "unset",
-                        padding: "unset",
-                        textTransform: "unset",
                         color: "#fff",
                         backgroundColor: "#161d2e",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
-                        lineHeight: "auto"
+
                     }
                 }
                 ]
@@ -886,7 +736,7 @@ export const haleliTemplates = [
                 fontSize: "1rem",
                 color: "#fff",
                 backgroundColor: "#161d2e",
-                lineHeight: "auto"
+
             }
         },
         // first section
@@ -912,20 +762,8 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -935,20 +773,8 @@ export const haleliTemplates = [
                                 content: "CHÂTEAU/DU/BRUNCH",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -958,20 +784,8 @@ export const haleliTemplates = [
                                 content: "CHÂTEAU/DU/BRUNCH",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -981,20 +795,8 @@ export const haleliTemplates = [
                                 content: "CHÂTEAU/DU/BRUNCH",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1004,20 +806,8 @@ export const haleliTemplates = [
                                 content: "CHÂTEAU/DU/BRUNCH",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         }
                         ]
@@ -1037,7 +827,6 @@ export const haleliTemplates = [
                                 src: "https://images.unsplash.com/photo-1550411294-56f7d0c7fbe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
                             },
                             style: {
-                                borderRadius: "unset"
                             }
                         }]
                     },
@@ -1152,20 +941,8 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1175,20 +952,9 @@ export const haleliTemplates = [
                                 content: "THIS IS HOW IT GOES",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "1.5rem",
-                                fontWeight: "unset",
                                 letterSpacing: "3px",
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#e3baba",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1198,20 +964,9 @@ export const haleliTemplates = [
                                 content: "You sit behind the bar, watch us making food porn just for you tummy. your food will be served by our muffin-dressed waitresses, yep, no joke. Cause Château du brunch stands with happiness, And happiness is muffins. and us.",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "1.1rem",
-                                fontWeight: "unset",
                                 letterSpacing: "1px",
-                                margin: "unset",
-                                padding: "5px",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         }
                         ]
@@ -1282,20 +1037,8 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#e3baba",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1306,20 +1049,8 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontFamily: "unset",
                                 fontSize: "1.4rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1329,20 +1060,8 @@ export const haleliTemplates = [
                                 content: "HAHASHMAL 6, TLV",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "1.1rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1352,20 +1071,8 @@ export const haleliTemplates = [
                                 content: "Please, do not forget to rate us on Tripadvisor and our Facebook page. See you soon!",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "1.1rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "10px",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         ]
@@ -1400,7 +1107,7 @@ export const haleliTemplates = [
                         textAlign: "center",
                         color: "#e3baba",
                         backgroundColor: "#161d2e",
-                        lineHeight: "auto"
+
                     }
                 }]
             },
