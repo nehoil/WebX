@@ -718,7 +718,6 @@ export const savedCmps = [{
                     style: {
 
                         padding: "15px",
-                        width: "100%",
 
                     }
                 },
