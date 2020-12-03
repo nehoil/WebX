@@ -1,15 +1,7 @@
 import { utilService } from '@/services/util-service.js'
 
 export const haleliCmps = [
-    //     _id: '574575474543',
-    //   name: 'Vita',
-    //   previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1606817513/screencapture-localhost-8081-2020-11-29-13-55-25_1_zjvftz.jpg',
-    //   createdBy: {
-    //     _id: null,
-    //     username: null,
-    //     userPicture: null
-    //   },
-    //   cmps: [
+
     // nav
     {
         type: "web-container",

@@ -1,9 +1,9 @@
 <template>
   <div class="template-list">
-    <div class="spinner">
+    <!-- <div class="spinner">
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
-    </div>
+    </div> -->
     <template-preview :templates="templates" />
   </div>
 </template>

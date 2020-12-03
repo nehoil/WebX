@@ -126,24 +126,21 @@ export default {
     };
   },
   created() {
-    this.borderRadius = this.cmp.style.borderRadius ? parseInt(this.cmp.style.borderRadius) : 0;
-    // var borderRadiusNum;
+    if (this.cmp.style.borderRadius) {
+      this.borderRadius = +this.getNumFromString('borderRadius');
+    }
     if (this.cmp.style.width) {
      var widthNum = this.getNumFromString('width');
       this.width = +widthNum;
     }
-    // if (this.cmp.style.borderRadius) {
-    //   borderRadiusNum = this.getNumFromString('borderRadius');
-    //   this.borderRadius = +borderRadiusNum;
-    // }
   },
   watch: {
     cmp: {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id && this.cmp) {
-          this.width = +this.getNumFromString('width');
-          this.borderRadius = +this.getNumFromString('borderRadius');
+        this.borderRadius = this.cmp.style.borderRadius ? parseInt(this.cmp.style.borderRadius) : 0;
+        this.width = this.cmp.style.width ? +this.getNumFromString('width') : 100;
         }
       },
     },

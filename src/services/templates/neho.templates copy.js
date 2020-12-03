@@ -442,7 +442,7 @@ export const nehoTemplates = [
                                     src: 'https://i.ibb.co/hYJWsN0/Music-App-7.jpg'
                                 },
                                 style: {
-                                    width: '75%'
+                                    width: '250px'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -453,7 +453,7 @@ export const nehoTemplates = [
                                     src: 'https://i.ibb.co/VpppD2k/Music-App-6.jpg'
                                 },
                                 style: {
-                                    width: '75%'
+                                    width: '250px'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -464,7 +464,7 @@ export const nehoTemplates = [
                                     src: 'https://i.ibb.co/WKZWc1p/Music-App-5.jpg'
                                 },
                                 style: {
-                                    width: '75%'
+                                    width: '250px'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             },
@@ -475,7 +475,7 @@ export const nehoTemplates = [
                                     src: 'https://i.ibb.co/WFjPNMN/Music-App-8.jpg'
                                 },
                                 style: {
-                                    width: '75%'
+                                    width: '250px'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }

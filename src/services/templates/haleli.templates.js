@@ -47,19 +47,7 @@ export const haleliTemplates = [
                                     linkTo: "#"
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
+
                                 },
                             },
                             {
@@ -71,20 +59,6 @@ export const haleliTemplates = [
 
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 },
                             },
                             {
@@ -96,20 +70,6 @@ export const haleliTemplates = [
 
                                 },
                                 style: {
-                                    fontFamily: "unset",
-                                    fontSize: "unset",
-                                    fontWeight: "unset",
-
-                                    margin: "unset",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
-                                    backgroundColor: "unset",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
-                                    width: "unset",
-                                    height: "unset",
                                 }
                             }
                             ]
@@ -118,8 +78,6 @@ export const haleliTemplates = [
                             fontSize: "1rem",
                             color: "#161d2e",
                             backgroundColor: "#fff",
-                            borderRadius: "unset",
-                            lineHeight: "auto"
                         }
                     }
                     ]
@@ -150,18 +108,9 @@ export const haleliTemplates = [
                             textAlign: 'center',
                             fontFamily: "robotomono",
                             fontSize: "4rem",
-                            fontWeight: "unset",
                             letterSpacing: "3px",
                             margin: "0 auto",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "rgb(84, 84, 84)",
-                            backgroundColor: "unset",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
                     },
                     {
@@ -175,20 +124,13 @@ export const haleliTemplates = [
                         },
                         style: {
                             fontFamily: "champagneLimousines",
-                            fontSize: "unset",
                             fontWeight: "bold",
                             letterSpacing: "0.375rem",
-                            margin: "unset",
                             padding: "5px 10px",
-                            textTransform: "unset",
                             color: "#fff",
                             backgroundColor: "rgb(94,204,191)",
-                            borderShadow: "unset",
                             border: "2px solid #fff",
                             outline: "3px solid rgb(94,204,191)",
-                            borderRadius: "unset",
-                            width: "unset",
-                            height: "unset",
                         },
 
                     }
