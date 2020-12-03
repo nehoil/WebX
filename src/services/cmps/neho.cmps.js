@@ -2,6 +2,212 @@
 
 export const nehoCmps = [{
         type: 'web-container',
+        name: 'header',
+        id: 'headernav-ws',
+        'class': 'headernav-ws',
+        info: {
+          dir: 'row',
+          cmps: [
+            {
+              type: 'web-div',
+              name: 'header',
+              id: 'saas-nav',
+              'class': 'navbar-ws',
+              info: {
+                dir: 'row',
+                cmps: [
+                  {
+                    id: 'f8ayy9gw4I',
+                    type: 'web-img',
+                    info: {
+                      src: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607007328/4233039414_cfafb28f-5b57-4c8f-a968-c08a4b4c575a_wmfwpe.png'
+                    },
+                    style: {
+                      width: '53%',
+                      borderRadius: '0%'
+                    }
+                  },
+                  {
+                    type: 'web-div',
+                    name: 'card',
+                    id: '4caepCz5sO',
+                    'class': 'navbar-2-div',
+                    info: {
+                      dir: 'row',
+                      cmps: [
+                        {
+                          id: 'fIwAhYrueX',
+                          type: 'web-txt',
+                          'class': 'navbar-2-menu-link',
+                          info: {
+                            content: 'VILLAS'
+                          },
+                          style: {
+                            color: 'aliceblue',
+                            fontSize: '0.9375rem',
+                            fontWeight: '400',
+                            textShadow: 'unset',
+                            letterSpacing: '0rem'
+                          }
+                        },
+                        {
+                          id: '75pxcwv5jh',
+                          type: 'web-txt',
+                          'class': 'navbar-2-menu-link',
+                          info: {
+                            content: 'OFFERS'
+                          },
+                          style: {
+                            color: 'aliceblue',
+                            fontSize: '0.9375rem',
+                            fontWeight: '400',
+                            textShadow: 'unset'
+                          }
+                        },
+                        {
+                          id: 'AmmT3uY0Aa',
+                          type: 'web-txt',
+                          'class': 'navbar-2-menu-link',
+                          info: {
+                            content: 'EXPIRENCES'
+                          },
+                          style: {
+                            color: 'aliceblue',
+                            fontSize: '0.9375rem',
+                            fontWeight: '400',
+                            textShadow: 'unset'
+                          }
+                        },
+                        {
+                          id: 'H0mZT5kLIb',
+                          type: 'web-txt',
+                          'class': 'navbar-2-menu-link',
+                          info: {
+                            content: 'BLOG'
+                          },
+                          style: {
+                            color: 'aliceblue',
+                            fontSize: '0.9375rem',
+                            fontWeight: '400',
+                            textShadow: 'unset'
+                          }
+                        },
+                        {
+                          id: '96MlZ0lAvN',
+                          type: 'web-txt',
+                          'class': 'navbar-2-menu-link',
+                          info: {
+                            content: 'FOUND'
+                          },
+                          style: {
+                            color: 'aliceblue',
+                            fontSize: '0.9375rem',
+                            fontWeight: '400',
+                            textShadow: 'unset'
+                          }
+                        }
+                      ]
+                    },
+                    style: {}
+                  }
+                ]
+              },
+              style: {
+                
+              }
+            },
+            {
+              type: 'web-div',
+              name: 'header',
+              id: 'header-ws',
+              'class': 'header-ws',
+              info: {
+                dir: 'row',
+                cmps: [
+                  {
+                    type: 'web-div',
+                    name: 'card',
+                    id: '1mZp4Udpnv',
+                    'class': 'header-ws-title-div',
+                    info: {
+                      dir: 'row',
+                      cmps: [
+                        {
+                          id: 'HffeArf3Gf',
+                          type: 'web-txt',
+                          'class': 'header-ws-title',
+                          info: {
+                            content: 'DISCOVER THE HEAVENLY PRIVATE ISLAND & LUXURY RESORT'
+                          },
+                          style: {
+                            textAlign: 'start',
+                            fontSize: '2.625rem',
+                            color: '#fff',
+                            textShadow: 'unset'
+                          }
+                        }
+                      ]
+                    },
+                    style: {}
+                  },
+                  {
+                    type: 'web-div',
+                    name: 'button',
+                    id: '1mZp4Udpnv',
+                    'class': 'header-ws-div-btns',
+                    info: {
+                      dir: 'row',
+                      cmps: [
+                        {
+                          id: 'pUhUBHrIeW',
+                          type: 'web-button',
+                          'class': 'header-ws-btn-1',
+                          info: {
+                            content: 'BOOK NOW'
+                          },
+                          style: {
+                            fontSize: '1rem',
+                            letterSpacing: '0.7px',
+                            color: '#fff',
+                            backgroundColor: 'rgba(0,0,0,.25)',
+                            border: '1px solid white',
+                            fontWeight: 'normal'
+                          }
+                        },
+                        {
+                          id: 'pUhUBHrIeW',
+                          type: 'web-button',
+                          'class': 'header-ws-btn-2',
+                          info: {
+                            content: 'DISCOVER MORE'
+                          },
+                          style: {
+                            fontSize: '1rem',
+                            letterSpacing: '0.7px',
+                            color: '#fff',
+                            fontWeight: 'normal'
+                          }
+                        }
+                      ]
+                    },
+                    style: {}
+                  }
+                ]
+              },
+              style: {
+                
+              }
+            }
+          ]
+        },
+        style: {
+          padding: '3.25rem',
+          minHeight: '43.75rem',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1567491634123-460945ea86dd?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxODcwMDl8MHwxfHNlYXJjaHwxM3x8fGVufDB8fHw&ixlib=rb-1.2.1&q=85)'
+        }
+      },
+    {
+        type: 'web-container',
         name: 'navbar',
         id: 'saas-nav',
         previewImg: 'https://i.ibb.co/Vw9mynd/nav1.jpg',

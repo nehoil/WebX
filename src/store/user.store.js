@@ -1,7 +1,7 @@
 // import { templateService } from '@/services/template.service.js'
 import userService from '@/services/user.service.js'
 import { webService } from '@/services/web.service.js'
-import { utilService } from '@/services/util-service.js'
+// import { utilService } from '@/services/util-service.js'
 
 var localLoggedinUser = null;
 if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user)
@@ -17,15 +17,7 @@ export const userStore = {
             return state.userWebs
         },
         user(state) {
-            if (state.loggedinUser) {
                 return state.loggedinUser
-            } else {
-                state.loggedinUser = {
-                    _id: utilService.makeId(8),
-                    username: 'guest',
-                    userPicture: '',
-                }
-            }
         }
     },
     mutations: {
@@ -52,6 +44,7 @@ export const userStore = {
         async loadUserWebs(context) {
             const userWebs = await webService.getByUserId(context.getters.user._id);
             try {
+                console.log('user webs here:', userWebs);
                 context.commit({ type: 'setUserWebs', userWebs })
                 return userWebs;
             } catch (err) {
