@@ -4,7 +4,7 @@
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
     </div> -->
-    <template-preview :templates="templates" />
+    <template-preview :templates="templates" @createNewWeb="createNewWeb"/>
   </div>
 </template>
 
@@ -21,7 +21,12 @@ export default {
       templates: this.$store.getters.templates,
     };
   },
-  methods: {},
+  methods: {
+    createNewWeb(){
+      console.log('new');
+      
+    }
+  },
   computed: {},
   created() {},
 };
