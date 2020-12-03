@@ -1,6 +1,6 @@
 <template>
   <div class="edit-img">
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -123,6 +123,7 @@ export default {
       term: null,
       isToShowSearch: false,
       unsplashImages: null,
+      activeName: '1',
     };
   },
   created() {

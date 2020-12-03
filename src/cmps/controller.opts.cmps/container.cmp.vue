@@ -1,7 +1,6 @@
 <template>
   <div class="edit-container" v-if="cmp">
-    <select-color :cmp="cmp"></select-color>
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -70,6 +69,7 @@
         </div>
       </el-collapse-item>
     </el-collapse>
+    <select-color :cmp="cmp"></select-color>
   </div>
 </template>
 
@@ -94,6 +94,7 @@ export default {
       term: null,
       isToShowSearch: false,
       unsplashImages: null,
+      activeName: '1',
     };
   },
   created() {
@@ -112,13 +113,13 @@ export default {
       deep: true,
       handler(newVal, oldVal) {
         if (newVal.id !== oldVal.id) {
-          if (this.cmp.style.minHeight){
+          if (this.cmp.style.minHeight) {
             var minHeightNum = this.getNumFromString('minHeight');
-          this.minHeight = +minHeightNum * 16;
+            this.minHeight = +minHeightNum * 16;
           }
-          if (this.cmp.style.padding){
+          if (this.cmp.style.padding) {
             var paddingNum = this.getNumFromString('padding');
-          this.padding = +paddingNum * 16;
+            this.padding = +paddingNum * 16;
           }
         }
       },

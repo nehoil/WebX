@@ -1,6 +1,6 @@
 <template>
   <div class="font-properties">
-    <el-collapse accordion>
+    <el-collapse accordion v-model="activeName">
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
@@ -87,6 +87,7 @@ export default {
       alignLeft: iconService.alignLeft(),
       alignCenter: iconService.alignCenter(),
       value: '',
+      activeName: '1',
     };
   },
   watch: {

@@ -21,17 +21,16 @@
   </div>
 </template>
 <script>
-import { eventBus } from "../../services/eventbus.service.js";
-import webButton from "./button.cmp";
-import webContainer from "./container.cmp";
-import webImg from "./img.cmp";
-import webMap from "./map.cmp";
-import webTxt from "./txt.cmp";
-import webVideo from "./video.cmp";
-import webBody from "./web.cmp";
+import { eventBus } from '../../services/eventbus.service.js';
+import webButton from './button.cmp';
+import webContainer from './container.cmp';
+import webImg from './img.cmp';
+import webMap from './map.cmp';
+import webTxt from './txt.cmp';
+import webVideo from './video.cmp';
 
 export default {
-  name: "controller-edit",
+  name: 'controller-edit',
   components: {
     webButton,
     webContainer,
@@ -39,7 +38,6 @@ export default {
     webMap,
     webTxt,
     webVideo,
-    webBody,
   },
   data() {
     return {
@@ -50,11 +48,11 @@ export default {
     };
   },
   created() {
-    eventBus.$on("setItem", this.setEditItem);
+    eventBus.$on('setItem', this.setEditItem);
   },
   methods: {
     setEditItem(cmp) {
-      if (cmp.type !== "web-form") {
+      if (cmp.type !== 'web-form') {
         this.cmp = cmp;
         this.itemToEdit = cmp.type;
       } else this.itemToEdit = null;

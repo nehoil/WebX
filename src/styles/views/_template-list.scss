@@ -23,13 +23,12 @@
 
 .template-preview {
   width: rem(370px);
+  height: rem(285px);
   margin-top: 2rem;
   .template-img{
     width: 100%;
+    height: 100%;
     & img {
-      height: 100%;
-      // width: rem(370px);
-      // height: 100%;
       width: 100%;
       border-bottom-right-radius: 0.4rem;
       border-bottom-left-radius: 0.4rem;
