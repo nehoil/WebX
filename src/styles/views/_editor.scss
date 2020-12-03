@@ -21,7 +21,7 @@ div.editor {
             width: -webkit-fill-available;
             .ghost {
                 background-color: aqua;
-                height: rem(35px);
+                height: 50px;
                 padding: 30px 0;
                 // visibility: hidden;
                 outline: 2px solid red;
@@ -186,6 +186,7 @@ div.editor {
     // transition: all .3s ease;
     transition: none;
     &:hover {
+        z-index: 100;
         outline: 2px dashed rgb(195, 195, 195);
         // padding: 1rem;
     }
