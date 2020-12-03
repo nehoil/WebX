@@ -11,6 +11,7 @@
       :style="cmp.style"
       @blur="onEdit"
       @click.stop="setEditItem"
+      ref="elTxt"
     >
       {{ cmp.info.content }}
     </span>
@@ -19,14 +20,14 @@
 </template>
 
 <script>
-import { eventBus } from "@/services/eventbus.service.js";
-import editMenu from "@/cmps/web.edit.menu.cmp";
+import { eventBus } from '@/services/eventbus.service.js';
+import editMenu from '@/cmps/web.edit.menu.cmp';
 
 export default {
   data() {
     return {
-      // isEdit: true,
       showEditMenu: false,
+      // changeColor: 0
     };
   },
   props: {
@@ -36,19 +37,19 @@ export default {
   methods: {
     onEdit(ev) {
       this.cmp.info.content = ev.target.innerText;
-      eventBus.$emit("update-site");
+      eventBus.$emit('update-site');
     },
     setEditItem() {
-      eventBus.$emit("openEditor", this.cmp);
+      eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
-        eventBus.$emit("setItem", this.cmp);
+        eventBus.$emit('setItem', this.cmp);
       });
     },
   },
   computed: {
-    isEdit(){
+    isEdit() {
       return this.$store.getters.isEditOn;
-    }
+    },
   },
   name: 'web-txt',
   components: {
@@ -57,12 +58,22 @@ export default {
   created() {
     this.cmp._rootId = this._rootId;
     if (!this.cmp.style.textShadow) {
-      this.cmp.style.textShadow = "unset";
+      this.cmp.style.textShadow = 'unset';
     }
-    eventBus.$on("changeTxt", () => {
+    eventBus.$on('change-web-txt', () => {
       this.$forceUpdate();
     });
   },
+  // mounted() {
+  //   this.changeColor++
+  //   if (this.changeColor <= 1){
+  //   console.log('here');
+  //   const elem = this.$refs.elTxt
+  //   this.cmp.style.color = window.getComputedStyle(elem,null).getPropertyValue('color')
+  //   eventBus.$emit('update-site');
+  //   this.$forceUpdate()
+  //   }
+  // },
 };
 </script>
 <style scoped>

@@ -14,8 +14,6 @@
 }
 
 .img-gallery-6-container {
-  background-color: rgba(255, 0, 150, 0.3);
-//   background-image: linear-gradient(140deg, #8b24fc 0%, #2c0efe 100%);
   padding: 100px 0 !important;
   & .img-gallery-6-div {
     width: 100%;
@@ -23,9 +21,8 @@
     justify-content: space-around;
     align-items: center;
     & img {
-      max-width: 250px;
+      // max-width: 250px;
       margin: 10px;
     }
   }
-  // justify-content: space-between;
 }

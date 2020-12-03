@@ -94,6 +94,34 @@ export default {
           label: 'Sacramento',
         },
         {
+          value: 'caudex',
+          label: 'Caudex',
+        },
+        {
+          value: 'funcyKids',
+          label: 'Funcy Kids',
+        },
+        {
+          value: 'kulo',
+          label: 'Kulo',
+        },
+        {
+          value: 'mistrain',
+          label: 'Mistrain',
+        },
+        {
+          value: 'myTurtle',
+          label: 'Turtle',
+        },
+        {
+          value: 'pumpkins',
+          label: 'Pumpkins',
+        },
+        {
+          value: 'romantika',
+          label: 'Romantika',
+        },
+        {
           value: 'sundayMorning',
           label: 'Sunday Morning',
         },
@@ -101,11 +129,26 @@ export default {
       value: '',
     };
   },
-  created() {},
+  created() {
+    this.value = this.cmp.style.fontFamily ? this.cmp.style.fontFamily : '';
+  },
   methods: {
     setFontFamily(font) {
       this.cmp.style.fontFamily = font;
       eventBus.$emit('update-site');
+      eventBus.$emit('change-' + this.cmp.type);
+    },
+  },
+  watch: {
+    cmp: {
+      deep: true,
+      handler(newVal, oldVal) {
+        if (newVal.id !== oldVal.id) {
+          this.value = this.cmp.style.fontFamily
+            ? this.cmp.style.fontFamily
+            : '';
+        }
+      },
     },
   },
 };

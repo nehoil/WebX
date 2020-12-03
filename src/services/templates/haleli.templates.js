@@ -11,7 +11,6 @@ export const haleliTemplates = [
             userPicture: null
         },
         cmps: [
-
             {
                 type: "web-container",
                 name: "navbar",
@@ -28,15 +27,8 @@ export const haleliTemplates = [
                         style: {
                             fontFamily: "robotomono",
                             fontSize: "1.5rem",
-                            fontWeight: "unset",
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#161d2e",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
-                            borderRadius: "unset",
                             lineHeight: "auto"
                         }
                     },
@@ -123,16 +115,9 @@ export const haleliTemplates = [
                             ]
                         },
                         style: {
-                            fontFamily: "unset",
                             fontSize: "1rem",
-                            fontWeight: "unset",
-                            margin: "unset",
-                            padding: "unset",
-                            textTransform: "unset",
                             color: "#161d2e",
                             backgroundColor: "#fff",
-                            borderShadow: "unset",
-                            border: "unset",
                             borderRadius: "unset",
                             lineHeight: "auto"
                         }
@@ -140,19 +125,10 @@ export const haleliTemplates = [
                     ]
                 },
                 style: {
-                    fontFamily: "unset",
                     fontSize: "1rem",
-                    fontWeight: "unset",
-                    margin: "unset",
                     height: "4rem",
-                    padding: "unset",
-                    textTransform: "unset",
                     color: "#161d2e",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    lineHeight: "auto"
                 }
             },
             // header
@@ -220,14 +196,7 @@ export const haleliTemplates = [
                 },
                 style: {
                     paddingTop: '4rem',
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
                     padding: "15px",
-                    backgroundColor: "unset",
-                    borderRadius: "unset",
-                    height: "unset",
                     backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
                     backgroundSize: 'contain'
                 },
@@ -322,19 +291,7 @@ export const haleliTemplates = [
                 },
                 style: {
                     display: "flex",
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
                     minHeight: "800px",
                 },
             },
@@ -453,20 +410,7 @@ export const haleliTemplates = [
                 },
                 style: {
                     display: "flex",
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
-                    backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
-                    height: "unset",
+                    backgroundColor: "#fff"
                 },
             },
             // 2nd section
@@ -557,19 +501,7 @@ export const haleliTemplates = [
                 },
                 style: {
                     display: "flex",
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
                     minHeight: "800px",
                 },
             },
@@ -661,19 +593,7 @@ export const haleliTemplates = [
                 },
                 style: {
                     display: "flex",
-                    fontFamily: "unset",
-                    fontSize: "unset",
-                    fontWeight: "unset",
-
-                    margin: "unset",
-                    padding: "unset",
-                    textTransform: "unset",
-                    color: "unset",
                     backgroundColor: "#fff",
-                    borderShadow: "unset",
-                    border: "unset",
-                    borderRadius: "unset",
-                    width: "unset",
                     minHeight: "200px",
                 },
             },
@@ -699,19 +619,11 @@ export const haleliTemplates = [
                                     content: "shop"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1rem",
                                     fontWeight: "bold",
-                                    // margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     marginTop: "1rem",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -722,19 +634,10 @@ export const haleliTemplates = [
                                     content: "all plants"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
-
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -745,19 +648,10 @@ export const haleliTemplates = [
                                     content: "books and accessories"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
-
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             }
@@ -779,20 +673,12 @@ export const haleliTemplates = [
                                     content: "my account"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1rem",
                                     fontWeight: "bold",
-
                                     marginTop: "1rem",
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -803,20 +689,10 @@ export const haleliTemplates = [
                                     content: "manage your account"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
-
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -827,19 +703,10 @@ export const haleliTemplates = [
                                     content: "order history"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
-
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -850,19 +717,10 @@ export const haleliTemplates = [
                                     content: "save items"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
-
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             }
@@ -884,19 +742,12 @@ export const haleliTemplates = [
                                     content: "customer service"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "1rem",
                                     fontWeight: "bold",
                                     marginTop: "1rem",
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -907,18 +758,10 @@ export const haleliTemplates = [
                                     content: "FAQ"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -929,18 +772,10 @@ export const haleliTemplates = [
                                     content: "transport and delivery"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -951,18 +786,10 @@ export const haleliTemplates = [
                                     content: "return and recycle service"
                                 },
                                 style: {
-                                    fontFamily: "unset",
                                     fontSize: "0.9rem",
-                                    fontWeight: "unset",
                                     margin: "0 auto",
                                     textAlign: "center",
-                                    padding: "unset",
-                                    textTransform: "unset",
-                                    color: "unset",
                                     backgroundColor: "#fff",
-                                    borderShadow: "unset",
-                                    border: "unset",
-                                    borderRadius: "unset",
                                     lineHeight: "auto"
                                 }
                             },
@@ -1114,17 +941,9 @@ export const haleliTemplates = [
                 ]
             },
             style: {
-                fontFamily: "unset",
                 fontSize: "1rem",
-                fontWeight: "unset",
-
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
                 color: "#fff",
                 backgroundColor: "#161d2e",
-                border: "unset",
-                borderRadius: "unset",
                 lineHeight: "auto"
             }
         },
@@ -1285,20 +1104,8 @@ export const haleliTemplates = [
             },
             style: {
                 display: "flex",
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
                 color: "#fff",
                 backgroundColor: "#161d2e",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
             },
         },
 
@@ -1342,20 +1149,8 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontFamily: "unset",
                                 fontSize: "2rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#e3baba",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         {
@@ -1366,20 +1161,8 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontFamily: "unset",
                                 fontSize: "1.4rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
-                                color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
+                                color: "#fff"
                             },
                         },
                         {
@@ -1389,20 +1172,8 @@ export const haleliTemplates = [
                                 content: "We do not serve dinner. We do not serve lunch. Chateau du brunch is all around the most important meal of the day, at any time of the day. Our offer for you is simple: With us, every day is Sunday. So if you are the kind of person who knows how he wants to live his life to the best: Come free, leave freeier, enjoy life, eat brunch.",
                             },
                             style: {
-                                fontFamily: "unset",
                                 fontSize: "1.1rem",
-                                fontWeight: "unset",
-
-                                margin: "unset",
-                                padding: "unset",
-                                textTransform: "unset",
                                 color: "#fff",
-                                backgroundColor: "unset",
-                                borderShadow: "unset",
-                                border: "unset",
-                                borderRadius: "unset",
-                                width: "unset",
-                                height: "unset",
                             },
                         },
                         ]
@@ -1412,20 +1183,8 @@ export const haleliTemplates = [
             },
             style: {
                 display: "flex",
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
                 color: "#fff",
                 backgroundColor: "#161d2e",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
             },
         },
         // third section
@@ -1537,20 +1296,8 @@ export const haleliTemplates = [
             },
             style: {
                 display: "flex",
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
                 color: "#fff",
                 backgroundColor: "#161d2e",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
             },
         },
         // forth section
@@ -1686,20 +1433,8 @@ export const haleliTemplates = [
             },
             style: {
                 display: "flex",
-                fontFamily: "unset",
-                fontSize: "unset",
-                fontWeight: "unset",
-
-                margin: "unset",
-                padding: "unset",
-                textTransform: "unset",
                 color: "#fff",
-                backgroundColor: "#161d2e",
-                borderShadow: "unset",
-                border: "unset",
-                borderRadius: "unset",
-                width: "unset",
-                height: "unset",
+                backgroundColor: "#161d2e"
             },
         },
 
@@ -1718,19 +1453,11 @@ export const haleliTemplates = [
                         content: "ALL RIGHTS RESERVED TO CHÂTEAU DU BRUNCH (C) MAY YOUR LIFE BE FILLED WITH BRUNCHES"
                     },
                     style: {
-                        fontFamily: "unset",
                         fontSize: "1.1rem",
-                        fontWeight: "unset",
-
                         margin: "0 auto",
                         textAlign: "center",
-                        padding: "unset",
-                        textTransform: "unset",
                         color: "#e3baba",
                         backgroundColor: "#161d2e",
-                        borderShadow: "unset",
-                        border: "unset",
-                        borderRadius: "unset",
                         lineHeight: "auto"
                     }
                 }]
