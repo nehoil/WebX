@@ -6,10 +6,10 @@
   font-size: 1.1rem;
   // flex-wrap: wrap;
   // height: 90vh;
-  max-width: 1700px;
+  // max-width: 1700px;
   // flex-direction:;
   margin: 0;
-  padding: 2rem;
+  padding: 3rem;
   & .template-previews-list {
     display: flex;
     // margin: 0 auto;
@@ -61,7 +61,7 @@
     padding: rem(12px) rem(10px);
     padding-right: 1.5rem;
     font-size: 0.9rem;
-    z-index: 1200;
+    z-index: 12;
     .dots {
       width: 10%;
     }

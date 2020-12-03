@@ -17,9 +17,7 @@
         </router-link>
       </div>
       <div class="menu">
-        <!-- <router-link to="/">Home</router-link> | -->
         <router-link to="/templates">Templates</router-link>
-        <!-- <router-link to="/user">Profile</router-link> | -->
         <router-link to="/editor">Editor</router-link>
         <a @click="showLogin" v-if="!user">Login</a>
         <span v-if="user">
