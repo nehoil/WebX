@@ -59,7 +59,6 @@ export default {
   },
   computed: {
       isPreview(){
-        console.log('this.$store.getters.isPreview', this.$store.getters.isPreviewOn);
         return this.$store.getters.isPreviewOn
       },
   },
