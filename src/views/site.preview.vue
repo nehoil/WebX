@@ -4,7 +4,7 @@
       <div class="preview-bar" v-if="isPreview">
         <div class="logo">
           <router-link to="/">
-            <img src="../assets/logo.png" alt="" srcset=""
+            <img src="../assets/logo2.png" alt="" srcset=""
           /></router-link>
         </div>
         <div class="preview-header-content">
