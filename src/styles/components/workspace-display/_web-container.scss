@@ -1,17 +1,7 @@
 .web-container {
-    // max-width: 1400px;
-    // min-width: 100%;
     display: block;
     position: relative;
-    // padding: 1rem !important;
-    // object-fit: cover;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // transition: all .3s ease;
-    &:hover {
-        outline: 2px dashed rgb(195, 195, 195);
-        // padding: 1rem;
-    }
+    overflow: hidden;
 }
 
 .row {
