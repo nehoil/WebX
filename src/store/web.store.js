@@ -47,7 +47,7 @@ export const webStore = {
         },
         templates(state) {
             return state.templates
-        },
+        }
     },
     mutations: {
         removeCmp(state, { id }) {
