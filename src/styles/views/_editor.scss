@@ -10,7 +10,6 @@ div.editor {
     }
     border: 1px solid $clr4;
     height: 91.54vh;
-    // margin-bottom: 2rem;
     .workspace {
         @include scrollBar(.5rem, lighten($clr4, 35%));
         overflow-y: scroll;
@@ -19,11 +18,7 @@ div.editor {
         & .draggable-container {
             margin: 0 auto;
             width: -webkit-fill-available;
-            // max-width: 1400px;
         }
-        // .draggable-container {
-        // max-width: 1400px;
-        // }
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -60,7 +55,6 @@ div.editor {
     .controller {
         @include scrollBar(.5rem,
         lighten($clr2, 5%));
-        // background-color: rgba(241, 241, 241, 0.5);
         overflow-y: scroll;
         overflow-x: hidden;
         background-color: $clr4;
@@ -68,37 +62,26 @@ div.editor {
         .controller-add,
         .controller-edit {
             padding: rem(20px);
-            // text-align: center;
         }
-        // font-size: 1.2rem;
         border-right: 1px solid $clr4;
         height: 100%;
         display: flex;
         nav {
-            margin-bottom: 4rem;
+            // margin-bottom: 4rem;
             font-size: 1.3rem;
             text-align: center;
+            font-weight: 100;
             a {
                 padding-right: 20px;
                 padding-left: 20px;
+                color: $clr6;
                 width: 100%;
                 height: 100%;
                 background-color: $clr3;
-                // background-color: rgb(177, 177, 177);
             }
-            // & a:first-of-type {
-            //     border-bottom-right-radius: 15px;
-            // }
-            // & a:last-of-type {
-            //     border-bottom-left-radius: 15px;
-            // }
             .active-tab {
-                // border-top-right-radius: 10pxs;
-                // border-top-right-radius: 15px;
-                // background-color: $clr4;
                 background-color: $clr4;
-                // font-size: 1.5rem;
-                // color: white;
+                color: $clr3;
             }
             letter-spacing: 2px;
         }
@@ -127,10 +110,9 @@ div.editor {
             width: 40%;
             display: flex;
             align-content: flex-end !important;
-            // margin-bottom: 5px;
         }
         .el-input {
-            width: 100%;
+            width: 80%;
         }
         margin: 0 auto;
     }
@@ -142,9 +124,6 @@ div.editor {
     }
     .dragArea {
         .sortable-chosen {
-            // border: 3px solid red;
-            // width: 100%;
-            // height: 30px;
             .ghost {
                 opacity: 0;
             }
@@ -154,10 +133,6 @@ div.editor {
         display: block;
         text-align: start;
         margin: 0;
-        // padding-left: 10px;
-        // padding-left: 2rem;
-        // font-size: 1rem;
-        // border-bottom: 1px solid rgba(128, 128, 128, 0.158);
     }
 }
 
@@ -174,8 +149,6 @@ div.editor {
         bottom: 0%;
         transition: 1s ease;
         opacity: 0;
-        //         user-drag: none; 
-        // user-select: none;
     }
     &:active .drag-image {
         opacity: 60%;
@@ -189,13 +162,9 @@ div.editor {
 .add-prev-img {
     border-radius: 5px;
     margin: 0;
-    // user-drag: none; 
-    // user-select: none;
     filter: grayscale(0.5)
 }
 
-// img {user-drag: none; 
-//     user-select: none;}
 .web-container {
     outline: 2px dashed transparent;
     border-width: 1px;
@@ -203,11 +172,9 @@ div.editor {
 }
 
 .on-edit {
-    // transition: all .3s ease;
     transition: none;
     &:hover {
         z-index: 100;
         outline: 2px dashed rgb(195, 195, 195);
-        // padding: 1rem;
     }
 }

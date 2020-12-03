@@ -33,11 +33,11 @@
         <div class="flex center space plr10">
           <span>Font Size</span>
           <el-slider
-            :max="10"
-            step="0.1"
+            :max="100"
             v-model="fontSize"
             @input="setFontSize"
           ></el-slider>
+          <!-- step="0.1" -->
         </div>
         <div class="flex center space plr10">
           <span>Spacing</span>
@@ -77,7 +77,7 @@ export default {
   },
   data() {
     return {
-      fontSize: 14,
+      fontSize: 0.8,
       letterSpacing: 0,
       textShadow: 0,
       textAlign: 'none',
@@ -92,20 +92,27 @@ export default {
   },
   watch: {
     cmp: {
-      
       deep: true,
       handler(newVal, oldVal) {
-      console.log('watch',newVal,oldVal);
+        console.log('watch', newVal, oldVal);
         if (newVal.id !== oldVal.id) {
-          this.fontSize = this.cmp.style.fontSize ? +this.getNumFromString('fontSize') : 0.875;
-          this.letterSpacing = this.cmp.style.letterSpacing ? +this.getNumFromString('letterSpacing') : 0;
+          this.fontSize = this.cmp.style.fontSize
+            ? +this.getNumFromString('fontSize') * 16
+            : 0.875;
+          this.letterSpacing = this.cmp.style.letterSpacing
+            ? +this.getNumFromString('letterSpacing')
+            : 0;
         }
       },
     },
   },
   created() {
-    this.fontSize = this.cmp.style.fontSize ? +this.getNumFromString('fontSize') : 0.875;
-    this.letterSpacing = this.cmp.style.letterSpacing ? +this.getNumFromString('letterSpacing') : 0;
+    this.fontSize = this.cmp.style.fontSize
+      ? +this.getNumFromString('fontSize') * 16
+      : 14;
+    this.letterSpacing = this.cmp.style.letterSpacing
+      ? +this.getNumFromString('letterSpacing')
+      : 0;
   },
   methods: {
     getNumFromString(styleProperty) {
@@ -142,7 +149,7 @@ export default {
       return this.cmp.style.textShadow;
     },
     setFontSize(size) {
-      this.cmp.style.fontSize = size + 'rem'
+      this.cmp.style.fontSize = size / 16 + 'rem';
       eventBus.$emit('update-site');
       eventBus.$emit('change-web-txt');
     },
