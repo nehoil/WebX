@@ -543,6 +543,509 @@ export const roeeTemplates = [{
                 }
             }
         ]
-    }
+    },
+    {
+        _id: "syssdfsdf546",
+        name: "hr-management",
+        // previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607008059/screencapture-localhost-8081-2020-11-29-13-55-25_5_avg7pv.jpg",
+        createdBy: {
+            _id: null,
+            username: null,
+            userPicture: null
+        },
+        cmps: [{
+                type: "web-container",
+                name: "header",
+                id: "header-hr",
+                class: "web-header-hr",
+                // previewImg: 'https://i.ibb.co/09X6T9w/preview-header-basic001.jpg',
+                info: {
+                    dir: "row",
+                    cmps: [
+
+                        {
+                            type: "web-container",
+                            name: "navbar",
+                            id: "nav001",
+                            previewImg: 'https://i.ibb.co/mzq5Y41/basic-nav.jpg',
+                            info: {
+                                dir: "navbar-1-hr",
+                                cmps: [{
+                                        type: "web-div",
+                                        name: "logo-container",
+                                        id: utilService.makeId(10),
+                                        class: "web-div-logo-container",
+                                        info: {
+                                            dir: "row",
+                                            cmps: [{
+                                                id: utilService.makeId(10),
+                                                type: "web-txt",
+                                                info: {
+                                                    content: "HR"
+                                                },
+                                                style: {
+                                                    fontSize: "2rem",
+                                                    lineHeight: "auto"
+                                                }
+                                            }]
+                                        },
+                                        style: {
+
+                                        }
+                                    },
+
+                                    {
+                                        type: "web-div",
+                                        name: "hr-nav-btns-div",
+                                        id: utilService.makeId(10),
+                                        class: "hr-nav-btns-div",
+                                        info: {
+                                            dir: "row",
+                                            cmps: [{
+                                                    id: utilService.makeId(10),
+                                                    type: "web-button",
+                                                    info: {
+                                                        content: "Home",
+                                                        linkTo: "#"
+                                                    },
+                                                    style: {
+                                                        fontFamily: "assistantLight",
+                                                        fontWeight: "bold",
+
+                                                    },
+                                                },
+                                                {
+                                                    id: utilService.makeId(10),
+                                                    type: "web-button",
+                                                    info: {
+                                                        content: "Services",
+                                                        linkTo: "#"
+
+                                                    },
+                                                    style: {
+                                                        fontFamily: "assistantLight",
+                                                        fontWeight: "bold",
+
+
+                                                    },
+                                                },
+                                                {
+                                                    id: utilService.makeId(10),
+                                                    type: "web-button",
+                                                    info: {
+                                                        content: "Gallery",
+                                                        linkTo: "#"
+
+                                                    },
+                                                    style: {
+                                                        fontFamily: "assistantLight",
+                                                        fontWeight: "bold",
+                                                    },
+                                                },
+                                                {
+                                                    id: utilService.makeId(10),
+                                                    type: "web-button",
+                                                    info: {
+                                                        content: "About us  ",
+                                                        linkTo: "#"
+
+                                                    },
+                                                    style: {
+                                                        fontFamily: "assistantLight",
+                                                        fontWeight: "bold",
+                                                    },
+                                                }
+                                            ]
+                                        }
+                                    },
+                                ]
+                            },
+                            style: {
+
+                            }
+                        },
+                        {
+                            type: "web-div",
+                            name: "header-hr",
+                            class: "header-hr-div",
+                            id: utilService.makeId(10),
+                            info: {
+                                dir: "column",
+                                cmps: [{
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        class: "header-hr-h1",
+                                        info: {
+                                            content: "Every strong headline"
+                                        },
+                                        style: {
+                                            fontSize: "2.8125rem",
+                                            fontWeight: "bold",
+                                            letterSpacing: "0.125rem",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        class: "header-hr-sub-h1",
+                                        info: {
+                                            content: "Has a strong subheading"
+                                        },
+                                        style: {
+                                            fontSize: "2.8125rem",
+                                            marginBottom: " 40px",
+
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        class: "header-hr-p",
+                                        info: {
+                                            content: "The single letter does not survive the translation from language to language, nor does the word."
+                                        },
+                                        style: {
+
+                                            maxWidth: "80ch",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-button",
+                                        class: "header-hr-btn",
+                                        info: {
+                                            content: "Show Me",
+                                            linkTo: "#"
+                                        },
+                                        style: {
+                                            borderRadius: "2em",
+
+                                        },
+                                    }
+
+                                ]
+                            }
+                        },
+
+
+                    ]
+                },
+                style: {
+
+
+                }
+            },
+            {
+                type: "web-container",
+                name: "text",
+                id: "txt001",
+                class: "web-txt-1",
+                previewImg: 'https://i.ibb.co/H7v2V2C/txt001.jpg',
+                info: {
+                    dir: "column",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "I'm a title, click on me to edit"
+                        },
+                        style: {
+                            fontFamily: "assistantLight",
+                            fontSize: "3.125rem",
+                            textAlign: "center",
+                        },
+                    }]
+                },
+                style: {
+                    padding: "15px",
+                    width: "100%",
+                }
+            },
+            {
+                type: "web-container",
+                name: "text",
+                id: "txt002",
+                class: "web-txt-2",
+                previewImg: 'https://i.ibb.co/bKj6Lvg/txt002.jpg',
+                info: {
+                    dir: "column",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word."
+                        },
+                        style: {
+                            fontSize: "0.875rem",
+                            textAlign: "center",
+                            margin: "0 auto",
+                            width: "80ch",
+                        },
+                    }]
+                },
+                style: {
+                    padding: "15px",
+                    width: "100%",
+                }
+            },
+            {
+                type: "web-container",
+                name: "image",
+                id: "img001",
+                class: "web-img-1",
+                previewImg: 'https://i.ibb.co/dtmHF0y/001.jpg',
+                info: {
+                    dir: "column",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-img",
+                        info: {
+                            src: "https://i.ibb.co/xSTLbRr/img2.png"
+                        },
+                        style: {
+                            width: "100%",
+                        },
+                    }]
+                },
+                style: {
+                    width: "100%",
+                }
+            },
+            {
+                type: "web-container",
+                name: "card",
+                id: "card002-row",
+                class: "web-card-1-row-hr",
+                previewImg: 'https://i.ibb.co/z8j61kB/card002-row.jpg',
+                info: {
+                    dir: "row",
+                    cmps: [{
+                            id: utilService.makeId(10),
+                            type: "web-img",
+                            info: {
+                                src: "https://i.ibb.co/xLwW1ZL/img3.png"
+                            },
+                            style: {},
+                        },
+                        {
+                            type: "web-div",
+                            name: "card",
+                            id: utilService.makeId(10),
+                            class: "web-card-1-div",
+                            info: {
+                                dir: "row",
+                                cmps: [{
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        class: "web-card-1-title",
+                                        info: {
+                                            content: "There is no limit to the imagination"
+                                        },
+                                        style: {
+                                            fontSize: "3em",
+                                            textAlign: "left"
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        class: "web-card-1-pa",
+                                        info: {
+                                            content: "You can finally customize everything on your website, easily and directly. Elementor is the editor for designers who want to fine-tune every last detail."
+                                        },
+                                        style: {
+                                            textAlign: "left"
+
+                                        },
+                                    },
+                                ]
+                            },
+                            style: {},
+
+                        }
+                    ]
+                },
+                style: {}
+            },
+            {
+                type: "web-container",
+                name: "section",
+                id: "sec001-cards trio",
+                class: "web-sec-cards-hr",
+                previewImg: 'https://i.ibb.co/58Sx1JK/sections001-crds-trio.jpg',
+                info: {
+                    dir: "row",
+                    cmps: [{
+                            type: "web-div",
+                            name: "card",
+                            id: utilService.makeId(10),
+                            class: "web-card-1",
+                            info: {
+                                dir: "column",
+                                cmps: [{
+                                        id: utilService.makeId(10),
+                                        type: "web-img",
+                                        info: {
+                                            src: "https://i.ibb.co/mFZYMtC/img4.png"
+                                        },
+                                        style: {
+                                            margin: "0 0 1rem 0",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        info: {
+                                            content: "Remote work"
+                                        },
+                                        style: {
+                                            fontSize: "1.3125rem",
+                                            fontWeight: "bold",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-button",
+                                        info: {
+                                            content: "Read More"
+                                        },
+                                        style: {
+
+                                            textTransform: "uppercase",
+                                            backgroundColor: "#fff",
+                                            border: "1px solid gainsboro",
+                                            borderRadius: "20px",
+
+                                        },
+                                    }
+                                ]
+                            },
+                            style: {
+                                padding: "15px",
+                                width: "100%",
+                            },
+
+                        },
+                        {
+                            type: "web-div",
+                            name: "card",
+                            id: utilService.makeId(10),
+                            class: "web-card-1",
+                            info: {
+                                dir: "column",
+                                cmps: [{
+                                        id: utilService.makeId(10),
+                                        type: "web-img",
+                                        info: {
+                                            src: "https://i.ibb.co/gFdwk1p/img5.png"
+                                        },
+                                        style: {
+                                            margin: "0 0 1rem 0",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        info: {
+                                            content: "Collaborative work complexes"
+                                        },
+                                        style: {
+                                            fontSize: "1.3125rem",
+                                            fontWeight: "bold",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-button",
+                                        info: {
+                                            content: "Read More"
+                                        },
+                                        style: {
+
+                                            textTransform: "uppercase",
+                                            backgroundColor: "#fff",
+                                            border: "1px solid gainsboro",
+                                            borderRadius: "20px",
+
+                                        },
+                                    }
+                                ]
+                            },
+                            style: {
+                                padding: "15px",
+
+                                width: "100%",
+
+                            },
+
+                        },
+                        {
+                            type: "web-div",
+                            name: "card",
+                            id: utilService.makeId(10),
+                            class: "web-card-1",
+                            info: {
+                                dir: "column",
+                                cmps: [{
+                                        id: utilService.makeId(10),
+                                        type: "web-img",
+                                        info: {
+                                            src: "https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1355&q=80"
+                                        },
+                                        style: {
+
+                                            margin: "0 0 1rem 0",
+
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-txt",
+                                        info: {
+                                            content: "Track your progress from anywhere"
+                                        },
+                                        style: {
+                                            fontSize: "1.3125rem",
+                                            fontWeight: "bold",
+                                        },
+                                    },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-button",
+                                        info: {
+                                            content: "Read More"
+                                        },
+                                        style: {
+
+                                            textTransform: "uppercase",
+                                            backgroundColor: "#fff",
+                                            border: "1px solid gainsboro",
+                                            borderRadius: "20px",
+
+                                        },
+                                    }
+                                ]
+                            },
+                            style: {
+
+                                padding: "15px",
+                                width: "100%",
+
+                            },
+
+                        }
+                    ]
+                },
+                style: {
+
+                    padding: "15px",
+                    width: "100%",
+
+                }
+            },
+
+        ]
+    },
+
 
 ]

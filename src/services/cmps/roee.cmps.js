@@ -96,12 +96,24 @@ export const roeeCmps = [{
                                 type: "web-txt",
                                 class: "header-hr-h1",
                                 info: {
-                                    content: "This is a sample H1 text"
+                                    content: "Every strong headline"
                                 },
                                 style: {
-                                    fontSize: "4.1875rem",
-                                    margin: "0 50px",
-                                    color: "#fff",
+                                    fontSize: "2.8125rem",
+                                    fontWeight: "bold",
+                                    letterSpacing: "0.125rem",
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-txt",
+                                class: "header-hr-sub-h1",
+                                info: {
+                                    content: "Has a strong subheading"
+                                },
+                                style: {
+                                    fontSize: "2.8125rem",
+                                    marginBottom: " 40px",
 
                                 },
                             },
@@ -110,13 +122,11 @@ export const roeeCmps = [{
                                 type: "web-txt",
                                 class: "header-hr-p",
                                 info: {
-                                    content: "The smallest unit that has \"organizational\" meaning in the book is the paragraph. The single letter does not survive the translation from language to language, nor does the word."
+                                    content: "The single letter does not survive the translation from language to language, nor does the word."
                                 },
                                 style: {
 
-                                    color: "#fff",
                                     maxWidth: "80ch",
-                                    textAlign: "left"
                                 },
                             },
                             {
@@ -124,16 +134,10 @@ export const roeeCmps = [{
                                 type: "web-button",
                                 class: "header-hr-btn",
                                 info: {
-                                    content: "Get Started",
+                                    content: "Show Me",
                                     linkTo: "#"
                                 },
                                 style: {
-                                    fontSize: "1.2em",
-                                    fontWeight: "100",
-                                    margin: "50px",
-                                    padding: "20px",
-                                    color: "#333",
-                                    backgroundColor: "#fff",
                                     borderRadius: "2em",
                                 },
                             }
@@ -146,7 +150,8 @@ export const roeeCmps = [{
             ]
         },
         style: {
-            padding: "15px",
+
+
         }
     },
 ]
