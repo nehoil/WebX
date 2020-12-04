@@ -37,7 +37,6 @@ export default {
         templateName: null,
         templatePreviewImg: null,
       },
-      // templateName: null,
     };
   },
   methods: {
@@ -57,10 +56,6 @@ export default {
       var userWebsite = document.getElementById('workspace');
       var dataUrl = await htmlToImage.toPng(userWebsite);
       try {
-        // var img = new Image();
-        // img.src = dataUrl;
-        // document.body.appendChild(img);
-        console.log('arrived here screenshotfunction');
         return dataUrl;
       } catch {
         console.log('error');
@@ -69,9 +64,12 @@ export default {
     async save() {
       const screenshot = await this.getScreenShot();
       if (!this.$store.getters.user) {
-        eventBus.$emit('show-login', 'Please login to save your website!');
+        eventBus.$emit(
+          'show-login',
+          'Please login in order to save the website'
+        );
       } else {
-        this.$prompt('Please select a name for the website', {
+        this.$prompt("What is your website's name?", {
           confirmButtonText: 'OK',
           cancelButtonText: 'Cancel',
         })
@@ -80,7 +78,7 @@ export default {
             this.template.templatePreviewImg = screenshot;
             this.$message({
               type: 'success',
-              message: 'Your Template Saved!',
+              message: 'Your website is saved',
             });
             this.template.templateName = value;
             this.saveTemplate();
@@ -88,7 +86,7 @@ export default {
           .catch(() => {
             this.$message({
               type: 'info',
-              message: 'Name was not saved.',
+              message: 'Website name was not saved.',
             });
           });
       }

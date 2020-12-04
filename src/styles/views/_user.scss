@@ -29,7 +29,7 @@
 		padding-left: 2rem;
 		p {
 			padding-bottom: 2rem;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.044);
+			// border-bottom: 1px solid rgba(0, 0, 0, 0.044);
 		}
 	}
 	.user-tmp-list {
@@ -43,10 +43,11 @@
 		.user-tmp-display {
 			// width: rem(230px);
 			// height: rem(190px);
+			box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.02);
 			margin-bottom: 1rem;
 			// background-color: rgba(0, 0, 0, 0.044);
 			padding: 0.4rem;
-			border: 1px solid rgba(0, 0, 0, 0.044);
+			border: 1px solid rgba(0, 0, 0, 0.074);
 		}
 	}
 
