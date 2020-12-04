@@ -1,6 +1,7 @@
 <template>
   <div class="workspace">
     <draggable
+      id="workspace"
       :class="{ dragArea: isDragging, dragIcon: !cmps.length }"
       class="draggable-container"
       :list="cmps"

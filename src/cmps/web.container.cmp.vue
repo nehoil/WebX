@@ -57,7 +57,6 @@ export default {
   },
   methods: {
     setEditItem() {
-      console.log(this.cmp);
       eventBus.$emit('openEditor', this.cmp);
       this.$nextTick(() => {
         eventBus.$emit('setItem', this.cmp);
@@ -73,7 +72,7 @@ export default {
     },
   },
   created() {
-      eventBus.$on('change-web-container', () => {
+    eventBus.$on('change-web-container', () => {
       this.$forceUpdate();
     });
   },

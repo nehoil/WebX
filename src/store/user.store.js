@@ -15,7 +15,7 @@ export const userStore = {
             return state.userWebs
         },
         user(state) {
-                return state.loggedinUser
+            return state.loggedinUser
         }
     },
     mutations: {
@@ -42,7 +42,6 @@ export const userStore = {
         async loadUserWebs(context) {
             const userWebs = await webService.getByUserId(context.getters.user._id);
             try {
-                console.log('user webs here:', userWebs);
                 context.commit({ type: 'setUserWebs', userWebs })
                 return userWebs;
             } catch (err) {

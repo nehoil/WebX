@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     test() {
-      console.log('here');
+      // console.log('here');
     },
     updateCmpId() {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
@@ -77,12 +77,12 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
-    async saveTemplate(name) {
+    async saveTemplate(template) {
       var templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      templateToSave.name = name;
+      templateToSave.name = template.templateName;
+      templateToSave.previewImg = template.templatePreviewImg;
       var createdBy;
       if (!this.$store.getters.user) {
-        console.log('here, no user');
         createdBy = {
           _id: 1,
           username: 'guest',
@@ -97,16 +97,19 @@ export default {
         };
       }
       templateToSave.createdBy = createdBy;
+      // console.log(templateToSave);
       const savedTemplte = await this.$store.dispatch({
         type: 'saveTemplate',
         templateToSave,
       });
       try {
+        console.log('arrived!!!', templateToSave);
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
       } catch (err) {
         console.log('cannot save template. err on editor', err);
       }
     },
+
     async publishTemplate() {
       eventBus.$emit('toggleLoading');
       const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));

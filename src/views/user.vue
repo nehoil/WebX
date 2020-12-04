@@ -19,8 +19,12 @@
           v-for="website in websites"
           :key="website._id"
         >
-          <img :src="website.previewImg" alt="" />
+          <!-- <pre>{{ website.previewImg }}</pre> -->
+          <!-- <img class="user-tmp-image" :src="website.previewImg" alt="" /> -->
           <span class="user-tmp-name">{{ website.name }}</span>
+          <div class="tmp-img-container">
+            <img class="user-tmp-image" :src="website.previewImg" alt="" />
+          </div>
           <span class="flex center">
             <button @click="removeWeb(website._id)">
               <i class="el-icon-delete"></i>
@@ -57,7 +61,6 @@ export default {
   },
   created() {
     this.$store.dispatch('loadUserWebs');
-    console.log(this.$store.getters.userWebs);
   },
 };
 </script>
