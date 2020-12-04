@@ -17,7 +17,6 @@
 import add from '@/cmps/controller.opts.cmps/add.cmp';
 import edit from '@/cmps/controller.opts.cmps/edit.cmp';
 import { eventBus } from '@/services/eventbus.service.js';
-// import { screenshotService } from '@/services/screenshot.service.js';
 
 export default {
   name: 'controller',
@@ -52,10 +51,12 @@ export default {
       this.$emit('publishTemplate');
     },
     async getScreenShot() {
+      eventBus.$emit('toggleLoading');
       var htmlToImage = require('html-to-image');
       var userWebsite = document.getElementById('workspace');
-      var dataUrl = await htmlToImage.toPng(userWebsite);
+      var dataUrl = await htmlToImage.toPng(userWebsite, { quality: 0.02 });
       try {
+        eventBus.$emit('toggleLoading');
         return dataUrl;
       } catch {
         console.log('error');
@@ -74,7 +75,6 @@ export default {
           cancelButtonText: 'Cancel',
         })
           .then(({ value }) => {
-            console.log('succes from saveTemplate');
             this.template.templatePreviewImg = screenshot;
             this.$message({
               type: 'success',
@@ -86,7 +86,7 @@ export default {
           .catch(() => {
             this.$message({
               type: 'info',
-              message: 'Website name was not saved.',
+              message: 'Website was not saved.',
             });
           });
       }

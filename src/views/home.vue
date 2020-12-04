@@ -126,3 +126,11 @@ export default {
   created() {},
 };
 </script>
+
+
+
+<style lang="css">
+  #app .main-nav {
+    border-bottom: 0!important;
+  }
+</style>

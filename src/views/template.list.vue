@@ -26,3 +26,9 @@ export default {
   created() {},
 };
 </script>
+
+<style lang="css">
+  /* #app .main-nav {
+        border-bottom: 1px solid #eff1f2!important;
+  } */
+</style>

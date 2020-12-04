@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
     height: 6rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -13,7 +14,7 @@
 .logo-img{
   width: rem(240px);
 }
-  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+border-bottom: 1px solid #eff1f2!important;
   .menu {
     a:first-child, a:nth-child(2) {
       margin-right: 2rem;

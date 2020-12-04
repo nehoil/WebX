@@ -139,7 +139,8 @@ export const nehoCmps = [{
                                             textAlign: 'start',
                                             fontSize: '2.625rem',
                                             color: '#fff',
-                                            textShadow: 'unset'
+                                            textShadow: 'unset',
+                                            marginBottom: '30px'
                                         }
                                     }]
                                 },
