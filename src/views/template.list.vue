@@ -1,9 +1,5 @@
 <template>
   <div class="template-list">
-    <!-- <div class="spinner">
-      <div class="double-bounce1"></div>
-      <div class="double-bounce2"></div>
-    </div> -->
     <template-preview :templates="templates" @createNewWeb="createNewWeb"/>
   </div>
 </template>
@@ -24,7 +20,6 @@ export default {
   methods: {
     createNewWeb(){
       this.$store.commit('setEmptySiteToEdit')
-      // eventBus.$emit('setEmptySiteToEdit')
     }
   },
   computed: {},
