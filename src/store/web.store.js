@@ -95,7 +95,17 @@ export const webStore = {
             state.isShowMenu = isShowMenu
         },
         setEmptySiteToEdit(state) {
-            state.siteToEdit = localDraftSite
+            state.siteToEdit = {
+                _id: null,
+                name: null,
+                previewImg: null,
+                createdBy: {
+                    _id: null,
+                    username: null,
+                    userPicture: null
+                },
+                cmps: []
+            }
             eventBus.$emit('setEmptySiteToEdit')
         }
     },
