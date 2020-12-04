@@ -4,17 +4,18 @@ import editor from "../views/editor.vue";
 import templateList from "../views/template.list.vue";
 import user from '../views/user.vue'
 import sitePreview from "../views/site.preview.vue";
+import home from "../views/home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/editor",
-    name: "editor",
-    component: editor
+    path: "/",
+    name: "home",
+    component: home
   },
   {
-    path: "/",
+    path: "/editor",
     name: "editor",
     component: editor
   },

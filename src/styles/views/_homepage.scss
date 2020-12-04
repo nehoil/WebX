@@ -1,4 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 .gradient {
-    background-color: transparent;
-    background-image: linear-gradient(110deg,$clr1 0%,$clr3 100%);
+  background-color: transparent;
+  background-image: linear-gradient(110deg, $clr1 0%, $clr3 100%);
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hp-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(https://i.ibb.co/Jm9T9TT/b2.jpg);
+  margin-bottom: 100px;
+  .hp-container {
+    max-width: 1140px;
+  }
+}
+
+.header-text {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  & .hp-header-title {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.08;
+    padding-bottom: 15px;
+    width: 25ch;
+  }
+  & .hp-header-subtitle {
+    margin: 0;
+    color: #595959;
+    margin: 0 auto;
+    font-size: 21px;
+    width: 35ch;
+    padding-bottom: 25px;
+  }
+}
+
+.hp-header-video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  .hp-header-video {
+    width: 70%;
+  }
+}
+
+.hp-main-content {
+  .hp-main-container {
+    max-width: 1140px;
+  }
+  .hp-main-content-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.2em;
+    letter-spacing: -0.6px;
+    margin-bottom: 20px;
+  }
+}
+
+.hp-card-1 {
+  display: flex;
+  margin-bottom: 100px;
+  .hp-card-img {
+    width: 60%;
+  }
+  .hp-card-first-txt {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+  }
+  .hp-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hp-card-pa {
+    width: 45ch;
+    line-height: 1.6em;
+  }
+  .hp-card-title {
+    width: 25ch;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+  .hp-card-tag {
+    color: $clr5;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .hp-card-btn {
+    fill: $clr5;
+    color: $clr5;
+  }
+  &[data='card-2'] {
+    .hp-card-text {
+        margin: 0 0 0 70px;
+      }
+  }
 }

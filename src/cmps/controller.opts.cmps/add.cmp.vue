@@ -24,7 +24,7 @@
           <!-- <el-collapse accordion> -->
           <el-collapse-item :name="cmp.value">
             <template slot="title">
-              <li>{{ cmp.title }}</li>
+              <li><i :class="cmp.iconClass"></i>{{ cmp.title }}</li>
             </template>
             <!-- <div v-for="cmp in cmps" :key="cmp.id"> -->
             <section class="cmpsExamples" v-if="cmps">
@@ -91,16 +91,16 @@ export default {
     return {
       cmpsToShow: null,
       cmpsAccordion: [
-        { title: 'Headers', value: 'header' },
-        { title: 'Navbars', value: 'navbar' },
-        { title: 'Text', value: 'text' },
-        { title: 'Sections', value: 'section' },
-        { title: 'Cards', value: 'card' },
-        { title: 'Map', value: 'map' },
-        { title: 'Image', value: 'image' },
-        { title: 'Video', value: 'video' },
-        { title: 'Form', value: 'form' },
-        { title: 'Footers', value: 'footer' },
+        { title: 'Headers', value: 'header', iconClass: 'el-icon-c-scale-to-original' },
+        { title: 'Navbars', value: 'navbar', iconClass:'el-icon-more' },
+        { title: 'Text', value: 'text', iconClass: 'el-icon-chat-line-square' },
+        { title: 'Sections', value: 'section', iconClass: 'el-icon-menu'},
+        { title: 'Cards', value: 'card', iconClass: 'el-icon-copy-document' },
+        { title: 'Map', value: 'map', iconClass: 'el-icon-location-outline' },
+        { title: 'Image', value: 'image', iconClass: 'el-icon-picture-outline' },
+        { title: 'Video', value: 'video', iconClass: 'el-icon-video-play' },
+        { title: 'Form', value: 'form', iconClass: 'el-icon-message' },
+        { title: 'Footers', value: 'footer', iconClass: 'el-icon-more-outline' },
       ],
       numForCmpsAccordion: 2,
       number: 1,
