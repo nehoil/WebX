@@ -11,6 +11,7 @@ export const webService = {
 
 
 function saveWeb(web) {
+    console.log('im service!!', web);
     if (web._id) {
         return HttpService.put(`web/${web._id}`, web)
     } else {
@@ -27,6 +28,5 @@ function getById(webId) {
 }
 
 function getByUserId(userId) {
-    console.log('user Id', userId);
     return HttpService.get(`web/?q=&_id=${userId}`)
 }

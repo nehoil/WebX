@@ -732,6 +732,7 @@ export const haleliCmps = [
         name: "header",
         id: "header002",
         class: "first-section-cdb",
+        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607071492/screencapture-localhost-8080-editor-2020-11-30-20_39_28_1_1_mwekqy.png",
         info: {
             dir: "row",
             cmps: [{
@@ -749,7 +750,7 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontSize: "2rem",
+                            fontSize: "3.1rem",
                             color: "#fff",
                         },
                     },
@@ -757,46 +758,13 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-txt",
                         info: {
-                            content: "CHÂTEAU/DU/BRUNCH",
+                            content: "It's always brunch o'clock",
                         },
                         style: {
                             fontSize: "2rem",
-                            color: "#fff",
+                            color: 'rgb(227, 186, 186)',
                         },
                     },
-                    {
-                        id: utilService.makeId(10),
-                        type: "web-txt",
-                        info: {
-                            content: "CHÂTEAU/DU/BRUNCH",
-                        },
-                        style: {
-                            fontSize: "2rem",
-                            color: "#fff",
-                        },
-                    },
-                    {
-                        id: utilService.makeId(10),
-                        type: "web-txt",
-                        info: {
-                            content: "CHÂTEAU/DU/BRUNCH",
-                        },
-                        style: {
-                            fontSize: "2rem",
-                            color: "#fff",
-                        },
-                    },
-                    {
-                        id: utilService.makeId(10),
-                        type: "web-txt",
-                        info: {
-                            content: "CHÂTEAU/DU/BRUNCH",
-                        },
-                        style: {
-                            fontSize: "2rem",
-                            color: "#fff",
-                        },
-                    }
                     ]
                 },
             },
@@ -813,7 +781,8 @@ export const haleliCmps = [
                         info: {
                             src: "https://images.unsplash.com/photo-1550411294-56f7d0c7fbe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
                         },
-                        style: {}
+                        style: {
+                        }
                     }]
                 },
             }
@@ -825,7 +794,6 @@ export const haleliCmps = [
             backgroundColor: "#161d2e",
         },
     },
-
     // second section
     {
         type: "web-container",

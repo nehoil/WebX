@@ -1,5 +1,5 @@
 <template>
-  <section class="controller flex space col">
+  <section id="controller" class="controller flex space col">
     <div>
       <nav class="flex pointer space">
         <a @click="addOrEdit = 'add'" :class="getIsAdd('add')">Add</a>
@@ -32,7 +32,10 @@ export default {
     return {
       addOrEdit: 'add',
       cmpToEdit: null,
-      templateName: null,
+      template: {
+        templateName: null,
+        templatePreviewImg: null,
+      },
     };
   },
   methods: {
@@ -42,34 +45,50 @@ export default {
       };
     },
     saveTemplate() {
-      this.$emit('saveTemplate', this.templateName);
+      this.$emit('saveTemplate', this.template);
     },
     publishTemplate() {
       this.$emit('publishTemplate');
     },
-    save() {
-      console.log('this.$store.getters.user ', this.$store.getters.user );
-      if (!this.$store.getters.user){
-        eventBus.$emit('show-login', 'Please login to save your website!')
+    async getScreenShot() {
+      eventBus.$emit('toggleLoading');
+      var htmlToImage = require('html-to-image');
+      var userWebsite = document.getElementById('workspace');
+      var dataUrl = await htmlToImage.toPng(userWebsite, { quality: 0.02 });
+      try {
+        eventBus.$emit('toggleLoading');
+        return dataUrl;
+      } catch {
+        console.log('error');
+      }
+    },
+    async save() {
+      const screenshot = await this.getScreenShot();
+      if (!this.$store.getters.user) {
+        eventBus.$emit(
+          'show-login',
+          'Please login in order to save the website'
+        );
       } else {
-      this.$prompt('Please select a name for the website', {
-        confirmButtonText: 'OK',
-        cancelButtonText: 'Cancel',
-      })
-        .then(({ value }) => {
-          this.$message({
-            type: 'success',
-            message: 'Your Template Saved!',
-          });
-          this.templateName = value;
-          this.saveTemplate();
+        this.$prompt("What is your website's name?", {
+          confirmButtonText: 'OK',
+          cancelButtonText: 'Cancel',
         })
-        .catch(() => {
-          this.$message({
-            type: 'info',
-            message: 'Name was not saved.',
+          .then(({ value }) => {
+            this.template.templatePreviewImg = screenshot;
+            this.$message({
+              type: 'success',
+              message: 'Your website is saved',
+            });
+            this.template.templateName = value;
+            this.saveTemplate();
+          })
+          .catch(() => {
+            this.$message({
+              type: 'info',
+              message: 'Website was not saved.',
+            });
           });
-        });
       }
     },
   },

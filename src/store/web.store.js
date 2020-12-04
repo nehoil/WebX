@@ -12,7 +12,6 @@ var localDraftSite = {
     cmps: []
 };
 if (utilService.loadFromStorage('draft_db')) {
-    console.log('load from storage');
 
     localDraftSite = utilService.loadFromStorage('draft_db')
 }
@@ -100,6 +99,7 @@ export const webStore = {
     },
     actions: {
         changeTempalte({ commit }, { template }) {
+            // console.log(template);
             const site = template
             commit({ type: 'updateSite', site })
         },

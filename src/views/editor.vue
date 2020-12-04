@@ -1,6 +1,5 @@
 <template>
   <div class="editor flex">
-    <div class="loading-editor" v-if="loading">Loading...</div>
     <div class="modal-bg" v-if="webUrl"></div>
 
     <div class="web-url-modal" v-if="webUrl">
@@ -48,13 +47,12 @@ export default {
     return {
       siteToEdit: null,
       itemToEdit: 'webImg',
-      loading: false,
       webUrl: null,
     };
   },
   methods: {
     test() {
-      console.log('here');
+      // console.log('here');
     },
     updateCmpId() {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
@@ -79,36 +77,60 @@ export default {
       }
       this.removeCmp(rootFather, cmpId);
     },
-    async saveTemplate(name) {
+    async saveTemplate(template) {
+      eventBus.$emit('toggleLoading');
       var templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
-      templateToSave.name = name;
-      const { _id, username, userPicture } = this.$store.getters.user;
-      const createdBy = {
-        _id,
-        username,
-        userPicture,
-      };
+      templateToSave.name = template.templateName;
+      templateToSave.previewImg = template.templatePreviewImg;
+      var createdBy;
+      if (!this.$store.getters.user) {
+        createdBy = {
+          _id: 1,
+          username: 'guest',
+          userPicture: 'https://i.ibb.co/PzTL54h/guest-icon-png-29.png',
+        };
+        eventBus.$emit('toggleLoading');
+      } else {
+        const { _id, username, userPicture } = this.$store.getters.user;
+        createdBy = {
+          _id,
+          username,
+          userPicture,
+        };
+        eventBus.$emit('toggleLoading');
+      }
       templateToSave.createdBy = createdBy;
+      // console.log(templateToSave);
       const savedTemplte = await this.$store.dispatch({
         type: 'saveTemplate',
         templateToSave,
       });
       try {
+        console.log('arrived!!!', templateToSave);
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
       } catch (err) {
         console.log('cannot save template. err on editor', err);
       }
     },
+
     async publishTemplate() {
-      this.loading = true;
+      eventBus.$emit('toggleLoading');
       const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
+      var createdBy;
+      if (!this.$store.getters.user) {
+        createdBy = {
+          _id: 1,
+          username: 'guest',
+          userPicture: 'https://i.ibb.co/PzTL54h/guest-icon-png-29.png',
+        };
+      } else {
         const { _id, username, userPicture } = this.$store.getters.user;
-        const createdBy = {
+        createdBy = {
           _id,
           username,
           userPicture,
-        }
-      
+        };
+      }
       templateToSave.createdBy = createdBy;
       const savedTemplte = await this.$store.dispatch({
         type: 'saveTemplate',
@@ -117,7 +139,7 @@ export default {
       try {
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
         this.webUrl = `localhost:8080/${savedTemplte._id}`;
-        this.loading = false;
+        eventBus.$emit('toggleLoading');
       } catch (err) {
         console.log('cannot Publish template. err on editor', err);
       }
@@ -180,8 +202,8 @@ export default {
     });
     eventBus.$on('setEmptySiteToEdit', () => {
       console.log('event bus- set new');
-      this.siteToEdit = null
-      this.$forceUpdate()
+      this.siteToEdit = null;
+      this.$forceUpdate();
     });
   },
 };

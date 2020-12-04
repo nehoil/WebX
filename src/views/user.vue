@@ -1,26 +1,20 @@
 <template>
   <section class="user-profile flex space center">
-    <div class="user-nav">
-      <!-- <img src="" alt="" /> -->
-      <h2>Your Websites</h2>
-      <ul v-for="website in websites" :key="website._id">
-        <li>{{ website.name }}</li>
-      </ul>
-      <router-link to="/templates">
-        <div class="nav-create pointer">+ Create new website</div></router-link
-      >
-    </div>
     <div class="main-section">
-      <h1>Welcome back, {{ user.username }}!</h1>
-      <h2 class="main-section-title">Your Websites:</h2>
+      <h3>Welcome back, {{ user.username }}!</h3>
+      <p class="main-section-title">
+        Select a site to edit, view and open its dashboard
+      </p>
       <div class="flex space center user-tmp-list">
         <span
           class="user-tmp-display"
           v-for="website in websites"
           :key="website._id"
         >
-          <img :src="website.previewImg" alt="" />
           <span class="user-tmp-name">{{ website.name }}</span>
+          <div class="tmp-img-container">
+            <img class="user-tmp-image" :src="website.previewImg" alt="" />
+          </div>
           <span class="flex center">
             <button @click="removeWeb(website._id)">
               <i class="el-icon-delete"></i>
@@ -36,6 +30,8 @@
 </template>
 
 <script>
+import { eventBus } from '@/services/eventbus.service.js';
+
 export default {
   data() {
     return {
@@ -45,6 +41,16 @@ export default {
   methods: {
     removeWeb(webId) {
       this.$store.dispatch('removeWeb', webId);
+    },
+    async loadUserWeb() {
+      eventBus.$emit('toggleLoading');
+      await this.$store.dispatch('loadUserWebs');
+      try {
+        eventBus.$emit('toggleLoading');
+      } catch {
+        eventBus.$emit('toggleLoading');
+        console.log('user webs load failed.');
+      }
     },
   },
   computed: {
@@ -56,8 +62,7 @@ export default {
     },
   },
   created() {
-    this.$store.dispatch('loadUserWebs');
-    console.log(this.$store.getters.userWebs);
+    this.loadUserWeb();
   },
 };
 </script>
