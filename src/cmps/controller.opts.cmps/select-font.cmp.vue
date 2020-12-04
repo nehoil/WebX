@@ -106,14 +106,6 @@ export default {
           label: 'Kulo',
         },
         {
-          value: 'mistrain',
-          label: 'Mistrain',
-        },
-        {
-          value: 'myTurtle',
-          label: 'Turtle',
-        },
-        {
           value: 'pumpkins',
           label: 'Pumpkins',
         },

@@ -656,7 +656,7 @@ export const haleliTemplates = [
     {
         _id: "sys576845956786r5",
         name: "Chateau du brunch",
-        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606817524/screencapture-localhost-8081-2020-11-29-13-55-25_bauane.jpg",
+        previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1607026945/screencapture-localhost-8081-2020-11-29-13-55-25_7_jpemq4.jpg",
         createdBy: {
             _id: null,
             username: null,
@@ -762,7 +762,7 @@ export const haleliTemplates = [
                             },
                             style: {
                                 display: "inline-block",
-                                fontSize: "2rem",
+                                fontSize: "3.1rem",
                                 color: "#fff",
                             },
                         },
@@ -770,46 +770,13 @@ export const haleliTemplates = [
                             id: utilService.makeId(10),
                             type: "web-txt",
                             info: {
-                                content: "CHÂTEAU/DU/BRUNCH",
+                                content: "It's always brunch o'clock",
                             },
                             style: {
                                 fontSize: "2rem",
-                                color: "#fff",
+                                color: 'rgb(227, 186, 186)',
                             },
                         },
-                        {
-                            id: utilService.makeId(10),
-                            type: "web-txt",
-                            info: {
-                                content: "CHÂTEAU/DU/BRUNCH",
-                            },
-                            style: {
-                                fontSize: "2rem",
-                                color: "#fff",
-                            },
-                        },
-                        {
-                            id: utilService.makeId(10),
-                            type: "web-txt",
-                            info: {
-                                content: "CHÂTEAU/DU/BRUNCH",
-                            },
-                            style: {
-                                fontSize: "2rem",
-                                color: "#fff",
-                            },
-                        },
-                        {
-                            id: utilService.makeId(10),
-                            type: "web-txt",
-                            info: {
-                                content: "CHÂTEAU/DU/BRUNCH",
-                            },
-                            style: {
-                                fontSize: "2rem",
-                                color: "#fff",
-                            },
-                        }
                         ]
                     },
                 },
