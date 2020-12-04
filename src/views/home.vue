@@ -94,19 +94,75 @@
             <img src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Development__Optimized-1024x715.png" alt="" srcset="">
           </div>
         </div>
-        <div class="hp-card-text">
-            <div class="hp-card-first-txt">
+         <div class="hp-card-1" data="hp-title-pa">
+          <div class="hp-card-text">
             <div class="hp-card-title">
               Create Any Website You Can Imagine
             </div>
             <div class="hp-card-pa">
               Elementor was built for you. Designers, developers, marketers, and entrepreneurs. Create stunning landing pages, design a blog, customize your online store – everything is within reach!
             </div>
-            </div>
             <div class="hp-card-btn">
               Start Creating Now »
             </div>
+            
           </div>
+        </div>
+        <div class="hp-big-img">
+          <img src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png" alt="" srcset="">
+        </div>
+            <!-- <div class="template-previews-list">
+      <span class="template-preview" @click="goToEditor">
+        <div class="template-name">
+          <img class="dots" src="@/assets/dots.png" />
+          <span class="spec-name"> Create new website</span>
+        </div>
+        <div class="template-img">
+          <img class="dots" src="@/assets/blank.png" @click="createNewWeb" />
+        </div>
+      </span>
+      <div
+        class="template-preview"
+        v-for="(template, idx) in templates"
+        :key="idx"
+        @click="chooseTemplate(template)"
+        @mouseenter.capture="isShowBtns = true"
+        @mouseleave="isShowBtns = false"
+      >
+        <div class="template-name">
+          <img class="dots" src="@/assets/dots.png" />
+          <span class="spec-name">
+            {{ template.name }}
+          </span>
+        </div>
+        <div class="template-img">
+          <img :src="template.previewImg" alt="" srcset="" />
+        </div>
+
+      </div>
+    </div> -->
+        <div class="hp-footer">
+                        <div class="hp-footer-left">
+                            <div class="hp-footer-icons">
+                                <span>Connect With Us</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                        <div class="hp-footer-right">
+                            <div class="hp-footer-txt">
+                                <ul>
+                                    <li><a href="#">Comapny</a></li>
+                                    <li><a href="#">Team Members</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Help &amp; FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
       </div>
     </div>
   </section>
