@@ -42,7 +42,6 @@ export default {
     },
     created() {
       eventBus.$on('user-msg', (type)=> {
-
         if (type === 'login-success') this.loginSuccess()
         if (type === 'signup-success'){
           this.singupNums++

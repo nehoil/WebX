@@ -2,6 +2,7 @@
 
 <template>
   <div id="app" class="container">
+        <loading-cmp v-if="isLoading"/>
     <nav class="main-nav" v-if="isShowHeader">
       <div class="logo">
         <router-link to="/">
@@ -27,7 +28,7 @@
     <div class="modal-bg" v-if="isShowLogin"></div>
     <login-cmp v-if="isShowLogin" @showLogin="showLogin" :msg="loginMsg" />
     <user-msg/>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
@@ -35,17 +36,20 @@
 import { eventBus } from '@/services/eventbus.service.js';
 import loginCmp from '@/cmps/login.cmp';
 import userMsg from '@/cmps/user.msg.cmp';
+import loadingCmp from '@/cmps/loading.cmp';
 
 export default {
   name: 'app',
   components: {
     loginCmp,
-    userMsg
+    userMsg,
+    loadingCmp
   },
   data() {
     return {
       isShowHeader: true,
       isShowLogin: false,
+      isLoading: false,
       loginMsg: null
     };
   },
@@ -66,11 +70,13 @@ export default {
     eventBus.$on('change-edit-mode', () => {
       this.isShowHeader = !this.isShowHeader;
       this.$forceUpdate();
-      console.log(this.$store.getters.loggedinUser);
     });
     eventBus.$on('show-login', (msg) => {
       this.loginMsg = msg
       this.isShowLogin = true;
+    });
+    eventBus.$on('toggleLoading', () => {
+      this.isLoading = !this.isLoading
     });
   },
 };

@@ -177,3 +177,12 @@ div.editor {
         outline: 2px dashed rgb(195, 195, 195);
     }
 }
+
+.loading-editor {
+    padding: 10px;
+    position: absolute;
+    font-size: 1rem;
+    z-index: 30;
+    bottom: 0;
+    background-color: #ffffff78;
+}
