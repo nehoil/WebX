@@ -590,6 +590,7 @@ export const roeeTemplates = [{
                                             }]
                                         },
                                         style: {
+                                            padding: "0"
 
                                         }
                                     },
@@ -662,6 +663,8 @@ export const roeeTemplates = [{
                             },
                             style: {
 
+                                padding: " 0 !important"
+
                             }
                         },
                         {
@@ -719,6 +722,7 @@ export const roeeTemplates = [{
                                         },
                                         style: {
                                             borderRadius: "2em",
+                                            padding: " 0.8rem 34px!important"
 
                                         },
                                     }
@@ -731,8 +735,8 @@ export const roeeTemplates = [{
                     ]
                 },
                 style: {
-
-
+                    minHeight: " 40rem",
+                    paddingLeft: "2rem"
                 }
             },
             {
@@ -757,7 +761,7 @@ export const roeeTemplates = [{
                     }]
                 },
                 style: {
-                    padding: "15px",
+                    padding: "1rem",
                     width: "100%",
                 }
             },
@@ -784,7 +788,7 @@ export const roeeTemplates = [{
                     }]
                 },
                 style: {
-                    padding: "15px",
+                    padding: "1rem",
                     width: "100%",
                 }
             },
