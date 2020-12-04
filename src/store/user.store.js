@@ -1,7 +1,5 @@
-// import { templateService } from '@/services/template.service.js'
 import userService from '@/services/user.service.js'
 import { webService } from '@/services/web.service.js'
-// import { utilService } from '@/services/util-service.js'
 
 var localLoggedinUser = null;
 if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user)
