@@ -78,6 +78,7 @@ export const savedCmps = [{
         name: "text",
         id: "txt001",
         class: "web-txt-1",
+        previewImg: 'https://i.ibb.co/H7v2V2C/txt001.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -103,6 +104,7 @@ export const savedCmps = [{
         name: "text",
         id: "txt002",
         class: "web-txt-2",
+        previewImg: 'https://i.ibb.co/bKj6Lvg/txt002.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -130,6 +132,7 @@ export const savedCmps = [{
         name: "text",
         id: "txt003",
         class: "web-txt-3",
+        previewImg: 'https://i.ibb.co/7GcGmdq/txt003.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -168,13 +171,14 @@ export const savedCmps = [{
         name: "video",
         id: "vid001",
         class: "web-video-1",
+        previewImg: 'https://i.ibb.co/6JXCsB4/vid001.jpg',
         info: {
             dir: "column",
             cmps: [{
                 id: utilService.makeId(10),
                 type: "web-video",
                 info: {
-                    content: "https://www.youtube.com/embed/L6X0PqIWfzQ",
+                    content: "https://www.youtube.com/embed/qKlUpmZwsyw",
                     title: "watch this video!"
                 },
                 style: {
@@ -192,6 +196,7 @@ export const savedCmps = [{
         name: "video",
         id: "vid002",
         class: "web-video-2",
+        previewImg: 'https://i.ibb.co/xFGt4dM/vid002.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -253,6 +258,7 @@ export const savedCmps = [{
         name: "image",
         id: "img001",
         class: "web-img-1",
+        previewImg: 'https://i.ibb.co/dtmHF0y/001.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -275,6 +281,7 @@ export const savedCmps = [{
         name: "image",
         id: "img002-gallery",
         class: "web-img-gallery-1",
+        previewImg: 'https://i.ibb.co/mBnc1hf/img-gallery002.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -319,6 +326,7 @@ export const savedCmps = [{
         name: "card",
         id: "card001-column",
         class: "card-1-col",
+        previewImg: 'https://i.ibb.co/KW9dpYr/card001-col.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -335,7 +343,6 @@ export const savedCmps = [{
                                 src: "https://images.unsplash.com/photo-1584670618308-e88b87710b38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
                             },
                             style: {
-                                width: "fit-content",
                                 objectFit: "cover",
                             },
                         },
@@ -365,6 +372,8 @@ export const savedCmps = [{
                 style: {
                     padding: "15px",
                     width: "100%",
+                    textAlign: "center",
+
                 },
 
             }]
@@ -378,6 +387,7 @@ export const savedCmps = [{
         name: "card",
         id: "card002-row",
         class: "web-card-1-row",
+        previewImg: 'https://i.ibb.co/z8j61kB/card002-row.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -433,6 +443,7 @@ export const savedCmps = [{
         name: "section",
         id: "sec001-cards trio",
         class: "web-sec-cards-1",
+        previewImg: 'https://i.ibb.co/58Sx1JK/sections001-crds-trio.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -608,6 +619,7 @@ export const savedCmps = [{
         type: "web-container",
         name: "map",
         class: "web-map-1",
+        previewImg: 'https://i.ibb.co/PDx5LRw/map002.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -639,6 +651,7 @@ export const savedCmps = [{
         name: "form",
         id: "form001",
         class: "web-form-1",
+        previewImg: 'https://i.ibb.co/X2SYCJY/form001.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -787,6 +800,7 @@ export const savedCmps = [{
         name: "footer",
         id: "footer001",
         class: "footer-1",
+        previewImg: 'https://i.ibb.co/2W3fSc9/footer-basic001.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -877,6 +891,7 @@ export const savedCmps = [{
         name: "image",
         id: "img003-gallery",
         class: "web-img-gallery-3",
+        previewImg: 'https://i.ibb.co/5sbMzdC/img-gallery003.jpg',
         info: {
             dir: "row",
             cmps: [{

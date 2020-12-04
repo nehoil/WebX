@@ -5,6 +5,7 @@ export const roeeCmps = [{
     name: "image",
     id: "img004-grid gallery",
     class: "web-img-gallery-4",
+    previewImg: 'https://i.ibb.co/mq580B5/img-gallery004.jpg',
     info: {
         dir: "row",
         cmps: [{

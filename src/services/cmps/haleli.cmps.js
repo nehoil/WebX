@@ -1251,6 +1251,7 @@ export const haleliCmps = [
         name: "section",
         id: "md-section001",
         class: "section-md",
+        previewImg: 'https://i.ibb.co/YkZPv0t/md-section001.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -1314,6 +1315,7 @@ export const haleliCmps = [
         name: "form",
         id: "form002",
         class: "web-form-2",
+        previewImg: 'https://i.ibb.co/xDrXj4B/form002.jpg',
         info: {
             dir: "column",
             cmps: [{
@@ -1371,6 +1373,7 @@ export const haleliCmps = [
         name: "footer",
         id: "footer-md",
         class: "footer-md  ",
+        previewImg: 'https://i.ibb.co/cg396Kf/footer-md.jpg',
         info: {
             dir: "row",
             cmps: [{
