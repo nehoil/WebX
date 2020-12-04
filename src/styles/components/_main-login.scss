@@ -27,6 +27,10 @@
     .el-form-item__content {
         margin: 0 auto;
     }
+    .login-msg {
+        margin: 20px auto;
+        font-weight: bold;
+    }
 }
 
 .el-button--primary {
@@ -37,9 +41,13 @@
         background-color: lighten($clr2, 5%);
     }
 
+}   
+.login-cancel-btn:active, .login-cancel-btn:focus, .login-cancel-btn:hover {
+            color: $clr2;
+
 }
         .el-button:active, .el-button:focus, .el-button:hover {
-            color: $clr2;
+            // color: $clr6;
             border-color: $clr2;
         }
 

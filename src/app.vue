@@ -25,7 +25,8 @@
       </div>
     </nav>
     <div class="modal-bg" v-if="isShowLogin"></div>
-    <loginCmp v-if="isShowLogin" @showLogin="showLogin" />
+    <login-cmp v-if="isShowLogin" @showLogin="showLogin" :msg="loginMsg" />
+    <user-msg/>
     <router-view />
   </div>
 </template>
@@ -33,16 +34,19 @@
 <script>
 import { eventBus } from '@/services/eventbus.service.js';
 import loginCmp from '@/cmps/login.cmp';
+import userMsg from '@/cmps/user.msg.cmp';
 
 export default {
   name: 'app',
   components: {
     loginCmp,
+    userMsg
   },
   data() {
     return {
       isShowHeader: true,
       isShowLogin: false,
+      loginMsg: null
     };
   },
   methods: {
@@ -63,6 +67,10 @@ export default {
       this.isShowHeader = !this.isShowHeader;
       this.$forceUpdate();
       console.log(this.$store.getters.loggedinUser);
+    });
+    eventBus.$on('show-login', (msg) => {
+      this.loginMsg = msg
+      this.isShowLogin = true;
     });
   },
 };

@@ -9,8 +9,8 @@
 </template>
 
 <script>
-// import { eventBus } from '@/services/eventbus.service.js';
 import templatePreview from '@/cmps/template.list.cmps/template.preview.cmp';
+
 export default {
   name: 'template-list',
   components: {
@@ -23,8 +23,8 @@ export default {
   },
   methods: {
     createNewWeb(){
-      console.log('new');
-      
+      this.$store.commit('setEmptySiteToEdit')
+      // eventBus.$emit('setEmptySiteToEdit')
     }
   },
   computed: {},

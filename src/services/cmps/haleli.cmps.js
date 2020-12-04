@@ -8,7 +8,9 @@ export const haleliCmps = [
         name: "navbar",
         id: "nav003",
         class: "navbar-1",
-        previewImg: 'https://i.ibb.co/Z8xW7jL/screencapture-localhost-8080-editor-2020-11-30-20-39-28-1-7.jpg',
+        previewImg: 'https://i.ibb.co/yyHX4HL/vita-nav.jpg',
+        // previewImg: 'https://i.ibb.co/Z8xW7jL/screencapture-localhost-8080-editor-2020-11-30-20-39-28-1-7.jpg',
+
         info: {
             dir: "row",
             cmps: [{
@@ -39,8 +41,7 @@ export const haleliCmps = [
                             content: "SHOP",
                             linkTo: "#"
                         },
-                        style: {
-                        },
+                        style: {},
                     },
                     {
                         id: utilService.makeId(10),
@@ -50,8 +51,7 @@ export const haleliCmps = [
                             linkTo: "#"
 
                         },
-                        style: {
-                        },
+                        style: {},
                     },
                     {
                         id: utilService.makeId(10),
@@ -61,8 +61,7 @@ export const haleliCmps = [
                             linkTo: "#"
 
                         },
-                        style: {
-                        }
+                        style: {}
                     }
                     ]
                 },
@@ -656,7 +655,8 @@ export const haleliCmps = [
         name: "navbar",
         id: "nav002",
         class: "navbar-1",
-        previewImg: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606848421/screencapture-localhost-8080-editor-2020-11-30-20_39_28_1_icfplr.jpg',
+        previewImg: 'https://i.ibb.co/s3ptfYv/chateau.jpg',
+        // previewImg: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606848421/screencapture-localhost-8080-editor-2020-11-30-20_39_28_1_icfplr.jpg',
         info: {
             dir: "row",
             cmps: [{
@@ -686,8 +686,7 @@ export const haleliCmps = [
                             content: "ABOUT",
                             linkTo: "#"
                         },
-                        style: {
-                        },
+                        style: {},
                     },
                     {
                         id: utilService.makeId(10),
@@ -697,8 +696,7 @@ export const haleliCmps = [
                             linkTo: "#"
 
                         },
-                        style: {
-                        },
+                        style: {},
                     },
                     {
                         id: utilService.makeId(10),
@@ -708,8 +706,7 @@ export const haleliCmps = [
                             linkTo: "#"
 
                         },
-                        style: {
-                        }
+                        style: {}
                     }
                     ]
                 },
@@ -752,7 +749,7 @@ export const haleliCmps = [
                         },
                         style: {
                             display: "inline-block",
-                            fontSize: "3.1rem",
+                            fontSize: "2rem",
                             color: "#fff",
                         },
                     },
@@ -760,13 +757,46 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-txt",
                         info: {
-                            content: "It's always brunch o'clock",
+                            content: "CHÂTEAU/DU/BRUNCH",
                         },
                         style: {
                             fontSize: "2rem",
-                            color: 'rgb(227, 186, 186)',
+                            color: "#fff",
                         },
                     },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontSize: "2rem",
+                            color: "#fff",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontSize: "2rem",
+                            color: "#fff",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "CHÂTEAU/DU/BRUNCH",
+                        },
+                        style: {
+                            fontSize: "2rem",
+                            color: "#fff",
+                        },
+                    }
                     ]
                 },
             },
@@ -783,8 +813,7 @@ export const haleliCmps = [
                         info: {
                             src: "https://images.unsplash.com/photo-1550411294-56f7d0c7fbe6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
                         },
-                        style: {
-                        }
+                        style: {}
                     }]
                 },
             }
@@ -1082,133 +1111,130 @@ export const haleliCmps = [
         name: "header",
         id: "header006",
         class: "test",
+        previewImg: ' https://i.ibb.co/2ZDxMWd/medellin-header-preview.jpg',
         info: {
             dir: "row",
-            cmps: [
-                {
-                    type: "web-div",
-                    class: "md-nav",
-                    id: utilService.makeId(8),
-                    info: {
-                        cmps: [
-                            {
+            cmps: [{
+                type: "web-div",
+                class: "md-nav",
+                id: utilService.makeId(8),
+                info: {
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-button",
+                        class: "md-nav-title",
+                        info: {
+                            content: "Medellin"
+                        },
+                        style: {
+                            fontSize: "1.8rem",
+                            color: "#fff"
+                        }
+                    },
+                    {
+                        type: "web-div",
+                        name: "card-tem-01",
+                        class: "md-nav-btns",
+                        id: utilService.makeId(10),
+                        info: {
+                            dir: "row",
+                            cmps: [{
                                 id: utilService.makeId(10),
                                 type: "web-button",
-                                class: "md-nav-title",
                                 info: {
-                                    content: "Medellin"
+                                    content: "Portfolio",
+                                    linkTo: "#"
                                 },
                                 style: {
-                                    fontSize: "1.8rem",
                                     color: "#fff"
-                                }
-                            },
-                            {
-                                type: "web-div",
-                                name: "card-tem-01",
-                                class: "md-nav-btns",
-                                id: utilService.makeId(10),
-                                info: {
-                                    dir: "row",
-                                    cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-button",
-                                        info: {
-                                            content: "Portfolio",
-                                            linkTo: "#"
-                                        },
-                                        style: {
-                                            color: "#fff"
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-button",
-                                        info: {
-                                            content: "Elements",
-                                            linkTo: "#"
-
-                                        },
-                                        style: {
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-button",
-                                        info: {
-                                            content: "Get in touch",
-                                            linkTo: "#"
-
-                                        },
-                                        style: {
-                                        }
-                                    }
-                                    ]
-                                },
-                                style: {
-                                    fontSize: "1rem",
-                                    color: "#fff",
-                                }
-                            }]
-                    },
-                },
-                {
-                    type: "web-div",
-                    name: "card-tem-02",
-                    class: "card-text",
-                    id: utilService.makeId(10),
-                    info: {
-                        dir: "row",
-                        cmps: [
-                            {
-                                id: utilService.makeId(10),
-                                type: "web-txt",
-                                info: {
-                                    content: "Get Creative",
-                                },
-                                style: {
-                                    fontSize: "6rem",
-                                    color: "#fff",
-                                    fontFamily: 'assistantBold',
-                                    textAlign: 'center'
-                                },
-                            },
-                            {
-                                id: utilService.makeId(10),
-                                type: "web-txt",
-                                class: "mb1",
-                                info: {
-                                    content: "Strategic thinking. compelling design.",
-                                },
-                                style: {
-                                    fontSize: "2rem",
-                                    color: "#fff",
-                                    fontFamily: 'assistantLight',
-                                    textAlign: 'center'
                                 },
                             },
                             {
                                 id: utilService.makeId(10),
                                 type: "web-button",
                                 info: {
-                                    content: "Get Started",
+                                    content: "Elements",
+                                    linkTo: "#"
+
                                 },
-                                style: {
-                                    fontSize: "1.3rem",
-                                    color: "#fff",
-                                    fontFamily: 'assistantLight',
-                                    textAlign: 'center',
-                                    backgroundColor: "#26c4e5",
-                                    borderRadius: '48px',
-                                    padding: "0.5rem 2rem !important"
+                                style: {},
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-button",
+                                info: {
+                                    content: "Get in touch",
+                                    linkTo: "#"
+
                                 },
+                                style: {}
                             }
-                        ]
-                    },
-                    style: {
-                        textAlign: 'center',
+                            ]
+                        },
+                        style: {
+                            fontSize: "1rem",
+                            color: "#fff",
+                        }
                     }
+                    ]
                 },
+            },
+            {
+                type: "web-div",
+                name: "card-tem-02",
+                class: "card-text",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "Get Creative",
+                        },
+                        style: {
+                            fontSize: "6rem",
+                            color: "#fff",
+                            fontFamily: 'assistantBold',
+                            textAlign: 'center'
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        class: "mb1",
+                        info: {
+                            content: "Strategic thinking. compelling design.",
+                        },
+                        style: {
+                            fontSize: "2rem",
+                            color: "#fff",
+                            fontFamily: 'assistantLight',
+                            textAlign: 'center'
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-button",
+                        info: {
+                            content: "Get Started",
+                        },
+                        style: {
+                            fontSize: "1.3rem",
+                            color: "#fff",
+                            fontFamily: 'assistantLight',
+                            textAlign: 'center',
+                            backgroundColor: "#26c4e5",
+                            borderRadius: '48px',
+                            padding: "0.5rem 2rem !important"
+                        },
+                    }
+                    ]
+                },
+                style: {
+                    textAlign: 'center',
+                }
+            },
             ]
         },
         style: {
@@ -1246,8 +1272,7 @@ export const haleliCmps = [
                             color: "#051441",
                             textAlign: "left"
                         },
-                    },
-                    ]
+                    },]
                 }
             },
             {
@@ -1290,46 +1315,44 @@ export const haleliCmps = [
         class: "web-form-2",
         info: {
             dir: "column",
-            cmps: [
-                {
-                    id: utilService.makeId(10),
-                    type: "web-txt",
-                    info: {
-                        content: "Don't be a stranger"
-                    },
-                    style: {
-                        fontSize: "3.1rem",
-                        textAlign: "center",
-                        fontFamily: "assistantLight",
-                        color: "rgb(150, 150, 150)",
-                        lineHeight: "auto"
-                    },
+            cmps: [{
+                id: utilService.makeId(10),
+                type: "web-txt",
+                info: {
+                    content: "Don't be a stranger"
                 },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-form",
-                    info: {
-                    },
-                    style: {
-
-                    },
+                style: {
+                    fontSize: "3.1rem",
+                    textAlign: "center",
+                    fontFamily: "assistantLight",
+                    color: "rgb(150, 150, 150)",
+                    lineHeight: "auto"
                 },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-button",
-                    info: {
-                        content: "Submit",
-                        linkTo: "#"
+            },
+            {
+                id: utilService.makeId(10),
+                type: "web-form",
+                info: {},
+                style: {
 
-                    },
-                    style: {
-                        color: "rgb(150, 150, 150)",
-                        border: "1px solid rgb(150, 150, 150)",
-                        borderRadius: "48px",
-                        backgroundColor: "#fff",
-                        padding: "0.5rem 2rem !important",
-                    },
-                }
+                },
+            },
+            {
+                id: utilService.makeId(10),
+                type: "web-button",
+                info: {
+                    content: "Submit",
+                    linkTo: "#"
+
+                },
+                style: {
+                    color: "rgb(150, 150, 150)",
+                    border: "1px solid rgb(150, 150, 150)",
+                    borderRadius: "48px",
+                    backgroundColor: "#fff",
+                    padding: "0.5rem 2rem !important",
+                },
+            }
             ]
         },
         style: {

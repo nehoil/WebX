@@ -178,6 +178,11 @@ export default {
     eventBus.$on('update-site', () => {
       this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
     });
+    eventBus.$on('setEmptySiteToEdit', () => {
+      console.log('event bus- set new');
+      this.siteToEdit = null
+      this.$forceUpdate()
+    });
   },
 };
 </script>

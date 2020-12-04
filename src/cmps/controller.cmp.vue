@@ -8,7 +8,7 @@
       <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     </div>
     <footer class="flex space">
-      <a>undo</a> | <a @click="save">save</a> |
+      <a @click="save">save</a> |
       <a @click="publishTemplate">publish</a>
     </footer>
   </section>
@@ -48,6 +48,10 @@ export default {
       this.$emit('publishTemplate');
     },
     save() {
+      console.log('this.$store.getters.user ', this.$store.getters.user );
+      if (!this.$store.getters.user){
+        eventBus.$emit('show-login', 'Please login to save your website!')
+      } else {
       this.$prompt('Please select a name for the website', {
         confirmButtonText: 'OK',
         cancelButtonText: 'Cancel',
@@ -63,9 +67,10 @@ export default {
         .catch(() => {
           this.$message({
             type: 'info',
-            message: 'Input canceled',
+            message: 'Name was not saved.',
           });
         });
+      }
     },
   },
   created() {
