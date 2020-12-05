@@ -15,7 +15,7 @@
           <router-link to="/editor">Editor</router-link>
           <a @click="showLogin" v-if="!user">Login</a>
           <span v-if="user">
-            <a @click="doLogout">Logout</a>
+            <a @click="doLogout">Log Out</a>
             <router-link to="/user">
               Profile <i class="el-icon-user"></i
             ></router-link>
