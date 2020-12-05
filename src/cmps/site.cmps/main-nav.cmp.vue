@@ -48,7 +48,9 @@ export default {
   },
   methods: {
     showLogin() {
-      this.isShowLogin = !this.isShowLogin;
+      this.$emit('showLogin');
+      // this.$emit('showMenu');
+      // this.isShowLogin = !this.isShowLogin;
     },
     doLogout() {
       this.$store.dispatch({ type: 'logout' });
@@ -65,7 +67,7 @@ export default {
       eventBus.$emit('onPublishTemplate');
     },
     async getScreenShot() {
-      eventBus.$emit('toggleLoading');
+      // eventBus.$emit('toggleLoading');
       var htmlToImage = require('html-to-image');
       var dataUrl = await htmlToImage.toPng(
         document.getElementById('workspace'),
@@ -76,7 +78,7 @@ export default {
         }
       );
       try {
-        eventBus.$emit('toggleLoading');
+        // eventBus.$emit('toggleLoading');
         return dataUrl;
       } catch {
         console.log('error');

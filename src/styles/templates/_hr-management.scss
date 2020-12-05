@@ -11,7 +11,7 @@
     justify-content: flex-end;
     position: relative;
     .navbar-1-hr {
-        padding: 0 !important;
+        // padding: 0 ;
         position: absolute;
         top: 0;
         display: flex;
@@ -112,8 +112,23 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        &>* {
+            margin-bottom: 50px;
+        }
     }
     .web-txt-1 {
         text-align: center;
+    }
+    .navbar-1-hr {
+        flex-direction: row !important;
+        padding: 0 20px;
+    }
+    .hr-nav-btns-div {
+        display: none;
+    }
+    .web-card-1-row-hr {
+        &>* {
+            width: 90%;
+        }
     }
 }

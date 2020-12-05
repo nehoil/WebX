@@ -2,11 +2,11 @@
   <section
     v-if="cmp.info.cmps"
     @click.self="setEditItem"
-    @mouseover="showEditMenu = true"
-    @mouseleave="showEditMenu = false"
     class="web-container"
     :class="cmp.info.dir + ' ' + onEdit"
     :style="this.cmp.style"
+    @mouseover="showEditMenu = true"
+    @mouseleave="showEditMenu = false"
   >
     <component
       v-for="(currCmp, idx) in cmp.info.cmps"
@@ -55,7 +55,7 @@ export default {
     webVideo,
     editMenu,
     webDiv,
-    webHamburger
+    webHamburger,
   },
   methods: {
     setEditItem() {
