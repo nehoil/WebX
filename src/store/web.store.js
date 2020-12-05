@@ -22,7 +22,7 @@ import { eventBus } from '@/services/eventbus.service.js';
 
 export const webStore = {
     state: {
-        isEdit: true,
+        isEdit: false,
         isPreview: false,
         siteToEdit: localDraftSite,
         cmpsToShow: null,
@@ -111,14 +111,12 @@ export const webStore = {
     },
     actions: {
         changeTempalte({ commit }, { template }) {
-            // console.log(template);
             const site = template
             commit({ type: 'updateSite', site })
         },
         async saveTemplate({ commit }, { templateToSave }) {
             const template = await webService.saveWeb(templateToSave)
             try {
-                console.log('success!, site saved, site:', template);
                 commit({ type: 'setSite', site: template })
                 return template
             } catch {
@@ -136,10 +134,8 @@ export const webStore = {
             }
         },
         async loadSite({ context }, { id }) {
-            // console.log('called load site from store with id:', id);
             const site = await webService.getById(id);
             try {
-                // console.log('site', site);
                 context.commit({ type: 'setSite', site })
             } catch {
                 console.log('cannot find site from store');

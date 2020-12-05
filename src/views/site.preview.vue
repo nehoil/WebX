@@ -58,9 +58,9 @@ export default {
     },
   },
   computed: {
-      isPreview(){
-        return this.$store.getters.isPreviewOn
-      },
+    isPreview() {
+      return this.$store.getters.isPreviewOn;
+    },
   },
   created() {
     const id = this.$route.params.id;
@@ -76,7 +76,7 @@ export default {
     eventBus.$emit('change-edit-mode');
   },
   destroyed() {
-    this.$store.commit({type:'setPreviewMode', isPreviewOn: false})
+    this.$store.commit({ type: 'setPreviewMode', isPreviewOn: false });
     this.$store.commit({ type: 'setEditMode', isEditOn: true });
     this.$store.commit({ type: 'setShowMenu', isShowMenu: true });
     eventBus.$emit('change-edit-mode');
