@@ -93,7 +93,8 @@ export const haleliCmps = [
             height: "4rem",
             color: "#161d2e",
             backgroundColor: "#fff",
-            lineHeight: "auto"
+            lineHeight: "auto",
+            width: "100%",
         },
 
     },
@@ -752,7 +753,8 @@ export const haleliCmps = [
             fontSize: "1rem",
             color: "#fff",
             backgroundColor: "#161d2e",
-            lineHeight: "auto"
+            lineHeight: "auto",
+            width: "100%",
         }
     },
     // first section

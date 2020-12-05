@@ -8,16 +8,25 @@
     @mouseover="showEditMenu = true"
     @mouseleave="showEditMenu = false"
   >
-    <component
-      v-for="(currCmp, idx) in cmp.info.cmps"
-      :is="currCmp.type"
-      :key="idx"
-      :info="currCmp.info"
-      :cmpStyle="currCmp.style"
-      :cmp="currCmp"
-      :_rootId="cmp.id"
+    <draggable
+      id="workspace2"
+      class="draggable-container2"
+      :list="cmps"
+      group="workspace-cmps2"
+      @change="updateSite"
+      ghost-class="ghost"
     >
-    </component>
+      <component
+        v-for="(currCmp, idx) in cmp.info.cmps"
+        :is="currCmp.type"
+        :key="idx"
+        :info="currCmp.info"
+        :cmpStyle="currCmp.style"
+        :cmp="currCmp"
+        :_rootId="cmp.id"
+      >
+      </component>
+    </draggable>
     <edit-menu v-if="showEditMenu" :cmp="cmp" parent="container" />
   </section>
 </template>
@@ -34,6 +43,7 @@ import webButton from '@/cmps/elements.cmps/web.button.cmp';
 import webList from '@/cmps/elements.cmps/web.list.cmp';
 import webDiv from '@/cmps/elements.cmps/web.div.cmp';
 import webHamburger from '@/cmps/elements.cmps/web.hamburger.cmp';
+import draggable from 'vuedraggable';
 
 export default {
   name: 'web-container',
@@ -43,6 +53,7 @@ export default {
   data() {
     return {
       showEditMenu: false,
+      
     };
   },
   components: {
@@ -56,6 +67,7 @@ export default {
     editMenu,
     webDiv,
     webHamburger,
+    draggable,
   },
   methods: {
     setEditItem() {
@@ -66,12 +78,17 @@ export default {
     },
     updateSite() {
       eventBus.$emit('update-site');
+      console.log('updated');
+      
     },
   },
   computed: {
     onEdit() {
       return this.$store.getters.isEditOn ? 'on-edit' : '';
     },
+    cmps(){
+      return this.cmp.info.cmps
+    }
   },
   created() {
     eventBus.$on('change-web-container', () => {
