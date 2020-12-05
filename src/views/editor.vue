@@ -20,8 +20,6 @@
       :itemToEdit="itemToEdit"
       :siteLength="siteToEdit.cmps.length"
       @focus.native="test"
-      @saveTemplate="saveTemplate"
-      @publishTemplate="publishTemplate"
     />
     <work-space
       v-if="siteToEdit"
@@ -48,12 +46,10 @@ export default {
       siteToEdit: null,
       itemToEdit: 'webImg',
       webUrl: null,
+      savedTimes: 0,
     };
   },
   methods: {
-    test() {
-      // console.log('here');
-    },
     updateCmpId() {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     },
@@ -100,13 +96,11 @@ export default {
         eventBus.$emit('toggleLoading');
       }
       templateToSave.createdBy = createdBy;
-      // console.log(templateToSave);
       const savedTemplte = await this.$store.dispatch({
         type: 'saveTemplate',
         templateToSave,
       });
       try {
-        console.log('arrived!!!', templateToSave);
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
       } catch (err) {
         console.log('cannot save template. err on editor', err);
@@ -180,6 +174,7 @@ export default {
     },
   },
   created() {
+    this.$store.commit({ type: 'setEditMode', isEditOn: true });
     const id = this.$route.params.id;
     if (id) {
       this.loadSite(id);
@@ -189,11 +184,22 @@ export default {
     eventBus.$on('addCmp', () => {
       this.siteToEdit = JSON.parse(JSON.stringify(this.$store.getters.web));
     });
-    eventBus.$on('removeCmp', (cmpIds) => {
-      const { cmpId, _rootId } = cmpIds;
-      const cmps = this.siteToEdit.cmps;
-      this.searchCmp(cmps, cmpId, _rootId);
-    });
+    eventBus.$on('onSaveTemplate', (template) => {
+      this.savedTimes++;
+      if (this.savedTimes >= 2) {
+        return;
+      } else {
+        this.saveTemplate(template);
+      }
+    }),
+      eventBus.$on('onPublishTemplate', () => {
+        this.publishTemplate();
+      }),
+      eventBus.$on('removeCmp', (cmpIds) => {
+        const { cmpId, _rootId } = cmpIds;
+        const cmps = this.siteToEdit.cmps;
+        this.searchCmp(cmps, cmpId, _rootId);
+      });
     eventBus.$on('setCmpsToShow', (cmpType) => {
       this.$store.commit({ type: 'setCmpsToShow', cmpType });
     });
@@ -201,10 +207,12 @@ export default {
       this.$store.commit({ type: 'updateSite', site: this.siteToEdit });
     });
     eventBus.$on('setEmptySiteToEdit', () => {
-      console.log('event bus- set new');
       this.siteToEdit = null;
       this.$forceUpdate();
     });
+  },
+  destroyed() {
+    this.$store.commit({ type: 'setEditMode', isEditOn: false });
   },
 };
 </script>

@@ -1,38 +1,142 @@
 
+
 <template>
-  <div class="main-header">
-    <nav>
-      <div class="logo">
-        <router-link to="/">
-          <img src="@/assets/logo.png" alt="" srcset=""
-        /></router-link>
-      </div>
-      <div class="menu">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/templates">Templates</router-link> |
-        <router-link to="/user">Profile</router-link> |
-        <router-link to="/editor">Editor</router-link>
-      </div>
-    </nav>
-  </div>
+  <section class="main-navbar">
+    <fixed-header :threshold="100">
+      <nav class="main-nav">
+        <div class="logo">
+          <router-link to="/">
+            <img class="logo-img" src="@/assets/logo2.png" alt="" />
+          </router-link>
+        </div>
+        <div class="menu">
+          <router-link to="/templates">Templates</router-link>
+          <!-- <router-link to="/editor">Editor</router-link> -->
+          <a @click="showLogin" v-if="!user">Login</a>
+          <span v-if="user">
+            <a @click="doLogout">Log Out</a>
+            <router-link to="/user">
+              Profile <i class="el-icon-user"></i
+            ></router-link>
+          </span>
+          <span class="save-and-publish" v-if="onEdit">
+            <a @click="save">Save</a>
+            <a @click="publishTemplate">Publish</a></span
+          >
+        </div>
+      </nav>
+    </fixed-header>
+  </section>
 </template>
 
-
 <script>
+import { eventBus } from '@/services/eventbus.service.js';
+import FixedHeader from 'vue-fixed-header';
+
 export default {
-  data() {
-    return {};
+  name: 'app',
+  components: {
+    FixedHeader,
   },
-  methods: {},
+  data() {
+    return {
+      template: {
+        templateName: null,
+        templatePreviewImg: null,
+      },
+    };
+  },
+  methods: {
+    // showLogin() {
+    //   this.isShowLogin = !this.isShowLogin;
+    // },
+    doLogout() {
+      this.$store.dispatch({ type: 'logout' });
+    },
+    saveTemplate() {
+      const templateToSave = JSON.parse(JSON.stringify(this.template));
+      eventBus.$emit('onSaveTemplate', templateToSave);
+      this.template = {
+        templateName: null,
+        templatePreviewImg: null,
+      };
+    },
+    publishTemplate() {
+      eventBus.$emit('onPublishTemplate');
+    },
+    async getScreenShot() {
+      eventBus.$emit('toggleLoading');
+      var htmlToImage = require('html-to-image');
+      var dataUrl = await htmlToImage.toPng(
+        document.getElementById('workspace'),
+        {
+          quality: 0.01,
+          height: 900,
+          pixelRatio: 0.85,
+        }
+      );
+      try {
+        eventBus.$emit('toggleLoading');
+        return dataUrl;
+      } catch {
+        console.log('error');
+      }
+    },
+    async save() {
+      const screenshot = await this.getScreenShot();
+      if (!this.$store.getters.user) {
+        eventBus.$emit(
+          'show-login',
+          'Please login in order to save the website'
+        );
+      } else {
+        this.$prompt("What is your website's name?", {
+          confirmButtonText: 'OK',
+          cancelButtonText: 'Cancel',
+        })
+          .then(({ value }) => {
+            this.template.templatePreviewImg = screenshot;
+            this.$message({
+              type: 'success',
+              message: 'Your website is saved',
+            });
+            this.template.templateName = value;
+            this.saveTemplate();
+          })
+          .catch(() => {
+            this.$message({
+              type: 'info',
+              message: 'Website was not saved.',
+            });
+          });
+      }
+    },
+  },
   computed: {
     user() {
-      return this.$store.getters.loggedinUser;
+      return this.$store.getters.user;
     },
-    websites() {
-      return this.$store.getters.templatesOfUser;
+    onEdit() {
+      return this.$store.getters.isEditOn;
     },
   },
   created() {},
 };
 </script>
 
+<style scoped>
+.main-nav.vue-fixed-header--isFixed {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  border-bottom: 0;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+</style>

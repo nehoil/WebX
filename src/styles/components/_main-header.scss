@@ -13,18 +13,44 @@
     .logo-img {
         width: rem(240px);
     }
-    border-bottom: 1px solid #eff1f2!important;
+    border-bottom: 1px solid #eff1f2 !important;
     .menu {
+        font-size: 0.85rem;
         a:first-child,
         a:nth-child(2) {
-            margin-right: 2rem;
+            margin-right: 1rem;
         }
         a:hover {
             color: $clr5;
-            // transform: scale(20px);
-            // color: pink;
-            // color: $clr3;
-            // transform: scaleX(50%);
+        }
+    }
+    .save-and-publish {
+        display: inline-block;
+        transition: all .3 ease;
+        :first-child {
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: $clr3;
+            border: 1.5px solid $clr3;
+            margin-right: 10px !important;
+        }
+        :last-child {
+            margin: 0 !important;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: $clr3;
+            border: 1.5px solid $clr3;
+        }
+        a:hover,
+        a:focus {
+            border-color: $clr5;
+            // border-width: 3px;
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
         }
     }
 }
