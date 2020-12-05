@@ -9,17 +9,17 @@
         <i class="el-icon-delete"></i>
         <!-- <i v-else class="el-icon-close"></i> -->
       </li>
-      <li v-if="parent === 'container'">
+      <!-- <li v-if="parent === 'container'">
         <i class="el-icon-document-copy"></i>
-      </li>
+      </li> -->
       <li
         v-if="parent === 'container' || parent === 'video'"
         @click="setEditItem"
       >
         <i class="el-icon-edit"></i>
       </li>
-      <li v-if="parent === 'container'"><i class="el-icon-arrow-left"></i></li>
-      <li v-if="parent === 'container'"><i class="el-icon-arrow-right"></i></li>
+      <!-- <li v-if="parent === 'container'"><i class="el-icon-arrow-left"></i></li> -->
+      <!-- <li v-if="parent === 'container'"><i class="el-icon-arrow-right"></i></li> -->
     </ul>
   </div>
 </template>

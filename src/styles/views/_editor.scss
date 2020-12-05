@@ -13,7 +13,6 @@ div.editor {
     .workspace {
         @include scrollBar(.5rem, lighten($clr4, 35%));
         overflow-y: scroll;
-        // padding: 5px;
         width: 85%;
         & .draggable-container {
             margin: 0 auto;
@@ -37,11 +36,11 @@ div.editor {
                 border: 2px dashed rgb(195, 195, 195);
             }
             .ghost:after {
-                content: "Background text";
+                content: "Drop It Like It's Hot!";
                 position: absolute;
                 top: 0;
-                left: -50%;
-                z-index: -1;
+                left: 0;
+                z-index: 10;
             }
         }
         .dragIcon {
@@ -138,7 +137,7 @@ div.editor {
 .put-icon {
     position: relative;
     .drag-image {
-        z-index: 10500;
+        z-index: 20;
         pointer-events: none;
         opacity: 0;
         transition: opacity .7;

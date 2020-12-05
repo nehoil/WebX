@@ -1,6 +1,4 @@
  .site-preview .workspace {
-//  .draggable-container{
-//   .site-preview .workspace{
     display: grid !important; 
     grid-template-columns: 
     minmax(1rem, 1fr)
@@ -8,49 +6,17 @@
     minmax(1rem, 1fr);
 
     >* {
-        grid-column: 1 / -1;
-        // grid-column: 2;
-    
+        grid-column: 1 / -1;    
     }
 }
     .web-container{
 padding-left: 2rem;
 padding-right: 2rem;
-padding-top: 1rem;
+padding-top: 2rem;
     }
-// .web-div {
-    // display: ;
-// }
-    // &#app {
-    //     min-height: 100vh;
-    //     grid-template-rows: auto 1fr;
-    // }
-
-// }
-
 .full {
 grid-column: 1 / -1;
 }
-
-// .draggable-container {
-//     display: grid;
-//     grid-template-columns: 
-//     minmax(1rem, 1fr)
-//     minmax(auto, 1400px)
-//     minmax(1rem, 1fr);
-//     >* {
-//         grid-column: 2; 
-//     }
-//     // .web-container {
-//     //     grid-column: 1 / -1;
-//     // }
-// }
-// .card-grid {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-//     grid-auto-flow: dense;
-//     gap: 20px;
-// }
 
 .cmp-span {
     display:inline-block;
