@@ -18,6 +18,7 @@ if (utilService.loadFromStorage('draft_db')) {
 
 import { templateService } from '@/services/template.service.js'
 import { webService } from '@/services/web.service.js'
+import { eventBus } from '@/services/eventbus.service.js';
 
 export const webStore = {
     state: {
@@ -94,7 +95,18 @@ export const webStore = {
             state.isShowMenu = isShowMenu
         },
         setEmptySiteToEdit(state) {
-            state.siteToEdit = localDraftSite
+            state.siteToEdit = {
+                _id: null,
+                name: null,
+                previewImg: null,
+                createdBy: {
+                    _id: null,
+                    username: null,
+                    userPicture: null
+                },
+                cmps: []
+            }
+            eventBus.$emit('setEmptySiteToEdit')
         }
     },
     actions: {
