@@ -1,4 +1,5 @@
 div.editor {
+	background-color: rgba(189, 188, 188, 0.062);
 	input[type="file"] {
 		display: none;
 	}
@@ -53,18 +54,25 @@ div.editor {
 		}
 	}
 	.controller {
+		box-shadow: 0 3px 6px rgba(0,0,100,.15);
+		z-index: 55;
+		background-color: #fff;
+		border-radius: 1rem;
+		margin: 0 8px;
+		// margin-left: 2px;
+		// margin-right: 5px;
 		@include scrollBar(.5rem,
         lighten($clr2, 5%));
 		overflow-y: scroll;
 		overflow-x: hidden;
-		background-color: $clr4;
+		// background-color: $clr4;
 		width: 15%;
 		.controller-add,
 		.controller-edit {
 			padding: rem(20px);
 		}
 		border-right: 1px solid $clr4;
-		height: 100%;
+		height: fit-content;
 		display: flex;
 		nav {
 			// margin-bottom: 4rem;
@@ -115,7 +123,6 @@ div.editor {
 		.el-input {
 			width: 80%;
 		}
-		margin: 0 auto;
 	}
 }
 
