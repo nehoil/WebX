@@ -16,11 +16,18 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-image: url(https://i.ibb.co/Jm9T9TT/b2.jpg);
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-position: center center;
+	// background-image: url(https://i.ibb.co/Jm9T9TT/b2.jpg);
 	margin-bottom: 100px;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(202, 169, 255, 0.6785889355742297) 12%,
+		rgba(255, 255, 255, 1) 77%
+	);
 	.hp-container {
 		max-width: 1140px;
 	}
