@@ -11,7 +11,7 @@
         <div class="hp-header-video-container">
           <video
             class="hp-header-video"
-            src="https://elementor.com/wp-content/uploads/2020/05/Homepage_Main_Video.mp4"
+            src="@/assets/video/video.mp4"
             autoplay=""
             loop=""
             muted="muted"
@@ -58,7 +58,7 @@
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
-              <div class="hp-card-title">Design Like Pro</div>
+              <div class="hp-card-title">Design Like a Pro</div>
               <div class="hp-card-pa">
                 Our Ready-made Palette-Picker turns the design expirence to become as easy as a Google search, pick your favorite palette and start giving life to your site!
               </div>
@@ -164,10 +164,8 @@
           <div class="hp-footer-right">
             <div class="hp-footer-txt">
               <ul>
-                <li><a href="#">Comapny</a></li>
-                <li><a href="#">Team Members</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Help &amp; FAQs</a></li>
+                <li><router-link to="/templates">Templates</router-link></li>
+                <li><router-link to="/editor">Editor</router-link></li>
               </ul>
             </div>
           </div>
