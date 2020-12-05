@@ -1,58 +1,58 @@
 div.editor {
-    input[type="file"] {
-        display: none;
-    }
-    .change-image {
-        display: block;
-    }
-    & i:first-of-type {
-        margin-right: 10px;
-    }
-    border: 1px solid $clr4;
-    height: 91.54vh;
-    .workspace {
-        @include scrollBar(.5rem, lighten($clr4, 35%));
-        overflow-y: scroll;
-        width: 85%;
-        & .draggable-container {
-            margin: 0 auto;
-            width: -webkit-fill-available;
-        }
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 100%;
-        background-color: white;
-        .dragArea {
-            height: 100%;
-            outline: 3px dashed rgb(156, 156, 156);
-            .ghost {
-                img {
-                    opacity: 0;
-                }
-                background-color: $clr6;
-                max-height: 40px;
-                border: 2px dashed rgb(195, 195, 195);
-            }
-            .ghost:after {
-                content: "Drop It Like It's Hot!";
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 10;
-            }
-        }
-        .dragIcon {
-            background-image: url('./../assets/drag-icon.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 30%;
-            width: 100%;
-        }
-    }
-    .controller {
-        @include scrollBar(.5rem,
+	input[type="file"] {
+		display: none;
+	}
+	.change-image {
+		display: block;
+	}
+	& i:first-of-type {
+		margin-right: 10px;
+	}
+	border: 1px solid $clr4;
+	height: 91.54vh;
+	.workspace {
+		@include scrollBar(.5rem, lighten($clr4, 35%));
+		overflow-y: scroll;
+		width: 85%;
+		& .draggable-container {
+			margin: 0 auto;
+			width: -webkit-fill-available;
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: 100%;
+		background-color: white;
+		.dragArea {
+			height: 100%;
+			outline: 3px dashed rgb(156, 156, 156);
+			.ghost {
+				img {
+					opacity: 0;
+				}
+				background-color: $clr6;
+				max-height: 40px;
+				border: 2px dashed rgb(195, 195, 195);
+			}
+			.ghost:after {
+				content: "Drop It Like It's Hot!";
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 10;
+			}
+		}
+		.dragIcon {
+			background-image: url('./../assets/drag-icon.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			opacity: 30%;
+			width: 100%;
+		}
+	}
+	.controller {
+		@include scrollBar(.5rem,
         lighten($clr2, 5%));
 		overflow-y: scroll;
 		overflow-x: hidden;
@@ -137,26 +137,26 @@ div.editor {
 }
 
 .put-icon {
-    position: relative;
-    .drag-image {
-        z-index: 20;
-        pointer-events: none;
-        opacity: 0;
-        transition: opacity .7;
-        position: absolute;
-        width: 140px;
-        left: -10%;
-        bottom: 0%;
-        transition: 1s ease;
-        opacity: 0;
-    }
-    &:active .drag-image {
-        opacity: 60%;
-        transition: .3;
-    }
-    .costum-ghost {
-        display: none;
-    }
+	position: relative;
+	.drag-image {
+		z-index: 20;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity .7;
+		position: absolute;
+		width: 140px;
+		left: -10%;
+		bottom: 0%;
+		transition: 1s ease;
+		opacity: 0;
+	}
+	&:active .drag-image {
+		opacity: 60%;
+		transition: .3;
+	}
+	.costum-ghost {
+		display: none;
+	}
 }
 
 .add-prev-img {
