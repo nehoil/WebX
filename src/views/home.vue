@@ -1,7 +1,7 @@
 <template>
   <section class="homepage">
     <div class="hp-header">
-      <div class="hp-header-container">
+      <div class="hp-header-container" data-aos="fade-in">
         <div class="header-text">
           <div class="hp-header-title">Hassle-free website builder</div>
           <div class="hp-header-subtitle">
@@ -20,21 +20,22 @@
         </div>
       </div>
     </div>
-    <div class="hp-main-content">
+    <div class="hp-main-content" data-aos="fade-in">
       <div class="hp-main-container">
         <div class="hp-main-content-title">
           Built for SMB's, Freelancers, and basicly any type of business
           initiative there is!
         </div>
-        <div class="hp-card-1">
+        <div class="hp-card-1" data-aos="fade-left">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">CREATION</div>
               <div class="hp-card-title">Fast & Easy Site Creation</div>
               <div class="hp-card-pa">
-                Use our simplified content-editor in order to create your amazing site.
-                Drag & Drop items to the center of the page to add them-in, click on the pretty bin icon to remove.
-                Use the text deisgn option to make every sentence to standout.
+                Use our simplified content-editor in order to create your
+                amazing site. Drag & Drop items to the center of the page to add
+                them-in, click on the pretty bin icon to remove. Use the text
+                deisgn option to make every sentence to standout.
               </div>
             </div>
             <div class="hp-card-btn">Start Creating »</div>
@@ -47,7 +48,7 @@
             />
           </div>
         </div>
-        <div class="hp-card-1" data="card-2">
+        <div class="hp-card-1" data="card-2" data-aos="fade-right">
           <div class="hp-card-img">
             <img
               src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Marketing_Optimized-768x558.png"
@@ -55,25 +56,30 @@
               srcset=""
             />
           </div>
-          <div class="hp-card-text">
+          <div class="hp-card-text" data-aos="fade-right">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
               <div class="hp-card-title">Design Like a Pro</div>
               <div class="hp-card-pa">
-                Our Ready-made Palette-Picker turns the design expirence to become as easy as a Google search, pick your favorite palette and start giving life to your site!
+                Our Ready-made Palette-Picker turns the design expirence to
+                become as easy as a Google search, pick your favorite palette
+                and start giving life to your site!
               </div>
             </div>
             <div class="hp-card-btn">Let's Design »</div>
           </div>
         </div>
-        <div class="hp-card-1">
+        <div class="hp-card-1" data-aos="fade-left">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
-              <div class="hp-card-title">Add Whole Sections With One Simple Click</div>
+              <div class="hp-card-title">
+                Add Whole Sections With One Simple Click
+              </div>
               <div class="hp-card-pa">
-                Why wasting time? Drag & Drop amazing sections, in a few seconds!
-                Add outstanding header, navbar or even cards, to make your dream site become a reality! 
+                Why wasting time? Drag & Drop amazing sections, in a few
+                seconds! Add outstanding header, navbar or even cards, to make
+                your dream site become a reality!
               </div>
             </div>
             <div class="hp-card-btn">Learn More »</div>
@@ -86,23 +92,26 @@
             />
           </div>
         </div>
-        <div class="hp-card-1" data="hp-title-pa">
+        <div class="hp-card-1" data="hp-title-pa" data-aos="fade-up">
           <div class="hp-card-text">
-            <div class="hp-card-title">Your Dream Site Is Just  A Few Clicks Away...!</div>
+            <div class="hp-card-title">
+              Your Dream Site Is Just A Few Clicks Away...!
+            </div>
             <div class="hp-card-pa">
-              Webix was built for freelancers, SMB's, and basicly anyone who has a dream about an amazing website that is waiting to come-alive!
+              Webix was built for freelancers, SMB's, and basicly anyone who has
+              a dream about an amazing website that is waiting to come-alive!
             </div>
             <div class="hp-card-btn">Start Creating Now »</div>
           </div>
         </div>
-        <div class="hp-big-img">
+        <div class="hp-big-img" data-aos="zoom-in">
           <img
             src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png"
             alt=""
             srcset=""
           />
         </div>
-        <div class="hp-card-1" data="hp-title-templates">
+        <div class="hp-card-1" data="hp-title-templates" data-aos="zoom-in">
           <div class="hp-card-text">
             <div class="hp-card-title">Outstanding Templates</div>
             <div class="hp-card-pa">
@@ -110,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="hp-template-previews-list">
+        <div class="hp-template-previews-list" data-aos="fade-in">
           <span
             class="hp-template-preview"
             @click="goToPreview('sys574575474543')"
@@ -186,9 +195,9 @@ export default {
   },
   methods: {
     goToPreview(id) {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
       this.$store.commit({ type: 'setPreviewMode', isPreviewOn: true });
-      this.$router.push('/'+id);
+      this.$router.push('/' + id);
     },
   },
   computed: {},

@@ -5,15 +5,21 @@
 html {
 	font-family: SourceSansPro, sans-serif;
 	color: $clr2;
-
+	@include scrollBar(.5rem,
+	lighten($clr2, 5%));
+	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0;
-overflow-y: scroll;
-font-weight: 100;
-letter-spacing: 1px;
-font-family: raleway;
+	overflow-y: scroll;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-family: raleway;
+}
+body[data-aos-duration='7000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='7000'] {
+	transition-duration: 7000ms;
 }
 
 h1,
@@ -58,13 +64,14 @@ ul {
 	display: flex;
 	align-content: flex-end !important;
 }
-.el-select, .el-input {
+.el-select,
+.el-input {
 	width: 80%;
 	// margin-left: rem(27px);
 }
 
 .el-slider__runway {
-		background-color: lighten($clr3, 15%);
+	background-color: lighten($clr3, 15%);
 }
 
 .el-input__inner {
@@ -82,10 +89,15 @@ ul {
 	text-align: left;
 }
 
-.el-collapse-item__header:hover, .el-collapse-item__header, .el-collapse-item__wrap, .el-collapse-item__content, .el-collapse-item__header:active, .el-collapse-item__header:focus{
+.el-collapse-item__header:hover,
+.el-collapse-item__header,
+.el-collapse-item__wrap,
+.el-collapse-item__content,
+.el-collapse-item__header:active,
+.el-collapse-item__header:focus {
 	color: unset;
 	transition: all .3s ease;
-	background-color:transparent ;
+	background-color: transparent;
 }
 
 .el-collapse-item__header:hover {
@@ -94,22 +106,34 @@ ul {
 
 .el-autocomplete {
 	width: 100%;
-	.el-input  {
+	.el-input {
 		width: 100%;
 	}
 }
 
-.is-active{
+.is-active {
 	color: inherit;
 }
 
-.el-collapse-item__header.focusing:focus:not(:hover){color:unset !important}
-.el-collapse-item__header:focus:not(:hover){color:unset !important}
+.el-collapse-item__header.focusing:focus:not(:hover) {
+	color: unset !important;
+}
+.el-collapse-item__header:focus:not(:hover) {
+	color: unset !important;
+}
 $--color-primary: #30475e !default;
 
 .el-collapse {
 	border: none;
 }
-.el-select,.el-input__inner:focus {
+.el-select,
+.el-input__inner:focus {
 	border-color: $clr2 !important;
+}
+
+.el-checkbox,
+.el-checkbox__label {
+	color: $clr2;
+
+	font-size: 0.8rem;
 }
