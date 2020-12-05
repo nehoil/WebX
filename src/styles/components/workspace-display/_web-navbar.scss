@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .hamburger {
-    display: none;
+    display: none !important;
 }
 
 .navbar-1 {
@@ -39,19 +39,10 @@
     .navbar-1 {
         flex-direction: row !important;
         .hamburger {
-            display: flex;
+            display: flex !important;
         }
-        &>*:not(first-child) &>*:not(last-child) {
-            display: none;
-        }
-    }
-    .navbar-2-container {
-        flex-direction: row !important;
-        .hamburger {
-            display: flex;
-        }
-        &:nth-child(2) {
-            display: none;
+        & :not(:first-child):not(div) {
+            display: none !important;
         }
     }
 }
