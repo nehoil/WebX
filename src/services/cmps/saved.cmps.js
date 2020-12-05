@@ -807,6 +807,7 @@ export const savedCmps = [{
             ]
         },
         style: {
+            width: "100%",
 
         }
     },
