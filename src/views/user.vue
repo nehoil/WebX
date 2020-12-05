@@ -1,6 +1,12 @@
 <template>
   <section class="user-profile flex space center">
-    <div class="main-section">
+    <div v-if="isLoading" class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+    <div class="main-section" v-else>
       <h3>Welcome back, {{ user.username }}!</h3>
       <p class="main-section-title">
         Select a site to edit, view and open its dashboard
@@ -35,6 +41,7 @@ import { eventBus } from '@/services/eventbus.service.js';
 export default {
   data() {
     return {
+      isLoading: false,
       // websites: null
     };
   },
@@ -43,7 +50,8 @@ export default {
       this.$store.dispatch('removeWeb', webId);
     },
     async loadUserWeb() {
-      eventBus.$emit('toggleLoading');
+      this.isLoading = true;
+      // eventBus.$emit('toggleLoading');
       await this.$store.dispatch('loadUserWebs');
       try {
         eventBus.$emit('toggleLoading');
@@ -51,6 +59,7 @@ export default {
         eventBus.$emit('toggleLoading');
         console.log('user webs load failed.');
       }
+      this.isLoading = false;
     },
   },
   computed: {
