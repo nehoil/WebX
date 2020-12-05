@@ -37,18 +37,19 @@ div.editor {
 			}
 			.ghost:after {
 				content: "Drop It Like It's Hot!";
+				margin: 0 auto;
 				position: absolute;
-				top: 0;
-				left: 0;
+				top: 10px;
+				left: 46%;
 				z-index: 10;
 			}
 		}
 		.dragIcon {
-			background-image: url('./../assets/drag-icon.png');
+			background-image: url('./../assets/drag-icon2.png');
 			background-position: center;
 			background-repeat: no-repeat;
-			opacity: 30%;
-			width: 100%;
+			opacity: 60%;
+			width: 99%;
 		}
 	}
 	.controller {
