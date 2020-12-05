@@ -659,11 +659,24 @@ export const roeeTemplates = [{
                                             ]
                                         }
                                     },
+                                    {
+                                        id: utilService.makeId(10),
+                                        type: "web-hamburger",
+                                        class: "hamburger",
+                                        info: {
+                                            content: "",
+                                            linkTo: ""
+                                        },
+                                        style: {
+
+
+                                        },
+                                    },
                                 ]
                             },
                             style: {
 
-                                padding: " 0 !important"
+                                // padding: " 0 !important"
 
                             }
                         },
