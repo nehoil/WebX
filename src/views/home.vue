@@ -3,12 +3,9 @@
     <div class="hp-header">
       <div class="hp-header-container">
         <div class="header-text">
-          <div class="hp-header-title">
-            <!-- A better & Easy way to create websites -->
-            Hassle-free website creation for simply every one
-          </div>
+          <div class="hp-header-title">Hassle-free website builder</div>
           <div class="hp-header-subtitle">
-            You can create an amazing website with Webix in just minutes.
+            Create an amazing website with Webix in just minutes.
           </div>
         </div>
         <div class="hp-header-video-container">
@@ -26,143 +23,155 @@
     <div class="hp-main-content">
       <div class="hp-main-container">
         <div class="hp-main-content-title">
-          Built for SMB's, Freelancers, and basicly any type of business initiative there is! 
+          Built for SMB's, Freelancers, and basicly any type of business
+          initiative there is!
         </div>
         <div class="hp-card-1">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
-            <div class="hp-card-tag">
-              DESIGN
+              <div class="hp-card-tag">CREATION</div>
+              <div class="hp-card-title">Fast & Easy Site Creation</div>
+              <div class="hp-card-pa">
+                Use our simplified content-editor in order to create your amazing site.
+                Drag & Drop items to the center of the page to add them-in, click on the pretty bin icon to remove.
+                Use the text deisgn option to make every sentence to standout.
+              </div>
             </div>
-            <div class="hp-card-title">
-              Pixel Perfect Design in WordPress
-            </div>
-            <div class="hp-card-pa">
-              The only complete design platform to offer pixel perfect design, yet produces 100% clean code. Take your design vision and turn it into a stunning custom-made website.
-            </div>
-            </div>
-            <div class="hp-card-btn">
-              Learn More »
-            </div>
-            
+            <div class="hp-card-btn">Start Creating »</div>
           </div>
           <div class="hp-card-img">
-            <img src="https://elementor.com/wp-content/uploads/2019/12/Homepage_Design_Optimised1-768x471.png" alt="" srcset="">
+            <img
+              src="https://elementor.com/wp-content/uploads/2019/12/Homepage_Design_Optimised1-768x471.png"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
         <div class="hp-card-1" data="card-2">
-                    <div class="hp-card-img">
-            <img src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Marketing_Optimized-768x558.png" alt="" srcset="">
+          <div class="hp-card-img">
+            <img
+              src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Marketing_Optimized-768x558.png"
+              alt=""
+              srcset=""
+            />
           </div>
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
-            <div class="hp-card-tag">
-              DESIGN
+              <div class="hp-card-tag">DESIGN</div>
+              <div class="hp-card-title">Design Like Pro</div>
+              <div class="hp-card-pa">
+                Our Ready-made Palette-Picker turns the design expirence to become as easy as a Google search, pick your favorite palette and start giving life to your site!
+              </div>
             </div>
-            <div class="hp-card-title">
-              Pixel Perfect Design in WordPress
-            </div>
-            <div class="hp-card-pa">
-              The only complete design platform to offer pixel perfect design, yet produces 100% clean code. Take your design vision and turn it into a stunning custom-made website.
-            </div>
-            </div>
-            <div class="hp-card-btn">
-              Learn More »
-            </div>
-            
+            <div class="hp-card-btn">Let's Design »</div>
           </div>
         </div>
-           <div class="hp-card-1">
+        <div class="hp-card-1">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
-            <div class="hp-card-tag">
-              DESIGN
+              <div class="hp-card-tag">DESIGN</div>
+              <div class="hp-card-title">Add Whole Sections With One Simple Click</div>
+              <div class="hp-card-pa">
+                Why wasting time? Drag & Drop amazing sections, in a few seconds!
+                Add outstanding header, navbar or even cards, to make your dream site become a reality! 
+              </div>
             </div>
-            <div class="hp-card-title">
-              Pixel Perfect Design in WordPress
-            </div>
-            <div class="hp-card-pa">
-              The only complete design platform to offer pixel perfect design, yet produces 100% clean code. Take your design vision and turn it into a stunning custom-made website.
-            </div>
-            </div>
-            <div class="hp-card-btn">
-              Learn More »
-            </div>
-            
+            <div class="hp-card-btn">Learn More »</div>
           </div>
           <div class="hp-card-img">
-            <img src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Development__Optimized-1024x715.png" alt="" srcset="">
+            <img
+              src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Development__Optimized-1024x715.png"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
-         <div class="hp-card-1" data="hp-title-pa">
+        <div class="hp-card-1" data="hp-title-pa">
           <div class="hp-card-text">
-            <div class="hp-card-title">
-              Create Any Website You Can Imagine
-            </div>
+            <div class="hp-card-title">Your Dream Site Is Just  A Few Clicks Away...!</div>
             <div class="hp-card-pa">
-              Elementor was built for you. Designers, developers, marketers, and entrepreneurs. Create stunning landing pages, design a blog, customize your online store – everything is within reach!
+              Webix was built for freelancers, SMB's, and basicly anyone who has a dream about an amazing website that is waiting to come-alive!
             </div>
-            <div class="hp-card-btn">
-              Start Creating Now »
-            </div>
-            
+            <div class="hp-card-btn">Start Creating Now »</div>
           </div>
         </div>
         <div class="hp-big-img">
-          <img src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png" alt="" srcset="">
+          <img
+            src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png"
+            alt=""
+            srcset=""
+          />
         </div>
-            <!-- <div class="template-previews-list">
-      <span class="template-preview" @click="goToEditor">
-        <div class="template-name">
-          <img class="dots" src="@/assets/dots.png" />
-          <span class="spec-name"> Create new website</span>
+        <div class="hp-card-1" data="hp-title-templates">
+          <div class="hp-card-text">
+            <div class="hp-card-title">Outstanding Templates</div>
+            <div class="hp-card-pa">
+              Make your brand standout with our amazing tempaltes.
+            </div>
+          </div>
         </div>
-        <div class="template-img">
-          <img class="dots" src="@/assets/blank.png" @click="createNewWeb" />
-        </div>
-      </span>
-      <div
-        class="template-preview"
-        v-for="(template, idx) in templates"
-        :key="idx"
-        @click="chooseTemplate(template)"
-        @mouseenter.capture="isShowBtns = true"
-        @mouseleave="isShowBtns = false"
-      >
-        <div class="template-name">
-          <img class="dots" src="@/assets/dots.png" />
-          <span class="spec-name">
-            {{ template.name }}
+        <div class="hp-template-previews-list">
+          <span
+            class="hp-template-preview"
+            @click="goToPreview('sys574575474543')"
+          >
+            <div class="hp-template-name">
+              <img class="dots" src="@/assets/dots.png" />
+            </div>
+            <div class="template-img">
+              <img
+                class="dots"
+                src="http://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg"
+              />
+            </div>
+          </span>
+          <span class="hp-template-preview" @click="goToPreview('sys67575s')">
+            <div class="hp-template-name">
+              <img class="dots" src="@/assets/dots.png" />
+            </div>
+            <div class="template-img">
+              <img
+                class="dots"
+                src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg"
+              />
+            </div>
+          </span>
+          <span
+            class="hp-template-preview"
+            @click="goToPreview('syssdfsdf546')"
+          >
+            <div class="hp-template-name">
+              <img class="dots" src="@/assets/dots.png" />
+            </div>
+            <div class="template-img">
+              <img
+                class="dots"
+                src="https://i.ibb.co/Wk3pMvW/template-preview.jpg"
+              />
+            </div>
           </span>
         </div>
-        <div class="template-img">
-          <img :src="template.previewImg" alt="" srcset="" />
-        </div>
-
-      </div>
-    </div> -->
         <div class="hp-footer">
-                        <div class="hp-footer-left">
-                            <div class="hp-footer-icons">
-                                <span>Connect With Us</span>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </div>
-                        </div>
-                        <div class="hp-footer-right">
-                            <div class="hp-footer-txt">
-                                <ul>
-                                    <li><a href="#">Comapny</a></li>
-                                    <li><a href="#">Team Members</a></li>
-                                    <li><a href="#">Careers</a></li>
-                                    <li><a href="#">Help &amp; FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
+          <div class="hp-footer-left">
+            <div class="hp-footer-icons">
+              <span>Connect With Us</span>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+          <div class="hp-footer-right">
+            <div class="hp-footer-txt">
+              <ul>
+                <li><a href="#">Comapny</a></li>
+                <li><a href="#">Team Members</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help &amp; FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -177,7 +186,13 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    goToPreview(id) {
+      window.scrollTo(0,0);
+      this.$store.commit({ type: 'setPreviewMode', isPreviewOn: true });
+      this.$router.push('/'+id);
+    },
+  },
   computed: {},
   created() {},
 };
@@ -186,7 +201,7 @@ export default {
 
 
 <style lang="css">
-  #app .main-nav {
-    border-bottom: 0!important;
-  }
+#app .main-nav {
+  border-bottom: 0 !important;
+}
 </style>
