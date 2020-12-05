@@ -19,7 +19,7 @@
                   class="el-icon-arrow-left page-link pointer"
                 ></i>
                 <li
-                  class="tranparent"
+                  class="transparent"
                   @click="setColor('transparent', 'backgroundColor')"
                 >
                   <span>/</span>

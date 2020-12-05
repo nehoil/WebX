@@ -8,7 +8,6 @@
         </template>
         <label class="pointer">
           <div class="upload-image flex space center">
-            <!-- <img :src="cmp.info.src" /> -->
             <span>Upload Image</span>
             <i class="el-icon-upload2" v-if="!isLoading"></i>
             <i class="el-icon-loading" v-if="isLoading"></i>
@@ -49,14 +48,6 @@
           popper-class="search-popper"
           @select="handleSelect"
         ></el-autocomplete>
-        <!-- <el-input
-          class="link-input"
-         
-          placeholder="What are you looking for?"
-          @keyup.enter="searchImages"
-        
-          v-model="term"
-        ></el-input> -->
         <div v-if="unsplashImages" class="usp-gallery center">
           <div
             v-for="(image, idx) in unsplashImages"

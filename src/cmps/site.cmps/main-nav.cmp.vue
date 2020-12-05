@@ -21,7 +21,7 @@
           </span>
           <span class="save-and-publish" v-if="onEdit">
             <a @click="save"
-              >Save <i v-if="isLoading" class="el-icon-loading loader"></i
+              >Save <i v-if="isLoading" class="el-icon-loading"></i
             ></a>
             <a @click="publishTemplate">Publish</a></span
           >

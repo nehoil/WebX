@@ -19,6 +19,7 @@ import webButton from '@/cmps/elements.cmps/web.button.cmp';
 import webMap from '@/cmps/elements.cmps/web.map.cmp';
 import webVideo from '@/cmps/elements.cmps/web.video.cmp';
 import webList from '@/cmps/elements.cmps/web.list.cmp';
+import webHamburger from '@/cmps/elements.cmps/web.hamburger.cmp';
 
 export default {
   props: {
@@ -32,6 +33,7 @@ export default {
     webMap,
     webVideo,
     webList,
+    webHamburger,
   },
   data() {
     return {
