@@ -47,9 +47,9 @@ export default {
     };
   },
   methods: {
-    // showLogin() {
-    //   this.isShowLogin = !this.isShowLogin;
-    // },
+    showLogin() {
+      this.isShowLogin = !this.isShowLogin;
+    },
     doLogout() {
       this.$store.dispatch({ type: 'logout' });
     },
