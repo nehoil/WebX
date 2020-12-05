@@ -11,7 +11,7 @@ export const webService = {
 
 
 function saveWeb(web) {
-    console.log('im service!!', web);
+    // console.log('im service!!', web);
     if (web._id) {
         return HttpService.put(`web/${web._id}`, web)
     } else {
