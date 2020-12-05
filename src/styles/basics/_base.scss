@@ -17,6 +17,10 @@ body {
 	letter-spacing: 1px;
 	font-family: raleway;
 }
+body[data-aos-duration='7000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='7000'] {
+	transition-duration: 7000ms;
+}
 
 h1,
 h2,
