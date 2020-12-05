@@ -71,8 +71,13 @@ ul {
 	height: 33px;
 }
 
+.el-collapse-item__content {
+	padding-left: 10px;
+	margin-top: 8px;
+}
 
 .el-collapse-item__header {
+	padding-left: 10px;
 	font-size: 1rem;
 	text-align: left;
 }
@@ -81,6 +86,10 @@ ul {
 	color: unset;
 	transition: all .3s ease;
 	background-color:transparent ;
+}
+
+.el-collapse-item__header:hover {
+	background: #e9e9fc79;
 }
 
 .el-autocomplete {
