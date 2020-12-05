@@ -2,8 +2,12 @@
   <section id="controller" class="controller flex space col">
     <div>
       <nav class="flex pointer space">
-        <a @click="addOrEdit = 'add'" :class="getIsAdd('add')">Add</a>
-        <a @click="addOrEdit = 'edit'" :class="getIsAdd('edit')">Edit</a>
+        <a @click="addOrEdit = 'add'" :class="getIsAdd('add')">
+          <i class="el-icon-plus"></i>
+          Add</a>
+        <a @click="addOrEdit = 'edit'" :class="getIsAdd('edit')"> 
+          <i class="el-icon-edit"></i>
+Edit</a>
       </nav>
       <component :is="addOrEdit" :itemToEdit="itemToEdit"></component>
     </div>
@@ -53,10 +57,10 @@ export default {
     async getScreenShot() {
       eventBus.$emit('toggleLoading');
       var htmlToImage = require('html-to-image');
-      var dataUrl = await htmlToImage.toPng(
+      var dataUrl = await htmlToImage.toJpeg(
         document.getElementById('workspace'),
         {
-          quality: 0.0001,
+          quality: 0.1,
           height: 900,
           pixelRatio: 0.85,
         }

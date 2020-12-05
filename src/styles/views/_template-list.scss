@@ -2,12 +2,7 @@
   // margin-top: 3rem;
   text-align: center;
   flex-direction: column;
-  // display: flex;
   font-size: 1.1rem;
-  // flex-wrap: wrap;
-  // height: 90vh;
-  // max-width: 1700px;
-  // flex-direction:;
   margin: 0;
   padding: 3rem;
   & .template-previews-list {
@@ -36,19 +31,12 @@
     
     }
   }
-  // height: 100%;
-  // width: 100%;
   flex-direction: column;
   position: relative;
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  // margin: 1rem;
-  // svg {
-  //   width: rem(20px);
-  //   justify-self: flex-start;
-  // }
   .template-name {
     background-color: $clr2;
     display: flex;
@@ -65,9 +53,9 @@
     .dots {
       width: 10%;
     }
+
   }
   &:hover{
-    
     .template-preview-btns{
       opacity: 100%;
     }
