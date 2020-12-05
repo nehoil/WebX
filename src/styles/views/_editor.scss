@@ -54,7 +54,7 @@ div.editor {
 		}
 	}
 	.controller {
-		box-shadow: 0 3px 6px rgba(0,0,100,.15);
+		box-shadow: 0 3px 6px rgba(0, 0, 100, .15);
 		z-index: 55;
 		background-color: #fff;
 		border-radius: 1rem;
@@ -87,6 +87,9 @@ div.editor {
 				width: 100%;
 				height: 100%;
 				background-color: $clr4;
+			}
+			a:hover {
+				background: #e9e9fc79;
 			}
 			.active-tab {
 				border-bottom: 1px solid $clr3;
