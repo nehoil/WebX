@@ -33,6 +33,7 @@ import webForm from '@/cmps/elements.cmps/web.form.cmp';
 import webButton from '@/cmps/elements.cmps/web.button.cmp';
 import webList from '@/cmps/elements.cmps/web.list.cmp';
 import webDiv from '@/cmps/elements.cmps/web.div.cmp';
+import webHamburger from '@/cmps/elements.cmps/web.hamburger.cmp';
 
 export default {
   name: 'web-container',
@@ -54,6 +55,7 @@ export default {
     webVideo,
     editMenu,
     webDiv,
+    webHamburger
   },
   methods: {
     setEditItem() {
