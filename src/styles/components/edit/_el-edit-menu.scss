@@ -1,10 +1,9 @@
-
 .el-edit-menu {
     pointer-events: none;
     // width: 100%;
     display: flex;
     position: absolute;
-    z-index: 50;
+    z-index: 500;
     top: 0;
     margin-right: 1rem;
     justify-content: flex-end;
@@ -71,5 +70,4 @@
 }
 
 // .inner-el {
-
 // }

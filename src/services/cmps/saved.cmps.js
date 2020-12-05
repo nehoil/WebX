@@ -788,7 +788,21 @@ export const savedCmps = [{
                         fontFamily: "assistantLight",
                         fontWeight: "bold",
                     },
-                }
+                },
+                {
+                    id: utilService.makeId(10),
+                    type: "web-hamburger",
+                    class: "hamburger",
+                    info: {
+                        content: "",
+                        linkTo: ""
+                    },
+                    style: {
+                        fontFamily: "",
+                        fontWeight: "",
+
+                    },
+                },
             ]
         },
         style: {

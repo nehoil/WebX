@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.hamburger {
+    display: none;
+}
+
 .navbar-1 {
     display: flex;
     justify-content: space-between;
@@ -29,4 +33,25 @@
 
 .login-btn {
     cursor: pointer;
+}
+
+@media (max-width:$break-wide) {
+    .navbar-1 {
+        flex-direction: row !important;
+        .hamburger {
+            display: flex;
+        }
+        &>*:not(first-child) &>*:not(last-child) {
+            display: none;
+        }
+    }
+    .navbar-2-container {
+        flex-direction: row !important;
+        .hamburger {
+            display: flex;
+        }
+        &:nth-child(2) {
+            display: none;
+        }
+    }
 }
