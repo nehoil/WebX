@@ -711,7 +711,7 @@ export const savedCmps = [{
             dir: "row",
             cmps: [{
                     id: utilService.makeId(10),
-                    type: "web-txt",
+                    type: "web-button",
                     info: {
                         content: "Logo"
                     },
@@ -807,7 +807,6 @@ export const savedCmps = [{
             ]
         },
         style: {
-            width: "100%",
 
         }
     },

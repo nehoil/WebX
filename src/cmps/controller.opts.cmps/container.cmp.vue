@@ -17,12 +17,12 @@
         </div>
         <div class="flex center space plr10"></div>
         <div class="flex center space plr10">
-          <p>Add Spacing</p>
+          <p>Side Spacing</p>
           <el-slider
             :min="0"
-            :max="100"
+            :max="250"
             v-model="padding"
-            @input="setPadding"
+            @input="setHorPadding"
           ></el-slider>
         </div>
         <label class="pointer">
@@ -162,20 +162,25 @@ export default {
       eventBus.$emit('change-web-txt');
       eventBus.$emit('update-site');
       eventBus.$emit('change-web-container');
-      // this.minHeight = null;
     },
     setBgcColor(bgcColor) {
       this.cmp.style.backgroundColor = bgcColor;
       eventBus.$emit('update-site');
       eventBus.$emit('change-web-container');
     },
-    setPadding(size) {
-      // if (!this.cmp.style.padding) this.cmp.style.padding = 'unset';
+    setHorPadding(size) {
       this.padding = size;
-      this.cmp.style.padding = size / 16 + 'rem';
+      this.cmp.style.paddingRight = size / 16 + 'rem';
+      this.cmp.style.paddingLeft = size / 16 + 'rem';
       eventBus.$emit('update-site');
       eventBus.$emit('change-web-container');
-      // this.padding = null;
+    },
+    setVerPadding(size) {
+      this.padding = size;
+      this.cmp.style.paddingTop = size / 16 + 'rem';
+      this.cmp.style.paddingBottom = size / 16 + 'rem';
+      eventBus.$emit('update-site');
+      eventBus.$emit('change-web-container');
     },
     querySearch(queryString, cb) {
       cb([{ value: 'Search For ' + queryString }]);
@@ -186,6 +191,7 @@ export default {
   },
   computed: {
     getIsImage() {
+      console.log(this.cmp);
       if (
         this.cmp.style.backgroundImage === 'unset' ||
         !this.cmp.style.backgroundImage

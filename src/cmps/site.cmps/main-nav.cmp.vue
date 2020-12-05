@@ -20,7 +20,9 @@
             ></router-link>
           </span>
           <span class="save-and-publish" v-if="onEdit">
-            <a @click="save">Save</a>
+            <a @click="save"
+              >Save <i v-if="isLoading" class="el-icon-loading"></i
+            ></a>
             <a @click="publishTemplate">Publish</a></span
           >
         </div>
@@ -44,6 +46,7 @@ export default {
         templateName: null,
         templatePreviewImg: null,
       },
+      isLoading: false,
     };
   },
   methods: {
@@ -85,6 +88,7 @@ export default {
       }
     },
     async save() {
+      this.isLoading = true;
       const screenshot = await this.getScreenShot();
       if (!this.$store.getters.user) {
         eventBus.$emit(
@@ -112,6 +116,7 @@ export default {
             });
           });
       }
+      this.isLoading = false;
     },
   },
   computed: {

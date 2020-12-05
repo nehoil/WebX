@@ -18,7 +18,7 @@ export const haleliTemplates = [{
                     dir: "row",
                     cmps: [{
                             id: utilService.makeId(10),
-                            type: "web-txt",
+                            type: "web-button",
                             info: {
                                 content: "VITA"
                             },
@@ -668,7 +668,7 @@ export const haleliTemplates = [{
                     dir: "row",
                     cmps: [{
                             id: utilService.makeId(10),
-                            type: "web-txt",
+                            type: "web-button",
                             info: {
                                 content: "CHÂTEAU DU BRUNCH"
                             },

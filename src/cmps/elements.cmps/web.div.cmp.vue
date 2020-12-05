@@ -21,7 +21,6 @@ import webVideo from '@/cmps/elements.cmps/web.video.cmp';
 import webList from '@/cmps/elements.cmps/web.list.cmp';
 import webHamburger from '@/cmps/elements.cmps/web.hamburger.cmp';
 
-
 export default {
   props: {
     cmp: Object,
