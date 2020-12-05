@@ -1,5 +1,3 @@
-// import { utilService } from '@/services/util-service.js'
-
 export const nehoCmps = [{
         type: 'web-container',
         name: 'header',
@@ -103,11 +101,25 @@ export const nehoCmps = [{
                                                 fontWeight: '400',
                                                 textShadow: 'unset'
                                             }
-                                        }
+                                        },
+
                                     ]
                                 },
                                 style: {}
-                            }
+                            },
+                            {
+                                id: "sdf345dfge456",
+                                type: "web-hamburger",
+                                class: "hamburger",
+                                info: {
+                                    content: "",
+                                    linkTo: ""
+                                },
+                                style: {
+                                    color: "#fff",
+
+                                },
+                            },
                         ]
                     },
                     style: {
@@ -300,10 +312,24 @@ export const nehoCmps = [{
                         ]
                     },
                     style: {}
-                }
+                },
+                {
+                    id: "dfg564fghfgh9808",
+                    type: "web-hamburger",
+                    class: "hamburger",
+                    info: {
+                        content: "",
+                        linkTo: ""
+                    },
+                    style: {
+
+
+                    },
+                },
             ]
         },
         style: {
+            color: "#fff",
             backgroundColor: 'rgba(255, 0, 150, 0.3)'
         }
     },

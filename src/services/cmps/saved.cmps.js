@@ -710,85 +710,86 @@ export const savedCmps = [{
         info: {
             dir: "row",
             cmps: [{
-                    type: "web-div",
-                    name: "logo-container",
                     id: utilService.makeId(10),
-                    class: "web-div-logo-container",
+                    type: "web-txt",
+                    info: {
+                        content: "Logo"
+                    },
+                    style: {
+                        fontFamily: "assistantLight",
+                        fontSize: "3.375rem",
+                        lineHeight: "auto",
+                        padding: "15px",
+                    }
+                },
+
+
+                {
+                    type: "web-div",
+                    name: "nav-btns",
+                    id: utilService.makeId(10),
+                    class: "web-div-nav-btns",
                     info: {
                         dir: "row",
                         cmps: [{
-                            id: utilService.makeId(10),
-                            type: "web-txt",
-                            info: {
-                                content: "Logo"
+                                id: utilService.makeId(10),
+                                type: "web-button",
+                                info: {
+                                    content: "Home",
+                                    linkTo: "#"
+                                },
+                                style: {
+                                    fontFamily: "assistantLight",
+                                    fontWeight: "bold",
+
+                                },
                             },
-                            style: {
-                                fontFamily: "assistantLight",
-                                fontSize: "3.375rem",
-                                lineHeight: "auto"
-                            }
-                        }]
-                    },
-                    style: {
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-button",
+                                info: {
+                                    content: "Services",
+                                    linkTo: "#"
 
-                        padding: "15px",
+                                },
+                                style: {
+                                    fontFamily: "assistantLight",
+                                    fontWeight: "bold",
 
+
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-button",
+                                info: {
+                                    content: "Gallery",
+                                    linkTo: "#"
+
+                                },
+                                style: {
+                                    fontFamily: "assistantLight",
+                                    fontWeight: "bold",
+                                },
+                            },
+                            {
+                                id: utilService.makeId(10),
+                                type: "web-button",
+                                info: {
+                                    content: "About us  ",
+                                    linkTo: "#"
+
+                                },
+                                style: {
+                                    fontFamily: "assistantLight",
+                                    fontWeight: "bold",
+                                },
+                            },
+                        ]
                     }
                 },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-button",
-                    info: {
-                        content: "Home",
-                        linkTo: "#"
-                    },
-                    style: {
-                        fontFamily: "assistantLight",
-                        fontWeight: "bold",
-
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-button",
-                    info: {
-                        content: "Services",
-                        linkTo: "#"
-
-                    },
-                    style: {
-                        fontFamily: "assistantLight",
-                        fontWeight: "bold",
 
 
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-button",
-                    info: {
-                        content: "Gallery",
-                        linkTo: "#"
-
-                    },
-                    style: {
-                        fontFamily: "assistantLight",
-                        fontWeight: "bold",
-                    },
-                },
-                {
-                    id: utilService.makeId(10),
-                    type: "web-button",
-                    info: {
-                        content: "About us  ",
-                        linkTo: "#"
-
-                    },
-                    style: {
-                        fontFamily: "assistantLight",
-                        fontWeight: "bold",
-                    },
-                },
                 {
                     id: utilService.makeId(10),
                     type: "web-hamburger",
@@ -798,11 +799,11 @@ export const savedCmps = [{
                         linkTo: ""
                     },
                     style: {
-                        fontFamily: "",
-                        fontWeight: "",
+
 
                     },
                 },
+
             ]
         },
         style: {

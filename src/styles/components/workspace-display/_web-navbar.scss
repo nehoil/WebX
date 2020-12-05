@@ -37,12 +37,25 @@
 
 @media (max-width:$break-wide) {
     .navbar-1 {
+        .on-edit {
+            display: none !important;
+        }
         flex-direction: row !important;
         .hamburger {
             display: flex !important;
         }
-        & :not(:first-child):not(div) {
+        .web-div-nav-btns {
             display: none !important;
         }
+    }
+    .navbar-2-container {
+        flex-direction: row !important;
+        color: #fff;
+    }
+    .hamburger {
+        display: flex !important;
+    }
+    .navbar-2-div {
+        display: none !important;
     }
 }

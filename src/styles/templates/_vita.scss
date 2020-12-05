@@ -1,37 +1,36 @@
-
-.header-v{
+.header-v {
     text-align: center;
     width: 100%;
     background-size: cover !important;
     // min-height: 53rem;
-     & .web-txt {
+    & .web-txt {
         margin-bottom: 3rem !important;
     }
     display: flex;
     flex-direction: column;
-    padding: 31rem  7rem 1rem 7rem !important;
+    padding: 31rem 7rem 1rem 7rem !important;
 }
 
-.map-v{
-    .map-text-v{
+.map-v {
+    .map-text-v {
         display: flex;
         flex-direction: column;
         // letter-spacing: 3px;
     }
     .card-image {
-         width: 50%;
-         margin-left: 1rem;    
-     }
-     .card-text {
-         width: 60%;
-     }
+        width: 50%;
+        margin-left: 1rem;
+    }
+    .card-text {
+        width: 60%;
+    }
 }
 
 .v-cards-gallery {
     display: flex;
     align-items: center;
     justify-content: center;
-    .web-card-1{
+    .web-card-1 {
         border: 1px solid rgb(231, 231, 231);
         padding: 15px 10px;
         margin: 10px;
@@ -60,7 +59,20 @@
     }
 }
 
-.section-v01{
+@media(max-width: $break-wide) {
+    .section-v {
+        .card-text {
+            width: 90%;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .card-image {
+            width: 90%;
+        }
+    }
+}
+
+.section-v01 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,15 +83,14 @@
     }
 }
 
-.footer-v{
+.footer-v {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    .div-v{
+    .div-v {
         flex-direction: row;
-        
     }
-    .div-v>*{
+    .div-v>* {
         display: block;
         text-align: left;
         margin-right: 7rem;

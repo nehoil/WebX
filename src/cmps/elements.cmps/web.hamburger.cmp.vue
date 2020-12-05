@@ -1,6 +1,6 @@
 <template>
-<div>    
-<i class="fas fa-bars hamburger" ></i>
+<div class="hamburger">    
+<i class="fas fa-bars " ></i>
 </div>
 </template>
 

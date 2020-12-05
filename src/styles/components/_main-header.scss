@@ -37,6 +37,19 @@
         justify-content: center;
         align-items: center;
     }
+    @media(max-width: $break-wide) {
+        &.header-2-container {
+            flex-direction: column-reverse;
+            .header-2-div {
+                margin-bottom: 100px;
+            }
+            &>span {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
 }
 
 .header-2-div {
@@ -63,10 +76,16 @@
     }
 }
 
+@media(max-width: $break-wide) {
+    .header-2-div {
+        margin-left: 0px;
+    }
+}
+
 .header-2-pa {
     display: block;
     max-width: 40ch;
     line-height: 1.1em;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
