@@ -53,17 +53,14 @@ export default {
     async getScreenShot() {
       eventBus.$emit('toggleLoading');
       var htmlToImage = require('html-to-image');
-      // var node = document.getElementById('workspace');
       var dataUrl = await htmlToImage.toPng(
         document.getElementById('workspace'),
         {
-          quality: 0.1,
-          width: 1400,
-          height: 750,
-          pixelRatio: 0.8,
+          quality: 0.0001,
+          height: 900,
+          pixelRatio: 0.85,
         }
       );
-      // // .toPng(userWebsite, { quality: 0.02 });
       try {
         eventBus.$emit('toggleLoading');
         console.log(dataUrl);
