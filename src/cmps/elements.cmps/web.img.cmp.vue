@@ -1,7 +1,6 @@
 <template>
   <span class="cmp-span" @mouseleave="showEditMenu = false" :class="cmp.class">
     <img
-    
       class="web-img"
       :style="cmp.style"
       @click.stop="setEditItem"

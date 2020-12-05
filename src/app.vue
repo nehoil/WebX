@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <main-nav v-if="isShowHeader" />
+    <main-nav v-if="isShowHeader" @showLogin="showLogin" />
     <div class="modal-bg" v-if="isShowLogin"></div>
     <login-cmp v-if="isShowLogin" @showLogin="showLogin" :msg="loginMsg" />
     <user-msg />
@@ -36,7 +36,12 @@ export default {
       },
     };
   },
-  methods: {},
+  methods: {
+    showLogin() {
+      console.log('arrived  in app');
+      this.isShowLogin = !this.isShowLogin;
+    },
+  },
   computed: {},
   created() {
     eventBus.$on('change-edit-mode', () => {
