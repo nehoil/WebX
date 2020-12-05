@@ -26,7 +26,7 @@
           Built for SMB's, Freelancers, and basicly any type of business
           initiative there is!
         </div>
-        <div class="hp-card-1" data-aos="fade-left">
+        <div class="hp-card-1" data-aos="fade-left" data-aos-duration="6000">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">CREATION</div>
@@ -48,7 +48,12 @@
             />
           </div>
         </div>
-        <div class="hp-card-1" data="card-2" data-aos="fade-right">
+        <div
+          class="hp-card-1"
+          data="card-2"
+          data-aos="fade-right"
+          data-aos-duration="6000"
+        >
           <div class="hp-card-img">
             <img
               src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Marketing_Optimized-768x558.png"
@@ -56,7 +61,11 @@
               srcset=""
             />
           </div>
-          <div class="hp-card-text" data-aos="fade-right">
+          <div
+            class="hp-card-text"
+            data-aos="fade-right"
+            data-aos-duration="6000"
+          >
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
               <div class="hp-card-title">Design Like a Pro</div>
@@ -92,7 +101,12 @@
             />
           </div>
         </div>
-        <div class="hp-card-1" data="hp-title-pa" data-aos="fade-up">
+        <div
+          class="hp-card-1"
+          data="hp-title-pa"
+          data-aos="fade-up"
+          data-aos-duration="6000"
+        >
           <div class="hp-card-text">
             <div class="hp-card-title">
               Your Dream Site Is Just A Few Clicks Away...!
@@ -111,7 +125,12 @@
             srcset=""
           />
         </div>
-        <div class="hp-card-1" data="hp-title-templates" data-aos="zoom-in">
+        <div
+          class="hp-card-1"
+          data="hp-title-templates"
+          data-aos="zoom-in"
+          data-aos-duration="6000"
+        >
           <div class="hp-card-text">
             <div class="hp-card-title">Outstanding Templates</div>
             <div class="hp-card-pa">
@@ -119,7 +138,11 @@
             </div>
           </div>
         </div>
-        <div class="hp-template-previews-list" data-aos="fade-in">
+        <div
+          class="hp-template-previews-list"
+          data-aos="fade-in"
+          data-aos-duration="6000"
+        >
           <span
             class="hp-template-preview"
             @click="goToPreview('sys574575474543')"

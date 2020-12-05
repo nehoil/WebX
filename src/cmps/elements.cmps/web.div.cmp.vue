@@ -33,7 +33,7 @@ export default {
     webMap,
     webVideo,
     webList,
-    webHamburger,
+    webHamburger
   },
   data() {
     return {

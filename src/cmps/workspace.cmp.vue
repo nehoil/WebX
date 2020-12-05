@@ -27,6 +27,17 @@
 import webContainer from '@/cmps/web.container.cmp';
 import { eventBus } from '@/services/eventbus.service.js';
 import draggable from 'vuedraggable';
+
+import webDiv from '@/cmps/elements.cmps/web.div.cmp';
+import webMap from '@/cmps/elements.cmps/web.map.cmp';
+import webTxt from '@/cmps/elements.cmps/web.txt.cmp';
+import webVideo from '@/cmps/elements.cmps/web.video.cmp';
+import webImg from '@/cmps/elements.cmps/web.img.cmp';
+import webForm from '@/cmps/elements.cmps/web.form.cmp';
+import webButton from '@/cmps/elements.cmps/web.button.cmp';
+import webList from '@/cmps/elements.cmps/web.list.cmp';
+import webHamburger from '@/cmps/elements.cmps/web.hamburger.cmp';
+
 // import { utilService } from "../services/util-service.js";
 // import { templateService } from "@/services/template.service.js";
 
@@ -38,6 +49,15 @@ export default {
   components: {
     webContainer,
     draggable,
+    webDiv,
+    webMap,
+    webTxt,
+    webVideo,
+    webImg,
+    webForm,
+    webButton,
+    webList,
+    webHamburger,
   },
   data() {
     return {
