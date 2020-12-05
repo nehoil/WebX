@@ -78,7 +78,7 @@ export const roeeCmps = [{
     //HR template
     {
         type: "web-container",
-        name: "header",
+        name: "header1",
         id: "header-hr",
         class: "web-header-hr",
         // previewImg: 'https://i.ibb.co/09X6T9w/preview-header-basic001.jpg',
