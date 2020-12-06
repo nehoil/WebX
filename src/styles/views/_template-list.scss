@@ -52,11 +52,11 @@
 			width: 10%;
 		}
 	}
-	&:hover {
-		.template-preview-btns {
-			opacity: 100%;
-		}
+	// .template-preview:hover {
+	.template-preview-btns:hover {
+		opacity: 100%;
 	}
+	// }
 }
 
 .template-preview-btns {
@@ -64,6 +64,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+
 	transition: all .3 ease;
 	background-color: #061624c7;
 	border-radius: 5px;
