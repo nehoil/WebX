@@ -244,6 +244,94 @@ export const haleliCmps = [
             backgroundColor: "#fff",
         },
     },
+    {
+        type: "web-container",
+        name: "map",
+        id: "section007",
+        class: "map-v",
+        previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607284877/New_Project_q9zpja.jpg',
+        info: {
+            dir: "row",
+            cmps: [{
+                type: "web-div",
+                name: "card-tem-03",
+                class: "card-image",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-img",
+                        info: {
+                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607284560/396-3962945_birthday-cupcake-cupcakes-cake-cakes-sweet-sweets-scran_vivqe8.png"
+                        },
+                        style: {
+                            width: "60%"
+                        }
+                    }]
+                },
+            },
+            {
+                type: "web-div",
+                name: "card-tem-demo",
+                class: "map-text-v",
+                id: utilService.makeId(10),
+                info: {
+                    dir: "row",
+                    cmps: [{
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "COME MEET US IN PERSON",
+                        },
+                        style: {
+                            fontFamily: "champagneLimousines",
+                            fontSize: "2rem",
+                            backgroundColor: "rgb(127, 219, 218)",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-txt",
+                        info: {
+                            content: "(we don't bite)",
+                        },
+                        style: {
+                            fontFamily: "champagneLimousines",
+                            fontSize: "1rem",
+                            backgroundColor: "rgb(127, 219, 218)",
+                        },
+                    },
+                    {
+                        id: utilService.makeId(10),
+                        type: "web-map",
+                        info: {
+                            title: "",
+                            lat: 52.377956,
+                            lng: 4.897070,
+                            zoom: 14,
+                            address: "Amsterdam"
+                        },
+                        style: {
+                            height: "100%",
+                            display: "block",
+                            margin: "0 auto"
+                        }
+                    }
+                    ]
+                },
+                style: {
+                    padding: "1rem",
+                    backgroundColor: "rgb(127, 219, 218)",
+                },
+            }
+            ]
+        },
+        style: {
+            display: "flex",
+            backgroundColor: "rgb(127, 219, 218)",
+        },
+    },
     //  section
     {
         type: "web-container",
@@ -1358,6 +1446,62 @@ export const haleliCmps = [
         },
         style: {
             backgroundImage: "url(\"https://res.cloudinary.com/dksmeovlj/image/upload/v1607000866/testimonial_bg_shap_etvxsx.png\")",
+            textAlign: "center",
+            padding: "15px",
+            width: "100%",
+            minHeight: "30rem"
+
+        }
+    },
+    {
+        type: "web-container",
+        name: "form",
+        id: "form003",
+        class: "web-form-2",
+        previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607286135/%D7%A6%D7%99%D7%9C%D7%95%D7%9D_%D7%9E%D7%A1%D7%9A_2020-12-06_%D7%91-21_x3zftx.png',
+        info: {
+            dir: "column",
+            cmps: [{
+                id: utilService.makeId(10),
+                type: "web-txt",
+                info: {
+                    content: "Let's Speak"
+                },
+                style: {
+                    fontSize: "3.1rem",
+                    textAlign: "center",
+                    fontFamily: "assistantLight",
+                    color: "#293462",
+                    lineHeight: "auto",
+                    letterSpacing: "0.08rem"
+                },
+            },
+            {
+                id: utilService.makeId(10),
+                type: "web-form",
+                info: {},
+                style: {
+
+                },
+            },
+            {
+                id: utilService.makeId(10),
+                type: "web-button",
+                info: {
+                    content: "Submit",
+                    linkTo: "#"
+
+                },
+                style: {
+                    color: "#293462",
+                    border: "1px solid #293462",
+                    borderRadius: "48px",
+                },
+            }
+            ]
+        },
+        style: {
+            backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1607285999/pngwing_3_vwhwbo.png\")",
             textAlign: "center",
             padding: "15px",
             width: "100%",
