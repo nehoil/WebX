@@ -17,7 +17,6 @@
         class="template-preview"
         v-for="(template, idx) in templates"
         :key="idx"
-        @click="chooseTemplate(template)"
       >
         <div class="template-name">
           <img class="dots" src="@/assets/dots.png" />
