@@ -61,6 +61,24 @@
 	}
 }
 
+
+.nav-fixed-header {
+	&.vue-fixed-header--isFixed {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  border-bottom: 0;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+ }
+}
+
 .web-container {
 	&.header-2-container {
 		color: aliceblue;
