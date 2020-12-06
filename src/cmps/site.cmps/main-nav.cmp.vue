@@ -21,7 +21,7 @@
           </span>
           <span class="save-and-publish" v-if="onEdit">
             <a @click="save"
-              >Save <i v-if="isLoading" class="el-icon-loading"></i
+              >Save <i v-if="isLoading" class="el-icon-loading loader"></i
             ></a>
             <a @click="publishTemplate">Publish</a></span
           >
@@ -46,7 +46,7 @@ export default {
         templateName: null,
         templatePreviewImg: null,
       },
-      isLoading: false
+      isLoading: false,
     };
   },
   methods: {
@@ -126,9 +126,9 @@ export default {
     onEdit() {
       return this.$store.getters.isEditOn;
     },
-    fixedHeaderClass(){
+    fixedHeaderClass() {
       return this.$store.getters.isFixedHeaderOn ? 'nav-fixed-header' : '';
-    }
+    },
   },
   created() {},
 };
