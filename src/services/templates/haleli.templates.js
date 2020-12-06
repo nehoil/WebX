@@ -3,7 +3,7 @@ import { utilService } from '@/services/util-service.js'
 export const haleliTemplates = [{
         _id: "sys574575474543",
         name: "Vita",
-        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg",
+        previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg",
         createdBy: {
             _id: null,
             username: null,
@@ -136,7 +136,7 @@ export const haleliTemplates = [{
                 style: {
                     paddingTop: '4rem',
                     padding: "15px",
-                    backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
+                    backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
                     backgroundSize: 'contain'
                 },
 
@@ -351,7 +351,7 @@ export const haleliTemplates = [{
                                     id: utilService.makeId(10),
                                     type: "web-img",
                                     info: {
-                                        src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
+                                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
                                     },
                                     style: {}
                                 }]
@@ -407,7 +407,7 @@ export const haleliTemplates = [{
                                         id: utilService.makeId(10),
                                         type: "web-img",
                                         info: {
-                                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
+                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
                                         },
                                         style: {}
                                     },
@@ -415,7 +415,7 @@ export const haleliTemplates = [{
                                         id: utilService.makeId(10),
                                         type: "web-img",
                                         info: {
-                                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
+                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
                                         },
                                         style: {}
 
@@ -424,7 +424,7 @@ export const haleliTemplates = [{
                                         id: utilService.makeId(10),
                                         type: "web-img",
                                         info: {
-                                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
+                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
                                         },
                                         style: {}
                                     },
@@ -432,7 +432,7 @@ export const haleliTemplates = [{
                                         id: utilService.makeId(10),
                                         type: "web-img",
                                         info: {
-                                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
+                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
                                         },
                                         style: {}
                                     }
@@ -1078,7 +1078,7 @@ export const haleliTemplates = [{
     {
         _id: "sys574324256786r5",
         name: "Medellin",
-        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607004232/screencapture-localhost-8081-2020-11-29-13-55-25_4_trcahh.jpg",
+        previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1607004232/screencapture-localhost-8081-2020-11-29-13-55-25_4_trcahh.jpg",
         createdBy: {
             _id: null,
             username: null,
@@ -1218,7 +1218,7 @@ export const haleliTemplates = [{
                 style: {
                     display: "flex",
                     color: "#fff",
-                    backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1606995796/New_Project_pdn1zl.png\")",
+                    backgroundImage: "url(\"https://res.cloudinary.com/dksmeovlj/image/upload/v1606995796/New_Project_pdn1zl.png\")",
                     minHeight: "50rem"
                 },
             },
@@ -1334,7 +1334,7 @@ export const haleliTemplates = [{
                     ]
                 },
                 style: {
-                    backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1607000866/testimonial_bg_shap_etvxsx.png\")",
+                    backgroundImage: "url(\"https://res.cloudinary.com/dksmeovlj/image/upload/v1607000866/testimonial_bg_shap_etvxsx.png\")",
                     textAlign: "center",
                     padding: "15px",
                     width: "100%",

@@ -20,12 +20,12 @@
 	// background-repeat: no-repeat;
 	// background-position: center center;
 	// background-image: url(https://i.ibb.co/Jm9T9TT/b2.jpg);
-	margin-bottom: 100px;
+	margin-bottom: 11rem;
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
 		0deg,
 		rgba(255, 255, 255, 1) 0%,
-		rgba(202, 169, 255, 0.6785889355742297) 12%,
+		rgba(202, 169, 255, 0.6785889355742297) 42%,
 		rgba(255, 255, 255, 1) 77%
 	);
 	.hp-container {
@@ -76,7 +76,7 @@
 	}
 	.hp-main-content-title {
 		text-align: center;
-		font-size: 40px;
+		font-size: 32px;
 		font-weight: 200;
 		line-height: 1.2em;
 		letter-spacing: -0.6px;
@@ -85,6 +85,7 @@
 }
 
 .hp-card-1 {
+	margin-top: 14rem;
 	display: flex;
 	margin-bottom: 100px;
 	.hp-card-img {
@@ -165,7 +166,12 @@
 	}
 }
 
+.hp-card-2 {
+	margin-top: 5rem;
+}
+
 .hp-footer {
+	margin-top: 7rem;
 	border-top: 2px solid #f1f1f1;
 	border-top-width: 2px;
 	border-top-style: solid;

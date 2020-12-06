@@ -17,7 +17,7 @@ export const nehoCmps = [{
                     id: 'f8ayy9gw4I',
                     type: 'web-img',
                     info: {
-                        src: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607007328/4233039414_cfafb28f-5b57-4c8f-a968-c08a4b4c575a_wmfwpe.png'
+                        src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1607007328/4233039414_cfafb28f-5b57-4c8f-a968-c08a4b4c575a_wmfwpe.png'
                     },
                     style: {
                         width: '53%',

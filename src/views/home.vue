@@ -1,11 +1,11 @@
 <template>
   <section class="homepage">
     <div class="hp-header">
-      <div class="hp-header-container" data-aos="fade-in">
+      <div class="hp-header-container" data-aos-once="true" data-aos="fade-in">
         <div class="header-text">
           <div class="hp-header-title">Hassle-free website builder</div>
           <div class="hp-header-subtitle">
-            Create an amazing website with Webix in just minutes.
+            Create an amazing website with Webix in just a few minutes.
           </div>
         </div>
         <div class="hp-header-video-container">
@@ -20,13 +20,18 @@
         </div>
       </div>
     </div>
-    <div class="hp-main-content" data-aos="fade-in">
+    <div class="hp-main-content" data-aos-once="true" data-aos="fade-in">
       <div class="hp-main-container">
         <div class="hp-main-content-title">
-          Built for SMB's, Freelancers, and basicly any type of business
+          Built for SMB's, Freelancers, and basically any type of business
           initiative there is!
         </div>
-        <div class="hp-card-1" data-aos="fade-left" data-aos-duration="6000">
+        <div
+          class="hp-card-1"
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-duration="6000"
+        >
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">CREATION</div>
@@ -35,7 +40,7 @@
                 Use our simplified content-editor in order to create your
                 amazing site. Drag & Drop items to the center of the page to add
                 them-in, click on the pretty bin icon to remove. Use the text
-                deisgn option to make every sentence to standout.
+                deisgn option to make every sentence stand out.
               </div>
             </div>
             <div class="hp-card-btn">Start Creating »</div>
@@ -53,6 +58,7 @@
           data="card-2"
           data-aos="fade-right"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <div class="hp-card-img">
             <img
@@ -65,6 +71,7 @@
             class="hp-card-text"
             data-aos="fade-right"
             data-aos-duration="6000"
+            data-aos-once="true"
           >
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
@@ -78,7 +85,7 @@
             <div class="hp-card-btn">Let's Design »</div>
           </div>
         </div>
-        <div class="hp-card-1" data-aos="fade-left">
+        <div class="hp-card-1" data-aos-once="true" data-aos="fade-left">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
@@ -106,19 +113,21 @@
           data="hp-title-pa"
           data-aos="fade-up"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <div class="hp-card-text">
             <div class="hp-card-title">
               Your Dream Site Is Just A Few Clicks Away...!
             </div>
             <div class="hp-card-pa">
-              Webix was built for freelancers, SMB's, and basicly anyone who has
-              a dream about an amazing website that is waiting to come-alive!
+              Webix was built for freelancers, SMB's, and basically anyone who
+              has a dream about an amazing website that is waiting to
+              come-alive!
             </div>
             <div class="hp-card-btn">Start Creating Now »</div>
           </div>
         </div>
-        <div class="hp-big-img" data-aos="zoom-in">
+        <div class="hp-big-img" data-aos-once="true" data-aos="zoom-in">
           <img
             src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png"
             alt=""
@@ -128,8 +137,9 @@
         <div
           class="hp-card-1"
           data="hp-title-templates"
-          data-aos="zoom-in"
+          data-aos="fade-in"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <div class="hp-card-text">
             <div class="hp-card-title">Outstanding Templates</div>
@@ -142,6 +152,7 @@
           class="hp-template-previews-list"
           data-aos="fade-in"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <span
             class="hp-template-preview"
@@ -153,7 +164,7 @@
             <div class="template-img">
               <img
                 class="dots"
-                src="http://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg"
+                src="https://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg"
               />
             </div>
           </span>
@@ -164,7 +175,7 @@
             <div class="template-img">
               <img
                 class="dots"
-                src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg"
+                src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg"
               />
             </div>
           </span>
