@@ -214,205 +214,126 @@ export const nehoCmps = [
 //         backgroundImage: 'url(https://images.unsplash.com/photo-1567491634123-460945ea86dd?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxODcwMDl8MHwxfHNlYXJjaHwxM3x8fGVufDB8fHw&ixlib=rb-1.2.1&q=85)'
 //     }
 // },
-{
-    type: 'web-container',
-    name: 'navbar',
-    id: 'saas-nav',
-    previewImg: 'https://i.ibb.co/Vw9mynd/nav1.jpg',
-    'class': 'navbar-2-container',
-    info: {
-        dir: 'row',
-        cmps: [{
-            id: 'f8ayy9gw4I',
-            type: 'web-img',
-            info: {
-                src: 'https://i.ibb.co/hBFYNkf/logo-white-272x60.png'
-            },
-            style: {
-                width: '70%'
-            },
-            _rootId: 'saas-nav'
-        },
-        {
-            type: 'web-div',
-            name: 'card',
-            id: '4caepCz5sO',
-            'class': 'navbar-2-div',
-            info: {
-                dir: 'row',
-                cmps: [{
-                    id: 'fIwAhYrueX',
-                    type: 'web-button',
-                    'class': 'navbar-2-menu-link',
-                    info: {
-                        content: 'Home'
-                    },
-                    style: {
-                        color: 'aliceblue',
-                        fontSize: '0.9375rem',
-                        fontWeight: '400'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                },
-                {
-                    id: '75pxcwv5jh',
-                    type: 'web-button',
-                    'class': 'navbar-2-menu-link',
-                    info: {
-                        content: 'About'
-                    },
-                    style: {
-                        color: 'aliceblue',
-                        fontSize: '0.9375rem',
-                        fontWeight: '400'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                },
-                {
-                    id: 'AmmT3uY0Aa',
-                    type: 'web-button',
-                    'class': 'navbar-2-menu-link',
-                    info: {
-                        content: 'Features'
-                    },
-                    style: {
-                        color: 'aliceblue',
-                        fontSize: '0.9375rem',
-                        fontWeight: '400'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                },
-                {
-                    id: 'H0mZT5kLIb',
-                    type: 'web-button',
-                    'class': 'navbar-2-menu-link',
-                    info: {
-                        content: 'Blog'
-                    },
-                    style: {
-                        color: 'aliceblue',
-                        fontSize: '0.9375rem',
-                        fontWeight: '400'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                },
-                {
-                    id: '96MlZ0lAvN',
-                    type: 'web-button',
-                    'class': 'navbar-2-menu-link',
-                    info: {
-                        content: 'Services'
-                    },
-                    style: {
-                        color: 'aliceblue',
-                        fontSize: '0.9375rem',
-                        fontWeight: '400'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                }
-                ]
-            },
-            style: {}
-        },
-        {
-            id: "dfg564fghfgh9808",
-            type: "web-hamburger",
-            class: "hamburger",
-            info: {
-                content: "",
-                linkTo: ""
-            },
-            style: {
+// {
+//     type: 'web-container',
+//     name: 'navbar',
+//     id: 'saas-nav',
+//     previewImg: 'https://i.ibb.co/Vw9mynd/nav1.jpg',
+//     'class': 'navbar-2-container',
+//     info: {
+//         dir: 'row',
+//         cmps: [{
+//             id: 'f8ayy9gw4I',
+//             type: 'web-img',
+//             info: {
+//                 src: 'https://i.ibb.co/hBFYNkf/logo-white-272x60.png'
+//             },
+//             style: {
+//                 width: '70%'
+//             },
+//             _rootId: 'saas-nav'
+//         },
+//         {
+//             type: 'web-div',
+//             name: 'card',
+//             id: '4caepCz5sO',
+//             'class': 'navbar-2-div',
+//             info: {
+//                 dir: 'row',
+//                 cmps: [{
+//                     id: 'fIwAhYrueX',
+//                     type: 'web-button',
+//                     'class': 'navbar-2-menu-link',
+//                     info: {
+//                         content: 'Home'
+//                     },
+//                     style: {
+//                         color: 'aliceblue',
+//                         fontSize: '0.9375rem',
+//                         fontWeight: '400'
+//                     },
+//                     _rootId: '__vue_devtool_undefined__'
+//                 },
+//                 {
+//                     id: '75pxcwv5jh',
+//                     type: 'web-button',
+//                     'class': 'navbar-2-menu-link',
+//                     info: {
+//                         content: 'About'
+//                     },
+//                     style: {
+//                         color: 'aliceblue',
+//                         fontSize: '0.9375rem',
+//                         fontWeight: '400'
+//                     },
+//                     _rootId: '__vue_devtool_undefined__'
+//                 },
+//                 {
+//                     id: 'AmmT3uY0Aa',
+//                     type: 'web-button',
+//                     'class': 'navbar-2-menu-link',
+//                     info: {
+//                         content: 'Features'
+//                     },
+//                     style: {
+//                         color: 'aliceblue',
+//                         fontSize: '0.9375rem',
+//                         fontWeight: '400'
+//                     },
+//                     _rootId: '__vue_devtool_undefined__'
+//                 },
+//                 {
+//                     id: 'H0mZT5kLIb',
+//                     type: 'web-button',
+//                     'class': 'navbar-2-menu-link',
+//                     info: {
+//                         content: 'Blog'
+//                     },
+//                     style: {
+//                         color: 'aliceblue',
+//                         fontSize: '0.9375rem',
+//                         fontWeight: '400'
+//                     },
+//                     _rootId: '__vue_devtool_undefined__'
+//                 },
+//                 {
+//                     id: '96MlZ0lAvN',
+//                     type: 'web-button',
+//                     'class': 'navbar-2-menu-link',
+//                     info: {
+//                         content: 'Services'
+//                     },
+//                     style: {
+//                         color: 'aliceblue',
+//                         fontSize: '0.9375rem',
+//                         fontWeight: '400'
+//                     },
+//                     _rootId: '__vue_devtool_undefined__'
+//                 }
+//                 ]
+//             },
+//             style: {}
+//         },
+//         {
+//             id: "dfg564fghfgh9808",
+//             type: "web-hamburger",
+//             class: "hamburger",
+//             info: {
+//                 content: "",
+//                 linkTo: ""
+//             },
+//             style: {
 
 
-            },
-        },
-        ]
-    },
-    style: {
-        color: "#fff",
-        backgroundColor: 'rgba(255, 0, 150, 0.3)'
-    }
-},
-{
-    type: 'web-container',
-    name: 'header',
-    id: 'saas-header',
-    previewImg: 'https://i.ibb.co/v1dc6nF/screencapture-localhost-8080-editor-2020-11-30-20-39-28-1-15.jpg',
-    'class': 'header-2-container',
-    info: {
-        dir: 'row',
-        cmps: [{
-            id: 's4OCXoCpZm',
-            type: 'web-img',
-            info: {
-                src: 'https://i.ibb.co/qBTKyLh/i-Phone-App-3.png'
-            },
-            style: {
-                width: '75%'
-            },
-            _rootId: 'saas-header'
-        },
-        {
-            type: 'web-div',
-            name: 'card',
-            id: '1mZp4Udpnv',
-            'class': 'header-2-div',
-            info: {
-                dir: 'row',
-                cmps: [{
-                    id: 'HffeArf3Gf',
-                    type: 'web-txt',
-                    'class': 'header-2-title',
-                    info: {
-                        content: 'Discover Great Music Every Day'
-                    },
-                    style: {
-                        textAlign: 'start',
-                        fontSize: '3.625rem'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                },
-                {
-                    id: '8DOzi6I1Pj',
-                    type: 'web-txt',
-                    'class': 'header-2-pa',
-                    info: {
-                        content: 'High-quality, original content. Ad-free, start today with a 14-day free trial.  No credit card required.'
-                    },
-                    style: {
-                        textAlign: 'start',
-                        fontSize: '1.4375rem'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                },
-                {
-                    id: 'pUhUBHrIeW',
-                    type: 'web-button',
-                    'class': 'navbar-2-button',
-                    info: {
-                        content: 'START NOW'
-                    },
-                    style: {
-                        fontSize: '1rem',
-                        letterSpacing: '0.7px',
-                        color: 'rgb(97, 95, 95)',
-                        backgroundColor: '#fcc400',
-                        borderRadius: '50px',
-                    },
-                    _rootId: '__vue_devtool_undefined__'
-                }
-                ]
-            },
-            style: {}
-        }
-        ]
-    },
-    style: {
-        backgroundColor: 'rgba(255, 0, 150, 0.3)',
-        backgroundImage: `url('https://svgshare.com/i/Rta.svg')`
-    }
-},
+//             },
+//         },
+//         ]
+//     },
+//     style: {
+//         color: "#fff",
+//         backgroundColor: 'rgba(255, 0, 150, 0.3)'
+//     }
+// },
 // 
 // Working progress on new Header
 
@@ -785,5 +706,84 @@ export const nehoCmps = [
     style: {
         backgroundColor: 'rgba(255, 0, 150, 0.3)'
     }
-}
+},
+{
+    type: 'web-container',
+    name: 'header',
+    id: 'saas-header',
+    previewImg: 'https://i.ibb.co/v1dc6nF/screencapture-localhost-8080-editor-2020-11-30-20-39-28-1-15.jpg',
+    'class': 'header-2-container',
+    info: {
+        dir: 'row',
+        cmps: [{
+            id: 's4OCXoCpZm',
+            type: 'web-img',
+            info: {
+                src: 'https://i.ibb.co/qBTKyLh/i-Phone-App-3.png'
+            },
+            style: {
+                width: '75%'
+            },
+            _rootId: 'saas-header'
+        },
+        {
+            type: 'web-div',
+            name: 'card',
+            id: '1mZp4Udpnv',
+            'class': 'header-2-div',
+            info: {
+                dir: 'row',
+                cmps: [{
+                    id: 'HffeArf3Gf',
+                    type: 'web-txt',
+                    'class': 'header-2-title',
+                    info: {
+                        content: 'Discover Great Music Every Day'
+                    },
+                    style: {
+                        textAlign: 'start',
+                        fontSize: '3.625rem'
+                    },
+                    _rootId: '__vue_devtool_undefined__'
+                },
+                {
+                    id: '8DOzi6I1Pj',
+                    type: 'web-txt',
+                    'class': 'header-2-pa',
+                    info: {
+                        content: 'High-quality, original content. Ad-free, start today with a 14-day free trial.  No credit card required.'
+                    },
+                    style: {
+                        textAlign: 'start',
+                        fontSize: '1.4375rem'
+                    },
+                    _rootId: '__vue_devtool_undefined__'
+                },
+                {
+                    id: 'pUhUBHrIeW',
+                    type: 'web-button',
+                    'class': 'navbar-2-button',
+                    info: {
+                        content: 'START NOW'
+                    },
+                    style: {
+                        fontSize: '1rem',
+                        letterSpacing: '0.7px',
+                        color: 'rgb(97, 95, 95)',
+                        backgroundColor: '#fcc400',
+                        borderRadius: '50px',
+                    },
+                    _rootId: '__vue_devtool_undefined__'
+                }
+                ]
+            },
+            style: {}
+        }
+        ]
+    },
+    style: {
+        backgroundColor: 'rgba(255, 0, 150, 0.3)',
+        backgroundImage: `url('https://svgshare.com/i/Rta.svg')`
+    }
+},
 ]

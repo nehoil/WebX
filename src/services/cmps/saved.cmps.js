@@ -1123,7 +1123,10 @@ export const savedCmps = [{
                   }
                 ]
               },
-              style: {}
+              style: {
+                paddingRight: '2.75rem',
+                paddingLeft: '2.75rem'
+              }
             },
             {
               id: 'dfg564fghfgh9808',
