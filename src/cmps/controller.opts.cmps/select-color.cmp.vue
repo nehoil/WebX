@@ -4,7 +4,6 @@
       <el-collapse accordion>
         <el-collapse-item name="1">
           <template slot="title">
-            <!-- <div class="flex center plr10 space mb1 pointer"></div> -->
             <span>Background Color</span>
           </template>
           <div class="colors-pagination flex col center space">
@@ -22,7 +21,7 @@
                   class="transparent"
                   @click="setColor('transparent', 'backgroundColor')"
                 >
-                  <span>/</span>
+                  <span></span>
                 </li>
                 <li
                   v-for="color in colors"
@@ -72,7 +71,7 @@
                   class="tranparent"
                   @click="setColor('transparent', 'backgroundColor')"
                 >
-                  <span>/</span>
+                  <span></span>
                 </li>
                 <li
                   v-for="color in colors"
