@@ -47,7 +47,7 @@
           </div>
           <div class="hp-card-img">
             <img
-              src="https://elementor.com/wp-content/uploads/2019/12/Homepage_Design_Optimised1-768x471.png"
+              src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607257356/homepage1_ojzkm6.png"
               alt=""
               srcset=""
             />
@@ -62,7 +62,7 @@
         >
           <div class="hp-card-img">
             <img
-              src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Marketing_Optimized-768x558.png"
+              src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607256243/homepage2_frsgvg.png"
               alt=""
               srcset=""
             />
@@ -102,7 +102,7 @@
           </div>
           <div class="hp-card-img">
             <img
-              src="https://elementor.com/wp-content/uploads/2018/10/Homepage_Development__Optimized-1024x715.png"
+              src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607257774/homepage3_cz0n8d.png"
               alt=""
               srcset=""
             />
@@ -129,7 +129,7 @@
         </div>
         <div class="hp-big-img" data-aos-once="true" data-aos="zoom-in">
           <img
-            src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png"
+            src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607258094/homepage4_xdifqx.png"
             alt=""
             srcset=""
           />
