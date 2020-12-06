@@ -38,7 +38,6 @@ export default {
   },
   methods: {
     showLogin() {
-      console.log('arrived  in app');
       this.isShowLogin = !this.isShowLogin;
     },
   },

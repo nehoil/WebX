@@ -78,6 +78,5 @@ function getCmpById(id) {
 }
 
 function addTemplate(template) {
-    console.log(template);
     return HttpService.post(`template`, template)
 }

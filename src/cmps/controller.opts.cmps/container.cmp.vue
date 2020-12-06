@@ -152,7 +152,6 @@ export default {
       this.unsplashImages = res;
     },
     setImage(imageUrl) {
-      console.log(imageUrl);
       this.cmp.style.backgroundImage = `url(${imageUrl})`;
       eventBus.$emit('update-site');
     },
@@ -191,7 +190,6 @@ export default {
   },
   computed: {
     getIsImage() {
-      console.log(this.cmp);
       if (
         this.cmp.style.backgroundImage === 'unset' ||
         !this.cmp.style.backgroundImage

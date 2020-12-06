@@ -121,15 +121,6 @@ export default {
       eventBus.$emit('dragStop');
       this.dragging = false
     },
-    // grab(ev){
-    //   this.isGrabbing = true
-    //   console.log(ev,this.isGrabbing);
-
-    // },
-    // release(ev) {
-    //   this.isGrabbing = false;
-    //   console.log("re", ev,this.isGrabbing);
-    // },
   },
   computed: {
     cmps() {

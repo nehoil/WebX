@@ -66,7 +66,6 @@ export default {
   },
   methods: {
     emitItemToEdit() {
-      console.log('im emiting');
     },
     updateSite() {
       eventBus.$emit('update-site');
@@ -74,13 +73,6 @@ export default {
     addCmp(ev) {
       eventBus.$emit('addCmp', ev.clone.innerText);
     },
-    // updateCmpId(ev) {
-    //   const cmpCopy = JSON.parse(JSON.stringify(this.cmps[ev.newIndex]));
-    //   cmpCopy.id = utilService.makeId(9);
-    //   this.cmps.splice(ev.newIndex, 1, cmpCopy);
-    //   eventBus.$emit("update-site");
-    //   this.$emit('updateCmpId')
-    // },
   },
   created() {
     eventBus.$on('dragStart', () => {
