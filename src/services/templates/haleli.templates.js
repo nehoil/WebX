@@ -694,7 +694,9 @@ export const haleliTemplates = [
                                             content: "ABOUT",
                                             linkTo: "#"
                                         },
-                                        style: {},
+                                        style: {
+                                            fontSize: "1rem"
+                                        },
                                     },
                                     {
                                         id: utilService.makeId(10),
@@ -704,8 +706,9 @@ export const haleliTemplates = [
                                             linkTo: "#"
 
                                         },
-                                        style: {},
-                                    },
+                                        style: {
+                                            fontSize: "1rem"
+                                        },                                    },
                                     {
                                         id: utilService.makeId(10),
                                         type: "web-button",
@@ -714,7 +717,9 @@ export const haleliTemplates = [
                                             linkTo: "#"
 
                                         },
-                                        style: {}
+                                        style: {
+                                            fontSize: "1rem"
+                                        },
                                     }
                                 ]
                             },
@@ -843,6 +848,7 @@ export const haleliTemplates = [
                                             display: "inline-block",
                                             fontSize: "2rem",
                                             color: "#e3baba",
+                                            letterSpacing: "0.09rem"
                                         },
                                     },
                                     {
@@ -854,7 +860,8 @@ export const haleliTemplates = [
                                         style: {
                                             display: "inline-block",
                                             fontSize: "1.4rem",
-                                            color: "#fff"
+                                            color: "#fff",
+                                            letterSpacing: "0.09rem"
                                         },
                                     },
                                     {
@@ -866,6 +873,7 @@ export const haleliTemplates = [
                                         style: {
                                             fontSize: "1.1rem",
                                             color: "#fff",
+                                            letterSpacing: "0.02rem",
                                         },
                                     },
                                 ]
@@ -914,7 +922,7 @@ export const haleliTemplates = [
                                         },
                                         style: {
                                             fontSize: "1.5rem",
-                                            letterSpacing: "3px",
+                                            letterSpacing: "0.1875rem",
                                             color: "#e3baba",
                                         },
                                     },
@@ -926,7 +934,7 @@ export const haleliTemplates = [
                                         },
                                         style: {
                                             fontSize: "1.1rem",
-                                            letterSpacing: "1px",
+                                            letterSpacing: "0.0625rem",
                                             color: "#fff",
                                         },
                                     }
@@ -1034,6 +1042,7 @@ export const haleliTemplates = [
                                         style: {
                                             fontSize: "1.1rem",
                                             color: "#fff",
+                                            letterSpacing: "0.05rem"
                                         },
                                     },
                                 ]
@@ -1044,7 +1053,8 @@ export const haleliTemplates = [
                 style: {
                     display: "flex",
                     color: "#fff",
-                    backgroundColor: "#161d2e"
+                    backgroundColor: "#161d2e",
+                    letterSpacing: "0.05rem"
                 },
             },
 
@@ -1107,7 +1117,8 @@ export const haleliTemplates = [
                                         },
                                         style: {
                                             fontSize: "1.8rem",
-                                            color: "#fff"
+                                            color: "#fff",
+                                            letterSpacing: "0.08rem"
                                         }
                                     },
                                     {
@@ -1125,7 +1136,8 @@ export const haleliTemplates = [
                                                         linkTo: "#"
                                                     },
                                                     style: {
-                                                        color: "#fff"
+                                                        color: "#fff",
+                                                        fontSize: "0.9rem"
                                                     },
                                                 },
                                                 {
@@ -1136,8 +1148,10 @@ export const haleliTemplates = [
                                                         linkTo: "#"
 
                                                     },
-                                                    style: {},
-                                                },
+                                                    style: {
+                                                        color: "#fff",
+                                                        fontSize: "0.9rem"
+                                                    },                                                },
                                                 {
                                                     id: utilService.makeId(10),
                                                     type: "web-button",
@@ -1146,8 +1160,10 @@ export const haleliTemplates = [
                                                         linkTo: "#"
 
                                                     },
-                                                    style: {}
-                                                }
+                                                    style: {
+                                                        color: "#fff",
+                                                        fontSize: "0.9rem"
+                                                    },                                                }
                                             ]
                                         },
                                         style: {
@@ -1175,7 +1191,8 @@ export const haleliTemplates = [
                                             fontSize: "6rem",
                                             color: "#fff",
                                             fontFamily: 'assistantBold',
-                                            textAlign: 'center'
+                                            textAlign: 'center',
+                                            letterSpacing: "0.09rem"
                                         },
                                     },
                                     {
@@ -1189,7 +1206,8 @@ export const haleliTemplates = [
                                             fontSize: "2rem",
                                             color: "#fff",
                                             fontFamily: 'assistantLight',
-                                            textAlign: 'center'
+                                            textAlign: 'center',
+                                            letterSpacing: "0.08rem"
                                         },
                                     },
                                     {
@@ -1205,7 +1223,8 @@ export const haleliTemplates = [
                                             textAlign: 'center',
                                             backgroundColor: "#26c4e5",
                                             borderRadius: '48px',
-                                            padding: "0.5rem 2rem !important"
+                                            padding: "0.5rem 2rem !important",
+                                            letterSpacing: "0.08rem"
                                         },
                                     }
                                 ]
@@ -1249,7 +1268,8 @@ export const haleliTemplates = [
                                         display: "inline-block",
                                         fontSize: "2.3rem",
                                         color: "#051441",
-                                        textAlign: "left"
+                                        textAlign: "left",
+                                        letterSpacing: "0.08rem"
                                     },
                                 }, ]
                             }
@@ -1305,7 +1325,8 @@ export const haleliTemplates = [
                                 textAlign: "center",
                                 fontFamily: "assistantLight",
                                 color: "rgb(150, 150, 150)",
-                                lineHeight: "auto"
+                                lineHeight: "auto",
+                                letterSpacing: "0.08rem"
                             },
                         },
                         {
