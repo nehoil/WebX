@@ -74,7 +74,7 @@ div.editor {
             padding: rem(20px);
         }
         border-right: 1px solid $clr4;
-        height: fit-content;
+        max-height: fit-content;
         display: flex;
         nav {
             // margin-bottom: 4rem;
