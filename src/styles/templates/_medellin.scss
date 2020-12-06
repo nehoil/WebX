@@ -65,12 +65,23 @@
 }
 
 .footer-md {
-	display: flex;
-	justify-content: space-around;
-	> * {
+	display: flex !important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	// align-items: flex-start;
+	.div-v {
+		margin-right: 3rem;
 		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
 		flex-direction: column;
-		margin-bottom: 1rem;
+		// margin-bottom: 1rem;
+		& .web-txt {
+			cursor: pointer;
+			display: inline-block;
+			margin: 0 !important;
+		}
 	}
 	.div-v > * {
 		margin-bottom: 0.5rem;

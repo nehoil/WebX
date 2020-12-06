@@ -43,7 +43,7 @@
                 deisgn option to make every sentence stand out.
               </div>
             </div>
-            <div class="hp-card-btn">Start Creating »</div>
+            <div class="hp-card-btn pointer">Start Creating »</div>
           </div>
           <div class="hp-card-img">
             <img
@@ -82,7 +82,7 @@
                 and start giving life to your site!
               </div>
             </div>
-            <div class="hp-card-btn">Let's Design »</div>
+            <div class="hp-card-btn pointer">Let's Design »</div>
           </div>
         </div>
         <div class="hp-card-1" data-aos-once="true" data-aos="fade-left">
@@ -98,7 +98,7 @@
                 your dream site become a reality!
               </div>
             </div>
-            <div class="hp-card-btn">Learn More »</div>
+            <div class="hp-card-btn pointer">Learn More »</div>
           </div>
           <div class="hp-card-img">
             <img
@@ -124,7 +124,7 @@
               has a dream about an amazing website that is waiting to
               come-alive!
             </div>
-            <div class="hp-card-btn">Start Creating Now »</div>
+            <div class="hp-card-btn pointer">Start Creating Now »</div>
           </div>
         </div>
         <div class="hp-big-img" data-aos-once="true" data-aos="zoom-in">
@@ -236,10 +236,10 @@ export default {
   },
   computed: {},
   created() {
-        this.$store.commit({ type: 'setFixedHeader', isFixed: true });
+    this.$store.commit({ type: 'setFixedHeader', isFixed: true });
   },
   destroyed() {
-            this.$store.commit({ type: 'setFixedHeader', isFixed: false });
+    this.$store.commit({ type: 'setFixedHeader', isFixed: false });
   },
 };
 </script>
