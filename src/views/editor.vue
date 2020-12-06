@@ -108,7 +108,6 @@ export default {
     },
 
     async publishTemplate() {
-      // eventBus.$emit('toggleLoading');
       const templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
       var createdBy;
       if (!this.$store.getters.user) {
@@ -131,7 +130,7 @@ export default {
         templateToSave,
       });
       try {
-        const baseUrl = window.location.origin
+        const baseUrl = window.location.origin;
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
         this.webUrl = `${baseUrl}/${savedTemplte._id}`;
       } catch (err) {

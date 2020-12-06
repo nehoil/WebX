@@ -68,6 +68,7 @@ div.editor {
 		overflow-x: hidden;
 		// background-color: $clr4;
 		width: 15%;
+		min-width: 16rem;
 		.controller-add,
 		.controller-edit {
 			padding: rem(20px);

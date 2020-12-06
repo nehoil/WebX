@@ -69,15 +69,13 @@ export default {
     },
     async getScreenShot() {
       var htmlToImage = require('html-to-image');
-      var dataUrl = await htmlToImage.toPng(
-        document.getElementById('workspace'),
-        {
-          quality: 0.01,
-          height: 900,
-          pixelRatio: 0.85,
-        }
-      );
       try {
+        console.log('arrived here');
+        var dataUrl = await htmlToImage.toPng(
+          document.getElementById('workspace'),
+          { quality: 0.01, height: 900, pixelRatio: 0.85 }
+        );
+        // throw Error('ahahhaha');
         return dataUrl;
       } catch {
         console.log('error');
