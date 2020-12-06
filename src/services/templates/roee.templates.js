@@ -3,7 +3,7 @@ import { utilService } from '@/services/util-service.js'
 export const roeeTemplates = [{
     _id: "sysd97fsd87sf",
     name: "Basic",
-    previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607008059/screencapture-localhost-8081-2020-11-29-13-55-25_5_avg7pv.jpg",
+    previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1607008059/screencapture-localhost-8081-2020-11-29-13-55-25_5_avg7pv.jpg",
     createdBy: {
         _id: null,
         username: null,

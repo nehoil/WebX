@@ -2553,7 +2553,7 @@ const gCmps = [{
         backgroundColor: "unset",
         borderRadius: "unset",
         height: "unset",
-        backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
+        backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
         backgroundSize: 'contain'
     },
 
@@ -2870,7 +2870,7 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
                     },
                     style: {}
                 }]
@@ -2949,7 +2949,7 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
                     },
                     style: {}
                 },
@@ -2957,7 +2957,7 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
                     },
                     style: {}
 
@@ -2966,7 +2966,7 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
                     },
                     style: {}
                 },
@@ -2974,7 +2974,7 @@ const gCmps = [{
                     id: utilService.makeId(10),
                     type: "web-img",
                     info: {
-                        src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
+                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
                     },
                     style: {}
                 }
@@ -3376,7 +3376,7 @@ const gCmps = [{
         width: "100%",
         minHeight: "unset",
         height: "unset",
-        backgroundImage: "url(http://res.cloudinary.com/dksmeovlj/image/upload/v1606663473/black-white-layers-paper-top-view_fhwzpg.jpg)"
+        backgroundImage: "url(https://res.cloudinary.com/dksmeovlj/image/upload/v1606663473/black-white-layers-paper-top-view_fhwzpg.jpg)"
     }
 },
 {
