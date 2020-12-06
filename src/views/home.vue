@@ -1,7 +1,7 @@
 <template>
   <section class="homepage">
     <div class="hp-header">
-      <div class="hp-header-container" data-aos="fade-in">
+      <div class="hp-header-container" data-aos-once="true" data-aos="fade-in">
         <div class="header-text">
           <div class="hp-header-title">Hassle-free website builder</div>
           <div class="hp-header-subtitle">
@@ -20,13 +20,18 @@
         </div>
       </div>
     </div>
-    <div class="hp-main-content" data-aos="fade-in">
+    <div class="hp-main-content" data-aos-once="true" data-aos="fade-in">
       <div class="hp-main-container">
         <div class="hp-main-content-title">
           Built for SMB's, Freelancers, and basicly any type of business
           initiative there is!
         </div>
-        <div class="hp-card-1" data-aos="fade-left" data-aos-duration="6000">
+        <div
+          class="hp-card-1"
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-duration="6000"
+        >
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">CREATION</div>
@@ -53,6 +58,7 @@
           data="card-2"
           data-aos="fade-right"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <div class="hp-card-img">
             <img
@@ -65,6 +71,7 @@
             class="hp-card-text"
             data-aos="fade-right"
             data-aos-duration="6000"
+            data-aos-once="true"
           >
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
@@ -78,7 +85,7 @@
             <div class="hp-card-btn">Let's Design »</div>
           </div>
         </div>
-        <div class="hp-card-1" data-aos="fade-left">
+        <div class="hp-card-1" data-aos-once="true" data-aos="fade-left">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
               <div class="hp-card-tag">DESIGN</div>
@@ -106,6 +113,7 @@
           data="hp-title-pa"
           data-aos="fade-up"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <div class="hp-card-text">
             <div class="hp-card-title">
@@ -118,7 +126,7 @@
             <div class="hp-card-btn">Start Creating Now »</div>
           </div>
         </div>
-        <div class="hp-big-img" data-aos="zoom-in">
+        <div class="hp-big-img" data-aos-once="true" data-aos="zoom-in">
           <img
             src="https://i.ibb.co/xFK1ZFF/Screenshot-1.png"
             alt=""
@@ -128,8 +136,9 @@
         <div
           class="hp-card-1"
           data="hp-title-templates"
-          data-aos="zoom-in"
+          data-aos="fade-in"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <div class="hp-card-text">
             <div class="hp-card-title">Outstanding Templates</div>
@@ -142,6 +151,7 @@
           class="hp-template-previews-list"
           data-aos="fade-in"
           data-aos-duration="6000"
+          data-aos-once="true"
         >
           <span
             class="hp-template-preview"
