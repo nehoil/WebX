@@ -16,11 +16,8 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-position: center center;
-	// background-image: url(https://i.ibb.co/Jm9T9TT/b2.jpg);
-	margin-bottom: 11rem;
+	margin-top: 5rem;
+	margin-bottom: 7rem;
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
 		0deg,
@@ -34,7 +31,7 @@
 }
 
 .header-text {
-	margin-top: 100px;
+	// margin-top: 100px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -85,7 +82,7 @@
 }
 
 .hp-card-1 {
-	margin-top: 14rem;
+	margin-top: 6rem;
 	display: flex;
 	margin-bottom: 100px;
 	.hp-card-img {
@@ -167,11 +164,11 @@
 }
 
 .hp-card-2 {
-	margin-top: 5rem;
+	margin-top: 3rem;
 }
 
 .hp-footer {
-	margin-top: 7rem;
+	margin-top: 5rem;
 	border-top: 2px solid #f1f1f1;
 	border-top-width: 2px;
 	border-top-style: solid;
