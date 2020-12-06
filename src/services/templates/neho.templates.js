@@ -3,7 +3,7 @@
 export const nehoTemplates = [{
     _id: 'sys64wews',
     name: 'Startus',
-    previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1606817501/screencapture-localhost-8081-2020-11-29-13-55-25_2_jk530x.jpg',
+    previewImg: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606817501/screencapture-localhost-8081-2020-11-29-13-55-25_2_jk530x.jpg',
     createdBy: {
         _id: null,
         username: null,
@@ -495,7 +495,7 @@ export const nehoTemplates = [{
 {
     _id: 'sys67575s',
     name: 'White Sands Hotel',
-    previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg',
+    previewImg: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg',
     createdBy: {
         _id: 'sys643643643',
         username: null,
@@ -519,7 +519,7 @@ export const nehoTemplates = [{
                         id: 'f8ayy9gw4I',
                         type: 'web-img',
                         info: {
-                            src: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607007328/4233039414_cfafb28f-5b57-4c8f-a968-c08a4b4c575a_wmfwpe.png'
+                            src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1607007328/4233039414_cfafb28f-5b57-4c8f-a968-c08a4b4c575a_wmfwpe.png'
                         },
                         style: {
                             width: '53%',

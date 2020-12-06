@@ -994,7 +994,7 @@
 //                                 backgroundColor: "unset",
 //                                     borderRadius: "unset",
 //                                         height: "unset",
-//                                             backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
+//                                             backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
 //                                                 backgroundSize: 'contain'
 //     },
 
@@ -1022,7 +1022,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606603881/61swyqCyj_L_geouxa.jpg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606603881/61swyqCyj_L_geouxa.jpg"
 //                             },
 //                             style: {
 //                                 fontFamily: "unset",
@@ -1090,7 +1090,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606603958/9783766722447-it_yydash.jpg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606603958/9783766722447-it_yydash.jpg"
 //                             },
 //                             style: {
 //                                 fontFamily: "unset",
@@ -1160,7 +1160,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606603973/9788809869479_0_0_797_75_jpzya7.jpg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606603973/9788809869479_0_0_797_75_jpzya7.jpg"
 //                             },
 //                             style: {
 //                                 fontFamily: "unset",
@@ -1391,7 +1391,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606603881/61swyqCyj_L_geouxa.jpg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606603881/61swyqCyj_L_geouxa.jpg"
 //                             },
 //                             style: {
 //                                 fontFamily: "unset",
@@ -1459,7 +1459,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606603958/9783766722447-it_yydash.jpg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606603958/9783766722447-it_yydash.jpg"
 //                             },
 //                             style: {
 //                                 fontFamily: "unset",
@@ -1529,7 +1529,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606603973/9788809869479_0_0_797_75_jpzya7.jpg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606603973/9788809869479_0_0_797_75_jpzya7.jpg"
 //                             },
 //                             style: {
 //                                 fontFamily: "unset",
@@ -1829,7 +1829,7 @@
 //                                 backgroundColor: "unset",
 //                                     borderRadius: "unset",
 //                                         height: "unset",
-//                                             backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
+//                                             backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
 //                                                 backgroundSize: 'contain'
 //     },
 
@@ -2149,7 +2149,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
 //                             },
 //                             style: {}
 //                         }]
@@ -2230,7 +2230,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
 //                             },
 //                             style: {}
 //                         },
@@ -2238,7 +2238,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
 //                             },
 //                             style: {}
 
@@ -2247,7 +2247,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
 //                             },
 //                             style: {}
 //                         },
@@ -2255,7 +2255,7 @@
 //                             id: utilService.makeId(10),
 //                             type: "web-img",
 //                             info: {
-//                                 src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
+//                                 src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
 //                             },
 //                             style: {}
 //                         }]

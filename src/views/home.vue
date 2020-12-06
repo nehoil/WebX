@@ -164,7 +164,7 @@
             <div class="template-img">
               <img
                 class="dots"
-                src="http://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg"
+                src="https://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg"
               />
             </div>
           </span>
@@ -175,7 +175,7 @@
             <div class="template-img">
               <img
                 class="dots"
-                src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg"
+                src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607014236/screencapture-localhost-8081-2020-11-29-13-55-25_6_agsaem.jpg"
               />
             </div>
           </span>

@@ -149,7 +149,7 @@ export const haleliCmps = [
         style: {
             paddingTop: '4rem',
             padding: "15px",
-            backgroundImage: `url("http://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
+            backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
             backgroundSize: 'contain'
         },
 
@@ -366,7 +366,7 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-img",
                         info: {
-                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
+                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
                         },
                         style: {}
                     }]
@@ -423,7 +423,7 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-img",
                         info: {
-                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
+                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
                         },
                         style: {}
                     },
@@ -431,7 +431,7 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-img",
                         info: {
-                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
+                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
                         },
                         style: {}
 
@@ -440,7 +440,7 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-img",
                         info: {
-                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
+                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
                         },
                         style: {}
                     },
@@ -448,7 +448,7 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-img",
                         info: {
-                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
+                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
                         },
                         style: {}
                     }
@@ -763,7 +763,7 @@ export const haleliCmps = [
         name: "header",
         id: "header002",
         class: "first-section-cdb",
-        previewImg: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607071492/screencapture-localhost-8080-editor-2020-11-30-20_39_28_1_1_mwekqy.png",
+        previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1607071492/screencapture-localhost-8080-editor-2020-11-30-20_39_28_1_1_mwekqy.png",
         info: {
             dir: "row",
             cmps: [{
@@ -1238,7 +1238,7 @@ export const haleliCmps = [
         style: {
             display: "flex",
             color: "#fff",
-            backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1606995796/New_Project_pdn1zl.png\")",
+            backgroundImage: "url(\"https://res.cloudinary.com/dksmeovlj/image/upload/v1606995796/New_Project_pdn1zl.png\")",
             minHeight: "50rem"
         },
     },
@@ -1356,7 +1356,7 @@ export const haleliCmps = [
             ]
         },
         style: {
-            backgroundImage: "url(\"http://res.cloudinary.com/dksmeovlj/image/upload/v1607000866/testimonial_bg_shap_etvxsx.png\")",
+            backgroundImage: "url(\"https://res.cloudinary.com/dksmeovlj/image/upload/v1607000866/testimonial_bg_shap_etvxsx.png\")",
             textAlign: "center",
             padding: "15px",
             width: "100%",
