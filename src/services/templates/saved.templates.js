@@ -1312,5 +1312,730 @@ export const savedTemplates = [
             }
           }
         ]
+      },
+      {
+        _id: 'sys64364944',
+        name: 'Vita',
+        previewImg: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg',
+        createdBy: {
+          _id: null,
+          username: null,
+          userPicture: null
+        },
+        cmps: [
+          {
+            type: 'web-container',
+            name: 'navbar',
+            id: 'nav003',
+            'class': 'navbar-1',
+            info: {
+              dir: 'row',
+              cmps: [
+                {
+                  id: 'YeVPIjtYjZ',
+                  type: 'web-button',
+                  info: {
+                    content: 'VITA'
+                  },
+                  style: {
+                    fontFamily: 'robotomono',
+                    fontSize: '1.5rem',
+                    color: '#161d2e',
+                    backgroundColor: '#fff',
+                    borderRadius: '0px',
+                    letterSpacing: '0rem'
+                  },
+                  _rootId: 'nav003'
+                },
+                {
+                  type: 'web-div',
+                  name: 'card-tem-01',
+                  'class': 'web-div',
+                  id: 'smgo5aUcOd',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'nTvMfKampL',
+                        type: 'web-button',
+                        info: {
+                          content: 'SHOP',
+                          linkTo: '#'
+                        },
+                        style: {
+                          borderRadius: '0px',
+                          fontSize: '1.125rem',
+                          letterSpacing: '0rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'aScot9Y9h4',
+                        type: 'web-button',
+                        info: {
+                          content: 'ABOUT',
+                          linkTo: '#'
+                        },
+                        style: {
+                          borderRadius: '0px',
+                          fontSize: '1.125rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 's5ZNJwGF9E',
+                        type: 'web-button',
+                        info: {
+                          content: 'CONTACT US',
+                          linkTo: '#'
+                        },
+                        style: {
+                          borderRadius: '0px',
+                          fontSize: '1.125rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  },
+                  style: {
+                    fontSize: '1rem',
+                    color: '#161d2e',
+                    backgroundColor: '#fff'
+                  }
+                }
+              ]
+            },
+            style: {
+              fontSize: '1rem',
+              height: '4rem',
+              color: '#161d2e',
+              backgroundColor: '#fff',
+              width: '100%'
+            }
+          },
+          {
+            type: 'web-container',
+            name: 'header',
+            id: 'header004',
+            'class': 'header-v',
+            info: {
+              dir: 'col',
+              cmps: [
+                {
+                  id: 'mTL09zuRKP',
+                  type: 'web-txt',
+                  'class': 'v-title',
+                  info: {
+                    content: 'VITA urban living'
+                  },
+                  style: {
+                    textAlign: 'center',
+                    fontFamily: 'romantika',
+                    fontSize: '6rem',
+                    letterSpacing: '0.3125rem',
+                    margin: '0 auto',
+                    color: 'rgb(84, 84, 84)',
+                    textShadow: 'unset'
+                  },
+                  _rootId: 'header004'
+                },
+                {
+                  id: '48aoy00CE6',
+                  type: 'web-button',
+                  'class': 'v-button',
+                  info: {
+                    content: 'BRING NATURE HOME',
+                    linkTo: '#'
+                  },
+                  style: {
+                    fontFamily: 'champagneLimousines',
+                    fontWeight: 'bold',
+                    letterSpacing: '0.01953125rem',
+                    padding: '5px 10px',
+                    color: '#fff',
+                    backgroundColor: 'rgb(94,204,191)',
+                    border: '2px solid #fff',
+                    outline: '3px solid rgb(94,204,191)',
+                    borderRadius: '0px',
+                    fontSize: '0.875rem'
+                  },
+                  _rootId: 'header004'
+                }
+              ]
+            },
+            style: {
+              paddingTop: '4rem',
+              padding: '15px',
+              backgroundImage: 'url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")',
+              backgroundSize: 'contain',
+              minHeight: '0rem',
+              paddingRight: '15rem',
+              paddingLeft: '15rem'
+            }
+          },
+          {
+            type: 'web-container',
+            name: 'section',
+            id: 'v-section001',
+            'class': 'section-v',
+            info: {
+              dir: 'row',
+              cmps: [
+                {
+                  type: 'web-div',
+                  name: 'card-tem-02',
+                  'class': 'card-text',
+                  id: 'imw0Kp3XiJ',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'GhL0H8PCNl',
+                        type: 'web-txt',
+                        info: {
+                          content: 'A week full of values.'
+                        },
+                        style: {
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '2rem',
+                          textShadow: 'unset',
+                          letterSpacing: '0.125rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: '6e61EtLnYn',
+                        type: 'web-txt',
+                        info: {
+                          content: 'Let’s re-pot Black Friday into VITAweek. From 26 November until 01 December we’re all about sharing, inspiring, learning and connecting. Get access to the full experience with your VITA Account.'
+                        },
+                        style: {
+                          display: 'inline-block',
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '1.4rem',
+                          textShadow: 'unset',
+                          letterSpacing: '0.1875rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: 'web-div',
+                  name: 'card-tem-03',
+                  'class': 'card-image',
+                  id: '1XN4EUNHHW',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'XvuDz4Ve4m',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606636853/3911917-pdf_1_gfkso7.png'
+                        },
+                        style: {
+                          borderRadius: '0%'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            style: {
+              display: 'flex',
+              backgroundColor: '#fff',
+              minHeight: '50rem'
+            }
+          },
+          {
+            type: 'web-container',
+            name: 'map',
+            id: 'section007',
+            'class': 'map-v',
+            info: {
+              dir: 'row',
+              cmps: [
+                {
+                  type: 'web-div',
+                  name: 'card-tem-03',
+                  'class': 'card-image',
+                  id: 'ZfcX7nuXF2',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'zLCp70C3mF',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606599449/taxi-sign-in_wzahtz.png'
+                        },
+                        style: {
+                          width: '70%',
+                          borderRadius: '0%'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: 'web-div',
+                  name: 'card-tem-02',
+                  'class': 'map-text-v',
+                  id: 'EWmD8Y5dW1',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'ob4pRjCgMO',
+                        type: 'web-txt',
+                        info: {
+                          content: 'COME MEET US IN PERSON'
+                        },
+                        style: {
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '2rem',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset',
+                          letterSpacing: '0.000030517578125rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'oQjGLE974T',
+                        type: 'web-txt',
+                        info: {
+                          content: '(we don\'t bite)'
+                        },
+                        style: {
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '1.125rem',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset',
+                          letterSpacing: '0.0000152587890625rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'MZEUlqjrbo',
+                        type: 'web-map',
+                        info: {
+                          title: '',
+                          lat: 52.377956,
+                          lng: 4.89707,
+                          zoom: 14,
+                          address: 'Amsterdam'
+                        },
+                        style: {
+                          height: '100%',
+                          display: 'block',
+                          margin: '0 auto'
+                        }
+                      }
+                    ]
+                  },
+                  style: {
+                    padding: '1rem',
+                    backgroundColor: '#fff'
+                  }
+                }
+              ]
+            },
+            style: {
+              display: 'flex',
+              backgroundColor: '#fff'
+            }
+          },
+          {
+            type: 'web-container',
+            name: 'section',
+            id: 'v-section002',
+            'class': 'section-v',
+            info: {
+              dir: 'row',
+              cmps: [
+                {
+                  type: 'web-div',
+                  name: 'card-tem-02',
+                  'class': 'card-text',
+                  id: 'iObXzmkmRw',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'uInNnoRrKI',
+                        type: 'web-txt',
+                        info: {
+                          content: '48H DELIVERY'
+                        },
+                        style: {
+                          display: 'inline-block',
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '2rem',
+                          textShadow: 'unset',
+                          letterSpacing: '0.00048828125rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'wBrcv3NedF',
+                        type: 'web-txt',
+                        info: {
+                          content: 'All members of the VITA\'s community will have their orders shipped on the day after their order is received, except Saturday and Sunday. If you are based in Italy or Austria these orders should arrive within one working day'
+                        },
+                        style: {
+                          display: 'inline-block',
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '1.4rem',
+                          textShadow: 'unset',
+                          letterSpacing: '0.0625rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: 'web-div',
+                  name: 'card-tem-03',
+                  'class': 'card-image',
+                  id: 'zqKofZZ1oJ',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'dsfb6f39Ds',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png'
+                        },
+                        style: {
+                          width: '100%'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            style: {
+              display: 'flex',
+              backgroundColor: '#fff',
+              minHeight: '50rem'
+            }
+          },
+          {
+            type: 'web-container',
+            name: 'section',
+            id: 'v-section003',
+            'class': 'section-v01',
+            info: {
+              dir: 'row',
+              cmps: [
+                {
+                  type: 'web-div',
+                  name: 'card-tem-02',
+                  'class': 'card-text',
+                  id: 'sXRmExCoUx',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'wWh0RWRfnL',
+                        type: 'web-txt',
+                        info: {
+                          content: 'OUR PARTNERS'
+                        },
+                        style: {
+                          display: 'inline-block',
+                          fontFamily: 'champagneLimousines',
+                          fontSize: '1.4rem',
+                          fontWeight: 'bold',
+                          textShadow: 'unset',
+                          letterSpacing: '0.0625rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: 'web-div',
+                  name: 'card-tem-03',
+                  'class': 'card-image',
+                  id: '154bC1Xia9',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'SisdQ5pzE8',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg'
+                        },
+                        style: {},
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: '2RlHwKrn0Z',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg'
+                        },
+                        style: {},
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'BBQUsImHsL',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg'
+                        },
+                        style: {},
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'hHfgUdFH9k',
+                        type: 'web-img',
+                        info: {
+                          src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg'
+                        },
+                        style: {},
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            style: {
+              display: 'flex',
+              backgroundColor: '#fff',
+              minHeight: '12.5rem'
+            }
+          },
+          {
+            type: 'web-container',
+            name: 'footer',
+            id: 'footer-v',
+            'class': 'footer-v  ',
+            info: {
+              dir: 'row',
+              cmps: [
+                {
+                  type: 'web-div',
+                  name: '',
+                  'class': 'div-v',
+                  id: 'NqpV3CIMd9',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: '7yBMAiodGt',
+                        type: 'web-txt',
+                        info: {
+                          content: 'shop'
+                        },
+                        style: {
+                          fontSize: '1rem',
+                          fontWeight: 'bold',
+                          textAlign: 'center',
+                          marginTop: '1rem',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset',
+                          letterSpacing: '0rem'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'ff86e7uToA',
+                        type: 'web-txt',
+                        info: {
+                          content: 'all plants'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'UyWkv4ifde',
+                        type: 'web-txt',
+                        info: {
+                          content: 'books and accessories'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: 'web-div',
+                  name: '',
+                  'class': 'div-v',
+                  id: 'PfipjOCITU',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'im1d39Rbbp',
+                        type: 'web-txt',
+                        'class': 'footer-v-02',
+                        info: {
+                          content: 'my account'
+                        },
+                        style: {
+                          fontSize: '1rem',
+                          fontWeight: 'bold',
+                          marginTop: '1rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'fI4QfSf1gG',
+                        type: 'web-txt',
+                        info: {
+                          content: 'manage your account'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'kOor5O0jm7',
+                        type: 'web-txt',
+                        info: {
+                          content: 'order history'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'LVQyEIAZAB',
+                        type: 'web-txt',
+                        info: {
+                          content: 'save items'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: 'web-div',
+                  name: '',
+                  'class': 'div-v',
+                  id: 'fCNaeaCSQ2',
+                  info: {
+                    dir: 'row',
+                    cmps: [
+                      {
+                        id: 'VLEIBQdr3l',
+                        type: 'web-txt',
+                        'class': 'footer-v-02',
+                        info: {
+                          content: 'customer service'
+                        },
+                        style: {
+                          fontSize: '1rem',
+                          fontWeight: 'bold',
+                          marginTop: '1rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'HvtZLWVpRK',
+                        type: 'web-txt',
+                        info: {
+                          content: 'FAQ'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: '5WO8VoymlY',
+                        type: 'web-txt',
+                        info: {
+                          content: 'transport and delivery'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      },
+                      {
+                        id: 'i4DNLStV2V',
+                        type: 'web-txt',
+                        info: {
+                          content: 'return and recycle service'
+                        },
+                        style: {
+                          fontSize: '0.9rem',
+                          margin: '0 auto',
+                          textAlign: 'center',
+                          backgroundColor: '#fff',
+                          textShadow: 'unset'
+                        },
+                        _rootId: '__vue_devtool_undefined__'
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
 ]
