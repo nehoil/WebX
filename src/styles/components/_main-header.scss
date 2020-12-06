@@ -15,10 +15,25 @@
 	}
 	border-bottom: 1px solid #eff1f2 !important;
 	.menu {
+		.main-nav-hamburger {
+			font-size: 2.2rem;
+			font-weight: lighter;
+			opacity: 0;
+			@include max-middle-layout {
+				opacity: 100%;
+				position: relative;
+				top: 40px;
+			}
+		}
 		font-size: 0.9rem;
-		a:first-child,
-		a:nth-child(2) {
+		a {
 			margin-right: 1rem;
+			@include max-middle-layout {
+				display: flex;
+				flex-direction: row;
+				margin-bottom: 0.3rem;
+				position: absolute;
+			}
 		}
 		a:hover {
 			color: $clr5;
@@ -28,7 +43,7 @@
 		display: inline-block;
 		transition: all .3 ease;
 		:first-child {
-			margin-left: 1rem;
+			// margin-left: 1rem;
 			padding: 5px 20px;
 			border-radius: 20px;
 			font-weight: bold;

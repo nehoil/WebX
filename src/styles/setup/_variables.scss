@@ -1,15 +1,17 @@
 // COLOR PALETTE
 
 $clr2: #293462; //color for hover in editor - to be used
-$clr1: #00818a; // main color - dark blue  
+$clr1: #00818a; // main color - dark blue
 // $clr3: #f7be16;
 $clr3: #ac79ff;
-$clr5:#7d4ec8; // color of sliders, second main color
-$clr6: #f3f3f3; // third color 
-$clr4: #f6f6f69a; // third color 
-// $clr6: rgb(233, 233, 233); // color for bold in the web, like nav in the user profile 
+$clr5: #7d4ec8; // color of sliders, second main color
+$clr6: #f3f3f3; // third color
+$clr4: #f6f6f69a; // third color
+// $clr6: rgb(233, 233, 233); // color for bold in the web, like nav in the user profile
 // LAYOUT BREAKPOINTS
 
 $break-narrow: 500px;
 $break-normal: 700px;
-$break-wide: 960px;
+$break-middle: 800px;
+$break-wide: 1050px;
+$break-wider: 1400px;
