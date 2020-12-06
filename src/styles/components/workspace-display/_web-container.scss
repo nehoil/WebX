@@ -1,38 +1,44 @@
 .web-container {
-	display: block;
-	position: relative;
-	overflow: hidden;
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 .row {
-	display: flex;
+    display: flex;
 }
 
 .column {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .draggable-container2 {
-	display: inherit;
-	position: initial;
-	width: inherit;
-	max-width: inherit;
-	height: inherit;
-	min-height: inherit;
-	justify-content: inherit;
-	align-items: inherit;
-	flex-direction: inherit;
-	background-position: inherit;
-	background-repeat: inherit;
-	top: inherit;
+    display: inherit;
+    position: initial;
+    width: inherit;
+    max-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    top: inherit;
 }
 
 @media (max-width: $break-wide) {
-	.web-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+    .web-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: $break-narrow) {
+    .web-container {
+        padding: 10px !important;
+    }
 }
