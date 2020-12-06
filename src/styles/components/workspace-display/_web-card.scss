@@ -85,7 +85,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 30px;
-    font-size: 58px;
     width: 100%;
     & .card-5-title {
         display: block;
@@ -93,14 +92,17 @@
         font-weight: bold;
         line-height: 1.1em;
         padding: 0;
+        padding-bottom: 20px;
         margin: 0;
     }
     & .header-5-pa {
         display: block;
-        width: 40ch;
         line-height: 1.1em;
         padding: 0;
         margin-bottom: 20px;
+        span {
+            min-width: 20ch;
+        }
     }
 }
 
