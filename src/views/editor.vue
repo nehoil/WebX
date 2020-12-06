@@ -131,9 +131,9 @@ export default {
         templateToSave,
       });
       try {
+        const baseUrl = window.location.origin
         this.siteToEdit = JSON.parse(JSON.stringify(savedTemplte));
-        this.webUrl = `localhost:8080/${savedTemplte._id}`;
-        // eventBus.$emit('toggleLoading');
+        this.webUrl = `${baseUrl}/${savedTemplte._id}`;
       } catch (err) {
         console.log('cannot Publish template. err on editor', err);
       }

@@ -29,6 +29,7 @@ export const webStore = {
         isShowHeader: true,
         templates: templateService.getTemplates(),
         templateUrl: null,
+        isFixedHeader: false
     },
     getters: {
         cmps(state) {
@@ -39,6 +40,9 @@ export const webStore = {
         },
         isEditOn(state) {
             return state.isEdit
+        },
+        isFixedHeaderOn(state) {
+            return state.isFixedHeader
         },
         isPreviewOn(state) {
             return state.isPreview
@@ -87,6 +91,9 @@ export const webStore = {
         },
         setEditMode(state, { isEditOn }) {
             state.isEdit = isEditOn
+        },
+        setFixedHeader(state, { isFixed }) {
+            state.isFixedHeader = isFixed
         },
         setPreviewMode(state, { isPreviewOn }) {
             state.isPreview = isPreviewOn

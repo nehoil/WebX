@@ -77,9 +77,7 @@ export default {
       });
     },
     updateSite() {
-      eventBus.$emit('update-site');
-      console.log('updated');
-      
+      eventBus.$emit('update-site');      
     },
   },
   computed: {

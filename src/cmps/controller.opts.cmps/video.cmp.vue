@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     changeLinkTo(url) {
-      console.log('clicked');
       if (url) {
         this.cmp.info.content = 'https://www.youtube.com/embed/' + url;
       } else {

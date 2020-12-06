@@ -235,7 +235,12 @@ export default {
     },
   },
   computed: {},
-  created() {},
+  created() {
+        this.$store.commit({ type: 'setFixedHeader', isFixed: true });
+  },
+  destroyed() {
+            this.$store.commit({ type: 'setFixedHeader', isFixed: false });
+  },
 };
 </script>
 

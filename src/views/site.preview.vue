@@ -35,7 +35,11 @@ export default {
   },
   methods: {
     editSite() {
-      this.$router.push('/editor');
+      const template = this.previweSite
+      this.$store.dispatch({ type: 'changeTempalte', template });
+      this.$nextTick(()=>{
+        this.$router.push('/editor');
+      })
     },
     async loadSite(id) {
       this.loading = true;

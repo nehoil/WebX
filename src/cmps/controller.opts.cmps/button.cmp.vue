@@ -90,8 +90,6 @@ export default {
       eventBus.$emit('update-site');
     },
     setBorderRadius(size) {
-      console.log(this.borderRadius, 'function');
-      console.log(this.cmp.style.borderRadius, 'function');
       this.cmp.style.borderRadius = size + 'px';
       eventBus.$emit('update-site');
     },
