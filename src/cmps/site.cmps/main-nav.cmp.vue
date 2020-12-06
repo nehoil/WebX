@@ -3,7 +3,7 @@
 <template>
   <section class="main-navbar">
     <fixed-header :threshold="100">
-      <nav class="main-nav">
+      <nav class="main-nav" :class="fixedHeaderClass">
         <div class="logo">
           <router-link to="/">
             <img class="logo-img" src="@/assets/logo2.png" alt="" />
@@ -11,6 +11,7 @@
         </div>
         <div class="menu">
           <router-link to="/templates">Templates</router-link>
+          <router-link to="/editor">Editor</router-link>
           <a @click="showLogin" v-if="!user">Login</a>
           <span v-if="user">
             <a @click="doLogout">Log Out</a>
@@ -45,7 +46,7 @@ export default {
         templateName: null,
         templatePreviewImg: null,
       },
-      isLoading: false,
+      isLoading: false
     };
   },
   methods: {
@@ -125,13 +126,16 @@ export default {
     onEdit() {
       return this.$store.getters.isEditOn;
     },
+    fixedHeaderClass(){
+      return this.$store.getters.isFixedHeaderOn ? 'nav-fixed-header' : '';
+    }
   },
   created() {},
 };
 </script>
 
 <style scoped>
-.main-nav.vue-fixed-header--isFixed {
+/* .main-nav.vue-fixed-header--isFixed {
   position: fixed;
   z-index: 50;
   left: 0;
@@ -144,5 +148,5 @@ export default {
   animation-timing-function: ease;
   transition: 0.3s all ease-in-out;
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-}
+} */
 </style>
