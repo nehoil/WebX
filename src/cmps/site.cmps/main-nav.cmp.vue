@@ -10,21 +10,24 @@
           </router-link>
         </div>
         <div class="menu">
-          <router-link to="/templates">Templates</router-link>
-          <router-link to="/editor">Editor</router-link>
-          <a @click="showLogin" v-if="!user">Login</a>
-          <span v-if="user">
-            <a @click="doLogout">Log Out</a>
-            <router-link to="/user">
-              Profile <i class="el-icon-user"></i
-            ></router-link>
+          <span class="hamburger-for-mobile">
+            <span class="main-nav-hamburger">☰</span>
+            <router-link to="/templates">Templates</router-link>
+            <router-link to="/editor">Editor</router-link>
+            <a @click="showLogin" v-if="!user">Login</a>
+            <span v-if="user">
+              <a @click="doLogout">Log Out</a>
+              <router-link to="/user">
+                Profile <i class="el-icon-user"></i
+              ></router-link>
+            </span>
+            <span class="save-and-publish" v-if="onEdit">
+              <a @click="save"
+                >Save <i v-if="isLoading" class="el-icon-loading loader"></i
+              ></a>
+              <a @click="publishTemplate">Publish</a></span
+            >
           </span>
-          <span class="save-and-publish" v-if="onEdit">
-            <a @click="save"
-              >Save <i v-if="isLoading" class="el-icon-loading loader"></i
-            ></a>
-            <a @click="publishTemplate">Publish</a></span
-          >
         </div>
       </nav>
     </fixed-header>
