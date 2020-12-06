@@ -1049,5 +1049,97 @@ export const savedCmps = [{
             width: "100%",
 
         }
-    }
+    },
+    {
+        type: 'web-container',
+        name: 'navbar',
+        id: 'saas-nav',
+        previewImg: 'https://i.ibb.co/Vw9mynd/nav1.jpg',
+        'class': 'navbar-2-container',
+        info: {
+          dir: 'row',
+          cmps: [
+            {
+              id: 'f8ayy9gw4I',
+              type: 'web-img',
+              info: {
+                src: 'https://res.cloudinary.com/dksmeovlj/image/upload/v1607278761/4249703744_cb4556d2-0594-47e7-8852-6eebfafa4f5d_hhtzug.png'
+              },
+              style: {
+                width: '70%',
+                borderRadius: '0%'
+              },
+              _rootId: 'saas-nav'
+            },
+            {
+              type: 'web-div',
+              name: 'card',
+              id: '4caepCz5sO',
+              'class': 'navbar-2-div',
+              info: {
+                dir: 'row',
+                cmps: [
+                  {
+                    id: '75pxcwv5jh',
+                    type: 'web-button',
+                    'class': 'navbar-2-menu-link',
+                    info: {
+                      content: 'Order Delivery'
+                    },
+                    style: {
+                      color: 'aliceblue',
+                      fontSize: '0.9375rem',
+                      fontWeight: '400',
+                      borderRadius: '0px',
+                    }
+                  },
+                  {
+                    id: 'AmmT3uY0Aa',
+                    type: 'web-button',
+                    'class': 'navbar-2-menu-link',
+                    info: {
+                      content: 'Our Shops'
+                    },
+                    style: {
+                      color: 'aliceblue',
+                      fontSize: '0.9375rem',
+                      fontWeight: '400',
+                      borderRadius: '0px'
+                    }
+                  },
+                  {
+                    id: '96MlZ0lAvN',
+                    type: 'web-button',
+                    'class': 'navbar-2-menu-link',
+                    info: {
+                      content: 'Menu'
+                    },
+                    style: {
+                      color: 'aliceblue',
+                      fontSize: '0.9375rem',
+                      fontWeight: '400',
+                      borderRadius: '0px'
+                    }
+                  }
+                ]
+              },
+              style: {}
+            },
+            {
+              id: 'dfg564fghfgh9808',
+              type: 'web-hamburger',
+              'class': 'hamburger',
+              info: {
+                content: '',
+                linkTo: ''
+              },
+              style: {}
+            }
+          ]
+        },
+        style: {
+          color: '#fff',
+          backgroundColor: 'rgba(255, 0, 150, 0.3)'
+        }
+      }
 ]

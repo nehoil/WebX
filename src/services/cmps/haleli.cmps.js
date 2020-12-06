@@ -1326,7 +1326,8 @@ export const haleliCmps = [
                     textAlign: "center",
                     fontFamily: "assistantLight",
                     color: "rgb(150, 150, 150)",
-                    lineHeight: "auto"
+                    lineHeight: "auto",
+                    letterSpacing: "0.08rem"
                 },
             },
             {
