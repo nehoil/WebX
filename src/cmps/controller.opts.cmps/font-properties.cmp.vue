@@ -99,7 +99,7 @@ export default {
             ? +this.getNumFromString('fontSize') * 16
             : 0.875;
           this.letterSpacing = this.cmp.style.letterSpacing
-            ? +this.getNumFromString('letterSpacing')
+            ? +this.getNumFromString('letterSpacing') * 16
             : 0;
         }
       },
@@ -110,7 +110,7 @@ export default {
       ? +this.getNumFromString('fontSize') * 16
       : 14;
     this.letterSpacing = this.cmp.style.letterSpacing
-      ? +this.getNumFromString('letterSpacing')
+      ? +this.getNumFromString('letterSpacing') * 16
       : 0;
   },
   methods: {
@@ -153,7 +153,7 @@ export default {
       eventBus.$emit('change-web-txt');
     },
     setSpacing(size) {
-      this.letterSpacing = size;
+      // this.letterSpacing = size;
       this.cmp.style.letterSpacing = size / 16 + 'rem';
       eventBus.$emit('update-site');
       eventBus.$emit('change-web-txt');

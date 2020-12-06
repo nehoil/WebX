@@ -1,655 +1,656 @@
 import { utilService } from '@/services/util-service.js'
 
-export const haleliTemplates = [{
-        _id: "sys574575474543",
-        name: "Vita",
-        previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg",
-        createdBy: {
-            _id: null,
-            username: null,
-            userPicture: null
-        },
-        cmps: [{
-                type: "web-container",
-                name: "navbar",
-                id: "nav003",
-                class: "navbar-1",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                            id: utilService.makeId(10),
-                            type: "web-button",
-                            info: {
-                                content: "VITA"
-                            },
-                            style: {
-                                fontFamily: "robotomono",
-                                fontSize: "1.5rem",
-                                color: "#161d2e",
-                                backgroundColor: "#fff",
+export const haleliTemplates = [
+    // {
+    //     _id: "sys574575474543",
+    //     name: "Vita",
+    //     previewImg: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606994532/screencapture-localhost-8081-2020-11-29-13-55-25_3_s4wxab.jpg",
+    //     createdBy: {
+    //         _id: null,
+    //         username: null,
+    //         userPicture: null
+    //     },
+    //     cmps: [{
+    //             type: "web-container",
+    //             name: "navbar",
+    //             id: "nav003",
+    //             class: "navbar-1",
+    //             info: {
+    //                 dir: "row",
+    //                 cmps: [{
+    //                         id: utilService.makeId(10),
+    //                         type: "web-button",
+    //                         info: {
+    //                             content: "VITA"
+    //                         },
+    //                         style: {
+    //                             fontFamily: "robotomono",
+    //                             fontSize: "1.5rem",
+    //                             color: "#161d2e",
+    //                             backgroundColor: "#fff",
 
-                            }
-                        },
-                        {
-                            type: "web-div",
-                            name: "card-tem-01",
-                            class: "web-div",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-button",
-                                        info: {
-                                            content: "SHOP",
-                                            linkTo: "#"
-                                        },
-                                        style: {
+    //                         }
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "card-tem-01",
+    //                         class: "web-div",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-button",
+    //                                     info: {
+    //                                         content: "SHOP",
+    //                                         linkTo: "#"
+    //                                     },
+    //                                     style: {
 
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-button",
-                                        info: {
-                                            content: "ABOUT",
-                                            linkTo: "#"
+    //                                     },
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-button",
+    //                                     info: {
+    //                                         content: "ABOUT",
+    //                                         linkTo: "#"
 
-                                        },
-                                        style: {},
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-button",
-                                        info: {
-                                            content: "CONTACT US",
-                                            linkTo: "#"
+    //                                     },
+    //                                     style: {},
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-button",
+    //                                     info: {
+    //                                         content: "CONTACT US",
+    //                                         linkTo: "#"
 
-                                        },
-                                        style: {}
-                                    }
-                                ]
-                            },
-                            style: {
-                                fontSize: "1rem",
-                                color: "#161d2e",
-                                backgroundColor: "#fff",
-                            }
-                        }
-                    ]
-                },
-                style: {
-                    fontSize: "1rem",
-                    height: "4rem",
-                    color: "#161d2e",
-                    backgroundColor: "#fff",
-                    width: "100%"
-                }
-            },
-            // header
-            {
-                type: "web-container",
-                name: "header",
-                id: "header004",
-                class: "header-v",
-                info: {
-                    dir: "col",
-                    cmps: [{
-                            id: utilService.makeId(10),
-                            type: "web-txt",
-                            class: 'v-title',
-                            info: {
-                                content: "VITA urban living"
-                            },
-                            style: {
-                                textAlign: 'center',
-                                fontFamily: "romantika",
-                                fontSize: "6rem",
-                                letterSpacing: "3px",
-                                margin: "0 auto",
-                                color: "rgb(84, 84, 84)",
-                            },
-                        },
-                        {
-                            id: utilService.makeId(10),
-                            type: "web-button",
-                            class: "v-button",
-                            info: {
-                                content: "BRING NATURE HOME",
-                                linkTo: "#"
+    //                                     },
+    //                                     style: {}
+    //                                 }
+    //                             ]
+    //                         },
+    //                         style: {
+    //                             fontSize: "1rem",
+    //                             color: "#161d2e",
+    //                             backgroundColor: "#fff",
+    //                         }
+    //                     }
+    //                 ]
+    //             },
+    //             style: {
+    //                 fontSize: "1rem",
+    //                 height: "4rem",
+    //                 color: "#161d2e",
+    //                 backgroundColor: "#fff",
+    //                 width: "100%"
+    //             }
+    //         },
+    //         // header
+    //         {
+    //             type: "web-container",
+    //             name: "header",
+    //             id: "header004",
+    //             class: "header-v",
+    //             info: {
+    //                 dir: "col",
+    //                 cmps: [{
+    //                         id: utilService.makeId(10),
+    //                         type: "web-txt",
+    //                         class: 'v-title',
+    //                         info: {
+    //                             content: "VITA urban living"
+    //                         },
+    //                         style: {
+    //                             textAlign: 'center',
+    //                             fontFamily: "romantika",
+    //                             fontSize: "6rem",
+    //                             letterSpacing: "3px",
+    //                             margin: "0 auto",
+    //                             color: "rgb(84, 84, 84)",
+    //                         },
+    //                     },
+    //                     {
+    //                         id: utilService.makeId(10),
+    //                         type: "web-button",
+    //                         class: "v-button",
+    //                         info: {
+    //                             content: "BRING NATURE HOME",
+    //                             linkTo: "#"
 
-                            },
-                            style: {
-                                fontFamily: "champagneLimousines",
-                                fontWeight: "bold",
-                                letterSpacing: "0.375rem",
-                                padding: "5px 10px",
-                                color: "#fff",
-                                backgroundColor: "rgb(94,204,191)",
-                                border: "2px solid #fff",
-                                outline: "3px solid rgb(94,204,191)",
-                            },
+    //                         },
+    //                         style: {
+    //                             fontFamily: "champagneLimousines",
+    //                             fontWeight: "bold",
+    //                             letterSpacing: "0.375rem",
+    //                             padding: "5px 10px",
+    //                             color: "#fff",
+    //                             backgroundColor: "rgb(94,204,191)",
+    //                             border: "2px solid #fff",
+    //                             outline: "3px solid rgb(94,204,191)",
+    //                         },
 
-                        }
-                    ]
-                },
-                style: {
-                    paddingTop: '4rem',
-                    padding: "15px",
-                    backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
-                    backgroundSize: 'contain'
-                },
+    //                     }
+    //                 ]
+    //             },
+    //             style: {
+    //                 paddingTop: '4rem',
+    //                 padding: "15px",
+    //                 backgroundImage: `url("https://res.cloudinary.com/dksmeovlj/image/upload/v1606596890/2179_1_yr7og7.jpg")`,
+    //                 backgroundSize: 'contain'
+    //             },
 
 
-            },
+    //         },
 
-            //  section
-            {
-                type: "web-container",
-                name: "section",
-                id: "v-section001",
-                class: "section-v",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                            type: "web-div",
-                            name: "card-tem-02",
-                            class: "card-text",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "A week full of values.",
-                                        },
-                                        style: {
-                                            display: "inline-block",
-                                            fontFamily: "champagneLimousines",
-                                            fontSize: "2rem",
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "Let’s re-pot Black Friday into VITAweek. From 26 November until 01 December we’re all about sharing, inspiring, learning and connecting. Get access to the full experience with your VITA Account.",
-                                        },
-                                        style: {
-                                            display: "inline-block",
-                                            fontFamily: "champagneLimousines",
-                                            fontSize: "1.4rem",
-                                        },
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            type: "web-div",
-                            name: "card-tem-03",
-                            class: "card-image",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                    id: utilService.makeId(10),
-                                    type: "web-img",
-                                    info: {
-                                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606636853/3911917-pdf_1_gfkso7.png"
-                                    },
-                                    style: {}
-                                }]
-                            },
-                        },
-                    ]
-                },
-                style: {
-                    display: "flex",
-                    backgroundColor: "#fff",
-                    minHeight: "50rem",
-                },
-            },
-            // map
-            {
-                type: "web-container",
-                name: "map",
-                id: "section007",
-                class: "map-v",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                            type: "web-div",
-                            name: "card-tem-03",
-                            class: "card-image",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                    id: utilService.makeId(10),
-                                    type: "web-img",
-                                    info: {
-                                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606599449/taxi-sign-in_wzahtz.png"
-                                    },
-                                    style: {
-                                        width: "70%"
-                                    }
-                                }]
-                            },
-                        },
-                        {
-                            type: "web-div",
-                            name: "card-tem-02",
-                            class: "map-text-v",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "COME MEET US IN PERSON",
-                                        },
-                                        style: {
-                                            fontFamily: "champagneLimousines",
-                                            fontSize: "2rem",
-                                            backgroundColor: "#fff",
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "(we don't bite)",
-                                        },
-                                        style: {
-                                            fontFamily: "champagneLimousines",
-                                            fontSize: "1rem",
-                                            backgroundColor: "#fff",
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-map",
-                                        info: {
-                                            title: "",
-                                            lat: 52.377956,
-                                            lng: 4.897070,
-                                            zoom: 14,
-                                            address: "Amsterdam"
-                                        },
-                                        style: {
-                                            height: "100%",
-                                            display: "block",
-                                            margin: "0 auto"
-                                        }
-                                    }
-                                ]
-                            },
-                            style: {
-                                padding: "1rem",
-                                backgroundColor: "#fff",
-                            },
-                        }
-                    ]
-                },
-                style: {
-                    display: "flex",
-                    backgroundColor: "#fff"
-                },
-            },
-            // 2nd section
-            {
-                type: "web-container",
-                name: "section",
-                id: "v-section002",
-                class: "section-v",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                            type: "web-div",
-                            name: "card-tem-02",
-                            class: "card-text",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "48H DELIVERY",
-                                        },
-                                        style: {
-                                            display: "inline-block",
-                                            fontFamily: "champagneLimousines",
-                                            fontSize: "2rem",
-                                        },
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "All members of the VITA's community will have their orders shipped on the day after their order is received, except Saturday and Sunday. If you are based in Italy or Austria these orders should arrive within one working day ",
-                                        },
-                                        style: {
-                                            display: "inline-block",
-                                            fontFamily: "champagneLimousines",
-                                            fontSize: "1.4rem",
-                                        },
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            type: "web-div",
-                            name: "card-tem-03",
-                            class: "card-image",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                    id: utilService.makeId(10),
-                                    type: "web-img",
-                                    info: {
-                                        src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
-                                    },
-                                    style: {}
-                                }]
-                            },
-                        },
+    //         //  section
+    //         {
+    //             type: "web-container",
+    //             name: "section",
+    //             id: "v-section001",
+    //             class: "section-v",
+    //             info: {
+    //                 dir: "row",
+    //                 cmps: [{
+    //                         type: "web-div",
+    //                         name: "card-tem-02",
+    //                         class: "card-text",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "A week full of values.",
+    //                                     },
+    //                                     style: {
+    //                                         display: "inline-block",
+    //                                         fontFamily: "champagneLimousines",
+    //                                         fontSize: "2rem",
+    //                                     },
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "Let’s re-pot Black Friday into VITAweek. From 26 November until 01 December we’re all about sharing, inspiring, learning and connecting. Get access to the full experience with your VITA Account.",
+    //                                     },
+    //                                     style: {
+    //                                         display: "inline-block",
+    //                                         fontFamily: "champagneLimousines",
+    //                                         fontSize: "1.4rem",
+    //                                     },
+    //                                 }
+    //                             ]
+    //                         }
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "card-tem-03",
+    //                         class: "card-image",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                 id: utilService.makeId(10),
+    //                                 type: "web-img",
+    //                                 info: {
+    //                                     src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606636853/3911917-pdf_1_gfkso7.png"
+    //                                 },
+    //                                 style: {}
+    //                             }]
+    //                         },
+    //                     },
+    //                 ]
+    //             },
+    //             style: {
+    //                 display: "flex",
+    //                 backgroundColor: "#fff",
+    //                 minHeight: "50rem",
+    //             },
+    //         },
+    //         // map
+    //         {
+    //             type: "web-container",
+    //             name: "map",
+    //             id: "section007",
+    //             class: "map-v",
+    //             info: {
+    //                 dir: "row",
+    //                 cmps: [{
+    //                         type: "web-div",
+    //                         name: "card-tem-03",
+    //                         class: "card-image",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                 id: utilService.makeId(10),
+    //                                 type: "web-img",
+    //                                 info: {
+    //                                     src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606599449/taxi-sign-in_wzahtz.png"
+    //                                 },
+    //                                 style: {
+    //                                     width: "70%"
+    //                                 }
+    //                             }]
+    //                         },
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "card-tem-02",
+    //                         class: "map-text-v",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "COME MEET US IN PERSON",
+    //                                     },
+    //                                     style: {
+    //                                         fontFamily: "champagneLimousines",
+    //                                         fontSize: "2rem",
+    //                                         backgroundColor: "#fff",
+    //                                     },
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "(we don't bite)",
+    //                                     },
+    //                                     style: {
+    //                                         fontFamily: "champagneLimousines",
+    //                                         fontSize: "1rem",
+    //                                         backgroundColor: "#fff",
+    //                                     },
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-map",
+    //                                     info: {
+    //                                         title: "",
+    //                                         lat: 52.377956,
+    //                                         lng: 4.897070,
+    //                                         zoom: 14,
+    //                                         address: "Amsterdam"
+    //                                     },
+    //                                     style: {
+    //                                         height: "100%",
+    //                                         display: "block",
+    //                                         margin: "0 auto"
+    //                                     }
+    //                                 }
+    //                             ]
+    //                         },
+    //                         style: {
+    //                             padding: "1rem",
+    //                             backgroundColor: "#fff",
+    //                         },
+    //                     }
+    //                 ]
+    //             },
+    //             style: {
+    //                 display: "flex",
+    //                 backgroundColor: "#fff"
+    //             },
+    //         },
+    //         // 2nd section
+    //         {
+    //             type: "web-container",
+    //             name: "section",
+    //             id: "v-section002",
+    //             class: "section-v",
+    //             info: {
+    //                 dir: "row",
+    //                 cmps: [{
+    //                         type: "web-div",
+    //                         name: "card-tem-02",
+    //                         class: "card-text",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "48H DELIVERY",
+    //                                     },
+    //                                     style: {
+    //                                         display: "inline-block",
+    //                                         fontFamily: "champagneLimousines",
+    //                                         fontSize: "2rem",
+    //                                     },
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "All members of the VITA's community will have their orders shipped on the day after their order is received, except Saturday and Sunday. If you are based in Italy or Austria these orders should arrive within one working day ",
+    //                                     },
+    //                                     style: {
+    //                                         display: "inline-block",
+    //                                         fontFamily: "champagneLimousines",
+    //                                         fontSize: "1.4rem",
+    //                                     },
+    //                                 }
+    //                             ]
+    //                         }
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "card-tem-03",
+    //                         class: "card-image",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                 id: utilService.makeId(10),
+    //                                 type: "web-img",
+    //                                 info: {
+    //                                     src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606637743/ON3VUV1_1_ehpfa3.png"
+    //                                 },
+    //                                 style: {}
+    //                             }]
+    //                         },
+    //                     },
 
-                    ]
-                },
-                style: {
-                    display: "flex",
-                    backgroundColor: "#fff",
-                    minHeight: "50rem",
-                },
-            },
-            // logos
-            {
-                type: "web-container",
-                name: "section",
-                id: "v-section003",
-                class: "section-v01",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                            type: "web-div",
-                            name: "card-tem-02",
-                            class: "card-text",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                    id: utilService.makeId(10),
-                                    type: "web-txt",
-                                    info: {
-                                        content: "OUR PARTNERS",
-                                    },
-                                    style: {
-                                        display: "inline-block",
-                                        fontFamily: "champagneLimousines",
-                                        fontSize: "1.4rem",
-                                        fontWeight: "bold",
-                                    },
-                                }]
-                            },
-                        },
-                        {
-                            type: "web-div",
-                            name: "card-tem-03",
-                            class: "card-image",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-img",
-                                        info: {
-                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
-                                        },
-                                        style: {}
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-img",
-                                        info: {
-                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
-                                        },
-                                        style: {}
+    //                 ]
+    //             },
+    //             style: {
+    //                 display: "flex",
+    //                 backgroundColor: "#fff",
+    //                 minHeight: "50rem",
+    //             },
+    //         },
+    //         // logos
+    //         {
+    //             type: "web-container",
+    //             name: "section",
+    //             id: "v-section003",
+    //             class: "section-v01",
+    //             info: {
+    //                 dir: "row",
+    //                 cmps: [{
+    //                         type: "web-div",
+    //                         name: "card-tem-02",
+    //                         class: "card-text",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                 id: utilService.makeId(10),
+    //                                 type: "web-txt",
+    //                                 info: {
+    //                                     content: "OUR PARTNERS",
+    //                                 },
+    //                                 style: {
+    //                                     display: "inline-block",
+    //                                     fontFamily: "champagneLimousines",
+    //                                     fontSize: "1.4rem",
+    //                                     fontWeight: "bold",
+    //                                 },
+    //                             }]
+    //                         },
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "card-tem-03",
+    //                         class: "card-image",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-img",
+    //                                     info: {
+    //                                         src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642458/gutwork-svg_j6sysy.svg"
+    //                                     },
+    //                                     style: {}
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-img",
+    //                                     info: {
+    //                                         src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642449/covenant-svg_rwnlh5.svg"
+    //                                     },
+    //                                     style: {}
 
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-img",
-                                        info: {
-                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
-                                        },
-                                        style: {}
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-img",
-                                        info: {
-                                            src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
-                                        },
-                                        style: {}
-                                    }
-                                ]
-                            },
-                        },
-                    ]
-                },
-                style: {
-                    display: "flex",
-                    backgroundColor: "#fff",
-                    minHeight: "12.5rem",
-                },
-            },
-            // footer
-            {
-                type: "web-container",
-                name: "footer",
-                id: "footer-v",
-                class: "footer-v  ",
-                info: {
-                    dir: "row",
-                    cmps: [{
-                            type: "web-div",
-                            name: "",
-                            class: "div-v",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "shop"
-                                        },
-                                        style: {
-                                            fontSize: "1rem",
-                                            fontWeight: "bold",
-                                            textAlign: "center",
-                                            marginTop: "1rem",
-                                            backgroundColor: "#fff",
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "all plants"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
-                                            //   
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "books and accessories"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-img",
+    //                                     info: {
+    //                                         src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642314/infinite-svg_cmi0to.svg"
+    //                                     },
+    //                                     style: {}
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-img",
+    //                                     info: {
+    //                                         src: "https://res.cloudinary.com/dksmeovlj/image/upload/v1606642479/grubspot-svg_ckulrr.svg"
+    //                                     },
+    //                                     style: {}
+    //                                 }
+    //                             ]
+    //                         },
+    //                     },
+    //                 ]
+    //             },
+    //             style: {
+    //                 display: "flex",
+    //                 backgroundColor: "#fff",
+    //                 minHeight: "12.5rem",
+    //             },
+    //         },
+    //         // footer
+    //         {
+    //             type: "web-container",
+    //             name: "footer",
+    //             id: "footer-v",
+    //             class: "footer-v  ",
+    //             info: {
+    //                 dir: "row",
+    //                 cmps: [{
+    //                         type: "web-div",
+    //                         name: "",
+    //                         class: "div-v",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "shop"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "1rem",
+    //                                         fontWeight: "bold",
+    //                                         textAlign: "center",
+    //                                         marginTop: "1rem",
+    //                                         backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "all plants"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
+    //                                         //   
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "books and accessories"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    }
-                                ]
-                            },
-                        },
-                        {
-                            type: "web-div",
-                            name: "",
-                            class: "div-v",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        class: "footer-v-02",
-                                        info: {
-                                            content: "my account"
-                                        },
-                                        style: {
-                                            fontSize: "1rem",
-                                            fontWeight: "bold",
-                                            marginTop: "1rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 }
+    //                             ]
+    //                         },
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "",
+    //                         class: "div-v",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     class: "footer-v-02",
+    //                                     info: {
+    //                                         content: "my account"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "1rem",
+    //                                         fontWeight: "bold",
+    //                                         marginTop: "1rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "manage your account"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "manage your account"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "order history"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "order history"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "save items"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "save items"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            type: "web-div",
-                            name: "",
-                            class: "div-v",
-                            id: utilService.makeId(10),
-                            info: {
-                                dir: "row",
-                                cmps: [{
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        class: "footer-v-02",
-                                        info: {
-                                            content: "customer service"
-                                        },
-                                        style: {
-                                            fontSize: "1rem",
-                                            fontWeight: "bold",
-                                            marginTop: "1rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 }
+    //                             ]
+    //                         }
+    //                     },
+    //                     {
+    //                         type: "web-div",
+    //                         name: "",
+    //                         class: "div-v",
+    //                         id: utilService.makeId(10),
+    //                         info: {
+    //                             dir: "row",
+    //                             cmps: [{
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     class: "footer-v-02",
+    //                                     info: {
+    //                                         content: "customer service"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "1rem",
+    //                                         fontWeight: "bold",
+    //                                         marginTop: "1rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "FAQ"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "FAQ"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "transport and delivery"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "transport and delivery"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                    {
-                                        id: utilService.makeId(10),
-                                        type: "web-txt",
-                                        info: {
-                                            content: "return and recycle service"
-                                        },
-                                        style: {
-                                            fontSize: "0.9rem",
-                                            margin: "0 auto",
-                                            textAlign: "center",
-                                            backgroundColor: "#fff",
+    //                                     }
+    //                                 },
+    //                                 {
+    //                                     id: utilService.makeId(10),
+    //                                     type: "web-txt",
+    //                                     info: {
+    //                                         content: "return and recycle service"
+    //                                     },
+    //                                     style: {
+    //                                         fontSize: "0.9rem",
+    //                                         margin: "0 auto",
+    //                                         textAlign: "center",
+    //                                         backgroundColor: "#fff",
 
-                                        }
-                                    },
-                                ]
-                            },
-                        }
-                    ]
-                }
-            }
-        ]
-    },
+    //                                     }
+    //                                 },
+    //                             ]
+    //                         },
+    //                     }
+    //                 ]
+    //             }
+    //         }
+    //     ]
+    // },
     {
         _id: "sys576845956786r5",
         name: "Chateau du brunch",
