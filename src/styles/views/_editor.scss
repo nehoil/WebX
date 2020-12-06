@@ -11,7 +11,7 @@ div.editor {
 		margin-right: 10px;
 	}
 	border-top: 1px solid rgba(186, 186, 186, 0.249);
-	height: 89vh;
+	height: 89.5vh;
 	.workspace {
 		@include scrollBar(.5rem, lighten($clr4, 35%));
 		overflow-y: scroll;
@@ -57,7 +57,7 @@ div.editor {
 	}
 	.controller {
 		box-shadow: 0 3px 6px rgba(0, 0, 100, .15);
-		z-index: 55;
+		z-index: 5;
 		background-color: #fff;
 		border-radius: 1rem;
 		margin: 0 8px;
