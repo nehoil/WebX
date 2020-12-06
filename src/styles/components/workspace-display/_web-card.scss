@@ -76,6 +76,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        & .workspace2 {
+            & :nth-child(1) {
+                max-width: 50%;
+            }
+        }
     }
     
     .card-5-div {
@@ -85,7 +90,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 30px;
-        width: 100%;
+        max-width: 75ch;
         & .card-5-title {
             display: block;
             max-width: 20ch;
