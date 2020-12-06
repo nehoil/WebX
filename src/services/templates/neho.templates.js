@@ -723,7 +723,7 @@ export const nehoTemplates = [{
             ]
         },
         style: {
-            padding: '3.25rem',
+            padding: '1.25rem',
             minHeight: '43.75rem',
             backgroundImage: 'url(https://images.unsplash.com/photo-1567491634123-460945ea86dd?crop=entropy&cs=srgb&fm=jpg&ixid=MXwxODcwMDl8MHwxfHNlYXJjaHwxM3x8fGVufDB8fHw&ixlib=rb-1.2.1&q=85)'
         }
