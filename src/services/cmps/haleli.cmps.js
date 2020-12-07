@@ -247,7 +247,7 @@ export const haleliCmps = [
     {
         type: "web-container",
         name: "map",
-        id: "section007",
+        id: "section009",
         class: "map-v",
         previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607284877/New_Project_q9zpja.jpg',
         info: {
@@ -266,7 +266,7 @@ export const haleliCmps = [
                             src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607284560/396-3962945_birthday-cupcake-cupcakes-cake-cakes-sweet-sweets-scran_vivqe8.png"
                         },
                         style: {
-                            width: "60%"
+                            width: "50%"
                         }
                     }]
                 },
@@ -274,7 +274,7 @@ export const haleliCmps = [
             {
                 type: "web-div",
                 name: "card-tem-demo",
-                class: "map-text-v",
+                class: "map-text-v cupcake-map",
                 id: utilService.makeId(10),
                 info: {
                     dir: "row",
