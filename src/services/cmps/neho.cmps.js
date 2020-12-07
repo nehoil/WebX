@@ -312,10 +312,10 @@ export const nehoCmps = [{
                                 },
                                 style: {
                                     fontSize: '1rem',
-                                    letterSpacing: '0.7px',
+                                    letterSpacing: '0.04375rem',
                                     color: 'rgb(97, 95, 95)',
                                     backgroundColor: '#fcc400',
-                                    borderRadius: '50px',
+                                    borderRadius: '50px'
                                 },
                                 _rootId: '__vue_devtool_undefined__'
                             }
