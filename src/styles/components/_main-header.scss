@@ -43,9 +43,9 @@
 		cursor: pointer;
 	}
 	.save-and-publish {
-		all: inherit;
+		display: none;
 		> * {
-			margin: 10px auto !important;
+			display: none !important;
 		}
 	}
 	body {
