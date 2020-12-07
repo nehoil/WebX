@@ -11,8 +11,17 @@
     <GmapMap
       :center="{ lat: cmp.info.lat, lng: cmp.info.lng }"
       :zoom="cmp.info.zoom"
+      :options="{
+        zoomControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: false,
+        disableDefaultUi: false,
+      }"
       map-type-id="terrain"
-      style="width: 500px; height: 300px"
+      :class="cmp.class"
     >
       <GmapMarker
         :key="index"
@@ -40,10 +49,10 @@ export default {
       showEditMenu: false,
     };
   },
-  computed:{
-    markers(){
-      return [{position:{lat:this.cmp.info.lat, lng: this.cmp.info.lng}}]
-    }
+  computed: {
+    markers() {
+      return [{ position: { lat: this.cmp.info.lat, lng: this.cmp.info.lng } }];
+    },
   },
   name: 'web-map',
   components: {

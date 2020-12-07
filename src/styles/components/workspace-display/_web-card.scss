@@ -76,6 +76,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-right: 8.5rem;
+        padding-left: 8.5rem;
         & .workspace2 {
             & :nth-child(1) {
                 max-width: 50%;
