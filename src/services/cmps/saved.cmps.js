@@ -636,7 +636,8 @@ export const savedCmps = [{
                     height: "100%",
                     display: "block",
                     margin: "0 auto"
-                }
+                },
+                class: 'map-regular-content'
             }]
         },
         style: {
@@ -644,7 +645,7 @@ export const savedCmps = [{
 
             width: "100%",
 
-        }
+        },
     },
     {
         type: "web-container",

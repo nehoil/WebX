@@ -9,32 +9,31 @@
             <img class="logo-img" src="@/assets/logo2.png" alt="" />
           </router-link>
         </div>
+        <button
+          class="hamburger hamburger--spring"
+          @click="toggleMenu"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <div class="menu">
-          <!-- <span class="hamburger-for-mobile"> -->
-          <router-link to="/templates">Templates</router-link>
-          <router-link to="/editor">Editor</router-link>
-          <a @click="showLogin" v-if="!user">Login</a>
+          <router-link class="nav-link" to="/templates">Templates</router-link>
+          <router-link class="nav-link" to="/editor">Editor</router-link>
+          <a @click="showLogin" class="nav-link" v-if="!user">Login</a>
           <span v-if="user">
-            <a @click="doLogout">Log Out</a>
-            <router-link to="/user">
-              Profile <i class="el-icon-user"></i
+            <a class="nav-link" @click="doLogout">Log Out</a>
+            <router-link class="nav-link" to="/user">
+              Profile <i class="el-icon-user profile"></i
             ></router-link>
           </span>
           <span class="save-and-publish" v-if="onEdit">
-            <a @click="save"
+            <a class="nav-link" @click="save"
               >Save <i v-if="isLoading" class="el-icon-loading loader"></i
             ></a>
-            <a @click="publishTemplate">Publish</a></span
+            <a class="nav-link" @click="publishTemplate">Publish</a></span
           >
-          <button
-            class="hamburger hamburger--spring"
-            @click="toggleMenu()"
-            type="button"
-          >
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
           <!-- </span> -->
         </div>
       </nav>
