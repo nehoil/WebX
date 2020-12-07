@@ -43,7 +43,9 @@
                 deisgn option to make every sentence stand out.
               </div>
             </div>
-            <div class="hp-card-btn pointer">Start Creating »</div>
+            <router-link class="choose pointer" :to="'/templates'">
+              <div class="hp-card-btn pointer">Start Creating »</div>
+            </router-link>
           </div>
           <div class="hp-card-img">
             <img
@@ -82,13 +84,15 @@
                 and start giving life to your site!
               </div>
             </div>
-            <div class="hp-card-btn pointer">Let's Design »</div>
+            <router-link class="choose pointer" :to="'/templates'">
+              <div class="hp-card-btn pointer">Let's Design »</div>
+            </router-link>
           </div>
         </div>
         <div class="hp-card-1" data-aos-once="true" data-aos="fade-left">
           <div class="hp-card-text">
             <div class="hp-card-first-txt">
-              <div class="hp-card-tag">DESIGN</div>
+              <div class="hp-card-tag">COMFORT</div>
               <div class="hp-card-title">
                 Add Whole Sections With One Simple Click
               </div>
@@ -98,7 +102,9 @@
                 your dream site become a reality!
               </div>
             </div>
-            <div class="hp-card-btn pointer">Learn More »</div>
+            <router-link class="choose pointer" :to="'/templates'">
+              <div class="hp-card-btn pointer">Learn More »</div>
+            </router-link>
           </div>
           <div class="hp-card-img">
             <img
@@ -124,7 +130,9 @@
               has a dream about an amazing website that is waiting to
               come-alive!
             </div>
-            <div class="hp-card-btn pointer">Start Creating Now »</div>
+            <router-link class="choose pointer" :to="'/templates'">
+              <div class="hp-card-btn pointer">Start Creating Now »</div>
+            </router-link>
           </div>
         </div>
         <div class="hp-big-img" data-aos-once="true" data-aos="zoom-in">

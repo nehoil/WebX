@@ -30,6 +30,7 @@
 	);
 	.hp-main-container {
 		max-width: 1140px;
+		margin: 0 auto;
 	}
 }
 
@@ -50,6 +51,9 @@
 		@include max-middle-layout {
 			font-size: 2.3rem;
 		}
+		@include max-narrow-layout {
+			font-size: 1.6rem;
+		}
 	}
 	& .hp-header-subtitle {
 		margin: 0;
@@ -58,6 +62,9 @@
 		font-size: 21px;
 		width: 35ch;
 		padding-bottom: 25px;
+		@include max-narrow-layout {
+			font-size: 1.1rem;
+		}
 	}
 }
 
@@ -84,6 +91,12 @@
 		@include max-middle-layout {
 			max-width: 600px;
 		}
+		@include max-normal-layout {
+			max-width: 500px;
+		}
+		@include max-narrow-layout {
+			max-width: 300px;
+		}
 	}
 	.hp-main-content-title {
 		text-align: center;
@@ -95,6 +108,9 @@
 		@include max-middle-layout {
 			font-size: 1.7rem;
 		}
+		@include max-narrow-layout {
+			font-size: 1.3rem;
+		}
 	}
 }
 
@@ -102,8 +118,23 @@
 	margin-top: 6rem;
 	display: flex;
 	margin-bottom: 100px;
+	@include max-normal-layout {
+		flex-direction: column;
+		width: fit-content;
+		align-items: center;
+		.hp-card-text {
+			margin: 0 !important;
+			padding: 0;
+		}
+		.hp-card-img {
+			margin: 10px 0;
+		}
+	}
 	.hp-card-img {
 		width: 60%;
+		@include max-narrow-layout {
+			width: 100%;
+		}
 	}
 	.hp-card-first-txt {
 		padding-top: 80px;
@@ -156,6 +187,9 @@
 		.hp-card-text {
 			margin: 0 0 0 70px;
 		}
+		@include max-normal-layout {
+			flex-direction: column-reverse;
+		}
 	}
 	&[data='hp-title-pa'] {
 		margin-bottom: 50px;
@@ -165,6 +199,14 @@
 			text-align: center;
 			align-items: center;
 			justify-content: space-between;
+			@include max-normal-layout {
+				font-size: 0.9rem;
+				width: 50ch;
+				margin: 0 auto;
+			}
+			@include max-narrow-layout {
+				width: 100%;
+			}
 		}
 		.hp-card-title {
 			font-size: 39px;
@@ -172,15 +214,26 @@
 			@include max-wide-layout {
 				font-size: 1.9rem;
 			}
+			@include max-narrow-layout {
+				font-size: 1.4rem;
+			}
 		}
 		.hp-card-pa {
 			width: 72ch;
+			@include max-normal-layout {
+				font-size: 0.9rem;
+				width: 50ch;
+				margin: 0 auto;
+			}
 		}
 	}
 	&[data='hp-title-templates'] {
 		margin-bottom: 20px;
 		@include for-wider-layout {
 			margin-left: 14rem;
+		}
+		@include max-normal-layout {
+			margin: 0 auto;
 		}
 		.hp-card-text {
 			width: 100%;
@@ -191,13 +244,22 @@
 			@include for-wider-layout {
 				width: 70%;
 			}
+			@include max-normal-layout {
+				width: 100%;
+			}
 		}
 		.hp-card-title {
 			font-size: 39px;
 			width: 100%;
+			@include max-normal-layout {
+				font-size: 1.3rem;
+			}
 		}
 		.hp-card-pa {
 			width: 72ch;
+			@include max-normal-layout {
+				width: 30ch;
+			}
 		}
 	}
 }
@@ -308,6 +370,7 @@
 		height: 100%;
 		& img {
 			width: 100%;
+			height: 100%;
 			border-bottom-right-radius: 0.4rem;
 			border-bottom-left-radius: 0.4rem;
 			object-fit: cover;

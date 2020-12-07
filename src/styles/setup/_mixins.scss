@@ -39,6 +39,17 @@
 		@content;
 	}
 }
+
+@mixin max-normal-layout {
+	@media (max-width: $break-normal) {
+		@content;
+	}
+}
+@mixin max-narrow-layout {
+	@media (max-width: $break-normal) {
+		@content;
+	}
+}
 /* Media  Mixins */
 
 //aspect ratio mixin
