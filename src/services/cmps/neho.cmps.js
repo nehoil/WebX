@@ -391,7 +391,9 @@ export const nehoCmps = [
                 info: {
                     src: 'https://i.ibb.co/vLYKYjm/20200723-173302-1.jpg'
                 },
-                style: {},
+                style: {
+                    marginLeft: "24px"
+                },
                 _rootId: 'saas-card-3'
             }
         ]
@@ -399,3 +401,5 @@ export const nehoCmps = [
     style: {}
 },
 ]
+
+
