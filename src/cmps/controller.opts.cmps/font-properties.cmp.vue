@@ -37,7 +37,6 @@
             v-model="fontSize"
             @input="setFontSize"
           ></el-slider>
-          <!-- step="0.1" -->
         </div>
         <div class="flex center space plr10">
           <span>Spacing</span>

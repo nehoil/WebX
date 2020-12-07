@@ -47,7 +47,6 @@
             </ul>
           </div>
         </el-collapse-item>
-
         <el-collapse-item name="2" v-if="cmp.type !== 'web-container'">
           <template slot="title">
             <div
@@ -120,7 +119,6 @@ export default {
     };
   },
   created() {
-    // if (!this.cmp.style.color) this.cmp.style.color = {}
     const colorPalette = colorService.getColors();
     this.colors = colorPalette;
   },

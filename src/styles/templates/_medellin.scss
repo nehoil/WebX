@@ -54,7 +54,6 @@
 	.card-text-md {
 		max-height: 44rem;
 		.txt-md {
-			// max-height: 44rem;
 			height: 44rem;
 			margin-left: 5rem;
 			display: flex !important;
@@ -69,14 +68,12 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	// align-items: flex-start;
 	.div-v {
 		margin-right: 3rem;
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
-		// margin-bottom: 1rem;
 		& .web-txt {
 			cursor: pointer;
 			display: inline-block;

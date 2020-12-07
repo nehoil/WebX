@@ -1,7 +1,6 @@
 <template>
   <div class="editor flex">
     <div class="modal-bg" v-if="webUrl"></div>
-
     <div class="web-url-modal" v-if="webUrl">
       <el-input v-model="webUrl"></el-input>
       <div class="web-url-modal-btns">
@@ -74,7 +73,6 @@ export default {
       this.removeCmp(rootFather, cmpId);
     },
     async saveTemplate(template) {
-      // eventBus.$emit('toggleLoading');
       var templateToSave = JSON.parse(JSON.stringify(this.siteToEdit));
       templateToSave.name = template.templateName;
       templateToSave.previewImg = template.templatePreviewImg;
@@ -85,7 +83,6 @@ export default {
           username: 'guest',
           userPicture: 'https://i.ibb.co/PzTL54h/guest-icon-png-29.png',
         };
-        // eventBus.$emit('toggleLoading');
       } else {
         const { _id, username, userPicture } = this.$store.getters.user;
         createdBy = {
@@ -93,7 +90,6 @@ export default {
           username,
           userPicture,
         };
-        // eventBus.$emit('toggleLoading');
       }
       templateToSave.createdBy = createdBy;
       const savedTemplte = await this.$store.dispatch({

@@ -14,14 +14,12 @@
             <input type="file" @change="uploadImg" />
           </div>
         </label>
-
         <p
           class="upload-image pointer flex space center"
           @click="isToShowLink = !isToShowLink"
         >
           Link Image <i class="el-icon-edit"></i>
         </p>
-
         <el-input
           class="link-input"
           v-if="isToShowLink"
@@ -158,10 +156,8 @@ export default {
       cb([{ value: 'Search For ' + queryString }]);
     },
     async searchImages() {
-      console.log('arrived');
       if (!this.term) return;
       const res = await unsplashService.getImages(this.term);
-      console.log(res);
       this.unsplashImages = res;
     },
     handleSelect() {

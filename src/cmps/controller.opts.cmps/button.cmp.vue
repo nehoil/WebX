@@ -2,14 +2,12 @@
   <div class="edit-btn">
     <font-properties :cmp="cmp"></font-properties>
     <select-font :cmp="cmp"></select-font>
-
     <el-collapse accordion>
       <el-collapse-item name="1">
         <template slot="title">
           <div class="flex center plr10 space mb1 pointer"></div>
           <span>Button Styling</span>
         </template>
-
         <div class="plr10 mb1">
           <el-input
             @input="changeLinkTo"
@@ -23,7 +21,6 @@
             >Change Border</el-checkbox
           ></span
         >
-
         <div class="flex center space plr10">
           <p>Radius</p>
           <el-slider

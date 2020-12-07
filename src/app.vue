@@ -51,9 +51,6 @@ export default {
       this.loginMsg = msg;
       this.isShowLogin = true;
     });
-    // eventBus.$on('toggleLoading', () => {
-    //   this.isLoading = !this.isLoading;
-    // });
   },
 };
 </script>
