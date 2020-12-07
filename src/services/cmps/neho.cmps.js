@@ -438,7 +438,7 @@ export const nehoCmps = [
                     id: 'IgKY7GVDQ1',
                     type: 'web-img',
                     info: {
-                        src: 'https://i.ibb.co/PMCbsVC/Screenshot-1.png'
+                        src: 'https://i.ibb.co/vvJRSLQ/littele-cupcake.png'
                     },
                     style: {},
                     _rootId: '__vue_devtool_undefined__'
@@ -477,7 +477,7 @@ export const nehoCmps = [
             id: 'fsKQR1auMf',
             type: 'web-img',
             info: {
-                src: 'https://i.ibb.co/5jXzhh5/woman-phone2.jpg'
+                src: 'https://i.ibb.co/vLYKYjm/20200723-173302-1.jpg'
             },
             style: {},
             _rootId: 'saas-card-3'

@@ -132,3 +132,19 @@
         }
     }
 }
+
+@media (max-width: $break-narrow) {
+    .web-header-hr {
+        min-height: 32rem !important;
+    }
+    .header-hr-div {
+        & :nth-child(4) {
+            text-align: center !important;
+        }
+    }
+    .web-sec-cards-hr {
+        section {
+            margin-bottom: 80px !important;
+        }
+    }
+}

@@ -36,9 +36,14 @@ export default {
   },
   data() {
     return {
-      markers: [{position:{lat:this.cmp.info.lat, lng: this.cmp.info.lng}}],
+      // markers: [{position:{lat:this.cmp.info.lat, lng: this.cmp.info.lng}}],
       showEditMenu: false,
     };
+  },
+  computed:{
+    markers(){
+      return [{position:{lat:this.cmp.info.lat, lng: this.cmp.info.lng}}]
+    }
   },
   name: 'web-map',
   components: {
