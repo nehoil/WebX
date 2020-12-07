@@ -15,6 +15,7 @@
       group="workspace-cmps2"
       @change="updateSite"
       ghost-class="ghost"
+      :disabled="!isEditOn"
     >
       <component
         v-for="(currCmp, idx) in cmp.info.cmps"
@@ -86,6 +87,9 @@ export default {
     },
     cmps(){
       return this.cmp.info.cmps
+    },
+      isEditOn(){
+      return this.$store.getters.isEditOn
     }
   },
   created() {

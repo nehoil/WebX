@@ -1,6 +1,7 @@
 <template>
   <div class="workspace">
     <draggable
+    :sort="isEditOn"
       id="workspace"
       :class="{ dragArea: isDragging, dragIcon: !cmps.length }"
       class="draggable-container"
@@ -68,6 +69,11 @@ export default {
     addCmp(ev) {
       eventBus.$emit('addCmp', ev.clone.innerText);
     },
+  },
+  computed:{
+    isEditOn(){
+      return this.$store.getters.isEditOn
+    }
   },
   created() {
     eventBus.$on('dragStart', () => {
