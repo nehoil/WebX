@@ -217,7 +217,7 @@ export const nehoCmps = [
     {
         type: 'web-container',
         name: 'navbar',
-        id: 'saas-nav',
+        id: 'saas-nav2',
         previewImg: 'https://i.ibb.co/Vw9mynd/nav1.jpg',
         'class': 'navbar-2-container',
         info: {
