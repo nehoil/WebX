@@ -45,7 +45,6 @@ export default {
   },
   data() {
     return {
-      // markers: [{position:{lat:this.cmp.info.lat, lng: this.cmp.info.lng}}],
       showEditMenu: false,
     };
   },

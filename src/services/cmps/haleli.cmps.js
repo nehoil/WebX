@@ -267,7 +267,7 @@ export const haleliCmps = [
                             src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607331951/2295721_copy_hcikod.png"
                         },
                         style: {
-                            width: "77%"
+                            width: "60%"
                         }
                     }]
                 },
@@ -315,8 +315,9 @@ export const haleliCmps = [
                         },
                         style: {
                             height: "100%",
-                            display: "block",
-                            margin: "0 auto"
+                            margin: "0 auto",
+                            display: "flex",
+                            justifyContent: "center"
                         },
                         class: 'map-v-content'
                     }
