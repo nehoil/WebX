@@ -103,8 +103,8 @@ export default {
       var minHeightNum = this.getNumFromString('minHeight');
       this.minHeight = +minHeightNum * 16;
     }
-    if (this.cmp.style.padding) {
-      var paddingNum = this.getNumFromString('padding');
+    if (this.cmp.style.paddingRight || this.cmp.style.paddingLeft) {
+      var paddingNum = this.getNumFromString('paddingRight');
       this.padding = +paddingNum * 16;
     }
   },

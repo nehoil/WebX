@@ -743,7 +743,7 @@ export const savedCmps = [
                         src: 'https://i.ibb.co/qBTKyLh/i-Phone-App-3.png'
                     },
                     style: {
-                        width: '75%'
+                        width: '90%'
                     },
                     _rootId: 'saas-header'
                 },
@@ -2733,7 +2733,7 @@ export const savedCmps = [
         name: "image",
         id: "img003-gallery",
         class: "web-img-gallery-3",
-        previewImg: 'https://i.ibb.co/5sbMzdC/img-gallery003.jpg',
+        previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607362999/Untitled-1_copy_xvh9dh.png',
         info: {
             dir: "row",
             cmps: [{
@@ -2882,7 +2882,7 @@ export const savedCmps = [
         name: "image",
         id: "img002-gallery",
         class: "web-img-gallery-1",
-        previewImg: 'https://i.ibb.co/mBnc1hf/img-gallery002.jpg',
+        previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607363044/Untitled-1_copy5_vdjqie.png',
         info: {
             dir: "row",
             cmps: [{
@@ -3018,7 +3018,7 @@ export const savedCmps = [
         name: "image",
         id: "img004-grid gallery",
         class: "web-img-gallery-4",
-        previewImg: 'https://i.ibb.co/mq580B5/img-gallery004.jpg',
+        previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607362943/Untitled-1_copy2_aibizj.png',
         info: {
             dir: "row",
             cmps: [{
