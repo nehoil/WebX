@@ -1,6 +1,3 @@
-// import { utilService } from '@/services/util-service.js'
-
-
 const gTemplates = [
 ]
 
@@ -12,23 +9,18 @@ const gCmps = [
 // Templates
 
 import { savedTemplates } from '../services/templates/saved.templates.js'
-import { haleliTemplates } from '../services/templates/haleli.templates.js'
-import { nehoTemplates } from '../services/templates/neho.templates.js'
-import { roeeTemplates } from '../services/templates/roee.templates.js'
 
 
 
-gTemplates.push(...nehoTemplates, ...haleliTemplates, ...savedTemplates, ...roeeTemplates)
+gTemplates.push(...savedTemplates)
 
 
 // Cmps
 
 import { savedCmps } from '../services/cmps/saved.cmps.js'
-import { haleliCmps } from '../services/cmps/haleli.cmps.js'
-import { nehoCmps } from '../services/cmps/neho.cmps.js'
-import { roeeCmps } from '../services/cmps/roee.cmps.js'
 
-gCmps.push(...nehoCmps, ...haleliCmps, ...savedCmps, ...roeeCmps)
+gCmps.push(...savedCmps)
+
 
 import HttpService from './HttpService.js'
 
