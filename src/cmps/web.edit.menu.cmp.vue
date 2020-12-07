@@ -7,19 +7,13 @@
         @click="removeCmp(cmp.id)"
       >
         <i class="el-icon-delete"></i>
-        <!-- <i v-else class="el-icon-close"></i> -->
       </li>
-      <!-- <li v-if="parent === 'container'">
-        <i class="el-icon-document-copy"></i>
-      </li> -->
       <li
         v-if="parent === 'container' || parent === 'video'"
         @click="setEditItem"
       >
         <i class="el-icon-edit"></i>
       </li>
-      <!-- <li v-if="parent === 'container'"><i class="el-icon-arrow-left"></i></li> -->
-      <!-- <li v-if="parent === 'container'"><i class="el-icon-arrow-right"></i></li> -->
     </ul>
   </div>
 </template>
@@ -51,7 +45,6 @@ export default {
   },
   methods: {
     emitShow() {
-      // event.stopPropagation();
       this.$emit('showMenu');
     },
     emitHide() {

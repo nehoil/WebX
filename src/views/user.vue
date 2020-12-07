@@ -42,7 +42,6 @@ export default {
   data() {
     return {
       isLoading: false,
-      // websites: null
     };
   },
   methods: {
@@ -51,7 +50,6 @@ export default {
     },
     async loadUserWeb() {
       this.isLoading = true;
-      // eventBus.$emit('toggleLoading');
       await this.$store.dispatch('loadUserWebs');
       try {
         eventBus.$emit('toggleLoading');

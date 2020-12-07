@@ -13,4 +13,3 @@ async function getImages(term) {
         console.log('error');
     }
 }
-// ar = 0.85: 1 & fit=crop

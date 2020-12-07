@@ -27,7 +27,6 @@ export default {
   data() {
     return {
       showEditMenu: false,
-      // changeColor: 0
     };
   },
   props: {
@@ -65,12 +64,14 @@ export default {
     });
   },
   mounted() {
-    this.changeColor++
-    if (this.changeColor <= 1){
-    const elem = this.$refs.elTxt
-    this.cmp.style.color = window.getComputedStyle(elem,null).getPropertyValue('color')
-    eventBus.$emit('update-site');
-    this.$forceUpdate()
+    this.changeColor++;
+    if (this.changeColor <= 1) {
+      const elem = this.$refs.elTxt;
+      this.cmp.style.color = window
+        .getComputedStyle(elem, null)
+        .getPropertyValue('color');
+      eventBus.$emit('update-site');
+      this.$forceUpdate();
     }
   },
 };

@@ -11,9 +11,6 @@
 		margin: 0 auto;
 		left: 0;
 	}
-	// a:not(:last-of-type) {
-	// 	border-bottom: 1px solid rgba(128, 128, 128, 0.282);
-	// }
 	.menu {
 		width: 10%;
 		display: none;
@@ -32,14 +29,12 @@
 		background-color: #fff;
 		flex-direction: row;
 		justify-content: center;
-		// display: inline-block;
 		opacity: 100%;
 		transform: translateY(-125%);
 		margin: 0;
 		left: 0;
 		right: 0;
 		padding: 30px 0;
-		// background-color: white;
 		cursor: pointer;
 	}
 	.save-and-publish {

@@ -30,7 +30,6 @@ export default {
   name: 'web-button',
   data() {
     return {
-      // isEdit: true,
       showEditMenu: false,
     };
   },

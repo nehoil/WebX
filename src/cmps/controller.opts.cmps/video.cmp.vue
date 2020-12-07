@@ -17,10 +17,7 @@
     ></el-autocomplete>
     <div class="search-vids" v-if="vids">
       <div class="search-vid-preview" v-for="(vid, idx) in vids" :key="idx">
-        <img
-          :src="vid.thumbnail.url"
-          @click="changeLinkTo(vid.videoId)"
-        />
+        <img :src="vid.thumbnail.url" @click="changeLinkTo(vid.videoId)" />
       </div>
     </div>
   </div>
@@ -61,13 +58,13 @@ export default {
       cb([{ value: 'Search For ' + queryString }]);
     },
     handleSelect() {
-      this.onSearch()
+      this.onSearch();
     },
     async onSearch() {
       const vids = await youtubeService.getVids(this.searchTerm);
       try {
         this.vids = vids;
-        this.searchTerm = null
+        this.searchTerm = null;
       } catch {
         console.log('error while searching for videos.');
       }
@@ -75,8 +72,7 @@ export default {
     onEdit() {
       eventBus.$emit('update-site');
     },
-    created() {
-    },
+    created() {},
   },
 };
 </script>

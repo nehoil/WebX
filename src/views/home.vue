@@ -219,8 +219,6 @@
 </template>
 
 <script>
-// import templatePreview from '@/cmps/template.list.cmps/template.preview.cmp';
-
 export default {
   name: 'homepage',
   components: {},
@@ -243,8 +241,6 @@ export default {
   },
 };
 </script>
-
-
 
 <style lang="css">
 #app .main-nav {
