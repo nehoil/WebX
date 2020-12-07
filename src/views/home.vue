@@ -49,7 +49,7 @@
           </div>
           <div class="hp-card-img">
             <img
-              src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607257356/homepage1_ojzkm6.png"
+              src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607257356/homepage1_ojzkm6.png"
               alt=""
               srcset=""
             />
@@ -64,7 +64,7 @@
         >
           <div class="hp-card-img">
             <img
-              src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607256243/homepage2_frsgvg.png"
+              src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607256243/homepage2_frsgvg.png"
               alt=""
               srcset=""
             />
@@ -108,7 +108,7 @@
           </div>
           <div class="hp-card-img">
             <img
-              src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607257774/homepage3_cz0n8d.png"
+              src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607257774/homepage3_cz0n8d.png"
               alt=""
               srcset=""
             />
@@ -137,7 +137,7 @@
         </div>
         <div class="hp-big-img" data-aos-once="true" data-aos="zoom-in">
           <img
-            src="http://res.cloudinary.com/dksmeovlj/image/upload/v1607258094/homepage4_xdifqx.png"
+            src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607258094/homepage4_xdifqx.png"
             alt=""
             srcset=""
           />
@@ -164,7 +164,7 @@
         >
           <span
             class="hp-template-preview"
-            @click="goToPreview('sys574575474543')"
+            @click="goToPreview('sys64364944')"
           >
             <div class="hp-template-name">
               <img class="dots" src="@/assets/dots.png" />
@@ -176,7 +176,7 @@
               />
             </div>
           </span>
-          <span class="hp-template-preview" @click="goToPreview('sys67575s')">
+          <span class="hp-template-preview" @click="goToPreview('sys643643444')">
             <div class="hp-template-name">
               <img class="dots" src="@/assets/dots.png" />
             </div>
@@ -189,7 +189,7 @@
           </span>
           <span
             class="hp-template-preview"
-            @click="goToPreview('syssdfsdf546')"
+            @click="goToPreview('sys587486458')"
           >
             <div class="hp-template-name">
               <img class="dots" src="@/assets/dots.png" />
