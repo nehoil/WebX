@@ -228,7 +228,8 @@ export const haleliCmps = [
                             height: "100%",
                             display: "block",
                             margin: "0 auto"
-                        }
+                        },
+                        class: 'map-regular-content'
                     }
                     ]
                 },
@@ -248,7 +249,7 @@ export const haleliCmps = [
         type: "web-container",
         name: "map",
         id: "section009",
-        class: "map-v",
+        class: "map-v-cupcake",
         previewImg: 'http://res.cloudinary.com/dksmeovlj/image/upload/v1607284877/New_Project_q9zpja.jpg',
         info: {
             dir: "row",
@@ -263,10 +264,10 @@ export const haleliCmps = [
                         id: utilService.makeId(10),
                         type: "web-img",
                         info: {
-                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607284560/396-3962945_birthday-cupcake-cupcakes-cake-cakes-sweet-sweets-scran_vivqe8.png"
+                            src: "http://res.cloudinary.com/dksmeovlj/image/upload/v1607331951/2295721_copy_hcikod.png"
                         },
                         style: {
-                            width: "50%"
+                            width: "77%"
                         }
                     }]
                 },
@@ -287,7 +288,7 @@ export const haleliCmps = [
                         style: {
                             fontFamily: "champagneLimousines",
                             fontSize: "2rem",
-                            backgroundColor: "rgb(127, 219, 218)",
+                            backgroundColor: "rgb(127, 219, 218, 0)",
                         },
                     },
                     {
@@ -299,7 +300,7 @@ export const haleliCmps = [
                         style: {
                             fontFamily: "champagneLimousines",
                             fontSize: "1rem",
-                            backgroundColor: "rgb(127, 219, 218)",
+                            backgroundColor: "rgb(127, 219, 218, 0)",
                         },
                     },
                     {
@@ -316,13 +317,14 @@ export const haleliCmps = [
                             height: "100%",
                             display: "block",
                             margin: "0 auto"
-                        }
+                        },
+                        class: 'map-v-content'
                     }
                     ]
                 },
                 style: {
                     padding: "1rem",
-                    backgroundColor: "rgb(127, 219, 218)",
+                    backgroundColor: "#fff",
                 },
             }
             ]
