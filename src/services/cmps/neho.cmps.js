@@ -562,13 +562,45 @@ export const nehoCmps = [
                     type: 'web-txt',
                     'class': 'card-6-title',
                     info: {
-                        content: 'Battery-lite app'
+                        dir: 'row',
+                        cmps: [{
+                                id: 'IgKY7GVDQ1',
+                                type: 'web-img',
+                                info: {
+                                    src: 'https://i.ibb.co/vvJRSLQ/littele-cupcake.png'
+                                },
+                                style: {},
+                                _rootId: '__vue_devtool_undefined__'
+                            },
+                            {
+                                id: 'OFiYwvah3F',
+                                type: 'web-txt',
+                                'class': 'card-5-title',
+                                info: {
+                                    content: 'Nehoray Ilani, Owner/Chief Pastry Chef'
+                                },
+                                style: {
+                                    textAlign: 'start',
+                                    fontSize: '3.625rem'
+                                },
+                                _rootId: '__vue_devtool_undefined__'
+                            },
+                            {
+                                id: 'fM2gOuVv85',
+                                type: 'web-txt',
+                                'class': 'card-5-pa',
+                                info: {
+                                    content: 'Baking is my passion! I have been baking my whole life and I just love it. Decorating and making beautiful treats is so rewarding, and seeing the look on people\'s faces when they taste their treats is the best. Baking, to me, always feels like home. Being in the kitchen making delicious treats for the ones you love and the moments and memories made are for a lifetime.'
+                                },
+                                style: {
+                                    textAlign: 'start',
+                                    fontSize: '1.4375rem'
+                                },
+                                _rootId: '__vue_devtool_undefined__'
+                            }
+                        ]
                     },
-                    style: {
-                        textAlign: 'center',
-                        fontSize: '1.4375rem'
-                    },
-                    _rootId: '__vue_devtool_undefined__'
+                    style: {}
                 },
                 {
                     id: 'XW3hbHiK7N',

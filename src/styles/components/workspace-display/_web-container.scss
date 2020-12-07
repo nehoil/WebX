@@ -26,6 +26,9 @@
     background-position: inherit;
     background-repeat: inherit;
     top: inherit;
+    grid-template-columns: inherit;
+    grid-template-rows: inherit;
+    gap: inherit;
 }
 
 @media (max-width: $break-wide) {
