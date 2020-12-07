@@ -527,7 +527,7 @@ export const nehoCmps = [
                                 type: 'web-txt',
                                 'class': 'card-5-title',
                                 info: {
-                                    content: 'Millions of songs, available anywhere.                                    '
+                                    content: 'Nehoray Ilani, Owner/Chief Pastry Chef'
                                 },
                                 style: {
                                     textAlign: 'start',
@@ -540,7 +540,7 @@ export const nehoCmps = [
                                 type: 'web-txt',
                                 'class': 'card-5-pa',
                                 info: {
-                                    content: 'Search for any track, artist or album and listen for free. Make and share playlists. Build your biggest, best ever music collection.'
+                                    content: 'Baking is my passion! I have been baking my whole life and I just love it. Decorating and making beautiful treats is so rewarding, and seeing the look on people\'s faces when they taste their treats is the best. Baking, to me, always feels like home. Being in the kitchen making delicious treats for the ones you love and the moments and memories made are for a lifetime.'
                                 },
                                 style: {
                                     textAlign: 'start',
