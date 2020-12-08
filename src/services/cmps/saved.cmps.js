@@ -3070,6 +3070,33 @@ export const savedCmps = [
     },
 
     // txt: 
+    {
+        type: "web-container",
+        name: "text",
+        id: "txt001",
+        class: "web-txt-1",
+        previewImg: 'https://i.ibb.co/H7v2V2C/txt001.jpg',
+        info: {
+            dir: "column",
+            cmps: [{
+                id: utilService.makeId(10),
+                type: "web-txt",
+                info: {
+                    content: "I'm a title, click on me to edit"
+                },
+                style: {
+                    fontFamily: "assistantLight",
+                    fontSize: "3.125rem",
+                    textAlign: "center",
+                    letterSpacing: '0.08rem'
+                },
+            }]
+        },
+        style: {
+            padding: "15px",
+            width: "100%",
+        }
+    },
 
     {
         type: "web-container",
@@ -3140,33 +3167,7 @@ export const savedCmps = [
             width: "100%",
         }
     },
-    {
-        type: "web-container",
-        name: "text",
-        id: "txt001",
-        class: "web-txt-1",
-        previewImg: 'https://i.ibb.co/H7v2V2C/txt001.jpg',
-        info: {
-            dir: "column",
-            cmps: [{
-                id: utilService.makeId(10),
-                type: "web-txt",
-                info: {
-                    content: "I'm a title, click on me to edit"
-                },
-                style: {
-                    fontFamily: "assistantLight",
-                    fontSize: "3.125rem",
-                    textAlign: "center",
-                    letterSpacing: '0.08rem'
-                },
-            }]
-        },
-        style: {
-            padding: "15px",
-            width: "100%",
-        }
-    },
+
 
     // video:
 
