@@ -29,7 +29,7 @@
 		background-color: #fff;
 		flex-direction: row;
 		justify-content: center;
-		opacity: 100%;
+		opacity: 1;
 		transform: translateY(-125%);
 		margin: 0;
 		left: 0;
@@ -72,7 +72,7 @@
 		right: 0;
 		opacity: 0;
 		@include max-middle-layout {
-			opacity: 100%;
+			opacity: 1;
 		}
 	}
 	.menu {
