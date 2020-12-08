@@ -19,11 +19,11 @@
           </span>
         </button>
         <div class="menu">
-          <router-link class="nav-link" to="/templates">Templates</router-link>
-          <router-link class="nav-link" to="/editor">Editor</router-link>
-          <a @click="showLogin" class="nav-link" v-if="!user">Login</a>
+          <router-link class="nav-link"  @click.native="toggleMenu" to="/templates">Templates</router-link>
+          <router-link class="nav-link"  @click.native="toggleMenu" to="/editor">Editor</router-link>
+          <a @click="showLogin(); toggleMenu();" class="nav-link" v-if="!user">Login</a>
           <span v-if="user">
-            <a class="nav-link" @click="doLogout">Log Out</a>
+            <a class="nav-link" @click="doLogout(); toggleMenu();">Log Out</a>
             <router-link class="nav-link" to="/user">
               Profile <i class="el-icon-user profile"></i
             ></router-link>
@@ -34,7 +34,6 @@
             ></a>
             <a class="nav-link" @click="publishTemplate">Publish</a></span
           >
-          <!-- </span> -->
         </div>
       </nav>
     </fixed-header>

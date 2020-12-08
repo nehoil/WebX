@@ -107,7 +107,7 @@
             </router-link>
           </div>
           <div class="hp-card-img">
-            <img
+            <img class="hp-van-img"
               src="https://res.cloudinary.com/dksmeovlj/image/upload/v1607257774/homepage3_cz0n8d.png"
               alt=""
               srcset=""
